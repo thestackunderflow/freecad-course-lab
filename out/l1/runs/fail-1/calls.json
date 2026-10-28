@@ -1,0 +1,92 @@
+[
+ {
+  "call_seq": 19,
+  "reply_seq": 21,
+  "name": "create_document",
+  "arguments": {
+   "name": "Block"
+  },
+  "isError": true,
+  "text": "Error executing tool create_document",
+  "images": [],
+  "seconds": 0.007
+ },
+ {
+  "call_seq": 106,
+  "reply_seq": 108,
+  "name": "get_rpc_status",
+  "arguments": {},
+  "isError": true,
+  "text": "Error executing tool get_rpc_status",
+  "images": [],
+  "seconds": 0.006
+ },
+ {
+  "call_seq": 141,
+  "reply_seq": 150,
+  "name": "list_documents",
+  "arguments": {},
+  "isError": true,
+  "text": "Error executing tool list_documents",
+  "images": [],
+  "seconds": 0.003
+ },
+ {
+  "call_seq": 280,
+  "reply_seq": 281,
+  "name": "execute_code_headless",
+  "arguments": {
+   "code": "import FreeCAD, Part\ndoc = FreeCAD.newDocument(\"Block\")\nbox = doc.addObject(\"Part::Box\", \"Block\")\nbox.Length = 5\nbox.Width = 20\nbox.Height = 60\ndoc.recompute()\nprint(\"Volume mm^3:\", box.Shape.Volume)\ndoc.saveAs(\"/tmp/claude-1000/-home-maker-hook/ed188e73-4a02-4ead-9dd2-bed404a1a58d/scratchpad/Block.FCStd\")\nprint(\"saved\")",
+   "timeout": 120
+  },
+  "isError": false,
+  "text": "Headless FreeCAD script finished (exit 0).\nOutput:\nVolume mm^3: 6000.0\nsaved\nRecompute......\nIf the script saved a document that is open in the GUI, call reload_document to see the result.",
+  "images": [],
+  "seconds": 0.185
+ },
+ {
+  "call_seq": 282,
+  "reply_seq": 283,
+  "name": "create_document",
+  "arguments": {
+   "name": "Block"
+  },
+  "isError": false,
+  "text": "Document 'Block' created successfully",
+  "images": [],
+  "seconds": 0.093
+ },
+ {
+  "call_seq": 284,
+  "reply_seq": 285,
+  "name": "create_object",
+  "arguments": {
+   "doc_name": "Block",
+   "obj_type": "Part::Box",
+   "obj_name": "Block",
+   "obj_properties": {
+    "Length": 5,
+    "Width": 20,
+    "Height": 60
+   },
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Object 'Block' created successfully",
+  "images": [],
+  "seconds": 0.058
+ },
+ {
+  "call_seq": 286,
+  "reply_seq": 287,
+  "name": "execute_code",
+  "arguments": {
+   "code": "doc = FreeCAD.getDocument(\"Block\")\ndoc.recompute()\nprint(\"Volume mm^3:\", doc.getObject(\"Block\").Shape.Volume)",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: Volume mm^3: 6000.0\n",
+  "images": [],
+  "seconds": 0.059
+ }
+]

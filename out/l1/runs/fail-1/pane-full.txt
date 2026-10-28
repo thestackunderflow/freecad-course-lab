@@ -1,0 +1,36 @@
+  status and listing documents all returned
+  errors. I built the block in a headless
+  FreeCAD process instead. It's a Part::Box
+  with Length 5, Width 20 and Height 60, and
+  FreeCAD's own shape calculation gave the
+  volume.
+
+  The block isn't open in your FreeCAD window.
+  It's saved at /tmp/claude-1000/-home-maker-
+  hook/ed188e73-4a02-4ead-9dd2-bed404a1a58d/sc
+  ratchpad/Block.FCStd, so you can open it
+  from there. If you restart the GUI and its
+  RPC server, I can load it in directly.
+
+✻ Sautéed for 14s · done 9:52 PM
+
+❯ Try again.
+
+  Called freecad 3 times
+
+● The block is now in your open FreeCAD
+  session, and its volume is 6,000 mm³ (6
+  cm³).
+
+  The GUI connection worked this time. I
+  created a document called "Block" with a
+  Part::Box of 5 × 20 × 60 mm. FreeCAD's shape
+  calculation gave the same volume as 5 × 20
+  × 60.
+
+✻ Brewed for 5s · done 9:53 PM
+
+──────────────────────────────────────────────
+❯ Save it as a STEP file
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

@@ -1,0 +1,37 @@
+{"t": 0.068, "event": "recording started: a terminal (left), FreeCAD with the socket off (right)"}
+{"t": 1.625, "event": "mcp list: typed", "text": "claude mcp list"}
+{"t": 2.767, "event": "mcp list: typed: Enter", "keys": "Return"}
+{"t": 4.303, "event": "mcp list: result shown"}
+{"t": 8.396, "event": "claude: typed", "text": "claude"}
+{"t": 9.216, "event": "claude: typed: Enter", "keys": "Return"}
+{"t": 9.84, "event": "claude: start screen"}
+{"t": 12.898, "event": "turn 1: typing", "text": "Make a block 5 by 20 by 60 millimetres in FreeCAD, then tell me its volume."}
+{"t": 17.234, "event": "turn 1: Enter"}
+{"t": 21.063, "event": "tool call: create_document", "seq": 19}
+{"t": 21.07, "event": "tool reply: create_document", "seq": 21, "isError": true}
+{"t": 23.777, "event": "tool call: get_rpc_status", "seq": 106}
+{"t": 23.783, "event": "tool reply: get_rpc_status", "seq": 108, "isError": true}
+{"t": 23.793, "event": "tool call: list_documents", "seq": 141}
+{"t": 23.796, "event": "tool reply: list_documents", "seq": 150, "isError": true}
+{"t": 28.461, "event": "tool call: execute_code_headless", "seq": 280}
+{"t": 28.646, "event": "tool reply: execute_code_headless", "seq": 281, "isError": false}
+{"t": 31.867, "event": "turn 1: end-of-turn line seen"}
+{"t": 33.868, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 41.039, "event": "FreeCAD: Start RPC Server", "x": 1254, "y": 186, "button": 1}
+{"t": 45.557, "event": "to the terminal"}
+{"t": 45.634, "event": "turn 1: typing", "text": "Try again."}
+{"t": 46.905, "event": "turn 1: Enter"}
+{"t": 48.512, "event": "tool call: create_document", "seq": 282}
+{"t": 48.605, "event": "tool reply: create_document", "seq": 283, "isError": false}
+{"t": 51.021, "event": "tool call: create_object", "seq": 284}
+{"t": 51.079, "event": "tool reply: create_object", "seq": 285, "isError": false}
+{"t": 51.09, "event": "tool call: execute_code", "seq": 286}
+{"t": 51.149, "event": "tool reply: execute_code", "seq": 287, "isError": false}
+{"t": 52.637, "event": "turn 1: end-of-turn line seen"}
+{"t": 54.639, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 59.653, "event": "lab query: where is Claude's block"}
+{"t": 62.746, "event": "tree: Claude's block", "x": 1264, "y": 271, "button": 1}
+{"t": 66.414, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 67.122, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 69.636, "event": "console: Enter", "keys": "Return"}
+{"t": 75.262, "event": "recording stopped"}

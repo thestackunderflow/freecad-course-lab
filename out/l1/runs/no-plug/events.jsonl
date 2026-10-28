@@ -1,0 +1,6 @@
+{"t": 0.046, "event": "recording started: Claude Code (no MCP server) and FreeCAD with an empty document"}
+{"t": 2.11, "event": "turn 1: typing", "text": "Make a block 5 by 20 by 60 millimetres in FreeCAD, then tell me its volume."}
+{"t": 6.437, "event": "turn 1: Enter"}
+{"t": 18.961, "event": "turn 1: end-of-turn line seen"}
+{"t": 20.963, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 27.999, "event": "recording stopped"}

@@ -1,0 +1,36 @@
+❯ Make a block 5 by 20 by 60 millimetres in
+  FreeCAD, then tell me its volume.
+
+  Called freecad 3 times
+
+● The FreeCAD GUI connection keeps returning
+  errors, so I'll build the block in a
+  headless FreeCAD process instead.
+
+  Called freecad
+
+● The block's volume is 6,000 mm³, which is 6
+  cm³ (5 × 20 × 60 = 6,000).
+
+  I couldn't build it in the open FreeCAD
+  window. The GUI connection returned errors
+  on every call: creating the document,
+  running code and checking status. So I built
+  it in a separate headless FreeCAD process
+  instead, as a Part::Box with Length 5, Width
+  20 and Height 60. FreeCAD reports the solid
+  as valid, with a bounding box of 5 × 20 ×
+  60 mm.
+
+  That document was never saved, so nothing
+  will show up in your FreeCAD window. If you
+  want it there, check that the FreeCAD RPC
+  server is running and I'll try again. I can
+  also save it as an .FCStd file.
+
+✻ Churned for 13s · done 9:56 PM
+
+──────────────────────────────────────────────
+❯ save it as an .FCStd file
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

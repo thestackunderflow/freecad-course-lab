@@ -1,0 +1,12 @@
+/home/maker/.local/share/FreeCAD/v1-1
+/home/maker/.local/share/FreeCAD/v1-1/Macro
+/home/maker/.local/share/FreeCAD/v1-1/Mod
+/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP
+/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/Init.py
+/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/InitGui.py
+/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/rpc_server
+/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/package.xml
+/home/maker/.local/share/FreeCAD/v1-1/SavedPreferencePacks
+/home/maker/.local/share/FreeCAD/v1-1/SavedPreferencePacks/user.cfg.backup
+/home/maker/.local/share/FreeCAD/v1-1/SavedPreferencePacks/Backups
+/home/maker/.local/share/FreeCAD/v1-1/SavedPreferencePacks/Backups/user.1793221034.cfg

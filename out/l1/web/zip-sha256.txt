@@ -1,0 +1,6 @@
+e00c15a64b78bf64849b8f36f76d43d5faec89b91e70a092bb54a89f36ca2c74  /home/maker/Downloads/freecad-mcp-0.1.28.zip
+total 6944
+drwxr-xr-x 2 maker maker    4096 Oct 28 21:16 .
+drwxr-x--- 1 maker maker    4096 Oct 28 21:16 ..
+-rw-r--r-- 1 maker maker 7100524 Oct 28 21:16 freecad-mcp-0.1.28.zip
+zip matches the pinned tag ZIP

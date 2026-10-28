@@ -1,0 +1,16 @@
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+[MCP] Auto-start: RPC Server started at 127.0.0.1:9875 (PID 131).
+MCP RPC server auto-start disabled.
+Python code executed successfully.
+RPC Server stopping…
+Python code executed successfully.
+RPC Server stopped.
+RPC Server started at 127.0.0.1:9875 (PID 131).
+Document 'Block' created via RPC.
+Part::Box 'Block' added to 'Block' via RPC.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.

@@ -1,0 +1,36 @@
+❯ Make a block 5 by 20 by 60 millimetres in
+  FreeCAD, then tell me its volume.
+
+  Called freecad 3 times
+
+● The FreeCAD GUI connection is failing, so
+  I'm trying a headless FreeCAD run to build
+  the block and read its volume.
+
+  Called freecad
+
+● I made the block, and its volume is 6,000
+  mm³ (5 × 20 × 60), which is 6 cm³.
+
+  The FreeCAD GUI connection wasn't
+  responding. Creating the document, checking
+  status and listing documents all returned
+  errors. I built the block in a headless
+  FreeCAD process instead. It's a Part::Box
+  with Length 5, Width 20 and Height 60, and
+  FreeCAD's own shape calculation gave the
+  volume.
+
+  The block isn't open in your FreeCAD window.
+  It's saved at /tmp/claude-1000/-home-maker-
+  hook/ed188e73-4a02-4ead-9dd2-bed404a1a58d/sc
+  ratchpad/Block.FCStd, so you can open it
+  from there. If you restart the GUI and its
+  RPC server, I can load it in directly.
+
+✻ Sautéed for 14s · done 9:52 PM
+
+──────────────────────────────────────────────
+❯ Open it in the FreeCAD GUI
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

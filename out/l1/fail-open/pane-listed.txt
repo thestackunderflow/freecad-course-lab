@@ -1,0 +1,36 @@
+
+ ▐▛███▛█   Claude Code v2.1.308
+▝▜██████▀  Sonnet 5.5 · Claude API
+ ▝▝   ▝▝   ~/hook
+
+  Get to finished work sooner with Opus 5.5.
+  Switch anytime with /model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ ◐ medium · /effort ▔
+   Manage MCP servers
+   1 server
+
+     User MCPs (/home/maker/.claude.json)
+   ❯ ✔ freecad   17 tools
+
+   https://code.claude.com/docs/en/mcp for
+   help
+   ↑/↓ to navigate · Enter to confirm · Esc
+   to cancel

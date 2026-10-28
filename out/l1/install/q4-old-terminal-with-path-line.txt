@@ -1,0 +1,1 @@
+uvx is /home/maker/.local/bin/uvx

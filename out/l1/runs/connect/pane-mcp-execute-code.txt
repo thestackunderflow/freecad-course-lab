@@ -1,0 +1,36 @@
+▎ modes
+  1 more notice hidden
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+   execute_code
+   freecad
+
+   Tool name: execute_code
+   Full name: mcp__freecad__execute_code
+
+   Description:
+   Execute arbitrary Python code in
+   FreeCAD.
+
+       Args:
+           code: The Python code to
+   execute.
+           include_screenshot: Whether to
+   return a screenshot of the model
+   (default True).
+               Set to False to save tokens
+   when the code does not change the
+   model's
+               appearance, e.g. analytical
+   or computational scripts whose result
+   is
+               printed output, or
+   intermediate steps in a longer sequence
+   of changes.
+           view_name: The view orientation
+   of the returned screenshot (default
+   "Isometric").
+               Pick the view that best
+   shows the change being made.
+           timeout: Positive finite
+   seconds for each of the queue and GUI
+   execution                               ↓

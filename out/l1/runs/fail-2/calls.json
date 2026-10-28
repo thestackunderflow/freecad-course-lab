@@ -1,0 +1,95 @@
+[
+ {
+  "call_seq": 19,
+  "reply_seq": 22,
+  "name": "create_document",
+  "arguments": {
+   "name": "Block"
+  },
+  "isError": true,
+  "text": "Error executing tool create_document",
+  "images": [],
+  "seconds": 0.005
+ },
+ {
+  "call_seq": 106,
+  "reply_seq": 108,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD\ndoc = FreeCAD.newDocument(\"Block\") if \"Block\" not in FreeCAD.listDocuments() else FreeCAD.getDocument(\"Block\")\nbox = doc.addObject(\"Part::Box\", \"Box\")\nbox.Length = 5\nbox.Width = 20\nbox.Height = 60\ndoc.recompute()\nprint(FreeCAD.listDocuments().keys(), box.Shape.Volume, box.Shape.isValid())",
+   "include_screenshot": false
+  },
+  "isError": true,
+  "text": "Error executing tool execute_code",
+  "images": [],
+  "seconds": 0.004
+ },
+ {
+  "call_seq": 193,
+  "reply_seq": 195,
+  "name": "get_rpc_status",
+  "arguments": {},
+  "isError": true,
+  "text": "Error executing tool get_rpc_status",
+  "images": [],
+  "seconds": 0.003
+ },
+ {
+  "call_seq": 280,
+  "reply_seq": 281,
+  "name": "execute_code_headless",
+  "arguments": {
+   "code": "import FreeCAD, Part\ndoc = FreeCAD.newDocument(\"Block\")\nbox = doc.addObject(\"Part::Box\", \"Box\")\nbox.Length = 5\nbox.Width = 20\nbox.Height = 60\ndoc.recompute()\nprint(\"valid:\", box.Shape.isValid())\nprint(\"volume mm^3:\", box.Shape.Volume)\nprint(\"bbox:\", box.Shape.BoundBox)"
+  },
+  "isError": false,
+  "text": "Headless FreeCAD script finished (exit 0).\nOutput:\nvalid: True\nvolume mm^3: 6000.0\nbbox: BoundBox (0, 0, 0, 5, 20, 60)\nRecompute......\nIf the script saved a document that is open in the GUI, call reload_document to see the result.",
+  "images": [],
+  "seconds": 0.179
+ },
+ {
+  "call_seq": 282,
+  "reply_seq": 283,
+  "name": "create_document",
+  "arguments": {
+   "name": "Block"
+  },
+  "isError": false,
+  "text": "Document 'Block' created successfully",
+  "images": [],
+  "seconds": 0.091
+ },
+ {
+  "call_seq": 284,
+  "reply_seq": 285,
+  "name": "create_object",
+  "arguments": {
+   "doc_name": "Block",
+   "obj_type": "Part::Box",
+   "obj_name": "Box",
+   "obj_properties": {
+    "Length": 5,
+    "Width": 20,
+    "Height": 60
+   }
+  },
+  "isError": false,
+  "text": "Object 'Box' created successfully",
+  "images": [
+   "claude-shot-01.png"
+  ],
+  "seconds": 0.821
+ },
+ {
+  "call_seq": 286,
+  "reply_seq": 287,
+  "name": "execute_code",
+  "arguments": {
+   "code": "doc = FreeCAD.getDocument(\"Block\")\ndoc.recompute()\ns = doc.getObject(\"Box\").Shape\nprint(s.isValid(), s.Volume)",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: True 6000.0\n",
+  "images": [],
+  "seconds": 0.014
+ }
+]

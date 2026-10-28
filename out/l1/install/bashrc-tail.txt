@@ -1,0 +1,4 @@
+    . /etc/bash_completion
+  fi
+fi
+export PATH="$HOME/.local/bin:$PATH"

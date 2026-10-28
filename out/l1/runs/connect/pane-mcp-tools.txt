@@ -1,0 +1,36 @@
+
+▎ Auto mode is now Claude Code's default
+▎ permission mode.
+▎ Auto mode lets Claude handle permission
+▎ prompts automatically. Claude checks each
+▎ tool call for risky actions and prompt
+▎ injection before executing, runs the ones
+▎ it assesses as lower-risk, and blocks the
+▎ rest.
+▎ https://code.claude.com/docs/en/permission-
+▎ modes
+  1 more notice hidden
+ tmux focus-events off · add 'set -g focus… ▔
+   Tools for freecad
+   17 tools
+
+   ❯ create_document
+     create_object
+     edit_object
+     delete_object
+     execute_code_async
+     execute_code_headless
+     get_async_status
+     execute_code
+     get_view
+     insert_part_from_library
+     get_objects
+     get_object
+     get_parts_list
+     reload_document
+     list_documents
+     get_rpc_status
+     run_fem_analysis
+
+   ↑/↓ to navigate · Enter to select · Esc
+   to back

@@ -1,0 +1,44 @@
+[
+ {
+  "tool": "Bash",
+  "input": {
+   "command": "which freecadcmd FreeCADCmd freecad 2>&1 | head",
+   "description": "Locate FreeCAD executable"
+  }
+ },
+ {
+  "tool": "Bash",
+  "input": {
+   "command": "which freecadcmd FreeCADCmd freecad 2>&1 | head",
+   "description": "Locate FreeCAD executable"
+  }
+ },
+ {
+  "tool": "Bash",
+  "input": {
+   "command": "mkdir -p /home/maker/hook && cat > /tmp/claude-1000/-home-maker-hook/743ac2ad-e248-4781-ab9c-640f52e6e1af/scratchpad/block.py <<'EOF'\nimport FreeCAD, Part\ndoc = FreeCAD.newDocument(\"Block\")\nbox = doc.addObject(\"Part::Box\", \"Block\")\nbox.Length = 5\nbox.Width = 20\nbox.Height = 60\ndoc.recompute()\nprint(\"VOLUME_MM3\", box.Shape.Volume)\ndoc.saveAs(\"/home/maker/hook/block.FCStd\")\nEOF\nfreecadcmd /tmp/claude-1000/-home-maker-hook/743ac2ad-e248-4781-ab9c-640f52e6e1af/scratchpad/block.py 2>&1 | tail -5; ls -l /home/maker/hook",
+   "description": "Create box in FreeCAD and print volume"
+  }
+ },
+ {
+  "tool": "Bash",
+  "input": {
+   "command": "mkdir -p /home/maker/hook && cat > /tmp/claude-1000/-home-maker-hook/743ac2ad-e248-4781-ab9c-640f52e6e1af/scratchpad/block.py <<'EOF'\nimport FreeCAD, Part\ndoc = FreeCAD.newDocument(\"Block\")\nbox = doc.addObject(\"Part::Box\", \"Block\")\nbox.Length = 5\nbox.Width = 20\nbox.Height = 60\ndoc.recompute()\nprint(\"VOLUME_MM3\", box.Shape.Volume)\ndoc.saveAs(\"/home/maker/hook/block.FCStd\")\nEOF\nfreecadcmd /tmp/claude-1000/-home-maker-hook/743ac2ad-e248-4781-ab9c-640f52e6e1af/scratchpad/block.py 2>&1 | tail -5; ls -l /home/maker/hook",
+   "description": "Create box in FreeCAD and print volume"
+  }
+ },
+ {
+  "tool": "Bash",
+  "input": {
+   "command": "freecadcmd /tmp/claude-1000/-home-maker-hook/743ac2ad-e248-4781-ab9c-640f52e6e1af/scratchpad/block.py 2>&1 | grep VOLUME",
+   "description": "Show the volume line from FreeCAD output"
+  }
+ },
+ {
+  "tool": "Bash",
+  "input": {
+   "command": "freecadcmd /tmp/claude-1000/-home-maker-hook/743ac2ad-e248-4781-ab9c-640f52e6e1af/scratchpad/block.py 2>&1 | grep VOLUME",
+   "description": "Show the volume line from FreeCAD output"
+  }
+ }
+]

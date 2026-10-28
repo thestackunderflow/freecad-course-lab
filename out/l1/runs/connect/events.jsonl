@@ -1,0 +1,25 @@
+{"t": 0.045, "event": "recording started: a terminal (wide) and FreeCAD with the socket on"}
+{"t": 1.604, "event": "mcp add: typed", "text": "claude mcp add --scope user freecad -- uvx freecad-mcp@0.1.28"}
+{"t": 4.396, "event": "mcp add: typed: Enter", "keys": "Return"}
+{"t": 39.398, "event": "mcp list: typed", "text": "claude mcp list"}
+{"t": 40.545, "event": "mcp list: typed: Enter", "keys": "Return"}
+{"t": 46.123, "event": "mcp list: result shown"}
+{"t": 50.296, "event": "clear: typed", "text": "clear"}
+{"t": 51.088, "event": "clear: typed: Enter", "keys": "Return"}
+{"t": 51.714, "event": "terminal: narrowed to 46 columns"}
+{"t": 53.38, "event": "claude: typed", "text": "claude"}
+{"t": 54.211, "event": "claude: typed: Enter", "keys": "Return"}
+{"t": 55.494, "event": "claude: start screen"}
+{"t": 60.713, "event": "/mcp: Enter"}
+{"t": 64.241, "event": "/mcp: freecad details"}
+{"t": 68.153, "event": "/mcp: View tools"}
+{"t": 75.937, "event": "/mcp: on execute_code"}
+{"t": 76.944, "event": "/mcp: execute_code description"}
+{"t": 85.681, "event": "/mcp: closed"}
+{"t": 87.73, "event": "turn 1: typing", "text": "What documents are open in FreeCAD?"}
+{"t": 90.179, "event": "turn 1: Enter"}
+{"t": 93.282, "event": "tool call: list_documents", "seq": 18}
+{"t": 93.293, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 94.656, "event": "turn 1: end-of-turn line seen"}
+{"t": 96.658, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 102.723, "event": "recording stopped"}

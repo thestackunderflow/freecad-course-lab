@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+out/scratch/
+out/**/*.mp4
+out/**/*.FCStd
+out/**/*.FCBak

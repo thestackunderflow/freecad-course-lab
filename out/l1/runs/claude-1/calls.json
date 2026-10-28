@@ -1,0 +1,60 @@
+[
+ {
+  "call_seq": 18,
+  "reply_seq": 19,
+  "name": "create_document",
+  "arguments": {
+   "name": "Block"
+  },
+  "isError": false,
+  "text": "Document 'Block' created successfully",
+  "images": [],
+  "seconds": 0.104
+ },
+ {
+  "call_seq": 20,
+  "reply_seq": 21,
+  "name": "create_object",
+  "arguments": {
+   "doc_name": "Block",
+   "obj_type": "Part::Box",
+   "obj_name": "Box",
+   "obj_properties": {
+    "Length": 5,
+    "Width": 20,
+    "Height": 60
+   },
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Object 'Box' created successfully",
+  "images": [],
+  "seconds": 0.018
+ },
+ {
+  "call_seq": 22,
+  "reply_seq": 23,
+  "name": "execute_code",
+  "arguments": {
+   "code": "doc = FreeCAD.getDocument(\"Block\")\ndoc.recompute()\nprint(doc.getObject(\"Box\").Shape.Volume)",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: 6000.0\n",
+  "images": [],
+  "seconds": 0.036
+ },
+ {
+  "call_seq": 24,
+  "reply_seq": 25,
+  "name": "execute_code",
+  "arguments": {
+   "code": "doc = FreeCAD.getDocument(\"Block\")\nfor o in doc.Objects:\n    print(o.Name, o.Label, o.TypeId)",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: Box Box Part::Box\n",
+  "images": [],
+  "seconds": 0.01
+ }
+]

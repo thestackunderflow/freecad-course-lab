@@ -1,0 +1,11 @@
+** Message: 21:22:47.725: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:152): WARNING **: 21:22:47.727: The directory '~/Templates' doesn't exist, ignoring it
+
+** (pcmanfm:152): WARNING **: 21:22:47.755: modules directory is not accessible
+
+(pcmanfm:152): Gtk-WARNING **: 21:22:47.794: Theme parsing error: <data>:2:27: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(pcmanfm:152): Gtk-WARNING **: 21:22:47.795: Theme parsing error: <data>:3:30: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+xarchiver 0.5.4 ©  2005-2014 Giuseppe Torelli
+xarchiver 0.5.4.22 Ingo Brückl

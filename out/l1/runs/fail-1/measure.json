@@ -1,0 +1,31 @@
+{
+ "document": "fail.FCStd",
+ "freecad": "1.1.4",
+ "objects": [
+  "Block"
+ ],
+ "solids": [
+  {
+   "name": "Block",
+   "label": "Block",
+   "type": "Part::Box",
+   "volume_mm3": 6000.0,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    5.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ]
+}

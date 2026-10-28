@@ -1,0 +1,22 @@
+{
+ "solids": [
+  [
+   "Block",
+   "Box",
+   "Box",
+   6000.0
+  ],
+  [
+   "Unnamed",
+   "Box",
+   "Cube",
+   6000.0
+  ]
+ ],
+ "claude": [
+  "Block",
+  "Box",
+  "Box",
+  6000.0
+ ]
+}

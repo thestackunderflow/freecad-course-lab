@@ -1,0 +1,16 @@
+{
+ "solids": [
+  [
+   "Block",
+   "Block",
+   "Block",
+   6000.0
+  ]
+ ],
+ "claude": [
+  "Block",
+  "Block",
+  "Block",
+  6000.0
+ ]
+}

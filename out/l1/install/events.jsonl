@@ -1,0 +1,24 @@
+{"t": 0.059, "event": "recording started: a fresh terminal"}
+{"t": 1.624, "event": "claude install: typed", "text": "curl -fsSL https://claude.ai/install.sh | bash -s 2.1.308"}
+{"t": 4.432, "event": "claude install: typed: Enter", "keys": "Return"}
+{"t": 81.245, "event": "claude install: finished"}
+{"t": 84.438, "event": "path line: typed", "text": "echo 'export PATH=\"$HOME/.local/bin:$PATH\"' >> ~/.bashrc"}
+{"t": 87.152, "event": "path line: typed: Enter", "keys": "Return"}
+{"t": 89.366, "event": "exit: typed", "text": "exit"}
+{"t": 90.139, "event": "exit: typed: Enter", "keys": "Return"}
+{"t": 91.777, "event": "new terminal: opening"}
+{"t": 92.726, "event": "new terminal: open"}
+{"t": 93.791, "event": "claude version: typed", "text": "claude --version"}
+{"t": 95.249, "event": "claude version: typed: Enter", "keys": "Return"}
+{"t": 95.98, "event": "claude version: shown"}
+{"t": 99.431, "event": "uv install: typed", "text": "curl -LsSf https://astral.sh/uv/0.13.6/install.sh | sh"}
+{"t": 102.041, "event": "uv install: typed: Enter", "keys": "Return"}
+{"t": 105.46, "event": "uv install: finished"}
+{"t": 108.55, "event": "exit 2: typed", "text": "exit"}
+{"t": 109.31, "event": "exit 2: typed: Enter", "keys": "Return"}
+{"t": 110.944, "event": "new terminal 2: opening"}
+{"t": 111.836, "event": "new terminal 2: open"}
+{"t": 113.4, "event": "uv version: typed", "text": "uv --version"}
+{"t": 114.87, "event": "uv version: typed: Enter", "keys": "Return"}
+{"t": 115.501, "event": "uv version: shown"}
+{"t": 118.525, "event": "recording stopped"}

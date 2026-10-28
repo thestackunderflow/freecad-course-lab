@@ -1,0 +1,9 @@
+{"document": "hand.FCStd", "freecad": "1.1.4", "objects": ["Box"], "solids": [{"name": "Box", "label": "Cube", "type": "Part::Box", "volume_mm3": 6000.0, "valid": true, "solids": 1, "bbox_mm": [5.0, 20.0, 60.0], "z_range_mm": [0.0, 60.0], "min_mm": [0.0, 0.0, 0.0]}]}
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+Importing project files......
+						(100 %)									Postprocessing......
+						(100 %)									Recompute......
+						(100 %)									

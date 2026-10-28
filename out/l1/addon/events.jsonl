@@ -1,0 +1,40 @@
+{"t": 0.069, "event": "recording started: FreeCAD (start page) and the file manager in Downloads"}
+{"t": 2.593, "event": "zip: right-click", "x": 1656, "y": 403, "button": 3}
+{"t": 4.91, "event": "zip: Extract Here", "x": 1799, "y": 537, "button": 1}
+{"t": 8.914, "event": "open freecad-mcp-0.1.28 (double-click)", "x": 1656, "y": 403, "button": 1}
+{"t": 11.526, "event": "open addon (double-click)", "x": 1656, "y": 403, "button": 1}
+{"t": 14.279, "event": "open FreeCADMCP (double-click)", "x": 1656, "y": 403, "button": 1}
+{"t": 17.183, "event": "select InitGui.py", "x": 2030, "y": 403, "button": 1}
+{"t": 22.213, "event": "Back: to addon", "x": 1371, "y": 291, "button": 1}
+{"t": 25.791, "event": "FreeCAD: View menu", "x": 211, "y": 36, "button": 1}
+{"t": 27.194, "event": "View: Panels"}
+{"t": 29.081, "event": "Panels: Python Console", "x": 800, "y": 1162, "button": 1}
+{"t": 32.291, "event": "console: click", "x": 900, "y": 1650, "button": 1}
+{"t": 33.007, "event": "console: typed print line", "text": "print(App.getUserAppDataDir())"}
+{"t": 35.034, "event": "console: Enter", "keys": "Return"}
+{"t": 39.418, "event": "console: select the printed folder", "x": 20, "y": 1615, "button": 1}
+{"t": 40.438, "event": "console: select the printed folder: released", "x": 553, "y": 1615, "button": 1}
+{"t": 41.052, "event": "console: copy", "keys": "ctrl+c"}
+{"t": 42.499, "event": "switch to the file manager"}
+{"t": 44.922, "event": "address bar", "x": 2203, "y": 291, "button": 1}
+{"t": 46.267, "event": "address bar: paste", "keys": "ctrl+v"}
+{"t": 47.715, "event": "address bar: Enter", "keys": "Return"}
+{"t": 50.933, "event": "new folder", "keys": "ctrl+shift+n"}
+{"t": 52.797, "event": "new folder: typed Mod", "text": "Mod"}
+{"t": 53.637, "event": "new folder: OK", "keys": "Return"}
+{"t": 57.388, "event": "Back: to addon again", "x": 1371, "y": 291, "button": 1}
+{"t": 60.166, "event": "select FreeCADMCP", "x": 1656, "y": 403, "button": 1}
+{"t": 60.873, "event": "copy FreeCADMCP", "keys": "ctrl+c"}
+{"t": 63.121, "event": "Forward: to v1-1", "x": 1515, "y": 291, "button": 1}
+{"t": 65.905, "event": "open Mod (double-click)", "x": 1843, "y": 403, "button": 1}
+{"t": 67.823, "event": "paste FreeCADMCP into Mod", "keys": "ctrl+v"}
+{"t": 71.578, "event": "switch to FreeCAD"}
+{"t": 73.896, "event": "FreeCAD: File menu", "x": 45, "y": 36, "button": 1}
+{"t": 75.764, "event": "File: Exit", "x": 79, "y": 816, "button": 1}
+{"t": 79.482, "event": "FreeCAD: start again"}
+{"t": 82.374, "event": "FreeCAD: window back"}
+{"t": 89.204, "event": "workbench list", "x": 677, "y": 88, "button": 1}
+{"t": 92.232, "event": "workbench: MCP Addon", "x": 629, "y": 218, "button": 1}
+{"t": 95.674, "event": "hover: Auto-Start Server"}
+{"t": 98.618, "event": "Start RPC Server", "x": 126, "y": 218, "button": 1}
+{"t": 108.722, "event": "recording stopped"}

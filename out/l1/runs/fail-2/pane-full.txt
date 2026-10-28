@@ -1,0 +1,36 @@
+  running code and checking status. So I built
+  it in a separate headless FreeCAD process
+  instead, as a Part::Box with Length 5, Width
+  20 and Height 60. FreeCAD reports the solid
+  as valid, with a bounding box of 5 × 20 ×
+  60 mm.
+
+  That document was never saved, so nothing
+  will show up in your FreeCAD window. If you
+  want it there, check that the FreeCAD RPC
+  server is running and I'll try again. I can
+  also save it as an .FCStd file.
+
+✻ Churned for 13s · done 9:56 PM
+
+❯ Try again.
+
+  Called freecad 3 times
+
+● The block is now in your open FreeCAD
+  session, in a document called Block. It's a
+  Part::Box measuring 5 × 20 × 60 mm.
+
+  Its volume is 6,000 mm³ (6 cm³). I read that
+  from the shape in the open document, and
+  FreeCAD reports the solid as valid.
+
+  The document hasn't been saved to disk. I
+  can save it as an .FCStd file if you'd like.
+
+✻ Crunched for 6s · done 9:56 PM
+
+──────────────────────────────────────────────
+❯ save it as an .FCStd file
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

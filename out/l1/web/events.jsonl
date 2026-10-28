@@ -1,0 +1,16 @@
+{"t": 0.073, "event": "recording started: Firefox"}
+{"t": 2.332, "event": "address bar", "x": 900, "y": 145, "button": 1}
+{"t": 3.049, "event": "typed: freecad.org/downloads.php", "text": "freecad.org/downloads.php"}
+{"t": 4.697, "event": "freecad.org: Enter", "keys": "Return"}
+{"t": 12.824, "event": "hover: Current stable version"}
+{"t": 16.935, "event": "hover: Windows"}
+{"t": 19.024, "event": "hover: Mac"}
+{"t": 21.119, "event": "hover: Linux"}
+{"t": 25.365, "event": "address bar 2", "x": 900, "y": 145, "button": 1}
+{"t": 26.082, "event": "typed: github tag page", "text": "github.com/neka-nat/freecad-mcp/tree/v0.1.28"}
+{"t": 28.308, "event": "github: Enter", "keys": "Return"}
+{"t": 37.473, "event": "hover: tag v0.1.28"}
+{"t": 42.244, "event": "Code button", "x": 1924, "y": 743, "button": 1}
+{"t": 46.13, "event": "Download ZIP", "x": 1407, "y": 1228, "button": 1}
+{"t": 51.85, "event": "download panel"}
+{"t": 55.48, "event": "recording stopped"}

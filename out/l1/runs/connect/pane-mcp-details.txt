@@ -1,0 +1,36 @@
+ ▝▝   ▝▝   ~/hook
+
+▎ Auto mode is now Claude Code's default
+▎ permission mode.
+▎ Auto mode lets Claude handle permission
+▎ prompts automatically. Claude checks each
+▎ tool call for risky actions and prompt
+▎ injection before executing, runs the ones
+▎ it assesses as lower-risk, and blocks the
+▎ rest.
+▎ https://code.claude.com/docs/en/permission-
+▎ modes
+  1 more notice hidden
+ tmux detected · scroll with PgUp/PgDn · o… ▔
+   Freecad MCP Server
+
+   Status:           ✔ connected
+   Command:          python3 /lab/proxy/mc
+                     p_log_proxy.py --log
+                     /lab/out/l1/runs/conn
+                     ect/transcript.jsonl
+                     --png-dir /lab/out/l1
+                     /runs/connect -- uvx
+                     freecad-mcp@0.1.28
+   Protocol:         2026-07-28
+   Config location:  /home/maker/.claude.j
+                     son
+   Capabilities: tools · prompts
+   Tools: 17 tools
+
+   ❯ 1. View tools
+     2. Reconnect
+     3. Disable
+
+   ↑/↓ to navigate · Enter to select · Esc
+   to back

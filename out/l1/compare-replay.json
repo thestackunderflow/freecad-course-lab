@@ -1,0 +1,68 @@
+{
+ "same": true,
+ "differences": [],
+ "rows": {
+  "volume": {
+   "hand": 6000.0,
+   "claude": 6000.0,
+   "expected": 6000.0,
+   "ok": true
+  },
+  "size": {
+   "hand": [
+    5.0,
+    20.0,
+    60.0
+   ],
+   "claude": [
+    5.0,
+    20.0,
+    60.0
+   ],
+   "ok": true
+  },
+  "up": {
+   "hand": [
+    0.0,
+    60.0
+   ],
+   "claude": [
+    0.0,
+    60.0
+   ],
+   "ok": true
+  },
+  "position": {
+   "hand": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "claude": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ok": true
+  },
+  "valid": {
+   "hand": true,
+   "claude": true,
+   "ok": true
+  }
+ },
+ "documents": {
+  "hand": "hand.FCStd",
+  "claude": "replay.FCStd"
+ },
+ "names": {
+  "hand": [
+   "Box",
+   "Cube"
+  ],
+  "claude": [
+   "Box",
+   "Box"
+  ]
+ }
+}

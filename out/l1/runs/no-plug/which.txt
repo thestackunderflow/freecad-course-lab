@@ -1,0 +1,2 @@
+/opt/freecad/usr/bin/freecad
+/opt/freecad/usr/bin/freecadcmd

@@ -1,0 +1,12 @@
+[
+ {
+  "call_seq": 18,
+  "reply_seq": 19,
+  "name": "list_documents",
+  "arguments": {},
+  "isError": false,
+  "text": "[\n  \"Unnamed\"\n]",
+  "images": [],
+  "seconds": 0.011
+ }
+]

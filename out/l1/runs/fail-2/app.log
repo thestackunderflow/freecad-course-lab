@@ -1,0 +1,30 @@
+MCP RPC: GUI task raised RuntimeError: Internal C++ object (PySide6.QtWidgets.QTreeWidgetItem) already deleted.
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 12, in <module>
+RuntimeError: Internal C++ object (PySide6.QtWidgets.QTreeWidgetItem) already deleted.
+Error executing Python code: RuntimeError: Internal C++ object (PySide6.QtWidgets.QTreeWidgetItem) already deleted.
+--- code ---
+import FreeCAD, FreeCADGui
+from PySide import QtCore, QtWidgets
+mw = FreeCADGui.getMainWindow()
+target = FreeCAD.getDocument('Block').getObject('Box').Label
+found = None
+for tree in mw.findChildren(QtWidgets.QTreeWidget):
+    if found or not tree.isVisible():
+        continue
+    items = tree.findItems(target, QtCore.Qt.MatchExactly | QtCore.Qt.MatchRecursive, 0)
+    items = [i for i in items if i.parent() is not None] or items   # an object row, not a document row of the same name
+    for item in items:
+        r = tree.visualItemRect(item)
+        g = tree.viewport().mapToGlobal(r.center())
+        x0 = tree.viewport().mapToGlobal(r.topLeft()).x()
+        k = tree.devicePixelRatioF()
+        found = (int((x0 + 48 + tree.fontMetrics().horizontalAdvance(target) // 2) * k), int(g.y() * k))
+
+...(truncated)
+--- end ---

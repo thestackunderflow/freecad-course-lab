@@ -1,0 +1,7 @@
+[Parent 22, Main Thread] WARNING: Failed to create DBus proxy for org.a11y.Bus: Failed to execute child process “dbus-launch” (No such file or directory)
+: 'glib warning', file checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:236
+
+** (firefox:22): WARNING **: 21:15:33.877: Failed to create DBus proxy for org.a11y.Bus: Failed to execute child process “dbus-launch” (No such file or directory)
+
+[WARN  glean_core::core] failed to clear internal client info storage: An Rkv error occurred: key/value pair not found
+[WARN  glean_core::core] failed to clear internal client info storage: An Rkv error occurred: key/value pair not found

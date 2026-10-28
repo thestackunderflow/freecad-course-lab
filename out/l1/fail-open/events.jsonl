@@ -1,0 +1,12 @@
+{"t": 0.063, "event": "recording started: Claude Code already open (left), a second terminal (right)"}
+{"t": 1.617, "event": "t2: mcp add typed", "text": "claude mcp add --scope user freecad -- uvx freecad-mcp@0.1.28"}
+{"t": 4.415, "event": "t2: mcp add typed: Enter", "keys": "Return"}
+{"t": 5.038, "event": "t2: mcp add done"}
+{"t": 7.624, "event": "back to Claude Code"}
+{"t": 8.771, "event": "cc: /mcp Enter"}
+{"t": 9.083, "event": "cc: no MCP servers"}
+{"t": 15.363, "event": "cc: /exit"}
+{"t": 18.662, "event": "cc: claude again"}
+{"t": 23.423, "event": "cc: /mcp Enter again"}
+{"t": 23.431, "event": "cc: freecad listed"}
+{"t": 28.453, "event": "recording stopped"}

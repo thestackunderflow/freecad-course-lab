@@ -1,0 +1,36 @@
+                               idth":20,"Heigh
+                               t":60}, include
+                               _screenshot:
+                               false)
+  ⎿  Object 'Box' created successfully
+  ⎿  Allowed by auto mode classifier
+
+● freecad - execute_code (MCP)(code: "doc =
+                              FreeCAD.getDocum
+                              ent(\"Block\")\n
+                              doc.recompute()\
+                              nprint(doc.getOb
+                              ject(\"Box\").Sh
+                              ape.Volume)",
+                              include_screensh
+                              ot: false)
+  ⎿  Code executed successfully: Python
+     code executed successfully.
+     Output: 6000.0
+
+  ⎿  Allowed by auto mode classifier
+
+            09:39 PM claude-sonnet-5-5
+● I made the block in a new FreeCAD document
+  called "Block". It's a Part::Box that is 5
+  mm × 20 mm × 60 mm.
+
+  Its volume is 6,000 mm³, which is 6 cm³.
+  That's the value FreeCAD reports for the
+  shape, and it matches 5 × 20 × 60.
+
+✻ Sautéed for 12s · done 9:39 PM
+
+──────────────────────────────────────────────
+  Showing detailed transcript · ctrl+o…verbose
+

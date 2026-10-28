@@ -1,0 +1,36 @@
+
+
+❯ Make a block 5 by 20 by 60 millimetres in
+  FreeCAD, then tell me its volume.
+
+  Called freecad 3 times
+
+● I made the block in a new FreeCAD document
+  called "Block". It's a Part::Box that is 5
+  mm × 20 mm × 60 mm.
+
+  Its volume is 6,000 mm³, which is 6 cm³.
+  That's the value FreeCAD reports for the
+  shape, and it matches 5 × 20 × 60.
+
+✻ Sautéed for 12s · done 9:39 PM
+
+❯ Now use Python to list the objects in that
+  document.
+
+  Called freecad
+
+● The "Block" document holds one object:
+
+  ┌──────┬───────┬───────────┐
+  │ Name │ Label │   Type    │
+  ├──────┼───────┼───────────┤
+  │ Box  │ Box   │ Part::Box │
+  └──────┴───────┴───────────┘
+
+✻ Cogitated for 3s · done 9:46 PM
+
+──────────────────────────────────────────────
+❯ Save it as a FreeCAD file
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

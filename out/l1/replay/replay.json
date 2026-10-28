@@ -1,0 +1,36 @@
+{
+ "calls": 4,
+ "names": [
+  "create_document",
+  "create_object",
+  "execute_code",
+  "execute_code"
+ ],
+ "errors": 0,
+ "rows": [
+  {
+   "logged_seq": 18,
+   "name": "create_document",
+   "isError": false,
+   "text": "Document 'Block' created successfully"
+  },
+  {
+   "logged_seq": 20,
+   "name": "create_object",
+   "isError": false,
+   "text": "Object 'Box' created successfully"
+  },
+  {
+   "logged_seq": 22,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: 6000.0\n"
+  },
+  {
+   "logged_seq": 24,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: Box Box Part::Box\n"
+  }
+ ]
+}

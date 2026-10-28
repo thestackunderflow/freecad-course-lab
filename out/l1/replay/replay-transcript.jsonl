@@ -1,0 +1,24 @@
+{"t": "2026-10-28T21:50:03.262+00:00", "seq": 1, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-06-18", "capabilities": {}, "clientInfo": {"name": "solidcraft-course-lab", "version": "1"}}}}
+{"t": "2026-10-28T21:50:04.281+00:00", "seq": 2, "dir": "server-stderr", "msg": "Downloading pydantic-core (2.1MiB)"}
+{"t": "2026-10-28T21:50:04.298+00:00", "seq": 3, "dir": "server-stderr", "msg": "Downloading cryptography (4.5MiB)"}
+{"t": "2026-10-28T21:50:04.298+00:00", "seq": 4, "dir": "server-stderr", "msg": "Downloading pygments (1.2MiB)"}
+{"t": "2026-10-28T21:50:05.278+00:00", "seq": 5, "dir": "server-stderr", "msg": " Downloaded pygments"}
+{"t": "2026-10-28T21:50:05.531+00:00", "seq": 6, "dir": "server-stderr", "msg": " Downloaded pydantic-core"}
+{"t": "2026-10-28T21:50:05.841+00:00", "seq": 7, "dir": "server-stderr", "msg": " Downloaded cryptography"}
+{"t": "2026-10-28T21:50:05.860+00:00", "seq": 8, "dir": "server-stderr", "msg": "Installed 39 packages in 18ms"}
+{"t": "2026-10-28T21:50:06.731+00:00", "seq": 9, "dir": "server-stderr", "msg": "2026-10-28 21:50:06,731 - FreeCADMCPserver - INFO - Only text feedback: False"}
+{"t": "2026-10-28T21:50:06.732+00:00", "seq": 10, "dir": "server-stderr", "msg": "2026-10-28 21:50:06,731 - FreeCADMCPserver - INFO - Connecting to FreeCAD RPC server at: localhost"}
+{"t": "2026-10-28T21:50:06.754+00:00", "seq": 11, "dir": "server-stderr", "msg": "2026-10-28 21:50:06,754 - FreeCADMCPserver - INFO - FreeCADMCP server starting up"}
+{"t": "2026-10-28T21:50:06.757+00:00", "seq": 12, "dir": "server-stderr", "msg": "2026-10-28 21:50:06,757 - FreeCADMCPserver - INFO - Successfully connected to FreeCAD on startup"}
+{"t": "2026-10-28T21:50:06.759+00:00", "seq": 13, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 1, "result": {"capabilities": {"prompts": {"listChanged": false}, "resources": {"listChanged": false, "subscribe": false}, "tools": {"listChanged": false}}, "instructions": "FreeCAD integration through the Model Context Protocol", "protocolVersion": "2025-06-18", "serverInfo": {"name": "FreeCADMCP", "version": ""}}}}
+{"t": "2026-10-28T21:50:06.759+00:00", "seq": 14, "dir": "client->server", "msg": {"jsonrpc": "2.0", "method": "notifications/initialized"}}
+{"t": "2026-10-28T21:50:06.759+00:00", "seq": 15, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "create_document", "arguments": {"name": "Block"}}}}
+{"t": "2026-10-28T21:50:06.966+00:00", "seq": 16, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 2, "result": {"content": [{"text": "Document 'Block' created successfully", "type": "text"}], "isError": false}}}
+{"t": "2026-10-28T21:50:06.967+00:00", "seq": 17, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "create_object", "arguments": {"doc_name": "Block", "obj_type": "Part::Box", "obj_name": "Box", "obj_properties": {"Length": 5, "Width": 20, "Height": 60}, "include_screenshot": false}}}}
+{"t": "2026-10-28T21:50:07.112+00:00", "seq": 18, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 3, "result": {"content": [{"text": "Object 'Box' created successfully", "type": "text"}], "isError": false}}}
+{"t": "2026-10-28T21:50:07.113+00:00", "seq": 19, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "execute_code", "arguments": {"code": "doc = FreeCAD.getDocument(\"Block\")\ndoc.recompute()\nprint(doc.getObject(\"Box\").Shape.Volume)", "include_screenshot": false}}}}
+{"t": "2026-10-28T21:50:07.199+00:00", "seq": 20, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 4, "result": {"content": [{"text": "Code executed successfully: Python code executed successfully.\nOutput: 6000.0\n", "type": "text"}], "isError": false}}}
+{"t": "2026-10-28T21:50:07.201+00:00", "seq": 21, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 5, "method": "tools/call", "params": {"name": "execute_code", "arguments": {"code": "doc = FreeCAD.getDocument(\"Block\")\nfor o in doc.Objects:\n    print(o.Name, o.Label, o.TypeId)", "include_screenshot": false}}}}
+{"t": "2026-10-28T21:50:07.229+00:00", "seq": 22, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 5, "result": {"content": [{"text": "Code executed successfully: Python code executed successfully.\nOutput: Box Box Part::Box\n", "type": "text"}], "isError": false}}}
+{"t": "2026-10-28T21:50:07.230+00:00", "seq": 23, "dir": "server-stderr", "msg": "2026-10-28 21:50:07,230 - FreeCADMCPserver - INFO - Disconnecting from FreeCAD on shutdown"}
+{"t": "2026-10-28T21:50:07.231+00:00", "seq": 24, "dir": "server-stderr", "msg": "2026-10-28 21:50:07,230 - FreeCADMCPserver - INFO - FreeCADMCP server shut down"}

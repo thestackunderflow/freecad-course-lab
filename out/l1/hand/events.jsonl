@@ -1,0 +1,28 @@
+{"t": 0.037, "event": "recording started: FreeCAD, start page, console open"}
+{"t": 3.081, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 4.505, "event": "File: New Document", "x": 143, "y": 76, "button": 1}
+{"t": 7.681, "event": "workbench list", "x": 677, "y": 88, "button": 1}
+{"t": 10.058, "event": "workbench: Part", "x": 590, "y": 377, "button": 1}
+{"t": 13.13, "event": "hover: Cube"}
+{"t": 15.019, "event": "Cube button", "x": 49, "y": 228, "button": 1}
+{"t": 18.986, "event": "tree: Cube", "x": 144, "y": 341, "button": 1}
+{"t": 23.287, "event": "Property: Length", "x": 317, "y": 1099, "button": 1}
+{"t": 24.632, "event": "Length: typed 5", "text": "5"}
+{"t": 25.342, "event": "Length: Enter", "keys": "Return"}
+{"t": 27.844, "event": "Property: Width", "x": 317, "y": 1133, "button": 1}
+{"t": 29.19, "event": "Width: typed 20", "text": "20"}
+{"t": 30.001, "event": "Width: Enter", "keys": "Return"}
+{"t": 32.491, "event": "Property: Height", "x": 317, "y": 1167, "button": 1}
+{"t": 33.84, "event": "Height: typed 60", "text": "60"}
+{"t": 34.659, "event": "Height: Enter", "keys": "Return"}
+{"t": 38.144, "event": "Fit all", "x": 942, "y": 88, "button": 1}
+{"t": 43.053, "event": "tree: the block", "x": 144, "y": 341, "button": 1}
+{"t": 46.833, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 47.545, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 50.096, "event": "console: Enter", "keys": "Return"}
+{"t": 56.923, "event": "navigation cube: RIGHT", "x": 2794, "y": 418, "button": 1}
+{"t": 62.9, "event": "key 0: isometric", "keys": "0"}
+{"t": 67.941, "event": "workbench list 2", "x": 677, "y": 88, "button": 1}
+{"t": 70.196, "event": "workbench: MCP Addon", "x": 629, "y": 218, "button": 1}
+{"t": 73.753, "event": "Stop RPC Server", "x": 338, "y": 218, "button": 1}
+{"t": 78.443, "event": "recording stopped"}
