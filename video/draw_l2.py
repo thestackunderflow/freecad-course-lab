@@ -91,7 +91,8 @@ def card_paper():
     d.line((1980, 700, 1980, 300), fill=GREEN, width=14)
     d.polygon([(1950, 300), (2010, 300), (1980, 250)], fill=GREEN)
     text(d, (2020, 280), 'top edge', 64, GREEN, anchor='lm')
-    text(d, (2020, 360), 'decides which way is up', 52, GREY, R, anchor='lm')
+    text(d, (2020, 360), 'sets which way', 52, GREY, R, anchor='lm')
+    text(d, (2020, 430), 'is up', 52, GREY, R, anchor='lm')
     chip(d, (W / 2, 1270), 'flat lines · no thickness yet', 64, anchor='m')
     save(im, 'card-paper.png')
 
@@ -140,7 +141,7 @@ def card_joutline_steps():
             kx, ky = ox + 13 * s, oy - 5 * s
             d.line((kx, ky, kx, ky + 40), fill=AMBER, width=10)
             d.ellipse((kx - 34, ky + 40, kx + 34, ky + 108), outline=AMBER, width=12)
-            chip(d, (2440, 1250), 'a J facing the other way', 60, anchor='r')
+        chip(d, (2440, 200), 'a J facing the other way', 60, anchor='r')
         save(im, f'card-joutline-{step}.png')
 
 

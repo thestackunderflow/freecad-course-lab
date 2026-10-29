@@ -50,7 +50,7 @@ def dashed(d, y, x0, x1, col=AMBER, w=8):
         d.line((x, y, min(x + 20, x1), y), fill=col, width=w)
 
 
-SCV = ('sc2-claude-after.png', (1990, 850, 2500, 1700), 925)   # tighter crops for the 9:16 Short
+SCV = ('sc2-claude-after.png', (1880, 560, 2620, 1760), 925)   # tighter crops for the 9:16 Short
 FCV = ('run1-part.png', (1920, 220, 2500, 1420), 1404)
 
 
@@ -166,6 +166,38 @@ def cards2():
     chip(d, (1280, 1060), 'Coincident = two ends joined: 8 of them, nothing else', 56, RED)
     chip(d, (1280, 1180), 'no sizes, no level or upright rules', 56, INK)
     im.save(os.path.join(OUT, 'card-code.png')); print('card-code.png')
+    # cut 3: the cause as two sheets (the 1:07 top-edge arrow): FreeCAD's XZ, top edge up; SolidCraft's plug, top edge down
+    im = Image.new('RGB', (2560, 1440), BG)
+    d = ImageDraw.Draw(im)
+    d.text((1280, 70), 'Same XZ sheet, two plugs', font=font(B, 80), fill=INK, anchor='ma')
+    J = [(0, 0), (25, 0), (25, 10), (20, 10), (20, 5), (5, 5), (5, 60), (0, 60)]
+    for k, (x0, up, col, lab) in enumerate(((330, True, GREEN, 'FreeCAD (run 1): top edge up'),
+                                           (1430, False, RED, "SolidCraft's plug: top edge down"))):
+        d.rectangle((x0 + 18, 238, x0 + 818, 1138), fill=(200, 205, 214))
+        d.rectangle((x0, 220, x0 + 800, 1120), fill=(255, 255, 255), outline=GREY, width=5)
+        s, ox = 12, x0 + 250
+        if up:
+            pts = [(ox + x * s, 1060 - z * s) for x, z in J]
+            ay0, ay1 = 700, 300
+        else:
+            pts = [(ox + x * s, 280 + z * s) for x, z in J]
+            ay0, ay1 = 640, 1040
+        d.line(pts + [pts[0]], fill=INK, width=10)
+        ax = x0 + 700
+        d.line((ax, ay0, ax, ay1), fill=col, width=14)
+        tip = (ay1 - 50) if up else (ay1 + 50)
+        d.polygon([(ax - 30, ay1), (ax + 30, ay1), (ax, tip)], fill=col)
+        d.text((ax, tip - 60 if up else tip + 10), 'top', font=font(B, 52), fill=col, anchor='ma')
+        chip(d, (x0 + 400, 1180), lab, 52, col)
+    im.save(os.path.join(OUT, 'card-sheets.png')); print('card-sheets.png')
+    # cut 3: the no-AI replay's own window (out/l2/replay/after.png)
+    rep = Image.open(os.path.join(LAB, 'out', 'l2', 'replay', 'after.png')).convert('RGB').crop((1150, 0, 2880, 1800))
+    im = Image.new('RGB', (2560, 1440), BG)
+    d = ImageDraw.Draw(im)
+    p2 = fit(rep, 1600, 1180)
+    im.paste(p2, (1280 - p2.width // 2, 40))
+    chip(d, (1280, 1250), "no-AI replay of run 1's calls in a fresh FreeCAD: 8,500 mm³, the same 8 pins", 52, GREEN)
+    im.save(os.path.join(OUT, 'card-replay.png')); print('card-replay.png')
     # the comparison rows over the two real parts (built in 3 steps)
     rows = [('volume', '8,500 mm³', '8,500 mm³', True), ('size', '25 x 20 x 60', '25 x 20 x 60', True),
             ('height', '0 to 60', '0 to 60', True), ('lowest corner', '0, -20, 0', '0, -20, 0', True),
@@ -181,14 +213,14 @@ def cards2():
         im.paste(hand, (1180 - hand.width // 2, 150)); im.paste(cl, (1980 - cl.width // 2, 150))
         chip(d, (1180, 590), 'by hand', 52, INK); chip(d, (1980, 590), 'Claude, run 1', 52, BLUE)
         for k, (name, a, b, ok) in enumerate(rows[:upto]):
-            y = 700 + k * 88
+            y = 705 + k * 70
             col = INK if ok else RED
             d.text((120, y), name, font=font(B if not ok else R, 58), fill=GREY if ok else RED)
             d.text((1180, y), a, font=font(B, 58), fill=INK, anchor='ma')
             d.text((1980, y), b, font=font(B, 58), fill=col, anchor='ma')
             d.text((2420, y), '✓' if ok else '✗', font=font(B, 66), fill=GREEN if ok else RED, anchor='ma')
         if n == 3:
-            chip(d, (1280, 1405 - 80), PIN_NOTE, 40, GREY)
+            chip(d, (1280, 1300), PIN_NOTE, 48, GREY)
             chip(d, (2150, 150), 'run 2 (fresh): the same, 8 pins', 40, BLUE)
         im.save(os.path.join(OUT, f'card-compare-{n}.png')); print(f'card-compare-{n}.png')
 
