@@ -144,7 +144,7 @@ def cards():
     im, d = canvas(); header(d, "FreeCAD's own numbers are the proof"); workshop(d, socket_on=True, plug='in')
     chip(d, (140, 1200), 'by hand: 6,000 mm³', 60, PAPER, INK); chip(d, (1500, 1200), 'Claude: 6,000 mm³', 60, PAPER, BLUE)
     save(im, 'card-recap-4.png')
-    for n, extra in ((1, None), (2, 'A like helps other makers find this')):
+    for n, extra in ((1, None), (2, 'A like helps other developers find it')):
         im, d = canvas()
         text(d, (W / 2, 420), 'FreeCAD + Claude Course', 110, anchor='mm')
         text(d, (W / 2, 590), 'lesson 1: connect Claude, make a first part', 72, GREY, R, anchor='mm')
