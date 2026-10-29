@@ -19,7 +19,13 @@ footage is staged or drawn; sped-up parts are labelled in the video.
 | uv | 0.13.6 | SHA-256 of the release tarball |
 | Firefox | 158.0.1 (Mozilla's APT repository) | apt pin |
 
-Image: `docker build -t fcc-app:1.1.4-0.1.28 -f docker/fcc.Dockerfile docker` (FROM the screen-lab kit's FreeCAD image).
+Images, built in this order (the first two are the screen-lab kit's own Dockerfiles, vendored unchanged in
+`vendor/screenlab-docker/`):
+```
+docker build -t screen-lab-base:1 -f vendor/screenlab-docker/base.Dockerfile vendor/screenlab-docker
+docker build -t screen-lab-freecad:1.1.4 -f vendor/screenlab-docker/freecad.Dockerfile vendor/screenlab-docker
+docker build -t fcc-app:1.1.4-0.1.28 -f docker/fcc.Dockerfile docker
+```
 The kit's recording library is vendored in `vendor/screenlab-lib/` (kit commit 2855535, unchanged).
 
 ## Lesson 1 questions and where the answers are
