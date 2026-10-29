@@ -1,0 +1,91 @@
+{"t": 0.044, "event": "recording started: FreeCAD, start page, Part workbench"}
+{"t": 3.028, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 4.422, "event": "File: New Document", "x": 143, "y": 76, "button": 1}
+{"t": 7.657, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 10.273, "event": "hover: Part Design"}
+{"t": 11.733, "event": "workbench: Part Design", "x": 630, "y": 338, "button": 1}
+{"t": 15.142, "event": "hover: New Body"}
+{"t": 17.302, "event": "New Body", "x": 510, "y": 158, "button": 1}
+{"t": 20.234, "event": "hover: tree Body"}
+{"t": 22.427, "event": "tree: open Origin", "x": 54, "y": 374, "button": 1}
+{"t": 26.301, "event": "tree: close Origin", "x": 54, "y": 374, "button": 1}
+{"t": 28.727, "event": "hover: New Sketch"}
+{"t": 30.588, "event": "New Sketch", "x": 570, "y": 158, "button": 1}
+{"t": 34.54, "event": "hover: XY-plane"}
+{"t": 37.176, "event": "hover: XZ-plane"}
+{"t": 39.812, "event": "hover: YZ-plane"}
+{"t": 42.674, "event": "attachment: XZ-plane", "x": 2340, "y": 774, "button": 1}
+{"t": 45.656, "event": "attachment: OK", "x": 2430, "y": 616, "button": 1}
+{"t": 51.098, "event": "pan: middle drag", "x": 1500, "y": 900, "button": 2}
+{"t": 52.114, "event": "pan: middle drag: released", "x": 1350, "y": 1470, "button": 2}
+{"t": 54.751, "event": "hover: Polyline"}
+{"t": 56.605, "event": "Polyline", "x": 316, "y": 228, "button": 1}
+{"t": 59.806, "event": "polyline: origin", "x": 1529, "y": 1558, "button": 1}
+{"t": 63.041, "event": "polyline: corner 1 (right)", "x": 2029, "y": 1558, "button": 1}
+{"t": 66.234, "event": "polyline: corner 2 (up)", "x": 2029, "y": 1343, "button": 1}
+{"t": 69.514, "event": "polyline: corner 3 (left)", "x": 1921, "y": 1343, "button": 1}
+{"t": 72.714, "event": "polyline: corner 4 (down)", "x": 1921, "y": 1450, "button": 1}
+{"t": 75.943, "event": "polyline: corner 5 (left)", "x": 1636, "y": 1450, "button": 1}
+{"t": 79.19, "event": "polyline: corner 6 (up)", "x": 1636, "y": 575, "button": 1}
+{"t": 82.428, "event": "polyline: corner 7 (left)", "x": 1529, "y": 575, "button": 1}
+{"t": 85.671, "event": "polyline: close on the first point", "x": 1529, "y": 1558, "button": 1}
+{"t": 86.981, "event": "Esc: tool off", "keys": "Escape"}
+{"t": 90.507, "event": "hover: degrees of freedom"}
+{"t": 95.064, "event": "drag free corner: down"}
+{"t": 96.676, "event": "drag free corner: stretched"}
+{"t": 100.209, "event": "drag free corner: released"}
+{"t": 102.224, "event": "key D: Dimension", "keys": "d"}
+{"t": 105.841, "event": "dimension bottom 25: pick", "x": 1780, "y": 1558, "button": 1}
+{"t": 108.403, "event": "dimension bottom 25: place", "x": 1780, "y": 1638, "button": 1}
+{"t": 110.328, "event": "dimension bottom 25: typed 25", "text": "25"}
+{"t": 111.157, "event": "dimension bottom 25: Enter", "keys": "Return"}
+{"t": 116.474, "event": "dimension lip height 10: pick", "x": 2030, "y": 1451, "button": 1}
+{"t": 119.036, "event": "dimension lip height 10: place", "x": 2120, "y": 1451, "button": 1}
+{"t": 120.945, "event": "dimension lip height 10: typed 10", "text": "10"}
+{"t": 121.774, "event": "dimension lip height 10: Enter", "keys": "Return"}
+{"t": 126.618, "event": "dimension lip width 5: pick", "x": 1976, "y": 1358, "button": 1}
+{"t": 129.075, "event": "dimension lip width 5: place", "x": 1976, "y": 1288, "button": 1}
+{"t": 130.991, "event": "dimension lip width 5: typed 5", "text": "5"}
+{"t": 131.715, "event": "dimension lip width 5: Enter", "keys": "Return"}
+{"t": 136.503, "event": "dimension lip inside 5: pick", "x": 1930, "y": 1404, "button": 1}
+{"t": 139.006, "event": "dimension lip inside 5: place", "x": 1850, "y": 1404, "button": 1}
+{"t": 140.918, "event": "dimension lip inside 5: typed 5", "text": "5"}
+{"t": 141.636, "event": "dimension lip inside 5: Enter", "keys": "Return"}
+{"t": 146.431, "event": "dimension back plate 60: pick", "x": 1529, "y": 578, "button": 1}
+{"t": 148.712, "event": "dimension back plate 60: pick 2", "x": 1529, "y": 1558, "button": 1}
+{"t": 151.136, "event": "dimension back plate 60: place", "x": 1419, "y": 838, "button": 1}
+{"t": 153.046, "event": "dimension back plate 60: typed 60", "text": "60"}
+{"t": 153.875, "event": "dimension back plate 60: Enter", "keys": "Return"}
+{"t": 158.705, "event": "dimension back plate thickness 5: pick", "x": 1583, "y": 357, "button": 1}
+{"t": 161.139, "event": "dimension back plate thickness 5: place", "x": 1583, "y": 427, "button": 1}
+{"t": 163.05, "event": "dimension back plate thickness 5: typed 5", "text": "5"}
+{"t": 163.768, "event": "dimension back plate thickness 5: Enter", "keys": "Return"}
+{"t": 166.607, "event": "Esc: Dimension off"}
+{"t": 168.451, "event": "hover: Fully constrained"}
+{"t": 173.52, "event": "drag pinned corner: down"}
+{"t": 175.024, "event": "drag pinned corner: pulled"}
+{"t": 177.058, "event": "drag pinned corner: released"}
+{"t": 179.175, "event": "Close", "x": 2528, "y": 616, "button": 1}
+{"t": 183.835, "event": "tree: Sketch", "x": 180, "y": 406, "button": 1}
+{"t": 186.22, "event": "hover: Pad"}
+{"t": 188.131, "event": "Pad", "x": 48, "y": 228, "button": 1}
+{"t": 191.899, "event": "Pad: typed 20", "text": "20"}
+{"t": 196.819, "event": "Pad: OK", "x": 2428, "y": 616, "button": 1}
+{"t": 199.942, "event": "key 0: isometric", "keys": "0"}
+{"t": 205.155, "event": "navigation cube: RIGHT", "x": 2794, "y": 418, "button": 1}
+{"t": 209.545, "event": "key 0: isometric again", "keys": "0"}
+{"t": 214.109, "event": "tree: open Pad", "x": 54, "y": 406, "button": 1}
+{"t": 216.488, "event": "hover: tree Body"}
+{"t": 218.524, "event": "hover: tree Origin"}
+{"t": 220.525, "event": "hover: tree Pad"}
+{"t": 222.534, "event": "hover: tree Sketch"}
+{"t": 225.913, "event": "View menu", "x": 211, "y": 36, "button": 1}
+{"t": 227.458, "event": "View: Panels"}
+{"t": 229.911, "event": "Panels: Python console", "x": 800, "y": 1124, "button": 1}
+{"t": 233.775, "event": "tree: Pad", "x": 164, "y": 406, "button": 1}
+{"t": 237.141, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 237.848, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 240.36, "event": "console: Enter", "keys": "Return"}
+{"t": 244.486, "event": "console: typed the height line", "text": "b = Gui.Selection.getSelection()[0].Shape.BoundBox; round(b.ZMin, 3), round(b.ZMax, 3)"}
+{"t": 248.182, "event": "console: Enter 2", "keys": "Return"}
+{"t": 253.331, "event": "recording stopped"}

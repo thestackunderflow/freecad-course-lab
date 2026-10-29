@@ -3,12 +3,14 @@
 # PyPI for uvx). The container gets this PC's Claude sign-in as one environment variable, read here from the Claude
 # Code credentials file into a temporary env file that is deleted when the run ends; nothing about it reaches the run
 # folder. Afterwards: the cost from Claude Code's own /cost line goes into the ledger, and the run folder is scrubbed.
-#   bash claude-run/run.sh RUN_NAME CAP_USD lab/take_X.sh      (the take writes out/l1/runs/RUN_NAME/)
+#   bash claude-run/run.sh RUN_NAME CAP_USD lab/take_X.sh      (the take writes out/$LESSON/runs/RUN_NAME/)
+#   LESSON=l2 (default l1) also picks the ledger prefix (fc2-) and, with BUDGET_MARK, the lesson's own GO line.
 set -euo pipefail
 RUN=$1; CAP=$2; TAKE=$3
 cd "$(dirname "$0")/.."
 LAB="$(pwd -W 2>/dev/null || pwd)"
-S=out/l1/runs/$RUN
+LESSON=${LESSON:-l1}; N=${LESSON#l}
+S=out/$LESSON/runs/$RUN
 LEDGER="${LEDGER:-$LAB/../freecad-course-BUDGET.tsv}"
 [ -e "$S/meta.json" ] && { echo "refusing to overwrite $S"; exit 3; }
 python claude-run/budget.py check "$LEDGER" "$CAP" || { echo "BUDGET STOP"; exit 2; }
@@ -21,7 +23,7 @@ open(sys.argv[1], 'w').write('CLAUDE_CODE_OAUTH_TOKEN=' + d['claudeAiOauth']['ac
 PY
 T0=$(date +%s)
 MSYS_NO_PATHCONV=1 docker run --rm --name "fcc-claude-$RUN" --hostname pc --shm-size 1g --memory 6g --user maker \
-  --env-file "$ENVF" -v "$LAB:/lab" -w /lab fcc-app:1.1.4-0.1.28 bash "/lab/$TAKE" "$RUN" > "$S/container.log" 2>&1 \
+  --env-file "$ENVF" -e LESSON="$LESSON" -v "$LAB:/lab" -w /lab fcc-app:1.1.4-0.1.28 bash "/lab/$TAKE" "$RUN" > "$S/container.log" 2>&1 \
   || echo "container exit $?"
 rm -f "$ENVF"
 COST=$(python - "$S" <<'PY'
@@ -33,6 +35,6 @@ print(m[0] if m else '')
 PY
 )
 echo "{\"run\": \"$RUN\", \"take\": \"$TAKE\", \"wall_s\": $(( $(date +%s) - T0 )), \"cost_usd\": \"$COST\", \"launch\": \"claude (no flags: Claude Code's own default mode and model)\"}" > "$S/meta.json"
-python claude-run/budget.py record "$LEDGER" "fc1-$RUN" "$COST" "$CAP" fc1-lesson1
+python claude-run/budget.py record "$LEDGER" "fc$N-$RUN" "$COST" "$CAP" "fc$N-lesson$N"
 python claude-run/scrub.py "$S"
 cat "$S/meta.json"

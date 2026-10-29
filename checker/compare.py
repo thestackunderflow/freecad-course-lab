@@ -9,8 +9,16 @@ import sys
 TOL = 1e-6
 
 
-def _one(m):
+def final_solids(m):
+    """The part itself: solids no other object is built from (a Part Design Body, not its Pad feature inside it;
+    lesson 1's plain block). Rows without an in_list (older measure files) all count."""
     s = m.get('solids') or []
+    top = [r for r in s if not r.get('in_list')]
+    return top or s
+
+
+def _one(m):
+    s = final_solids(m)
     if len(s) != 1:
         raise ValueError(f"{m.get('document')}: expected exactly one solid, found {len(s)}")
     return s[0]
@@ -35,8 +43,29 @@ def compare(hand, claude, expected=None, any_axis_order=False):
     rows['valid'] = {'hand': a['valid'], 'claude': b['valid'], 'ok': bool(a['valid'] and b['valid'])}
     diffs = [k for k, r in rows.items() if not r['ok']]
     return {'same': not diffs, 'differences': diffs, 'rows': rows,
+            'upright': {'hand': _upright(a), 'claude': _upright(b)},
+            'sketch': {'hand': _sketch(hand), 'claude': _sketch(claude)},
             'documents': {'hand': hand.get('document'), 'claude': claude.get('document')},
             'names': {'hand': [a['name'], a.get('label')], 'claude': [b['name'], b.get('label')]}}
+
+
+def _upright(s):
+    """Stands on the floor and rises: its lowest point at Z 0 (or above), its highest above that; and not mirrored:
+    the hook's lip on the +X side (its box starts at X 0 or more), as drawn on XZ."""
+    z0, z1 = s['z_range_mm']
+    x0 = (s.get('min_mm') or [0.0])[0]
+    return z0 >= -TOL and z1 > z0 and x0 >= -TOL
+
+
+def _sketch(m):
+    sk = m.get('sketches') or []
+    if not sk:
+        return None
+    k = sk[0]
+    sup = k.get('support') or []
+    subs = [s for s in (sup[0][1] if sup else []) if s]
+    return {'plane': (subs[0] if subs else sup[0][0]) if sup else None, 'constraints': k.get('constraints'),
+            'fully_constrained': k.get('fully_constrained'), 'up_vector': k.get('up_vector'), 'lines': k.get('geometry')}
 
 
 if __name__ == '__main__':
