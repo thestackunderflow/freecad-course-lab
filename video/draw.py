@@ -79,8 +79,8 @@ def workshop(d, socket_on=None, plug=None, steps=False):
         d.rectangle((x1, 885, x1 + (12 if plug == 'in' else 40), 905), fill=INK)
         text(d, (1170, 760), 'plug = MCP server', 60, BLUE, anchor='mm')
     if steps:
-        for k, s in enumerate(['1  FreeCAD', '2  the add-on', '3  uv', '4  the plug line']):
-            chip(d, (140 + k * 600, 1220), s, 56, PAPER, INK if k else BLUE)
+        for k, s in enumerate(['0  Claude Code', '1  FreeCAD', '2  the add-on', '3  uv', '4  the plug line']):
+            chip(d, (100 + k * 490, 1220), s, 50, PAPER, INK if k else BLUE)
 
 
 def save(im, name):
@@ -89,7 +89,18 @@ def save(im, name):
 
 
 def cards():
-    im, d = canvas(); header(d, "Claude can't reach inside FreeCAD by itself"); workshop(d, socket_on=False)
+    im, d = canvas(); header(d, "Claude can't reach inside FreeCAD by itself"); workshop(d)
+    save(im, 'card-map.png')
+    im, d = canvas(); header(d, "Claude can't reach inside FreeCAD by itself"); workshop(d)
+    d.rounded_rectangle((1000, 1100, 1450, 1340), radius=30, fill=BG, outline=GREY, width=6)
+    text(d, (1225, 1185), 'hidden copy', 56, GREY, anchor='mm')
+    text(d, (1225, 1270), 'of FreeCAD', 48, GREY, R, anchor='mm')
+    chip(d, (140, 1180), 'before setup: Claude used a hidden copy', 56, PAPER, GREY)
+    save(im, 'card-map-hidden.png')
+    im, d = canvas(); header(d, 'MCP: a shared language'); workshop(d, socket_on=True, plug='out')
+    chip(d, (W / 2, 1200), 'AI apps use it to talk to other programs', 60, PAPER, BLUE, anchor='m')
+    save(im, 'card-mcp.png')
+    im, d = canvas(); header(d, 'So FreeCAD gets a socket in its wall'); workshop(d, socket_on=False)
     save(im, 'card-socket-off.png')
     im, d = canvas(); header(d, 'A socket in the wall: the add-on'); workshop(d, socket_on=True)
     chip(d, (1560, 1200), 'this computer only', 60, PAPER, GREEN)
