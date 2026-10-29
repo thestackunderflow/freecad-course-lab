@@ -53,9 +53,27 @@ prompt's text is saved (`approval-N-M.txt`). The script never types anything els
 Every MCP JSON-RPC line between Claude Code and the plug is logged by `proxy/mcp_log_proxy.py` (wrapped around
 `uvx freecad-mcp@0.1.28` in the session's config); images in replies are saved as PNG files and shortened in the log.
 
-## Results
+## Lesson 1 results (28 Oct 2026)
 
-Filled in as the runs finish (see "Lesson 1 results" below).
+| Q | What happened (file) |
+|---|---|
+| Q0 no plug | Claude ran `which freecadcmd`, wrote a script and ran `freecadcmd` in its own terminal, saved `block.FCStd` in the project folder and said 6,000 mm³. Nothing appeared in the open FreeCAD window (`runs/no-plug/tool-uses.json`, `pane-full-after.txt`) |
+| Q1 web | Firefox films freecad.org ("Current stable version: 1.1.4") and the GitHub tag page; Download ZIP gives the same file as the pinned ZIP (SHA-256 matches, `web/zip-sha256.txt`). Playwright 1.63's browser is now Chrome for Testing (a testing banner), so Firefox from Mozilla's APT repository is used |
+| Q2 folders | Extract Here (file manager) gives `freecad-mcp-0.1.28/addon/FreeCADMCP/` (Init.py, InitGui.py, package.xml, rpc_server). `print(App.getUserAppDataDir())` = `/home/maker/.local/share/FreeCAD/v1-1/`, which holds Macro and SavedPreferencePacks only: no Mod (`addon/profile-before.txt`) |
+| Q3 socket | Workbench "MCP Addon", toolbar Start RPC Server / Stop RPC Server / Auto-Start Server / Remote Connections / Configure Allowed IPs / Set Auth Token. Start: status bar "RPC Server started at 127.0.0.1:9875 (PID n)." Stop: the status message is cleared at once (it never stays on screen); the console echoes the command |
+| Q4 installers | Claude Code's installer ends with a setup note (~/.local/bin not in PATH, run the echo line); after it and a new terminal, `claude --version` = 2.1.308. uv 0.13.6 installs into the same ~/.local/bin, so `uvx` is found at once: the planned "uvx not found in an old terminal" failure did not happen (`install/q4-*.txt`) |
+| Q5 connect | `claude mcp list` with an empty uv cache: Connected after 5.6 s. `/mcp`: freecad, 17 tools (`runs/connect/tools-list.json`). The server detail screen shows the logging wrapper's command line (the video skips it) |
+| Q6 first call | `list_documents` → `["Unnamed"]` in 11 ms; no permission prompt (Claude Code 2.1.308's default is auto mode) |
+| Q7 by hand | File > New Document, Part, Cube (Name Box, Label Cube), Property view Length 5 / Width 20 / Height 60, console `Gui.Selection.getSelection()[0].Shape.Volume` = 6000.0; freecadcmd: 6000.0, 5 x 20 x 60, Z 0..60 (`hand/measure.json`) |
+| Q8 Claude | create_document "Block" (Claude ignored the empty document we opened), create_object Part::Box 5/20/60, execute_code → "Output: 6000.0"; 12 s; "Allowed by auto mode classifier" under each call; no prompt. The new document's 3D view stayed an unfitted TOP view, so the block was not visible there (only the tree changed) (`runs/claude-1/`) |
+| Q9 proof | `compare.json`: hand vs Claude same volume, size, corner, height, validity. No-AI read of Claude's saved document over the plug: 6000.0, 5 x 20 x 60. Replay of Claude's 4 calls in a fresh FreeCAD: 0 errors, 6000.0 (`replay/`) |
+| Q10a socket off | `claude mcp list`: Connected. create_document / execute_code / get_rpc_status: "Error executing tool ..." (the plug's log: "Failed to connect to FreeCAD ([Errno 111] Connection refused)"). Claude then used execute_code_headless and said nothing would show in the window. After Start RPC Server and "Try again.": the block in the window, 6000.0; that create_object reply carried a picture of the 3D view (`runs/fail-2/`) |
+| Q10b already open | Claude Code started before the plug was added: `/mcp` → "No MCP servers configured."; `/exit`, `claude`: freecad, 17 tools (`fail-open/`) |
+| Q11 repaint | The window redraws with no input when the plug changes the document (`replay/repaint.json`) |
+| Q12 execute code | No prompt in auto mode; `/mcp` > View tools > execute_code: "Execute arbitrary Python code in FreeCAD." |
+| Q14 where | Claude's block: its own new document "Block", object Box at 0,0,0 |
+
+Cost: five Claude Code runs, $0.383 (`../freecad-course-BUDGET.tsv`, from each run's /cost).
 
 ## Tests
 
