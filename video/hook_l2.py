@@ -127,13 +127,14 @@ def split(name, a, b, la, lb, ca, cb, title):
 def cards2():
     hand_sk = os.path.join(LAB, 'out', 'l2', 'hand')
     ins = os.path.join(LAB, 'out', 'l2', 'inspect')
-    box = (1250, 250, 2250, 1650)
+    box = (1400, 250, 2150, 1100)     # cut 2: tight on the dragged corner, so before/after differ at phone size
     s4 = Image.open(os.path.join(hand_sk, 's4-stretched.png')).convert('RGB').crop(box)
     s7 = Image.open(os.path.join(hand_sk, 's7-pinned.png')).convert('RGB').crop(box)
     split('split-stretch.png', s4, s7, 'before the sizes: it stretches', 'fully constrained: it stays', RED, GREEN,
           'Ours: the same corner, dragged')
+    s4w = Image.open(os.path.join(hand_sk, 's4-stretched.png')).convert('RGB').crop((1250, 250, 2250, 1650))
     lean = Image.open(os.path.join(ins, 's3-stretched.png')).convert('RGB').crop((1300, 120, 2300, 1350))
-    split('split-lean.png', s4, lean, 'ours, no sizes yet: lines stay level', "Claude's: the plate leans over", AMBER,
+    split('split-lean.png', s4w, lean, 'ours, no sizes yet: lines stay level', "Claude's: the plate leans over", AMBER,
           RED, 'No sizes pinned: ours vs Claude\'s')
     # the cause: the two logged lines (re-typed from run 1's transcript) beside SolidCraft's hanging part
     im = Image.new('RGB', (2560, 1440), BG)
@@ -151,11 +152,26 @@ def cards2():
     dashed(d, 260 + z, 1500, 1520 + hang.width + 20)
     chip(d, (1520 + hang.width // 2, 1290), "SolidCraft's plug: top edge down", 54, RED)
     im.save(os.path.join(OUT, 'card-cause.png')); print('card-cause.png')
+    # cut 2: the only constraints in run 1's call (re-typed from transcript.jsonl seq 18)
+    im = Image.new('RGB', (2560, 1440), BG)
+    d = ImageDraw.Draw(im)
+    d.text((1280, 70), "Run 1's call: the only pins", font=font(B, 80), fill=INK, anchor='ma')
+    d.rounded_rectangle((160, 230, 2400, 1000), radius=24, fill=(24, 30, 40))
+    code = ['for i in range(n):', '    a, b = pts[i], pts[(i+1) % n]', '    sk.addGeometry(Part.LineSegment(...))',
+            'for i in range(n):', '    sk.addConstraint(Sketcher.Constraint(', '        "Coincident", i, 2, (i+1) % n, 1))',
+            'pad.Length = 20']
+    for k, ln in enumerate(code):
+        col = (255, 214, 102) if 'Coincident' in ln or 'addConstraint' in ln else (230, 237, 243)
+        d.text((220, 280 + k * 100), ln, font=font(mono, 54), fill=col)
+    chip(d, (1280, 1060), 'Coincident = two ends joined: 8 of them, nothing else', 56, RED)
+    chip(d, (1280, 1180), 'no sizes, no level or upright rules', 56, INK)
+    im.save(os.path.join(OUT, 'card-code.png')); print('card-code.png')
     # the comparison rows over the two real parts (built in 3 steps)
     rows = [('volume', '8,500 mm³', '8,500 mm³', True), ('size', '25 x 20 x 60', '25 x 20 x 60', True),
-            ('height', '0 to 60', '0 to 60', True), ('corner', '0, -20, 0', '0, -20, 0', True),
+            ('height', '0 to 60', '0 to 60', True), ('lowest corner', '0, -20, 0', '0, -20, 0', True),
             ('plane', 'XZ', 'XZ', True), ('steps', 'sketch, pad 20', 'sketch, pad 20', True),
             ('pins', '23', '8', False), ('fully constrained', 'yes', 'no', False)]
+    PIN_NOTE = 'ours: 9 joins, 7 level/upright, 1 on an axis, 6 sizes · Claude: 8 joins'
     hand = fit(Image.open(os.path.join(LAB, 'out', 'l2', 'hand', 's10-iso.png')).convert('RGB').crop((1400, 250, 2000, 1300)), 420, 420)
     cl = fit(src('run1-part.png', (1880, 240, 2510, 1412)), 420, 420)
     for n, upto in ((1, 3), (2, 6), (3, 8)):
@@ -171,6 +187,9 @@ def cards2():
             d.text((1180, y), a, font=font(B, 58), fill=INK, anchor='ma')
             d.text((1980, y), b, font=font(B, 58), fill=col, anchor='ma')
             d.text((2420, y), '✓' if ok else '✗', font=font(B, 66), fill=GREEN if ok else RED, anchor='ma')
+        if n == 3:
+            chip(d, (1280, 1405 - 80), PIN_NOTE, 40, GREY)
+            chip(d, (2150, 150), 'run 2 (fresh): the same, 8 pins', 40, BLUE)
         im.save(os.path.join(OUT, f'card-compare-{n}.png')); print(f'card-compare-{n}.png')
 
 

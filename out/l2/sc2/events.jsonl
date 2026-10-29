@@ -1,0 +1,10 @@
+{"t": 1.439, "event": "tool call: describe_command", "seq": 13}
+{"t": 1.44, "event": "tool call: describe_command", "seq": 14}
+{"t": 1.441, "event": "tool call: describe_command", "seq": 15}
+{"t": 1.445, "event": "tool reply: describe_command", "seq": 16, "isError": false}
+{"t": 1.46, "event": "tool reply: describe_command", "seq": 17, "isError": false}
+{"t": 1.475, "event": "tool reply: describe_command", "seq": 18, "isError": false}
+{"t": 3.684, "event": "tool call: batch", "seq": 19}
+{"t": 3.691, "event": "tool reply: batch", "seq": 20, "isError": false}
+{"t": 5.165, "event": "tool call: measure", "seq": 21}
+{"t": 5.176, "event": "tool reply: measure", "seq": 22, "isError": false}

@@ -87,6 +87,7 @@ def card_paper():
     d.line(p + [p[0]], fill=INK, width=12, joint='curve')
     d.polygon([(1690, 330), (1830, 190), (1870, 230), (1730, 370)], fill=AMBER)
     d.polygon([(1690, 330), (1730, 370), (1670, 390)], fill=INK)
+    save(im, 'card-paper-1.png')
     d.line((1980, 700, 1980, 300), fill=GREEN, width=14)
     d.polygon([(1950, 300), (2010, 300), (1980, 250)], fill=GREEN)
     text(d, (2020, 280), 'top edge', 64, GREEN, anchor='lm')
@@ -132,7 +133,7 @@ def card_joutline_steps():
         text(d, (ox + 5 * s + 40, oy - 42 * s), 'back plate: 5 thick', 64, BLUE, anchor='lm')
         if step >= 2:
             d.line((ox, oy + 40, ox + 25 * s, oy + 40), fill=BLUE, width=8)
-            text(d, (ox + 25 * s + 70, oy + 40), 'arm: 25 deep, 5 thick', 64, BLUE, anchor='lm')
+            text(d, (ox + 25 * s + 70, oy + 20), 'arm: 25 deep, 5 thick', 64, BLUE, anchor='lm')
         if step >= 3:
             d.line((ox + 25 * s + 40, oy, ox + 25 * s + 40, oy - 10 * s), fill=BLUE, width=8)
             text(d, (ox + 25 * s + 70, oy - 5 * s - 40), 'lip: 10 high', 64, BLUE, anchor='lm')
