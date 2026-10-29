@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 116, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 112, in main
+    print(run(ROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 23, in run
+    raise RuntimeError(r)
+RuntimeError: {'success': False, 'error': 'RuntimeError: Internal C++ object (PySide6.QtWidgets.QTreeWidgetItem) already deleted.'}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 116, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 107, in main
+    print(run(ARROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 23, in run
+    raise RuntimeError(r)
+RuntimeError: {'success': False, 'error': 'RuntimeError: Internal C++ object (PySide6.QtWidgets.QTreeWidgetItem) already deleted.'}

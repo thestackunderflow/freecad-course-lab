@@ -1,0 +1,15 @@
+{"t": 0.03, "event": "recording started: run 1's document (Claude's part), opened again, no AI"}
+{"t": 3.425, "event": "tree: Claude's pad", "x": 164, "y": 406, "button": 1}
+{"t": 7.127, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 7.838, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 10.405, "event": "console: Enter", "keys": "Return"}
+{"t": 14.529, "event": "console: typed the height line", "text": "b = Gui.Selection.getSelection()[0].Shape.BoundBox; round(b.ZMin, 3), round(b.ZMax, 3)"}
+{"t": 18.241, "event": "console: Enter 2", "keys": "Return"}
+{"t": 24.741, "event": "tree: double-click Claude's sketch"}
+{"t": 29.069, "event": "Fit all", "x": 942, "y": 88, "button": 1}
+{"t": 33.642, "event": "hover: Claude's degrees of freedom"}
+{"t": 38.221, "event": "drag Claude's corner: down"}
+{"t": 39.745, "event": "drag Claude's corner: stretched"}
+{"t": 42.274, "event": "drag Claude's corner: released"}
+{"t": 43.779, "event": "Ctrl+Z: undo the drag", "keys": "ctrl+z"}
+{"t": 47.44, "event": "recording stopped"}

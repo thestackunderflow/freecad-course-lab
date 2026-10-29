@@ -1,0 +1,6 @@
+SolidCraft lesson 2 message 1: In SolidCraft, sketch this outline on the XZ plane, starting at 0,0: right 25, up 10, left 5, down 5, left 15, up 55, left 5, then back to the start. Extrude it 20 mm.
+FreeCAD lesson 2 message 1:    In FreeCAD, sketch this outline on the XZ plane, starting at 0,0: right 25, up 10, left 5, down 5, left 15, up 55, left 5, then back to the start. Extrude it 20 mm.
+Difference: one word (SolidCraft -> FreeCAD).
+SolidCraft message 2: Measure it, and list the steps in its timeline.
+FreeCAD message 2:    Measure it, and list the steps in its model tree.
+Difference: timeline -> model tree (FreeCAD calls it the model tree).

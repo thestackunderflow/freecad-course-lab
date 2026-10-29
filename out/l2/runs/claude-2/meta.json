@@ -1,0 +1,1 @@
+{"run": "claude-2", "take": "lab/take_claude2.sh", "wall_s": 550, "cost_usd": "0.0979", "launch": "claude (no flags: Claude Code's own default mode and model)"}

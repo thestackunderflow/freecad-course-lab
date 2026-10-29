@@ -81,6 +81,29 @@ Every MCP JSON-RPC line between Claude Code and the plug is logged by `proxy/mcp
 
 Cost: five Claude Code runs, $0.383 (`../freecad-course-BUDGET.tsv`, from each run's /cost).
 
+## Lesson 2 (29 Oct 2026): sketch, pin, pad in Part Design, by hand and by Claude
+
+The course's wall hook (side view on the XZ plane, from 0,0: right 25, up 10, left 5, down 5, left 15, up 55, left 5,
+back to the start; padded 20). Expected without CAD (`checker/outline.py`): 425 mm², **8,500 mm³**, 25 x 20 x 60,
+6 free sizes once every line is level or upright. Same pins as lesson 1 (FreeCAD 26.3 is still a release candidate).
+Ledger: lesson 2's own GO line in `../freecad-course-BUDGET.tsv` (`LESSON=l2 BUDGET_MARK=...`).
+
+| Q | What happened (file) |
+|---|---|
+| Q1 by hand | Part Design; New Body; New Sketch → "Select attachment": XY-plane, XZ-plane, YZ-plane (Base plane); XZ, OK → the Sketcher facing FRONT. Polyline by clicks (FreeCAD 1.1.4's Polyline has no typed lengths), closed on the first point: "Under-constrained: 6 Degrees of Freedom"; a corner drags. Dimension (D): six sizes typed in "Insert Length" (25, 10, 5, 5, 60, 5), the count to 0, "Fully constrained" in green; the corner no longer drags. Close; Pad (Length 10.00 mm by default) 20; OK. Tree: Body > Origin, Pad > Sketch (`hand/`, stills s1-s12) |
+| Q2 hand numbers | 8500.0, 25 x 20 x 60, X 0..25, Y -20..0 (the pad goes along the XZ plane's normal, -Y), Z 0..60; 23 constraints (9 joined ends, 7 level/upright, 1 corner on an axis, 6 sizes), fully constrained (`hand/measure.json`) |
+| Q3 Claude run 1 | Claude Code 2.1.308, claude-sonnet-5-5, auto mode, no prompt. Message 1 = SolidCraft lesson 2's message with one word changed (`message-diff.txt`). One execute_code: a PartDesign Body, a sketch attached to XZ_Plane (FlatFace), 8 lines, **8 Coincident constraints only**, a Pad of 20. Its reply: "The sketch is closed but has no dimensional constraints, only coincident points." Message 2: the tree, and an offer to add the sizes. $0.099 (`runs/claude-1/`) |
+| Q4 which way up | **Upright**: X 0..25, Y -20..0, Z 0..60, the same as the hand part (`compare-1.json`: same: true; upright: both) |
+| Q5 run 2 | The same: one execute_code, attached to XZ_Plane, 8 joins only, upright, 8,500. $0.098 (`compare-2.json`) |
+| Q6 replay | Run 1's 2 calls replayed in a fresh FreeCAD with no AI: 0 errors, 8,500, same as the hand part; its sketch again 8 joins (`replay/`) |
+| Q7 inside the sketch | Hand: fully constrained. Claude's (run 1's saved document, opened again with no AI): "Under-constrained: 16 Degrees of Freedom"; its back plate's corner drags and the plate leans over; Ctrl+Z (`inspect/`) |
+| Q8 the view | Claude's create step returned a picture of the 3D view and the window showed the part upright with no input. Run 1's own viewer steps after the turn were spoiled by our lab query (a Qt tree item error shown by the add-on), so `take_inspect2.sh` films them on run 1's saved document |
+
+Gotchas: in the Sketcher, the key V starts the Vertical constraint (use the Fit all button, not V, F); with a document
+open, View > Panels lists Python Console above Report View; `lab.fcrpc row` can hit "Internal C++ object already
+deleted" when the tree is rebuilt (the takes use fixed rows); `lab.drive`'s end-of-turn check misses the second
+message after Ctrl+O (it waits for its time limit, then goes on).
+
 ## Tests
 
 `tools/test.sh` runs every test in the lab image (unit tests, plus real Xvfb/tmux checks). The leak scan before any

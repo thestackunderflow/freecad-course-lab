@@ -1,0 +1,96 @@
+{
+ "same": true,
+ "differences": [],
+ "rows": {
+  "volume": {
+   "hand": 8500.0,
+   "claude": 8500.0,
+   "expected": 8500.0,
+   "ok": true
+  },
+  "size": {
+   "hand": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "claude": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "ok": true
+  },
+  "up": {
+   "hand": [
+    0.0,
+    60.0
+   ],
+   "claude": [
+    0.0,
+    60.0
+   ],
+   "ok": true
+  },
+  "position": {
+   "hand": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "claude": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "ok": true
+  },
+  "valid": {
+   "hand": true,
+   "claude": true,
+   "ok": true
+  }
+ },
+ "upright": {
+  "hand": true,
+  "claude": true
+ },
+ "sketch": {
+  "hand": {
+   "plane": "XZ_Plane",
+   "constraints": 8,
+   "fully_constrained": false,
+   "up_vector": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lines": 8
+  },
+  "claude": {
+   "plane": "XZ_Plane",
+   "constraints": 8,
+   "fully_constrained": false,
+   "up_vector": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lines": 8
+  }
+ },
+ "documents": {
+  "hand": "claude.FCStd",
+  "claude": "replay.FCStd"
+ },
+ "names": {
+  "hand": [
+   "Body",
+   "Body"
+  ],
+  "claude": [
+   "Body",
+   "Body"
+  ]
+ }
+}

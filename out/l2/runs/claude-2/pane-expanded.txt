@@ -1,0 +1,36 @@
+     aker-hook/1dd37271-9421-4f4e-9c4f-0d
+     4ef03d880b/tool-results/mcp-freecad-
+     blob-1793303281784-3l33pb.png]
+  ⎿  Allowed by auto mode classifier
+
+            07:48 PM claude-sonnet-5-5
+● I sketched the outline on the XZ plane and
+  extruded it 20 mm. The solid is valid, with
+  a volume of 8,500 mm³.
+
+  The sketch starts at (0,0) and goes through
+  these points:
+
+  (0,0) → (25,0) → (25,10) → (20,10) → (20,5)
+  → (5,5) → (5,60) → (0,60) → back to (0,0)
+
+  I connected the segments with coincident
+  constraints but added no dimensional
+  constraints. The profile is an L-shape with
+  a small lip at the right end of the base.
+
+  FreeCAD's XZ plane extrudes toward −Y, so
+  the solid spans Y = −20 to 0. Its bounding
+  box is 25 wide in X and 60 tall in Z. If you
+  want it to go the other way, set the Pad to
+  Reversed.
+
+  The sketch and Pad are in a new PartDesign
+  Body, in the active document (or a new one
+  called "Outline" if none was open).
+
+✻ Cooked for 13s · done 7:48 PM
+
+──────────────────────────────────────────────
+  Showing detailed transcript · ctrl+o…verbose
+

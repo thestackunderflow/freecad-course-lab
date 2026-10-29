@@ -1,0 +1,32 @@
+{"t": 0.042, "event": "recording started: Claude Code (left), FreeCAD with the by-hand hook (right)"}
+{"t": 3.323, "event": "FreeCAD: File menu", "x": 1188, "y": 33, "button": 1}
+{"t": 4.708, "event": "File: New Document", "x": 1267, "y": 68, "button": 1}
+{"t": 7.59, "event": "to the terminal"}
+{"t": 8.154, "event": "turn 1: typing", "text": "In FreeCAD, sketch this outline on the XZ plane, starting at 0,0: right 25, up 10, left 5, down 5, left 15, up 55, left 5, then back to the start. Extrude it 20 mm."}
+{"t": 16.66, "event": "turn 1: Enter"}
+{"t": 26.789, "event": "tool call: execute_code", "seq": 18}
+{"t": 27.577, "event": "tool reply: execute_code", "seq": 19, "isError": false}
+{"t": 30.051, "event": "turn 1: end-of-turn line seen"}
+{"t": 32.082, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 37.099, "event": "Ctrl+O: expanded view"}
+{"t": 45.11, "event": "Ctrl+O: back"}
+{"t": 47.182, "event": "turn 1: typing", "text": "Measure it, and list the steps in its model tree."}
+{"t": 50.283, "event": "turn 1: Enter"}
+{"t": 56.133, "event": "tool call: execute_code", "seq": 20}
+{"t": 56.146, "event": "tool reply: execute_code", "seq": 21, "isError": false}
+{"t": 470.51, "event": "turn 1: reply done", "approvals": 0, "timed_out": true}
+{"t": 476.988, "event": "viewer: click the 3D view", "x": 2650, "y": 1250, "button": 1}
+{"t": 477.696, "event": "viewer: key 0 isometric", "keys": "0"}
+{"t": 479.318, "event": "viewer: key V", "keys": "v"}
+{"t": 479.938, "event": "viewer: key F (fit all)", "keys": "f"}
+{"t": 484.119, "event": "lab query: where is Claude's part"}
+{"t": 486.819, "event": "tree: Claude's part", "x": 0, "y": 0, "button": 1}
+{"t": 490.484, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 491.191, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 493.703, "event": "console: Enter", "keys": "Return"}
+{"t": 497.826, "event": "console: typed the height line", "text": "b = Gui.Selection.getSelection()[0].Shape.BoundBox; round(b.ZMin, 3), round(b.ZMax, 3)"}
+{"t": 501.508, "event": "console: Enter 2", "keys": "Return"}
+{"t": 508.183, "event": "tree: open a row to reach the sketch", "x": 1177, "y": 313, "button": 1}
+{"t": 511.124, "event": "tree: double-click Claude's sketch"}
+{"t": 515.898, "event": "Claude's sketch open"}
+{"t": 518.904, "event": "recording stopped"}

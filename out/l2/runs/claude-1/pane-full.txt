@@ -1,0 +1,36 @@
+  The sketch segments are 25, 10, 5, 5, 15,
+  55, 5 and 60 mm. These match your
+  description, and the last segment is the
+  closing line back to the start.
+
+  Model tree
+
+  The document is named Unnamed.
+
+  Body (PartDesign::Body)
+  ├── Origin
+  │   ├── X_Axis, Y_Axis, Z_Axis
+  │   ├── XY_Plane, XZ_Plane, YZ_Plane
+  │   └── Origin001 (point)
+  ├── Sketch (Sketcher::SketchObject)
+  attached to XZ_Plane, 8 lines
+  └── Pad (PartDesign::Pad)
+  Profile = Sketch, Length 20 mm, Type Length
+
+  The feature steps are:
+  1. Sketch holds the closed 8-line outline on
+     the XZ plane.
+  2. Pad extrudes it 20 mm.
+
+  The sketch has only coincident constraints
+  and no dimensions, so the sizes aren't
+  driven by the model. I can add distance and
+  horizontal/vertical constraints if you want
+  it fully constrained.
+
+✻ Crunched for 7s · done 7:38 PM
+
+──────────────────────────────────────────────
+❯ Fully constrain the sketch with dimensions
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

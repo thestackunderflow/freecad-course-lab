@@ -1,0 +1,29 @@
+[
+ {
+  "call_seq": 18,
+  "reply_seq": 19,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App, Part, Sketcher\nfrom FreeCAD import Vector as V\ndoc = App.ActiveDocument or App.newDocument(\"Outline\")\nbody = doc.addObject(\"PartDesign::Body\", \"Body\")\nxz = [o for o in body.Origin.OriginFeatures if o.Role == \"XZ_Plane\"][0]\nsk = body.newObject(\"Sketcher::SketchObject\", \"Sketch\")\nsk.AttachmentSupport = (xz, [\"\"])\nsk.MapMode = \"FlatFace\"\ndoc.recompute()\npts = [(0,0),(25,0),(25,10),(20,10),(20,5),(5,5),(5,60),(0,60)]\nn = len(pts)\nfor i in range(n):\n    a, b = pts[i], pts[(i+1) % n]\n    sk.addGeometry(Part.LineSegment(V(a[0],a[1],0), V(b[0],b[1],0)), False)\nfor i in range(n):\n    sk.addConstraint(Sketcher.Constraint(\"Coincident\", i, 2, (i+1) % n, 1))\ndoc.recompute()\npad = body.newObject(\"PartDesign::Pad\", \"Pad\")\npad.Profile = sk\npad.Length = 20\ndoc.recompute()\nsk.Visibility = False\nbb = pad.Shape.BoundBox\nprint(pad.Shape.isValid(), pad.Shape.Volume, bb)"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: True 8500.000000000007 BoundBox (0, -20, 0, 25, 1.33227e-14, 60)\n",
+  "images": [
+   "claude-shot-01.png"
+  ],
+  "seconds": 0.788
+ },
+ {
+  "call_seq": 20,
+  "reply_seq": 21,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App\ndoc = App.ActiveDocument\nprint(\"Document:\", doc.Name)\nprint(\"--- Model tree ---\")\ndef walk(o, d=0):\n    print(\"  \"*d + f\"{o.Label} ({o.TypeId})\")\n    for c in getattr(o, \"Group\", []):\n        walk(c, d+1)\nfor o in doc.Objects:\n    if not o.InList:\n        walk(o)\nbody = doc.getObject(\"Body\")\npad = doc.getObject(\"Pad\"); sk = doc.getObject(\"Sketch\")\ns = pad.Shape\nbb = s.BoundBox\nprint(\"--- Measurements ---\")\nprint(\"BoundBox X: %.3f..%.3f (%.3f)\" % (bb.XMin, bb.XMax, bb.XLength))\nprint(\"BoundBox Y: %.3f..%.3f (%.3f)\" % (bb.YMin, bb.YMax, bb.YLength))\nprint(\"BoundBox Z: %.3f..%.3f (%.3f)\" % (bb.ZMin, bb.ZMax, bb.ZLength))\nprint(\"Volume: %.3f mm^3\" % s.Volume)\nprint(\"Surface area: %.3f mm^2\" % s.Area)\nprint(\"CoM:\", s.CenterOfMass)\nprint(\"Faces/Edges/Vertices:\", len(s.Faces), len(s.Edges), len(s.Vertexes))\nprint(\"Sketch profile area: %.3f, perimeter: %.3f\" % (Part.Face(Part.Wire(sk.Shape.Edges)).Area if False else 0, sk.Shape.Length))\nprint(\"Sketch geometry:\")\nfor i,g in enumerate(sk.Geometry):\n    print(\" \", i, g.StartPoint, \"->\", g.EndPoint, \"len=%.2f\" % g.length())\nprint(\"Pad: Length=%s Type=%s Reversed=%s Midplane=%s\" % (pad.Length, pad.Type, pad.Reversed, pad.Midplane))\nprint(\"Sketch support:\", sk.AttachmentSupport, sk.MapMode, \"Placement:\", sk.Placement)",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: Document: Unnamed\n--- Model tree ---\nBody (PartDesign::Body)\n  Sketch (Sketcher::SketchObject)\n  Pad (PartDesign::Pad)\n--- Measurements ---\nBoundBox X: 0.000..25.000 (25.000)\nBoundBox Y: -20.000..0.000 (20.000)\nBoundBox Z: 0.000..60.000 (60.000)\nVolume: 8500.000 mm^3\nSurface area: 4450.000 mm^2\nCoM: Vector (6.617647058823532, -9.999999999999998, 22.205882352941188)\nFaces/Edges/Vertices: 10 24 16\nSketch profile area: 0.000, perimeter: 180.000\nSketch geometry:\n  0 Vector (0.0, 0.0, 0.0) -> Vector (25.0, 0.0, 0.0) len=25.00\n  1 Vector (25.0, 0.0, 0.0) -> Vector (25.0, 10.0, 0.0) len=10.00\n  2 Vector (25.0, 10.0, 0.0) -> Vector (20.0, 10.0, 0.0) len=5.00\n  3 Vector (20.0, 10.0, 0.0) -> Vector (20.0, 5.0, 0.0) len=5.00\n  4 Vector (20.0, 5.0, 0.0) -> Vector (5.0, 5.0, 0.0) len=15.00\n  5 Vector (5.0, 5.0, 0.0) -> Vector (5.0, 60.0, 0.0) len=55.00\n  6 Vector (5.0, 60.0, 0.0) -> Vector (0.0, 60.0, 0.0) len=5.00\n  7 Vector (0.0, 60.0, 0.0) -> Vector (0.0, 0.0, 0.0) len=60.00\nPad: Length=20.0 mm Type=Length Reversed=False Midplane=False\nSketch support: [(<GeoFeature object>, ('',))] FlatFace Placement: Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]\n",
+  "images": [],
+  "seconds": 0.013
+ }
+]

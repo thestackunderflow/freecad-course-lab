@@ -1,0 +1,36 @@
+
+  The eight sketch segments run (0,0) → (25,0)
+  → (25,10) → (20,10) → (20,5) → (5,5) →
+  (5,60) → (0,60) → (0,0). Their lengths are
+  25, 10, 5, 5, 15, 55, 5 and 60, and they
+  match your instructions.
+
+  My script printed a profile area of 0.000.
+  That was a placeholder in the script, not a
+  real measurement, so use the 425 mm² figure
+  instead.
+
+  Model tree
+
+  Body (PartDesign::Body)
+  ├─ Sketch (Sketcher::SketchObject)
+  └─ Pad (PartDesign::Pad)
+
+  - Sketch: attached to the XZ plane with the
+    FlatFace map mode. Its placement is a 90°
+    roll, so sketch X is global X and sketch Y
+    is global Z.
+  - Pad: a 20 mm Length pad, not reversed and
+    not midplane, so it extrudes toward −Y.
+
+  The document is named "Unnamed". It was
+  already open, so I added the body to it
+  rather than creating a new document. It
+  hasn't been saved yet.
+
+✻ Baked for 10s · done 7:48 PM
+
+──────────────────────────────────────────────
+❯ Save it as outline.FCStd
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
