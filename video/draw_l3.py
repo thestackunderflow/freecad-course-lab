@@ -34,24 +34,26 @@ def jpoly(ox, oy, s, depth=25, t=5):
 
 
 def card_recipe(step):
-    """F3: a recipe card: named amounts at the top, steps that use the name; step 3 the amount changes, both steps follow."""
+    """F3: named amounts at the top; steps that use the name (one of them a sum: half the flour); step 3 the amount
+    changes and both steps follow (a preview of an expression)."""
     im, d = canvas(); header(d, 'A recipe card: amounts at the top')
-    d.rounded_rectangle((560, 230, 2000, 1300), radius=30, fill=PAPER, outline=GREY, width=6)
-    text(d, (640, 290), 'Amounts', 72, GREY)
+    d.rounded_rectangle((420, 230, 2140, 1260), radius=30, fill=PAPER, outline=GREY, width=6)
+    text(d, (500, 290), 'Amounts', 72, GREY)
     amt = '400 g' if step >= 3 else '200 g'
-    d.rounded_rectangle((640, 400, 1500, 520), radius=20, fill=(255, 243, 214) if step >= 3 else (241, 245, 249),
+    d.rounded_rectangle((500, 400, 1360, 520), radius=20, fill=(255, 243, 214) if step >= 3 else (241, 245, 249),
                         outline=AMBER if step >= 3 else GREY, width=5)
-    text(d, (680, 460), 'flour', 76, INK, anchor='lm'); text(d, (1460, 460), amt, 76, AMBER if step >= 3 else INK, anchor='rm')
+    text(d, (540, 460), 'flour', 76, INK, anchor='lm'); text(d, (1320, 460), amt, 76, AMBER if step >= 3 else INK, anchor='rm')
     if step >= 2:
-        text(d, (640, 620), 'Steps', 72, GREY)
+        text(d, (500, 620), 'Steps', 72, GREY)
         hl = GREEN if step >= 3 else INK
-        text(d, (680, 760), '2. add the flour', 76, hl)
-        text(d, (680, 900), '3. stir', 64, GREY, R)
-        text(d, (680, 1040), '4. add the rest of the flour', 76, hl)
+        text(d, (540, 760), '2. add the flour', 72, hl)
+        text(d, (540, 900), '3. stir', 60, GREY, R)
+        text(d, (540, 1040), '4. add sugar: half the flour', 72, hl)
         if step >= 3:
-            for y in (760, 1040):
-                text(d, (1940, y + 40), '← 400 g', 64, GREEN, anchor='rm')
-            chip(d, (W / 2, 1330), 'change the amount once: every step that uses it follows', 56, PAPER, GREEN, anchor='m')
+            text(d, (2080, 790), '→ 400 g', 64, GREEN, anchor='rm')
+            text(d, (2080, 1070), '→ 200 g', 64, GREEN, anchor='rm')
+    if step >= 3:
+        chip(d, (W / 2, 1300), 'change the flour once: every step that uses it follows', 56, PAPER, GREEN, anchor='m')
     save(im, f'card-recipe-{step}.png')
 
 
@@ -93,7 +95,7 @@ def card_expected(kind):
         e = exp(40, 5)
         im, dd = canvas(); header(dd, 'Worked out first: 40 deep')
         dd.polygon(jpoly(260, 1250, 15, 40, 5), fill=(176, 190, 212), outline=INK, width=6)
-        rows = [('back plate 5 x 60 = 300', INK), ('arm 35 x 5 = 175', GREEN), ('lip 5 x 5 = 25', AMBER)]
+        rows = [('back plate 5 x 60 = 300', INK), ('arm 30 x 5 = 150', GREEN), ('lip 5 x 10 = 50', AMBER)]
         tag = 'box 40 x 20 x 60: 15 deeper'
     else:
         e = exp(40, 8)
@@ -121,20 +123,71 @@ def card_recap(step):
         text(d, (170, 300), 'hook_depth   25 mm', 50); text(d, (170, 380), 'thickness      5 mm', 50)
         text(d, (170, 460), 'lip_height     10 mm', 50)
         text(d, (470, 760), 'named amounts at the top', 50, INK, anchor='ma')
-        text(d, (470, 830), 'a spreadsheet', 46, GREY, R, anchor='ma')
+        text(d, (470, 830), 'a spreadsheet', 50, GREY, R, anchor='ma')
     if step >= 2:
         chip(d, (1000, 330), 'alias: hook_depth', 56, PAPER, BLUE)
-        text(d, (1290, 470), 'the name FreeCAD reads', 46, GREY, R, anchor='ma')
+        text(d, (1290, 470), 'the name FreeCAD reads', 50, GREY, R, anchor='ma')
     if step >= 3:
         text(d, (1000, 600), 'drop = lip_height − thickness', 52, RED)
-        text(d, (1290, 690), 'an expression: a size from names', 46, GREY, R, anchor='ma')
+        text(d, (1290, 690), 'an expression: a size from names', 50, GREY, R, anchor='ma')
     if step >= 4:
         chip(d, (1880, 300), '1 cell → 3 sizes', 64, PAPER, GREEN)
-        text(d, (2120, 430), 'thickness: plate, arm, lip', 46, GREY, R, anchor='ma')
+        text(d, (2120, 430), 'thickness: plate, arm, lip', 50, GREY, R, anchor='ma')
     if step >= 5:
         chip(d, (W / 2, 1050), 'right or wrong, the part follows: check the first build (8,500 mm³)', 56, PAPER, RED,
              anchor='m')
     save(im, f'card-recap-{step}.png' if step < 5 else 'card-recap.png')
+
+
+def card_a1_vs_ours():
+    """F27: the two readings of "8 thick", from the lab's own corners (hand thick8 and run A1 after message 3)."""
+    import json
+    L3 = os.path.join(LAB, 'out', 'l3')
+    hand = json.load(open(os.path.join(L3, 'hand', 'measure-thick8.json')))
+    a1 = json.load(open(os.path.join(L3, 'runs', 'A1', 'measure-after3.json')))
+    im, d = canvas(); header(d, '"8 thick": two readings')
+    for k, (m, title, sub, col) in enumerate(((hand, 'with names (ours, B1, B2)', 'lip 8 wide x 10 high', GREEN),
+                                               (a1, 'without names (A1)', 'lip 5 wide x 13 high', AMBER))):
+        ox, oy, sc = 180 + k * 1240, 1150, 12
+        pts = [(ox + x * sc, oy - y * sc) for x, y in m['sketches'][0]['corners_xy']]
+        d.polygon(pts, fill=(176, 190, 212), outline=INK, width=6)
+        part = [r for r in m['solids'] if not r.get('in_list')][-1]
+        text(d, (ox, 300), title, 60, col)
+        text(d, (ox + 520, 700), sub, 50, INK)
+        text(d, (ox + 520, 790), '%s mm³' % format(int(round(part['volume_mm3'])), ','), 70, col)
+    chip(d, (W / 2, 1300), 'the name decided what "thickness" means', 56, PAPER, INK, anchor='m')
+    save(im, 'card-a1-vs-ours.png')
+
+
+def card_compare():
+    """F27: the comparison rows, from out/l3/compare.json (three columns, 48 px+)."""
+    import json
+    c = json.load(open(os.path.join(LAB, 'out', 'l3', 'compare.json')))
+    r = c['runs']
+
+    def v(run, st):
+        return format(int(round(r[run]['parts'][st]['volume_mm3'])), ',')
+    im, d = canvas(); header(d, 'Side by side')
+    cols = [(860, 'by hand'), (1480, 'with the sentence'), (2140, 'without it')]
+    subs = ['', '2 runs: B1, B2', '1 run: A1']
+    for (x, t), sub in zip(cols, subs):
+        text(d, (x, 230), t, 60, INK, anchor='ma')
+        if sub:
+            text(d, (x, 305), sub, 48, GREY, R, anchor='ma')
+    rows = [('names', '5', '5 · 5', 'none'),
+            ('first build', '8,500', '%s · %s' % (v('B1', 'first'), v('B2', 'first')), v('A1', 'first')),
+            ('40 deep', '10,000', '%s · %s' % (v('B1', 'after2'), v('B2', 'after2')), v('A1', 'after2') + ' (redrawn)'),
+            ('8 thick', '15,040', '%s · %s' % (v('B1', 'after3'), v('B2', 'after3')), v('A1', 'after3')),
+            ('one cell each', 'yes', 'yes · yes', 'no')]
+    for k, row in enumerate(rows):
+        y = 430 + k * 160
+        d.line((120, y - 30, 2440, y - 30), fill=(205, 210, 220), width=3)
+        text(d, (140, y + 30), row[0], 56, GREY, anchor='lm')
+        for (x, _), val in zip(cols, row[1:]):
+            colr = AMBER if val.startswith('15,220') or val == 'no' or val == 'none' else INK
+            text(d, (x, y + 30), val, 56, colr, anchor='mm')
+    chip(d, (W / 2, 1300), "no-AI replays: B1 8,500 · 10,000 · 15,040 · A1 … 15,220", 52, PAPER, INK, anchor='m')
+    save(im, 'card-compare.png')
 
 
 if __name__ == '__main__':
@@ -145,3 +198,4 @@ if __name__ == '__main__':
     card_expected('depth40'); card_expected('thick8')
     for n in range(1, 6):
         card_recap(n)
+    card_a1_vs_ours(); card_compare()
