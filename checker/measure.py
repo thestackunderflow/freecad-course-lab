@@ -31,7 +31,11 @@ for o in doc.Objects:
                  'min_mm': [round(b.XMin, 4) + 0.0, round(b.YMin, 4) + 0.0, round(b.ZMin, 4) + 0.0],
                  'max_mm': [round(b.XMax, 4) + 0.0, round(b.YMax, 4) + 0.0, round(b.ZMax, 4) + 0.0],
                  'in_list': sorted(x.Name for x in o.InList if getattr(x, 'Shape', None) is not None
-                                   and not x.Shape.isNull() and x.Shape.Solids)})
+                                   and not x.Shape.isNull() and x.Shape.Solids),
+                 # lesson 4: every round face (a hole's wall, a fillet): radius, axis, a point on the axis, area
+                 'cylinders': [{'r': round(f.Surface.Radius, 4), 'axis': vec(f.Surface.Axis),
+                                'center': vec(f.Surface.Center), 'area': round(f.Area, 3)}
+                               for f in shp.Faces if 'Cylinder' in f.Surface.TypeId]})
 
 sketches = []
 for o in doc.Objects:
