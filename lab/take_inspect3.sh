@@ -69,13 +69,10 @@ sl_mark "recording started: run $RUN's saved copies, opened again (no AI)"
 sl_nap 1.5
 for st in first after2 after3; do
   open_doc "$RUN-$st.FCStd"
-  read -r DOC OBJ < <(python3 -m lab.fcrpc docs 2>/dev/null | python3 -c "
+  DOC="${RUN}_$st"; OBJ=$(python3 -m lab.fcrpc docs 2>/dev/null | python3 -c "
 import json, sys
-d = json.load(sys.stdin)
-name = [k for k, v in d.items() if v['label'].startswith('$RUN-$st') or k.startswith('$RUN')]
-k = name[-1] if name else list(d)[-1]
-objs = [o for o in d[k]['objects'] if o[0] == 'Body'] or d[k]['objects']
-print(k, objs[0][0])")
+d = json.load(sys.stdin)['$RUN' + '_' + '$st']['objects']
+print(([o[0] for o in d if o[0] == 'Body'] or [d[0][0]])[0])")
   echo "$st $DOC $OBJ" >> "$O/docs.txt"
   pick "$DOC" "$OBJ"
   sl_mark "check: $st"

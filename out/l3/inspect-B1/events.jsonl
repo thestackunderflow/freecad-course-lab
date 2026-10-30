@@ -1,0 +1,44 @@
+{"t": 0.063, "event": "recording started: run B1's saved copies, opened again (no AI)"}
+{"t": 2.542, "event": "FreeCAD: click the 3D view", "x": 2400, "y": 900, "button": 1}
+{"t": 3.262, "event": "File > Open (Ctrl+O)", "keys": "ctrl+o"}
+{"t": 5.913, "event": "open: typed B1-first.FCStd", "text": "~/B1-first.FCStd"}
+{"t": 7.259, "event": "open: Enter", "keys": "Return"}
+{"t": 10.888, "event": "key 0: isometric", "keys": "0"}
+{"t": 11.529, "event": "key V", "keys": "v"}
+{"t": 12.159, "event": "key F (fit all)", "keys": "f"}
+{"t": 16.438, "event": "tree: Body", "x": 1281, "y": 313, "button": 1}
+{"t": 18.188, "event": "check: first"}
+{"t": 19.753, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 20.467, "event": "console: typed the volume line (first)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 22.816, "event": "console: Enter (the volume line (first))", "keys": "Return"}
+{"t": 28.335, "event": "FreeCAD: click the 3D view", "x": 2400, "y": 900, "button": 1}
+{"t": 29.049, "event": "File > Open (Ctrl+O)", "keys": "ctrl+o"}
+{"t": 31.701, "event": "open: typed B1-after2.FCStd", "text": "~/B1-after2.FCStd"}
+{"t": 33.116, "event": "open: Enter", "keys": "Return"}
+{"t": 36.752, "event": "key 0: isometric", "keys": "0"}
+{"t": 37.386, "event": "key V", "keys": "v"}
+{"t": 38.008, "event": "key F (fit all)", "keys": "f"}
+{"t": 42.157, "event": "tree: Body", "x": 1281, "y": 340, "button": 1}
+{"t": 43.871, "event": "check: after2"}
+{"t": 45.486, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 46.196, "event": "console: typed the volume line (after2)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 48.452, "event": "console: Enter (the volume line (after2))", "keys": "Return"}
+{"t": 52.773, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 53.483, "event": "console: typed the X line", "text": "b = Gui.Selection.getSelection()[0].Shape.BoundBox; round(b.XMin, 3), round(b.XMax, 3)"}
+{"t": 57.249, "event": "console: Enter (the X line)", "keys": "Return"}
+{"t": 62.991, "event": "FreeCAD: click the 3D view", "x": 2400, "y": 900, "button": 1}
+{"t": 63.71, "event": "File > Open (Ctrl+O)", "keys": "ctrl+o"}
+{"t": 66.351, "event": "open: typed B1-after3.FCStd", "text": "~/B1-after3.FCStd"}
+{"t": 67.752, "event": "open: Enter", "keys": "Return"}
+{"t": 71.391, "event": "key 0: isometric", "keys": "0"}
+{"t": 72.027, "event": "key V", "keys": "v"}
+{"t": 72.658, "event": "key F (fit all)", "keys": "f"}
+{"t": 76.943, "event": "tree: Body", "x": 1281, "y": 367, "button": 1}
+{"t": 78.661, "event": "check: after3"}
+{"t": 80.233, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 80.954, "event": "console: typed the volume line (after3)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 83.252, "event": "console: Enter (the volume line (after3))", "keys": "Return"}
+{"t": 89.693, "event": "tree: Params", "x": 1291, "y": 340, "button": 1}
+{"t": 92.292, "event": "tree: double-click the spreadsheet"}
+{"t": 97.151, "event": "the spreadsheet open"}
+{"t": 100.16, "event": "recording stopped"}
