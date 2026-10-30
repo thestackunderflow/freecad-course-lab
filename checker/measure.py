@@ -82,8 +82,8 @@ for s in sketches:
     o = doc.getObject(s['name'])
     ee = dict(o.ExpressionEngine)
     pts = []
-    for g in o.Geometry:
-        if g.TypeId != 'Part::GeomLineSegment':
+    for gi, g in enumerate(o.Geometry):
+        if g.TypeId != 'Part::GeomLineSegment' or o.getConstruction(gi):
             continue
         for p in (g.StartPoint, g.EndPoint):
             q = [round(p.x, 4) + 0.0, round(p.y, 4) + 0.0]
@@ -91,7 +91,9 @@ for s in sketches:
                 pts.append(q)
     s['corners_xy'] = pts
     s['dimensions'] = [{'index': i, 'type': c.Type, 'name': c.Name, 'value': round(c.Value, 4),
-                        'expression': ee.get('Constraints[%d]' % i) or (ee.get('Constraints.' + c.Name) if c.Name else None),
+                        'expression': next((ee[k] for k in ('Constraints[%d]' % i, '.Constraints[%d]' % i,
+                                                            'Constraints.%s' % c.Name, '.Constraints.%s' % c.Name)
+                                            if k in ee and (c.Name or '[' in k)), None),
                         'first': c.First, 'second': c.Second}
                        for i, c in enumerate(o.Constraints) if c.Type in DIMS]
 
@@ -118,7 +120,9 @@ for o in doc.Objects:
 
 res = {'document': os.path.basename(os.environ['FC_DOC']), 'freecad': '.'.join(FreeCAD.Version()[:3]),
        'objects': [o.Name for o in doc.Objects], 'solids': rows, 'sketches': sketches, 'bodies': bodies,
-       'sheets': sheets, 'pads': pads}
+       'sheets': sheets, 'pads': pads,
+       'expressions': [{'object': o.Name, 'property': k, 'expression': e} for o in doc.Objects
+                       for k, e in getattr(o, 'ExpressionEngine', [])]}
 with open(os.environ['FC_OUT'], 'w') as f:
     json.dump(res, f, indent=1)
 print(json.dumps(res))

@@ -1,0 +1,24 @@
+{
+ "lesson": "FreeCAD + Claude Course lesson 3 (fc3): named sizes in a spreadsheet",
+ "written": "2026-10-30, before any Claude run of lesson 3",
+ "runs": {
+  "B1": "asked: messages/B-1.txt, B-2.txt, B-3.txt (filmed main run)",
+  "A1": "not asked: messages/A-1.txt, A-2.txt, A-3.txt",
+  "B2": "asked, second run; skipped if spend so far + its cap $0.25 + $0.17 (voice still to come) is over $0.90"
+ },
+ "order": ["B1", "A1", "B2"],
+ "setup": "Claude Code 2.1.308, `claude` with no flags (its default model and mode), fresh container, home folder, session and FreeCAD 1.1.4 window per run, an empty document open, no CLAUDE.md; the plug `uvx freecad-mcp@0.1.28` added with --scope user, wrapped in the logging proxy; permission prompts answered with the prompt's own plain Yes (README Q13)",
+ "messages_differ_by": "B-1 = one sentence in front of A-1 (messages/sentence-diff.txt: the SolidCraft lesson 3 sentence with '(parameters)' -> 'in a spreadsheet:'); messages 2 and 3 are the same for A and B",
+ "the_part": "after each message, the last root solid in the last document that holds one (lab/newpart.py), saved by the add-on's socket and measured with checker/measure.py",
+ "scoring": {
+  "a_names_used": "aliases in any spreadsheet; expressions anywhere in the document that name an alias (any object, any property)",
+  "b_first_build_right": "8500 mm3 +-0.1, box 25 x 20 x 60 +-0.01, Z 0..60",
+  "c_edit2_followed": "after 'Make the hook 40 deep instead of 25.': 10000 +-0.1, 40 x 20 x 60, Z 0..60; other readings recorded: 'arm 40 inside (box 45)', 'clear 40 inside (box 50)', '40 as the extrude (25 x 40 x 60)'",
+  "d_edit2_by_one_cell": "c, an alias whose value went 25 -> 40 is still named by an expression, and no message-2 call matches checker/score_l3.SKETCH_EDITS (move a point, add/delete geometry, set a size, rebind a sketch size)",
+  "e_edit3_followed": "after 'Make it 8 thick instead of 5.': 15040 +-0.1, 40 x 20 x 60, Z 0..60",
+  "f_edit3_by_one_cell": "as d, for an alias that went 5 -> 8",
+  "recorded_not_deciding": "sketch corners vs the named walk (construction lines skipped), alias spellings, the sketch's fully-constrained flag, every reply, time and cost"
+ },
+ "code": "checker/score_l3.py (tests/test_l3_score.py, tests/test_l3_live.py); expected numbers from checker/outline.py named_moves",
+ "proof": "a no-AI replay of B1's (and A1's) logged calls in a fresh FreeCAD, per message, measured and scored the same way"
+}

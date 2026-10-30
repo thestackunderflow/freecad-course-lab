@@ -1,0 +1,5 @@
+SolidCraft lesson 3, run B, sentence:
+Use named sizes (parameters) plate_height 60, width 20, thickness 5, hook_depth 25, lip_height 10, and write every length and the extrude distance from them.
+FreeCAD lesson 3, run B, sentence:
+Use named sizes in a spreadsheet: plate_height 60, width 20, thickness 5, hook_depth 25, lip_height 10, and write every length and the extrude distance from them.
+Changed: '(parameters)' -> 'in a spreadsheet:'

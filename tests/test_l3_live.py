@@ -39,7 +39,9 @@ dims = []
 for geo, val, expr in ((0, 25, 'hook_depth'), (1, 10, 'lip_height'), (2, 5, 'thickness'),
                        (3, 5, 'lip_height - thickness'), (5, 55, 'plate_height - thickness'), (6, 5, 'thickness')):
     i = sk.addConstraint(Sketcher.Constraint('Distance', geo, val))
-    sk.setExpression('Constraints[%d]' % i, ' '.join('Spreadsheet.' + w if w[0].isalpha() else w for w in expr.split()))
+    sk.renameConstraint(i, 'c%d' % i)          # a named size: 1.1.4 keys its expression '.Constraints.c<i>'
+    sk.setExpression('.Constraints.c%d' % i, ' '.join('Spreadsheet.' + w if w[0].isalpha() else w for w in expr.split()))
+k = sk.addGeometry(Part.LineSegment(App.Vector(12.5, 0, 0), App.Vector(12.5, 60, 0)), True)   # a construction line
 pad = body.newObject('PartDesign::Pad', 'Pad')
 pad.Profile = sk
 pad.setExpression('Length', 'Spreadsheet.width')
@@ -48,6 +50,9 @@ d.saveAs(OUT)
 ss.set('hook_depth', '40')
 d.recompute()
 d.saveAs(OUT40)
+ss.set('thickness', '8')
+d.recompute()
+d.saveAs(OUT8)
 '''
 
 
@@ -58,12 +63,12 @@ def _measure(fc, out):
 
 
 def test_one_cell_moves_the_part_and_the_checker_reads_names_expressions_and_corners(tmp_path):
-    fc, fc40 = tmp_path / 'j.FCStd', tmp_path / 'j40.FCStd'
+    fc, fc40, fc8 = tmp_path / 'j.FCStd', tmp_path / 'j40.FCStd', tmp_path / 'j8.FCStd'
     script = tmp_path / 'build.py'
-    script.write_text('OUT = %r\nOUT40 = %r\n' % (str(fc), str(fc40)) + BUILD, encoding='utf-8')
+    script.write_text('OUT = %r\nOUT40 = %r\nOUT8 = %r\n' % (str(fc), str(fc40), str(fc8)) + BUILD, encoding='utf-8')
     r = subprocess.run(['freecadcmd', str(script)], capture_output=True, text=True, timeout=180)
-    assert fc40.exists(), r.stdout[-2000:] + r.stderr[-2000:]
-    m25, m40 = _measure(fc, tmp_path / 'm25.json'), _measure(fc40, tmp_path / 'm40.json')
+    assert fc8.exists(), r.stdout[-2000:] + r.stderr[-2000:]
+    m25, m40, m8 = (_measure(f, tmp_path / ('m%d.json' % i)) for i, f in enumerate((fc, fc40, fc8)))
     assert m25['sheets'][0]['aliases'] == {'plate_height': '60', 'width': '20', 'thickness': '5', 'hook_depth': '25',
                                            'lip_height': '10'}
     sk = m25['sketches'][0]
@@ -74,6 +79,8 @@ def test_one_cell_moves_the_part_and_the_checker_reads_names_expressions_and_cor
     from checker import compare, score_l3
     p = compare.final_solids(m40)[0]
     assert p['volume_mm3'] == 10000.0 and p['bbox_mm'] == [40.0, 20.0, 60.0]
-    s = score_l3.score(m25, m40, edit_code=["App.ActiveDocument.Spreadsheet.set('hook_depth', '40')"])
-    assert s['names']['dims_from_names'] == 6 and s['names']['pad_from_name']
-    assert s['first_build_right'] and s['edit_followed'] and s['edit_by_one_cell'], s
+    assert compare.final_solids(m8)[0]['volume_mm3'] == 15040.0
+    s = score_l3.score(m25, m40, m8, ["ss.set('hook_depth', '40')"], ["ss.set('thickness', '8')"])
+    assert s['names']['exprs_from_names'] == 7 and s['names']['sketch_sizes_from_names'] == 6, s
+    assert s['first_build_right'] and s['edit2_by_one_cell'] and s['edit3_by_one_cell'], s
+    assert s['corners'] == {'first': True, 'after2': True, 'after3': True}      # the construction line is skipped

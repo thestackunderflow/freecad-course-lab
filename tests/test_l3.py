@@ -1,7 +1,7 @@
 """Lesson 3 lab checks (unit tests; no display, no network, no Claude): the named walk and its expected numbers worked
 out without CAD (hook_depth 25 and 40), the lab-query guard (a query must never raise inside FreeCAD: in lesson 2 an
-"Internal C++ object already deleted" error reached FreeCAD's console and the add-on's error showed on screen), and
-the pre-registered scoring of a Claude run (names used, first build right, edit followed, edit by one cell)."""
+"Internal C++ object already deleted" error reached FreeCAD's console and the add-on's error showed on screen; and
+the scoring is in test_l3_score.py)."""
 import contextlib
 import io
 import os
@@ -71,53 +71,3 @@ def test_the_client_raises_on_its_own_side_after_its_tries(monkeypatch):
         fcrpc.run('print(1)')
     assert len(calls) == fcrpc.TRIES and all(fcrpc.LABERR in c for c in calls)   # every attempt sent guarded
 
-
-# ---- scoring (pre-registered) --------------------------------------------------------------------------------
-def _m(volume, bbox, z, mn, corners, sheets=None, exprs=None, pad_expr=None, fc=True):
-    return {'solids': [{'name': 'Body', 'type': 'PartDesign::Body', 'volume_mm3': volume, 'bbox_mm': bbox,
-                        'z_range_mm': z, 'min_mm': mn, 'valid': True, 'solids': 1, 'in_list': []}],
-            'sketches': [{'name': 'Sketch', 'corners_xy': corners, 'fully_constrained': fc,
-                          'dimensions': [{'index': i, 'type': 'DistanceX', 'value': 1.0, 'expression': e}
-                                         for i, e in enumerate(exprs or [])]}],
-            'sheets': sheets or [], 'pads': [{'name': 'Pad', 'length': 20.0, 'expression': pad_expr}]}
-
-
-J25 = [[0, 0], [25, 0], [25, 10], [20, 10], [20, 5], [5, 5], [5, 60], [0, 60]]
-J40 = [[0, 0], [40, 0], [40, 10], [35, 10], [35, 5], [5, 5], [5, 60], [0, 60]]
-SHEET = [{'name': 'Spreadsheet', 'aliases': {k: str(v) for k, v in NAMES.items()}}]
-EXPRS = ['Spreadsheet.hook_depth', 'Spreadsheet.lip_height', 'Spreadsheet.thickness',
-         'Spreadsheet.lip_height - Spreadsheet.thickness', 'Spreadsheet.plate_height', 'Spreadsheet.thickness']
-
-
-def test_a_named_run_that_builds_right_and_edits_one_cell_scores_all_four():
-    first = _m(8500.0, [25.0, 20.0, 60.0], [0.0, 60.0], [0.0, -20.0, 0.0], J25, SHEET, EXPRS, 'Spreadsheet.width')
-    after_sheet = [{'name': 'Spreadsheet', 'aliases': dict(SHEET[0]['aliases'], hook_depth='40')}]
-    after = _m(10000.0, [40.0, 20.0, 60.0], [0.0, 60.0], [0.0, -20.0, 0.0], J40, after_sheet, EXPRS, 'Spreadsheet.width')
-    s = score_l3.score(first, after, edit_code=['App.ActiveDocument.Spreadsheet.set("hook_depth", "40")'])
-    assert s['names']['aliases'] == sorted(NAMES) and s['names']['dims_from_names'] == 6
-    assert s['names']['pad_from_name'] is True and s['names']['used'] is True
-    assert s['first_build_right'] is True and s['edit_followed'] is True and s['edit_by_one_cell'] is True
-
-
-def test_a_wrong_formula_is_caught_by_the_first_build_check_not_by_the_names():
-    bad = [[0, 0], [25, 0], [25, 10], [20, 10], [20, 5], [15, 5], [15, 60], [0, 60]]   # plate inner edge misplaced
-    first = _m(11500.0, [25.0, 20.0, 60.0], [0.0, 60.0], [0.0, -20.0, 0.0], bad, SHEET, EXPRS, 'Spreadsheet.width')
-    s = score_l3.score(first, first, edit_code=[])
-    assert s['names']['used'] is True and s['first_build_right'] is False
-    assert 'volume' in s['first_build_misses'] and 'corners' in s['first_build_misses']
-
-
-def test_a_run_without_names_that_redraws_points_scores_edit_followed_but_not_by_one_cell():
-    first = _m(8500.0, [25.0, 20.0, 60.0], [0.0, 60.0], [0.0, -20.0, 0.0], J25)
-    after = _m(10000.0, [40.0, 20.0, 60.0], [0.0, 60.0], [0.0, -20.0, 0.0], J40)
-    s = score_l3.score(first, after, edit_code=['sk.movePoint(0, 2, App.Vector(40, 0, 0))'])
-    assert s['names']['used'] is False and s['names']['aliases'] == []
-    assert s['first_build_right'] is True and s['edit_followed'] is True and s['edit_by_one_cell'] is False
-
-
-def test_reading_40_deep_as_a_45_box_is_recorded_as_read_differently():
-    first = _m(8500.0, [25.0, 20.0, 60.0], [0.0, 60.0], [0.0, -20.0, 0.0], J25)
-    j45 = [[0, 0], [45, 0], [45, 10], [40, 10], [40, 5], [5, 5], [5, 60], [0, 60]]
-    after = _m(11000.0, [45.0, 20.0, 60.0], [0.0, 60.0], [0.0, -20.0, 0.0], j45)
-    s = score_l3.score(first, after, edit_code=[])
-    assert s['edit_followed'] is False and s['edit_reading'] == 'arm 40 inside (box 45)'
