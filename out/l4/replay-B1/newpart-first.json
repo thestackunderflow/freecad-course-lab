@@ -1,0 +1,49 @@
+{
+ "state": {
+  "solids": [
+   [
+    "hook_lesson3",
+    "Body",
+    "Body",
+    "PartDesign::Body",
+    9857.1681,
+    true
+   ],
+   [
+    "hook_lesson3",
+    "Pad",
+    "Pad",
+    "PartDesign::Pad",
+    10000.0,
+    false
+   ],
+   [
+    "hook_lesson3",
+    "Holes",
+    "Holes",
+    "PartDesign::Pocket",
+    9874.3363,
+    false
+   ],
+   [
+    "hook_lesson3",
+    "LipFillet",
+    "LipFillet",
+    "PartDesign::Fillet",
+    9857.1681,
+    false
+   ]
+  ],
+  "sketches": {
+   "hook_lesson3": [
+    "Sketch",
+    "HoleSketch"
+   ]
+  }
+ },
+ "claude": [
+  "hook_lesson3",
+  "Body",
+  "Sketch"
+ ]
+}

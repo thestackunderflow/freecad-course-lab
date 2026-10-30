@@ -1,0 +1,68 @@
+[
+ {
+  "call_seq": 18,
+  "reply_seq": 19,
+  "name": "list_documents",
+  "arguments": {},
+  "isError": false,
+  "text": "[\n  \"hook_lesson3\"\n]",
+  "images": [],
+  "seconds": 0.026
+ },
+ {
+  "call_seq": 20,
+  "reply_seq": 21,
+  "name": "execute_code",
+  "arguments": {
+   "code": "doc=App.getDocument(\"hook_lesson3\")\nfor o in doc.Objects:\n    print(o.Name,o.Label,o.TypeId)\n    if hasattr(o,'Shape') and o.Shape.Solids:\n        s=o.Shape;print(' bbox',s.BoundBox,'vol',s.Volume)\n    for p in ('Support','Profile','Length','Type','Base','Placement','Reversed','Midplane','Radius','Size','Spreadsheet'):\n        if hasattr(o,p):print(' ',p,getattr(o,p))\n    if o.TypeId=='Spreadsheet::Sheet':\n        for c in o.getUsedCells():print('  ',c,o.get(c),o.getAlias(c))\n    if o.TypeId=='Sketcher::SketchObject':\n        print(' geo',[str(g) for g in o.Geometry]);print(' exp',o.ExpressionEngine)",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: Body Body PartDesign::Body\n bbox BoundBox (0, -20, 0, 40, 1.3e-14, 60) vol 10000.0\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nOrigin Origin App::Origin\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nX_Axis X-axis App::Line\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nY_Axis Y-axis App::Line\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(90,6.36111e-15,90)]\nZ_Axis Z-axis App::Line\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,-90,90)]\nXY_Plane XY-plane App::Plane\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nXZ_Plane XZ-plane App::Plane\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]\nYZ_Plane YZ-plane App::Plane\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(90,6.36111e-15,90)]\nOrigin001 Origin001 App::Point\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nSketch Sketch Sketcher::SketchObject\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]\n geo ['<Line segment (0,0,0) (40,0,0) >', '<Line segment (40,0,0) (40,10,0) >', '<Line segment (40,10,0) (35,10,0) >', '<Line segment (35,10,0) (35,5,0) >', '<Line segment (35,5,0) (5,5,0) >', '<Line segment (5,5,0) (5,60,0) >', '<Line segment (5,60,0) (0,60,0) >', '<Line segment (0,60,0) (0,0,0) >']\n exp [('Constraints[17]', 'Spreadsheet.hook_depth'), ('Constraints[18]', 'Spreadsheet.lip_height'), ('Constraints[19]', 'Spreadsheet.thickness'), ('Constraints[20]', 'Spreadsheet.lip_height - Spreadsheet.thickness'), ('Constraints[21]', 'Spreadsheet.plate_height'), ('Constraints[22]', 'Spreadsheet.thickness')]\nPad Pad PartDesign::Pad\n bbox BoundBox (0, -20, 0, 40, 0, 60) vol 10000.0\n  Profile (<Sketcher::SketchObject>, [''])\n  Length 20.0 mm\n  Type Length\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\n  Reversed False\n  Midplane False\nSpreadsheet Spreadsheet Spreadsheet::Sheet\n   A1 hook_depth None\n   B1 40.0 mm hook_depth\n   A2 thickness None\n   B2 5.0 mm thickness\n   A3 lip_height None\n   B3 10.0 mm lip_height\n   A4 plate_height None\n   B4 60.0 mm plate_height\n   A5 width None\n   B5 20.0 mm width\n",
+  "images": [],
+  "seconds": 0.036
+ },
+ {
+  "call_seq": 22,
+  "reply_seq": 23,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import Part, Sketcher\ndoc=App.getDocument(\"hook_lesson3\")\nss=doc.Spreadsheet; body=doc.Body\nss.set('A6','hole_d'); ss.set('B6','4 mm'); ss.setAlias('B6','hole_d')\nss.set('A7','hole_spacing'); ss.set('B7','30 mm'); ss.setAlias('B7','hole_spacing')\ndoc.recompute()\nsk=body.newObject('Sketcher::SketchObject','HoleSketch')\nsk.AttachmentSupport=[(doc.YZ_Plane,'')]; sk.MapMode='FlatFace'\nsk.addGeometry(Part.Circle(App.Vector(-10,15,0),App.Vector(0,0,1),2),False)\nsk.addGeometry(Part.Circle(App.Vector(-10,45,0),App.Vector(0,0,1),2),False)\nc=[]\nc.append(sk.addConstraint(Sketcher.Constraint('Diameter',0,4.0)))\nc.append(sk.addConstraint(Sketcher.Constraint('Equal',0,1)))\nc.append(sk.addConstraint(Sketcher.Constraint('Vertical',0,3,1,3)))\nc.append(sk.addConstraint(Sketcher.Constraint('DistanceY',0,3,1,3,30.0)))\nc.append(sk.addConstraint(Sketcher.Constraint('DistanceX',0,3,-1,1,10.0)))\nc.append(sk.addConstraint(Sketcher.Constraint('DistanceY',-1,1,0,3,15.0)))\nsk.setExpression('Constraints[%d]'%c[0],'Spreadsheet.hole_d')\nsk.setExpression('Constraints[%d]'%c[3],'Spreadsheet.hole_spacing')\nsk.setExpression('Constraints[%d]'%c[4],'Spreadsheet.width / 2')\nsk.setExpression('Constraints[%d]'%c[5],'(Spreadsheet.plate_height - Spreadsheet.hole_spacing) / 2')\ndoc.recompute()\npk=body.newObject('PartDesign::Pocket','Holes')\npk.Profile=sk; pk.Type=1  # ThroughAll\npk.Midplane=True\ndoc.recompute()\nprint(sk.solve(), [ (g.Center.x,g.Center.y,g.Radius) for g in sk.Geometry], pk.Shape.Volume, pk.isValid())\ns=pk.Shape\nfor e in s.Edges:\n    bb=e.BoundBox\n    if abs(bb.ZMin-10)<1e-6 and abs(bb.ZMax-10)<1e-6: print('top edge',bb)",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: 0 [(-10.0, 15.0, 2.0), (-10.0, 45.0, 2.0)] 9874.336293856408 True\ntop edge BoundBox (40, -20, 10, 40, 2.22045e-15, 10)\ntop edge BoundBox (35, 2.22045e-15, 10, 40, 2.22045e-15, 10)\ntop edge BoundBox (35, -20, 10, 40, -20, 10)\ntop edge BoundBox (35, -20, 10, 35, 2.22045e-15, 10)\n",
+  "images": [],
+  "seconds": 0.146
+ },
+ {
+  "call_seq": 24,
+  "reply_seq": 25,
+  "name": "execute_code",
+  "arguments": {
+   "code": "doc=App.getDocument(\"hook_lesson3\")\nbody=doc.Body; pk=doc.Holes\nfor i,e in enumerate(pk.Shape.Edges):\n    bb=e.BoundBox\n    if abs(bb.XMin-40)<1e-6 and abs(bb.XMax-40)<1e-6 and abs(bb.ZMin-10)<1e-6 and abs(bb.ZMax-10)<1e-6: idx=i+1\nf=body.newObject('PartDesign::Fillet','LipFillet')\nf.Base=(pk,['Edge%d'%idx]); f.Radius=2\ndoc.recompute()\nprint(idx,f.isValid(),f.Shape.Volume,f.Shape.isValid(),body.Tip.Name)",
+   "view_name": "Isometric"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: 10 True 9857.168146928205 True LipFillet\n",
+  "images": [
+   "claude-shot-01.png"
+  ],
+  "seconds": 0.909
+ },
+ {
+  "call_seq": 26,
+  "reply_seq": 27,
+  "name": "execute_code",
+  "arguments": {
+   "code": "doc=App.getDocument(\"hook_lesson3\")\nss=doc.Spreadsheet\nss.set('B5','30 mm')\ndoc.recompute()\nprint(doc.Pad.Length, doc.Pad.ExpressionEngine)\nsk=doc.HoleSketch\nprint([(g.Center.x,g.Center.y,g.Radius) for g in sk.Geometry])\ns=doc.LipFillet.Shape\nprint(s.BoundBox, s.Volume, s.isValid(), doc.LipFillet.isValid())\nprint([o.Name for o in doc.Objects if 'Invalid' in o.State or 'Error' in str(o.State)])",
+   "view_name": "Isometric"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: 30.0 mm [('Length', 'Spreadsheet.width')]\n[(-15.0, 15.0, 2.0), (-15.0, 45.0, 2.0)]\nBoundBox (0, -30, 0, 40, 1.33227e-14, 60) 14848.584073464099 True True\n[]\n",
+  "images": [
+   "claude-shot-02.png"
+  ],
+  "seconds": 0.713
+ }
+]

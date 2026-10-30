@@ -1,0 +1,4 @@
+lower across: [('Diameter', 4.0), ('Diameter', 4.0), ('DistanceX', 10.0)]
+lower up: [('Diameter', 4.0), ('Diameter', 4.0), ('DistanceX', 10.0), ('DistanceY', 15.0)]
+upper across: [('Diameter', 4.0), ('Diameter', 4.0), ('DistanceX', 10.0), ('DistanceY', 15.0), ('DistanceX', 10.0)]
+upper up: [('Diameter', 4.0), ('Diameter', 4.0), ('DistanceX', 10.0), ('DistanceY', 15.0), ('DistanceX', 10.0), ('DistanceY', 45.0)]

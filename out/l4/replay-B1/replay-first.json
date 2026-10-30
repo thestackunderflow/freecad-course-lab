@@ -1,0 +1,36 @@
+{
+ "calls": 4,
+ "names": [
+  "list_documents",
+  "execute_code",
+  "execute_code",
+  "execute_code"
+ ],
+ "errors": 0,
+ "rows": [
+  {
+   "logged_seq": 18,
+   "name": "list_documents",
+   "isError": false,
+   "text": "[\n  \"hook_lesson3\"\n]"
+  },
+  {
+   "logged_seq": 20,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: Body Body PartDesign::Body\n bbox BoundBox (0, -20, 0, 40, 1.3e-14, 60) vol 10000.0\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nOrigin Origin App::Origin\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nX_Axis X-axis App::Line\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nY_Axis Y-axis App::Line\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(90,6.36111e-15,90)]\nZ_Axis Z-axis App::Line\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,-90,90)]\nXY_Plane XY-plane App::Plane\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nXZ_Plane XZ-plane App::Plane\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]\nYZ_Plane YZ-plane App::Plane\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(90,6.36111e-15,90)]\nOrigin001 Origin001 App::Point\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\nSketch Sketch Sketcher::SketchObject\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]\n geo ['<Line segment (0,0,0) (40,0,0) >', '<Line segment (40,0,0) (40,10,0) >', '<Line segment (40,10,0) (35,10,0) >', '<Line segment (35,10,0) (35,5,0) >', '<Line segment (35,5,0) (5,5,0) >', '<Line segment (5,5,0) (5,60,0) >', '<Line segment (5,60,0) (0,60,0) >', '<Line segment (0,60,0) (0,0,0) >']\n exp [('Constraints[17]', 'Spreadsheet.hook_depth'), ('Constraints[18]', 'Spreadsheet.lip_height'), ('Constraints[19]', 'Spreadsheet.thickness'), ('Constraints[20]', 'Spreadsheet.lip_height - Spreadsheet.thickness'), ('Constraints[21]', 'Spreadsheet.plate_height'), ('Constraints[22]', 'Spreadsheet.thickness')]\nPad Pad PartDesign::Pad\n bbox BoundBox (0, -20, 0, 40, 0, 60) vol 10000.0\n  Profile (<Sketcher::SketchObject>, [''])\n  Length 20.0 mm\n  Type Length\n  Placement Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]\n  Reversed False\n  Midplane False\nSpreadsheet Spreadsheet Spreadsheet::Sheet\n   A1 hook_depth None\n   B1 40.0 mm hook_depth\n   A2 thickness None\n   B2 5.0 mm thickness\n   A3 lip_height None\n   B3 10.0 mm lip_height\n   A4 plate_height None\n   B4 60.0 mm plate_height\n   A5 width None\n   B5 20.0 mm width\n"
+  },
+  {
+   "logged_seq": 22,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: 0 [(-10.0, 15.0, 2.0), (-10.0, 45.0, 2.0)] 9874.336293856408 True\ntop edge BoundBox (40, -20, 10, 40, 2.22045e-15, 10)\ntop edge BoundBox (35, 2.22045e-15, 10, 40, 2.22045e-15, 10)\ntop edge BoundBox (35, -20, 10, 40, -20, 10)\ntop edge BoundBox (35, -20, 10, 35, 2.22045e-15, 10)\n"
+  },
+  {
+   "logged_seq": 24,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: 10 True 9857.168146928205 True LipFillet\n"
+  }
+ ]
+}

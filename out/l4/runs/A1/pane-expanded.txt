@@ -1,0 +1,36 @@
+     -30, 0, 40, 1.33227e-14, 60)
+     [(2.0, Vector (38.0,
+     1.7763568394002505e-15, 8.0)), (2.0,
+     Vector (0.0, -15.0, 45.0)), (2.0,
+     Vector (0.0, -15.0, 15.0))]
+
+  ⎿  [Image]
+  ⎿  [Image: source:
+     /home/maker/.claude/projects/-home-m
+     aker-hook/53a5136a-e8be-4ce5-ad7c-fa
+     30f37a5dd4/tool-results/mcp-freecad-
+     blob-1793402452256-yua1ai.png]
+  ⎿  Allowed by auto mode classifier
+
+            11:20 PM claude-sonnet-5-5
+● The hook is now 30 mm wide. I changed width
+  in the spreadsheet from 20 to 30, and the
+  pad updated from it. All features recomputed
+  cleanly and the solid is valid.
+
+  - Holes: they would have stayed 10 mm from
+    the edge and ended up off-centre. I linked
+    their position to -Spreadsheet.width / 2,
+    so they are now centred at 15 mm. They
+    are still 4 mm across, 30 mm apart, at
+    heights 15 and 45 mm. They will also stay
+    centred if you change the width again.
+  - Fillet: the 2 mm fillet on the lip's top
+    outer edge followed the wider lip with no
+    changes.
+
+✻ Worked for 9s · done 11:20 PM
+
+──────────────────────────────────────────────
+  Showing detailed transcript · ctrl+o…verbose
+

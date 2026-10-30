@@ -1,0 +1,41 @@
+{"t": 0.229, "event": "recording started: Claude Code (left), FreeCAD with lesson 3's hook (right)"}
+{"t": 2.39, "event": "turn 1: typing", "text": "Put the hole size and spacing in the spreadsheet as hole_d and hole_spacing, and write the holes' size and position from the names. In FreeCAD, the open document is my wall hook. Add two screw holes through its back plate, 4 mm across and 30 mm apart centre to centre, centred on the plate's back face (the side against the wall). Then round the top outer edge of the lip with a 2 mm fillet."}
+{"t": 22.278, "event": "turn 1: Enter"}
+{"t": 26.3, "event": "tool call: list_documents", "seq": 18}
+{"t": 26.326, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 30.087, "event": "tool call: execute_code", "seq": 20}
+{"t": 30.123, "event": "tool reply: execute_code", "seq": 21, "isError": false}
+{"t": 47.801, "event": "tool call: execute_code", "seq": 22}
+{"t": 47.947, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 51.332, "event": "tool call: execute_code", "seq": 24}
+{"t": 52.241, "event": "tool reply: execute_code", "seq": 25, "isError": false}
+{"t": 56.936, "event": "turn 1: end-of-turn line seen"}
+{"t": 58.939, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 63.954, "event": "lab query: save after first"}
+{"t": 66.045, "event": "viewer: click the 3D view", "x": 2650, "y": 1250, "button": 1}
+{"t": 66.753, "event": "viewer: key 0 isometric", "keys": "0"}
+{"t": 68.381, "event": "viewer: key V", "keys": "v"}
+{"t": 69.004, "event": "viewer: key F (fit all)", "keys": "f"}
+{"t": 74.869, "event": "tree: Claude's part", "x": 1281, "y": 286, "button": 1}
+{"t": 78.301, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 79.01, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 81.226, "event": "console: Enter (the volume line)", "keys": "Return"}
+{"t": 85.579, "event": "turn 1: typing", "text": "Make the hook 30 wide instead of 20."}
+{"t": 88.078, "event": "turn 1: Enter"}
+{"t": 90.742, "event": "tool call: execute_code", "seq": 26}
+{"t": 91.455, "event": "tool reply: execute_code", "seq": 27, "isError": false}
+{"t": 93.796, "event": "turn 1: end-of-turn line seen"}
+{"t": 95.798, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 100.812, "event": "lab query: save after after2"}
+{"t": 102.76, "event": "viewer: click the 3D view", "x": 2650, "y": 1250, "button": 1}
+{"t": 103.47, "event": "viewer: key 6 (the back)", "keys": "6"}
+{"t": 104.091, "event": "viewer: key V", "keys": "v"}
+{"t": 104.712, "event": "viewer: key F (fit all)", "keys": "f"}
+{"t": 110.15, "event": "tree: Claude's part", "x": 1281, "y": 286, "button": 1}
+{"t": 113.619, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 114.331, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 116.544, "event": "console: Enter (the volume line)", "keys": "Return"}
+{"t": 122.336, "event": "tree: open a row to reach the hole sketch", "x": 1195, "y": 394, "button": 1}
+{"t": 125.24, "event": "tree: double-click Claude's hole sketch"}
+{"t": 130.11, "event": "Claude's hole sketch open"}
+{"t": 134.121, "event": "recording stopped"}

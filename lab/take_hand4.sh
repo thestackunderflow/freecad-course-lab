@@ -104,22 +104,23 @@ sl_shot "$O/s2-sheet.png"
 n=5
 for r in "hole_d 4" "hole_spacing 30"; do
   set -- $r; n=$((n + 1)); y=$((410 + (n - 1) * 54))
-  sl_click 676 $y "cell A$n"
+  read -r AX AY < <(B cell $((n - 1)) 0); read -r BX BY < <(B cell $((n - 1)) 1)
+  sl_click "$AX" "$AY" "cell A$n"
   sl_type "$1" "A$n: typed $1" 110
   sl_key Return "A$n: Enter"
   sl_nap 0.6
-  sl_click 856 $y "cell B$n"
+  sl_click "$BX" "$BY" "cell B$n"
   sl_type "$2 mm" "B$n: typed $2 mm" 130
   sl_key Return "B$n: Enter"
   sl_nap 0.6
-  sl_click 856 $y "cell B$n again"
+  sl_click "$BX" "$BY" "cell B$n again"
   sl_glide 2590 300 20; sl_nap 0.4
   sl_click 2590 300 "Alias box"
   sl_type "$1" "alias B$n: typed $1" 110
   sl_key Return "alias B$n: Enter"
   sl_nap 1.2
 done
-sl_click 1300 1200 "an empty cell"
+read -r EX2 EY2 < <(B cell 12 3); sl_click "$EX2" "$EY2" "an empty cell"
 sl_mark "the sheet with seven names"; sl_nap 3.5
 sl_shot "$O/s3-sheet7.png"
 # F6: the hook's tab; Part Design; key 6; the back face
@@ -156,7 +157,7 @@ for p in "9.2 14.1" "10.7 45.8"; do
   read -r CX CY < <(VP 0 -$1 $2)
   sl_glide "$CX" "$CY" 25; sl_nap 0.5
   sl_click "$CX" "$CY" "circle $n: centre"
-  sl_glide $((CX + 30)) "$CY" 10; sl_nap 1.0
+  sl_glide $((CX + 110)) $((CY - 110)) 12; sl_nap 1.0   # the size label lands here, away from the centre (it would take the centre click)
   sl_type "4" "circle $n: typed 4" 250
   sl_key Return "circle $n: Enter (4)"
   sl_nap 1.5
@@ -174,6 +175,7 @@ rule() {   # rule GEO KEY "expression" LABEL
   sl_key "$2" "key ${2^^}: $4"
   sl_nap 1.6
   expr_enter "$3" "$4"
+  python3 -c "import sys; sys.path.insert(0, '/lab'); from lab import fcrpc; print('$4:', fcrpc.run('import FreeCAD\nsk = FreeCAD.getDocument(\'hook_lesson3\').getObject(\'Sketch001\')\nprint([(c.Type, round(c.Value, 3)) for c in sk.Constraints])'))" >> "$O/rules.txt" 2>&1
 }
 rule 0 l "Spreadsheet.width / 2" "lower across"
 sl_shot "$O/s7-across.png"
@@ -248,20 +250,21 @@ console "Gui.Selection.getSelection()[0].Shape.Volume" "the volume line (holes a
 sl_shot "$O/s15-volume.png"
 snap fillet
 # F17: Windows, Tile; width 30
-sl_click 700 36 "Windows menu"
-sl_glide 706 165 15; sl_nap 0.5
-sl_click 706 165 "Windows: Tile"
+read -r MX MY < <(B menu Windows)   # its place depends on the workbench's menus
+sl_click "$MX" "$MY" "Windows menu"
+sl_glide $((MX + 5)) 165 15; sl_nap 0.5
+sl_click $((MX + 5)) 165 "Windows: Tile"
 sl_nap 2.5
 sl_shot "$O/s16-tiled.png"
-sl_click 2420 838 "the sheet: an empty cell (the window takes the keys)"
+read -r EX2 EY2 < <(B cell 12 3); sl_click "$EX2" "$EY2" "the sheet: an empty cell (the window takes the keys)"
 sl_nap 0.8
-sl_click 2060 676 "cell B5 (width)"
+read -r WX WY < <(B cell 4 1); sl_click "$WX" "$WY" "cell B5 (width)"
 sl_nap 0.8
 sl_type "30 mm" "B5: typed 30 mm" 160
 sl_key Return "B5: Enter (30 mm)"
 sl_nap 3.5
 sl_shot "$O/s17-width30.png"
-sl_click 1100 1250 "the hook's window: an empty spot"
+read -r VX VY < <(B view); sl_click "$VX" "$VY" "the hook's window: an empty spot"
 sl_nap 0.5
 sl_key 6 "key 6: the back, 30 wide"; sl_nap 0.6
 sl_key v "key V"; sl_key f "key F (fit all)"; sl_nap 2.5
@@ -272,6 +275,7 @@ console "Gui.Selection.getSelection()[0].Shape.Volume" "the volume line (30 wide
 sl_shot "$O/s19-volume30.png"
 snap width30
 # the hole sketch opened: its across distance reads 15
+open_to Sketch001
 read -r RX RY < <(row Sketch001)
 dbl "$RX" "$RY" "tree: double-click the hole sketch"
 sl_nap 3.5

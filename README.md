@@ -135,6 +135,32 @@ B1 the old lookup missed Claude's part, so its viewer steps were refilmed on B1'
 (`lab/take_inspect3.sh`, "opened again"). `lab/drive.py` now ends a turn on a new end-of-turn line (Claude Code can
 re-draw its transcript, so a count of such lines can fall).
 
+## Lesson 4 (30 Oct 2026): screw holes from named sizes, a fillet, and one change (width 20 to 30)
+
+Start file: lesson 3's by-hand hook as lesson 3 leaves it (`out/l3/hand/back5.FCStd`, hook_depth 40: 10,000 mm3).
+Pre-registration and scoring (`checker/score_l4.py`, `out/l4/prereg.json`) committed before any Claude run (696b5fa).
+Numbers worked out without CAD in `checker/holes.py` (tests/test_l4.py): two 4 mm holes through the 5 mm plate
+remove 125.66 mm3, a 2 mm fillet along the lip removes (4 - pi) x width; **9,857.168** at width 20, **14,848.584**
+at width 30.
+
+| # | Question | Answer | Files |
+|---|---|---|---|
+| L4-Q1 | The by-hand path in FreeCAD 1.1.4 | the sheet's rows 6-7 (hole_d 4 mm, hole_spacing 30 mm); key 6; the back face; Create sketch (straight onto the face); G C, two circles, 4; each centre: L / I, `=`, `Spreadsheet.width / 2`, `(Spreadsheet.plate_height -+ Spreadsheet.hole_spacing) / 2`; Hole, Diameter `= Spreadsheet.hole_d`, Through all; the lip edge, Fillet (Edge10), 2 | `out/l4/hand/` (rules.txt, sketch-check.txt) |
+| L4-Q2 | The numbers | holes + fillet **9857.168146928205**; width 30 **14848.584073464102**; holes 10 / 10 from the sides, then **15 / 15**; the hole sketch reads 15 mm (f) | `out/l4/hand/check-*.json` |
+| L4-Q3 | Plain numbers (watch only, built headless by `lab/build4.py PLAIN=1`) | width 30: holes **10 / 20** from the sides, its sketch still 10 mm; the same volume | `out/l4/plain/` |
+| L4-Q4 | Claude B1 (with the sentence) | names in B6/B7; a sketch on the body's YZ plane, every hole size from names; a Pocket, through all; a 2 mm fillet on Edge10; 9,857.17; "30 wide": one call `ss.set('B5','30 mm')`: 15 / 15, fillet kept. $0.148 | `out/l4/runs/B1/` |
+| L4-Q4 | Claude A1 (without) | no names; plain centres; right first build; "30 wide": changed the width **and** tied the across distance to `-Spreadsheet.width / 2` in the same call ("they would have stayed 10 mm from the edge and ended up off-centre"): 15 / 15, not by one cell. $0.163 | `out/l4/runs/A1/` |
+| L4-Q4 | Claude B2 (with the sentence) | a failed first call, then names, YZ plane, Pocket, fillet; one cell; 15 / 15. $0.138 | `out/l4/runs/B2/` |
+| L4-Q5 | Scored | B1, B2: every check passes, the edit by one cell; A1: right, centred, fillet kept, not by one cell | `out/l4/runs/*/score.json`, `out/l4/compare.json` |
+| L4-Q6 | Real? | no-AI replays of B1 and A1: 9,857.17, then 15 / 15 and 14,848.58 | `out/l4/replay-B1/`, `out/l4/replay-A1/` |
+| L4-Q7 | Does the fillet survive? | yes at width 30, at width 30 + thickness 8, and back (from back5, sketch on the face); the saved files keep a history name beside Edge10 | `out/l4/fillet-tests.json` |
+
+All runs: Claude Code 2.1.308, Sonnet 5.5, auto mode, no permission prompt. Lab gotchas found: a circle's size label
+(placed where the cursor was) takes the click meant for the centre, so the take moves the cursor away before typing
+the size; an open menu blocks the add-on's socket, so menu items are clicked at offsets from the menu title
+(`lab/button.py menu`); the Windows menu moves with the workbench; tiled windows put the sheet left or right, so
+cells are found by `lab/button.py cell`; a file saved headless opens with every object hidden.
+
 ## Tests
 
 `tools/test.sh` runs every test in the lab image (unit tests, plus real Xvfb/tmux checks). The leak scan before any

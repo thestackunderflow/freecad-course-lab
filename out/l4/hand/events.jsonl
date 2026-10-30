@@ -1,0 +1,131 @@
+{"t": 0.049, "event": "recording started: FreeCAD, Part Design"}
+{"t": 3.155, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 5.558, "event": "File: Open", "x": 160, "y": 110, "button": 1}
+{"t": 8.276, "event": "open: typed the file name", "text": "~/hook-lesson3.FCStd"}
+{"t": 10.418, "event": "open: Enter", "keys": "Return"}
+{"t": 14.052, "event": "key 0: isometric", "keys": "0"}
+{"t": 17.968, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 21.523, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 22.231, "event": "console: typed the volume line (lesson 3's hook)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 24.527, "event": "console: Enter (the volume line (lesson 3's hook))", "keys": "Return"}
+{"t": 30.54, "event": "tree: double-click Spreadsheet"}
+{"t": 35.997, "event": "cell A6", "x": 675, "y": 680, "button": 1}
+{"t": 36.713, "event": "A6: typed hole_d", "text": "hole_d"}
+{"t": 37.676, "event": "A6: Enter", "keys": "Return"}
+{"t": 39.724, "event": "cell B6", "x": 855, "y": 680, "button": 1}
+{"t": 40.435, "event": "B6: typed 4 mm", "text": "4 mm"}
+{"t": 41.321, "event": "B6: Enter", "keys": "Return"}
+{"t": 43.309, "event": "cell B6 again", "x": 855, "y": 680, "button": 1}
+{"t": 45.786, "event": "Alias box", "x": 2590, "y": 300, "button": 1}
+{"t": 46.508, "event": "alias B6: typed hole_d", "text": "hole_d"}
+{"t": 47.455, "event": "alias B6: Enter", "keys": "Return"}
+{"t": 51.275, "event": "cell A7", "x": 675, "y": 734, "button": 1}
+{"t": 51.984, "event": "A7: typed hole_spacing", "text": "hole_spacing"}
+{"t": 53.29, "event": "A7: Enter", "keys": "Return"}
+{"t": 55.302, "event": "cell B7", "x": 855, "y": 734, "button": 1}
+{"t": 56.013, "event": "B7: typed 30 mm", "text": "30 mm"}
+{"t": 56.951, "event": "B7: Enter", "keys": "Return"}
+{"t": 58.867, "event": "cell B7 again", "x": 855, "y": 734, "button": 1}
+{"t": 61.34, "event": "Alias box", "x": 2590, "y": 300, "button": 1}
+{"t": 62.056, "event": "alias B7: typed hole_spacing", "text": "hole_spacing"}
+{"t": 63.368, "event": "alias B7: Enter", "keys": "Return"}
+{"t": 66.881, "event": "an empty cell", "x": 1215, "y": 1058, "button": 1}
+{"t": 67.589, "event": "the sheet with seven names"}
+{"t": 72.929, "event": "tab: the hook", "x": 633, "y": 1378, "button": 1}
+{"t": 76.685, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 79.33, "event": "hover: Part Design"}
+{"t": 80.614, "event": "workbench: Part Design", "x": 629, "y": 337, "button": 1}
+{"t": 83.343, "event": "key 6: view from the left (the back)", "keys": "6"}
+{"t": 84.774, "event": "key V", "keys": "v"}
+{"t": 85.415, "event": "key F (fit all)", "keys": "f"}
+{"t": 90.41, "event": "the back face", "x": 1682, "y": 809, "button": 1}
+{"t": 93.994, "event": "hover: Create sketch"}
+{"t": 96.187, "event": "Create sketch", "x": 583, "y": 158, "button": 1}
+{"t": 101.129, "event": "hover: the sketch's origin corner"}
+{"t": 104.071, "event": "key G", "keys": "g"}
+{"t": 104.693, "event": "key C (circle)", "keys": "c"}
+{"t": 108.5, "event": "circle 1: centre", "x": 1669, "y": 1041, "button": 1}
+{"t": 110.627, "event": "circle 1: typed 4", "text": "4"}
+{"t": 111.364, "event": "circle 1: Enter (4)", "keys": "Return"}
+{"t": 115.713, "event": "circle 2: centre", "x": 1691, "y": 580, "button": 1}
+{"t": 117.873, "event": "circle 2: typed 4", "text": "4"}
+{"t": 118.608, "event": "circle 2: Enter (4)", "keys": "Return"}
+{"t": 120.735, "event": "Esc: circle tool off", "keys": "Escape"}
+{"t": 125.084, "event": "lower across: the centre point", "x": 1670, "y": 1043, "button": 1}
+{"t": 126.597, "event": "key L: lower across", "keys": "l"}
+{"t": 128.83, "event": "lower across: typed =", "text": "="}
+{"t": 130.924, "event": "editor: typed Spreadsheet.width / 2", "text": "Spreadsheet.width / 2"}
+{"t": 134.057, "event": "editor: Enter (the list)", "keys": "Return"}
+{"t": 135.694, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 137.322, "event": "lower across: Enter (OK)", "keys": "Return"}
+{"t": 142.654, "event": "lower up: the centre point", "x": 1681, "y": 1043, "button": 1}
+{"t": 144.169, "event": "key I: lower up", "keys": "i"}
+{"t": 146.4, "event": "lower up: typed =", "text": "="}
+{"t": 148.488, "event": "editor: typed (Spreadsheet.plate_height - Spreadsheet.hole_spacing) / 2", "text": "(Spreadsheet.plate_height - Spreadsheet.hole_spacing) / 2"}
+{"t": 153.395, "event": "editor: Enter (the list)", "keys": "Return"}
+{"t": 155.023, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 156.65, "event": "lower up: Enter (OK)", "keys": "Return"}
+{"t": 161.816, "event": "upper across: the centre point", "x": 1692, "y": 582, "button": 1}
+{"t": 163.328, "event": "key L: upper across", "keys": "l"}
+{"t": 165.553, "event": "upper across: typed =", "text": "="}
+{"t": 167.639, "event": "editor: typed Spreadsheet.width / 2", "text": "Spreadsheet.width / 2"}
+{"t": 170.784, "event": "editor: Enter (the list)", "keys": "Return"}
+{"t": 172.404, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 174.031, "event": "upper across: Enter (OK)", "keys": "Return"}
+{"t": 178.515, "event": "upper up: the centre point", "x": 1681, "y": 582, "button": 1}
+{"t": 180.024, "event": "key I: upper up", "keys": "i"}
+{"t": 182.25, "event": "upper up: typed =", "text": "="}
+{"t": 184.335, "event": "editor: typed (Spreadsheet.plate_height + Spreadsheet.hole_spacing) / 2", "text": "(Spreadsheet.plate_height + Spreadsheet.hole_spacing) / 2"}
+{"t": 189.242, "event": "editor: Enter (the list)", "keys": "Return"}
+{"t": 190.868, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 192.492, "event": "upper up: Enter (OK)", "keys": "Return"}
+{"t": 195.864, "event": "hover: Fully constrained"}
+{"t": 199.489, "event": "lab query: the sketch's sizes read back"}
+{"t": 200.243, "event": "Close", "x": 2528, "y": 616, "button": 1}
+{"t": 205.06, "event": "tree: the hole sketch", "x": 208, "y": 469, "button": 1}
+{"t": 207.572, "event": "hover: Hole"}
+{"t": 210.042, "event": "Hole", "x": 523, "y": 228, "button": 1}
+{"t": 215.773, "event": "Hole: Diameter box", "x": 2671, "y": 1135, "button": 1}
+{"t": 216.523, "event": "Diameter: typed =", "text": "="}
+{"t": 218.62, "event": "editor: typed Spreadsheet.hole_d", "text": "Spreadsheet.hole_d"}
+{"t": 221.423, "event": "editor: Enter (the list)", "keys": "Return"}
+{"t": 223.058, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 225.993, "event": "Hole: Depth type list", "x": 2650, "y": 933, "button": 1}
+{"t": 229.484, "event": "Depth type: Through all", "x": 2592, "y": 972, "button": 1}
+{"t": 233.075, "event": "Hole: OK", "x": 2426, "y": 616, "button": 1}
+{"t": 236.788, "event": "key 0: isometric", "keys": "0"}
+{"t": 238.017, "event": "key V", "keys": "v"}
+{"t": 238.637, "event": "key F (fit all)", "keys": "f"}
+{"t": 242.312, "event": "lab query: save holes"}
+{"t": 243.834, "event": "hover: the lip's top outer edge"}
+{"t": 245.713, "event": "the lip's top outer edge", "x": 1886, "y": 1166, "button": 1}
+{"t": 248.421, "event": "hover: Fillet"}
+{"t": 250.618, "event": "Fillet", "x": 1020, "y": 228, "button": 1}
+{"t": 254.904, "event": "Radius: typed 2", "text": "2"}
+{"t": 258.656, "event": "Fillet: OK", "x": 2426, "y": 616, "button": 1}
+{"t": 263.261, "event": "hover: the rounded lip"}
+{"t": 267.762, "event": "tree: Fillet", "x": 178, "y": 502, "button": 1}
+{"t": 270.119, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 270.829, "event": "console: typed the volume line (holes and fillet)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 273.018, "event": "console: Enter (the volume line (holes and fillet))", "keys": "Return"}
+{"t": 277.754, "event": "lab query: save fillet"}
+{"t": 279.745, "event": "Windows menu", "x": 802, "y": 36, "button": 1}
+{"t": 282.137, "event": "Windows: Tile", "x": 807, "y": 165, "button": 1}
+{"t": 287.496, "event": "the sheet: an empty cell (the window takes the keys)", "x": 2419, "y": 1108, "button": 1}
+{"t": 290.185, "event": "cell B5 (width)", "x": 2059, "y": 676, "button": 1}
+{"t": 291.703, "event": "B5: typed 30 mm", "text": "30 mm"}
+{"t": 292.726, "event": "B5: Enter (30 mm)", "keys": "Return"}
+{"t": 299.217, "event": "the hook's window: an empty spot", "x": 646, "y": 1188, "button": 1}
+{"t": 300.435, "event": "key 6: the back, 30 wide", "keys": "6"}
+{"t": 301.663, "event": "key V", "keys": "v"}
+{"t": 302.283, "event": "key F (fit all)", "keys": "f"}
+{"t": 307.155, "event": "tree: Fillet", "x": 178, "y": 502, "button": 1}
+{"t": 309.656, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 310.365, "event": "console: typed the volume line (30 wide)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 312.622, "event": "console: Enter (the volume line (30 wide))", "keys": "Return"}
+{"t": 317.313, "event": "lab query: save width30"}
+{"t": 319.459, "event": "tree: open a row", "x": 55, "y": 469, "button": 1}
+{"t": 322.306, "event": "tree: double-click the hole sketch"}
+{"t": 326.994, "event": "hover: the lower hole's centre"}
+{"t": 332.211, "event": "Close (the hole sketch)", "x": 2528, "y": 616, "button": 1}
+{"t": 334.922, "event": "recording stopped"}

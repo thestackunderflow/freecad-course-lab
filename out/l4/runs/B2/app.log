@@ -1,0 +1,25 @@
+MCP RPC: GUI task raised TypeError: getContents() takes exactly 1 argument (0 given)
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 7, in <module>
+TypeError: getContents() takes exactly 1 argument (0 given)
+Error executing Python code: TypeError: getContents() takes exactly 1 argument (0 given)
+--- code ---
+doc=FreeCAD.getDocument("hook_lesson3")
+for o in doc.Objects:
+    print(o.Name,o.Label,o.TypeId)
+    if hasattr(o,'Shape') and o.Shape.Solids:
+        s=o.Shape;print(' bb',s.BoundBox,'vol',s.Volume)
+    if o.TypeId=='Spreadsheet::Sheet':
+        for k,v in o.getContents().items() if hasattr(o,'getContents') else []: print(' ',k,v)
+    for p in ('Support','Profile','Base','Placement','Length','Type','Reversed','Midplane'):
+        if hasattr(o,p): print(' ',p,getattr(o,p))
+    if o.TypeId=='Sketcher::SketchObject':
+        for g in o.Geometry: print('  geo',g)
+        print('  ',o.ExpressionEngine)
+--- end ---
+The 'Midplane' property being set for the extrusion of HoleSketch is deprecated and has been replaced by the 'SideType' property in FeatureExtrude. Please update your script, this property will be removed in a future version.

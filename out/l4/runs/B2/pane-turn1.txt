@@ -1,0 +1,36 @@
+    - I put the spacing along the height
+      because the plate is only 20 mm wide, so
+      30 mm across it wouldn't fit.
+    - A pocket, HolePocket, cuts them through
+      the plate. The removed volume matches
+      two Ø4 × 5 mm holes.
+  - Fillet: LipFillet rounds the lip's top
+    outer edge with a 2 mm radius. The radius
+    is typed in directly, not linked to the
+    spreadsheet.
+
+✻ Cogitated for 32s · done 11:24 PM
+
+❯ Make the hook 30 wide instead of 20.
+
+  Called freecad
+
+● The hook is now 30 mm wide. I changed width
+  in the spreadsheet from 20 to 30 mm and the
+  model recomputed cleanly.
+
+  The pad length follows width, so the body
+  now runs from y = 0 to −30. The two screw
+  holes moved with it. They're still centred
+  on the plate's back face, now at y = −15,
+  and still 30 mm apart. The fillet is still
+  on the lip's top outer edge.
+
+  I haven't saved the document.
+
+✻ Baked for 4s · done 11:24 PM
+
+──────────────────────────────────────────────
+❯ save the document
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

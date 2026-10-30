@@ -1,0 +1,14 @@
+Looking for thread definitions in: /opt/freecad/usr/share/Mod/PartDesign/Resources/Hole /home/maker/.local/share/FreeCAD/v1-1/PartDesign/Hole 
+built hook plain [(<PartDesign::Pad>, ('Face8',))] 9857.1681 [4.0, 10.0, 15.0, 4.0, 10.0, 45.0] 0
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+Importing project files......
+						(9 %)							(18 %)							(27 %)							(36 %)							(45 %)							(54 %)							(63 %)							(72 %)							(81 %)							(90 %)							(100 %)									Postprocessing......
+						(100 %)									Recompute......
+						(8 %)							(16 %)							(25 %)							(33 %)							(41 %)							(50 %)							(58 %)							(66 %)							(75 %)							(83 %)							(91 %)							(100 %)									Recompute......
+						(8 %)							(16 %)							(25 %)							(33 %)							(41 %)							(50 %)							(58 %)							(66 %)							(75 %)							(83 %)							(91 %)							(100 %)									Recompute......
+						(7 %)							(15 %)							(23 %)							(30 %)							(38 %)							(46 %)							(53 %)							(61 %)							(69 %)							(76 %)							(84 %)							(92 %)							(100 %)									Recompute......
+						(7 %)							(14 %)							(21 %)							(28 %)							(35 %)							(42 %)							(50 %)							(57 %)							(64 %)							(71 %)							(78 %)							(85 %)							(92 %)							(100 %)									Recompute......
+						(6 %)							(13 %)							(20 %)							(26 %)							(33 %)							(40 %)							(46 %)							(53 %)							(60 %)							(66 %)							(73 %)							(80 %)							(86 %)							(93 %)							(100 %)									

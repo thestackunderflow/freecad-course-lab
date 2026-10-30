@@ -1,0 +1,33 @@
+{
+ "ok": false,
+ "misses": [
+  "fillet",
+  "volume"
+ ],
+ "holes": 2,
+ "hole_d": [
+  4.0,
+  4.0
+ ],
+ "hole_heights_mm": [
+  15.0,
+  45.0
+ ],
+ "heights_reading": "15/45 (centred on the back face)",
+ "spacing_mm": 30.0,
+ "hole_sides_mm": [
+  [
+   10.0,
+   10.0
+  ],
+  [
+   10.0,
+   10.0
+  ]
+ ],
+ "centred": true,
+ "through": true,
+ "fillet_on_lip_edge": false,
+ "volume_mm3": 9874.3363,
+ "expected_mm3": 9857.1681
+}

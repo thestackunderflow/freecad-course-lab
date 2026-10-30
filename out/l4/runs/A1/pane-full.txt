@@ -1,0 +1,36 @@
+    top meets its outer face.
+
+  I hardcoded the hole positions and the
+  fillet radius instead of linking them to the
+  spreadsheet. The fillet edge was picked by
+  its geometry, so it may need re-selecting if
+  you change the profile drastically.
+
+✻ Crunched for 27s · done 11:20 PM
+
+❯ Make the hook 30 wide instead of 20.
+
+  Called freecad
+
+● The hook is now 30 mm wide. I changed width
+  in the spreadsheet from 20 to 30, and the
+  pad updated from it. All features recomputed
+  cleanly and the solid is valid.
+
+  - Holes: they would have stayed 10 mm from
+    the edge and ended up off-centre. I linked
+    their position to -Spreadsheet.width / 2,
+    so they are now centred at 15 mm. They
+    are still 4 mm across, 30 mm apart, at
+    heights 15 and 45 mm. They will also stay
+    centred if you change the width again.
+  - Fillet: the 2 mm fillet on the lip's top
+    outer edge followed the wider lip with no
+    changes.
+
+✻ Worked for 9s · done 11:20 PM
+                          ◐ medium · /effort
+──────────────────────────────────────────────
+❯ Export it as an STL
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

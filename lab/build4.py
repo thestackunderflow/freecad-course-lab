@@ -41,7 +41,9 @@ lip = [i for i, e in enumerate(hole.Shape.Edges)
 fil = body.newObject('PartDesign::Fillet', 'Fillet')
 fil.Base = (hole, ['Edge%d' % (lip[0] + 1)])
 fil.Radius = 2
-hole.Visibility = False
+# a file saved headless has no view data: show what the by-hand file shows (the body's tip), hide the rest
+for o in d.Objects:
+    o.Visibility = o.Name in ('Body', 'Fillet')
 d.recompute()
 print('built hook', 'plain' if os.environ.get('PLAIN') == '1' else 'names', sk.AttachmentSupport, round(body.Shape.Volume, 4), [round(c.Value, 3) for c in sk.Constraints], sk.solve())
 d.saveAs(os.environ['FC_OUT'])

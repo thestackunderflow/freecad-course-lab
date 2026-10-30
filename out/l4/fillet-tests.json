@@ -1,0 +1,266 @@
+{
+ "start_file": "out/l3/hand/back5.FCStd (lesson 3 by hand, hook_depth 40)",
+ "built_by": "lab/build4.py",
+ "runs": {
+  "names/start": {
+   "ok": true,
+   "misses": [],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     10.0,
+     10.0
+    ],
+    [
+     10.0,
+     10.0
+    ]
+   ],
+   "centred": true,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 9857.1681,
+   "expected_mm3": 9857.1681,
+   "invalid_objects": [],
+   "fillet_base": null
+  },
+  "names/width30": {
+   "ok": true,
+   "misses": [],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     15.0,
+     15.0
+    ],
+    [
+     15.0,
+     15.0
+    ]
+   ],
+   "centred": true,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 14848.5841,
+   "expected_mm3": 14848.5841,
+   "invalid_objects": [],
+   "fillet_base": null
+  },
+  "names/width30-thick8": {
+   "ok": true,
+   "misses": [],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     15.0,
+     15.0
+    ],
+    [
+     15.0,
+     15.0
+    ]
+   ],
+   "centred": true,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 22333.1858,
+   "expected_mm3": 22333.1858,
+   "invalid_objects": [],
+   "fillet_base": null
+  },
+  "names/back": {
+   "ok": true,
+   "misses": [],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     10.0,
+     10.0
+    ],
+    [
+     10.0,
+     10.0
+    ]
+   ],
+   "centred": true,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 9857.1681,
+   "expected_mm3": 9857.1681,
+   "invalid_objects": [],
+   "fillet_base": null
+  },
+  "plain/start": {
+   "ok": true,
+   "misses": [],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     10.0,
+     10.0
+    ],
+    [
+     10.0,
+     10.0
+    ]
+   ],
+   "centred": true,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 9857.1681,
+   "expected_mm3": 9857.1681,
+   "invalid_objects": [],
+   "fillet_base": null
+  },
+  "plain/width30": {
+   "ok": false,
+   "misses": [
+    "centred"
+   ],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     10.0,
+     20.0
+    ],
+    [
+     10.0,
+     20.0
+    ]
+   ],
+   "centred": false,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 14848.5841,
+   "expected_mm3": 14848.5841,
+   "invalid_objects": [],
+   "fillet_base": null
+  },
+  "plain/width30-thick8": {
+   "ok": false,
+   "misses": [
+    "centred"
+   ],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     10.0,
+     20.0
+    ],
+    [
+     10.0,
+     20.0
+    ]
+   ],
+   "centred": false,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 22333.1858,
+   "expected_mm3": 22333.1858,
+   "invalid_objects": [],
+   "fillet_base": null
+  },
+  "plain/back": {
+   "ok": true,
+   "misses": [],
+   "holes": 2,
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "hole_heights_mm": [
+    15.0,
+    45.0
+   ],
+   "heights_reading": "15/45 (centred on the back face)",
+   "spacing_mm": 30.0,
+   "hole_sides_mm": [
+    [
+     10.0,
+     10.0
+    ],
+    [
+     10.0,
+     10.0
+    ]
+   ],
+   "centred": true,
+   "through": true,
+   "fillet_on_lip_edge": true,
+   "volume_mm3": 9857.1681,
+   "expected_mm3": 9857.1681,
+   "invalid_objects": [],
+   "fillet_base": null
+  }
+ }
+}

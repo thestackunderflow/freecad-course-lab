@@ -1,0 +1,36 @@
+  ⎿  Code executed successfully: Python
+     code executed successfully.
+     Output: [('Length',
+     'Spreadsheet.width')]
+     30.0 mm [('Length',
+     'Spreadsheet.width')]
+     Pad ['Expanded', 'Up-to-date']
+     BoundBox (0, -30, 0, 40,
+     1.33227e-14, 60)
+     HolePocket ['Up-to-date'] BoundBox
+     (0, -30, 0, 40, 1.33227e-14, 60)
+     LipFillet ['Up-to-date'] BoundBox
+     (0, -30, 0, 40, 1.33227e-14, 60)
+     [-15.0, -15.0]
+
+  ⎿  Allowed by auto mode classifier
+
+            11:24 PM claude-sonnet-5-5
+● The hook is now 30 mm wide. I changed width
+  in the spreadsheet from 20 to 30 mm and the
+  model recomputed cleanly.
+
+  The pad length follows width, so the body
+  now runs from y = 0 to −30. The two screw
+  holes moved with it. They're still centred
+  on the plate's back face, now at y = −15,
+  and still 30 mm apart. The fillet is still
+  on the lip's top outer edge.
+
+  I haven't saved the document.
+
+✻ Baked for 4s · done 11:24 PM
+
+──────────────────────────────────────────────
+  Showing detailed transcript · ctrl+o…verbose
+

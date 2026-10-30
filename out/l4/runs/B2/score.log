@@ -1,0 +1,140 @@
+{
+ "names": {
+  "aliases": [
+   "hole_d",
+   "hole_spacing",
+   "hook_depth",
+   "lip_height",
+   "plate_height",
+   "thickness",
+   "width"
+  ],
+  "hole_names": [
+   "hole_d",
+   "hole_spacing"
+  ],
+  "exprs_from_hole_names": 4,
+  "positions_from_width": true,
+  "position_props": [
+   "HoleSketch.Constraints[1]",
+   "HoleSketch.Constraints[4]"
+  ]
+ },
+ "first_build_right": true,
+ "first_build": {
+  "ok": true,
+  "misses": [],
+  "holes": 2,
+  "hole_d": [
+   4.0,
+   4.0
+  ],
+  "hole_heights_mm": [
+   15.0,
+   45.0
+  ],
+  "heights_reading": "15/45 (centred on the back face)",
+  "spacing_mm": 30.0,
+  "hole_sides_mm": [
+   [
+    10.0,
+    10.0
+   ],
+   [
+    10.0,
+    10.0
+   ]
+  ],
+  "centred": true,
+  "through": true,
+  "fillet_on_lip_edge": true,
+  "volume_mm3": 9857.1681,
+  "expected_mm3": 9857.1681
+ },
+ "names_after_edit": {
+  "aliases": [
+   "hole_d",
+   "hole_spacing",
+   "hook_depth",
+   "lip_height",
+   "plate_height",
+   "thickness",
+   "width"
+  ],
+  "hole_names": [
+   "hole_d",
+   "hole_spacing"
+  ],
+  "exprs_from_hole_names": 4,
+  "positions_from_width": true,
+  "position_props": [
+   "HoleSketch.Constraints[1]",
+   "HoleSketch.Constraints[4]"
+  ]
+ },
+ "edit_followed": true,
+ "after_edit": {
+  "ok": true,
+  "misses": [],
+  "holes": 2,
+  "hole_d": [
+   4.0,
+   4.0
+  ],
+  "hole_heights_mm": [
+   15.0,
+   45.0
+  ],
+  "heights_reading": "15/45 (centred on the back face)",
+  "spacing_mm": 30.0,
+  "hole_sides_mm": [
+   [
+    15.0,
+    15.0
+   ],
+   [
+    15.0,
+    15.0
+   ]
+  ],
+  "centred": true,
+  "through": true,
+  "fillet_on_lip_edge": true,
+  "volume_mm3": 14848.5841,
+  "expected_mm3": 14848.5841
+ },
+ "centred_after_edit": true,
+ "fillet_after_edit": true,
+ "edit_alias": "width",
+ "edit_touched_holes": false,
+ "edit_by_one_cell": true,
+ "objects_after_edit": [
+  "Body",
+  "Origin",
+  "X_Axis",
+  "Y_Axis",
+  "Z_Axis",
+  "XY_Plane",
+  "XZ_Plane",
+  "YZ_Plane",
+  "Origin001",
+  "Sketch",
+  "Pad",
+  "Spreadsheet",
+  "HoleSketch",
+  "HolePocket",
+  "LipFillet"
+ ],
+ "calls_per_message": {
+  "1": [
+   "list_documents",
+   "execute_code",
+   "execute_code",
+   "execute_code",
+   "execute_code"
+  ],
+  "2": [
+   "execute_code"
+  ]
+ }
+}

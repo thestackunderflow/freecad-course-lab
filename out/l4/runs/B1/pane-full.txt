@@ -1,0 +1,36 @@
+  The pocket removes 125.7 mm³, which matches
+  two 4 mm holes through the 5 mm plate.
+
+  The fillet radius is typed directly into
+  LipFillet rather than the spreadsheet, since
+  you only asked for the hole values there.
+
+✻ Sautéed for 34s · done 11:16 PM
+
+❯ Make the hook 30 wide instead of 20.
+
+  Called freecad
+
+● The hook is now 30 mm wide. I changed width
+  in the spreadsheet (B5) from 20 mm to 30 mm,
+  and the model updated on its own.
+
+  - Pad: the pad length is now 30 mm.
+  - Holes: both holes moved to the new centre
+    line, 15 mm from each side edge. They are
+    still 4 mm across and 30 mm apart.
+  - Fillet: the 2 mm fillet on the lip is
+    still in place.
+  - Model check: the recompute shows no errors
+    and the solid is valid.
+
+  The view is highlighted blue because that
+  object is selected in FreeCAD. I haven't
+  saved the file.
+
+✻ Cogitated for 5s · done 11:16 PM
+                          ◐ medium · /effort
+──────────────────────────────────────────────
+❯ save the document
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

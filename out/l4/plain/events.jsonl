@@ -1,0 +1,24 @@
+{"t": 0.271, "event": "recording started"}
+{"t": 1.278, "event": "the plain hook from the back, 20 wide"}
+{"t": 16.7, "event": "tree: double-click Spreadsheet"}
+{"t": 22.12, "event": "Windows menu", "x": 702, "y": 36, "button": 1}
+{"t": 25.157, "event": "Windows: Tile", "x": 707, "y": 165, "button": 1}
+{"t": 29.958, "event": "the sheet: an empty cell", "x": 1218, "y": 1108, "button": 1}
+{"t": 32.949, "event": "cell B5 (width)", "x": 858, "y": 676, "button": 1}
+{"t": 34.471, "event": "B5: typed 30 mm", "text": "30 mm"}
+{"t": 35.523, "event": "B5: Enter (30 mm)", "keys": "Return"}
+{"t": 41.344, "event": "the hook's window: an empty spot", "x": 1846, "y": 1188, "button": 1}
+{"t": 42.557, "event": "key 6: the back, 30 wide", "keys": "6"}
+{"t": 43.189, "event": "key V", "keys": "v"}
+{"t": 43.815, "event": "key F (fit all)", "keys": "f"}
+{"t": 49.139, "event": "tree: open a row", "x": 34, "y": 340, "button": 1}
+{"t": 51.642, "event": "tree: Fillet", "x": 178, "y": 469, "button": 1}
+{"t": 53.974, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 54.692, "event": "console: typed the volume line (30 wide)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 56.949, "event": "console: Enter (the volume line (30 wide))", "keys": "Return"}
+{"t": 61.083, "event": "lab query: save width30"}
+{"t": 63.204, "event": "tree: open a row", "x": 55, "y": 437, "button": 1}
+{"t": 66.096, "event": "tree: double-click the hole sketch"}
+{"t": 70.77, "event": "hover: the lower hole's centre"}
+{"t": 76.014, "event": "Close (the hole sketch)", "x": 2528, "y": 616, "button": 1}
+{"t": 78.748, "event": "recording stopped"}

@@ -1,0 +1,15 @@
+{
+ "calls": 1,
+ "names": [
+  "execute_code"
+ ],
+ "errors": 0,
+ "rows": [
+  {
+   "logged_seq": 26,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: 30.0 mm [('Length', 'Spreadsheet.width')]\n[(-15.0, 15.0, 2.0), (-15.0, 45.0, 2.0)]\nBoundBox (0, -30, 0, 40, 1.33227e-14, 60) 14848.584073464099 True True\n[]\n"
+  }
+ ]
+}

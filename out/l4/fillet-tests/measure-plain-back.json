@@ -1,0 +1,654 @@
+{
+ "document": "plain-back.FCStd",
+ "freecad": "1.1.4",
+ "objects": [
+  "Body",
+  "Origin",
+  "X_Axis",
+  "Y_Axis",
+  "Z_Axis",
+  "XY_Plane",
+  "XZ_Plane",
+  "YZ_Plane",
+  "Origin001",
+  "Sketch",
+  "Pad",
+  "Spreadsheet",
+  "Sketch001",
+  "Hole",
+  "Fillet"
+ ],
+ "solids": [
+  {
+   "name": "Body",
+   "label": "Body",
+   "type": "PartDesign::Body",
+   "volume_mm3": 9857.1681,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "in_list": [],
+   "cylinders": [
+    {
+     "r": 2.0,
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "center": [
+      38.0,
+      0.0,
+      8.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      45.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      15.0
+     ],
+     "area": 62.832
+    }
+   ]
+  },
+  {
+   "name": "Pad",
+   "label": "Pad",
+   "type": "PartDesign::Pad",
+   "volume_mm3": 10000.0,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "in_list": [
+    "Body",
+    "Hole"
+   ],
+   "cylinders": []
+  },
+  {
+   "name": "Hole",
+   "label": "Hole",
+   "type": "PartDesign::Hole",
+   "volume_mm3": 9874.3363,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "in_list": [
+    "Body",
+    "Fillet",
+    "Fillet"
+   ],
+   "cylinders": [
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      45.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      15.0
+     ],
+     "area": 62.832
+    }
+   ]
+  },
+  {
+   "name": "Fillet",
+   "label": "Fillet",
+   "type": "PartDesign::Fillet",
+   "volume_mm3": 9857.1681,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "in_list": [
+    "Body",
+    "Body"
+   ],
+   "cylinders": [
+    {
+     "r": 2.0,
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "center": [
+      38.0,
+      0.0,
+      8.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      45.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      15.0
+     ],
+     "area": 62.832
+    }
+   ]
+  }
+ ],
+ "sketches": [
+  {
+   "name": "Sketch",
+   "label": "Sketch",
+   "support": [
+    [
+     "Origin",
+     [
+      "XZ_Plane"
+     ]
+    ]
+   ],
+   "map_mode": "FlatFace",
+   "geometry": 8,
+   "constraints": 23,
+   "constraint_kinds": {
+    "Coincident": 9,
+    "PointOnObject": 1,
+    "Vertical": 4,
+    "Horizontal": 3,
+    "DistanceX": 3,
+    "DistanceY": 3
+   },
+   "solve": 0,
+   "fully_constrained": true,
+   "dependent_parameters": 0,
+   "normal": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_vector": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "right_vector": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]",
+   "corners_xy": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     40.0,
+     10.0
+    ],
+    [
+     35.0,
+     10.0
+    ],
+    [
+     35.0,
+     5.0
+    ],
+    [
+     5.0,
+     5.0
+    ],
+    [
+     5.0,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ]
+   ],
+   "dimensions": [
+    {
+     "index": 17,
+     "type": "DistanceX",
+     "name": "",
+     "value": 40.0,
+     "expression": "Spreadsheet.hook_depth",
+     "first": 0,
+     "second": 0
+    },
+    {
+     "index": 18,
+     "type": "DistanceY",
+     "name": "",
+     "value": 10.0,
+     "expression": "Spreadsheet.lip_height",
+     "first": 1,
+     "second": 1
+    },
+    {
+     "index": 19,
+     "type": "DistanceX",
+     "name": "",
+     "value": 5.0,
+     "expression": "Spreadsheet.thickness",
+     "first": 2,
+     "second": 2
+    },
+    {
+     "index": 20,
+     "type": "DistanceY",
+     "name": "",
+     "value": 5.0,
+     "expression": "Spreadsheet.lip_height - Spreadsheet.thickness",
+     "first": 3,
+     "second": 3
+    },
+    {
+     "index": 21,
+     "type": "DistanceY",
+     "name": "",
+     "value": 60.0,
+     "expression": "Spreadsheet.plate_height",
+     "first": 0,
+     "second": 6
+    },
+    {
+     "index": 22,
+     "type": "DistanceX",
+     "name": "",
+     "value": 5.0,
+     "expression": "Spreadsheet.thickness",
+     "first": 6,
+     "second": 6
+    }
+   ]
+  },
+  {
+   "name": "Sketch001",
+   "label": "Sketch001",
+   "support": [
+    [
+     "Pad",
+     [
+      "Face8"
+     ]
+    ]
+   ],
+   "map_mode": "FlatFace",
+   "geometry": 2,
+   "constraints": 6,
+   "constraint_kinds": {
+    "Diameter": 2,
+    "DistanceX": 2,
+    "DistanceY": 2
+   },
+   "solve": 0,
+   "fully_constrained": true,
+   "dependent_parameters": 0,
+   "normal": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up_vector": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "right_vector": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(-90,0,90)]",
+   "corners_xy": [],
+   "dimensions": [
+    {
+     "index": 0,
+     "type": "Diameter",
+     "name": "",
+     "value": 4.0,
+     "expression": null,
+     "first": 0,
+     "second": -2000
+    },
+    {
+     "index": 1,
+     "type": "DistanceX",
+     "name": "",
+     "value": 10.0,
+     "expression": null,
+     "first": -1,
+     "second": 0
+    },
+    {
+     "index": 2,
+     "type": "DistanceY",
+     "name": "",
+     "value": 15.0,
+     "expression": null,
+     "first": -1,
+     "second": 0
+    },
+    {
+     "index": 3,
+     "type": "Diameter",
+     "name": "",
+     "value": 4.0,
+     "expression": null,
+     "first": 1,
+     "second": -2000
+    },
+    {
+     "index": 4,
+     "type": "DistanceX",
+     "name": "",
+     "value": 10.0,
+     "expression": null,
+     "first": -1,
+     "second": 1
+    },
+    {
+     "index": 5,
+     "type": "DistanceY",
+     "name": "",
+     "value": 45.0,
+     "expression": null,
+     "first": -1,
+     "second": 1
+    }
+   ]
+  }
+ ],
+ "bodies": [
+  {
+   "name": "Body",
+   "label": "Body",
+   "tip": "Fillet",
+   "features": [
+    {
+     "name": "Sketch",
+     "label": "Sketch",
+     "type": "Sketcher::SketchObject"
+    },
+    {
+     "name": "Pad",
+     "label": "Pad",
+     "type": "PartDesign::Pad",
+     "length": 20.0,
+     "reversed": false,
+     "pad_type": "Length"
+    },
+    {
+     "name": "Sketch001",
+     "label": "Sketch001",
+     "type": "Sketcher::SketchObject"
+    },
+    {
+     "name": "Hole",
+     "label": "Hole",
+     "type": "PartDesign::Hole"
+    },
+    {
+     "name": "Fillet",
+     "label": "Fillet",
+     "type": "PartDesign::Fillet"
+    }
+   ],
+   "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]"
+  }
+ ],
+ "sheets": [
+  {
+   "name": "Spreadsheet",
+   "label": "Spreadsheet",
+   "aliases": {
+    "hook_depth": "40 mm",
+    "thickness": "5 mm",
+    "lip_height": "10 mm",
+    "plate_height": "60 mm",
+    "width": "20 mm",
+    "hole_d": "4 mm",
+    "hole_spacing": "30 mm"
+   },
+   "cells": {
+    "A1": {
+     "content": "'hook_depth",
+     "value": "hook_depth"
+    },
+    "B1": {
+     "content": "=40 mm",
+     "value": "40 mm"
+    },
+    "A2": {
+     "content": "'thickness",
+     "value": "thickness"
+    },
+    "B2": {
+     "content": "=5 mm",
+     "value": "5 mm"
+    },
+    "A3": {
+     "content": "'lip_height",
+     "value": "lip_height"
+    },
+    "B3": {
+     "content": "=10 mm",
+     "value": "10 mm"
+    },
+    "A4": {
+     "content": "'plate_height",
+     "value": "plate_height"
+    },
+    "B4": {
+     "content": "=60 mm",
+     "value": "60 mm"
+    },
+    "A5": {
+     "content": "'width",
+     "value": "width"
+    },
+    "B5": {
+     "content": "=20 mm",
+     "value": "20 mm"
+    },
+    "A6": {
+     "content": "'hole_d",
+     "value": "hole_d"
+    },
+    "B6": {
+     "content": "=4 mm",
+     "value": "4 mm"
+    },
+    "A7": {
+     "content": "'hole_spacing",
+     "value": "hole_spacing"
+    },
+    "B7": {
+     "content": "=30 mm",
+     "value": "30 mm"
+    }
+   }
+  }
+ ],
+ "pads": [
+  {
+   "name": "Pad",
+   "length": 20.0,
+   "expression": "Spreadsheet.width"
+  }
+ ],
+ "expressions": [
+  {
+   "object": "Sketch",
+   "property": "Constraints[17]",
+   "expression": "Spreadsheet.hook_depth"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[18]",
+   "expression": "Spreadsheet.lip_height"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[19]",
+   "expression": "Spreadsheet.thickness"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[20]",
+   "expression": "Spreadsheet.lip_height - Spreadsheet.thickness"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[21]",
+   "expression": "Spreadsheet.plate_height"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[22]",
+   "expression": "Spreadsheet.thickness"
+  },
+  {
+   "object": "Pad",
+   "property": "Length",
+   "expression": "Spreadsheet.width"
+  },
+  {
+   "object": "Hole",
+   "property": "Diameter",
+   "expression": "Spreadsheet.hole_d"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+[('Diameter', 4.0), ('Diameter', 4.0), ('DistanceX', 10.0), ('DistanceY', 15.0), ('DistanceX', 10.0), ('DistanceY', 45.0)] {'Constraints[2]': 'Spreadsheet.width / 2', 'Constraints[3]': '(Spreadsheet.plate_height - Spreadsheet.hole_spacing) / 2', 'Constraints[4]': 'Spreadsheet.width / 2', 'Constraints[5]': '(Spreadsheet.plate_height + Spreadsheet.hole_spacing) / 2'} True
