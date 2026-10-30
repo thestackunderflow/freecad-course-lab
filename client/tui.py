@@ -32,3 +32,16 @@ def approval_tool(text):
 def turns_done(text):
     """How many end-of-turn lines the screen shows (a turn is over when this count goes up)."""
     return len(DONE.findall(text or ''))
+
+
+DONE_FULL = re.compile(r'[A-Z][^\W\d_]+ for [0-9hms ]+· done [0-9:]+(?: ?[AP]M)?')
+
+
+def done_lines(text):
+    return set(m.group(0) for m in DONE_FULL.finditer(text or ''))
+
+
+def new_turn_end(before, after):
+    """A turn is over when an end-of-turn line appears that the screen did not show before Enter (lesson 3: Claude
+    Code can re-draw its transcript mid-session, so the number of such lines can fall)."""
+    return bool(done_lines(after) - done_lines(before))

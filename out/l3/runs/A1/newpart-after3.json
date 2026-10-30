@@ -1,0 +1,32 @@
+{
+ "state": {
+  "solids": [
+   [
+    "Unnamed",
+    "Body",
+    "Body",
+    "PartDesign::Body",
+    15220.0,
+    true
+   ],
+   [
+    "Unnamed",
+    "Pad",
+    "Pad",
+    "PartDesign::Pad",
+    15220.0,
+    false
+   ]
+  ],
+  "sketches": {
+   "Unnamed": [
+    "Sketch"
+   ]
+  }
+ },
+ "claude": [
+  "Unnamed",
+  "Body",
+  "Sketch"
+ ]
+}

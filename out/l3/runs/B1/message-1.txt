@@ -1,0 +1,1 @@
+Use named sizes in a spreadsheet: plate_height 60, width 20, thickness 5, hook_depth 25, lip_height 10, and write every length and the extrude distance from them. In FreeCAD, sketch this outline on the XZ plane, starting at 0,0: right 25, up 10, left 5, down 5, left 15, up 55, left 5, then back to the start. Extrude it 20 mm.

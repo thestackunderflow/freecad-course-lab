@@ -12,8 +12,10 @@ copy of a document for measuring, or to find where a tree row is drawn so the sc
     python3 -m lab.fcrpc cell DOC SHEET CELL    prints a spreadsheet cell's value (lesson 3; CELL may be an alias)
     python3 -m lab.fcrpc ping
 
-Every query is sent wrapped in guard(): an error inside FreeCAD (lesson 2: "Internal C++ object (QTreeWidgetItem)
-already deleted" while the Model tree was being rebuilt) is caught there and printed as a LABERR line, so nothing
+Lesson 2's error dialog, found and fixed in lesson 3: FreeCAD's tree items reached through PySide wrappers
+(findItems) can be "Internal C++ object (QTreeWidgetItem) already deleted" (reproduced: the second document's rows);
+ROW and ARROW now walk the tree's model indexes (no item wrappers) and only take rows under the asked document.
+Every query is also sent wrapped in guard(): an error inside FreeCAD is caught there and printed as a LABERR line, so nothing
 reaches FreeCAD's console as an error and no error shows on the filmed screen. The client retries a LABERR answer
 (the tree settles in a moment) and raises on its own side after three tries."""
 import json
@@ -62,54 +64,57 @@ print(json.dumps({{d.Name: {{'label': d.Label, 'objects': [[o.Name, o.Label] for
 
 ROW = """import FreeCAD, FreeCADGui
 from PySide import QtCore, QtWidgets
+QtWidgets.QApplication.processEvents()
 mw = FreeCADGui.getMainWindow()
-target = FreeCAD.getDocument({doc!r}).getObject({obj!r}).Label
-found, last = None, ''
-for attempt in range(6):          # the Model tree may be rebuilding (its rows are new objects): settle, find again
-    QtWidgets.QApplication.processEvents()
-    try:
-        for tree in mw.findChildren(QtWidgets.QTreeWidget):
-            if found or not tree.isVisible():
-                continue
-            items = tree.findItems(target, QtCore.Qt.MatchExactly | QtCore.Qt.MatchRecursive, 0)
-            items = [i for i in items if i.parent() is not None] or items   # an object row, not the document row
-            for item in items:
-                r = tree.visualItemRect(item)
-                g = tree.viewport().mapToGlobal(r.center())
-                x0 = tree.viewport().mapToGlobal(r.topLeft()).x()
-                k = tree.devicePixelRatioF()
-                found = (int((x0 + 48 + tree.fontMetrics().horizontalAdvance(target) // 2) * k), int(g.y() * k))
-                break
+d = FreeCAD.getDocument({doc!r})
+target, doclabel = d.getObject({obj!r}).Label, d.Label
+found = None
+for tree in mw.findChildren(QtWidgets.QTreeWidget):
+    if found or not tree.isVisible():
+        continue
+    m = tree.model()
+    for ix in m.match(m.index(0, 0), QtCore.Qt.DisplayRole, target, -1, QtCore.Qt.MatchExactly | QtCore.Qt.MatchRecursive):
+        if not ix.parent().isValid():
+            continue                       # a document row with the same name
+        top = ix
+        while top.parent().isValid():
+            top = top.parent()
+        if top.data() != doclabel:
+            continue                       # the same label in another open document
+        r = tree.visualRect(ix)
+        if r.height() <= 0:
+            continue                       # inside a closed row
+        g = tree.viewport().mapToGlobal(r.center())
+        x0 = tree.viewport().mapToGlobal(r.topLeft()).x()
+        k = tree.devicePixelRatioF()
+        found = (int((x0 + 48 + tree.fontMetrics().horizontalAdvance(target) // 2) * k), int(g.y() * k))
         break
-    except RuntimeError as e:
-        found, last = None, str(e)
-        QtCore.QThread.msleep(150)
 print('%d %d' % found if found else 'none')"""
 
 CELL = """import FreeCAD
 print(FreeCAD.getDocument({doc!r}).getObject({sheet!r}).get({cell!r}))"""
 
-
 ARROW = """import FreeCAD, FreeCADGui
 from PySide import QtCore, QtWidgets
 QtWidgets.QApplication.processEvents()
 mw = FreeCADGui.getMainWindow()
-target = FreeCAD.getDocument({doc!r}).getObject({obj!r}).Label
-doclabel = FreeCAD.getDocument({doc!r}).Label
+d = FreeCAD.getDocument({doc!r})
+target, doclabel = d.getObject({obj!r}).Label, d.Label
 out = ''
 for tree in mw.findChildren(QtWidgets.QTreeWidget):
     if out or not tree.isVisible():
         continue
-    for item in tree.findItems(target, QtCore.Qt.MatchExactly | QtCore.Qt.MatchRecursive, 0):
-        chain, p, top = [], item.parent(), None
-        while p is not None:
-            chain.append(p); top = p; p = p.parent()
-        if top is None or top.text(0) != doclabel:
+    m = tree.model()
+    for ix in m.match(m.index(0, 0), QtCore.Qt.DisplayRole, target, -1, QtCore.Qt.MatchExactly | QtCore.Qt.MatchRecursive):
+        chain, p = [], ix.parent()
+        while p.isValid():
+            chain.append(p)
+            p = p.parent()
+        if not chain or chain[-1].data() != doclabel:
             continue
-        closed = [a for a in reversed(chain) if not a.isExpanded()]
+        closed = [a for a in reversed(chain) if not tree.isExpanded(a)]
         if closed:
-            a = closed[0]
-            r = tree.visualItemRect(a)
+            r = tree.visualRect(closed[0])
             g = tree.viewport().mapToGlobal(QtCore.QPoint(r.left() - tree.indentation() // 2, r.center().y()))
             k = tree.devicePixelRatioF()
             out = '%d %d' % (int(g.x() * k), int(g.y() * k))

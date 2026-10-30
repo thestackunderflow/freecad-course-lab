@@ -1,0 +1,48 @@
+{"t": 0.059, "event": "recording started: Claude Code (left), FreeCAD with an empty document (right)"}
+{"t": 2.146, "event": "turn 1: typing", "text": "In FreeCAD, sketch this outline on the XZ plane, starting at 0,0: right 25, up 10, left 5, down 5, left 15, up 55, left 5, then back to the start. Extrude it 20 mm."}
+{"t": 10.742, "event": "turn 1: Enter"}
+{"t": 18.396, "event": "tool call: execute_code", "seq": 18}
+{"t": 19.592, "event": "tool reply: execute_code", "seq": 19, "isError": false}
+{"t": 23.054, "event": "turn 1: end-of-turn line seen"}
+{"t": 25.057, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 30.091, "event": "lab query: save after first"}
+{"t": 32.192, "event": "viewer: click the 3D view", "x": 2650, "y": 1250, "button": 1}
+{"t": 32.902, "event": "viewer: key 0 isometric", "keys": "0"}
+{"t": 34.534, "event": "viewer: key V", "keys": "v"}
+{"t": 35.161, "event": "viewer: key F (fit all)", "keys": "f"}
+{"t": 40.595, "event": "tree: Claude's part row not found"}
+{"t": 42.953, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 43.664, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 45.914, "event": "console: Enter (the volume line)", "keys": "Return"}
+{"t": 50.298, "event": "turn 1: typing", "text": "Make the hook 40 deep instead of 25."}
+{"t": 52.845, "event": "turn 1: Enter"}
+{"t": 59.814, "event": "tool call: execute_code", "seq": 20}
+{"t": 60.677, "event": "tool reply: execute_code", "seq": 21, "isError": false}
+{"t": 63.106, "event": "turn 1: end-of-turn line seen"}
+{"t": 65.108, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 70.136, "event": "lab query: save after after2"}
+{"t": 72.324, "event": "viewer: click the 3D view", "x": 2650, "y": 1250, "button": 1}
+{"t": 73.043, "event": "viewer: key V", "keys": "v"}
+{"t": 73.691, "event": "viewer: key F (fit all)", "keys": "f"}
+{"t": 79.254, "event": "tree: Claude's part", "x": 1281, "y": 286, "button": 1}
+{"t": 82.864, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 83.579, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 85.85, "event": "console: Enter (the volume line)", "keys": "Return"}
+{"t": 90.196, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 90.91, "event": "console: typed the X line", "text": "b = Gui.Selection.getSelection()[0].Shape.BoundBox; round(b.XMin, 3), round(b.XMax, 3)"}
+{"t": 94.774, "event": "console: Enter (the X line)", "keys": "Return"}
+{"t": 99.281, "event": "turn 1: typing", "text": "Make it 8 thick instead of 5."}
+{"t": 101.514, "event": "turn 1: Enter"}
+{"t": 107.801, "event": "tool call: execute_code", "seq": 22}
+{"t": 108.733, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 111.023, "event": "turn 1: end-of-turn line seen"}
+{"t": 113.026, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 118.051, "event": "lab query: save after after3"}
+{"t": 120.067, "event": "viewer: click the 3D view", "x": 2650, "y": 1250, "button": 1}
+{"t": 120.782, "event": "viewer: key V", "keys": "v"}
+{"t": 121.414, "event": "viewer: key F (fit all)", "keys": "f"}
+{"t": 127.047, "event": "tree: Claude's part", "x": 1281, "y": 286, "button": 1}
+{"t": 130.615, "event": "console: click", "x": 2016, "y": 1722, "button": 1}
+{"t": 131.335, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 133.577, "event": "console: Enter (the volume line)", "keys": "Return"}
+{"t": 137.907, "event": "recording stopped"}

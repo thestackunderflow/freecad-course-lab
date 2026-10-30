@@ -71,3 +71,14 @@ def test_the_client_raises_on_its_own_side_after_its_tries(monkeypatch):
         fcrpc.run('print(1)')
     assert len(calls) == fcrpc.TRIES and all(fcrpc.LABERR in c for c in calls)   # every attempt sent guarded
 
+
+
+# ---- the filmed terminal: a turn's end is a NEW end-of-turn line (lesson 3 run B1: Claude Code re-drew its
+# transcript during message 3, the older end lines vanished, the count fell, and the driver waited its full limit) --
+def test_a_new_end_of_turn_line_ends_the_turn_even_when_older_ones_vanished():
+    from client import tui
+    before = 'x\n✻ Worked for 31s · done 3:44 AM\nmore\n✻ Cooked for 7s · done 3:45 AM\n❯ Make it 8 thick'
+    after = 'Claude Code re-drew its screen\n✻ Cooked for 7s · done 3:46 AM\n❯ Set lip_height to 13'
+    assert tui.turns_done(after) < tui.turns_done(before)          # the old count test would wait forever
+    assert tui.new_turn_end(before, after) is True
+    assert tui.new_turn_end(before, before) is False

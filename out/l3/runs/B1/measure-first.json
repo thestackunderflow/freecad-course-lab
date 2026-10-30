@@ -1,0 +1,348 @@
+{
+ "document": "first.FCStd",
+ "freecad": "1.1.4",
+ "objects": [
+  "Params",
+  "Body",
+  "Origin",
+  "X_Axis",
+  "Y_Axis",
+  "Z_Axis",
+  "XY_Plane",
+  "XZ_Plane",
+  "YZ_Plane",
+  "Origin001",
+  "Outline",
+  "Extrude"
+ ],
+ "solids": [
+  {
+   "name": "Body",
+   "label": "Body",
+   "type": "PartDesign::Body",
+   "volume_mm3": 8500.0,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    25.0,
+    0.0,
+    60.0
+   ],
+   "in_list": []
+  },
+  {
+   "name": "Extrude",
+   "label": "Extrude",
+   "type": "PartDesign::Pad",
+   "volume_mm3": 8500.0,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    25.0,
+    0.0,
+    60.0
+   ],
+   "in_list": [
+    "Body",
+    "Body"
+   ]
+  }
+ ],
+ "sketches": [
+  {
+   "name": "Outline",
+   "label": "Outline",
+   "support": [
+    [
+     "XZ_Plane",
+     [
+      ""
+     ]
+    ]
+   ],
+   "map_mode": "FlatFace",
+   "geometry": 8,
+   "constraints": 23,
+   "constraint_kinds": {
+    "Coincident": 9,
+    "Horizontal": 4,
+    "Vertical": 3,
+    "DistanceX": 4,
+    "DistanceY": 3
+   },
+   "solve": 0,
+   "fully_constrained": true,
+   "dependent_parameters": 0,
+   "normal": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_vector": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "right_vector": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]",
+   "corners_xy": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     25.0,
+     0.0
+    ],
+    [
+     25.0,
+     10.0
+    ],
+    [
+     20.0,
+     10.0
+    ],
+    [
+     20.0,
+     5.0
+    ],
+    [
+     5.0,
+     5.0
+    ],
+    [
+     5.0,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ]
+   ],
+   "dimensions": [
+    {
+     "index": 16,
+     "type": "DistanceX",
+     "name": "right",
+     "value": 25.0,
+     "expression": "Params.hook_depth",
+     "first": 0,
+     "second": 0
+    },
+    {
+     "index": 17,
+     "type": "DistanceY",
+     "name": "up_lip",
+     "value": 10.0,
+     "expression": "Params.lip_height",
+     "first": 1,
+     "second": 1
+    },
+    {
+     "index": 18,
+     "type": "DistanceX",
+     "name": "left_lip",
+     "value": -5.0,
+     "expression": "-Params.thickness",
+     "first": 2,
+     "second": 2
+    },
+    {
+     "index": 19,
+     "type": "DistanceY",
+     "name": "down",
+     "value": -5.0,
+     "expression": "-(Params.lip_height - Params.thickness)",
+     "first": 3,
+     "second": 3
+    },
+    {
+     "index": 20,
+     "type": "DistanceX",
+     "name": "left_base",
+     "value": -15.0,
+     "expression": "-(Params.hook_depth - 2 * Params.thickness)",
+     "first": 4,
+     "second": 4
+    },
+    {
+     "index": 21,
+     "type": "DistanceY",
+     "name": "up_plate",
+     "value": 55.0,
+     "expression": "Params.plate_height - Params.thickness",
+     "first": 5,
+     "second": 5
+    },
+    {
+     "index": 22,
+     "type": "DistanceX",
+     "name": "left_top",
+     "value": -5.0,
+     "expression": "-Params.thickness",
+     "first": 6,
+     "second": 6
+    }
+   ]
+  }
+ ],
+ "bodies": [
+  {
+   "name": "Body",
+   "label": "Body",
+   "tip": "Extrude",
+   "features": [
+    {
+     "name": "Outline",
+     "label": "Outline",
+     "type": "Sketcher::SketchObject"
+    },
+    {
+     "name": "Extrude",
+     "label": "Extrude",
+     "type": "PartDesign::Pad",
+     "length": 20.0,
+     "reversed": false,
+     "pad_type": "Length"
+    }
+   ],
+   "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]"
+  }
+ ],
+ "sheets": [
+  {
+   "name": "Params",
+   "label": "Params",
+   "aliases": {
+    "plate_height": "60 mm",
+    "width": "20 mm",
+    "thickness": "5 mm",
+    "hook_depth": "25 mm",
+    "lip_height": "10 mm"
+   },
+   "cells": {
+    "A1": {
+     "content": "'plate_height",
+     "value": "plate_height"
+    },
+    "B1": {
+     "content": "=60 mm",
+     "value": "60 mm"
+    },
+    "A2": {
+     "content": "'width",
+     "value": "width"
+    },
+    "B2": {
+     "content": "=20 mm",
+     "value": "20 mm"
+    },
+    "A3": {
+     "content": "'thickness",
+     "value": "thickness"
+    },
+    "B3": {
+     "content": "=5 mm",
+     "value": "5 mm"
+    },
+    "A4": {
+     "content": "'hook_depth",
+     "value": "hook_depth"
+    },
+    "B4": {
+     "content": "=25 mm",
+     "value": "25 mm"
+    },
+    "A5": {
+     "content": "'lip_height",
+     "value": "lip_height"
+    },
+    "B5": {
+     "content": "=10 mm",
+     "value": "10 mm"
+    }
+   }
+  }
+ ],
+ "pads": [
+  {
+   "name": "Extrude",
+   "length": 20.0,
+   "expression": "Params.width"
+  }
+ ],
+ "expressions": [
+  {
+   "object": "Outline",
+   "property": ".Constraints.down",
+   "expression": "-(Params.lip_height - Params.thickness)"
+  },
+  {
+   "object": "Outline",
+   "property": ".Constraints.left_base",
+   "expression": "-(Params.hook_depth - 2 * Params.thickness)"
+  },
+  {
+   "object": "Outline",
+   "property": ".Constraints.left_lip",
+   "expression": "-Params.thickness"
+  },
+  {
+   "object": "Outline",
+   "property": ".Constraints.left_top",
+   "expression": "-Params.thickness"
+  },
+  {
+   "object": "Outline",
+   "property": ".Constraints.right",
+   "expression": "Params.hook_depth"
+  },
+  {
+   "object": "Outline",
+   "property": ".Constraints.up_lip",
+   "expression": "Params.lip_height"
+  },
+  {
+   "object": "Outline",
+   "property": ".Constraints.up_plate",
+   "expression": "Params.plate_height - Params.thickness"
+  },
+  {
+   "object": "Extrude",
+   "property": "Length",
+   "expression": "Params.width"
+  }
+ ]
+}

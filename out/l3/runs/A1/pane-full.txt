@@ -1,0 +1,36 @@
+  (40,10), (35,10), (35,5), (5,5), (5,60),
+  (0,60). The extrusion is still 20 mm.
+
+  If you meant the 20 mm extrusion, or wanted
+  the base stretched a different way, tell me
+  and I'll change it.
+
+✻ Cogitated for 9s · done 3:56 AM
+
+❯ Make it 8 thick instead of 5.
+
+  Called freecad
+
+● I made the back wall and the base 8 thick
+  instead of 5. The solid is valid, with a
+  volume of 15,220 mm³. The screenshot shows
+  the model highlighted in blue, which is just
+  a selection highlight.
+
+  The profile is now (0,0), (40,0), (40,13),
+  (35,13), (35,8), (8,8), (8,60), (0,60). I
+  kept the lip 5 wide and still rising 5 above
+  the base, so its top moved from 10 to 13.
+  The overall size is unchanged at 40 deep, 60
+  tall and 20 extruded.
+
+  If you also wanted the lip 8 thick, or the
+  lip top kept at 10, tell me and I'll adjust
+  it.
+
+✻ Baked for 9s · done 3:56 AM
+                          ◐ medium · /effort
+──────────────────────────────────────────────
+❯ Make the lip 8 thick too
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

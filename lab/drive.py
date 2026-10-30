@@ -87,7 +87,7 @@ class Run:
         self.mark(f'turn {n}: typing', text=msg)
         type_text(self.pane, msg)
         time.sleep(0.8)
-        done_before = tui.turns_done(pane(self.pane, full=True))
+        done_before = pane(self.pane, full=True)
         self.mark(f'turn {n}: Enter')
         keys(self.pane, 'Enter')
         start, seen_busy, quiet_since, approvals = time.time(), False, None, 0
@@ -105,7 +105,7 @@ class Run:
                 approvals += 1
                 quiet_since = None
                 continue
-            if tui.turns_done(pane(self.pane, full=True)) > done_before and not self.calls:
+            if tui.new_turn_end(done_before, pane(self.pane, full=True)) and not self.calls:
                 self.mark(f'turn {n}: end-of-turn line seen')
                 time.sleep(2.0)
                 break

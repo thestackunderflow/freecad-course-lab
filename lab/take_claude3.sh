@@ -75,8 +75,13 @@ console() {   # console "line" LABEL: typed into FreeCAD's Python console as a v
   sl_key Return "console: Enter ($2)"
   sl_nap 3.0
 }
-pick_part() {   # the viewer clicks Claude's part in the tree (the guarded lab query finds the row)
-  local rx ry
+pick_part() {   # the viewer clicks Claude's part in the tree (opens the rows above it first; model-index lookup)
+  local rx ry ax ay i
+  for i in 1 2 3; do
+    read -r ax ay < <(cd /lab && python3 -m lab.fcrpc arrow "$DOC" "$OBJ" 2>>"$O/lab-query.err")
+    { [ "${ax:-}" = open ] || [ "${ax:-}" = none ] || [ -z "${ay:-}" ]; } && break
+    sl_click "$ax" "$ay" "tree: open a row"; sl_nap 0.6
+  done
   read -r rx ry < <(cd /lab && python3 -m lab.fcrpc row "$DOC" "$OBJ" 2>>"$O/lab-query.err")
   if [ -n "${ry:-}" ]; then sl_click "$rx" "$ry" "tree: Claude's part"; else sl_mark "tree: Claude's part row not found"; fi
   sl_nap 1.2

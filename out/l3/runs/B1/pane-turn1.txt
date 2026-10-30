@@ -1,0 +1,36 @@
+    mm³ and a bounding box of 40 × 20 × 60
+    mm.
+
+  I only changed that one spreadsheet cell, so
+  the plate height, width, thickness and lip
+  height are the same as before.
+
+✻ Sautéed for 7s · done 3:46 AM
+
+❯ Make it 8 thick instead of 5.
+
+  Called freecad
+
+● I changed thickness from 5 to 8 in the
+  Params spreadsheet, and the model updated on
+  its own. The solid is valid, with a volume
+  of 15040 mm³ and a bounding box of 40 × 20 ×
+  60 mm.
+
+  The outline now runs right 40, up 10, left
+  8, down 2, left 24, up 52, left 8, then back
+  to the start. The down move (lip_height -
+  thickness) shrinks from 5 to 2 because it
+  depends on both sizes.
+
+  The lip is still 10 mm tall, but only 2 mm
+  of it stands above the 8 mm base. If you
+  want the lip to keep its 5 mm height above
+  the base, raise lip_height to 13.
+
+✻ Cooked for 7s · done 3:46 AM
+
+──────────────────────────────────────────────
+❯ Set lip_height to 13
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

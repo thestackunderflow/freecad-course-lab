@@ -1,0 +1,33 @@
+{
+ "state": {
+  "solids": [
+   [
+    "Hook",
+    "Body",
+    "Body",
+    "PartDesign::Body",
+    15040.0,
+    true
+   ],
+   [
+    "Hook",
+    "Extrude",
+    "Extrude",
+    "PartDesign::Pad",
+    15040.0,
+    false
+   ]
+  ],
+  "sketches": {
+   "Hook": [
+    "Outline"
+   ],
+   "Unnamed": []
+  }
+ },
+ "claude": [
+  "Hook",
+  "Body",
+  "Outline"
+ ]
+}

@@ -1,0 +1,44 @@
+[
+ {
+  "call_seq": 18,
+  "reply_seq": 19,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App, Part, Sketcher\nV = App.Vector\ndoc = App.ActiveDocument or App.newDocument(\"Outline\")\nbody = doc.addObject(\"PartDesign::Body\", \"Body\")\nxz = [o for o in body.Origin.OriginFeatures if o.Role == \"XZ_Plane\"][0]\nsk = body.newObject(\"Sketcher::SketchObject\", \"Sketch\")\nsk.AttachmentSupport = [(xz, \"\")]\nsk.MapMode = \"FlatFace\"\npts = [(0,0),(25,0),(25,10),(20,10),(20,5),(5,5),(5,60),(0,60)]\nn = len(pts)\nfor i in range(n):\n    a, b = pts[i], pts[(i+1) % n]\n    sk.addGeometry(Part.LineSegment(V(a[0],a[1],0), V(b[0],b[1],0)))\nfor i in range(n):\n    sk.addConstraint(Sketcher.Constraint(\"Coincident\", i, 2, (i+1) % n, 1))\ndoc.recompute()\npad = body.newObject(\"PartDesign::Pad\", \"Pad\")\npad.Profile = sk\npad.Length = 20\ndoc.recompute()\nbb = pad.Shape.BoundBox\nprint(\"valid:\", pad.Shape.isValid(), \"vol:\", pad.Shape.Volume)\nprint(\"bbox:\", bb)\n"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: valid: True vol: 8500.000000000007\nbbox: BoundBox (0, -20, 0, 25, 1.33227e-14, 60)\n",
+  "images": [
+   "claude-shot-01.png"
+  ],
+  "seconds": 1.196
+ },
+ {
+  "call_seq": 20,
+  "reply_seq": 21,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App, Part, Sketcher\nV = App.Vector\ndoc = App.ActiveDocument\nsk = doc.getObject(\"Sketch\")\nsk.deleteAllGeometry()\npts = [(0,0),(40,0),(40,10),(35,10),(35,5),(5,5),(5,60),(0,60)]\nn = len(pts)\nfor i in range(n):\n    a, b = pts[i], pts[(i+1) % n]\n    sk.addGeometry(Part.LineSegment(V(a[0],a[1],0), V(b[0],b[1],0)))\nfor i in range(n):\n    sk.addConstraint(Sketcher.Constraint(\"Coincident\", i, 2, (i+1) % n, 1))\ndoc.recompute()\npad = doc.getObject(\"Pad\")\nprint(\"valid:\", pad.Shape.isValid(), \"vol:\", pad.Shape.Volume, pad.Length.Value)\nprint(\"bbox:\", pad.Shape.BoundBox)\n"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: valid: True vol: 10000.000000000007 20.0\nbbox: BoundBox (0, -20, 0, 40, 1.33227e-14, 60)\n",
+  "images": [
+   "claude-shot-02.png"
+  ],
+  "seconds": 0.863
+ },
+ {
+  "call_seq": 22,
+  "reply_seq": 23,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App, Part, Sketcher\nV = App.Vector\ndoc = App.ActiveDocument\nsk = doc.getObject(\"Sketch\")\nsk.deleteAllGeometry()\npts = [(0,0),(40,0),(40,13),(35,13),(35,8),(8,8),(8,60),(0,60)]\nn = len(pts)\nfor i in range(n):\n    a, b = pts[i], pts[(i+1) % n]\n    sk.addGeometry(Part.LineSegment(V(a[0],a[1],0), V(b[0],b[1],0)))\nfor i in range(n):\n    sk.addConstraint(Sketcher.Constraint(\"Coincident\", i, 2, (i+1) % n, 1))\ndoc.recompute()\npad = doc.getObject(\"Pad\")\nprint(\"valid:\", pad.Shape.isValid(), \"vol:\", pad.Shape.Volume, pad.Length.Value)\nprint(\"bbox:\", pad.Shape.BoundBox)\n"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: valid: True vol: 15220.000000000007 20.0\nbbox: BoundBox (0, -20, 0, 40, 1.33227e-14, 60)\n",
+  "images": [
+   "claude-shot-03.png"
+  ],
+  "seconds": 0.932
+ }
+]
