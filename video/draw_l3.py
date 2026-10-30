@@ -95,13 +95,13 @@ def card_expected(kind):
         e = exp(40, 5)
         im, dd = canvas(); header(dd, 'Worked out first: 40 deep')
         dd.polygon(jpoly(260, 1250, 15, 40, 5), fill=(176, 190, 212), outline=INK, width=6)
-        rows = [('back plate 5 x 60 = 300', INK), ('arm 30 x 5 = 150', GREEN), ('lip 5 x 10 = 50', AMBER)]
+        rows = [('back plate 5 x 60 = 300', INK), ('arm (40 − 5 − 5) 30 x 5 = 150', GREEN), ('lip 5 x 10 = 50', AMBER)]
         tag = 'box 40 x 20 x 60: 15 deeper'
     else:
         e = exp(40, 8)
         im, dd = canvas(); header(dd, 'Worked out first: 8 thick')
         dd.polygon(jpoly(260, 1250, 15, 40, 8), fill=(176, 190, 212), outline=INK, width=6)
-        rows = [('back plate 8 x 60 = 480', INK), ('arm 24 x 8 = 192', GREEN), ('lip 8 x 10 = 80', AMBER),
+        rows = [('back plate 8 x 60 = 480', INK), ('arm (40 − 8 − 8) 24 x 8 = 192', GREEN), ('lip 8 x 10 = 80', AMBER),
                 ('the drop: 10 − 8 = 2', RED)]
         tag = 'box still 40 x 20 x 60'
     tx = 1200
@@ -199,3 +199,25 @@ if __name__ == '__main__':
     for n in range(1, 6):
         card_recap(n)
     card_a1_vs_ours(); card_compare()
+
+
+def thumbs():
+    """Thumbnails from the real by-hand frame (the tiled window after thickness 8 mm): the hook big, one cell, 4 words."""
+    from PIL import Image
+    src = Image.open(os.path.join(LAB, 'out', 'l3', 'hand', 's17-thick8.png')).convert('RGB')
+    hook = src.crop((560, 230, 1640, 1310)).resize((1100, 1100))
+    cell = src.crop((1960, 495, 2320, 535)).resize((720, 80))
+    for name, words, col in (('thumb-primary.png', ['ONE CELL,', '3 SIZES'], GREEN),
+                             ('thumb-altA.png', ['WHAT IS', '"8 THICK"?'], AMBER)):
+        im, d = canvas(1280 * 2, 720 * 2, (245, 247, 250))
+        im.paste(hook, (60, 170))
+        d.rounded_rectangle((1240, 230, 2480, 470), radius=30, fill=PAPER, outline=INK, width=6)
+        im.paste(cell, (1360, 310))
+        text(d, (1250, 600), words[0], 170, INK)
+        text(d, (1250, 800), words[1], 170, col)
+        text(d, (1250, 1060), 'thickness 5 → 8 mm', 76, GREY)
+        save(im, name)
+
+
+if __name__ == '__main__':
+    thumbs()
