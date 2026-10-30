@@ -36,23 +36,42 @@ def _along(axis, i):
 
 
 def read(sol):
-    """The holes (axis along X) and fillet faces (axis along Y) of one measured solid."""
+    """The holes (axis along X) and fillet faces (axis along Y) of one measured solid. Faces on the same axis line with
+    the same radius are one hole (OCC can split a hole's wall in two; their areas add up)."""
     hs, fs = [], []
     for c in sol.get('cylinders') or []:
         if _along(c['axis'], 0):
-            key = (round(c['center'][1], 3), round(c['center'][2], 3))
-            if key not in [(round(h['y'], 3), round(h['z'], 3)) for h in hs]:
-                hs.append({'d': round(2 * c['r'], 4), 'y': c['center'][1], 'z': c['center'][2], 'area': c['area'],
-                           'r': c['r']})
+            key = (round(c['center'][1], 3), round(c['center'][2], 3), round(c['r'], 4))
+            hit = [h for h in hs if h['key'] == key]
+            if hit:
+                hit[0]['area'] = round(hit[0]['area'] + c['area'], 3)
+            else:
+                hs.append({'key': key, 'd': round(2 * c['r'], 4), 'y': c['center'][1], 'z': c['center'][2],
+                           'area': c['area'], 'r': c['r']})
         elif _along(c['axis'], 1):
             fs.append({'r': c['r'], 'x': c['center'][0], 'z': c['center'][2], 'area': c['area']})
     hs.sort(key=lambda h: h['z'])
     return hs, fs
 
 
-def check(sol, names=None, fillet_r=FILLET_R):
+def heights_reading(zs, names=None):
+    """Which reading of "centred on the plate" the hole heights follow: the back face (0 to plate_height) or the free
+    front face above the arm (thickness to plate_height)."""
+    n = dict(NAMES, **(names or {}))
+    zs = [round(z, 2) for z in zs]
+    s, ph, t = n['hole_spacing'], n['plate_height'], n['thickness']
+    if zs == [round((ph - s) / 2.0, 2), round((ph + s) / 2.0, 2)]:
+        return '%g/%g (centred on the back face)' % ((ph - s) / 2.0, (ph + s) / 2.0)
+    if zs == [round((t + ph - s) / 2.0, 2), round((t + ph + s) / 2.0, 2)]:
+        return '%g/%g (centred on the plate above the arm)' % ((t + ph - s) / 2.0, (t + ph + s) / 2.0)
+    return 'other: %s' % '/'.join('%g' % z for z in zs)
+
+
+def check(sol, names=None, fillet_r=FILLET_R, heights=None):
+    """heights: the hole heights to expect (default: centred on the back face, from the names)."""
     n = dict(NAMES, **(names or {}))
     e = expected(n, fillet_r)
+    want_z = heights if heights is not None else e['hole_heights_mm']
     hs, fs = read(sol)
     y0, y1 = sol['min_mm'][1], sol['max_mm'][1]
     x1 = sol['max_mm'][0]
@@ -65,7 +84,7 @@ def check(sol, names=None, fillet_r=FILLET_R):
     centred = bool(hs) and all(abs(h['y'] - mid) <= TOL for h in hs)
     if not centred:
         misses.append('centred')
-    if [round(h['z'], 2) for h in hs] != [round(z, 2) for z in e['hole_heights_mm']]:
+    if [round(h['z'], 2) for h in hs] != [round(z, 2) for z in want_z]:
         misses.append('heights')
     through = bool(hs) and all(h['area'] >= 2 * math.pi * h['r'] * n['thickness'] - 0.01 for h in hs)
     if not through:
@@ -81,6 +100,8 @@ def check(sol, names=None, fillet_r=FILLET_R):
         misses.append('size')
     return {'ok': not misses, 'misses': misses, 'holes': len(hs), 'hole_d': [h['d'] for h in hs],
             'hole_heights_mm': [round(h['z'], 3) for h in hs],
+            'heights_reading': heights_reading([h['z'] for h in hs], n) if hs else 'no holes',
+            'spacing_mm': round(hs[-1]['z'] - hs[0]['z'], 3) if len(hs) > 1 else None,
             'hole_sides_mm': [sorted([round(h['y'] - y0, 3), round(y1 - h['y'], 3)]) for h in hs],
             'centred': centred, 'through': through, 'fillet_on_lip_edge': on_edge,
             'volume_mm3': sol['volume_mm3'], 'expected_mm3': round(e['volume_mm3'], 4)}

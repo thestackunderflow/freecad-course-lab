@@ -91,7 +91,7 @@ EXPRS = [('Sketch001', 'Constraints[1]', 'Spreadsheet.width / 2'),
 def test_asked_and_all_right_scores_names_first_build_centred_fillet_and_one_cell():
     first = meas(solid(), NAMED, EXPRS)
     after = meas(solid(width=30), dict(NAMED, width='30 mm'), EXPRS)
-    r = score_l4.score(first, after, ['{"code": "sh.set(\'B5\', \'30 mm\')"}'])
+    r = score_l4.score(first, after, [('execute_code', '{"code": "sh.set(\'B5\', \'30 mm\')"}')])
     assert r['names']['hole_names'] == ['hole_d', 'hole_spacing'] and r['names']['positions_from_width']
     assert r['first_build_right'] and r['edit_followed'] and r['centred_after_edit'] and r['fillet_after_edit']
     assert r['edit_alias'] == 'width' and r['edit_by_one_cell']
@@ -100,7 +100,7 @@ def test_asked_and_all_right_scores_names_first_build_centred_fillet_and_one_cel
 def test_not_asked_with_holes_typed_as_numbers_ends_off_centre():
     first = meas(solid(), BASE, [('Pad', 'Length', 'Spreadsheet.width')])
     after = meas(solid(width=30, hole_y=-10.0), dict(BASE, width='30 mm'), [('Pad', 'Length', 'Spreadsheet.width')])
-    r = score_l4.score(first, after, ['{"code": "sh.set(\'B5\', \'30 mm\')"}'])
+    r = score_l4.score(first, after, [('execute_code', '{"code": "sh.set(\'B5\', \'30 mm\')"}')])
     assert r['first_build_right'] and not r['names']['hole_names'] and not r['names']['positions_from_width']
     assert r['edit_followed'] is False and r['centred_after_edit'] is False and r['edit_by_one_cell'] is False
 
@@ -108,7 +108,7 @@ def test_not_asked_with_holes_typed_as_numbers_ends_off_centre():
 def test_moving_the_holes_by_hand_in_the_edit_is_not_one_cell_even_if_it_ends_centred():
     first = meas(solid(), BASE, [('Pad', 'Length', 'Spreadsheet.width')])
     after = meas(solid(width=30), dict(BASE, width='30 mm'), [('Pad', 'Length', 'Spreadsheet.width')])
-    r = score_l4.score(first, after, ['{"code": "sh.set(\'B5\', \'30 mm\'); sk.setDatum(1, 15)"}'])
+    r = score_l4.score(first, after, [('execute_code', '{"code": "sh.set(\'B5\', \'30 mm\'); sk.setDatum(1, 15)"}')])
     assert r['centred_after_edit'] and r['edit_followed'] and r['edit_touched_holes'] and not r['edit_by_one_cell']
 
 
@@ -117,3 +117,66 @@ def test_the_button_query_names_the_command_and_cannot_raise_inside_freecad():
     code = button.CODE.format(cmd='PartDesign_Hole')
     assert "'PartDesign_Hole'" in code
     compile(code, 'q', 'exec')
+
+
+# ---- plan gate round 1 (accuracy MUST-FIX 2-3, SHOULDs): readings, split faces, every way an edit can touch ------
+def test_a_hole_wall_split_into_two_faces_still_counts_as_through():
+    s = solid()
+    halves = []
+    for c in s['cylinders'][:2]:
+        halves += [dict(c, area=round(c['area'] / 2, 3)), dict(c, area=round(c['area'] / 2, 3))]
+    s['cylinders'] = halves + s['cylinders'][2:]
+    c = holes.check(s, holes.NAMES)
+    assert c['through'] and c['holes'] == 2, c
+
+
+def test_heights_read_as_the_back_face_or_the_free_front_face_are_named_not_hidden():
+    s = solid()
+    for c in s['cylinders'][:2]:
+        c['center'][2] += 2.5
+    c = holes.check(s, holes.NAMES)
+    assert c['heights_reading'] == '17.5/47.5 (centred on the plate above the arm)' and c['spacing_mm'] == 30.0
+    assert 'heights' in c['misses']
+    assert holes.check(solid(), holes.NAMES)['heights_reading'] == '15/45 (centred on the back face)'
+
+
+def test_the_edit_is_followed_when_heights_stay_as_message_1_left_them():
+    first, after = solid(), solid(width=30)
+    for s in (first, after):
+        for c in s['cylinders'][:2]:
+            c['center'][2] += 2.5
+    r = score_l4.score(meas(first, NAMED, EXPRS), meas(after, dict(NAMED, width='30 mm'), EXPRS),
+                       [('execute_code', '{"code": "sh.set(\'B5\', \'30 mm\')"}')])
+    assert not r['first_build_right'] and r['edit_followed'] and r['edit_by_one_cell'], r
+
+
+def test_mcp_tool_edits_count_as_touching_the_holes():
+    t = score_l4.touched
+    assert t([('create_object', '{"obj_name": "Pocket"}')])
+    assert t([('delete_object', '{"obj_name": "Hole"}')])
+    assert t([('edit_object', '{"obj_name": "Hole", "properties": {"Diameter": 5}}')])
+    assert not t([('edit_object', '{"obj_name": "Spreadsheet", "properties": {}}')])
+    assert not t([('get_objects', '{"doc_name": "hook_lesson3"}')])
+
+
+def test_python_writes_that_move_a_sketch_or_a_shape_count_as_touching():
+    t = score_l4.touched
+    for code in ('sk.AttachmentOffset = p', 'sk.MapMode = "FlatFace"', 'sk.AttachmentSupport = [(pad, "Face3")]',
+                 'cut.Shape = s', 'cyl.Height = 30', 'sh.set("hole_d", "5 mm")', 'sh.set(\'B6\', \'5 mm\')'):
+        assert t([('execute_code', '{"code": %s}' % __import__('json').dumps(code))]), code
+    assert not t([('execute_code', '{"code": "sh.set(\'B5\', \'30 mm\'); doc.recompute()"}')])
+
+
+def test_positions_from_width_counts_only_the_hole_profile_or_a_cutting_tool():
+    ex = [('Fillet', 'Radius', 'Spreadsheet.width / 10')]
+    assert not score_l4.names_used(meas(solid(), NAMED, ex))['positions_from_width']
+    ex = [('Sketch001', 'Constraints[1]', 'Spreadsheet.width / 2')]
+    n = score_l4.names_used(meas(solid(), NAMED, ex))
+    assert n['positions_from_width'] and n['position_props'] == ['Sketch001.Constraints[1]']
+
+
+def test_message_b_is_one_sentence_in_front_of_message_a():
+    d = os.path.join(LAB, 'out', 'l4', 'messages')
+    a, b = open(os.path.join(d, 'A-1.txt'), 'rb').read(), open(os.path.join(d, 'B-1.txt'), 'rb').read()
+    assert b.endswith(b' ' + a) and b.count(b'.') == a.count(b'.') + 1 and b'\n' not in b.rstrip(b'\n')
+    assert open(os.path.join(d, 'A-2.txt'), 'rb').read() == open(os.path.join(d, 'B-2.txt'), 'rb').read()

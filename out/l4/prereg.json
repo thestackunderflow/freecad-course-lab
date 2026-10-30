@@ -1,0 +1,22 @@
+{
+ "lesson": "FreeCAD + Claude Course lesson 4 (fc4): screw holes from names, a fillet, width 20 -> 30",
+ "written": "2026-10-30, before any Claude run of lesson 4 (rev 2, after the plan gate: accuracy MUST-FIX 2-3 applied)",
+ "runs": {
+  "B1": "asked: messages/B-1.txt, B-2.txt (filmed main run)",
+  "A1": "not asked: messages/A-1.txt, A-2.txt",
+  "B2": "asked, second run; skipped if spend so far + its cap $0.30 + $0.18 (voice still to come) is over $0.90"
+ },
+ "order": ["B1", "A1", "B2"],
+ "setup": "Claude Code 2.1.308, `claude` with no flags (its default model and mode), fresh container, home folder, session and FreeCAD 1.1.4 window per run, lesson 3's hook open (hook-lesson3.FCStd = out/l3/hand/back5.FCStd: hook_depth 40, five names in its spreadsheet), no CLAUDE.md; the plug `uvx freecad-mcp@0.1.28` added with --scope user, wrapped in the logging proxy; permission prompts answered with the prompt's own plain Yes (README Q13)",
+ "messages_differ_by": "B-1 = one sentence + a space + A-1 (messages/sentence-diff.txt; tests/test_l4.py checks the bytes); message 2 is the same for A and B",
+ "the_part": "after each message, the last root solid in the last document that holds one (lab/newpart.py), saved by the add-on's socket and measured with checker/measure.py",
+ "scoring": {
+  "a_names": "the aliases; hole names = aliases with 'hole' in them; positions_from_width = an expression naming the width alias on a sketch constraint, a Placement or an AttachmentOffset (the properties are listed)",
+  "b_first_build_right": "checker/holes.check at width 20: two 4 mm holes (diameter +-0.01), through the 5 mm plate (wall area summed over split faces), centred across (+-0.05), heights 15 and 45 (the back face's reading; heights_reading and spacing reported on their own, so 17.5/47.5 is named as the other reading), the 2 mm fillet on the lip's top outer edge along the whole width, 9857.168 mm3 +-0.1, box 40 x 20 x 60",
+  "c_edit_followed": "after 'Make the hook 30 wide instead of 20.': holes.check at width 30 with the hole heights message 1 left: 14848.584 mm3 +-0.1, box 40 x 30 x 60, holes centred across, the fillet along all 30 mm; centred_after_edit and fillet_after_edit also reported alone",
+  "d_edit_by_one_cell": "c, an alias whose value went 20 -> 30 is still named by an expression, and no message-2 call touches anything else: any create_object or delete_object; an edit_object on anything but a spreadsheet; code or arguments matching checker/score_l4.TOUCH",
+  "recorded_not_deciding": "the objects in the document (Hole, Pocket, Part Cut ...), each hole's distance from both sides, every reply, time and cost"
+ },
+ "code": "checker/score_l4.py, checker/holes.py (tests/test_l4.py, tests/test_l4_live.py); expected numbers worked out in holes.expected",
+ "proof": "a no-AI replay of B1's (and A1's) logged calls in a fresh FreeCAD with the same start file, per message, measured and scored the same way"
+}

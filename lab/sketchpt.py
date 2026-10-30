@@ -4,7 +4,7 @@ Points are read from the sketch's own geometry, mapped through its placement int
 
     python3 -m lab.sketchpt DOC SKETCH GEO WHERE [DX DY]
       GEO   the line's index (0 = the first polyline line); -1 with WHERE "origin" for the sketch origin
-      WHERE mid | start | end | origin
+      WHERE mid | start | end | origin | center (a circle's centre, lesson 4)
       DX DY a screen-pixel offset added to the result (where to drop a dimension beside a line)
     prints "x y" (display pixels)"""
 import sys
@@ -19,6 +19,8 @@ pl = sk.getGlobalPlacement()
 geo, where = {geo!r}, {where!r}
 if where == 'origin':
     p = FreeCAD.Vector(0, 0, 0)
+elif where == 'center':
+    p = sk.Geometry[geo].Center
 else:
     g = sk.Geometry[geo]
     a, b = g.StartPoint, g.EndPoint

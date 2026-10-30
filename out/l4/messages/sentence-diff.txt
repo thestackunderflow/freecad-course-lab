@@ -1,0 +1,2 @@
+B-1 = this sentence + one space + A-1:
+Put the hole size and spacing in the spreadsheet as hole_d and hole_spacing, and write the holes' size and position from the names.

@@ -91,7 +91,7 @@ def test_holes_from_names_stay_centred_at_width_30_and_the_fillet_follows(tmp_pa
     c30 = holes.check(score_l4._part(mw), dict(holes.NAMES, width=30))
     assert c30['ok'], c30
     assert c30['hole_sides_mm'] == [[15.0, 15.0], [15.0, 15.0]] and c30['fillet_on_lip_edge']
-    s = score_l4.score(mh, mw, ["ss.set('width', '30')"])
+    s = score_l4.score(mh, mw, [('execute_code', json.dumps({'code': "ss.set('width', '30')"}))])
     assert s['names']['hole_names'] == ['hole_d', 'hole_spacing'] and s['names']['positions_from_width'], s
     assert s['first_build_right'] and s['edit_by_one_cell'], s
 
