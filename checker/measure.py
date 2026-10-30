@@ -75,8 +75,50 @@ for o in doc.Objects:
         bodies.append({'name': o.Name, 'label': o.Label, 'tip': o.Tip.Name if o.Tip else None, 'features': feats,
                        'placement': str(o.Placement)})
 
+# lesson 3: the sketch's corners and sizes (with the expression each size is written from), the spreadsheets' named
+# cells, and each pad's length and expression
+DIMS = ('Distance', 'DistanceX', 'DistanceY', 'Radius', 'Diameter', 'Angle')
+for s in sketches:
+    o = doc.getObject(s['name'])
+    ee = dict(o.ExpressionEngine)
+    pts = []
+    for g in o.Geometry:
+        if g.TypeId != 'Part::GeomLineSegment':
+            continue
+        for p in (g.StartPoint, g.EndPoint):
+            q = [round(p.x, 4) + 0.0, round(p.y, 4) + 0.0]
+            if q not in pts:
+                pts.append(q)
+    s['corners_xy'] = pts
+    s['dimensions'] = [{'index': i, 'type': c.Type, 'name': c.Name, 'value': round(c.Value, 4),
+                        'expression': ee.get('Constraints[%d]' % i) or (ee.get('Constraints.' + c.Name) if c.Name else None),
+                        'first': c.First, 'second': c.Second}
+                       for i, c in enumerate(o.Constraints) if c.Type in DIMS]
+
+sheets = []
+for o in doc.Objects:
+    if o.TypeId != 'Spreadsheet::Sheet':
+        continue
+    aliases, cells = {}, {}
+    for cell in o.getUsedCells():
+        v = o.get(cell)
+        txt = str(v)
+        if hasattr(v, 'Value') and hasattr(v, 'Unit'):
+            txt = ('%g' % v.Value) + ((' ' + str(v).split()[-1]) if str(v.Unit) not in ('', 'Unit: ()') and ' ' in str(v) else '')
+        cells[cell] = {'content': o.getContents(cell), 'value': txt}
+        a = o.getAlias(cell)
+        if a:
+            aliases[a] = txt
+    sheets.append({'name': o.Name, 'label': o.Label, 'aliases': aliases, 'cells': cells})
+
+pads = []
+for o in doc.Objects:
+    if o.TypeId == 'PartDesign::Pad':
+        pads.append({'name': o.Name, 'length': float(o.Length), 'expression': dict(o.ExpressionEngine).get('Length')})
+
 res = {'document': os.path.basename(os.environ['FC_DOC']), 'freecad': '.'.join(FreeCAD.Version()[:3]),
-       'objects': [o.Name for o in doc.Objects], 'solids': rows, 'sketches': sketches, 'bodies': bodies}
+       'objects': [o.Name for o in doc.Objects], 'solids': rows, 'sketches': sketches, 'bodies': bodies,
+       'sheets': sheets, 'pads': pads}
 with open(os.environ['FC_OUT'], 'w') as f:
     json.dump(res, f, indent=1)
 print(json.dumps(res))

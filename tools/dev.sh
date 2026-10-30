@@ -2,7 +2,7 @@
 # Explore on a live display: tools/dev.sh start | x "shell cmds" [shot] | stop.  Shots go to out/scratch/dev/NAME.png
 export MSYS_NO_PATHCONV=1
 LAB=$(cd "$(dirname "$0")/.." && (pwd -W 2>/dev/null || pwd))
-C=fcc-dev
+C=${FCC_PREFIX:-fcc}-dev
 case $1 in
   start) docker run -d --name $C --hostname pc --shm-size 1g --memory 6g --user maker -v "$LAB:/lab" -w /lab fcc-app:1.1.4-0.1.28 sleep infinity >/dev/null
          docker exec -d $C bash -c 'Xvfb :99 -screen 0 2880x1800x24 -nolisten tcp -ac >/tmp/xvfb.log 2>&1'

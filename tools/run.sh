@@ -5,5 +5,5 @@ set -eu
 export MSYS_NO_PATHCONV=1
 LAB=$(cd "$(dirname "$0")/.." && (pwd -W 2>/dev/null || pwd))
 S=$1; shift
-docker run --rm --name "fcc-run-$$" --hostname pc --shm-size 1g --memory 6g --user maker -v "$LAB:/lab" -w /lab \
+docker run --rm --name "${FCC_PREFIX:-fcc}-run-$$" --hostname pc --shm-size 1g --memory 6g --user maker -v "$LAB:/lab" -w /lab \
   ${FCC_DOCKER_ARGS:-} fcc-app:1.1.4-0.1.28 bash "/lab/$S" "$@"

@@ -46,3 +46,31 @@ def free_sizes(moves):
     the degrees of freedom left before any length is typed)."""
     pts = walk(moves)[:-1]
     return (len({p[0] for p in pts}) - 1) + (len({p[1] for p in pts}) - 1)
+
+
+# ---- lesson 3: the same walk written from five named sizes (a FreeCAD spreadsheet's aliases) -------------------
+NAMED_WALK = [('right', 'hook_depth'), ('up', 'lip_height'), ('left', 'thickness'), ('down', 'lip_height - thickness'),
+              ('left', 'hook_depth - 2 * thickness'), ('up', 'plate_height - thickness'), ('left', 'thickness'),
+              ('down', 'plate_height')]
+# the six sizes lesson 2 pinned by hand (in its order) and the name or formula each one takes in lesson 3
+PINNED_SIZES = [('bottom', 'hook_depth'), ('lip height', 'lip_height'), ('lip width', 'thickness'),
+                ('lip inside (lip_height - thickness)', 'lip_height - thickness'), ('back plate height', 'plate_height'),
+                ('back plate thickness', 'thickness')]
+
+
+def _eval(expr, names):
+    return float(eval(expr, {'__builtins__': {}}, dict(names)))   # only names and + - * from the table above
+
+
+def named_moves(names):
+    """The walk with each length worked out from the named sizes (lengths as numbers, like J_MOVES)."""
+    out = []
+    for d, expr in NAMED_WALK:
+        v = _eval(expr, names)
+        out.append((d, int(v) if v == int(v) else v))
+    return out
+
+
+def uses_of(name):
+    """Which of lesson 2's six pinned sizes a name drives."""
+    return [label for label, expr in PINNED_SIZES if name in expr.replace('-', ' ').split()]
