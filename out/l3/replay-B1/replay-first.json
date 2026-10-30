@@ -1,0 +1,22 @@
+{
+ "calls": 2,
+ "names": [
+  "execute_code",
+  "execute_code"
+ ],
+ "errors": 1,
+ "rows": [
+  {
+   "logged_seq": 18,
+   "name": "execute_code",
+   "isError": true,
+   "text": "Failed to execute code: AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'"
+  },
+  {
+   "logged_seq": 20,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: sketch solve: 0 DoF-ish; verts: [(0.0, 0.0), (25.0, 0.0), (25.0, 10.0), (20.0, 10.0), (20.0, 5.0), (5.0, 5.0), (5.0, 60.0), (0.0, 60.0)]\nvalid True vol 8500.000000000004 bbox BoundBox (0, -20, 0, 25, 1.33227e-14, 60)\n"
+  }
+ ]
+}

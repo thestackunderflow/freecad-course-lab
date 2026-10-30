@@ -104,6 +104,37 @@ open, View > Panels lists Python Console above Report View; `lab.fcrpc row` can 
 deleted" when the tree is rebuilt (the takes use fixed rows); `lab.drive`'s end-of-turn check misses the second
 message after Ctrl+O (it waits for its time limit, then goes on).
 
+## Lesson 3 (30 Oct 2026): named sizes in a spreadsheet, by hand and by Claude
+
+Lesson 2's hook (its by-hand file, the course's start file) gets a spreadsheet with five named sizes (aliases):
+`hook_depth` 25 mm, `thickness` 5 mm, `lip_height` 10 mm, `plate_height` 60 mm, `width` 20 mm. Its six sizes and the
+pad's length are written from them (expressions): bottom = `Spreadsheet.hook_depth`, lip = `Spreadsheet.lip_height`,
+lip width = `Spreadsheet.thickness`, the drop inside the lip = `Spreadsheet.lip_height - Spreadsheet.thickness`,
+back plate = `Spreadsheet.plate_height`, back plate thickness = `Spreadsheet.thickness`, Pad Length =
+`Spreadsheet.width`. Expected without CAD (`checker/outline.py`, tested): 8,500 mm³; hook_depth 40: 10,000 mm³,
+40 x 20 x 60; then thickness 8: 752 mm², 15,040 mm³. Same pins as lessons 1-2. Ledger: lesson 3's own GO line in
+`../freecad-course-BUDGET.tsv`. Messages and scoring were committed before the first run (`out/l3/prereg.json`,
+`out/l3/messages/`, `checker/score_l3.py`).
+
+| Q | What happened (file) |
+|---|---|
+| Q1 by hand | File > Open; workbench list > Spreadsheet; **New Spreadsheet** opens a tab with Content and Alias boxes; names in A1-A5, values with mm in B1-B5, each B cell's Alias box. In the Sketcher: double-click a size → Insert Length → `=` opens the Expression Editor → `Spreadsheet.hook_depth` (Enter picks it from the list; "Result 25.00 mm"), Enter, Enter → "25 mm (ƒ𝑥)" (our container's label font lacks the 𝑥 glyph). All six, still "Fully constrained"; Pad Length `=` `Spreadsheet.width`; Windows > Tile puts the sheet beside the hook (`hand/`) |
+| Q2 numbers | after binding 8500.0 (7 expressions); hook_depth 40 mm: **10000.0**, 40 x 20 x 60, X 0..40, the part followed with no click; thickness 8 mm: **15040.0**; back to 5 mm: 10000.0; fully constrained throughout (`hand/measure-*.json`) |
+| Q3 plain | lesson 2's hook with plain sizes, its 25 set to 40 directly: **10000.0**, 40 x 20 x 60, still fully constrained: the arm's top has no size of its own, so it follows (`plain/`) |
+| Q4 Claude B1 (asked) | Claude Code 2.1.308, Sonnet 5.5, auto mode. Its first call failed (`Support`: AttributeError; 1.x calls it AttachmentSupport), the retry worked. A new document "Hook": a spreadsheet named **Params** with the five names (with mm), a Body, a sketch on XZ, 8 lines, all **7** lengths written from names, a Pad named Extrude from `Params.width`; fully constrained; 8,500. "40 deep": one call, `Params.set("B4", "40 mm")`: 10,000. "8 thick": `set("B3", "8 mm")`: 15,040 (it noted the lip now stands 2 above the arm). $0.164 (`runs/B1/`) |
+| Q4 Claude A1 (not asked) | No names. One call per message: 8,500 first (sketch with 8 joins only, as in lesson 2); "40 deep": deleted every line and drew 8 new corners: 10,000; "8 thick": drew new corners with the plate and the arm 8 thick but the **lip kept 5 wide and raised to 13**: **15,220**, a different hook from the named reading; its reply said so and offered to change it. $0.127 (`runs/A1/`) |
+| Q4 Claude B2 (asked) | Two failed calls, then the build: 5 names, 6 sketch sizes + the pad from names, 8,500; each edit one cell: 10,000, 15,040. $0.205 (`runs/B2/`) |
+| Q5 scored | B1 and B2: names, first build right, both edits followed and by one cell. A1: first build right, 40 followed by redrawing (not one cell), 8 thick read differently (15,220) (`compare.json`, `runs/*/score.json`) |
+| Q6 replay | B1's and A1's logged calls replayed per message in a fresh FreeCAD with no AI: the same 8,500 / 10,000 / 15,040 (B1) and 8,500 / 10,000 / 15,220 (A1) (`replay-*/`) |
+
+Lesson 2's error dialog, found: the take's tree lookup used PySide's `findItems`, whose item wrappers for a second
+document's rows come back "Internal C++ object (QTreeWidgetItem) already deleted"; the exception reached FreeCAD and
+the add-on showed it. `lab/fcrpc.py` now walks the tree's model indexes (no item wrappers), only takes rows under the
+asked document, and runs every query inside try/except so nothing is raised in FreeCAD (`tests/test_l3.py`). In run
+B1 the old lookup missed Claude's part, so its viewer steps were refilmed on B1's own saved copies
+(`lab/take_inspect3.sh`, "opened again"). `lab/drive.py` now ends a turn on a new end-of-turn line (Claude Code can
+re-draw its transcript, so a count of such lines can fall).
+
 ## Tests
 
 `tools/test.sh` runs every test in the lab image (unit tests, plus real Xvfb/tmux checks). The leak scan before any

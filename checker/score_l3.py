@@ -137,8 +137,11 @@ def score(first, after2, after3, code2, code3):
          'corners': {}}
     if after3 is not None:
         ok3, miss3, al3, one3, t3 = _edit(after2, after3, 'after3', 5, 8, code3)
+        p3 = _part(after3)
         r.update({'edit3_followed': ok3, 'edit3_misses': miss3, 'edit3_alias': al3, 'edit3_by_one_cell': one3,
-                  'edit3_touched_sketch': t3})
+                  'edit3_touched_sketch': t3,
+                  'edit3_reading': ('%g mm3, box %s' % (round(p3['volume_mm3'], 3), ' x '.join('%g' % x for x in p3['bbox_mm'])))
+                  if p3 else 'no solid'})
     for stage, m in (('first', first), ('after2', after2), ('after3', after3)):
         if m is not None:
             sk = (m.get('sketches') or [{}])

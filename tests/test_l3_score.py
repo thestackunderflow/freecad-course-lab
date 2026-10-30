@@ -71,6 +71,13 @@ def test_a_run_without_names_that_rewrites_sizes_follows_but_not_by_one_cell():
     assert s['names']['used'] is False and s['names']['aliases'] == []
     assert s['first_build_right'] and s['edit2_followed'] and s['edit3_followed']
     assert s['edit2_by_one_cell'] is False and s['edit3_by_one_cell'] is False
+    assert s['edit3_reading'] == '15040 mm3, box 40 x 20 x 60'
+
+
+def test_a_different_reading_of_8_thick_is_recorded_with_its_numbers():
+    a3 = _m(15220.0, (40.0, 20.0, 60.0), corners=[[0, 0], [40, 0], [40, 13], [35, 13], [35, 8], [8, 8], [8, 60], [0, 60]])
+    s = score_l3.score(FIRST, AFTER2, a3, CELL2, [])
+    assert s['edit3_followed'] is False and s['edit3_reading'] == '15220 mm3, box 40 x 20 x 60'
 
 
 def test_a_correct_build_with_a_construction_line_and_no_part_design_still_scores_right():

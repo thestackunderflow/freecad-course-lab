@@ -1,0 +1,82 @@
+[
+ {
+  "call_seq": 18,
+  "reply_seq": 19,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App, Part, Sketcher\nfrom FreeCAD import Vector as V\ndoc = App.newDocument(\"Hook\")\nss = doc.addObject(\"Spreadsheet::Sheet\", \"Spreadsheet\")\nsizes = [(\"plate_height\",60),(\"width\",20),(\"thickness\",5),(\"hook_depth\",25),(\"lip_height\",10)]\nfor i,(n,v) in enumerate(sizes, start=1):\n    ss.set(f\"A{i}\", n); ss.set(f\"B{i}\", str(v)); ss.setAlias(f\"B{i}\", n)\ndoc.recompute()\n\nsk = doc.addObject(\"Sketcher::SketchObject\", \"Sketch\")\nsk.Support = (doc.getObject(\"XZ_Plane\"), [\"\"])\nsk.MapMode = \"FlatFace\"\npts = [(0,0),(25,0),(25,10),(20,10),(20,5),(5,5),(5,60),(0,60)]\nfor i in range(8):\n    a, b = pts[i], pts[(i+1)%8]\n    sk.addGeometry(Part.LineSegment(V(a[0],0 if False else a[1],0), V(b[0],b[1],0)))\nfor i in range(8):\n    sk.addConstraint(Sketcher.Constraint(\"Coincident\", i, 2, (i+1)%8, 1))\nfor i in (0,2,4,6): sk.addConstraint(Sketcher.Constraint(\"Horizontal\", i))\nfor i in (1,3,5,7): sk.addConstraint(Sketcher.Constraint(\"Vertical\", i))\nsk.addConstraint(Sketcher.Constraint(\"Coincident\", 0, 1, -1, 1))\n\ndims = [\n (\"DistanceX\",0,1,0,2,\"hook_depth\"),\n (\"DistanceY\",1,1,1,2,\"lip_height\"),\n (\"DistanceX\",2,2,2,1,\"thickness\"),\n (\"DistanceY\",3,2,3,1,\"lip_height - thickness\"),\n (\"DistanceX\",4,2,4,1,\"hook_depth - 2 * thickness\"),\n (\"DistanceY\",5,1,5,2,\"plate_height - thickness\"),\n (\"DistanceX\",6,2,6,1,\"thickness\"),\n]\nfor k,(t,g1,p1,g2,p2,expr) in enumerate(dims):\n    idx = sk.addConstraint(Sketcher.Constraint(t,g1,p1,g2,p2,1))\n    name = f\"d{k}\"\n    sk.renameConstraint(idx, name)\n    sk.setExpression(f\"Constraints.{name}\", f\"Spreadsheet.{expr}\".replace(\" \", \" \").replace(\"- \", \"- Spreadsheet.\").replace(\"* \", \"* \") if False else\n        \" \".join(f\"Spreadsheet.{tok}\" if tok.isidentifier() else tok for tok in expr.split()))\ndoc.recompute()\n\npad = doc.addObject(\"PartDesign::Body\",\"Body\")\npad.addObject(sk)\next = pad.newObject(\"PartDesign::Pad\",\"Pad\")\next.Profile = sk\next.setExpression(\"Length\",\"Spreadsheet.width\")\ndoc.recompute()\nprint(sk.solve(), [ (c.Name, c.Value) for c in sk.Constraints if c.Name])\nprint(ext.Shape.BoundBox, ext.Shape.Volume, ext.Shape.isValid())\n"
+  },
+  "isError": true,
+  "text": "Failed to execute code: AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'",
+  "images": [],
+  "seconds": 0.257
+ },
+ {
+  "call_seq": 20,
+  "reply_seq": 21,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App, Part, Sketcher\nfrom FreeCAD import Vector as V\nif \"Hook\" in App.listDocuments(): App.closeDocument(\"Hook\")\ndoc = App.newDocument(\"Hook\")\nss = doc.addObject(\"Spreadsheet::Sheet\", \"Spreadsheet\")\nsizes = [(\"plate_height\",60),(\"width\",20),(\"thickness\",5),(\"hook_depth\",25),(\"lip_height\",10)]\nfor i,(n,v) in enumerate(sizes, start=1):\n    ss.set(f\"A{i}\", n); ss.set(f\"B{i}\", str(v)); ss.setAlias(f\"B{i}\", n)\ndoc.recompute()\n\nbody = doc.addObject(\"PartDesign::Body\",\"Body\")\nxz = [o for o in body.Origin.OriginFeatures if o.Role == \"XZ_Plane\"][0]\nsk = body.newObject(\"Sketcher::SketchObject\", \"Sketch\")\nsk.AttachmentSupport = (xz, [\"\"])\nsk.MapMode = \"FlatFace\"\npts = [(0,0),(25,0),(25,10),(20,10),(20,5),(5,5),(5,60),(0,60)]\nfor i in range(8):\n    a, b = pts[i], pts[(i+1)%8]\n    sk.addGeometry(Part.LineSegment(V(a[0],a[1],0), V(b[0],b[1],0)))\nfor i in range(8):\n    sk.addConstraint(Sketcher.Constraint(\"Coincident\", i, 2, (i+1)%8, 1))\nfor i in (0,2,4,6): sk.addConstraint(Sketcher.Constraint(\"Horizontal\", i))\nfor i in (1,3,5,7): sk.addConstraint(Sketcher.Constraint(\"Vertical\", i))\nsk.addConstraint(Sketcher.Constraint(\"Coincident\", 0, 1, -1, 1))\n\ndims = [\n (\"DistanceX\",0,1,0,2,\"hook_depth\"),\n (\"DistanceY\",1,1,1,2,\"lip_height\"),\n (\"DistanceX\",2,2,2,1,\"thickness\"),\n (\"DistanceY\",3,2,3,1,\"lip_height - thickness\"),\n (\"DistanceX\",4,2,4,1,\"hook_depth - 2 * thickness\"),\n (\"DistanceY\",5,1,5,2,\"plate_height - thickness\"),\n (\"DistanceX\",6,2,6,1,\"thickness\"),\n]\nfor k,(t,g1,p1,g2,p2,expr) in enumerate(dims):\n    idx = sk.addConstraint(Sketcher.Constraint(t,g1,p1,g2,p2,1))\n    name = f\"d{k}\"\n    sk.renameConstraint(idx, name)\n    e = \" \".join(f\"Spreadsheet.{tok}\" if tok.isidentifier() else tok for tok in expr.split())\n    sk.setExpression(f\"Constraints.{name}\", e)\ndoc.recompute()\n\next = body.newObject(\"PartDesign::Pad\",\"Pad\")\next.Profile = sk\next.setExpression(\"Length\",\"Spreadsheet.width\")\ndoc.recompute()\nprint(sk.solve(), [(c.Name, c.Value) for c in sk.Constraints if c.Name])\nprint(ext.Shape.BoundBox, ext.Shape.Volume, ext.Shape.isValid())\n"
+  },
+  "isError": true,
+  "text": "Failed to execute code: RuntimeError: shape is invalid",
+  "images": [],
+  "seconds": 0.271
+ },
+ {
+  "call_seq": 22,
+  "reply_seq": 23,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App\ndoc = App.getDocument(\"Hook\")\nsk = doc.getObject(\"Sketch\")\nprint(sk.solve(), sk.State, doc.getObject(\"Pad\").State if doc.getObject(\"Pad\") else None)\nprint([(c.Name, c.Value) for c in sk.Constraints if c.Name])\nprint([ (g.StartPoint, g.EndPoint) for g in sk.Geometry])\nprint(sk.Placement, sk.ExpressionEngine)\n",
+   "include_screenshot": false
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: -1 ['Touched', 'Invalid'] ['Touched', 'Expanded']\n[('d0', 25.0), ('d1', 10.0), ('d2', 5.0), ('d3', 5.0), ('d4', 15.0), ('d5', 55.0), ('d6', 5.0)]\n[(Vector (0.0, 1.1102230246251565e-16, 0.0), Vector (1.0, 1.1102230246251565e-16, 0.0)), (Vector (1.0, 1.1102230246251565e-16, 0.0), Vector (1.0, 1.0, 0.0)), (Vector (1.0, 1.0, 0.0), Vector (4.440892098500626e-16, 1.0, 0.0)), (Vector (4.440892098500626e-16, 1.0, 0.0), Vector (4.440892098500626e-16, 3.552713678800501e-15, 0.0)), (Vector (4.440892098500626e-16, 3.552713678800501e-15, 0.0), Vector (-0.9999999999999996, 3.552713678800501e-15, 0.0)), (Vector (-0.9999999999999996, 3.552713678800501e-15, 0.0), Vector (-0.9999999999999996, 1.0, 0.0)), (Vector (-0.9999999999999996, 1.0, 0.0), Vector (0.0, 1.0, 0.0)), (Vector (0.0, 1.0, 0.0), Vector (0.0, 1.1102230246251565e-16, 0.0))]\nPlacement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)] [('.Constraints.d0', 'Spreadsheet.hook_depth'), ('.Constraints.d1', 'Spreadsheet.lip_height'), ('.Constraints.d2', 'Spreadsheet.thickness'), ('.Constraints.d3', 'Spreadsheet.lip_height - Spreadsheet.thickness'), ('.Constraints.d4', 'Spreadsheet.hook_depth - 2 * Spreadsheet.thickness'), ('.Constraints.d5', 'Spreadsheet.plate_height - Spreadsheet.thickness'), ('.Constraints.d6', 'Spreadsheet.thickness')]\n",
+  "images": [],
+  "seconds": 0.018
+ },
+ {
+  "call_seq": 24,
+  "reply_seq": 25,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App, Part, Sketcher\nfrom FreeCAD import Vector as V\nApp.closeDocument(\"Hook\")\ndoc = App.newDocument(\"Hook\")\nss = doc.addObject(\"Spreadsheet::Sheet\", \"Spreadsheet\")\nsizes = [(\"plate_height\",60),(\"width\",20),(\"thickness\",5),(\"hook_depth\",25),(\"lip_height\",10)]\nfor i,(n,v) in enumerate(sizes, start=1):\n    ss.set(f\"A{i}\", n); ss.set(f\"B{i}\", str(v)); ss.setAlias(f\"B{i}\", n)\ndoc.recompute()\n\nbody = doc.addObject(\"PartDesign::Body\",\"Body\")\nxz = [o for o in body.Origin.OriginFeatures if o.Role == \"XZ_Plane\"][0]\nsk = body.newObject(\"Sketcher::SketchObject\", \"Sketch\")\nsk.AttachmentSupport = (xz, [\"\"])\nsk.MapMode = \"FlatFace\"\npts = [(0,0),(25,0),(25,10),(20,10),(20,5),(5,5),(5,60),(0,60)]\nfor i in range(8):\n    a, b = pts[i], pts[(i+1)%8]\n    sk.addGeometry(Part.LineSegment(V(a[0],a[1],0), V(b[0],b[1],0)))\nfor i in range(8):\n    sk.addConstraint(Sketcher.Constraint(\"Coincident\", i, 2, (i+1)%8, 1))\nfor i in (0,2,4,6): sk.addConstraint(Sketcher.Constraint(\"Horizontal\", i))\nfor i in (1,3,5,7): sk.addConstraint(Sketcher.Constraint(\"Vertical\", i))\nsk.addConstraint(Sketcher.Constraint(\"Coincident\", 0, 1, -1, 1))\n\ndims = [\n (\"DistanceX\",0,1,0,2,\"hook_depth\"),\n (\"DistanceY\",1,1,1,2,\"lip_height\"),\n (\"DistanceX\",2,2,2,1,\"thickness\"),\n (\"DistanceY\",3,2,3,1,\"lip_height - thickness\"),\n (\"DistanceX\",4,2,4,1,\"hook_depth - 2 * thickness\"),\n (\"DistanceY\",5,1,5,2,\"plate_height - thickness\"),\n]\nfor k,(t,g1,p1,g2,p2,expr) in enumerate(dims):\n    idx = sk.addConstraint(Sketcher.Constraint(t,g1,p1,g2,p2,1))\n    name = f\"d{k}\"\n    sk.renameConstraint(idx, name)\n    e = \" \".join(f\"Spreadsheet.{tok}\" if tok.isidentifier() else tok for tok in expr.split())\n    sk.setExpression(f\"Constraints.{name}\", e)\ndoc.recompute()\nprint(\"solve\", sk.solve())\nprint([(round(g.StartPoint.x,3), round(g.StartPoint.y,3)) for g in sk.Geometry])\n\next = body.newObject(\"PartDesign::Pad\",\"Pad\")\next.Profile = sk\next.setExpression(\"Length\",\"Spreadsheet.width\")\ndoc.recompute()\nprint(ext.Shape.BoundBox, ext.Shape.Volume, ext.Shape.isValid())\n",
+   "view_name": "Isometric"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: solve 0\n[(0.0, -0.0), (25.0, -0.0), (25.0, 10.0), (20.0, 10.0), (20.0, 5.0), (5.0, 5.0), (5.0, 60.0), (0.0, 60.0)]\nBoundBox (0, -20, -8.88178e-16, 25, 1.33227e-14, 60) 8500.000000000007 True\n",
+  "images": [
+   "claude-shot-01.png"
+  ],
+  "seconds": 1.44
+ },
+ {
+  "call_seq": 26,
+  "reply_seq": 27,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App\ndoc = App.getDocument(\"Hook\")\nss = doc.getObject(\"Spreadsheet\")\nss.set(\"B4\", \"40\")\ndoc.recompute()\nsk = doc.getObject(\"Sketch\"); ext = doc.getObject(\"Pad\")\nprint(sk.solve(), [(round(g.StartPoint.x,3), round(g.StartPoint.y,3)) for g in sk.Geometry])\nprint(ext.Shape.BoundBox, ext.Shape.Volume, ext.Shape.isValid())\n"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: 0 [(0.0, -0.0), (40.0, -0.0), (40.0, 10.0), (35.0, 10.0), (35.0, 5.0), (5.0, 5.0), (5.0, 60.0), (0.0, 60.0)]\nBoundBox (0, -20, -8.88178e-16, 40, 1.33227e-14, 60) 10000.000000000011 True\n",
+  "images": [
+   "claude-shot-02.png"
+  ],
+  "seconds": 1.009
+ },
+ {
+  "call_seq": 28,
+  "reply_seq": 29,
+  "name": "execute_code",
+  "arguments": {
+   "code": "import FreeCAD as App\ndoc = App.getDocument(\"Hook\")\ndoc.getObject(\"Spreadsheet\").set(\"B3\", \"8\")\ndoc.recompute()\nsk = doc.getObject(\"Sketch\"); ext = doc.getObject(\"Pad\")\nprint(sk.solve(), [(round(g.StartPoint.x,3), round(g.StartPoint.y,3)) for g in sk.Geometry])\nprint(ext.Shape.BoundBox, ext.Shape.Volume, ext.Shape.isValid())\n"
+  },
+  "isError": false,
+  "text": "Code executed successfully: Python code executed successfully.\nOutput: 0 [(0.0, 0.0), (40.0, 0.0), (40.0, 10.0), (32.0, 10.0), (32.0, 8.0), (8.0, 8.0), (8.0, 60.0), (0.0, 60.0)]\nBoundBox (0, -20, 0, 40, 1.33227e-14, 60) 15040.000000000004 True\n",
+  "images": [
+   "claude-shot-03.png"
+  ],
+  "seconds": 0.888
+ }
+]

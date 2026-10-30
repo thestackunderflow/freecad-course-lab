@@ -1,0 +1,65 @@
+MCP RPC: GUI task raised AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 11, in <module>
+AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+Error executing Python code: AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+--- code ---
+import FreeCAD as App, Part, Sketcher
+from FreeCAD import Vector as V
+doc = App.newDocument("Hook")
+ss = doc.addObject("Spreadsheet::Sheet", "Spreadsheet")
+sizes = [("plate_height",60),("width",20),("thickness",5),("hook_depth",25),("lip_height",10)]
+for i,(n,v) in enumerate(sizes, start=1):
+    ss.set(f"A{i}", n); ss.set(f"B{i}", str(v)); ss.setAlias(f"B{i}", n)
+doc.recompute()
+
+sk = doc.addObject("Sketcher::SketchObject", "Sketch")
+sk.Support = (doc.getObject("XZ_Plane"), [""])
+sk.MapMode = "FlatFace"
+pts = [(0,0),(25,0),(25,10),(20,10),(20,5),(5,5),(5,60),(0,60)]
+for i in range(8):
+    a, b = pts[i], pts[(i+1)%8]
+    sk.addGeometry(Part.LineSegment(V(a[0],0 if False else a[1],0), V(b[0],b[1],0)))
+for i in range(8):
+    sk.addConstraint(Sketcher.Constraint("Coincident", i, 2, (i+1)%8, 1)
+...(truncated)
+--- end ---
+Sketch: Solving the sketch failed
+Sketch: Solving the sketch failed
+MCP RPC: GUI task raised RuntimeError: shape is invalid
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 48, in <module>
+RuntimeError: shape is invalid
+Error executing Python code: RuntimeError: shape is invalid
+--- code ---
+import FreeCAD as App, Part, Sketcher
+from FreeCAD import Vector as V
+if "Hook" in App.listDocuments(): App.closeDocument("Hook")
+doc = App.newDocument("Hook")
+ss = doc.addObject("Spreadsheet::Sheet", "Spreadsheet")
+sizes = [("plate_height",60),("width",20),("thickness",5),("hook_depth",25),("lip_height",10)]
+for i,(n,v) in enumerate(sizes, start=1):
+    ss.set(f"A{i}", n); ss.set(f"B{i}", str(v)); ss.setAlias(f"B{i}", n)
+doc.recompute()
+
+body = doc.addObject("PartDesign::Body","Body")
+xz = [o for o in body.Origin.OriginFeatures if o.Role == "XZ_Plane"][0]
+sk = body.newObject("Sketcher::SketchObject", "Sketch")
+sk.AttachmentSupport = (xz, [""])
+sk.MapMode = "FlatFace"
+pts = [(0,0),(25,0),(25,10),(20,10),(20,5),(5,5),(5,60),(0,60)]
+for i in range(8):
+    a, b = pts[i], pts[(i+1)%8]
+    sk.a
+...(truncated)
+--- end ---

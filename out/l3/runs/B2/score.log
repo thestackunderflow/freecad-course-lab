@@ -1,0 +1,52 @@
+{
+ "names": {
+  "aliases": [
+   "hook_depth",
+   "lip_height",
+   "plate_height",
+   "thickness",
+   "width"
+  ],
+  "exprs_from_names": 7,
+  "sketch_sizes_from_names": 6,
+  "length_from_name": true,
+  "used": true
+ },
+ "names_after_edits": {
+  "aliases": [
+   "hook_depth",
+   "lip_height",
+   "plate_height",
+   "thickness",
+   "width"
+  ],
+  "exprs_from_names": 7,
+  "sketch_sizes_from_names": 6,
+  "length_from_name": true,
+  "used": true
+ },
+ "first_build_right": true,
+ "first_build_misses": [],
+ "edit2_followed": true,
+ "edit2_misses": [],
+ "edit2_reading": "box 40",
+ "edit2_alias": "hook_depth",
+ "edit2_by_one_cell": true,
+ "edit2_touched_sketch": false,
+ "corners": {
+  "first": true,
+  "after2": true,
+  "after3": true
+ },
+ "edit3_followed": true,
+ "edit3_misses": [],
+ "edit3_alias": "thickness",
+ "edit3_by_one_cell": true,
+ "edit3_touched_sketch": false,
+ "edit3_reading": "15040 mm3, box 40 x 20 x 60",
+ "calls_per_message": {
+  "1": 4,
+  "2": 1,
+  "3": 1
+ }
+}

@@ -1,0 +1,334 @@
+{
+ "document": "after2.FCStd",
+ "freecad": "1.1.4",
+ "objects": [
+  "Spreadsheet",
+  "Body",
+  "Origin",
+  "X_Axis",
+  "Y_Axis",
+  "Z_Axis",
+  "XY_Plane",
+  "XZ_Plane",
+  "YZ_Plane",
+  "Origin001",
+  "Sketch",
+  "Pad"
+ ],
+ "solids": [
+  {
+   "name": "Body",
+   "label": "Body",
+   "type": "PartDesign::Body",
+   "volume_mm3": 10000.0,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "in_list": []
+  },
+  {
+   "name": "Pad",
+   "label": "Pad",
+   "type": "PartDesign::Pad",
+   "volume_mm3": 10000.0,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "z_range_mm": [
+    0.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "in_list": [
+    "Body",
+    "Body"
+   ]
+  }
+ ],
+ "sketches": [
+  {
+   "name": "Sketch",
+   "label": "Sketch",
+   "support": [
+    [
+     "XZ_Plane",
+     [
+      ""
+     ]
+    ]
+   ],
+   "map_mode": "FlatFace",
+   "geometry": 8,
+   "constraints": 23,
+   "constraint_kinds": {
+    "Coincident": 9,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "DistanceX": 3,
+    "DistanceY": 3
+   },
+   "solve": 0,
+   "fully_constrained": true,
+   "dependent_parameters": 0,
+   "normal": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_vector": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "right_vector": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,90)]",
+   "corners_xy": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     40.0,
+     0.0
+    ],
+    [
+     40.0,
+     10.0
+    ],
+    [
+     35.0,
+     10.0
+    ],
+    [
+     35.0,
+     5.0
+    ],
+    [
+     5.0,
+     5.0
+    ],
+    [
+     5.0,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ]
+   ],
+   "dimensions": [
+    {
+     "index": 17,
+     "type": "DistanceX",
+     "name": "d0",
+     "value": 40.0,
+     "expression": "Spreadsheet.hook_depth",
+     "first": 0,
+     "second": 0
+    },
+    {
+     "index": 18,
+     "type": "DistanceY",
+     "name": "d1",
+     "value": 10.0,
+     "expression": "Spreadsheet.lip_height",
+     "first": 1,
+     "second": 1
+    },
+    {
+     "index": 19,
+     "type": "DistanceX",
+     "name": "d2",
+     "value": 5.0,
+     "expression": "Spreadsheet.thickness",
+     "first": 2,
+     "second": 2
+    },
+    {
+     "index": 20,
+     "type": "DistanceY",
+     "name": "d3",
+     "value": 5.0,
+     "expression": "Spreadsheet.lip_height - Spreadsheet.thickness",
+     "first": 3,
+     "second": 3
+    },
+    {
+     "index": 21,
+     "type": "DistanceX",
+     "name": "d4",
+     "value": 30.0,
+     "expression": "Spreadsheet.hook_depth - 2 * Spreadsheet.thickness",
+     "first": 4,
+     "second": 4
+    },
+    {
+     "index": 22,
+     "type": "DistanceY",
+     "name": "d5",
+     "value": 55.0,
+     "expression": "Spreadsheet.plate_height - Spreadsheet.thickness",
+     "first": 5,
+     "second": 5
+    }
+   ]
+  }
+ ],
+ "bodies": [
+  {
+   "name": "Body",
+   "label": "Body",
+   "tip": "Pad",
+   "features": [
+    {
+     "name": "Sketch",
+     "label": "Sketch",
+     "type": "Sketcher::SketchObject"
+    },
+    {
+     "name": "Pad",
+     "label": "Pad",
+     "type": "PartDesign::Pad",
+     "length": 20.0,
+     "reversed": false,
+     "pad_type": "Length"
+    }
+   ],
+   "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]"
+  }
+ ],
+ "sheets": [
+  {
+   "name": "Spreadsheet",
+   "label": "Spreadsheet",
+   "aliases": {
+    "plate_height": "60",
+    "width": "20",
+    "thickness": "5",
+    "hook_depth": "40",
+    "lip_height": "10"
+   },
+   "cells": {
+    "A1": {
+     "content": "'plate_height",
+     "value": "plate_height"
+    },
+    "B1": {
+     "content": "60",
+     "value": "60"
+    },
+    "A2": {
+     "content": "'width",
+     "value": "width"
+    },
+    "B2": {
+     "content": "20",
+     "value": "20"
+    },
+    "A3": {
+     "content": "'thickness",
+     "value": "thickness"
+    },
+    "B3": {
+     "content": "5",
+     "value": "5"
+    },
+    "A4": {
+     "content": "'hook_depth",
+     "value": "hook_depth"
+    },
+    "B4": {
+     "content": "40",
+     "value": "40"
+    },
+    "A5": {
+     "content": "'lip_height",
+     "value": "lip_height"
+    },
+    "B5": {
+     "content": "10",
+     "value": "10"
+    }
+   }
+  }
+ ],
+ "pads": [
+  {
+   "name": "Pad",
+   "length": 20.0,
+   "expression": "Spreadsheet.width"
+  }
+ ],
+ "expressions": [
+  {
+   "object": "Sketch",
+   "property": ".Constraints.d0",
+   "expression": "Spreadsheet.hook_depth"
+  },
+  {
+   "object": "Sketch",
+   "property": ".Constraints.d1",
+   "expression": "Spreadsheet.lip_height"
+  },
+  {
+   "object": "Sketch",
+   "property": ".Constraints.d2",
+   "expression": "Spreadsheet.thickness"
+  },
+  {
+   "object": "Sketch",
+   "property": ".Constraints.d3",
+   "expression": "Spreadsheet.lip_height - Spreadsheet.thickness"
+  },
+  {
+   "object": "Sketch",
+   "property": ".Constraints.d4",
+   "expression": "Spreadsheet.hook_depth - 2 * Spreadsheet.thickness"
+  },
+  {
+   "object": "Sketch",
+   "property": ".Constraints.d5",
+   "expression": "Spreadsheet.plate_height - Spreadsheet.thickness"
+  },
+  {
+   "object": "Pad",
+   "property": "Length",
+   "expression": "Spreadsheet.width"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+  valid.
+
+  - The bounding box is now 40 wide, 60 tall
+    and 20 thick.
+  - The inner floor is 30 long, because left
+    15 is hook_depth - 2*thickness.
+  - The volume went from 8500 mm³ to 10000
+    mm³.
+
+✻ Worked for 4s · done 4:00 AM
+
+❯ Make it 8 thick instead of 5.
+
+  Called freecad
+
+● I changed thickness from 5 to 8 in the
+  spreadsheet, and the model updated. The
+  sketch still solves and the pad is valid.
+
+  - Plate and floor: The back plate is 8 thick
+    and the floor under the hook is 8 thick.
+  - Lip step: The lip now rises only 2 mm
+    above the floor, because it is lip_height
+    - thickness, which is 10 − 8. That is a
+    very small step, so you may want to raise
+    lip_height if you want a more useful lip.
+  - Inner floor length: It is 24, from
+    hook_depth - 2*thickness.
+  - Volume: It is now 15040 mm³.
+
+✻ Churned for 5s · done 4:01 AM
+
+──────────────────────────────────────────────
+❯ Make lip_height 15 instead of 10.
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
