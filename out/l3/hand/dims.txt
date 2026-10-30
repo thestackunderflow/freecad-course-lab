@@ -1,0 +1,6 @@
+17 DistanceX 25.0
+18 DistanceY 10.0
+19 DistanceX 5.0
+20 DistanceY 5.0
+21 DistanceY 60.0
+22 DistanceX 5.0

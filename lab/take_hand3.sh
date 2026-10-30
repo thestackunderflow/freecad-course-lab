@@ -24,11 +24,16 @@ python3 - > "$O/setup-rpc.txt" 2>&1 <<'PY'
 import sys; sys.path.insert(0, '/lab')
 from lab import fcrpc
 print(fcrpc.run("""import FreeCADGui
-from PySide import QtWidgets
+from PySide import QtCore, QtWidgets
+mw = FreeCADGui.getMainWindow()
 FreeCADGui.activateWorkbench('PartDesignWorkbench')
-for w in FreeCADGui.getMainWindow().findChildren(QtWidgets.QDockWidget):
+for w in mw.findChildren(QtWidgets.QMdiArea)[0].subWindowList():
+    if w.windowTitle().startswith('Start'):
+        w.close()
+for w in mw.findChildren(QtWidgets.QDockWidget):
     if w.objectName() in ('Python console',):
         w.show()
+        mw.resizeDocks([w], [190], QtCore.Qt.Vertical)
 print(1)"""))
 PY
 sleep 2
@@ -115,7 +120,15 @@ read -r KX KY < <(row Sketch)
 sl_glide "$KX" "$KY" 20; sl_nap 0.5
 sl_mark "tree: double-click the sketch"; xdotool click --repeat 2 --delay 120 1
 sl_nap 3.5
-xdotool mousemove 1300 900; sl_nap 0.3; xdotool click 5; sl_mark "zoom: one notch out"
+sl_click 940 88 "Fit all (toolbar)"
+sl_nap 1.2
+read -r X0 Y0 < <(python3 -m lab.sketchpt "$DOC" Sketch 0 start); read -r X1 Y1 < <(python3 -m lab.sketchpt "$DOC" Sketch 0 end)
+read -r X6 Y6 < <(python3 -m lab.sketchpt "$DOC" Sketch 6 end)
+CX=$(( (X0 + X1) / 2 )); CY=$(( (Y0 + Y6) / 2 ))
+sl_glide "$CX" "$CY" 15; sl_mark "pan: middle drag (the hook to the middle)"; xdotool mousedown 2
+for i in $(seq 1 20); do xdotool mousemove $(( CX + (1330 - CX) * i / 20 )) $(( CY + (810 - CY) * i / 20 )); sleep 0.03; done
+xdotool mouseup 2; sl_nap 0.5
+for n in 1 2 3; do xdotool click 4; sleep 0.4; done; sl_mark "zoom: three notches in (the wheel)"
 sl_nap 1.5
 sl_shot "$O/s5-sketch.png"
 # each size lit (hover) in the order the narration says them, then bound
@@ -182,6 +195,8 @@ sl_glide 706 165 15; sl_nap 0.5
 sl_click 706 165 "Windows: Tile"
 sl_nap 2.5
 sl_shot "$O/s14-tiled.png"
+sl_click 2420 838 "the sheet: an empty cell (the window takes the keys)"
+sl_nap 0.8
 sl_click 2060 460 "cell B1 (hook_depth)"
 sl_nap 0.8
 sl_type "40 mm" "B1: typed 40 mm" 160

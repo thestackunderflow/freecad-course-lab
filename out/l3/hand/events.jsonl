@@ -1,0 +1,161 @@
+{"t": 0.061, "event": "recording started: FreeCAD, Part Design, Start page"}
+{"t": 3.027, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 5.295, "event": "File: Open", "x": 160, "y": 110, "button": 1}
+{"t": 8.523, "event": "open: typed the file name", "text": "~/hook-lesson2.FCStd"}
+{"t": 10.644, "event": "open: Enter", "keys": "Return"}
+{"t": 14.319, "event": "key 0: isometric", "keys": "0"}
+{"t": 18.113, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 21.272, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 21.982, "event": "console: typed the volume line (lesson 2's hook)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 24.23, "event": "console: Enter (the volume line (lesson 2's hook))", "keys": "Return"}
+{"t": 30.525, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 33.165, "event": "hover: Spreadsheet"}
+{"t": 34.642, "event": "workbench: Spreadsheet", "x": 636, "y": 536, "button": 1}
+{"t": 38.062, "event": "hover: Create spreadsheet"}
+{"t": 40.254, "event": "Create spreadsheet", "x": 48, "y": 228, "button": 1}
+{"t": 45.093, "event": "cell A1", "x": 676, "y": 410, "button": 1}
+{"t": 45.807, "event": "A1: typed hook_depth", "text": "hook_depth"}
+{"t": 46.988, "event": "A1: Enter", "keys": "Return"}
+{"t": 49.003, "event": "cell B1", "x": 856, "y": 410, "button": 1}
+{"t": 49.725, "event": "B1: typed 25 mm", "text": "25 mm"}
+{"t": 50.669, "event": "B1: Enter", "keys": "Return"}
+{"t": 52.58, "event": "cell B1 again", "x": 856, "y": 410, "button": 1}
+{"t": 55.069, "event": "Alias box", "x": 2590, "y": 300, "button": 1}
+{"t": 55.781, "event": "alias B1: typed hook_depth", "text": "hook_depth"}
+{"t": 56.96, "event": "alias B1: Enter", "keys": "Return"}
+{"t": 60.867, "event": "cell A2", "x": 676, "y": 464, "button": 1}
+{"t": 61.579, "event": "A2: typed thickness", "text": "thickness"}
+{"t": 62.707, "event": "A2: Enter", "keys": "Return"}
+{"t": 64.719, "event": "cell B2", "x": 856, "y": 464, "button": 1}
+{"t": 65.431, "event": "B2: typed 5 mm", "text": "5 mm"}
+{"t": 66.306, "event": "B2: Enter", "keys": "Return"}
+{"t": 68.2, "event": "cell B2 again", "x": 856, "y": 464, "button": 1}
+{"t": 70.736, "event": "Alias box", "x": 2590, "y": 300, "button": 1}
+{"t": 71.445, "event": "alias B2: typed thickness", "text": "thickness"}
+{"t": 72.625, "event": "alias B2: Enter", "keys": "Return"}
+{"t": 75.997, "event": "cell A3", "x": 676, "y": 518, "button": 1}
+{"t": 76.71, "event": "A3: typed lip_height", "text": "lip_height"}
+{"t": 77.879, "event": "A3: Enter", "keys": "Return"}
+{"t": 79.916, "event": "cell B3", "x": 856, "y": 518, "button": 1}
+{"t": 80.632, "event": "B3: typed 10 mm", "text": "10 mm"}
+{"t": 81.576, "event": "B3: Enter", "keys": "Return"}
+{"t": 83.486, "event": "cell B3 again", "x": 856, "y": 518, "button": 1}
+{"t": 86.142, "event": "Alias box", "x": 2590, "y": 300, "button": 1}
+{"t": 86.853, "event": "alias B3: typed lip_height", "text": "lip_height"}
+{"t": 88.018, "event": "alias B3: Enter", "keys": "Return"}
+{"t": 91.346, "event": "cell A4", "x": 676, "y": 572, "button": 1}
+{"t": 92.057, "event": "A4: typed plate_height", "text": "plate_height"}
+{"t": 93.336, "event": "A4: Enter", "keys": "Return"}
+{"t": 95.306, "event": "cell B4", "x": 856, "y": 572, "button": 1}
+{"t": 96.013, "event": "B4: typed 60 mm", "text": "60 mm"}
+{"t": 96.952, "event": "B4: Enter", "keys": "Return"}
+{"t": 98.836, "event": "cell B4 again", "x": 856, "y": 572, "button": 1}
+{"t": 101.279, "event": "Alias box", "x": 2590, "y": 300, "button": 1}
+{"t": 101.987, "event": "alias B4: typed plate_height", "text": "plate_height"}
+{"t": 103.316, "event": "alias B4: Enter", "keys": "Return"}
+{"t": 106.591, "event": "cell A5", "x": 676, "y": 626, "button": 1}
+{"t": 107.298, "event": "A5: typed width", "text": "width"}
+{"t": 108.186, "event": "A5: Enter", "keys": "Return"}
+{"t": 110.161, "event": "cell B5", "x": 856, "y": 626, "button": 1}
+{"t": 110.87, "event": "B5: typed 20 mm", "text": "20 mm"}
+{"t": 111.804, "event": "B5: Enter", "keys": "Return"}
+{"t": 113.688, "event": "cell B5 again", "x": 856, "y": 626, "button": 1}
+{"t": 116.124, "event": "Alias box", "x": 2590, "y": 300, "button": 1}
+{"t": 116.831, "event": "alias B5: typed width", "text": "width"}
+{"t": 117.719, "event": "alias B5: Enter", "keys": "Return"}
+{"t": 120.989, "event": "an empty cell", "x": 1300, "y": 1200, "button": 1}
+{"t": 121.696, "event": "the finished sheet"}
+{"t": 127.855, "event": "tab: the hook", "x": 580, "y": 1734, "button": 1}
+{"t": 132.526, "event": "tree: double-click the sketch"}
+{"t": 137.357, "event": "Fit all (toolbar)", "x": 940, "y": 88, "button": 1}
+{"t": 140.133, "event": "pan: middle drag (the hook to the middle)"}
+{"t": 142.814, "event": "zoom: three notches in (the wheel)"}
+{"t": 145.768, "event": "hover size: 25 bottom"}
+{"t": 147.591, "event": "hover size: 10 lip height"}
+{"t": 149.395, "event": "hover size: 5 lip width"}
+{"t": 151.194, "event": "hover size: 5 drop inside the lip"}
+{"t": 153.005, "event": "hover size: 60 back plate"}
+{"t": 154.819, "event": "hover size: 5 back plate thickness"}
+{"t": 156.687, "event": "hover size: 25 bottom"}
+{"t": 157.491, "event": "double-click size: 25 bottom"}
+{"t": 159.864, "event": "Insert Length: typed =", "text": "="}
+{"t": 162.53, "event": "editor: typed Spreadsheet.hook_depth", "text": "Spreadsheet.hook_depth"}
+{"t": 166.036, "event": "editor: Enter (pick from the list)", "keys": "Return"}
+{"t": 168.182, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 169.804, "event": "Insert Length: Enter (OK)", "keys": "Return"}
+{"t": 173.435, "event": "hover size: 10 lip height"}
+{"t": 174.239, "event": "double-click size: 10 lip height"}
+{"t": 176.088, "event": "Insert Length: typed =", "text": "="}
+{"t": 178.177, "event": "editor: typed Spreadsheet.lip_height", "text": "Spreadsheet.lip_height"}
+{"t": 181.156, "event": "editor: Enter (pick from the list)", "keys": "Return"}
+{"t": 182.783, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 184.41, "event": "Insert Length: Enter (OK)", "keys": "Return"}
+{"t": 187.503, "event": "hover size: 5 lip width"}
+{"t": 188.308, "event": "double-click size: 5 lip width"}
+{"t": 190.155, "event": "Insert Length: typed =", "text": "="}
+{"t": 192.298, "event": "editor: typed Spreadsheet.thickness", "text": "Spreadsheet.thickness"}
+{"t": 195.228, "event": "editor: Enter (pick from the list)", "keys": "Return"}
+{"t": 196.852, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 198.474, "event": "Insert Length: Enter (OK)", "keys": "Return"}
+{"t": 201.565, "event": "hover size: 5 drop inside the lip"}
+{"t": 202.37, "event": "double-click size: 5 drop inside the lip"}
+{"t": 204.219, "event": "Insert Length: typed =", "text": "="}
+{"t": 206.304, "event": "editor: typed Spreadsheet.lip_height - Spreadsheet.thickness", "text": "Spreadsheet.lip_height - Spreadsheet.thickness"}
+{"t": 210.567, "event": "editor: Enter (pick from the list)", "keys": "Return"}
+{"t": 212.191, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 213.815, "event": "Insert Length: Enter (OK)", "keys": "Return"}
+{"t": 216.896, "event": "hover size: 60 back plate"}
+{"t": 217.7, "event": "double-click size: 60 back plate"}
+{"t": 219.546, "event": "Insert Length: typed =", "text": "="}
+{"t": 221.631, "event": "editor: typed Spreadsheet.plate_height", "text": "Spreadsheet.plate_height"}
+{"t": 224.772, "event": "editor: Enter (pick from the list)", "keys": "Return"}
+{"t": 226.393, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 228.017, "event": "Insert Length: Enter (OK)", "keys": "Return"}
+{"t": 231.103, "event": "hover size: 5 back plate thickness"}
+{"t": 231.909, "event": "double-click size: 5 back plate thickness"}
+{"t": 233.756, "event": "Insert Length: typed =", "text": "="}
+{"t": 235.841, "event": "editor: typed Spreadsheet.thickness", "text": "Spreadsheet.thickness"}
+{"t": 238.771, "event": "editor: Enter (pick from the list)", "keys": "Return"}
+{"t": 240.392, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 242.013, "event": "Insert Length: Enter (OK)", "keys": "Return"}
+{"t": 245.269, "event": "hover: Fully constrained"}
+{"t": 249.521, "event": "Close", "x": 2528, "y": 616, "button": 1}
+{"t": 254.054, "event": "tree: double-click Pad"}
+{"t": 258.749, "event": "Pad: Length box", "x": 2660, "y": 882, "button": 1}
+{"t": 259.499, "event": "Pad Length: typed =", "text": "="}
+{"t": 261.589, "event": "editor: typed Spreadsheet.width", "text": "Spreadsheet.width"}
+{"t": 264.304, "event": "editor: Enter (pick from the list)", "keys": "Return"}
+{"t": 265.927, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 269.107, "event": "Pad: OK", "x": 2428, "y": 616, "button": 1}
+{"t": 272.328, "event": "key 0: isometric", "keys": "0"}
+{"t": 276.009, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 278.173, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 278.882, "event": "console: typed the volume line (still 8,500)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 281.07, "event": "console: Enter (the volume line (still 8,500))", "keys": "Return"}
+{"t": 285.773, "event": "lab query: save named"}
+{"t": 287.7, "event": "Windows menu", "x": 700, "y": 36, "button": 1}
+{"t": 290.176, "event": "Windows: Tile", "x": 706, "y": 165, "button": 1}
+{"t": 295.377, "event": "the sheet: an empty cell (the window takes the keys)", "x": 2420, "y": 838, "button": 1}
+{"t": 297.814, "event": "cell B1 (hook_depth)", "x": 2060, "y": 460, "button": 1}
+{"t": 299.325, "event": "B1: typed 40 mm", "text": "40 mm"}
+{"t": 300.337, "event": "B1: Enter (40 mm)", "keys": "Return"}
+{"t": 306.542, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 308.701, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 309.408, "event": "console: typed the volume line (40 deep)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 311.591, "event": "console: Enter (the volume line (40 deep))", "keys": "Return"}
+{"t": 316.421, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 317.131, "event": "console: typed the X line", "text": "b = Gui.Selection.getSelection()[0].Shape.BoundBox; round(b.XMin, 3), round(b.XMax, 3)"}
+{"t": 320.818, "event": "console: Enter (the X line)", "keys": "Return"}
+{"t": 325.487, "event": "lab query: save depth40"}
+{"t": 327.308, "event": "cell B2 (thickness)", "x": 2060, "y": 514, "button": 1}
+{"t": 328.822, "event": "B2: typed 8 mm", "text": "8 mm"}
+{"t": 329.752, "event": "B2: Enter (8 mm)", "keys": "Return"}
+{"t": 335.937, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 338.117, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 338.826, "event": "console: typed the volume line (8 thick)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 341.005, "event": "console: Enter (the volume line (8 thick))", "keys": "Return"}
+{"t": 345.705, "event": "lab query: save thick8"}
+{"t": 347.494, "event": "cell B2 (thickness) again", "x": 2060, "y": 514, "button": 1}
+{"t": 349.006, "event": "B2: typed 5 mm", "text": "5 mm"}
+{"t": 349.937, "event": "B2: Enter (5 mm)", "keys": "Return"}
+{"t": 354.091, "event": "recording stopped"}

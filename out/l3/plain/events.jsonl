@@ -1,0 +1,23 @@
+{"t": 0.067, "event": "recording started: lesson 2's plain hook (no spreadsheet)"}
+{"t": 2.842, "event": "tree: double-click the sketch"}
+{"t": 7.67, "event": "Fit all (toolbar)", "x": 940, "y": 88, "button": 1}
+{"t": 10.414, "event": "pan: middle drag (the hook to the middle)"}
+{"t": 13.09, "event": "zoom: three notches in (the wheel)"}
+{"t": 15.344, "event": "hover: the arm's top line (no size)"}
+{"t": 19.174, "event": "hover size: 25 bottom"}
+{"t": 19.979, "event": "double-click size: 25 bottom"}
+{"t": 21.827, "event": "Insert Length: typed 40", "text": "40"}
+{"t": 23.457, "event": "Insert Length: Enter (OK)", "keys": "Return"}
+{"t": 27.342, "event": "hover: the arm's top line (now 30)"}
+{"t": 31.257, "event": "hover: Fully constrained"}
+{"t": 33.978, "event": "Close", "x": 2528, "y": 616, "button": 1}
+{"t": 37.195, "event": "key 0: isometric", "keys": "0"}
+{"t": 38.824, "event": "key V", "keys": "v"}
+{"t": 39.447, "event": "key F (fit all)", "keys": "f"}
+{"t": 43.174, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 45.341, "event": "console: click", "x": 900, "y": 1722, "button": 1}
+{"t": 46.049, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 48.232, "event": "console: Enter (volume)", "keys": "Return"}
+{"t": 51.857, "event": "console: typed the X line", "text": "b = Gui.Selection.getSelection()[0].Shape.BoundBox; round(b.XMin, 3), round(b.XMax, 3)"}
+{"t": 55.551, "event": "console: Enter (X)", "keys": "Return"}
+{"t": 60.257, "event": "recording stopped"}
