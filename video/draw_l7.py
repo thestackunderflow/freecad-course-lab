@@ -145,3 +145,27 @@ if __name__ == '__main__':
         card_sofar(n)
     for s in (1, 2, 3, 4):
         card_recap(s)
+
+
+def thumb():
+    """thumbnail-primary: the real terminal (take C: Connected above Error executing tool), the two lines boxed, and
+    four words naming the payoff."""
+    from PIL import Image, ImageDraw
+    src = Image.open(os.path.join(LAB, 'out', 'l7', 'C', 'thumb-src.png')).convert('RGB')
+    s = 2.14
+    y0 = 18
+    crop = src.crop((0, y0, 1160, 324)).resize((int(1160 * s), int(306 * s)))
+    im = Image.new('RGB', (2560, 1440), WHITE)
+    im.paste(crop, (40, 40))
+    d = ImageDraw.Draw(im)
+    box = lambda x0, ya, x1, yb, col: d.rounded_rectangle((40 + x0 * s, 40 + (ya - y0) * s, 40 + x1 * s, 40 + (yb - y0) * s),
+                                                       radius=14, outline=col, width=14)
+    box(895, 76, 1140, 120, GREEN)
+    box(45, 272, 935, 318, RED)
+    text(d, (1280, 1160), 'FIXED IN 4 STOPS', 230, INK, anchor='mm')
+    im.convert('RGB').resize((1280, 720)).save(os.path.join(OUT, 'thumb-primary.jpg'), quality=92)
+    print('thumb-primary.jpg')
+
+
+if __name__ == '__main__':
+    thumb()
