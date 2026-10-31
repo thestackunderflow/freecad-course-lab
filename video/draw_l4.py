@@ -70,21 +70,20 @@ def board(d, x0, y0, width_px, mark):
 
 
 def card_pencil(step):
-    """F3: step 1 'ten from the left edge', step 2 'half the width', step 3 both on a wider board."""
+    """F3, one step per sentence: 1 a mark "10 from the left edge"; 2 the same mark on a wider board, off to one side;
+    3 "half the width" on both boards, still in the middle; 4 the lesson 3 word (an expression)."""
     im, d = canvas(); header(d, 'Marking a screw hole with a pencil')
-    if step >= 1:
-        x = board(d, 300, 330, 400, 'left')
-        text(d, (300, 560), '"10 from the left edge"', 64, INK)
-        if step >= 3:
-            x2 = board(d, 300, 900, 600, 'left')
-            text(d, (300, 1130), 'wider board: off to one side', 64, RED)
+    board(d, 300, 330, 400, 'left')
+    text(d, (300, 560), '"10 from the left edge"', 64, INK)
     if step >= 2:
+        board(d, 300, 900, 600, 'left')
+        text(d, (300, 1130), 'wider board: off to one side', 64, RED)
+    if step >= 3:
         board(d, 1500, 330, 400, 'half')
         text(d, (1500, 560), '"half the width"', 64, INK)
-        if step >= 3:
-            board(d, 1400, 900, 600, 'half')
-            text(d, (1400, 1130), 'wider board: still in the middle', 64, GREEN)
-    if step >= 3:
+        board(d, 1400, 900, 600, 'half')
+        text(d, (1400, 1130), 'wider board: still in the middle', 64, GREEN)
+    if step >= 4:
         chip(d, (W / 2, 1320), 'lesson 3: a size written from names = an expression', 56, PAPER, INK, anchor='m')
     save(im, f'card-pencil-{step}.png')
 
@@ -221,7 +220,7 @@ if __name__ == '__main__':
         card_compare()
     else:
         card_today('hole'); card_today('fillet')
-        for i in (1, 2, 3):
+        for i in (1, 2, 3, 4):
             card_pencil(i)
         for i in (1, 2, 3, 4):
             card_rules(i)
