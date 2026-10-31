@@ -1,0 +1,89 @@
+{"t": "2026-10-31T01:15:44.530+00:00", "seq": 1, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-06-18", "capabilities": {}, "clientInfo": {"name": "solidcraft-course-lab", "version": "1"}}}}
+{"t": "2026-10-31T01:15:46.151+00:00", "seq": 2, "dir": "server-stderr", "msg": "2026-10-31 01:15:46,151 - FreeCADMCPserver - INFO - Only text feedback: False"}
+{"t": "2026-10-31T01:15:46.152+00:00", "seq": 3, "dir": "server-stderr", "msg": "2026-10-31 01:15:46,151 - FreeCADMCPserver - INFO - Connecting to FreeCAD RPC server at: localhost"}
+{"t": "2026-10-31T01:15:46.189+00:00", "seq": 4, "dir": "server-stderr", "msg": "2026-10-31 01:15:46,189 - FreeCADMCPserver - INFO - FreeCADMCP server starting up"}
+{"t": "2026-10-31T01:15:46.196+00:00", "seq": 5, "dir": "server-stderr", "msg": "2026-10-31 01:15:46,196 - FreeCADMCPserver - WARNING - Could not connect to FreeCAD on startup: Failed to connect to FreeCAD (<ProtocolError for localhost:9875/RPC2: 501 Unsupported method ('POST')>). Make sure the FreeCAD addon is running."}
+{"t": "2026-10-31T01:15:46.197+00:00", "seq": 6, "dir": "server-stderr", "msg": "2026-10-31 01:15:46,196 - FreeCADMCPserver - WARNING - Make sure the FreeCAD addon is running before using FreeCAD resources or tools"}
+{"t": "2026-10-31T01:15:46.198+00:00", "seq": 7, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 1, "result": {"capabilities": {"prompts": {"listChanged": false}, "resources": {"listChanged": false, "subscribe": false}, "tools": {"listChanged": false}}, "instructions": "FreeCAD integration through the Model Context Protocol", "protocolVersion": "2025-06-18", "serverInfo": {"name": "FreeCADMCP", "version": ""}}}}
+{"t": "2026-10-31T01:15:46.199+00:00", "seq": 8, "dir": "client->server", "msg": {"jsonrpc": "2.0", "method": "notifications/initialized"}}
+{"t": "2026-10-31T01:15:46.199+00:00", "seq": 9, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "list_documents", "arguments": {}}}}
+{"t": "2026-10-31T01:15:46.204+00:00", "seq": 10, "dir": "server-stderr", "msg": "2026-10-31 01:15:46,203 - mcp.server.mcpserver.server - ERROR - Tool 'list_documents' raised an unexpected exception"}
+{"t": "2026-10-31T01:15:46.205+00:00", "seq": 11, "dir": "server-stderr", "msg": "Traceback (most recent call last):"}
+{"t": "2026-10-31T01:15:46.205+00:00", "seq": 12, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/freecad_mcp/server.py\", line 115, in get_freecad_connection"}
+{"t": "2026-10-31T01:15:46.207+00:00", "seq": 13, "dir": "server-stderr", "msg": "    reachable = connection.ping()"}
+{"t": "2026-10-31T01:15:46.207+00:00", "seq": 14, "dir": "server-stderr", "msg": "                ^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.208+00:00", "seq": 15, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/freecad_mcp/freecad_client.py\", line 81, in ping"}
+{"t": "2026-10-31T01:15:46.208+00:00", "seq": 16, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 2, "result": {"content": [{"text": "Error executing tool list_documents", "type": "text"}], "isError": true}}}
+{"t": "2026-10-31T01:15:46.209+00:00", "seq": 17, "dir": "server-stderr", "msg": "    return self._call(\"ping\")"}
+{"t": "2026-10-31T01:15:46.209+00:00", "seq": 18, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.210+00:00", "seq": 19, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/freecad_mcp/freecad_client.py\", line 78, in _call"}
+{"t": "2026-10-31T01:15:46.210+00:00", "seq": 20, "dir": "server-stderr", "msg": "    return getattr(proxy, method)(*args)"}
+{"t": "2026-10-31T01:15:46.211+00:00", "seq": 21, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.215+00:00", "seq": 22, "dir": "server-stderr", "msg": "  File \"/usr/lib/python3.12/xmlrpc/client.py\", line 1122, in __call__"}
+{"t": "2026-10-31T01:15:46.216+00:00", "seq": 23, "dir": "server-stderr", "msg": "    return self.__send(self.__name, args)"}
+{"t": "2026-10-31T01:15:46.218+00:00", "seq": 24, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.218+00:00", "seq": 25, "dir": "server-stderr", "msg": "  File \"/usr/lib/python3.12/xmlrpc/client.py\", line 1461, in __request"}
+{"t": "2026-10-31T01:15:46.219+00:00", "seq": 26, "dir": "server-stderr", "msg": "    response = self.__transport.request("}
+{"t": "2026-10-31T01:15:46.219+00:00", "seq": 27, "dir": "server-stderr", "msg": "               ^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.219+00:00", "seq": 28, "dir": "server-stderr", "msg": "  File \"/usr/lib/python3.12/xmlrpc/client.py\", line 1166, in request"}
+{"t": "2026-10-31T01:15:46.220+00:00", "seq": 29, "dir": "server-stderr", "msg": "    return self.single_request(host, handler, request_body, verbose)"}
+{"t": "2026-10-31T01:15:46.220+00:00", "seq": 30, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.220+00:00", "seq": 31, "dir": "server-stderr", "msg": "  File \"/usr/lib/python3.12/xmlrpc/client.py\", line 1196, in single_request"}
+{"t": "2026-10-31T01:15:46.221+00:00", "seq": 32, "dir": "server-stderr", "msg": "    raise ProtocolError("}
+{"t": "2026-10-31T01:15:46.221+00:00", "seq": 33, "dir": "server-stderr", "msg": "xmlrpc.client.ProtocolError: <ProtocolError for localhost:9875/RPC2: 501 Unsupported method ('POST')>"}
+{"t": "2026-10-31T01:15:46.222+00:00", "seq": 34, "dir": "server-stderr", "msg": ""}
+{"t": "2026-10-31T01:15:46.222+00:00", "seq": 35, "dir": "server-stderr", "msg": "The above exception was the direct cause of the following exception:"}
+{"t": "2026-10-31T01:15:46.222+00:00", "seq": 36, "dir": "server-stderr", "msg": ""}
+{"t": "2026-10-31T01:15:46.223+00:00", "seq": 37, "dir": "server-stderr", "msg": "Traceback (most recent call last):"}
+{"t": "2026-10-31T01:15:46.223+00:00", "seq": 38, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py\", line 179, in run"}
+{"t": "2026-10-31T01:15:46.224+00:00", "seq": 39, "dir": "server-stderr", "msg": "    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)"}
+{"t": "2026-10-31T01:15:46.224+00:00", "seq": 40, "dir": "server-stderr", "msg": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.225+00:00", "seq": 41, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py\", line 164, in call_fn"}
+{"t": "2026-10-31T01:15:46.226+00:00", "seq": 42, "dir": "server-stderr", "msg": "    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))"}
+{"t": "2026-10-31T01:15:46.226+00:00", "seq": 43, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.227+00:00", "seq": 44, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/anyio/to_thread.py\", line 65, in run_sync"}
+{"t": "2026-10-31T01:15:46.228+00:00", "seq": 45, "dir": "server-stderr", "msg": "    return await get_async_backend().run_sync_in_worker_thread("}
+{"t": "2026-10-31T01:15:46.228+00:00", "seq": 46, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.229+00:00", "seq": 47, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/anyio/_backends/_asyncio.py\", line 2706, in run_sync_in_worker_thread"}
+{"t": "2026-10-31T01:15:46.229+00:00", "seq": 48, "dir": "server-stderr", "msg": "    return await future"}
+{"t": "2026-10-31T01:15:46.229+00:00", "seq": 49, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.230+00:00", "seq": 50, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/anyio/_backends/_asyncio.py\", line 1100, in run"}
+{"t": "2026-10-31T01:15:46.230+00:00", "seq": 51, "dir": "server-stderr", "msg": "    result = context.run(func, *args)"}
+{"t": "2026-10-31T01:15:46.231+00:00", "seq": 52, "dir": "server-stderr", "msg": "             ^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.231+00:00", "seq": 53, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/freecad_mcp/server.py\", line 91, in wrapper"}
+{"t": "2026-10-31T01:15:46.232+00:00", "seq": 54, "dir": "server-stderr", "msg": "    response = fn(*args, **kwargs)"}
+{"t": "2026-10-31T01:15:46.233+00:00", "seq": 55, "dir": "server-stderr", "msg": "               ^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.234+00:00", "seq": 56, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/freecad_mcp/server.py\", line 732, in list_documents"}
+{"t": "2026-10-31T01:15:46.234+00:00", "seq": 57, "dir": "server-stderr", "msg": "    return list_documents_operation(get_freecad_connection())"}
+{"t": "2026-10-31T01:15:46.235+00:00", "seq": 58, "dir": "server-stderr", "msg": "                                    ^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.235+00:00", "seq": 59, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/freecad_mcp/server.py\", line 125, in get_freecad_connection"}
+{"t": "2026-10-31T01:15:46.235+00:00", "seq": 60, "dir": "server-stderr", "msg": "    raise Exception("}
+{"t": "2026-10-31T01:15:46.236+00:00", "seq": 61, "dir": "server-stderr", "msg": "Exception: Failed to connect to FreeCAD (<ProtocolError for localhost:9875/RPC2: 501 Unsupported method ('POST')>). Make sure the FreeCAD addon is running."}
+{"t": "2026-10-31T01:15:46.236+00:00", "seq": 62, "dir": "server-stderr", "msg": ""}
+{"t": "2026-10-31T01:15:46.236+00:00", "seq": 63, "dir": "server-stderr", "msg": "The above exception was the direct cause of the following exception:"}
+{"t": "2026-10-31T01:15:46.237+00:00", "seq": 64, "dir": "server-stderr", "msg": ""}
+{"t": "2026-10-31T01:15:46.237+00:00", "seq": 65, "dir": "server-stderr", "msg": "Traceback (most recent call last):"}
+{"t": "2026-10-31T01:15:46.238+00:00", "seq": 66, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/mcp/server/mcpserver/server.py\", line 442, in _handle_call_tool"}
+{"t": "2026-10-31T01:15:46.238+00:00", "seq": 67, "dir": "server-stderr", "msg": "    return await self.call_tool(params.name, params.arguments or {}, context)"}
+{"t": "2026-10-31T01:15:46.238+00:00", "seq": 68, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.240+00:00", "seq": 69, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/mcp/server/mcpserver/server.py\", line 548, in call_tool"}
+{"t": "2026-10-31T01:15:46.240+00:00", "seq": 70, "dir": "server-stderr", "msg": "    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)"}
+{"t": "2026-10-31T01:15:46.241+00:00", "seq": 71, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.242+00:00", "seq": 72, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py\", line 87, in call_tool"}
+{"t": "2026-10-31T01:15:46.242+00:00", "seq": 73, "dir": "server-stderr", "msg": "    return await tool.run(arguments, context, convert_result=convert_result)"}
+{"t": "2026-10-31T01:15:46.243+00:00", "seq": 74, "dir": "server-stderr", "msg": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t": "2026-10-31T01:15:46.243+00:00", "seq": 75, "dir": "server-stderr", "msg": "  File \"/home/maker/.cache/uv/archive-v0/vEUP4BzVmjgMUTH_/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py\", line 213, in run"}
+{"t": "2026-10-31T01:15:46.243+00:00", "seq": 76, "dir": "server-stderr", "msg": "    raise UnexpectedToolError(f\"Error executing tool {self.name}\") from exc"}
+{"t": "2026-10-31T01:15:46.244+00:00", "seq": 77, "dir": "server-stderr", "msg": "mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool list_documents"}
+{"t": "2026-10-31T01:15:46.245+00:00", "seq": 78, "dir": "server-stderr", "msg": "2026-10-31 01:15:46,210 - FreeCADMCPserver - INFO - FreeCADMCP server shut down"}
+{"t": "2026-10-31T01:16:12.947+00:00", "seq": 1, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-06-18", "capabilities": {}, "clientInfo": {"name": "solidcraft-course-lab", "version": "1"}}}}
+{"t": "2026-10-31T01:16:14.202+00:00", "seq": 2, "dir": "server-stderr", "msg": "2026-10-31 01:16:14,202 - FreeCADMCPserver - INFO - Only text feedback: False"}
+{"t": "2026-10-31T01:16:14.205+00:00", "seq": 3, "dir": "server-stderr", "msg": "2026-10-31 01:16:14,202 - FreeCADMCPserver - INFO - Connecting to FreeCAD RPC server at: localhost"}
+{"t": "2026-10-31T01:16:14.236+00:00", "seq": 4, "dir": "server-stderr", "msg": "2026-10-31 01:16:14,236 - FreeCADMCPserver - INFO - FreeCADMCP server starting up"}
+{"t": "2026-10-31T01:16:14.243+00:00", "seq": 5, "dir": "server-stderr", "msg": "2026-10-31 01:16:14,242 - FreeCADMCPserver - INFO - Successfully connected to FreeCAD on startup"}
+{"t": "2026-10-31T01:16:14.245+00:00", "seq": 6, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 1, "result": {"capabilities": {"prompts": {"listChanged": false}, "resources": {"listChanged": false, "subscribe": false}, "tools": {"listChanged": false}}, "instructions": "FreeCAD integration through the Model Context Protocol", "protocolVersion": "2025-06-18", "serverInfo": {"name": "FreeCADMCP", "version": ""}}}}
+{"t": "2026-10-31T01:16:14.247+00:00", "seq": 7, "dir": "client->server", "msg": {"jsonrpc": "2.0", "method": "notifications/initialized"}}
+{"t": "2026-10-31T01:16:14.247+00:00", "seq": 8, "dir": "client->server", "msg": {"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "list_documents", "arguments": {}}}}
+{"t": "2026-10-31T01:16:14.260+00:00", "seq": 9, "dir": "server->client", "msg": {"jsonrpc": "2.0", "id": 2, "result": {"content": [{"text": "[]", "type": "text"}], "isError": false}}}
+{"t": "2026-10-31T01:16:14.266+00:00", "seq": 10, "dir": "server-stderr", "msg": "2026-10-31 01:16:14,263 - FreeCADMCPserver - INFO - Disconnecting from FreeCAD on shutdown"}
+{"t": "2026-10-31T01:16:14.266+00:00", "seq": 11, "dir": "server-stderr", "msg": "2026-10-31 01:16:14,263 - FreeCADMCPserver - INFO - FreeCADMCP server shut down"}

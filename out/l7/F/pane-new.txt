@@ -1,0 +1,36 @@
+maker@pc:~$ test-call list_documents
+call: list_documents
+reply: OK
+  []
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

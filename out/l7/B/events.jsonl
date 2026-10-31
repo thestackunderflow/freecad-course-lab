@@ -1,0 +1,13 @@
+{"t": 0.032, "event": "recording started: uv was never installed"}
+{"t": 1.59, "event": "list no uv: typed", "text": "claude mcp list"}
+{"t": 2.749, "event": "list no uv: typed: Enter", "keys": "Return"}
+{"t": 3.378, "event": "list no uv: Failed to connect"}
+{"t": 8.441, "event": "clear", "text": "clear"}
+{"t": 9.233, "event": "clear: Enter", "keys": "Return"}
+{"t": 10.715, "event": "uv install: typed", "text": "curl -LsSf https://astral.sh/uv/0.13.6/install.sh | sh"}
+{"t": 13.279, "event": "uv install: typed: Enter", "keys": "Return"}
+{"t": 16.051, "event": "uv install: finished"}
+{"t": 19.128, "event": "list after uv: typed", "text": "claude mcp list"}
+{"t": 20.283, "event": "list after uv: typed: Enter", "keys": "Return"}
+{"t": 24.574, "event": "list after uv: Connected"}
+{"t": 29.083, "event": "recording stopped"}

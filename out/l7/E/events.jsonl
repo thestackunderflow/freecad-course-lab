@@ -1,0 +1,31 @@
+{"t": 0.085, "event": "recording started: lesson 3's hook open, the socket on"}
+{"t": 1.709, "event": "cat support: typed", "text": "cat support.py"}
+{"t": 2.848, "event": "cat support: typed: Enter", "keys": "Return"}
+{"t": 7.554, "event": "call support: typed", "text": "test-call execute_code support.py"}
+{"t": 9.397, "event": "call support: typed: Enter", "keys": "Return"}
+{"t": 14.084, "event": "call support: AttributeError"}
+{"t": 19.159, "event": "clear", "text": "clear"}
+{"t": 19.952, "event": "clear: Enter", "keys": "Return"}
+{"t": 21.148, "event": "cat attach: typed", "text": "cat attach.py"}
+{"t": 22.235, "event": "cat attach: typed: Enter", "keys": "Return"}
+{"t": 26.934, "event": "call attach: typed", "text": "test-call execute_code attach.py"}
+{"t": 28.718, "event": "call attach: typed: Enter", "keys": "Return"}
+{"t": 31.806, "event": "call attach: OK"}
+{"t": 37.092, "event": "clear 2", "text": "clear"}
+{"t": 37.886, "event": "clear 2: Enter", "keys": "Return"}
+{"t": 39.084, "event": "cat save-ro: typed", "text": "cat save-ro.py"}
+{"t": 40.21, "event": "cat save-ro: typed: Enter", "keys": "Return"}
+{"t": 43.917, "event": "call save-ro: typed", "text": "test-call execute_code save-ro.py"}
+{"t": 45.727, "event": "call save-ro: typed: Enter", "keys": "Return"}
+{"t": 49.734, "event": "call save-ro: OSError"}
+{"t": 54.818, "event": "clear 3", "text": "clear"}
+{"t": 55.613, "event": "clear 3: Enter", "keys": "Return"}
+{"t": 56.818, "event": "cat save: typed", "text": "cat save.py"}
+{"t": 57.83, "event": "cat save: typed: Enter", "keys": "Return"}
+{"t": 61.524, "event": "call save: typed", "text": "test-call execute_code save.py"}
+{"t": 63.234, "event": "call save: typed: Enter", "keys": "Return"}
+{"t": 66.012, "event": "call save: OK"}
+{"t": 68.097, "event": "ls prints: typed", "text": "ls -l ~/prints"}
+{"t": 69.21, "event": "ls prints: typed: Enter", "keys": "Return"}
+{"t": 69.839, "event": "ls prints: the file"}
+{"t": 74.355, "event": "recording stopped"}

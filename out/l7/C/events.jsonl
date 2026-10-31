@@ -1,0 +1,46 @@
+{"t": 0.036, "event": "recording started: FreeCAD closed, no add-on"}
+{"t": 1.597, "event": "list closed: typed", "text": "claude mcp list"}
+{"t": 2.748, "event": "list closed: typed: Enter", "keys": "Return"}
+{"t": 4.927, "event": "list closed: Connected"}
+{"t": 8.011, "event": "call closed: typed", "text": "test-call list_documents"}
+{"t": 9.506, "event": "call closed: typed: Enter", "keys": "Return"}
+{"t": 11.678, "event": "call closed: error + log"}
+{"t": 16.745, "event": "clear", "text": "clear"}
+{"t": 17.54, "event": "clear: Enter", "keys": "Return"}
+{"t": 18.667, "event": "FreeCAD: starting"}
+{"t": 25.633, "event": "FreeCAD: open (no add-on)"}
+{"t": 26.442, "event": "call noaddon: typed", "text": "test-call list_documents"}
+{"t": 27.94, "event": "call noaddon: typed: Enter", "keys": "Return"}
+{"t": 30.426, "event": "call noaddon: error + log"}
+{"t": 35.001, "event": "workbench list: opened (no MCP Addon)", "x": 1735, "y": 75, "button": 1}
+{"t": 40.943, "event": "workbench list: closed", "keys": "Escape"}
+{"t": 42.697, "event": "clear 2", "text": "clear"}
+{"t": 43.492, "event": "clear 2: Enter", "keys": "Return"}
+{"t": 44.701, "event": "mkdir Mod: typed", "text": "mkdir -p ~/.local/share/FreeCAD/v1-1/Mod"}
+{"t": 46.792, "event": "mkdir Mod: typed: Enter", "keys": "Return"}
+{"t": 48.498, "event": "cp add-on: typed", "text": "cp -r ~/Downloads/freecad-mcp-0.1.28/addon/FreeCADMCP ~/.local/share/FreeCAD/v1-1/Mod/"}
+{"t": 52.253, "event": "cp add-on: typed: Enter", "keys": "Return"}
+{"t": 54.455, "event": "ls add-on: typed", "text": "ls ~/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP"}
+{"t": 56.732, "event": "ls add-on: typed: Enter", "keys": "Return"}
+{"t": 57.358, "event": "ls add-on: InitGui.py shown"}
+{"t": 59.864, "event": "FreeCAD: closing"}
+{"t": 64.9, "event": "FreeCAD: starting again"}
+{"t": 87.523, "event": "FreeCAD: open (add-on in Mod)"}
+{"t": 88.211, "event": "workbench list: opened", "x": 1735, "y": 75, "button": 1}
+{"t": 92.457, "event": "workbench list: MCP Addon chosen", "keys": "Return"}
+{"t": 96.023, "event": "clear 3", "text": "clear"}
+{"t": 96.813, "event": "clear 3: Enter", "keys": "Return"}
+{"t": 98.028, "event": "call nostart: typed", "text": "test-call list_documents"}
+{"t": 99.563, "event": "call nostart: typed: Enter", "keys": "Return"}
+{"t": 101.74, "event": "call nostart: error + log"}
+{"t": 107.239, "event": "FreeCAD: Start RPC Server", "x": 1254, "y": 186, "button": 1}
+{"t": 112.979, "event": "call started: typed", "text": "test-call list_documents"}
+{"t": 114.465, "event": "call started: typed: Enter", "keys": "Return"}
+{"t": 116.636, "event": "call started: OK"}
+{"t": 122.178, "event": "FreeCAD: Auto-Start Server", "x": 1611, "y": 186, "button": 1}
+{"t": 126.747, "event": "clear 4", "text": "clear"}
+{"t": 127.55, "event": "clear 4: Enter", "keys": "Return"}
+{"t": 128.746, "event": "your turn list: typed", "text": "claude mcp list"}
+{"t": 129.903, "event": "your turn list: typed: Enter", "keys": "Return"}
+{"t": 132.07, "event": "your turn list: Connected"}
+{"t": 137.08, "event": "recording stopped"}

@@ -1,0 +1,2 @@
+{"tool": "list_documents", "arguments": {}, "isError": false, "text": "Warning: The FreeCAD addon does not report a version, so it is older than freecad-mcp 0.1.28 (protocol 1). Update the addon: copy addon/FreeCADMCP from the matching freecad-mcp release into FreeCAD's Mod directory and restart FreeCAD.\n[]", "images": 0}
+{"tool": "list_documents", "arguments": {}, "isError": false, "text": "[]", "images": 0}

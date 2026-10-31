@@ -1,0 +1,36 @@
+  - list_documents returned "Error executing
+    tool list_documents". I tried it twice,
+    once before loading the tool schema and
+    once after.
+  - get_rpc_status returned "Error executing
+    tool get_rpc_status". It is the health
+    check that doesn't depend on FreeCAD's GUI
+    thread. Neither error message says why.
+
+  The most likely cause is that the FreeCAD
+  MCP connection isn't up. Either FreeCAD
+  isn't running, or its RPC server addon isn't
+  started. The server normally starts from
+  the addon's workbench in FreeCAD. I haven't
+  confirmed any of this.
+
+  Check that FreeCAD is running and that the
+  RPC server is started. Once that's done,
+  tell me and I'll try again. I haven't tried
+  to work around the failure.
+
+✻ Baked for 11s · done 1:14 AM
+
+❯ I clicked Start RPC Server in FreeCAD. Try
+  again.
+
+  Called freecad
+
+● FreeCAD has one document open, named hook.
+
+✻ Churned for 3s · done 1:14 AM
+
+──────────────────────────────────────────────
+❯ What objects are in the hook document?
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

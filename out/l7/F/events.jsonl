@@ -1,0 +1,19 @@
+{"t": 0.087, "event": "recording started: FreeCAD with an old add-on (0.1.24)"}
+{"t": 1.71, "event": "call old: typed", "text": "test-call list_documents"}
+{"t": 3.219, "event": "call old: typed: Enter", "keys": "Return"}
+{"t": 6.031, "event": "call old: OK + warning"}
+{"t": 12.126, "event": "clear", "text": "clear"}
+{"t": 12.924, "event": "clear: Enter", "keys": "Return"}
+{"t": 14.06, "event": "FreeCAD: closing"}
+{"t": 19.17, "event": "rm old: typed", "text": "rm -rf ~/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP"}
+{"t": 21.573, "event": "rm old: typed: Enter", "keys": "Return"}
+{"t": 23.769, "event": "cp new: typed", "text": "cp -r ~/Downloads/freecad-mcp-0.1.28/addon/FreeCADMCP ~/.local/share/FreeCAD/v1-1/Mod/"}
+{"t": 27.565, "event": "cp new: typed: Enter", "keys": "Return"}
+{"t": 29.702, "event": "FreeCAD: starting again"}
+{"t": 56.978, "event": "FreeCAD: open (0.1.28 add-on)"}
+{"t": 57.826, "event": "clear 2", "text": "clear"}
+{"t": 58.621, "event": "clear 2: Enter", "keys": "Return"}
+{"t": 59.826, "event": "call new: typed", "text": "test-call list_documents"}
+{"t": 61.322, "event": "call new: typed: Enter", "keys": "Return"}
+{"t": 63.815, "event": "call new: OK, no warning"}
+{"t": 68.329, "event": "recording stopped"}

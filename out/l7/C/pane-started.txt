@@ -1,0 +1,36 @@
+maker@pc:~$ test-call list_documents
+call: list_documents
+reply: ERROR
+  Error executing tool list_documents
+plug's log:
+  Failed to connect to FreeCAD ([Errno 111]
+  Connection refused). Make sure the FreeCAD
+  addon is running.
+maker@pc:~$ test-call list_documents
+call: list_documents
+reply: OK
+  []
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

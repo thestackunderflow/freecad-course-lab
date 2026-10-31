@@ -36,7 +36,7 @@ def arrow(d, a, b, col=INK, w=10):
 
 XS = [250, 890, 1530, 2170]          # the four stops' centres
 NAMES = ['Claude app', 'plug', 'socket', 'FreeCAD']
-SUBS = ['Claude Code', 'uvx freecad-mcp', 'Start RPC Server', 'the workshop']
+SUBS = ['Claude Code', 'the MCP server', 'add-on RPC server', 'the workshop']
 QS = ['On the list?', 'Does it start?', 'Socket on?', 'The answer?']
 
 

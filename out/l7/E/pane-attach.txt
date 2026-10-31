@@ -1,0 +1,36 @@
+maker@pc:~$ cat attach.py
+doc = App.ActiveDocument
+sk = doc.getObject('Body').newObject('Sketcher
+::SketchObject', 'Sketch1')
+sk.AttachmentSupport = (doc.getObject('XZ_Plan
+e'), [''])
+maker@pc:~$ test-call execute_code attach.py
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output:
+(+ a picture of the 3D view)
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

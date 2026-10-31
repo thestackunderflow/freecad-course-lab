@@ -1,0 +1,18 @@
+=== /home/maker/.cache/claude-cli-nodejs/-home-maker-hook/mcp-logs-freecad/2026-10-31T01-14-00-662Z.jsonl
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-10-31T01:14:00.667Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"stdio server rejected initialize after the version negotiation probe timed out, then answered a second server/discover on the same process; connected on 2026-07-28 without restarting it","timestamp":"2026-10-31T01:14:05.477Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Successfully connected (transport: stdio) in 4880ms","timestamp":"2026-10-31T01:14:05.478Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Connection established with capabilities: {\"hasTools\":true,\"hasPrompts\":true,\"hasResources\":true,\"hasResourceSubscribe\":true,\"serverVersion\":{\"name\":\"FreeCADMCP\",\"version\":\"\"},\"protocolEra\":\"modern\",\"negotiatedProtocolVersion\":\"2026-07-28\"}","timestamp":"2026-10-31T01:14:05.480Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Tool \"create_object\" description truncated from 5735 to 4096 chars","timestamp":"2026-10-31T01:14:05.520Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Channel notifications skipped: server did not declare claude/channel capability","timestamp":"2026-10-31T01:14:05.526Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Calling MCP tool: list_documents","timestamp":"2026-10-31T01:14:09.817Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"error":"Error executing tool list_documents","timestamp":"2026-10-31T01:14:09.896Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Tool 'list_documents' failed after 0s: Error executing tool list_documents","timestamp":"2026-10-31T01:14:09.898Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Calling MCP tool: list_documents","timestamp":"2026-10-31T01:14:13.320Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"error":"Error executing tool list_documents","timestamp":"2026-10-31T01:14:13.362Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Tool 'list_documents' failed after 0s: Error executing tool list_documents","timestamp":"2026-10-31T01:14:13.362Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Calling MCP tool: get_rpc_status","timestamp":"2026-10-31T01:14:15.055Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"error":"Error executing tool get_rpc_status","timestamp":"2026-10-31T01:14:15.086Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Tool 'get_rpc_status' failed after 0s: Error executing tool get_rpc_status","timestamp":"2026-10-31T01:14:15.087Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Calling MCP tool: list_documents","timestamp":"2026-10-31T01:14:37.422Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}
+{"debug":"Tool 'list_documents' completed successfully in 44ms","timestamp":"2026-10-31T01:14:37.466Z","sessionId":"be414d12-afb6-4920-9262-afcd02ed40dc","cwd":"/home/maker/hook"}

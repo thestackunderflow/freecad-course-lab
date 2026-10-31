@@ -1,0 +1,36 @@
+maker@pc:~$ cat support.py
+doc = App.ActiveDocument
+sk = doc.getObject('Body').newObject('Sketcher
+::SketchObject', 'Sketch1')
+sk.Support = (doc.getObject('XZ_Plane'), [''])
+maker@pc:~$ test-call execute_code support.py
+call: execute_code
+reply: ERROR
+  Failed to execute code: AttributeError:
+  'Sketcher.SketchObject' object has no
+  attribute 'Support'
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

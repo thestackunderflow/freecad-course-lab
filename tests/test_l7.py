@@ -100,3 +100,26 @@ def test_an_error_reply_with_a_log_reason_prints_it_under_its_own_heading():
     i = lines.index("plug's log:")
     assert words(lines[2:i]) == 'Error executing tool list_documents'
     assert words(lines[i + 1:]) == REFUSED
+
+
+class FakePlug:
+    """Like the real plug: its log (stderr) is only flushed when it exits (seen in take C, 31 Oct)."""
+    def __init__(self):
+        self.closed = False
+
+    def start(self):
+        pass
+
+    def call_tool(self, name, args):
+        return {'isError': True, 'content': [{'type': 'text', 'text': 'Error executing tool list_documents'}]}
+
+    def close(self):
+        self.closed = True
+
+    def stderr_text(self):
+        return STDERR if self.closed else []
+
+
+def test_the_log_reason_is_read_after_the_plug_has_exited():
+    r, why = l7call.call('list_documents', {}, FakePlug())
+    assert r['isError'] and why == REFUSED

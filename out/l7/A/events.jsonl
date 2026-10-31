@@ -1,0 +1,30 @@
+{"t": 0.053, "event": "recording started: a terminal in the folder hook"}
+{"t": 1.628, "event": "add local: typed", "text": "claude mcp add freecad -- uvx freecad-mcp@0.1.28"}
+{"t": 3.989, "event": "add local: typed: Enter", "keys": "Return"}
+{"t": 4.619, "event": "add local: done"}
+{"t": 7.679, "event": "list in hook: typed", "text": "claude mcp list"}
+{"t": 8.829, "event": "list in hook: typed: Enter", "keys": "Return"}
+{"t": 10.678, "event": "list in hook: Connected"}
+{"t": 14.239, "event": "clear", "text": "clear"}
+{"t": 15.031, "event": "clear: Enter", "keys": "Return"}
+{"t": 16.504, "event": "cd parts: typed", "text": "cd ~/parts"}
+{"t": 17.475, "event": "cd parts: typed: Enter", "keys": "Return"}
+{"t": 19.158, "event": "list in parts: typed", "text": "claude mcp list"}
+{"t": 20.313, "event": "list in parts: typed: Enter", "keys": "Return"}
+{"t": 20.948, "event": "list in parts: No MCP servers"}
+{"t": 25.519, "event": "clear 2", "text": "clear"}
+{"t": 26.313, "event": "clear 2: Enter", "keys": "Return"}
+{"t": 27.791, "event": "cd hook: typed", "text": "cd ~/hook"}
+{"t": 28.727, "event": "cd hook: typed: Enter", "keys": "Return"}
+{"t": 30.404, "event": "remove: typed", "text": "claude mcp remove freecad"}
+{"t": 31.914, "event": "remove: typed: Enter", "keys": "Return"}
+{"t": 32.545, "event": "remove: done"}
+{"t": 35.108, "event": "add user: typed", "text": "claude mcp add --scope user freecad -- uvx freecad-mcp@0.1.28"}
+{"t": 37.916, "event": "add user: typed: Enter", "keys": "Return"}
+{"t": 38.546, "event": "add user: done"}
+{"t": 41.605, "event": "cd parts 2: typed", "text": "cd ~/parts"}
+{"t": 42.58, "event": "cd parts 2: typed: Enter", "keys": "Return"}
+{"t": 44.256, "event": "list in parts 2: typed", "text": "claude mcp list"}
+{"t": 45.406, "event": "list in parts 2: typed: Enter", "keys": "Return"}
+{"t": 47.261, "event": "list in parts 2: Connected"}
+{"t": 51.771, "event": "recording stopped"}

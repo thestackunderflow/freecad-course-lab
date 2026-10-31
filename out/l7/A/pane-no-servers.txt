@@ -1,0 +1,36 @@
+maker@pc:~/hook$ cd ~/parts
+maker@pc:~/parts$ claude mcp list
+No MCP servers configured. Use `claude mcp
+add` to add a server.
+maker@pc:~/parts$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

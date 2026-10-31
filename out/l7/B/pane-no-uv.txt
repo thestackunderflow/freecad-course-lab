@@ -1,0 +1,36 @@
+maker@pc:~$ claude mcp list
+freecad: uvx freecad-mcp@0.1.28 - ✘ Failed to
+connect — ENOENT: Executable not found in
+$PATH: "uvx"
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

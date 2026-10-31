@@ -1,0 +1,23 @@
+{"t": 0.047, "event": "recording started: a terminal (left), FreeCAD with the hook open and the socket off (right)"}
+{"t": 1.619, "event": "claude: typed", "text": "claude"}
+{"t": 2.444, "event": "claude: typed: Enter", "keys": "Return"}
+{"t": 4.018, "event": "claude: start screen"}
+{"t": 7.34, "event": "turn 1: typing", "text": "What documents are open in FreeCAD?"}
+{"t": 9.969, "event": "turn 1: Enter"}
+{"t": 13.041, "event": "tool call: list_documents", "seq": 23}
+{"t": 13.075, "event": "tool reply: list_documents", "seq": 31, "isError": true}
+{"t": 16.527, "event": "tool call: list_documents", "seq": 110}
+{"t": 16.538, "event": "tool reply: list_documents", "seq": 112, "isError": true}
+{"t": 18.255, "event": "tool call: get_rpc_status", "seq": 197}
+{"t": 18.261, "event": "tool reply: get_rpc_status", "seq": 199, "isError": true}
+{"t": 21.235, "event": "turn 1: end-of-turn line seen"}
+{"t": 23.242, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 30.587, "event": "FreeCAD: Start RPC Server", "x": 1254, "y": 186, "button": 1}
+{"t": 35.323, "event": "to the terminal"}
+{"t": 35.461, "event": "turn 1: typing", "text": "I clicked Start RPC Server in FreeCAD. Try again."}
+{"t": 38.661, "event": "turn 1: Enter"}
+{"t": 40.626, "event": "tool call: list_documents", "seq": 284}
+{"t": 40.654, "event": "tool reply: list_documents", "seq": 285, "isError": false}
+{"t": 41.971, "event": "turn 1: end-of-turn line seen"}
+{"t": 43.975, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 52.024, "event": "recording stopped"}

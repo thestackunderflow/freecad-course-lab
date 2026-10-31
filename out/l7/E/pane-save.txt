@@ -1,0 +1,36 @@
+maker@pc:~$ cat save.py
+App.ActiveDocument.saveAs('/home/maker/prints/
+hook.FCStd')
+maker@pc:~$ test-call execute_code save.py
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output:
+(+ a picture of the 3D view)
+maker@pc:~$ ls -l ~/prints
+total 20
+-rw-r--r-- 1 maker maker 19425 Oct 31 01:19 ho
+ok.FCStd
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

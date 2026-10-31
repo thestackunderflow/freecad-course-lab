@@ -1,0 +1,22 @@
+maker@pc:~$ test-call list_documents
+call: list_documents
+reply: ERROR
+  Error executing tool list_documents
+plug's log:
+  Failed to connect to FreeCAD
+  (<ProtocolError for localhost:9875/RPC2:
+  501 Unsupported method ('POST')>). Make
+  sure the FreeCAD addon is running.
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+

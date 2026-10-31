@@ -1,0 +1,36 @@
+maker@pc:~$ cat save-ro.py
+App.ActiveDocument.saveAs('/opt/hook.FCStd')
+maker@pc:~$ test-call execute_code save-ro.py
+call: execute_code
+reply: ERROR
+  Failed to execute code: OSError: Failed to
+  open file
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

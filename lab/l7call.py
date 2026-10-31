@@ -70,18 +70,29 @@ def log_call(path, name, args, result):
                             'images': sum(1 for c in result.get('content', []) if c.get('type') == 'image')}) + '\n')
 
 
+def call(name, args, client, settle_s=0.0):
+    """One tool call. The plug flushes its log (stderr) only when it exits, so the reason is read after close()."""
+    try:
+        client.start()
+        r = client.call_tool(name, args)
+    finally:
+        client.close()
+    why = None
+    for _ in range(20):
+        why = reason(client.stderr_text())
+        if why or not r.get('isError'):
+            break
+        time.sleep(settle_s)
+    return r, why
+
+
 def main(argv):
     from client.mcp import McpClient
     name, args = parse(argv)
     log = os.environ.get('L7_LOG', os.path.expanduser('~/test-call.jsonl'))
-    c = McpClient(PLUG, timeout_s=90, log_path=log + '.rpc')
-    try:
-        c.start()
-        r = c.call_tool(name, args)
-    finally:
-        c.close()
+    r, why = call(name, args, McpClient(PLUG, timeout_s=90, log_path=log + '.rpc'), settle_s=0.1)
     log_call(log, name, args, r)
-    print('\n'.join(render(name, args, r)), flush=True)
+    print('\n'.join(render(name, args, r, why)), flush=True)
     return 1 if r.get('isError') else 0
 
 

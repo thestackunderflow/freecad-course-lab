@@ -1,0 +1,20 @@
+{"t": 0.068, "event": "recording started: FreeCAD closed; two terminals"}
+{"t": 1.65, "event": "other program: typed", "text": "python3 -m http.server 9875"}
+{"t": 3.266, "event": "other program: typed: Enter", "keys": "Return"}
+{"t": 3.902, "event": "other program: serving on 9875"}
+{"t": 6.914, "event": "FreeCAD: starting"}
+{"t": 10.033, "event": "FreeCAD: open"}
+{"t": 10.044, "event": "FreeCAD: auto-start failed (notification)"}
+{"t": 16.12, "event": "call busy: typed", "text": "test-call list_documents"}
+{"t": 17.609, "event": "call busy: typed: Enter", "keys": "Return"}
+{"t": 19.774, "event": "call busy: error + log"}
+{"t": 24.897, "event": "other program: Ctrl+C", "keys": "ctrl+c"}
+{"t": 28.968, "event": "workbench list: opened", "x": 1735, "y": 75, "button": 1}
+{"t": 33.221, "event": "workbench list: MCP Addon chosen", "keys": "Return"}
+{"t": 36.817, "event": "FreeCAD: Start RPC Server", "x": 1254, "y": 186, "button": 1}
+{"t": 42.523, "event": "clear", "text": "clear"}
+{"t": 43.316, "event": "clear: Enter", "keys": "Return"}
+{"t": 44.513, "event": "call after: typed", "text": "test-call list_documents"}
+{"t": 45.996, "event": "call after: typed: Enter", "keys": "Return"}
+{"t": 47.855, "event": "call after: OK"}
+{"t": 52.367, "event": "recording stopped"}

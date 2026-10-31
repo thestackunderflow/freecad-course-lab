@@ -1,0 +1,1 @@
+/home/maker/.cache/claude-cli-nodejs/-home-maker-hook/mcp-logs-freecad/2026-10-31T01-14-00-662Z.jsonl
