@@ -1,0 +1,53 @@
+{
+ "file": true,
+ "right_part": {
+  "ok": true,
+  "holes": true,
+  "box": true,
+  "volume": true
+ },
+ "clean": {
+  "ok": true,
+  "closed": true,
+  "parts": 1
+ },
+ "checked": {
+  "ok": true,
+  "read_calls": [
+   3
+  ],
+  "test_calls": [
+   3
+  ]
+ },
+ "reported": {
+  "triangles_said": [],
+  "volume_said": [
+   14849.0,
+   14848.58
+  ],
+  "triangles_true": null,
+  "volume_true": true,
+  "volume_sources": [
+   "mesh",
+   "solid"
+  ]
+ },
+ "asked": true,
+ "message2": {
+  "pick": "side",
+  "agrees_with_slicer_time": true,
+  "strength_claim": true,
+  "touched": []
+ },
+ "calls_per_message": {
+  "1": [
+   "list_documents",
+   "execute_code",
+   "execute_code",
+   "execute_code"
+  ],
+  "2": []
+ },
+ "reported_ok": false
+}

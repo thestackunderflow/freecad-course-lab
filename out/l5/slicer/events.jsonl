@@ -1,0 +1,41 @@
+{"t": 0.058, "event": "recording started: PrusaSlicer 2.9.2, stock MK4S settings"}
+{"t": 2.068, "event": "Import: Ctrl+I (the Body's file)", "keys": "ctrl+i"}
+{"t": 5.221, "event": "Import: typed hook.stl", "text": "/home/maker/hook.stl"}
+{"t": 7.476, "event": "Import: Enter (the Body's file)", "keys": "Return"}
+{"t": 12.112, "event": "Size 40 30 60"}
+{"t": 16.965, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 18.282, "event": "key 5: the left view, the back (Body)", "keys": "5"}
+{"t": 19.904, "event": "key Z: zoom to the part (the left view, the back (Body))", "keys": "z"}
+{"t": 22.527, "event": "the back: two holes (Body)"}
+{"t": 27.71, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 29.022, "event": "key 0: the corner view", "keys": "0"}
+{"t": 30.646, "event": "key Z: zoom to the part (the corner view)", "keys": "z"}
+{"t": 35.096, "event": "Slice now (standing)", "x": 2416, "y": 1754, "button": 1}
+{"t": 48.81, "event": "the estimate (standing)"}
+{"t": 55.823, "event": "the 3D view button", "x": 72, "y": 1724, "button": 1}
+{"t": 59.356, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 60.664, "event": "Ctrl+A: select the part", "keys": "ctrl+a"}
+{"t": 64.609, "event": "Rotate X: the box", "x": 2203, "y": 864, "button": 1}
+{"t": 65.345, "event": "Rotate X: typed 90", "text": "90"}
+{"t": 66.204, "event": "Rotate X: Enter", "keys": "Return"}
+{"t": 68.738, "event": "the side panel: an empty spot", "x": 2500, "y": 1250, "button": 1}
+{"t": 69.445, "event": "on its side: Size 40 60 30"}
+{"t": 74.807, "event": "Slice now (on its side)", "x": 2416, "y": 1754, "button": 1}
+{"t": 88.525, "event": "the estimate (on its side)"}
+{"t": 101.8, "event": "layers stepped down to the middle"}
+{"t": 107.787, "event": "the 3D view button (to clear)", "x": 72, "y": 1724, "button": 1}
+{"t": 111.318, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 112.633, "event": "Ctrl+Delete: clear the plate", "keys": "ctrl+Delete"}
+{"t": 115.269, "event": "Import: Ctrl+I (the Pad's file)", "keys": "ctrl+i"}
+{"t": 118.404, "event": "Import: typed hook-pad.stl", "text": "/home/maker/hook-pad.stl"}
+{"t": 120.794, "event": "Import: Enter (the Pad's file)", "keys": "Return"}
+{"t": 126.079, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 127.39, "event": "key 5: the left view, the back (Pad)", "keys": "5"}
+{"t": 129.015, "event": "key Z: zoom to the part (the left view, the back (Pad))", "keys": "z"}
+{"t": 131.648, "event": "the back: no holes (Pad)"}
+{"t": 136.86, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 138.169, "event": "key 0: the corner view (Pad)", "keys": "0"}
+{"t": 139.797, "event": "key Z: zoom to the part (the corner view (Pad))", "keys": "z"}
+{"t": 144.321, "event": "Slice now (the Pad, standing)", "x": 2416, "y": 1754, "button": 1}
+{"t": 158.035, "event": "the estimate (the Pad, standing)"}
+{"t": 163.661, "event": "recording stopped"}

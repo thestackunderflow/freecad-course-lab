@@ -1,0 +1,36 @@
+  └──────────────────────────┴────────────┘
+
+  The mesh volume is within 0.003% of the CAD
+  solid's 14,848.58 mm³. The surface area is
+  7,347.9 mm². The bounding box is 40 × 30 ×
+  60 mm.
+
+  I ran these checks through FreeCAD's Python
+  mesh API rather than clicking through the
+  Mesh workbench's analysis dialogs. They test
+  the same properties, but I didn't run the
+  workbench's separate degenerated-facet
+  check.
+
+✻ Crunched for 30s · done 3:27 AM
+
+❯ Should I print it standing up as it is, or
+  lying on its side? Answer in two sentences.
+
+● Lie it on its side, so the 40 × 60 mm
+  profile is flat on the bed and the 30 mm
+  thickness points up. That needs no supports
+  for the hook's curve and keeps the layer
+  lines running along the profile, which makes
+  it much stronger where the hook bends under
+  load. I'm inferring the profile from the
+  bounding box and haven't looked at the hole
+  or fillet geometry, so check the overhangs
+  in your slicer preview.
+
+✻ Worked for 4s · done 3:27 AM
+                          ◐ medium · /effort
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

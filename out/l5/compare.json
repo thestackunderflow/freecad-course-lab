@@ -1,0 +1,317 @@
+{
+ "hand": {
+  "hook": {
+   "triangles": 272,
+   "volume_mm3": 14849.015,
+   "bbox_mm": [
+    40.0,
+    30.0,
+    60.0
+   ],
+   "closed": true,
+   "parts": 1,
+   "holes": [
+    [
+     26,
+     4.0,
+     3.9708
+    ],
+    [
+     26,
+     4.0,
+     3.9708
+    ]
+   ]
+  },
+  "hook-pad": {
+   "triangles": 28,
+   "volume_mm3": 15000.0,
+   "bbox_mm": [
+    40.0,
+    30.0,
+    60.0
+   ],
+   "closed": true,
+   "parts": 1,
+   "holes": [
+    [
+     0,
+     null,
+     null
+    ],
+    [
+     0,
+     null,
+     null
+    ]
+   ]
+  },
+  "hook-fine": {
+   "triangles": 2100,
+   "volume_mm3": 14848.588,
+   "bbox_mm": [
+    40.0,
+    30.0,
+    60.0
+   ],
+   "closed": true,
+   "parts": 1,
+   "holes": [
+    [
+     229,
+     4.0,
+     3.9996
+    ],
+    [
+     229,
+     4.0,
+     3.9996
+    ]
+   ]
+  }
+ },
+ "runs": {
+  "B1": {
+   "cost_usd": "0.0812",
+   "wall_s": 121,
+   "triangles": 272,
+   "volume_mm3": 14849.015,
+   "right_part": true,
+   "clean": true,
+   "checked": true,
+   "reported": {
+    "triangles_said": [
+     272.0
+    ],
+    "volume_said": [
+     14849.0,
+     14848.58
+    ],
+    "triangles_true": true,
+    "volume_true": true,
+    "volume_sources": [
+     "mesh",
+     "solid"
+    ]
+   },
+   "reported_ok": true,
+   "message2": {
+    "pick": "side",
+    "agrees_with_slicer_time": true,
+    "strength_claim": true,
+    "touched": []
+   },
+   "calls": {
+    "1": [
+     "list_documents",
+     "execute_code",
+     "execute_code",
+     "execute_code"
+    ],
+    "2": []
+   },
+   "reply2": "Lie it on its side, so the 40 × 60 mm profile is flat on the bed and the 30 mm thickness points up. That needs no supports for the hook's curve and keeps the layer lines running along the profile, which makes it much stronger where the hook bends under load. I'm inferring the profile from the bounding box and haven't looked at the hole or fillet geometry, so check the overhangs in your slicer preview."
+  },
+  "A1": {
+   "cost_usd": "0.1122",
+   "wall_s": 95,
+   "triangles": 272,
+   "volume_mm3": 14849.015,
+   "right_part": true,
+   "clean": true,
+   "checked": false,
+   "reported": {
+    "triangles_said": [],
+    "volume_said": [],
+    "triangles_true": null,
+    "volume_true": null,
+    "volume_sources": []
+   },
+   "reported_ok": null,
+   "message2": {
+    "pick": "side",
+    "agrees_with_slicer_time": true,
+    "strength_claim": true,
+    "touched": []
+   },
+   "calls": {
+    "1": [
+     "list_documents",
+     "get_objects",
+     "execute_code"
+    ],
+    "2": []
+   },
+   "reply2": "Print it lying on its side, flat on one of the 30 mm-wide faces. That puts the L-shaped profile in the print plane, so the layers run along the hook and plate and the load across the inside corner doesn't try to split them apart. It also needs no supports, because the profile is flat on the bed.\n\nStanding up would also print without supports, but the load would then pull the layers apart at that corner, which is the weakest direction for a print."
+  }
+ },
+ "slicer_cli": [
+  {
+   "file": "hook.stl",
+   "orientation": "standing",
+   "time_normal": "35m 56s",
+   "filament_g": "9.09",
+   "layers": 300,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook.stl",
+   "orientation": "side",
+   "time_normal": "21m 55s",
+   "filament_g": "9.19",
+   "layers": 150,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook.stl",
+   "orientation": "back",
+   "time_normal": "29m 16s",
+   "filament_g": "9.40",
+   "layers": 200,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": [
+    "print warning: Detected print stability issues:"
+   ]
+  },
+  {
+   "file": "hook-pad.stl",
+   "orientation": "standing",
+   "time_normal": "35m 53s",
+   "filament_g": "9.08",
+   "layers": 300,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook-pad.stl",
+   "orientation": "side",
+   "time_normal": "21m 18s",
+   "filament_g": "9.17",
+   "layers": 150,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook-pad.stl",
+   "orientation": "back",
+   "time_normal": "27m 52s",
+   "filament_g": "9.37",
+   "layers": 200,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": [
+    "print warning: Detected print stability issues:"
+   ]
+  },
+  {
+   "file": "hook-fine.stl",
+   "orientation": "standing",
+   "time_normal": "35m 56s",
+   "filament_g": "9.09",
+   "layers": 300,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook-fine.stl",
+   "orientation": "side",
+   "time_normal": "21m 53s",
+   "filament_g": "9.19",
+   "layers": 150,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook-fine.stl",
+   "orientation": "back",
+   "time_normal": "29m 15s",
+   "filament_g": "9.40",
+   "layers": 200,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": [
+    "print warning: Detected print stability issues:"
+   ]
+  },
+  {
+   "file": "hook-claude.stl",
+   "orientation": "standing",
+   "time_normal": "35m 56s",
+   "filament_g": "9.09",
+   "layers": 300,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook-claude.stl",
+   "orientation": "side",
+   "time_normal": "21m 55s",
+   "filament_g": "9.19",
+   "layers": 150,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": []
+  },
+  {
+   "file": "hook-claude.stl",
+   "orientation": "back",
+   "time_normal": "29m 16s",
+   "filament_g": "9.40",
+   "layers": 200,
+   "support_lines": 0,
+   "printer": "Original Prusa MK4S 0.4 nozzle",
+   "print": "0.20mm SPEED @MK4S 0.4",
+   "filament": "\"Prusament PLA @MK4S\"",
+   "warnings": [
+    "print warning: Detected print stability issues:"
+   ]
+  }
+ ],
+ "replay_B1": {
+  "run": {
+   "triangles": 272,
+   "volume_mm3": 14849.015,
+   "right_part": true,
+   "clean": true
+  },
+  "replay": {
+   "triangles": 272,
+   "volume_mm3": 14849.015,
+   "right_part": true,
+   "clean": true
+  },
+  "pass": true
+ }
+}

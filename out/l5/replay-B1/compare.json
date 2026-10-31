@@ -1,0 +1,15 @@
+{
+ "run": {
+  "triangles": 272,
+  "volume_mm3": 14849.015,
+  "right_part": true,
+  "clean": true
+ },
+ "replay": {
+  "triangles": 272,
+  "volume_mm3": 14849.015,
+  "right_part": true,
+  "clean": true
+ },
+ "pass": true
+}

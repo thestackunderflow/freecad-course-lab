@@ -1,0 +1,114 @@
+{"t": 0.041, "event": "recording started: FreeCAD, Part Design"}
+{"t": 3.067, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 5.429, "event": "File: Open", "x": 160, "y": 110, "button": 1}
+{"t": 8.146, "event": "open: typed the file name", "text": "~/hook-lesson4.FCStd"}
+{"t": 10.296, "event": "open: Enter", "keys": "Return"}
+{"t": 14.432, "event": "key 0: isometric", "keys": "0"}
+{"t": 15.66, "event": "key V", "keys": "v"}
+{"t": 16.283, "event": "key F (fit all)", "keys": "f"}
+{"t": 20.024, "event": "tree: Fillet (the last row)", "x": 178, "y": 502, "button": 1}
+{"t": 23.431, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 24.142, "event": "console: typed the volume line (lesson 4's hook)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 26.379, "event": "console: Enter (the volume line (lesson 4's hook))", "keys": "Return"}
+{"t": 31.801, "event": "tree: hover Body"}
+{"t": 34.351, "event": "tree: hover Pad"}
+{"t": 37.013, "event": "tree: hover Hole"}
+{"t": 39.646, "event": "tree: hover Fillet"}
+{"t": 43.001, "event": "tree: Body", "x": 158, "y": 340, "button": 1}
+{"t": 45.586, "event": "File menu (the Body)", "x": 45, "y": 36, "button": 1}
+{"t": 48.057, "event": "File: Export (the Body)", "x": 105, "y": 554, "button": 1}
+{"t": 53.298, "event": "Export: the type list", "x": 1404, "y": 1225, "button": 1}
+{"t": 57.442, "event": "Export: hover STL Mesh"}
+{"t": 59.313, "event": "Export: STL Mesh", "x": 1212, "y": 1421, "button": 1}
+{"t": 62.089, "event": "Export: the file name box (the Body)", "x": 1400, "y": 1171, "button": 1}
+{"t": 62.833, "event": "Export: typed hook.stl", "text": "hook.stl"}
+{"t": 64.616, "event": "Export: Enter (the Body)", "keys": "Return"}
+{"t": 71.416, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 74.025, "event": "hover: Mesh"}
+{"t": 75.319, "event": "workbench: Mesh", "x": 596, "y": 298, "button": 1}
+{"t": 79.624, "event": "File menu (the Body's STL)", "x": 45, "y": 36, "button": 1}
+{"t": 82.064, "event": "File: Import (the Body's STL)", "x": 105, "y": 511, "button": 1}
+{"t": 85.781, "event": "Import: typed hook.stl", "text": "hook.stl"}
+{"t": 87.363, "event": "Import: Enter (the Body's STL)", "keys": "Return"}
+{"t": 93.103, "event": "tree: Body (to hide it)", "x": 158, "y": 340, "button": 1}
+{"t": 94.815, "event": "key Space: hide Body", "keys": "space"}
+{"t": 97.369, "event": "tree: the mesh hook", "x": 156, "y": 567, "button": 1}
+{"t": 99.088, "event": "Mesh Info: hook"}
+{"t": 103.467, "event": "hover: Evaluate and repair mesh"}
+{"t": 105.654, "event": "Evaluate and repair mesh", "x": 1758, "y": 228, "button": 1}
+{"t": 108.868, "event": "lab query: the panel's buttons"}
+{"t": 111.394, "event": "hover: Analyze (all above tests together)"}
+{"t": 113.28, "event": "Analyze: all above tests together", "x": 2534, "y": 1339, "button": 1}
+{"t": 120.001, "event": "Evaluate: the rows read"}
+{"t": 123.428, "event": "Evaluate: Close", "x": 2736, "y": 1395, "button": 1}
+{"t": 127.921, "event": "tree: the mesh hook", "x": 156, "y": 567, "button": 1}
+{"t": 130.533, "event": "hover: Check solid mesh"}
+{"t": 132.703, "event": "Check solid mesh", "x": 2003, "y": 228, "button": 1}
+{"t": 136.415, "event": "Check solid mesh: the box (hook)"}
+{"t": 139.011, "event": "Check solid mesh: OK", "keys": "Return"}
+{"t": 141.16, "event": "watch only: the Pad"}
+{"t": 142.835, "event": "tree: Pad (the wrong row)", "x": 172, "y": 405, "button": 1}
+{"t": 145.468, "event": "File menu (the Pad)", "x": 45, "y": 36, "button": 1}
+{"t": 147.95, "event": "File: Export (the Pad)", "x": 105, "y": 554, "button": 1}
+{"t": 153.117, "event": "Export: the file name box (the Pad)", "x": 1400, "y": 1171, "button": 1}
+{"t": 153.864, "event": "Export: typed hook-pad.stl", "text": "hook-pad.stl"}
+{"t": 155.831, "event": "Export: Enter (the Pad)", "keys": "Return"}
+{"t": 162.13, "event": "File menu (the Pad's STL)", "x": 45, "y": 36, "button": 1}
+{"t": 164.559, "event": "File: Import (the Pad's STL)", "x": 105, "y": 511, "button": 1}
+{"t": 168.272, "event": "Import: typed hook-pad.stl", "text": "hook-pad.stl"}
+{"t": 170.039, "event": "Import: Enter (the Pad's STL)", "keys": "Return"}
+{"t": 175.796, "event": "tree: the mesh hook (to hide it)", "x": 156, "y": 567, "button": 1}
+{"t": 177.508, "event": "key Space: hide the mesh hook", "keys": "space"}
+{"t": 179.927, "event": "tree: the mesh hook-pad", "x": 181, "y": 599, "button": 1}
+{"t": 181.641, "event": "Mesh Info: hook-pad"}
+{"t": 187.137, "event": "Check solid mesh (hook-pad)", "x": 2003, "y": 228, "button": 1}
+{"t": 190.855, "event": "Check solid mesh: the box (hook-pad)"}
+{"t": 193.395, "event": "Check solid mesh: OK (hook-pad)", "keys": "Return"}
+{"t": 197.238, "event": "tree: the mesh hook", "x": 156, "y": 567, "button": 1}
+{"t": 200.672, "event": "console: click", "x": 1438, "y": 1704, "button": 1}
+{"t": 201.383, "event": "console: typed the mesh volume (hook)", "text": "Gui.Selection.getSelection()[0].Mesh.Volume"}
+{"t": 203.551, "event": "console: Enter (the mesh volume (hook))", "keys": "Return"}
+{"t": 209.422, "event": "tree: the mesh hook-pad", "x": 181, "y": 599, "button": 1}
+{"t": 212.805, "event": "console: click", "x": 1438, "y": 1704, "button": 1}
+{"t": 213.517, "event": "console: typed the mesh volume (hook-pad)", "text": "Gui.Selection.getSelection()[0].Mesh.Volume"}
+{"t": 215.694, "event": "console: Enter (the mesh volume (hook-pad))", "keys": "Return"}
+{"t": 222.099, "event": "tree: the mesh hook-pad (to hide it)", "x": 181, "y": 599, "button": 1}
+{"t": 223.815, "event": "key Space: hide the mesh hook-pad", "keys": "space"}
+{"t": 226.329, "event": "tree: the mesh hook (show it)", "x": 156, "y": 567, "button": 1}
+{"t": 228.049, "event": "key Space: show the mesh hook", "keys": "space"}
+{"t": 229.693, "event": "key V", "keys": "v"}
+{"t": 230.319, "event": "key 7: flat lines", "keys": "7"}
+{"t": 231.952, "event": "key 6: the back", "keys": "6"}
+{"t": 233.188, "event": "key V", "keys": "v"}
+{"t": 233.811, "event": "key F (fit all)", "keys": "f"}
+{"t": 245.377, "event": "the hole zoomed (hook, 26 sides)"}
+{"t": 251.389, "event": "Edit menu", "x": 124, "y": 36, "button": 1}
+{"t": 253.937, "event": "Edit: Preferences", "x": 200, "y": 860, "button": 1}
+{"t": 258.631, "event": "Preferences: Import-Export", "x": 783, "y": 675, "button": 1}
+{"t": 261.633, "event": "Preferences: Mesh Formats", "x": 752, "y": 968, "button": 1}
+{"t": 266.033, "event": "hover: Maximum mesh deviation"}
+{"t": 268.187, "event": "Maximum mesh deviation: the box", "x": 1973, "y": 265, "button": 1}
+{"t": 269.325, "event": "Maximum mesh deviation: typed 0.01", "text": "0.01"}
+{"t": 273.766, "event": "Preferences: OK", "x": 1793, "y": 1656, "button": 1}
+{"t": 276.476, "event": "lab query: the deviation read back"}
+{"t": 278.181, "event": "tree: Body", "x": 158, "y": 340, "button": 1}
+{"t": 280.714, "event": "File menu (the Body, 0.01)", "x": 45, "y": 36, "button": 1}
+{"t": 283.069, "event": "File: Export (the Body, 0.01)", "x": 105, "y": 554, "button": 1}
+{"t": 288.2, "event": "Export: the file name box (the Body, 0.01)", "x": 1400, "y": 1171, "button": 1}
+{"t": 288.934, "event": "Export: typed hook-fine.stl", "text": "hook-fine.stl"}
+{"t": 290.944, "event": "Export: Enter (the Body, 0.01)", "keys": "Return"}
+{"t": 297.582, "event": "File menu (the fine STL)", "x": 45, "y": 36, "button": 1}
+{"t": 299.978, "event": "File: Import (the fine STL)", "x": 105, "y": 511, "button": 1}
+{"t": 303.687, "event": "Import: typed hook-fine.stl", "text": "hook-fine.stl"}
+{"t": 305.494, "event": "Import: Enter (the fine STL)", "keys": "Return"}
+{"t": 311.183, "event": "tree: the mesh hook (to hide it)", "x": 156, "y": 567, "button": 1}
+{"t": 312.897, "event": "key Space: hide the mesh hook", "keys": "space"}
+{"t": 315.434, "event": "tree: the mesh hook-fine", "x": 181, "y": 631, "button": 1}
+{"t": 317.148, "event": "Mesh Info: hook-fine"}
+{"t": 320.75, "event": "key V", "keys": "v"}
+{"t": 321.383, "event": "key 7: flat lines (fine)", "keys": "7"}
+{"t": 323.016, "event": "key 6: the back (fine)", "keys": "6"}
+{"t": 324.25, "event": "key V", "keys": "v"}
+{"t": 324.872, "event": "key F (fit all, fine)", "keys": "f"}
+{"t": 336.204, "event": "the hole zoomed (hook-fine, 229 sides)"}
+{"t": 340.731, "event": "recording stopped"}

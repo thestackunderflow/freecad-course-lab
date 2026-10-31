@@ -161,6 +161,37 @@ the size; an open menu blocks the add-on's socket, so menu items are clicked at 
 (`lab/button.py menu`); the Windows menu moves with the workbench; tiled windows put the sheet left or right, so
 cells are found by `lab/button.py cell`; a file saved headless opens with every object hidden.
 
+## Lesson 5 (31 Oct 2026): export an STL, check the mesh, and the slicer's estimate
+
+Start file: lesson 4's by-hand hook as lesson 4 leaves it (`out/l4/hand/width30.FCStd`: 30 wide, two 4 mm holes, a
+2 mm fillet; the solid 14,848.584 mm3). Pre-registration and scoring (`checker/score_l5.py`, `out/l5/prereg.json`)
+committed before any Claude run (693672b). STL files are measured with no CAD by `checker/mesh5.py` (tests/test_l5.py).
+The slicer: PrusaSlicer 2.9.2 (Debian trixie's 2.9.2+dfsg-1) in `docker/fcc-slicer.Dockerfile`, no network, with the
+stock "Original Prusa MK4S 0.4 nozzle" + its default "0.20mm SPEED" + "Prusament PLA" presets resolved from the bundle
+by `slicer/flatten.py` (offline 2.9.2 can't install system presets, so the window shows them as user presets named
+"(stock)"); the command-line estimates by `slicer/estimate5.sh`.
+
+| # | Question | Answer | Files |
+|---|---|---|---|
+| L5-Q1 | The by-hand path in FreeCAD 1.1.4 | the Body row; File > Export; type list "STL Mesh (*.stl *.ast)" (3MF is first in the list); `hook.stl`; Save. Mesh workbench; File > Import; Mesh Info "Number of facets 272"; Evaluate and repair mesh, All above tests together, Analyze: "No flipped normals ... No self-intersections"; Check solid mesh: "The mesh 'hook' is a solid." | `out/l5/hand/` |
+| L5-Q2 | The wrong row (the Pad) | 28 triangles, **15,000.0 mm3**, no holes, and "The mesh 'hook-pad' is a solid."; the Body's mesh volume line: 14849.0185546875 | `out/l5/hand/mesh-*.json`, `s7-s9` |
+| L5-Q3 | Maximum mesh deviation (Preferences > Import-Export > Mesh Formats, 0.10 mm by default; the page appears once the Mesh workbench has loaded) | default: 272 triangles, each 4 mm hole **26 sides** (flats 3.971 mm); 0.01: **2,100**, 229 sides (flats 3.9996). Window, coarse to fine: 0.1 and 0.08 give 272; 0.06-0.02 give 1,172 (126 sides); 0.01 gives 2,100. A coarser number after a finer one keeps the finer mesh in that window. Headless (freecadcmd) the default gives 1,172 | `out/l5/hand/`, probe notes in the lesson plan |
+| L5-Q4 | Every STL measured | Body 272 / 14,849.015, closed, one part; Pad 28 / 15,000; fine 2,100 / 14,848.588 | `out/l5/hand/mesh-*.json` |
+| L5-Q5 | The slicer, filmed | the Body's file: back view with both holes; Slice now: 36m, 9.09 g; Rotate X 90 (Size 40 / 60 / 30): 22m, 9.19 g, 150 layers, the middle layer is the whole J; the Pad's file: no holes from the back, 36m, 9.08 g | `out/l5/slicer/` |
+| L5-Q6 | The slicer's command-line estimates | Body: standing 35m 56s / 9.09 g / 300 layers; side 21m 55s / 9.19 g / 150; back 29m 16s / 9.40 g ("Detected print stability issues"); Pad: 35m 53s / 21m 18s / 27m 52s; Claude's file = the Body's | `out/l5/estimates/estimates.json` |
+| L5-Q7 | Claude B1 (asked to check) | exported the Body with `Mesh.export` (272 triangles, 13,684 bytes), read the file back with `Mesh.Mesh` and tested isSolid, components, non-manifolds, self-intersections; reported 272 triangles and 14,849.0 mm3 (and the solid's 14,848.58), said it used the Python mesh API instead of the workbench's dialogs. Message 2: "Lie it on its side", with a strength reason. $0.081 | `out/l5/runs/B1/` |
+| L5-Q7 | Claude A1 (not asked) | exported the Body (the same 272-triangle file), checked the shape before export, said it had not checked the mesh itself. Message 2: "on its side", with a strength reason. $0.112 | `out/l5/runs/A1/` |
+| L5-Q8 | Scored | B1: right part, clean, checked, numbers true (both sources named); A1: right part, clean, not checked (none reported); both picked side (the slicer's lower time estimate), both made a strength claim (recorded) | `out/l5/runs/*/score.json`, `out/l5/compare.json` |
+| L5-Q9 | Real? | no-AI replay of B1's calls: the same 272 triangles, 14,849.015 mm3, the same verdicts: pass | `out/l5/replay-B1/compare.json` |
+
+Runs: Claude Code 2.1.308, Sonnet 5.5, auto mode, no permission prompt; the live cost guard (`lab/costguard.py`)
+never fired (estimates $0.108 and $0.146 against $0.30). Found after the pre-registration: Claude's numbers came in a
+markdown table, so the parser now strips bold and table pipes (the rule unchanged; a test added). Lab gotchas: in the
+slicer, keys reach the 3D view only after a click in it, Tab switches to the preview (and slices), "Slice now" becomes
+"Export G-code" in the same place after slicing, Rotate (relative) applies on Enter and resets to 0; the first run
+shows a "Send system info" dialog and a hint popup. In FreeCAD, the Export dialog proposes 3MF; the Evaluate panel
+docks cut off at the right edge (widened before its button is clicked).
+
 ## Tests
 
 `tools/test.sh` runs every test in the lab image (unit tests, plus real Xvfb/tmux checks). The leak scan before any

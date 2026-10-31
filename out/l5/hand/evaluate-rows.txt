@@ -1,0 +1,1 @@
+['No flipped normals', 'No duplicated faces', 'No duplicated points', 'No non-manifolds', 'No degenerations', 'No invalid indices', 'No self-intersections', 'No information', 'Repetitive repair']

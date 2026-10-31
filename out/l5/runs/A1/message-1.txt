@@ -1,0 +1,1 @@
+In FreeCAD, the open document is my wall hook. Export it as an STL file for 3D printing, saved as hook-claude.stl in my home folder.

@@ -1,0 +1,44 @@
+{
+ "file": "hook-fine.stl",
+ "triangles": 2100,
+ "volume_mm3": 14848.588,
+ "bbox_mm": [
+  40.0,
+  30.0,
+  60.0
+ ],
+ "min_mm": [
+  0.0,
+  -30.0,
+  0.0
+ ],
+ "open_edges": 0,
+ "nonmanifold_edges": 0,
+ "flipped_edges": 0,
+ "degenerate": 0,
+ "parts": 1,
+ "points": 1048,
+ "closed": true,
+ "holes": [
+  {
+   "found": true,
+   "sides": 229,
+   "corner_d": 4.0,
+   "flat_d": 3.9996,
+   "axis_yz": [
+    -15.0,
+    15.0
+   ]
+  },
+  {
+   "found": true,
+   "sides": 229,
+   "corner_d": 4.0,
+   "flat_d": 3.9996,
+   "axis_yz": [
+    -15.0,
+    45.0
+   ]
+  }
+ ]
+}

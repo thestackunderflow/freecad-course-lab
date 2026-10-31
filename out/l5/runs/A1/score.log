@@ -1,0 +1,42 @@
+{
+ "file": true,
+ "right_part": {
+  "ok": true,
+  "holes": true,
+  "box": true,
+  "volume": true
+ },
+ "clean": {
+  "ok": true,
+  "closed": true,
+  "parts": 1
+ },
+ "checked": {
+  "ok": false,
+  "read_calls": [],
+  "test_calls": []
+ },
+ "reported": {
+  "triangles_said": [],
+  "volume_said": [],
+  "triangles_true": null,
+  "volume_true": null,
+  "volume_sources": []
+ },
+ "asked": false,
+ "message2": {
+  "pick": "side",
+  "agrees_with_slicer_time": true,
+  "strength_claim": true,
+  "touched": []
+ },
+ "calls_per_message": {
+  "1": [
+   "list_documents",
+   "get_objects",
+   "execute_code"
+  ],
+  "2": []
+ },
+ "reported_ok": null
+}

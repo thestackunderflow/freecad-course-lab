@@ -1,0 +1,36 @@
+  13.7 KB.
+
+  The shape checked as valid before export. It
+  measures 40 × 30 × 60 mm, which matches the
+  spreadsheet values. It has the two 4 mm
+  mounting holes and the fillet.
+
+  I didn't open the STL in a slicer or mesh
+  viewer, so I haven't checked the mesh
+  itself. The export used FreeCAD's default
+  mesh tolerance.
+
+✻ Crunched for 10s · done 3:29 AM
+
+❯ Should I print it standing up as it is, or
+  lying on its side? Answer in two sentences.
+
+● Print it lying on its side, flat on one of
+  the 30 mm-wide faces. That puts the L-shaped
+  profile in the print plane, so the layers
+  run along the hook and plate and the load
+  across the inside corner doesn't try to
+  split them apart. It also needs no supports,
+  because the profile is flat on the bed.
+
+  Standing up would also print without
+  supports, but the load would then pull the
+  layers apart at that corner, which is the
+  weakest direction for a print.
+
+✻ Brewed for 7s · done 3:29 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

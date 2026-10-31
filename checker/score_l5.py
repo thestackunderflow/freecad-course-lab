@@ -88,7 +88,7 @@ def reported_ok(r, asked):
 
 
 def reported(text, m, solid_volume=SOLID):
-    t = text or ''
+    t = (text or '').replace('**', '').replace('|', ' ')   # markdown bold and table pipes (found on run B1)
     tri = [_num(x) for x in re.findall(NUM + r'\s*(?:triangles?|facets?|faces)', t, re.I)]
     tri += [_num(x) for x in re.findall(r'(?:triangles?|facets?)\s*(?:count)?\s*[:=]?\s*(?:of\s*)?' + NUM, t, re.I)]
     raw = re.findall(r'volume[^0-9]{0,40}?' + NUM, t, re.I) + re.findall(NUM + r'\s*(?:mm³|mm3|mm\^3|cubic)', t, re.I)

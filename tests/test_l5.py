@@ -266,3 +266,12 @@ def test_rev2_asked_run_without_numbers_fails_e():
 def test_rev2_pick_knows_on_its_back():
     from checker import score_l5
     assert score_l5.pick("Print it flat on its back, plate on the bed.")['pick'] == 'back'
+
+
+def test_reported_reads_markdown_tables():
+    """Found on run B1 (31 Oct, after the pre-registration): Claude put its numbers in a markdown table with bold;
+    the rule (e) is unchanged, the parser now strips ** and table pipes first."""
+    from checker import score_l5
+    t = "| **Triangle count** | **272** (134 vertices) |\n| **Volume** | **14,849.0 mm³** |"
+    r = score_l5.reported(t, _m(), solid_volume=14848.584)
+    assert r['triangles_said'] == [272] and r['triangles_true'] is True and r['volume_true'] is True

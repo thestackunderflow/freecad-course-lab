@@ -1,0 +1,23 @@
+{"t": 0.027, "event": "recording started: Claude Code (left), FreeCAD with lesson 4's hook (right)"}
+{"t": 2.1, "event": "turn 1: typing", "text": "In FreeCAD, the open document is my wall hook. Export it as an STL file for 3D printing, saved as hook-claude.stl in my home folder. Then check that STL in FreeCAD's Mesh workbench: it must be closed, one solid, with no errors, and tell me its triangle count and volume."}
+{"t": 15.569, "event": "turn 1: Enter"}
+{"t": 20.708, "event": "tool call: list_documents", "seq": 18}
+{"t": 20.723, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 23.597, "event": "tool call: execute_code", "seq": 20}
+{"t": 23.627, "event": "tool reply: execute_code", "seq": 21, "isError": false}
+{"t": 27.28, "event": "tool call: execute_code", "seq": 22}
+{"t": 27.34, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 31.672, "event": "tool call: execute_code", "seq": 24}
+{"t": 31.705, "event": "tool reply: execute_code", "seq": 25, "isError": false}
+{"t": 46.103, "event": "turn 1: end-of-turn line seen"}
+{"t": 48.11, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 53.128, "event": "lab query: copy the STL after message 1"}
+{"t": 54.268, "event": "viewer: click the 3D view", "x": 2650, "y": 1250, "button": 1}
+{"t": 54.977, "event": "viewer: key 0 isometric", "keys": "0"}
+{"t": 55.6, "event": "viewer: key V", "keys": "v"}
+{"t": 56.22, "event": "viewer: key F (fit all)", "keys": "f"}
+{"t": 60.503, "event": "turn 1: typing", "text": "Should I print it standing up as it is, or lying on its side? Answer in two sentences."}
+{"t": 65.341, "event": "turn 1: Enter"}
+{"t": 70.204, "event": "turn 1: end-of-turn line seen"}
+{"t": 72.21, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 78.758, "event": "recording stopped"}

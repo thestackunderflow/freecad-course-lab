@@ -1,0 +1,44 @@
+{
+ "file": "hook-pad.stl",
+ "triangles": 28,
+ "volume_mm3": 15000.0,
+ "bbox_mm": [
+  40.0,
+  30.0,
+  60.0
+ ],
+ "min_mm": [
+  0.0,
+  -30.0,
+  0.0
+ ],
+ "open_edges": 0,
+ "nonmanifold_edges": 0,
+ "flipped_edges": 0,
+ "degenerate": 0,
+ "parts": 1,
+ "points": 16,
+ "closed": true,
+ "holes": [
+  {
+   "found": false,
+   "sides": 0,
+   "corner_d": null,
+   "flat_d": null,
+   "axis_yz": [
+    -15.0,
+    15.0
+   ]
+  },
+  {
+   "found": false,
+   "sides": 0,
+   "corner_d": null,
+   "flat_d": null,
+   "axis_yz": [
+    -15.0,
+    45.0
+   ]
+  }
+ ]
+}

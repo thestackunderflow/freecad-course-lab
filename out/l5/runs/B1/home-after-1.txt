@@ -1,0 +1,15 @@
+total 160
+drwxr-x---  1 maker maker  4096 Oct 31 03:27 .
+drwxr-xr-x  1 root  root   4096 Oct 28 21:18 ..
+-rw-r--r--  1 maker maker   220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 maker maker  3808 Oct 31 03:26 .bashrc
+drwxr-xr-x 10 maker maker  4096 Oct 31 03:26 .cache
+drwxr-xr-x  7 maker maker  4096 Oct 31 03:27 .claude
+-rw-r--r--  1 maker maker 61490 Oct 31 03:27 .claude.json
+drwxr-xr-x  3 maker maker  4096 Oct 31 03:26 .config
+drwxr-xr-x  4 maker maker  4096 Oct 31 03:26 .local
+-rw-r--r--  1 maker maker   807 Mar 31  2024 .profile
+-rw-r--r--  1 maker maker    62 Oct 31 03:26 .tmux.conf
+drwxr-xr-x  2 maker maker  4096 Oct 31 03:26 hook
+-rw-r--r--  1 maker maker 13684 Oct 31 03:27 hook-claude.stl
+-rw-r--r--  1 maker maker 26879 Oct 31 03:26 hook-lesson4.FCStd
