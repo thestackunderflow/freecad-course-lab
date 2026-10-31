@@ -1,0 +1,14 @@
+{
+ "f19_marker": "Here's the export in our log",
+ "f19_body": "the Body · hook-claude.stl",
+ "export_seq": 22,
+ "export_result": "Output: /home/maker/hook-claude.stl 13684",
+ "export_plain": "Mesh.export([Body], ~/hook-claude.stl): 13,684 bytes = 272 triangles",
+ "f20_marker": "It reported 272",
+ "f20_body": "read back · checked",
+ "check_seq": 24,
+ "check_result": "points 134 facets 272",
+ "check_plain": "its own file read back: 272 triangles, a solid, one piece, no gaps, nothing crossing",
+ "replay_seq": 19,
+ "replay_plain": "no-AI replay of the run with the sentence: the same file, 272 triangles"
+}
