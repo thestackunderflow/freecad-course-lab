@@ -124,7 +124,7 @@ def card_sum():
     text(d, (200, 540), '+ 15 more mm of base × 5 thick × 30 wide', 66, BLUE)
     text(d, (200, 640), '= + 2,250 mm³', 76, BLUE)
     text(d, (200, 820), 'expected: %s mm³' % f'{a + 2250:,.1f}', 76, INK)
-    text(d, (200, 960), 'measured: %s mm³' % f'{b:,.1f}', 76, GREEN if abs(b - a - 2250) < 0.05 else RED)
+    text(d, (200, 960), 'next: the volume line in FreeCAD', 60, GREY)
     save(im, 'card-sum.png')
 
 
@@ -221,8 +221,8 @@ def card_without(step=2):
     text(d, (x0 + 40, 180), 'with the list', 58, INK)
     text(d, (x0 + 40, 250), '3 runs', 48, GREY)
     text(d, (x0 + 40, 330), '%s passed (our script)' % c['summary']['with_list_passed'].replace(' of ', '/'), 60, GREEN)
-    text(d, (x0 + 40, 420), 'lines it said with a number:', 46, GREY)
-    text(d, (x0 + 40, 480), '%d of 7 each' % s['B1'], 60, INK)
+    text(d, (x0 + 40, 420), 'its report:', 46, GREY)
+    text(d, (x0 + 40, 480), 'every line, sizes as numbers', 54, INK)
     d.line((x0 + 30, 600, 2490, 600), fill=GREY, width=3)
     if step < 2:
         save(im, 'card-without-1.png')
@@ -230,10 +230,11 @@ def card_without(step=2):
     text(d, (x0 + 40, 640), 'without the list', 58, INK)
     text(d, (x0 + 40, 710), '1 run', 48, GREY)
     text(d, (x0 + 40, 790), 'passed (our script)' if c['runs']['A1']['pass'] else 'broke a line', 60, GREEN if c['runs']['A1']['pass'] else RED)
-    text(d, (x0 + 40, 880), 'lines it said with a number:', 46, GREY)
-    text(d, (x0 + 40, 940), '%d of 7' % s['A1'], 60, INK)
-    text(d, (x0 + 40, 1030), 'nothing on the names', 52, RED)
-    chip(d, (x0 + 40, 1200), 'one run: a story, not a rate', 46, PAPER, INK)
+    text(d, (x0 + 40, 880), 'its report:', 46, GREY)
+    text(d, (x0 + 40, 940), 'opening, size, volume;', 54, INK)
+    text(d, (x0 + 40, 1010), "the rest 'unchanged'", 54, INK)
+    text(d, (x0 + 40, 1080), 'nothing on the names', 54, RED)
+    chip(d, (x0 + 40, 1190), 'one run: a story, not a rate', 46, PAPER, INK)
     save(im, 'card-without.png')
 
 
