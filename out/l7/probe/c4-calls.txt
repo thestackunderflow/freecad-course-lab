@@ -1,0 +1,75 @@
+--- open.py
+import FreeCAD
+FreeCAD.openDocument('/home/maker/hook.FCStd')
+print([o.Name for o in FreeCAD.ActiveDocument.Objects])
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output: ['Body', 'Origin', 'X_Axis',
+  'Y_Axis', 'Z_Axis', 'XY_Plane',
+  'XZ_Plane', 'YZ_Plane', 'Origin001',
+  'Sketch', 'Pad', 'Spreadsheet']
+(+ a picture of the 3D view)
+exit 0
+--- support.py
+doc = App.ActiveDocument
+sk = doc.getObject('Body').newObject('Sketcher::SketchObject', 'Sketch1')
+sk.Support = (doc.getObject('XZ_Plane'), [''])
+call: execute_code
+reply: ERROR
+  Failed to execute code: AttributeError:
+  'Sketcher.SketchObject' object has no
+  attribute 'Support'
+exit 1
+--- attach.py
+doc = App.ActiveDocument
+sk = doc.getObject('Sketch1') or doc.getObject('Body').newObject('Sketcher::SketchObject', 'Sketch1')
+sk.AttachmentSupport = (doc.getObject('XZ_Plane'), [''])
+sk.MapMode = 'FlatFace'
+doc.recompute()
+print(sk.AttachmentSupport)
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output: [(<GeoFeature object>, ('',))]
+(+ a picture of the 3D view)
+exit 0
+--- name.py
+print(App.ActiveDocument.getObject('Pad001').Shape.Volume)
+call: execute_code
+reply: ERROR
+  Failed to execute code: AttributeError:
+  'NoneType' object has no attribute 'Shape'
+exit 1
+--- volume.py
+print(App.ActiveDocument.getObject('Pad').Shape.Volume)
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output: 10000.0
+(+ a picture of the 3D view)
+exit 0
+--- save.py
+App.ActiveDocument.saveAs('/home/maker/parts-new/hook.FCStd')
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output:
+(+ a picture of the 3D view)
+exit 0
+--- save2.py
+import os
+os.makedirs('/home/maker/parts-new', exist_ok=True)
+App.ActiveDocument.saveAs('/home/maker/parts-new/hook.FCStd')
+print(os.path.getsize('/home/maker/parts-new/hook.FCStd'))
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output: 18556
+(+ a picture of the 3D view)
+exit 0

@@ -1,0 +1,984 @@
+$ test-call get_objects {"doc_name": "hook"}
+call: get_objects
+reply: OK
+  [
+    {
+      "Name": "Body",
+      "Label": "Body",
+      "TypeId": "PartDesign::Body",
+      "Properties": {
+        "AllowCompound": true,
+        "BaseFeature": "None",
+        "ExpressionEngine": [],
+        "Group": [
+          "<Sketcher::SketchObject>",
+          "<PartDesign::Pad>",
+          "<Sketcher::SketchObject>"
+        ],
+        "Label": "Body",
+        "Label2": "",
+        "Origin": "<GeoFeature object>",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "Shape": "<Solid object at
+  0x5f301ea7d230>",
+        "ShapeMaterial": "<Material at
+  0x5f301e4a8ae0>",
+        "Tip": "<PartDesign::Pad>",
+        "Visibility": true,
+        "_ElementMapVersion": "15.70200.5",
+        "_GroupTouched": false
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "Angle": 0.0
+        }
+      },
+      "Shape": {
+        "Volume": 10000.0,
+        "Area": 5200.0,
+        "VertexCount": 16,
+        "EdgeCount": 24,
+        "FaceCount": 10
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.6784313917160034,
+          0.7098039388656616,
+          0.7411764860153198,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "Origin",
+      "Label": "Origin",
+      "TypeId": "App::Origin",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Group": [],
+        "Label": "Origin",
+        "Label2": "",
+        "OriginFeatures": [
+          "<GeoFeature object>",
+          "<GeoFeature object>",
+          "<GeoFeature object>",
+          "<GeoFeature object>",
+          "<GeoFeature object>",
+          "<GeoFeature object>",
+          "<GeoFeature object>"
+        ],
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "Visibility": false,
+        "_ElementMapVersion": "",
+        "_GroupTouched": false
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "Angle": 0.0
+        }
+      },
+      "Shape": null,
+      "ViewObject": {
+        "Visibility": false
+      }
+    },
+    {
+      "Name": "X_Axis",
+      "Label": "X-axis",
+      "TypeId": "App::Line",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Label": "X-axis",
+        "Label2": "",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "Role": "X_Axis",
+        "Visibility": true,
+        "_ElementMapVersion": ""
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "Angle": 0.0
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 0.0,
+        "VertexCount": 0,
+        "EdgeCount": 1,
+        "FaceCount": 0
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.800000011920929,
+          0.20000000298023224,
+          0.20000000298023224,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "Y_Axis",
+      "Label": "Y-axis",
+      "TypeId": "App::Line",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Label": "Y-axis",
+        "Label2": "",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.5773502691896258,
+              "y": 0.5773502691896258,
+              "z": 0.5773502691896258
+            },
+            "Angle": 2.0943951023931953
+          }
+        },
+        "Role": "Y_Axis",
+        "Visibility": true,
+        "_ElementMapVersion": ""
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.5773502691896258,
+            "y": 0.5773502691896258,
+            "z": 0.5773502691896258
+          },
+          "Angle": 2.0943951023931953
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 0.0,
+        "VertexCount": 0,
+        "EdgeCount": 1,
+        "FaceCount": 0
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.20000000298023224,
+          0.800000011920929,
+          0.20000000298023224,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "Z_Axis",
+      "Label": "Z-axis",
+      "TypeId": "App::Line",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Label": "Z-axis",
+        "Label2": "",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.5773502691896258,
+              "y": -0.5773502691896258,
+              "z": 0.5773502691896258
+            },
+            "Angle": 2.0943951023931953
+          }
+        },
+        "Role": "Z_Axis",
+        "Visibility": true,
+        "_ElementMapVersion": ""
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.5773502691896258,
+            "y": -0.5773502691896258,
+            "z": 0.5773502691896258
+          },
+          "Angle": 2.0943951023931953
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 0.0,
+        "VertexCount": 0,
+        "EdgeCount": 1,
+        "FaceCount": 0
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.800000011920929,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "XY_Plane",
+      "Label": "XY-plane",
+      "TypeId": "App::Plane",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Label": "XY-plane",
+        "Label2": "",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "Role": "XY_Plane",
+        "Visibility": true,
+        "_ElementMapVersion": ""
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "Angle": 0.0
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 8e+100,
+        "VertexCount": 0,
+        "EdgeCount": 0,
+        "FaceCount": 1
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.800000011920929,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "XZ_Plane",
+      "Label": "XZ-plane",
+      "TypeId": "App::Plane",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Label": "XZ-plane",
+        "Label2": "",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Angle": 1.5707963267948968
+          }
+        },
+        "Role": "XZ_Plane",
+        "Visibility": true,
+        "_ElementMapVersion": ""
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Angle": 1.5707963267948968
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 8e+100,
+        "VertexCount": 0,
+        "EdgeCount": 0,
+        "FaceCount": 1
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.20000000298023224,
+          0.800000011920929,
+          0.20000000298023224,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "YZ_Plane",
+      "Label": "YZ-plane",
+      "TypeId": "App::Plane",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Label": "YZ-plane",
+        "Label2": "",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.5773502691896258,
+              "y": 0.5773502691896258,
+              "z": 0.5773502691896258
+            },
+            "Angle": 2.0943951023931953
+          }
+        },
+        "Role": "YZ_Plane",
+        "Visibility": true,
+        "_ElementMapVersion": ""
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.5773502691896258,
+            "y": 0.5773502691896258,
+            "z": 0.5773502691896258
+          },
+          "Angle": 2.0943951023931953
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 8e+100,
+        "VertexCount": 0,
+        "EdgeCount": 0,
+        "FaceCount": 1
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.800000011920929,
+          0.20000000298023224,
+          0.20000000298023224,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "Origin001",
+      "Label": "Origin001",
+      "TypeId": "App::Point",
+      "Properties": {
+        "ExpressionEngine": [],
+        "Label": "Origin001",
+        "Label2": "",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "Role": "Origin",
+        "Visibility": true,
+        "_ElementMapVersion": ""
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "Angle": 0.0
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 0.0,
+        "VertexCount": 1,
+        "EdgeCount": 0,
+        "FaceCount": 0
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.19607843458652496,
+          0.5882353186607361,
+          0.9803921580314636,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "Sketch",
+      "Label": "Sketch",
+      "TypeId": "Sketcher::SketchObject",
+      "Properties": {
+        "ArcFitTolerance": 1e-06,
+        "AttacherEngine": "Engine Plane",
+        "AttacherType":
+  "Attacher::AttachEnginePlane",
+        "AttachmentOffset": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "AttachmentSupport": [
+          [
+            "<GeoFeature object>",
+            [
+              "XZ_Plane"
+            ]
+          ]
+        ],
+        "Constraints": [
+          "<Constraint 'Coincident'>",
+          "<Constraint 'PointOnObject'
+  (0,-1)>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Vertical' (1)>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Horizontal' (2)>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Vertical' (3)>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Horizontal' (4)>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Vertical' (5)>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Horizontal' (6)>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Coincident'>",
+          "<Constraint 'Vertical' (7)>",
+          "<Constraint 'DistanceX'>",
+          "<Constraint 'DistanceY'>",
+          "<Constraint 'DistanceX'>",
+          "<Constraint 'DistanceY'>",
+          "<Constraint 'DistanceY'>",
+          "<Constraint 'DistanceX'>"
+        ],
+        "Exports": [],
+        "ExpressionEngine": [
+          [
+            "Constraints[17]",
+            "Spreadsheet.hook_depth"
+          ],
+          [
+            "Constraints[18]",
+            "Spreadsheet.lip_height"
+          ],
+          [
+            "Constraints[19]",
+            "Spreadsheet.thickness"
+          ],
+          [
+            "Constraints[20]",
+            "Spreadsheet.lip_height -
+  Spreadsheet.thickness"
+          ],
+          [
+            "Constraints[21]",
+            "Spreadsheet.plate_height"
+          ],
+          [
+            "Constraints[22]",
+            "Spreadsheet.thickness"
+          ]
+        ],
+        "ExternalGeo": [
+          "<Line segment (0,0,0) (1,0,0) >",
+          "<Line segment (0,0,0) (0,1,0) >"
+        ],
+        "ExternalGeometry": [],
+        "ExternalTypes": [
+          0
+        ],
+        "FullyConstrained": true,
+        "Geometry": [
+          "<Line segment (0,0,0) (40,0,0)
+  >",
+          "<Line segment (40,0,0) (40,10,0)
+  >",
+          "<Line segment (40,10,0) (35,10,0)
+  >",
+          "<Line segment (35,10,0) (35,5,0)
+  >",
+          "<Line segment (35,5,0) (5,5,0)
+  >",
+          "<Line segment (5,5,0) (5,60,0)
+  >",
+          "<Line segment (5,60,0) (0,60,0)
+  >",
+          "<Line segment (0,60,0) (0,0,0) >"
+        ],
+        "InternalShape": "<Shape object at
+  0x5f301ea9f180>",
+        "Label": "Sketch",
+        "Label2": "",
+        "MakeInternals": false,
+        "MapMode": "FlatFace",
+        "MapPathParameter": 0.0,
+        "MapReversed": false,
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Angle": 1.5707963267948966
+          }
+        },
+        "Shape": "<Wire object at
+  0x5f301ea9f180>",
+        "ShapeMaterial": "<Material at
+  0x5f301e4a8ae0>",
+        "Visibility": false,
+        "_ElementMapVersion": "15.70200.5",
+        "_ExternalGeoVersion": 1
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Angle": 1.5707963267948966
+        }
+      },
+      "Shape": {
+        "Volume": 0.0,
+        "Area": 0.0,
+        "VertexCount": 8,
+        "EdgeCount": 8,
+        "FaceCount": 0
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.3294117748737335,
+          0.6705882549285889,
+          1.0,
+          1.0
+        ],
+        "Transparency": 75,
+        "Visibility": false
+      }
+    },
+    {
+      "Name": "Pad",
+      "Label": "Pad",
+      "TypeId": "PartDesign::Pad",
+      "Properties": {
+        "AddSubShape": "<Solid object at
+  0x5f301c7b3ba0>",
+        "AllowMultiFace": true,
+        "AlongSketchNormal": true,
+        "BaseFeature": "None",
+        "Direction": {
+          "x": 0.0,
+          "y": -1.0,
+          "z": 2e-16
+        },
+        "ExpressionEngine": [
+          [
+            "Length",
+            "Spreadsheet.width"
+          ]
+        ],
+        "FuzzyTolerance": -1.0,
+        "Label": "Pad",
+        "Label2": "",
+        "Length": "20.0 mm",
+        "Length2": "10.0 mm",
+        "Midplane": false,
+        "Offset": "0.0 mm",
+        "Offset2": "0.0 mm",
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "PreviewShape": "<Shape object at
+  0x5f301c7b3ba0>",
+        "Profile": [
+          "<Sketcher::SketchObject>",
+          [
+            ""
+          ]
+        ],
+        "ReferenceAxis": [
+          "<Sketcher::SketchObject>",
+          [
+            "N_Axis"
+          ]
+        ],
+        "Refine": true,
+        "Reversed": false,
+        "Shape": "<Solid object at
+  0x5f301c7b3ba0>",
+        "ShapeMaterial": "<Material at
+  0x5f301e4a8ae0>",
+        "SideType": "One side",
+        "Suppressed": false,
+        "SuppressedShape": "<Shape object at
+  0x5f301c7b3ba0>",
+        "TaperAngle": "0.0 deg",
+        "TaperAngle2": "0.0 deg",
+        "Type": "Length",
+        "Type2": "Length",
+        "UpToFace": "None",
+        "UpToFace2": "None",
+        "UpToShape": [],
+        "UpToShape2": [],
+        "UseCustomVector": false,
+        "Visibility": true,
+        "_Body": "<body object>",
+        "_ElementMapVersion": "15.70200.5"
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "Angle": 0.0
+        }
+      },
+      "Shape": {
+        "Volume": 10000.0,
+        "Area": 5200.0,
+        "VertexCount": 16,
+        "EdgeCount": 24,
+        "FaceCount": 10
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.6784313917160034,
+          0.7098039388656616,
+          0.7411764860153198,
+          1.0
+        ],
+        "Transparency": 0,
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "Spreadsheet",
+      "Label": "Spreadsheet",
+      "TypeId": "Spreadsheet::Sheet",
+      "Properties": {
+        "A1": "hook_depth",
+        "A2": "thickness",
+        "A3": "lip_height",
+        "A4": "plate_height",
+        "A5": "width",
+        "B1": "40.0 mm",
+        "B2": "5.0 mm",
+        "B3": "10.0 mm",
+        "B4": "60.0 mm",
+        "B5": "20.0 mm",
+        "ExpressionEngine": [],
+        "Label": "Spreadsheet",
+        "Label2": "",
+        "Visibility": true,
+        "cells": "<PropertySheet object>",
+        "columnWidths":
+  "<PropertyColumnWidths object>",
+        "rowHeights": "<PropertyRowHeights
+  object>"
+      },
+      "Placement": "None",
+      "Shape": null,
+      "ViewObject": {
+        "Visibility": true
+      }
+    },
+    {
+      "Name": "Sketch1",
+      "Label": "Sketch1",
+      "TypeId": "Sketcher::SketchObject",
+      "Properties": {
+        "ArcFitTolerance": 1e-06,
+        "AttacherEngine": "Engine 3D",
+        "AttacherType":
+  "Attacher::AttachEnginePlane",
+        "AttachmentOffset": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "Angle": 0.0
+          }
+        },
+        "AttachmentSupport": [
+          [
+            "<GeoFeature object>",
+            [
+              ""
+            ]
+          ]
+        ],
+        "Constraints": [],
+        "Exports": [],
+        "ExpressionEngine": [],
+        "ExternalGeo": [
+          "<Line segment (0,0,0) (1,0,0) >",
+          "<Line segment (0,0,0) (0,1,0) >"
+        ],
+        "ExternalGeometry": [],
+        "ExternalTypes": [
+          0
+        ],
+        "FullyConstrained": true,
+        "Geometry": [],
+        "InternalShape": "<Shape object at
+  0x5f301c7b3ba0>",
+        "Label": "Sketch1",
+        "Label2": "",
+        "MakeInternals": false,
+        "MapMode": "FlatFace",
+        "MapPathParameter": 0.0,
+        "MapReversed": false,
+        "Placement": {
+          "Base": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "Axis": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Angle": 1.5707963267948966
+          }
+        },
+        "Shape": "<Shape object at
+  0x5f301c7b3ba0>",
+        "ShapeMaterial": "<Material at
+  0x5f301e4a8ae0>",
+        "Visibility": true,
+        "_ElementMapVersion": "15.70200.5",
+        "_ExternalGeoVersion": 1
+      },
+      "Placement": {
+        "Base": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Rotation": {
+          "Axis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Angle": 1.5707963267948966
+        }
+      },
+      "Shape": {
+        "error": "invalid shape: shape is
+  invalid"
+      },
+      "ViewObject": {
+        "ShapeColor": [
+          0.3294117748737335,
+          0.6705882549285889,
+          1.0,
+          1.0
+        ],
+        "Transparency": 75,
+        "Visibility": true
+      }
+    }
+  ]
+(+ a picture of the 3D view)
+exit 0

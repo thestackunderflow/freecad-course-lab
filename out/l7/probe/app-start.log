@@ -1,0 +1,30 @@
+MCP RPC: GUI task raised AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 3, in <module>
+AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+Error executing Python code: AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+--- code ---
+doc = App.ActiveDocument
+sk = doc.getObject('Body').newObject('Sketcher::SketchObject', 'Sketch1')
+sk.Support = (doc.getObject('XZ_Plane'), [''])
+
+--- end ---
+MCP RPC: GUI task raised AttributeError: 'NoneType' object has no attribute 'Shape'
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 1, in <module>
+AttributeError: 'NoneType' object has no attribute 'Shape'
+Error executing Python code: AttributeError: 'NoneType' object has no attribute 'Shape'
+--- code ---
+print(App.ActiveDocument.getObject('Pad001').Shape.Volume)
+
+--- end ---

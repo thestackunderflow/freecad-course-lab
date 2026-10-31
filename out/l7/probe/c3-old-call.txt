@@ -1,0 +1,11 @@
+$ test-call list_documents
+call: list_documents
+reply: OK
+  Warning: The FreeCAD addon does not report
+  a version, so it is older than freecad-mcp
+  0.1.28 (protocol 1). Update the addon:
+  copy addon/FreeCADMCP from the matching
+  freecad-mcp release into FreeCAD's Mod
+  directory and restart FreeCAD.
+  []
+exit 0

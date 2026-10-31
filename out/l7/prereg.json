@@ -1,0 +1,45 @@
+{
+  "lesson": 7,
+  "written": "2026-10-31, before any Claude run of lesson 7; amended after the plan gate (REVIEW-L7-accuracy M5), still before the run",
+  "run": "R1",
+  "take": "lab/take_claude7.sh",
+  "launch": "claude (no flags: Claude Code 2.1.308's own default mode, auto, and its default model), fresh home, the plug added with --scope user and wrapped in the logging proxy",
+  "state": "FreeCAD 1.1.4 open with lesson 3's hook (hook.FCStd), the add-on 0.1.28 in Mod, the MCP Addon workbench showing, the RPC server STOPPED and Auto-Start off",
+  "messages": [
+    "What documents are open in FreeCAD?",
+    "I clicked Start RPC Server in FreeCAD. Try again."
+  ],
+  "between": "Start RPC Server clicked in FreeCAD by the take script (as the viewer), after Claude's first answer ends",
+  "approvals": "auto mode shows no prompt in lessons 1-4; if one appears it is answered with its own '1. Yes' after 1.5 s (README Q13)",
+  "cap_usd": 0.25,
+  "record": [
+    "every tool call and reply (transcript.jsonl)",
+    "Claude's final text for each message (pane, session.jsonl)",
+    "where Claude Code keeps the plug's log, if anywhere (mcp-log-files.txt)",
+    "/cost",
+    "the model id (session.jsonl)",
+    "every Bash call Claude makes (session.jsonl)",
+    "n = 1: the video carries a \"one run\" chip"
+  ],
+  "message_1_outcomes": {
+    "a": "Claude says the FreeCAD connection failed AND names the socket fix (start the RPC server / the add-on's server / make sure the FreeCAD addon is running)",
+    "b": "Claude says it failed but gives no fix the viewer can act on",
+    "c": "Claude answers from execute_code_headless (a separate FreeCAD with no window) instead of the open window",
+    "d": "anything else (quoted as it is)"
+  },
+  "message_1_flags": [
+    "calls get_rpc_status",
+    "calls execute_code_headless",
+    "quotes 'Error executing tool'"
+  ],
+  "message_2_outcomes": {
+    "a": "Claude lists the document the open window has (hook) in the same session, no restart",
+    "b": "the call still fails",
+    "c": "anything else (quoted)"
+  },
+  "use_in_video": "F16-F17 quote Claude's words as they are, whichever outcome; nothing is re-run to get a better answer",
+  "n": 1,
+  "message_1_labels": "multi-label: every outcome that applies is recorded (a, b, c may all apply)",
+  "message_1_headline": "the headline is (a) if Claude's final text for message 1 names a step the viewer can do in FreeCAD to switch the socket on (start the RPC server / make sure the add-on is running); else (c) if execute_code_headless was used; else (b) if it says the connection failed; else (d)",
+  "message_2_expected": "list_documents returns [\"hook\"] (the one document open in the window); outcome (a) if Claude reports a document named hook in the same session with no restart"
+}

@@ -1,0 +1,5 @@
+$ claude mcp list
+Checking MCP server health…
+
+freecad: uvx freecad-mcp@0.1.28 - ✔ Connected
+exit 0

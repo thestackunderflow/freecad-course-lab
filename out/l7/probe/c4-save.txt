@@ -1,0 +1,43 @@
+--- open.py
+import FreeCAD
+FreeCAD.openDocument('/home/maker/hook.FCStd')
+print(FreeCAD.ActiveDocument.Name)
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output: hook
+(+ a picture of the 3D view)
+exit 0
+--- save.py
+App.ActiveDocument.saveAs('/home/maker/parts/hook.FCStd')
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output:
+(+ a picture of the 3D view)
+exit 0
+--- check.py
+import os
+print(os.path.exists('/home/maker/parts/hook.FCStd'))
+call: execute_code
+reply: OK
+  Code executed successfully: Python code
+  executed successfully.
+  Output: True
+(+ a picture of the 3D view)
+exit 0
+--- save-ro.py
+App.ActiveDocument.saveAs('/opt/hook.FCStd')
+call: execute_code
+reply: ERROR
+  Failed to execute code: OSError: Failed to
+  open file
+exit 1
+ls: cannot access '/opt/hook.FCStd': No such file or directory
+/home/maker/parts:
+total 32
+drwxr-xr-x 2 maker maker  4096 Oct 31 01:02 .
+drwxr-x--- 1 maker maker  4096 Oct 31 01:02 ..
+-rw-r--r-- 1 maker maker 18001 Oct 31 01:02 hook.FCStd

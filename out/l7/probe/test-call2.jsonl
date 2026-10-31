@@ -1,0 +1,4 @@
+{"tool": "execute_code", "arguments": {"code": "import FreeCAD\nFreeCAD.openDocument('/home/maker/hook.FCStd')\nprint(FreeCAD.ActiveDocument.Name)\n"}, "isError": false, "text": "Code executed successfully: Python code executed successfully.\nOutput: hook\n", "images": 1}
+{"tool": "execute_code", "arguments": {"code": "App.ActiveDocument.saveAs('/home/maker/parts/hook.FCStd')\n"}, "isError": false, "text": "Code executed successfully: Python code executed successfully.\nOutput: ", "images": 1}
+{"tool": "execute_code", "arguments": {"code": "import os\nprint(os.path.exists('/home/maker/parts/hook.FCStd'))\n"}, "isError": false, "text": "Code executed successfully: Python code executed successfully.\nOutput: True\n", "images": 1}
+{"tool": "execute_code", "arguments": {"code": "App.ActiveDocument.saveAs('/opt/hook.FCStd')\n"}, "isError": true, "text": "Failed to execute code: OSError: Failed to open file", "images": 0}

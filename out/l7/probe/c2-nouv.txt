@@ -1,0 +1,22 @@
+$ claude mcp list
+Checking MCP server health…
+
+freecad: uvx freecad-mcp@0.1.28 - ✘ Failed to connect — ENOENT: Executable not found in $PATH: "uvx"
+exit 0
+$ claude mcp get freecad
+freecad:
+  Scope: User config (available in all your projects)
+  Status: ✘ Failed to connect
+  Issue: ENOENT: Executable not found in $PATH: "uvx"
+  Type: stdio
+  Command: uvx
+  Args: freecad-mcp@0.1.28
+  Environment:
+
+To remove this server, run: claude mcp remove freecad -s user
+exit 0
+$ claude mcp list
+Checking MCP server health…
+
+freecad: uvx freecad-mcp@0.1.28 - ✔ Connected
+exit 0

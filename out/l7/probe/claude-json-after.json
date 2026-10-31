@@ -1,0 +1,32 @@
+{
+  "theme": "light",
+  "hasCompletedOnboarding": true,
+  "projects": {
+    "/home/maker/hook": {
+      "hasTrustDialogAccepted": true,
+      "mcpServers": {}
+    },
+    "/home/maker/parts": {
+      "hasTrustDialogAccepted": true
+    }
+  },
+  "firstStartTime": "2026-10-31T00:58:27.763Z",
+  "firstStartVersion": "2.1.308",
+  "machineID": "5f44b099d9398d1cbf735835bc2e840a94288816620ed045d26526add233b83f",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "userID": "abdde3ad31137eafb5b92e1e1485b021e814d35e4f11ea627282bf3df5cc3bd7",
+  "seenNotifications": {},
+  "hasResetAutoModeOptInForDefaultOffer": true,
+  "migrationVersion": 14,
+  "mcpServers": {
+    "freecad": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "freecad-mcp@0.1.28"
+      ],
+      "env": {}
+    }
+  }
+}

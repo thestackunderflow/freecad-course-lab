@@ -1,0 +1,25 @@
+$ claude mcp add freecad -- uvx freecad-mcp@0.1.28
+Added stdio MCP server freecad with command: uvx freecad-mcp@0.1.28 to local config
+File modified: /home/maker/.claude.json [project: /home/maker/hook]
+exit 0
+$ claude mcp list
+Checking MCP server health…
+
+freecad: uvx freecad-mcp@0.1.28 - ✔ Connected
+exit 0
+$ claude mcp list
+No MCP servers configured. Use `claude mcp add` to add a server.
+exit 0
+$ claude mcp remove freecad
+Removed MCP server "freecad" from local config
+File modified: /home/maker/.claude.json [project: /home/maker/hook]
+exit 0
+$ claude mcp add --scope user freecad -- uvx freecad-mcp@0.1.28
+Added stdio MCP server freecad with command: uvx freecad-mcp@0.1.28 to user config
+File modified: /home/maker/.claude.json
+exit 0
+$ claude mcp list
+Checking MCP server health…
+
+freecad: uvx freecad-mcp@0.1.28 - ✔ Connected
+exit 0
