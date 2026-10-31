@@ -1,0 +1,25 @@
+{
+ "lesson": "FreeCAD + Claude Course lesson 5 (fc5): export an STL, check the mesh, the slicer's estimate",
+ "written": "2026-10-31, before any Claude run of lesson 5 (rev 2, after the plan gate: accuracy MUST-FIX 2-4, 7 and SHOULD applied)",
+ "runs": {
+  "B1": "asked to check: messages/B-1.txt, B-2.txt (filmed main run)",
+  "A1": "not asked: messages/A-1.txt, A-2.txt; skipped if spend so far + its cap $0.30 + $0.20 (voice still to come) is over $0.90"
+ },
+ "order": ["B1", "A1"],
+ "max_runs": 2,
+ "live_cost_guard": "lab/costguard.py reads Claude Code's session log every 3 s and interrupts the turn (Escape x2) when its estimate passes $0.30 (rates fitted to lesson 4's runs, raised ~20%); /cost stays the ledger number",
+ "setup": "Claude Code 2.1.308, `claude` with no flags (its default model and mode), fresh container, home folder, session and FreeCAD 1.1.4 window per run, lesson 4's hook open (hook-lesson4.FCStd = out/l4/hand/width30.FCStd: 30 wide, two 4 mm holes, the 2 mm fillet; the solid 14,848.584 mm3), Maximum mesh deviation left at its default, no CLAUDE.md; the plug `uvx freecad-mcp@0.1.28` added with --scope user, wrapped in the logging proxy; permission prompts answered with the prompt's own plain Yes (README Q13)",
+ "messages_differ_by": "B-1 = A-1 + a space + one sentence (tests/test_l5_prereg.py checks the bytes); message 2 is the same for A and B",
+ "the_file": "~/hook-claude.stl after message 1, copied into the run folder; measured by checker/mesh5.measure_any (no CAD, no AI)",
+ "scoring": {
+  "a_file": "~/hook-claude.stl exists after message 1 and reads as a mesh",
+  "b_right_part": "after trying the 24 axis-aligned turns (recorded as moved / turn): both 4 mm holes found at the lesson's axes, sorted box 30 / 40 / 60 (+-0.01), mesh volume 14848.8 +-2 mm3 (the Hole row before the fillet, 14874.3, and the Pad, 15000, fail)",
+  "c_clean": "closed (no open, non-manifold or flipped edges) and one part",
+  "d_checked": "a message-1 call reads the saved file back (Mesh.Mesh / read / insert / open, the call names hook-claude) and a test (isSolid, hasNonManifolds, hasSelfIntersections, countComponents, getSeparateComponents, hasInvalidPoints, Mesh_Evaluation, evaluat...) runs in that call or a later one; a mesh rebuilt from the shape does not count",
+  "e_reported_true": "each triangle count and each volume in the message-1 reply matches a source at the digits it was printed with (half a unit of its last digit, at least 0.05); sources: the file's mesh volume, the solid's 14848.584 (recorded which); for an asked (B) run a missing count or volume fails; for A, none reported = None",
+  "f_message_2": "pick = back / side / standing / neither (first named wins when two are named); agrees_with_slicer_time = side (the slicer's estimate: 21m 55s side vs 35m 56s standing, stock MK4S settings); strength_claim recorded, never scored right or wrong; touched = any message-2 call that creates, edits or deletes an object",
+  "recorded_not_deciding": "every call and reply, the objects, time, cost"
+ },
+ "code": "checker/score_l5.py, checker/mesh5.py (tests/test_l5.py)",
+ "proof": "a no-AI replay of B1's logged calls in the same image, a fresh FreeCAD window, the default preference and lesson 4's file; pass = the replay's STL has the same triangle count, a volume within 0.01 mm3 and the same checker verdicts (right part, clean) as Claude's file"
+}
