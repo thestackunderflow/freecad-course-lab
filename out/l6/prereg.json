@@ -1,0 +1,26 @@
+{
+ "lesson": 6,
+ "written": "2026-10-31, before any Claude run (PLAN-L6 rev 2 after the plan gate)",
+ "start": "lesson 5's hook = out/l4/hand/width30.FCStd opened as ~/hook-lesson5.FCStd (hook_depth 40, width 30, opening 30, 14,848.584 mm3)",
+ "claude": "Claude Code 2.1.308 (fcc-app:1.1.4-0.1.28), launched as plain `claude` (its default model and mode), freecad-mcp 0.1.28 added with --scope user behind the logging proxy; fresh container, home, session and FreeCAD window per run; no CLAUDE.md",
+ "messages": {"A": "out/l6/messages/A-1.txt (no list)", "B": "out/l6/messages/B-1.txt (the same first two sentences + the must-stay-true list + 'check each one')",
+              "trigger": "out/l6/messages/trigger.txt ('Your choice.'), sent once only if after the first turn hook_depth is still 40 mm and the start part's volume is unchanged"},
+ "order": ["B1", "B2", "B3", "A1"],
+ "budget": "ledger freecad-course-BUDGET.tsv under '# --- GO 31 Oct 2026 FreeCAD L6': a run starts only if spend so far <= $0.48 (= $0.90 stop - $0.25 run cap - $0.17 kept for the voice); live cost guard lab/costguard.py at $0.25 per run",
+ "pass_rule": {
+  "C": "the opening (gap between the back plate and the lip along a line 7.5 mm up, 3 mm in from the side) = 45.00 +- 0.05 mm",
+  "M1": "one solid, isValid, no object in an Invalid/Error state (Measure rows excluded); FreeCAD's STL of the part closed, 1 component, no non-manifolds",
+  "M2": "box Y 30.00 and Z 60.00 (+-0.01)",
+  "M3": "walls 5 thick (+-0.1): 0.1 mm inside each wall's inner face in the solid, 0.1 mm beyond not (plate, base, lip)",
+  "M4": "lip 10 tall (+-0.1): in at 9.9, out at 10.1",
+  "M5": "2 holes, 4.00 mm (+-0.01), through, centred across (+-0.05), at 15 and 45 up (+-0.05)",
+  "M6": "the 2 mm fillet on the lip's top outer edge along the whole width",
+  "M7": "width 30, thickness 5, lip_height 10, plate_height 60, hole_d 4, hole_spacing 30 unchanged; hook_depth = the part's depth (+-0.01); the start's 12 bindings still from a sheet name; drive tests on the copy: width 20 -> Y 20.00 and holes 10/10; hook_depth + 5 -> depth and opening + 5 (+-0.05)",
+  "V": "volume 17,098.584 +- 1 mm3 (worked out: 14,848.584 + 15 x 5 x 30)",
+  "pass": "C and M1-M7 and V; read from the saved copy without a recompute, the part's Placement undone; the start document unless it is unchanged and a run made a new document with a part"
+ },
+ "code": "checker/l6read.py, checker/score_l6.py (tests/test_l6.py)",
+ "coding_of_claude_words": "by hand from the last reply, verbatim: per line 'said, with a number' / 'said, no number' / 'not checked'; against the script: 'said OK, measured OK' / 'said OK, measured broken' / 'said a wrong number' / 'not checked'",
+ "replay": "lab/replay6.sh: same file name, every logged MCP tools/call in order, the same save/read/score; match = the same verdict on every line and the volume within 0.01 mm3; no change call in the MCP log = 'not replayable'",
+ "result_reported_as": "N of 3 passed (B); A1: passed / broke [line] (one run, never a rate)"
+}
