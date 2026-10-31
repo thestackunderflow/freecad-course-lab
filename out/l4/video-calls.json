@@ -1,0 +1,17 @@
+{
+ "f22_marker": "It added the two names",
+ "f24_marker": "And the change in our log",
+ "f22_body": "two names, a sketch, a Pocket",
+ "build_seq": 22,
+ "build_result": "Code executed successfully",
+ "build_plain": "hole_d, hole_spacing; circles from width / 2 and the names; a Pocket, through all",
+ "f23_body": "9857.168146928205 · then 30 wide",
+ "f24_body": "14,848.58 · 15 across",
+ "edit_seq": 26,
+ "edit_result": "Code executed successfully",
+ "edit_plain": "ss.set('B5', '30 mm'): one cell, nothing else",
+ "replay_seq": 19,
+ "replay_plain": "no-AI replay of the first run: 9,857.17, then 15 · 15",
+ "f26_body": "positions are rules",
+ "has_sketch": true
+}

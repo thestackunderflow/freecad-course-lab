@@ -194,8 +194,30 @@ def card_compare():
     save(im, 'card-compare.png')
 
 
+def thumbs():
+    """Thumbnails (1280 x 720) from the real frames: the by-hand back view after 30 wide (holes centred) beside the
+    plain one (off to one side), under 4 words; the alt names the Claude finding."""
+    from PIL import Image
+    a = Image.open(os.path.join(LAB, 'out', 'l4', 'hand', 's18-back30.png')).crop((700, 330, 1420, 1330))
+    b = Image.open(os.path.join(LAB, 'out', 'l4', 'plain', 's2-back30.png')).crop((1920, 330, 2640, 1330))
+    for name, title, sub in (('thumb-primary.png', '30 WIDE: CENTRED?', ('FROM NAMES', 'PLAIN 10')),
+                             ('thumb-altA.png', 'SAME CHANGE, TWO RESULTS', ('15 · 15', '10 · 20'))):
+        im, d = canvas(1280, 720)
+        d.rectangle((0, 0, 1280, 150), fill=INK)
+        text(d, (640, 75), title, 92, PAPER, anchor='mm')
+        for k, (src, col, lab) in enumerate(((a, GREEN, sub[0]), (b, RED, sub[1]))):
+            t = src.resize((360, 500))
+            x = 140 + k * 640
+            im.paste(t, (x, 175))
+            d.rectangle((x - 6, 169, x + 366, 681), outline=col, width=10)
+            chip(d, (x + 180, 640), lab, 54, PAPER, col, anchor='m')
+        save(im, name)
+
+
 if __name__ == '__main__':
-    if sys.argv[1:] == ['compare']:
+    if sys.argv[1:] == ['thumbs']:
+        thumbs()
+    elif sys.argv[1:] == ['compare']:
         card_compare()
     else:
         card_today('hole'); card_today('fillet')
