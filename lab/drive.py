@@ -28,6 +28,9 @@ def pane(name, full=False):
 
 
 def keys(name, *k, literal=False):
+    # tmux reads a lone ';' argument as its own command separator (lesson 6: the list's semicolons never reached
+    # Claude); '\;' is tmux's escape for a literal semicolon
+    k = [r'\;' if x == ';' else x for x in k]
     subprocess.run(['tmux', 'send-keys', '-t', name] + (['-l'] if literal else []) + list(k), check=True)
 
 

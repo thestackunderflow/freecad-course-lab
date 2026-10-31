@@ -214,7 +214,9 @@ Gotchas: `lab.fcrpc vp` points are ~60 px off at Qt scale 1.5 in the side-by-sid
 Measure picked the fillet's edge and read 48.00 (a lab error, not the part: the script read 45.0); `m6_aim` now moves
 the cursor until FreeCAD preselects the wanted face or edge (`lab.l6pick hit`), and B1's check was re-filmed on its saved
 copy (`lab/take_inspect6.sh`, `out/l6/inspect-B1/`: 45.00). Any socket query clears the Measurement panel's Result, so
-it is read once after the last pick. The Show Delta box can't be unticked through Qt before the panel opens (it stays on).
+it is read once after the last pick. **The list reached Claude without its semicolons** (found at the script gate):
+the typing helper sent each character with `tmux send-keys`, which reads a lone ";" as its own command separator; the
+same words and the same text went to B1-B3, so the verdict stands; `lab/drive.py` now escapes it. The Show Delta box can't be unticked through Qt before the panel opens (it stays on).
 
 ## Tests
 
