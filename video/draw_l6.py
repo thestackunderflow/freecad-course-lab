@@ -131,24 +131,137 @@ def card_sum():
 def card_recap(step):
     """F22, three reveals: the haircut ticket; the tape measure; the answer key."""
     im, d = canvas(); header(d, 'Remember')
-    d.rectangle((150, 330, 830, 900), fill=TICKET, outline=INK, width=6)
-    text(d, (190, 370), 'change: 1 thing', 56, BLUE)
-    text(d, (190, 460), 'keep: the list', 56, GREEN)
-    text(d, (490, 960), 'a must-stay-true list', 58, INK, anchor='ma')
-    if step >= 2:
-        d.rounded_rectangle((1000, 520, 1560, 720), radius=30, fill=(250, 210, 60), outline=INK, width=6)
-        for k in range(12):
-            x = 1030 + k * 44
-            d.line((x, 520, x, 560 + (30 if k % 2 == 0 else 0)), fill=INK, width=4)
-        text(d, (1280, 960), 'Measure before + after', 58, INK, anchor='ma')
-    if step >= 3:
-        d.rectangle((1760, 330, 2400, 900), fill=PAPER, outline=INK, width=6)
-        text(d, (1800, 370), 'ANSWER KEY', 56, INK)
-        text(d, (2080, 960), 'a pass rule, written first', 58, INK, anchor='ma')
+    LIGHT = (205, 210, 220)
+    on = lambda k: step >= k   # noqa: E731
+    d.rectangle((120, 300, 860, 1000), fill=TICKET if on(1) else BG, outline=INK if on(1) else LIGHT, width=6)
+    text(d, (170, 350), 'the ticket', 54, GREY if on(1) else LIGHT)
+    text(d, (170, 460), 'change: 1 thing', 62, BLUE if on(1) else LIGHT)
+    for k, line in enumerate(('keep: line 1', 'keep: line 2', 'keep: ...')):
+        text(d, (170, 580 + k * 95), line, 58, GREEN if on(1) else LIGHT)
+    text(d, (490, 1060), 'a must-stay-true list', 62, INK if on(1) else LIGHT, anchor='ma')
+    d.rounded_rectangle((970, 520, 1590, 760), radius=30, fill=(250, 210, 60) if on(2) else BG,
+                        outline=INK if on(2) else LIGHT, width=6)
+    for k in range(13):
+        x = 1000 + k * 44
+        d.line((x, 520, x, 570 + (40 if k % 2 == 0 else 0)), fill=INK if on(2) else LIGHT, width=5)
+    text(d, (1280, 800), 'before · after', 58, BLUE if on(2) else LIGHT, anchor='ma')
+    text(d, (1280, 1060), 'Measure', 62, INK if on(2) else LIGHT, anchor='ma')
+    d.rectangle((1720, 300, 2440, 1000), fill=PAPER if on(3) else BG, outline=INK if on(3) else LIGHT, width=6)
+    text(d, (1770, 350), 'ANSWER KEY', 62, INK if on(3) else LIGHT)
+    for k in range(5):
+        d.line((1780, 500 + k * 100, 2380, 500 + k * 100), fill=GREY if on(3) else LIGHT, width=4)
+    text(d, (2080, 1060), 'a pass rule, written first', 62, INK if on(3) else LIGHT, anchor='ma')
     save(im, f'card-recap-{step}.png')
+
+
+ROWS = ['opening 45', '1 one solid, no errors', '2 plate 60 x 30', '3 walls 5', '4 lip 10', '5 holes 4, centred, 15/45',
+        '6 the 2 mm lip edge', '7 the names drive it', 'volume 17,098.6']
+KEYS = ['C', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'V']
+
+
+def frame(path, w, h, box=(1150, 0, 2880, 1800)):
+    """The FreeCAD half of a side-by-side take frame (default box), scaled to cover w x h and centre-cropped."""
+    from PIL import Image
+    im = Image.open(path).convert('RGB').crop(box)
+    k = max(w / im.width, h / im.height)
+    im = im.resize((int(im.width * k + 0.5), int(im.height * k + 0.5)))
+    x, y = (im.width - w) // 2, (im.height - h) // 2
+    return im.crop((x, y, x + w, y + h))
+
+
+def column(d, x, y, run, title, sub=None):
+    c = json.load(open(os.path.join(L6, 'compare.json'), encoding='utf-8'))['runs'][run]
+    d.rectangle((x - 30, y - 40, x + 1010, y + 1130), fill=PAPER, outline=INK, width=5)
+    text(d, (x, y - 10), title, 60, INK)
+    if sub:
+        text(d, (x, y + 62), sub, 46, GREY)
+    for k, (lab, key) in enumerate(zip(ROWS, KEYS)):
+        ok = c['lines'][key]
+        yy = y + 150 + k * 100
+        text(d, (x, yy), ('✓ ' if ok else '✗ ') + lab, 56, GREEN if ok else RED)
+    return c
+
+
+def card_run(run, n, src, sub):
+    """F14: one run's real final frame (left) with its whole column of the pass rule (right), from compare.json."""
+    im, d = canvas()
+    im.paste(frame(src, 1440, 1440), (0, 0))
+    chip(d, (40, 40), 'REAL FRAME · run %d' % n, 44, PAPER, BLUE)
+    c = column(d, 1520, 170, run, 'run %d: %s' % (n, 'passed' if c_pass(run) else 'not passed'), sub)
+    save(im, 'card-run%d.png' % n)
+
+
+def c_pass(run):
+    return json.load(open(os.path.join(L6, 'compare.json'), encoding='utf-8'))['runs'][run]['pass']
+
+
+def card_total():
+    c = json.load(open(os.path.join(L6, 'compare.json'), encoding='utf-8'))
+    im, d = canvas(); header(d, 'The pass rule, written first')
+    for k, (r, n) in enumerate((('B1', 1), ('B2', 2), ('B3', 3))):
+        x = 330 + k * 700
+        im.paste(frame(os.path.join(L6, 'runs', r, 's1-ourcheck.png') if r != 'B1' else
+                       os.path.join(L6, 'inspect-B1', 's1-ourcheck.png'), 600, 380, (1700, 300, 2880, 1100)), (x - 50, 300))
+        ok = c['runs'][r]['pass']
+        text(d, (x + 250, 720), 'run %d: %s' % (n, 'every line' if ok else 'broke a line'), 58, GREEN if ok else RED, anchor='ma')
+    text(d, (W / 2, 900), '%s kept every line' % c['summary']['with_list_passed'], 96, GREEN, anchor='ma')
+    chip(d, (W / 2, 1200), 'three runs: a good sign, not a promise', 56, PAPER, INK, anchor='m')
+    save(im, 'card-3of3.png')
+
+
+def card_without(step=2):
+    """F16: with the list (3 runs) vs without (1 run): passed, lines said with a number, from compare.json."""
+    c = json.load(open(os.path.join(L6, 'compare.json'), encoding='utf-8'))
+    im, d = canvas()
+    im.paste(frame(os.path.join(L6, 'runs', 'A1', 's1-ourcheck.png'), 1300, 1440), (0, 0))
+    chip(d, (40, 40), 'REAL FRAME · the run without the list', 44, PAPER, BLUE)
+    s = c['summary']['lines_said_with_a_number']
+    x0 = 1380
+    d.rectangle((x0, 140, 2520, 1300), fill=PAPER, outline=INK, width=5)
+    text(d, (x0 + 40, 180), 'with the list', 58, INK)
+    text(d, (x0 + 40, 250), '3 runs', 48, GREY)
+    text(d, (x0 + 40, 330), '%s passed (our script)' % c['summary']['with_list_passed'].replace(' of ', '/'), 60, GREEN)
+    text(d, (x0 + 40, 420), 'lines it said with a number:', 46, GREY)
+    text(d, (x0 + 40, 480), '%d of 7 each' % s['B1'], 60, INK)
+    d.line((x0 + 30, 600, 2490, 600), fill=GREY, width=3)
+    if step < 2:
+        save(im, 'card-without-1.png')
+        return
+    text(d, (x0 + 40, 640), 'without the list', 58, INK)
+    text(d, (x0 + 40, 710), '1 run', 48, GREY)
+    text(d, (x0 + 40, 790), 'passed (our script)' if c['runs']['A1']['pass'] else 'broke a line', 60, GREEN if c['runs']['A1']['pass'] else RED)
+    text(d, (x0 + 40, 880), 'lines it said with a number:', 46, GREY)
+    text(d, (x0 + 40, 940), '%d of 7' % s['A1'], 60, INK)
+    text(d, (x0 + 40, 1030), 'nothing on the names', 52, RED)
+    chip(d, (x0 + 40, 1200), 'one run: a story, not a rate', 46, PAPER, INK)
+    save(im, 'card-without.png')
+
+
+def thumbs():
+    """Thumbnails (1280 x 720) from the real by-hand frames: the sheet's hook_depth 45 beside Measure's 35.00 mm."""
+    from PIL import Image
+    src = Image.open(os.path.join(L6, 'hand', 's4-measure35.png')).convert('RGB')
+    a = src.crop((490, 420, 960, 500)).resize((560, 95))       # the sheet's row 1: hook_depth 45.00 mm
+    b = src.crop((2190, 760, 2870, 820)).resize((560, 50))     # Measurement: Result 35.00 mm
+    part = src.crop((1880, 330, 2880, 1330)).resize((520, 520))
+    for name, title in (('thumb-primary.png', 'TYPED 45, GOT 35'), ('thumb-altA.png', '3/3 KEPT EVERY LINE')):
+        im, d = canvas(1280, 720)
+        d.rectangle((0, 0, 1280, 140), fill=INK)
+        text(d, (640, 70), title, 72, PAPER, anchor='mm')
+        im.paste(part, (720, 175))
+        d.rectangle((714, 169, 1246, 701), outline=RED, width=8)
+        im.paste(a, (60, 230)); d.rectangle((54, 224, 626, 331), outline=INK, width=6)
+        text(d, (340, 360), 'typed', 48, GREY, anchor='ma')
+        im.paste(b, (60, 470)); d.rectangle((54, 464, 626, 526), outline=RED, width=8)
+        text(d, (340, 560), 'measured', 48, RED, anchor='ma')
+        save(im, name)
 
 
 if __name__ == '__main__':
     for i in (1, 2, 3):
         card_haircut(i); card_depth(i); card_key(i); card_recap(i)
     card_sum()
+    card_run('B1', 1, os.path.join(L6, 'inspect-B1', 's1-ourcheck.png'), 'one cell: hook_depth 55')
+    card_run('B2', 2, os.path.join(L6, 'runs', 'B2', 's1-ourcheck.png'), 'one cell: hook_depth 55')
+    card_run('B3', 3, os.path.join(L6, 'runs', 'B3', 's1-ourcheck.png'), 'a new name: opening 45')
+    card_total(); card_without(1); card_without(); thumbs()
