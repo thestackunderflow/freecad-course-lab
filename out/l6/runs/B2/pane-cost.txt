@@ -1,0 +1,36 @@
+
+✻ Crunched for 26s · done 6:03 AM
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ ◐ medium · /effort ▔
+   Settings  Status   Config   Usage
+    Stats
+
+   Session
+
+   Total cost:            $0.0982
+   Total duration (API):  26s
+   Total duration (wall): 2m 16s
+   Total code changes:    0 lines added, 0
+   lines removed
+   Usage by model:
+       claude-haiku-5-5:  1.4k input, 22
+   output, 0 cache read, 0 cache write
+   ($0.0001)
+      claude-sonnet-5-5:  14 input, 2.9k
+   output, 202.6k cache read, 12.2k cache
+   write ($0.0981)
+   Prompt cache (main):   6 requests · 94%
+   of input tokens from cache · no misses ·
+   warm (1h TTL, last activity 1m 21s ago)
+
+   What's contributing to your limits
+   usage?
+   Approximate · sessions on this machine
+   only
+
+   Last 24h · shares overlap
+
+   69%  Turn off freecad when you don't
+        need it
+
+   MCP servers             % of usage
+   freecad                        69%       ↓

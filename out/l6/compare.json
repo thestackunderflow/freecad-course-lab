@@ -1,0 +1,346 @@
+{
+ "hand": {
+  "depth40": {
+   "pass": false,
+   "opening_mm": 30.0,
+   "volume_mm3": 14848.5841,
+   "failed": [
+    "C",
+    "V"
+   ]
+  },
+  "depth45": {
+   "pass": false,
+   "opening_mm": 35.0,
+   "volume_mm3": 15598.5841,
+   "failed": [
+    "C",
+    "V"
+   ]
+  },
+  "depth55": {
+   "pass": true,
+   "opening_mm": 45.0,
+   "volume_mm3": 17098.5841,
+   "failed": []
+  }
+ },
+ "runs": {
+  "B1": {
+   "pass": true,
+   "lines": {
+    "C": true,
+    "M1": true,
+    "M2": true,
+    "M3": true,
+    "M4": true,
+    "M5": true,
+    "M6": true,
+    "M7": true,
+    "V": true
+   },
+   "hook_depth": 55.0,
+   "opening_mm": 45.0,
+   "volume_mm3": 17098.5841,
+   "new_aliases": [],
+   "cost_usd": 0.1129,
+   "wall_s": 140,
+   "calls": [
+    "list_documents",
+    "execute_code",
+    "execute_code",
+    "execute_code"
+   ],
+   "trigger_sent": false,
+   "our_filmed_measure": "48.00 mm",
+   "our_filmed_measure_note": "our pick landed on the fillet edge (lab error, fixed before B2); re-filmed on the saved copy: 45.00 mm",
+   "claude_own_check": {
+    "M1 one solid, no errors": "said, with a number",
+    "M2 plate 60 x 30": "said, with a number",
+    "M3 walls 5": "said, with a number",
+    "M4 lip 10": "said, with a number",
+    "M5 holes 4 mm, centred, 15/45": "said, with a number",
+    "M6 2 mm lip edge": "said, with a number",
+    "M7 names drive it": "said, no number"
+   },
+   "change": "hook_depth 40 -> 55 in the sheet (one cell)",
+   "quote": "I set hook_depth in the spreadsheet from 40 mm to 55 mm ... Opening 45.0 mm",
+   "note": null,
+   "start_file_saved_over": false,
+   "replay": {
+    "run": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replay": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replayable": true,
+    "match": true
+   }
+  },
+  "B2": {
+   "pass": true,
+   "lines": {
+    "C": true,
+    "M1": true,
+    "M2": true,
+    "M3": true,
+    "M4": true,
+    "M5": true,
+    "M6": true,
+    "M7": true,
+    "V": true
+   },
+   "hook_depth": 55.0,
+   "opening_mm": 45.0,
+   "volume_mm3": 17098.5841,
+   "new_aliases": [],
+   "cost_usd": 0.0982,
+   "wall_s": 162,
+   "calls": [
+    "list_documents",
+    "execute_code",
+    "execute_code",
+    "execute_code"
+   ],
+   "trigger_sent": false,
+   "our_filmed_measure": "45.00 mm",
+   "our_filmed_measure_note": null,
+   "claude_own_check": {
+    "M1 one solid, no errors": "said, with a number",
+    "M2 plate 60 x 30": "said, with a number",
+    "M3 walls 5": "said, with a number",
+    "M4 lip 10": "said, with a number",
+    "M5 holes 4 mm, centred, 15/45": "said, with a number",
+    "M6 2 mm lip edge": "said, with a number",
+    "M7 names drive it": "said, no number"
+   },
+   "change": "hook_depth 40 -> 55 in the sheet (one cell)",
+   "quote": "I changed one spreadsheet value: hook_depth went from 40 to 55 mm",
+   "note": null,
+   "start_file_saved_over": false,
+   "replay": {
+    "run": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replay": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replayable": true,
+    "match": true
+   }
+  },
+  "B3": {
+   "pass": true,
+   "lines": {
+    "C": true,
+    "M1": true,
+    "M2": true,
+    "M3": true,
+    "M4": true,
+    "M5": true,
+    "M6": true,
+    "M7": true,
+    "V": true
+   },
+   "hook_depth": 55.0,
+   "opening_mm": 45.0,
+   "volume_mm3": 17098.5841,
+   "new_aliases": [
+    "opening"
+   ],
+   "cost_usd": 0.0928,
+   "wall_s": 160,
+   "calls": [
+    "list_documents",
+    "execute_code",
+    "execute_code"
+   ],
+   "trigger_sent": false,
+   "our_filmed_measure": "45.00 mm",
+   "our_filmed_measure_note": null,
+   "claude_own_check": {
+    "M1 one solid, no errors": "said, with a number",
+    "M2 plate 60 x 30": "said, with a number",
+    "M3 walls 5": "said, with a number",
+    "M4 lip 10": "said, with a number",
+    "M5 holes 4 mm, centred, 15/45": "said, with a number",
+    "M6 2 mm lip edge": "said, with a number",
+    "M7 names drive it": "said, no number"
+   },
+   "change": "a new name 'opening' = 45 mm; hook_depth = 2 * thickness + opening (55)",
+   "quote": "the opening is now its own parameter, opening",
+   "note": null,
+   "start_file_saved_over": false,
+   "replay": {
+    "run": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replay": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replayable": true,
+    "match": true
+   }
+  },
+  "A1": {
+   "pass": true,
+   "lines": {
+    "C": true,
+    "M1": true,
+    "M2": true,
+    "M3": true,
+    "M4": true,
+    "M5": true,
+    "M6": true,
+    "M7": true,
+    "V": true
+   },
+   "hook_depth": 55.0,
+   "opening_mm": 45.0,
+   "volume_mm3": 17098.5841,
+   "new_aliases": [],
+   "cost_usd": 0.1291,
+   "wall_s": 143,
+   "calls": [
+    "list_documents",
+    "get_objects",
+    "execute_code"
+   ],
+   "trigger_sent": false,
+   "our_filmed_measure": "45.00 mm",
+   "our_filmed_measure_note": null,
+   "claude_own_check": {
+    "M1 one solid, no errors": "said, with a number",
+    "M2 plate 60 x 30": "said, with a number",
+    "M3 walls 5": "said, with a number",
+    "M4 lip 10": "said, with a number",
+    "M5 holes 4 mm, centred, 15/45": "said, with a number",
+    "M6 2 mm lip edge": "said, no number",
+    "M7 names drive it": "not checked"
+   },
+   "change": "hook_depth 40 -> 55 in the sheet (one cell)",
+   "quote": "The two 4 mm mounting holes are still in place and still centered ... the lip fillet kept their references",
+   "note": "measured the opening, the box (55 x 30 x 60) and the volume; said \"the 5 mm thickness, 10 mm lip height, 60 mm plate height and 30 mm width are unchanged\" (the sheet values, coded \"with a number\"); the 4 mm holes \"still in place and still centered\" (heights 15/45 not mentioned); the fillet \"kept its references\" (no radius); nothing about the names still driving the sizes; offered to add an opening name.",
+   "start_file_saved_over": false,
+   "replay": {
+    "run": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replay": {
+     "pass": true,
+     "lines": {
+      "C": true,
+      "M1": true,
+      "M2": true,
+      "M3": true,
+      "M4": true,
+      "M5": true,
+      "M6": true,
+      "M7": true,
+      "V": true
+     },
+     "volume_mm3": 17098.5841
+    },
+    "replayable": true,
+    "match": true
+   }
+  }
+ },
+ "summary": {
+  "with_list_passed": "3 of 3",
+  "without_list_A1": "passed",
+  "lines_said_with_a_number": {
+   "B1": 6,
+   "B2": 6,
+   "B3": 6,
+   "A1": 5
+  },
+  "replays_matched": 4,
+  "claude_cost_usd": 0.433
+ }
+}

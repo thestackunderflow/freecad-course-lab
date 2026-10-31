@@ -1,0 +1,34 @@
+{
+ "run": {
+  "pass": true,
+  "lines": {
+   "C": true,
+   "M1": true,
+   "M2": true,
+   "M3": true,
+   "M4": true,
+   "M5": true,
+   "M6": true,
+   "M7": true,
+   "V": true
+  },
+  "volume_mm3": 17098.5841
+ },
+ "replay": {
+  "pass": true,
+  "lines": {
+   "C": true,
+   "M1": true,
+   "M2": true,
+   "M3": true,
+   "M4": true,
+   "M5": true,
+   "M6": true,
+   "M7": true,
+   "V": true
+  },
+  "volume_mm3": 17098.5841
+ },
+ "replayable": true,
+ "match": true
+}

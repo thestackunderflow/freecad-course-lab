@@ -1,0 +1,104 @@
+{"t": 0.029, "event": "recording started: lesson 5's hook in FreeCAD 1.1.4"}
+{"t": 3.327, "event": "the 3D view: an empty spot", "x": 642, "y": 1193, "button": 1}
+{"t": 4.437, "event": "key 0: isometric", "keys": "0"}
+{"t": 5.057, "event": "key V", "keys": "v"}
+{"t": 5.679, "event": "key F (fit all)", "keys": "f"}
+{"t": 9.769, "event": "Tools menu", "x": 304, "y": 36, "button": 1}
+{"t": 12.837, "event": "Tools: Measure", "x": 364, "y": 122, "button": 1}
+{"t": 17.152, "event": "Measurement: the Mode list", "x": 2606, "y": 705, "button": 1}
+{"t": 18.663, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 19.285, "event": "Mode list: down", "keys": "Down"}
+{"t": 20.56, "event": "Mode: Distance", "keys": "Return"}
+{"t": 22.965, "event": "hover: the back plate's inside face"}
+{"t": 24.43, "event": "click: the back plate's inside face", "x": 1459, "y": 767, "button": 1}
+{"t": 26.99, "event": "hover: the lip's inside top edge"}
+{"t": 27.816, "event": "key: hold Ctrl"}
+{"t": 28.471, "event": "Ctrl + click: the lip's inside top edge", "x": 1830, "y": 1123, "button": 1}
+{"t": 30.147, "event": "Result: 30.00 mm"}
+{"t": 36.857, "event": "Measurement: Close", "x": 2530, "y": 1314, "button": 1}
+{"t": 40.05, "event": "tree: double-click Spreadsheet"}
+{"t": 43.952, "event": "Windows menu", "x": 702, "y": 36, "button": 1}
+{"t": 46.321, "event": "Windows: Tile", "x": 707, "y": 165, "button": 1}
+{"t": 50.338, "event": "hover: B1 hook_depth 40 mm"}
+{"t": 55.038, "event": "the sheet: an empty cell (the window takes the keys)", "x": 1218, "y": 1108, "button": 1}
+{"t": 57.554, "event": "cell B1 (hook_depth)", "x": 858, "y": 460, "button": 1}
+{"t": 59.064, "event": "B1: typed 45 mm", "text": "45 mm"}
+{"t": 60.074, "event": "B1: Enter (45 mm)", "keys": "Return"}
+{"t": 65.105, "event": "the 3D view: an empty spot", "x": 1848, "y": 1188, "button": 1}
+{"t": 66.215, "event": "key 0: isometric", "keys": "0"}
+{"t": 66.838, "event": "key V", "keys": "v"}
+{"t": 67.459, "event": "key F (fit all)", "keys": "f"}
+{"t": 71.17, "event": "Tools menu", "x": 304, "y": 36, "button": 1}
+{"t": 74.249, "event": "Tools: Measure", "x": 364, "y": 122, "button": 1}
+{"t": 78.528, "event": "Measurement: the Mode list", "x": 2606, "y": 705, "button": 1}
+{"t": 80.038, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 80.661, "event": "Mode list: down", "keys": "Down"}
+{"t": 81.938, "event": "Mode: Distance", "keys": "Return"}
+{"t": 84.34, "event": "hover: the back plate's inside face"}
+{"t": 85.798, "event": "click: the back plate's inside face", "x": 2056, "y": 780, "button": 1}
+{"t": 88.341, "event": "hover: the lip's inside top edge"}
+{"t": 89.162, "event": "key: hold Ctrl"}
+{"t": 89.817, "event": "Ctrl + click: the lip's inside top edge", "x": 2441, "y": 1133, "button": 1}
+{"t": 91.469, "event": "Result: 35.00 mm"}
+{"t": 97.861, "event": "Measurement: Close", "x": 2530, "y": 1312, "button": 1}
+{"t": 99.77, "event": "lab query: save and read depth45"}
+{"t": 101.71, "event": "the sheet: an empty cell (the window takes the keys)", "x": 1218, "y": 1108, "button": 1}
+{"t": 104.177, "event": "cell B1 (hook_depth)", "x": 858, "y": 460, "button": 1}
+{"t": 105.687, "event": "B1: typed 55 mm", "text": "55 mm"}
+{"t": 106.708, "event": "B1: Enter (55 mm)", "keys": "Return"}
+{"t": 111.762, "event": "the 3D view: an empty spot", "x": 1848, "y": 1188, "button": 1}
+{"t": 112.872, "event": "key 0: isometric", "keys": "0"}
+{"t": 113.492, "event": "key V", "keys": "v"}
+{"t": 114.117, "event": "key F (fit all)", "keys": "f"}
+{"t": 117.839, "event": "Tools menu", "x": 304, "y": 36, "button": 1}
+{"t": 120.934, "event": "Tools: Measure", "x": 364, "y": 122, "button": 1}
+{"t": 125.22, "event": "Measurement: the Mode list", "x": 2606, "y": 705, "button": 1}
+{"t": 126.732, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 127.353, "event": "Mode list: down", "keys": "Down"}
+{"t": 128.63, "event": "Mode: Distance", "keys": "Return"}
+{"t": 131.016, "event": "hover: the back plate's inside face"}
+{"t": 132.472, "event": "click: the back plate's inside face", "x": 2029, "y": 759, "button": 1}
+{"t": 135.014, "event": "hover: the lip's inside top edge"}
+{"t": 135.834, "event": "key: hold Ctrl"}
+{"t": 136.486, "event": "Ctrl + click: the lip's inside top edge", "x": 2472, "y": 1137, "button": 1}
+{"t": 138.164, "event": "Result: 45.00 mm"}
+{"t": 144.558, "event": "Measurement: Close", "x": 2530, "y": 1312, "button": 1}
+{"t": 146.469, "event": "lab query: save and read depth55"}
+{"t": 148.504, "event": "Tools menu", "x": 304, "y": 36, "button": 1}
+{"t": 151.566, "event": "Tools: Measure", "x": 364, "y": 122, "button": 1}
+{"t": 155.844, "event": "Measurement: the Mode list", "x": 2577, "y": 705, "button": 1}
+{"t": 157.353, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 157.973, "event": "Mode list: down", "keys": "Down"}
+{"t": 158.744, "event": "Mode list: down", "keys": "Down"}
+{"t": 159.516, "event": "Mode list: down", "keys": "Down"}
+{"t": 160.289, "event": "Mode list: down", "keys": "Down"}
+{"t": 161.062, "event": "Mode list: down", "keys": "Down"}
+{"t": 161.837, "event": "Mode list: down", "keys": "Down"}
+{"t": 162.61, "event": "Mode list: down", "keys": "Down"}
+{"t": 163.883, "event": "Mode: Radius", "keys": "Return"}
+{"t": 166.429, "event": "hover: hole"}
+{"t": 168.101, "event": "click: hole", "x": 2081, "y": 570, "button": 1}
+{"t": 169.738, "event": "Result: 2.00 mm"}
+{"t": 176.5, "event": "Measurement: Close", "x": 2530, "y": 1312, "button": 1}
+{"t": 179.986, "event": "Tools menu", "x": 304, "y": 36, "button": 1}
+{"t": 183.049, "event": "Tools: Measure", "x": 364, "y": 122, "button": 1}
+{"t": 187.343, "event": "Measurement: the Mode list", "x": 2577, "y": 705, "button": 1}
+{"t": 188.855, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 189.475, "event": "Mode list: down", "keys": "Down"}
+{"t": 190.249, "event": "Mode list: down", "keys": "Down"}
+{"t": 191.021, "event": "Mode list: down", "keys": "Down"}
+{"t": 191.792, "event": "Mode list: down", "keys": "Down"}
+{"t": 192.564, "event": "Mode list: down", "keys": "Down"}
+{"t": 193.335, "event": "Mode list: down", "keys": "Down"}
+{"t": 194.107, "event": "Mode list: down", "keys": "Down"}
+{"t": 195.383, "event": "Mode: Radius", "keys": "Return"}
+{"t": 197.934, "event": "hover: round"}
+{"t": 199.589, "event": "click: round", "x": 2383, "y": 1237, "button": 1}
+{"t": 201.217, "event": "Result: 2.00 mm"}
+{"t": 207.607, "event": "Measurement: Close", "x": 2530, "y": 1312, "button": 1}
+{"t": 211.073, "event": "tree: Fillet", "x": 178, "y": 502, "button": 1}
+{"t": 213.339, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 214.046, "event": "console: typed the volume line (hook_depth 55)", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 216.23, "event": "console: Enter (the volume line (hook_depth 55))", "keys": "Return"}
+{"t": 221.661, "event": "hover: B1 hook_depth 55 mm"}
+{"t": 225.194, "event": "recording stopped"}

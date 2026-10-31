@@ -1,0 +1,19 @@
+claude take done (B2)
+{
+ "pass": true,
+ "lines": {
+  "C": true,
+  "M1": true,
+  "M2": true,
+  "M3": true,
+  "M4": true,
+  "M5": true,
+  "M6": true,
+  "M7": true,
+  "V": true
+ },
+ "scored_document": "hook_lesson5",
+ "hook_depth": 55.0,
+ "opening_mm": 45.0,
+ "volume_mm3": 17098.5841
+}

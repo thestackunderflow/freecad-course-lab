@@ -1,0 +1,36 @@
+  ────────────────────────────────────────
+  Requirement: Both screw holes hole_d (4 mm)
+  Result: Both holes have radius 2.0, so they
+  are 4 mm in diameter.
+  ────────────────────────────────────────
+  Requirement: Holes centred across the width
+  Result: Both are at y = −15, the middle of
+  the 30 mm width.
+  ────────────────────────────────────────
+  Requirement: Holes 15 and 45 mm up
+  Result: The hole centres are at z = 15 and z
+
+  = 45.
+  ────────────────────────────────────────
+  Requirement: 2 mm rounded edge on the lip
+  Result: The fillet has a 2.0 mm radius and
+  is
+  still on the lip's outer top corner. It is
+  centred at (53, 8).
+  ────────────────────────────────────────
+  Requirement: Sizes driven by the spreadsheet
+
+  names
+  Result: The sketch constraints, the pad
+  length and the hole diameter are all still
+  expressions on the spreadsheet cells.
+
+  One thing to note: the opening is now its
+  own parameter, opening. Change that cell to
+  resize the gap, and hook_depth will follow.
+
+✻ Baked for 23s · done 6:06 AM
+
+──────────────────────────────────────────────
+  Showing detailed transcript · ctrl+o…verbose
+

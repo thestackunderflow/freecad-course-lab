@@ -1,0 +1,36 @@
+  │ (x)           │           │           │
+  ├───────────────┼───────────┼───────────┤
+  │ Overall size  │ 40 × 30 × │ 55 × 30 × │
+  │ (X × Y × Z)   │  60 mm    │  60 mm    │
+  ├───────────────┼───────────┼───────────┤
+  │ Volume        │ 14,848.6  │ 17,098.6  │
+  │               │ mm³       │ mm³       │
+  └───────────────┴───────────┴───────────┘
+
+  Checks:
+  - No object in the document is in an error
+    or invalid state.
+  - The body is one valid solid.
+  - The sketch is still fully constrained.
+  - The two 4 mm mounting holes are still in
+    place and still centered on the plate. The
+    hole sketch and the lip fillet kept their
+    references (Face8 and Edge10).
+  - The front view shows the lip with its
+    fillet and the wider gap.
+
+  The 5 mm thickness, 10 mm lip height, 60 mm
+  plate height and 30 mm width are unchanged.
+  Because hook_depth is tied to the opening,
+  changing the plate or lip thickness later
+  will change the gap again. If you'd like, I
+  can add an opening cell to the spreadsheet
+  and derive hook_depth from it, so 45 mm
+  stays fixed.
+
+✻ Churned for 22s · done 6:09 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

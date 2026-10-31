@@ -1,0 +1,124 @@
+{
+ "pass": true,
+ "lines": {
+  "C": true,
+  "M1": true,
+  "M2": true,
+  "M3": true,
+  "M4": true,
+  "M5": true,
+  "M6": true,
+  "M7": true,
+  "V": true
+ },
+ "why": {
+  "C": "opening 45.0",
+  "M1": "solids 1 valid True errors [] stl {'triangles': 1172, 'closed': True, 'components': 1, 'non_manifolds': False, 'volume_mm3': 17098.584}",
+  "M2": "box [55.0, 30.0, 60.0]",
+  "M3/M4": {
+   "plate_in": true,
+   "plate_out": false,
+   "base_in": true,
+   "base_out": false,
+   "lip_in": true,
+   "lip_out": false,
+   "lip_top_in": true,
+   "lip_top_out": false
+  },
+  "M5": {
+   "misses": [],
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "heights": [
+    15.0,
+    45.0
+   ],
+   "sides": [
+    [
+     15.0,
+     15.0
+    ],
+    [
+     15.0,
+     15.0
+    ]
+   ]
+  },
+  "M7": {
+   "names_ok": true,
+   "hook_depth": 55.0,
+   "depth_ok": true,
+   "lost_bindings": [],
+   "sheet_expressions": 12,
+   "drive_ok": true,
+   "drive_depth_ok": true,
+   "drive_box": [
+    55.0,
+    20.0,
+    60.0
+   ],
+   "drive_sides": [
+    [
+     10.0,
+     10.0
+    ],
+    [
+     10.0,
+     10.0
+    ]
+   ]
+  },
+  "V": 17098.5841
+ },
+ "hook_depth": 55.0,
+ "new_aliases": [],
+ "part": "Body",
+ "document": "after-hook_lesson5.FCStd",
+ "moved": false,
+ "turned": false,
+ "volume_mm3": 17098.5841,
+ "opening_mm": 45.0,
+ "scored_document": "hook_lesson5",
+ "new_document": false,
+ "documents": [
+  "hook_lesson5"
+ ],
+ "replies": [
+  {
+   "user": "In FreeCAD, the open document is my wall hook. Make its opening, the gap between the back plate and the front lip, 45 mm wide so a backpack strap fits. These must stay true: one solid with no errors the back plate 60 mm tall and 30 mm wide every wall 5 mm thick the lip 10 mm tall both screw holes hole_d (4 mm), centred across the width, 15 and 45 mm up from the bottom the 2 mm rounded edge on the lip and the sizes still driven by the names in the spreadsheet. After the change, check each one and show me the numbers.",
+   "text": "The opening is now 45 mm, and every constraint you listed still holds. I changed one spreadsheet value: `hook_depth` went from 40 to 55 mm, and the model rebuilt from it. I measured the numbers below on the rebuilt solid.\n\n| Requirement | Target | Measured |\n|---|---|---|\n| Opening (plate inner face to lip inner face) | 45 mm | 45 mm (x = 5 to 50) |\n| Solid count and errors | 1 solid, none | 1 solid, valid. Sketch, Pad, Sketch001, Hole and Fillet are all up to date. |\n| Back plate height | 60 mm | 60 mm |\n| Back plate width | 30 mm | 30 mm (y = \u221230 to 0) |\n| Wall thickness | 5 mm | Plate 5 mm, base 5 mm, lip 5 mm |\n| Lip height | 10 mm | 10 mm |\n| Screw holes | 4 mm diameter, centred across the width, 15 and 45 mm up | Two holes, 4 mm diameter, both at y = \u221215 (centred across the 30 mm width), at z = 15 and z = 45 |\n| Rounded edge on the lip | 2 mm | 2 mm radius, still on the lip's outer top edge |\n| Sizes driven by the spreadsheet | Names in the spreadsheet | The sketch constraints, the pad length (`width`) and the hole diameter (`hole_d`) are all still tied to the spreadsheet |\n\nThe overall depth is 55 mm, which is the 45 mm opening plus two 5 mm walls. The solid's volume is now about 17,099 mm\u00b3. To change the opening later, edit `hook_depth` and set it to the opening plus 10 mm.\n"
+  }
+ ],
+ "calls": [
+  {
+   "tool": "list_documents",
+   "arguments": {}
+  },
+  {
+   "tool": "execute_code",
+   "arguments": {
+    "code": "doc=App.getDocument(\"hook_lesson5\")\nfor o in doc.Objects:\n    print(o.Name,o.Label,o.TypeId)\n    if o.TypeId==\"Spreadsheet::Sheet\":\n        for c in sorted(o.getUsedCells()):\n            print(\"  \",c,o.getContents(c),o.getAlias(c))\n    if hasattr(o,\"ExpressionEngine\") and o.ExpressionEngine: print(\"  expr\",o.ExpressionEngine)\n    if o.TypeId==\"Sketcher::SketchObject\":\n        print(\"  geo\",[str(g) for g in o.Geometry])\n        for i,c in enumerate(o.Constraints): print(\"  c\",i,c)\n        print(\"  placement\",o.Placement,o.Support if hasattr(o,'Support') else '')\n    for p in (\"Length\",\"Type\",\"Reversed\",\"Midplane\",\"Radius\",\"Size\",\"Profile\",\"Base\"):\n        if hasattr(o,p): print(\"  \",p,getattr(o,p))\n",
+    "include_screenshot": false
+   }
+  },
+  {
+   "tool": "execute_code",
+   "arguments": {
+    "code": "doc=App.getDocument(\"hook_lesson5\")\ns=doc.Spreadsheet\ns.set(\"B1\",\"=55 mm\"); doc.recompute()\nsk=doc.Sketch\nfor i in (17,18,19,20,21,22): c=sk.Constraints[i]; print(i,c.Type,c.Value)\nprint([str(g) for g in sk.Geometry])\nfor o in doc.Objects:\n    if o.TypeId.startswith((\"PartDesign::\",\"Sketcher\")) and o.TypeId!=\"PartDesign::Body\": print(o.Name,o.State,o.isValid())\nb=doc.Body; sh=b.Shape\nprint(\"solids\",len(sh.Solids),\"valid\",sh.isValid(),\"vol\",sh.Volume,\"tip\",b.Tip.Name)\nbb=sh.BoundBox; print(\"bbox\",bb)\nprint(\"fillet base edge\",doc.Fillet.Base)\nfor f in doc.Fillet.Shape.Faces:\n    if f.Surface.__class__.__name__==\"Cylinder\": print(\"cyl r\",f.Surface.Radius,f.Surface.Center,f.Surface.Axis)\n",
+    "include_screenshot": false
+   }
+  },
+  {
+   "tool": "execute_code",
+   "arguments": {
+    "code": "import Part\ndoc=App.getDocument(\"hook_lesson5\"); sh=doc.Body.Shape\ndef xs(z,y=-15):\n    # solid extent along X at height z, midwidth y=-15 (away from holes unless z=15/45)\n    l=Part.makeLine(App.Vector(-1,y,z),App.Vector(56,y,z)).common(sh)\n    return sorted((round(e.BoundBox.XMin,3),round(e.BoundBox.XMax,3)) for e in l.Edges)\nprint(\"z=7.5 (lip):\",xs(7.5,-10)); print(\"z=30:\",xs(30,-10)); print(\"z=2.5:\",xs(2.5,-10))\nprint(\"z=7.5 near edge y=-1:\",xs(7.5,-1))\nl=Part.makeLine(App.Vector(1,-10,-1),App.Vector(1,-10,61)).common(sh); print(\"plate z extent\",l.BoundBox.ZMin,l.BoundBox.ZMax)\nprint(\"width y\",sh.BoundBox.YMin,sh.BoundBox.YMax)\nfor f in sh.Faces:\n    if f.Surface.__class__.__name__==\"Cylinder\" and abs(f.Surface.Axis.x)>0.9:\n        print(\"hole d\",2*f.Surface.Radius,\"y\",f.Surface.Center.y,\"z\",f.Surface.Center.z, \"through\", round(f.BoundBox.XLength,3))\ns=doc.Spreadsheet; print({a:s.get(a) for a in (\"hook_depth\",\"thickness\",\"lip_height\",\"plate_height\",\"width\",\"hole_d\",\"hole_spacing\")})\nprint(doc.Pad.ExpressionEngine,doc.Hole.ExpressionEngine)\n",
+    "include_screenshot": false
+   }
+  }
+ ],
+ "start.md5": "4d0c19bf292910e43e5d0e071704ca49",
+ "start-after.md5": "4d0c19bf292910e43e5d0e071704ca49",
+ "start_file_saved_over": false
+}

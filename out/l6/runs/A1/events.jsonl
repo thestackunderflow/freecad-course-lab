@@ -1,0 +1,32 @@
+{"t": 0.065, "event": "recording started: Claude Code (left), FreeCAD with lesson 5's hook (right)"}
+{"t": 2.184, "event": "turn 1: typing", "text": "In FreeCAD, the open document is my wall hook. Make its opening, the gap between the back plate and the front lip, 45 mm wide so a backpack strap fits. After the change, check it and show me the numbers."}
+{"t": 12.708, "event": "turn 1: Enter"}
+{"t": 17.341, "event": "tool call: list_documents", "seq": 18}
+{"t": 17.356, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 19.362, "event": "tool call: get_objects", "seq": 20}
+{"t": 19.406, "event": "tool reply: get_objects", "seq": 21, "isError": false}
+{"t": 30.044, "event": "tool call: execute_code", "seq": 22}
+{"t": 30.938, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 35.597, "event": "turn 1: end-of-turn line seen"}
+{"t": 37.599, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 42.779, "event": "lab query: save every open document, hash the start file"}
+{"t": 43.131, "event": "our check, no AI: Tools > Measure on the opening"}
+{"t": 44.499, "event": "the 3D view: an empty spot", "x": 1684, "y": 1594, "button": 1}
+{"t": 45.62, "event": "key 0: isometric", "keys": "0"}
+{"t": 46.242, "event": "key V", "keys": "v"}
+{"t": 46.87, "event": "key F (fit all)", "keys": "f"}
+{"t": 50.736, "event": "Tools menu", "x": 1402, "y": 33, "button": 1}
+{"t": 53.854, "event": "Tools: Measure", "x": 1462, "y": 119, "button": 1}
+{"t": 58.14, "event": "Measurement: the Mode list", "x": 2650, "y": 591, "button": 1}
+{"t": 59.66, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 60.29, "event": "Mode list: down", "keys": "Down"}
+{"t": 61.569, "event": "Mode: Distance", "keys": "Return"}
+{"t": 64.743, "event": "hover: the back plate's inside face"}
+{"t": 66.206, "event": "click: the back plate's inside face", "x": 1890, "y": 882, "button": 1}
+{"t": 88.763, "event": "aim: lipedge found at +-40 +-40"}
+{"t": 88.769, "event": "hover: the lip's inside top edge"}
+{"t": 89.607, "event": "key: hold Ctrl"}
+{"t": 90.297, "event": "Ctrl + click: the lip's inside top edge", "x": 2418, "y": 1328, "button": 1}
+{"t": 91.964, "event": "Result: 45.00 mm"}
+{"t": 98.501, "event": "Measurement: Close", "x": 2587, "y": 1695, "button": 1}
+{"t": 101.423, "event": "recording stopped"}

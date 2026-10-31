@@ -1,0 +1,20 @@
+{"t": 0.058, "event": "recording started: run B1's saved hook, opened again"}
+{"t": 2.838, "event": "the 3D view: an empty spot", "x": 1684, "y": 1594, "button": 1}
+{"t": 3.948, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.57, "event": "key V", "keys": "v"}
+{"t": 5.19, "event": "key F (fit all)", "keys": "f"}
+{"t": 8.864, "event": "Tools menu", "x": 1402, "y": 33, "button": 1}
+{"t": 11.925, "event": "Tools: Measure", "x": 1462, "y": 119, "button": 1}
+{"t": 16.4, "event": "Measurement: the Mode list", "x": 2650, "y": 591, "button": 1}
+{"t": 17.92, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 18.54, "event": "Mode list: down", "keys": "Down"}
+{"t": 19.814, "event": "Mode: Distance", "keys": "Return"}
+{"t": 22.817, "event": "hover: the back plate's inside face"}
+{"t": 24.27, "event": "click: the back plate's inside face", "x": 1890, "y": 882, "button": 1}
+{"t": 44.477, "event": "aim: lipedge found at +-40 +-40"}
+{"t": 44.48, "event": "hover: the lip's inside top edge"}
+{"t": 45.309, "event": "key: hold Ctrl"}
+{"t": 45.965, "event": "Ctrl + click: the lip's inside top edge", "x": 2418, "y": 1328, "button": 1}
+{"t": 47.609, "event": "Result: 45.00 mm"}
+{"t": 54.095, "event": "Measurement: Close", "x": 2587, "y": 1695, "button": 1}
+{"t": 56.004, "event": "recording stopped"}

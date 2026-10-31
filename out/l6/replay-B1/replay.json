@@ -1,0 +1,36 @@
+{
+ "calls": 4,
+ "names": [
+  "list_documents",
+  "execute_code",
+  "execute_code",
+  "execute_code"
+ ],
+ "errors": 0,
+ "rows": [
+  {
+   "logged_seq": 18,
+   "name": "list_documents",
+   "isError": false,
+   "text": "[\n  \"hook_lesson5\"\n]"
+  },
+  {
+   "logged_seq": 20,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: Body PartDesign::Body Body\n  exprs: []\n  vol 14848.584073464102 BoundBox (0, -30, 0, 40, 1.3e-14, 60)\nOrigin App::Origin Origin\n  exprs: []\nX_Axis App::Line X-axis\n  exprs: []\n  vol 0.0 BoundBox (-1e+100, 0, 0, 1e+100, 0, 0)\nY_Axis App::Line Y-axis\n  exprs: []\n  vol 0.0 BoundBox (0, -1e+100, 0, 0, 1e+100, 0)\nZ_Axis App::Line Z-axis\n  exprs: []\n  vol 0.0 BoundBox (0, 0, -1e+100, 0, 0, 1e+100)\nXY_Plane App::Plane XY-plane\n  exprs: []\n  vol 0.0 BoundBox (-1e+100, -1e+100, 0, 1e+100, 1e+100, 0)\nXZ_Plane App::Plane XZ-plane\n  exprs: []\n  vol 0.0 BoundBox (-1e+100, 0, -1e+100, 1e+100, 0, 1e+100)\nYZ_Plane App::Plane YZ-plane\n  exprs: []\n  vol 0.0 BoundBox (0, -1e+100, -1e+100, 0, 1e+100, 1e+100)\nOrigin001 App::Point Origin001\n  exprs: []\n  vol 0.0 BoundBox (0, 0, 0, 0, 0, 0)\nSketch Sketcher::SketchObject Sketch\n  exprs: [('Constraints[17]', 'Spreadsheet.hook_depth'), ('Constraints[18]', 'Spreadsheet.lip_height'), ('Constraints[19]', 'Spreadsheet.thickness'), ('Constraints[20]', 'Spreadsheet.lip_height - Spreadsheet.thickness'), ('Constraints[21]', 'Spreadsheet.plate_height'), ('Constraints[22]', 'Spreadsheet.thickness')]\n  vol 0.0 BoundBox (0, 0, 0, 40, 1.33227e-14, 60)\nPad PartDesign::Pad Pad\n  exprs: [('Length', 'Spreadsheet.width')]\n  vol 15000.0 BoundBox (0, -30, 0, 40, 1.332e-14, 60)\nSpreadsheet Spreadsheet::Sheet Spreadsheet\n   A1 'hook_depth hook_depth\n   A2 'thickness thickness\n   A3 'lip_height lip_height\n   A4 'plate_height plate_height\n   A5 'width width\n   A6 'hole_d hole_d\n   A7 'hole_spacing hole_spacing\n   B1 =40 mm 40.0 mm\n   B2 =5 mm 5.0 mm\n   B3 =10 mm 10.0 mm\n   B4 =60 mm 60.0 mm\n   B5 =30 mm 30.0 mm\n   B6 =4 mm 4.0 mm\n   B7 =30 mm 30.0 mm\n alias: [('B1', 'hook_depth'), ('B2', 'thickness'), ('B3', 'lip_height'), ('B4', 'plate_height'), ('B5', 'width'), ('B6', 'hole_d'), ('B7', 'hole_spacing')]\n  exprs: []\nSketch001 Sketcher::SketchObject Sketch001\n  exprs: [('Constraints[2]', 'Spreadsheet.width / 2'), ('Constraints[3]', '(Spreadsheet.plate_height - Spreadsheet.hole_spacing) / 2'), ('Constraints[4]', 'Spreadsheet.width / 2'), ('Constraints[5]', '(Spreadsheet.plate_height + Spreadsheet.hole_spacing) / 2')]\n  vol 0.0 BoundBox (0, -17, 13, 0, -13, 47)\nHole PartDesign::Hole Hole\n  exprs: [('Diameter', 'Spreadsheet.hole_d')]\n  vol 14874.336293856413 BoundBox (0, -30, 0, 40, 1.332e-14, 60)\nFillet PartDesign::Fillet Fillet\n  exprs: []\n  vol 14848.584073464102 BoundBox (0, -30, 0, 40, 2.20897e-15, 60)\n"
+  },
+  {
+   "logged_seq": 22,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: 0 <Line segment (0,0,0) (40,0,0) >\n1 <Line segment (40,0,0) (40,10,0) >\n2 <Line segment (40,10,0) (35,10,0) >\n3 <Line segment (35,10,0) (35,5,0) >\n4 <Line segment (35,5,0) (5,5,0) >\n5 <Line segment (5,5,0) (5,60,0) >\n6 <Line segment (5,60,0) (0,60,0) >\n7 <Line segment (0,60,0) (0,0,0) >\n0 <Constraint 'Coincident'>\n1 <Constraint 'PointOnObject' (0,-1)>\n2 <Constraint 'Coincident'>\n3 <Constraint 'Vertical' (1)>\n4 <Constraint 'Coincident'>\n5 <Constraint 'Horizontal' (2)>\n6 <Constraint 'Coincident'>\n7 <Constraint 'Vertical' (3)>\n8 <Constraint 'Coincident'>\n9 <Constraint 'Horizontal' (4)>\n10 <Constraint 'Coincident'>\n11 <Constraint 'Vertical' (5)>\n12 <Constraint 'Coincident'>\n13 <Constraint 'Horizontal' (6)>\n14 <Constraint 'Coincident'>\n15 <Constraint 'Coincident'>\n16 <Constraint 'Vertical' (7)>\n17 <Constraint 'DistanceX'>\n18 <Constraint 'DistanceY'>\n19 <Constraint 'DistanceX'>\n20 <Constraint 'DistanceY'>\n21 <Constraint 'DistanceY'>\n22 <Constraint 'DistanceX'>\n(<PartDesign::Hole>, ['Edge10']) 2.0 mm  \n(<Sketcher::SketchObject>, ['']) Angled 151.16295842566728 mm ThroughAll\n"
+  },
+  {
+   "logged_seq": 24,
+   "name": "execute_code",
+   "isError": false,
+   "text": "Code executed successfully: Python code executed successfully.\nOutput: STATE Body ['Expanded', 'Up-to-date']\nSTATE Sketch ['Up-to-date']\nSTATE Pad ['Expanded', 'Up-to-date']\nSTATE Spreadsheet ['Up-to-date']\nSTATE Sketch001 ['Up-to-date']\nSTATE Hole ['Up-to-date']\nSTATE Fillet ['Up-to-date']\nvalid True solids 1 shells 1 tip Fillet\nbbox BoundBox (0, -30, 0, 55, 1.33227e-14, 60)\nsketch pts [(0.0, 0.0), (55.0, 0.0), (55.0, 10.0), (50.0, 10.0), (50.0, 5.0), (5.0, 5.0), (5.0, 60.0), (0.0, 60.0)]\nsketch solve/DoF 0 True\nopening 45.0\nplate thick 5.0 base 10.0 lip wall 5.0\nplate h 60.00000000000001 width 30.000000000000014 lip h 10.0\nhole d 4.0 axis Vector (0.0, -1.0, 2.220446049250313e-16) centre Vector (53.0, 1.7763568394002505e-15, 8.0) fillet?\nhole d 4.0 axis Vector (1.0, 0.0, 0.0) centre Vector (0.0, -15.0, 45.0) fillet?\nhole d 4.0 axis Vector (1.0, 0.0, 0.0) centre Vector (0.0, -15.0, 15.0) fillet?\nfillet r 2.0 at Vector (54.27323954473516, -15.000000000000002, 9.273239544735166)\nfillet r 2.0 at Vector (2.5, -15.0, 45.0)\nfillet r 2.0 at Vector (2.5, -15.0, 15.0)\nfillet obj ['Edge10'] 2.0 mm\nhole sk Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(-90,0,90)] [(15.0, 15.0, 2.0), (15.0, 45.0, 2.0)]\nexprs ok [('Sketch', [('Constraints[17]', 'Spreadsheet.hook_depth'), ('Constraints[18]', 'Spreadsheet.lip_height'), ('Constraints[19]', 'Spreadsheet.thickness'), ('Constraints[20]', 'Spreadsheet.lip_height - Spreadsheet.thickness'), ('Constraints[21]', 'Spreadsheet.plate_height'), ('Constraints[22]', 'Spreadsheet.thickness')]), ('Pad', [('Length', 'Spreadsheet.width')]), ('Hole', [('Diameter', 'Spreadsheet.hole_d')])]\nvol 17098.584073464102\n"
+  }
+ ]
+}

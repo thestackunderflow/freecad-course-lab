@@ -1,0 +1,36 @@
+  = 15 and 45 mm
+  Result: ✅
+  ────────────────────────────────────────
+  Requirement: 2 mm rounded edge on the lip
+  Measured after the change: cylindrical face
+  r
+  = 2.0 mm, centre at z = 8, so it is the
+  lip's top outer edge
+  Result: ✅
+  ────────────────────────────────────────
+  Requirement: Spreadsheet-driven
+  Measured after the change: the sketch
+  constraints, the Pad length, and the Hole
+  diameter still reference the Spreadsheet.*
+  aliases
+  Result: ✅
+
+  The overall depth is now 55 mm, up from 40.
+  The volume is 17,098.6 mm³, up from 14,848.6
+  mm³. The extra 2,250 mm³ is the longer
+  base, 15 mm × 5 mm × 30 mm.
+
+  The fillet is still attached to the lip
+  edge. FreeCAD sometimes moves a fillet to
+  the wrong edge after a change like this, and
+  it didn't here.
+
+  I haven't saved the document. Save it in
+  FreeCAD if you want to keep the change.
+
+✻ Baked for 27s · done 5:58 AM
+                          ◐ medium · /effort
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

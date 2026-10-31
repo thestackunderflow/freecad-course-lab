@@ -7,6 +7,8 @@ clicks them the way a person would.
     python3 -m lab.l6pick hole           "x y": the top of the upper hole's circle on the plate's inner face
     python3 -m lab.l6pick round          "x y": the middle of the lip's round edge's arc on the front side face
     python3 -m lab.l6pick combo          "x y": the Measurement panel's Mode list
+    python3 -m lab.l6pick hit WHAT       "yes ..." when the thing under the cursor (preselected) is WHAT (plate, lipedge,
+                                         hole, round), worked out from the part's live shape; else "no ..."
     python3 -m lab.l6pick sel            the current selection (object, sub-elements)
     python3 -m lab.l6pick close          "x y": the Measurement panel's Close button
     python3 -m lab.l6pick result         the text in the Measurement panel's Result field ("30.00 mm"), or "none"
@@ -70,6 +72,27 @@ if labs:
 print(out)"""
 
 
+HIT = PART + """import Part
+pre = FreeCADGui.Selection.getPreselection()
+ok = 'no'
+names = list(pre.SubElementNames) if pre and pre.Object else []
+sh = bs[-1].Shape
+for n in names:
+    try:
+        sub = sh.getElement(n.split('.')[-1])
+    except Exception:
+        continue
+    c = sub.CenterOfMass
+    want = {what!r}
+    if want == 'plate' and n.split('.')[-1].startswith('Face') and abs(c.x - (x0 + 5)) < 0.01 and sub.Area > 200:
+        ok = 'yes'
+    if want == 'lipedge' and n.split('.')[-1].startswith('Edge') and abs(c.x - (x1 - 5)) < 0.01 and abs(c.z - (z0 + 10)) < 0.01:
+        ok = 'yes'
+    if want in ('hole', 'round') and n.split('.')[-1].startswith('Edge') and hasattr(sub.Curve, 'Radius') and abs(sub.Curve.Radius - 2) < 0.01:
+        ok = 'yes' if (want == 'hole') == (abs(c.x - (x0 + 5)) < 0.01) else 'no'
+print(ok + ' ' + ','.join(names))"""
+
+
 def pts_code(name):
     vp = fcrpc.VP.split('out = []')[0]
     return (PART + 'PTS = ' + POINTS[name] + '\n' + vp.split('import FreeCAD, FreeCADGui', 1)[1] +
@@ -80,6 +103,8 @@ def pts_code(name):
 def main(a):
     if a[0] in POINTS:
         return fcrpc.run('import FreeCAD, FreeCADGui\n' + pts_code(a[0]))
+    if a[0] == 'hit':
+        return fcrpc.run(HIT.format(what=a[1]))
     if a[0] == 'sel':
         return fcrpc.run('import FreeCADGui' + chr(10) + 'print([(x.ObjectName, x.SubElementNames) for x in FreeCADGui.Selection.getSelectionEx()])')
     if a[0] == 'close':

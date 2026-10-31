@@ -1,0 +1,1 @@
+In FreeCAD, the open document is my wall hook. Make its opening, the gap between the back plate and the front lip, 45 mm wide so a backpack strap fits. After the change, check it and show me the numbers.

@@ -18,8 +18,36 @@ fc_start "$O/app.log" 1.5; sleep 8
 cd /lab
 cp /lab/out/l4/hand/width30.FCStd ~/hook-lesson5.FCStd
 python3 -m lab.opendoc /home/maker/hook-lesson5.FCStd > "$O/opendoc.txt" 2>&1
+python3 - > "$O/setup-rpc.txt" 2>&1 <<'PY'
+import sys; sys.path.insert(0, '/lab')
+from lab import fcrpc
+print(fcrpc.run("""import FreeCADGui
+from PySide import QtWidgets
+FreeCADGui.activateWorkbench('PartDesignWorkbench')
+for w in FreeCADGui.getMainWindow().findChild(QtWidgets.QMdiArea).subWindowList():
+    if w.windowTitle().startswith('Start'):
+        w.close()
+FreeCADGui.activeDocument().activeView().viewIsometric()
+FreeCADGui.SendMsgToActiveView('ViewFit')
+print(1)"""))
+PY
+xdotool mousemove 2700 1700
+sl_record "$O"
+sl_mark "recording started: a fresh FreeCAD, lesson 5's hook; the run's logged calls replayed, no AI"
+sl_nap 3
+sl_mark "replay: start"
 python3 -m client.replay "$R/transcript.jsonl" "$O/replay.json" -- uvx freecad-mcp@0.1.28 > "$O/replay.log" 2>&1
-sleep 2
+sl_mark "replay: done"
+sl_nap 1.5
+python3 - > "$O/fit.txt" 2>&1 <<'PY'
+import sys; sys.path.insert(0, '/lab')
+from lab import fcrpc
+print(fcrpc.run("import FreeCADGui" + chr(10) + "FreeCADGui.SendMsgToActiveView('ViewFit')" + chr(10) + "print(1)"))
+PY
+sl_nap 4
+sl_shot "$O/s1-replayed.png"
+sl_mark "recording stopped"
+sl_stop
 python3 -m lab.fcrpc docs > "$O/docs.json" 2>&1
 python3 - "$O" <<'PY' > "$O/saves.txt" 2>&1
 import json, sys

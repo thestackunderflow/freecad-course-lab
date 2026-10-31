@@ -1,0 +1,83 @@
+{
+ "pass": true,
+ "lines": {
+  "C": true,
+  "M1": true,
+  "M2": true,
+  "M3": true,
+  "M4": true,
+  "M5": true,
+  "M6": true,
+  "M7": true,
+  "V": true
+ },
+ "why": {
+  "C": "opening 45.0",
+  "M1": "solids 1 valid True errors [] stl {'triangles': 1172, 'closed': True, 'components': 1, 'non_manifolds': False, 'volume_mm3': 17098.584}",
+  "M2": "box [55.0, 30.0, 60.0]",
+  "M3/M4": {
+   "plate_in": true,
+   "plate_out": false,
+   "base_in": true,
+   "base_out": false,
+   "lip_in": true,
+   "lip_out": false,
+   "lip_top_in": true,
+   "lip_top_out": false
+  },
+  "M5": {
+   "misses": [],
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "heights": [
+    15.0,
+    45.0
+   ],
+   "sides": [
+    [
+     15.0,
+     15.0
+    ],
+    [
+     15.0,
+     15.0
+    ]
+   ]
+  },
+  "M7": {
+   "names_ok": true,
+   "hook_depth": 55.0,
+   "depth_ok": true,
+   "lost_bindings": [],
+   "sheet_expressions": 12,
+   "drive_ok": true,
+   "drive_depth_ok": true,
+   "drive_box": [
+    55.0,
+    20.0,
+    60.0
+   ],
+   "drive_sides": [
+    [
+     10.0,
+     10.0
+    ],
+    [
+     10.0,
+     10.0
+    ]
+   ]
+  },
+  "V": 17098.5841
+ },
+ "hook_depth": 55.0,
+ "new_aliases": [],
+ "part": "Body",
+ "document": "depth55.FCStd",
+ "moved": false,
+ "turned": false,
+ "volume_mm3": 17098.5841,
+ "opening_mm": 45.0
+}

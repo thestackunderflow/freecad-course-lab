@@ -1,0 +1,369 @@
+{
+ "document": "after-hook_lesson5.FCStd",
+ "freecad": "1.1.4",
+ "objects": [
+  "Body",
+  "Origin",
+  "X_Axis",
+  "Y_Axis",
+  "Z_Axis",
+  "XY_Plane",
+  "XZ_Plane",
+  "YZ_Plane",
+  "Origin001",
+  "Sketch",
+  "Pad",
+  "Spreadsheet",
+  "Sketch001",
+  "Hole",
+  "Fillet"
+ ],
+ "bodies": [
+  "Body"
+ ],
+ "part": "Body",
+ "solid": {
+  "name": "Body",
+  "label": "Body",
+  "type": "PartDesign::Body",
+  "volume_mm3": 17098.5841,
+  "valid": true,
+  "solids": 1,
+  "bbox_mm": [
+   55.0,
+   30.0,
+   60.0
+  ],
+  "min_mm": [
+   0.0,
+   -30.0,
+   0.0
+  ],
+  "max_mm": [
+   55.0,
+   0.0,
+   60.0
+  ],
+  "cylinders": [
+   {
+    "r": 2.0,
+    "axis": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "center": [
+     53.0,
+     0.0,
+     8.0
+    ],
+    "area": 94.248
+   },
+   {
+    "r": 2.0,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "center": [
+     0.0,
+     -15.0,
+     45.0
+    ],
+    "area": 62.832
+   },
+   {
+    "r": 2.0,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "center": [
+     0.0,
+     -15.0,
+     15.0
+    ],
+    "area": 62.832
+   }
+  ]
+ },
+ "geometry": {
+  "segments_x_at_7_5": [
+   [
+    0.0,
+    5.0
+   ],
+   [
+    50.0,
+    55.0
+   ]
+  ],
+  "opening_mm": 45.0,
+  "points": {
+   "plate_in": true,
+   "plate_out": false,
+   "base_in": true,
+   "base_out": false,
+   "lip_in": true,
+   "lip_out": false,
+   "lip_top_in": true,
+   "lip_top_out": false
+  }
+ },
+ "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+ "moved": false,
+ "errors": [],
+ "stl": {
+  "triangles": 1172,
+  "closed": true,
+  "components": 1,
+  "non_manifolds": false,
+  "volume_mm3": 17098.584
+ },
+ "tip": "Fillet",
+ "sheets": [
+  {
+   "name": "Spreadsheet",
+   "label": "Spreadsheet",
+   "aliases": {
+    "hook_depth": 55.0,
+    "thickness": 5.0,
+    "lip_height": 10.0,
+    "plate_height": 60.0,
+    "width": 30.0,
+    "hole_d": 4.0,
+    "hole_spacing": 30.0,
+    "opening": 45.0
+   }
+  }
+ ],
+ "expressions": [
+  {
+   "object": "Sketch",
+   "property": "Constraints[17]",
+   "expression": "Spreadsheet.hook_depth"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[18]",
+   "expression": "Spreadsheet.lip_height"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[19]",
+   "expression": "Spreadsheet.thickness"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[20]",
+   "expression": "Spreadsheet.lip_height - Spreadsheet.thickness"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[21]",
+   "expression": "Spreadsheet.plate_height"
+  },
+  {
+   "object": "Sketch",
+   "property": "Constraints[22]",
+   "expression": "Spreadsheet.thickness"
+  },
+  {
+   "object": "Pad",
+   "property": "Length",
+   "expression": "Spreadsheet.width"
+  },
+  {
+   "object": "Sketch001",
+   "property": "Constraints[2]",
+   "expression": "Spreadsheet.width / 2"
+  },
+  {
+   "object": "Sketch001",
+   "property": "Constraints[3]",
+   "expression": "(Spreadsheet.plate_height - Spreadsheet.hole_spacing) / 2"
+  },
+  {
+   "object": "Sketch001",
+   "property": "Constraints[4]",
+   "expression": "Spreadsheet.width / 2"
+  },
+  {
+   "object": "Sketch001",
+   "property": "Constraints[5]",
+   "expression": "(Spreadsheet.plate_height + Spreadsheet.hole_spacing) / 2"
+  },
+  {
+   "object": "Hole",
+   "property": "Diameter",
+   "expression": "Spreadsheet.hole_d"
+  }
+ ],
+ "drive": {
+  "done": true,
+  "solid": {
+   "name": "Body",
+   "label": "Body",
+   "type": "PartDesign::Body",
+   "volume_mm3": 11357.1681,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    55.0,
+    20.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "max_mm": [
+    55.0,
+    0.0,
+    60.0
+   ],
+   "cylinders": [
+    {
+     "r": 2.0,
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "center": [
+      53.0,
+      0.0,
+      8.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      45.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -10.0,
+      15.0
+     ],
+     "area": 62.832
+    }
+   ]
+  },
+  "errors": []
+ },
+ "drive_depth": {
+  "done": true,
+  "solid": {
+   "name": "Body",
+   "label": "Body",
+   "type": "PartDesign::Body",
+   "volume_mm3": 17848.5841,
+   "valid": true,
+   "solids": 1,
+   "bbox_mm": [
+    60.0,
+    30.0,
+    60.0
+   ],
+   "min_mm": [
+    0.0,
+    -30.0,
+    0.0
+   ],
+   "max_mm": [
+    60.0,
+    0.0,
+    60.0
+   ],
+   "cylinders": [
+    {
+     "r": 2.0,
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "center": [
+      58.0,
+      0.0,
+      8.0
+     ],
+     "area": 94.248
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -15.0,
+      45.0
+     ],
+     "area": 62.832
+    },
+    {
+     "r": 2.0,
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "center": [
+      0.0,
+      -15.0,
+      15.0
+     ],
+     "area": 62.832
+    }
+   ]
+  },
+  "errors": [],
+  "geometry": {
+   "segments_x_at_7_5": [
+    [
+     0.0,
+     5.0
+    ],
+    [
+     55.0,
+     60.0
+    ]
+   ],
+   "opening_mm": 50.0,
+   "points": {
+    "plate_in": true,
+    "plate_out": false,
+    "base_in": true,
+    "base_out": false,
+    "lip_in": true,
+    "lip_out": false,
+    "lip_top_in": true,
+    "lip_top_out": false
+   }
+  }
+ }
+}

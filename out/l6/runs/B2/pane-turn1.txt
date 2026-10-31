@@ -1,0 +1,36 @@
+  Requirement: Lip height
+  Target: 10 mm
+  Measured: 10 mm
+  ────────────────────────────────────────
+  Requirement: Screw holes
+  Target: 4 mm diameter, centred across the
+  width, 15 and 45 mm up
+  Measured: Two holes, 4 mm diameter, both at
+  y
+  = −15 (centred across the 30 mm width), at
+  z = 15 and z = 45
+  ────────────────────────────────────────
+  Requirement: Rounded edge on the lip
+  Target: 2 mm
+  Measured: 2 mm radius, still on the lip's
+  outer top edge
+  ────────────────────────────────────────
+  Requirement: Sizes driven by the spreadsheet
+  Target: Names in the spreadsheet
+  Measured: The sketch constraints, the pad
+  length (width) and the hole diameter
+  (hole_d) are all still tied to the
+  spreadsheet
+
+  The overall depth is 55 mm, which is the 45
+  mm opening plus two 5 mm walls. The solid's
+  volume is now about 17,099 mm³. To change
+  the opening later, edit hook_depth and set
+  it to the opening plus 10 mm.
+
+✻ Crunched for 26s · done 6:03 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

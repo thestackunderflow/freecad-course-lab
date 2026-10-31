@@ -1,0 +1,124 @@
+{
+ "pass": true,
+ "lines": {
+  "C": true,
+  "M1": true,
+  "M2": true,
+  "M3": true,
+  "M4": true,
+  "M5": true,
+  "M6": true,
+  "M7": true,
+  "V": true
+ },
+ "why": {
+  "C": "opening 45.0",
+  "M1": "solids 1 valid True errors [] stl {'triangles': 1172, 'closed': True, 'components': 1, 'non_manifolds': False, 'volume_mm3': 17098.584}",
+  "M2": "box [55.0, 30.0, 60.0]",
+  "M3/M4": {
+   "plate_in": true,
+   "plate_out": false,
+   "base_in": true,
+   "base_out": false,
+   "lip_in": true,
+   "lip_out": false,
+   "lip_top_in": true,
+   "lip_top_out": false
+  },
+  "M5": {
+   "misses": [],
+   "hole_d": [
+    4.0,
+    4.0
+   ],
+   "heights": [
+    15.0,
+    45.0
+   ],
+   "sides": [
+    [
+     15.0,
+     15.0
+    ],
+    [
+     15.0,
+     15.0
+    ]
+   ]
+  },
+  "M7": {
+   "names_ok": true,
+   "hook_depth": 55.0,
+   "depth_ok": true,
+   "lost_bindings": [],
+   "sheet_expressions": 12,
+   "drive_ok": true,
+   "drive_depth_ok": true,
+   "drive_box": [
+    55.0,
+    20.0,
+    60.0
+   ],
+   "drive_sides": [
+    [
+     10.0,
+     10.0
+    ],
+    [
+     10.0,
+     10.0
+    ]
+   ]
+  },
+  "V": 17098.5841
+ },
+ "hook_depth": 55.0,
+ "new_aliases": [],
+ "part": "Body",
+ "document": "after-hook_lesson5.FCStd",
+ "moved": false,
+ "turned": false,
+ "volume_mm3": 17098.5841,
+ "opening_mm": 45.0,
+ "scored_document": "hook_lesson5",
+ "new_document": false,
+ "documents": [
+  "hook_lesson5"
+ ],
+ "replies": [
+  {
+   "user": "In FreeCAD, the open document is my wall hook. Make its opening, the gap between the back plate and the front lip, 45 mm wide so a backpack strap fits. These must stay true: one solid with no errors the back plate 60 mm tall and 30 mm wide every wall 5 mm thick the lip 10 mm tall both screw holes hole_d (4 mm), centred across the width, 15 and 45 mm up from the bottom the 2 mm rounded edge on the lip and the sizes still driven by the names in the spreadsheet. After the change, check each one and show me the numbers.",
+   "text": "Quick status: the change is in and I've checked every constraint. Here is the summary.\n\nI set `hook_depth` in the spreadsheet from 40 mm to 55 mm. The opening is `hook_depth \u2212 2 \u00d7 thickness`, so that gives 55 \u2212 10 = 45 mm. Nothing else was edited, and every dimension is still driven by the spreadsheet names.\n\n| Requirement | Measured after the change | Result |\n|---|---|---|\n| Opening (plate face to lip face) | 50 \u2212 5 = **45.0 mm** | \u2705 |\n| One solid, no errors | 1 solid, 1 shell, `isValid()` true, no object in an error state, sketch fully constrained (0 DoF) | \u2705 |\n| Back plate height | **60.0 mm** | \u2705 |\n| Back plate width | **30.0 mm** | \u2705 |\n| Wall thickness | plate 5.0, base 5.0 (z 0 to 5), lip wall 5.0 | \u2705 |\n| Lip height | **10.0 mm** | \u2705 |\n| Screw holes | 2 holes, \u00d8 **4.0 mm** | \u2705 |\n| Hole positions | centred at y = \u221215, which is 15 mm from each side edge; z = **15** and **45** mm | \u2705 |\n| 2 mm rounded edge on the lip | cylindrical face r = 2.0 mm, centre at z = 8, so it is the lip's top outer edge | \u2705 |\n| Spreadsheet-driven | the sketch constraints, the Pad length, and the Hole diameter still reference the `Spreadsheet.*` aliases | \u2705 |\n\nThe overall depth is now 55 mm, up from 40. The volume is 17,098.6 mm\u00b3, up from 14,848.6 mm\u00b3. The extra 2,250 mm\u00b3 is the longer base, 15 mm \u00d7 5 mm \u00d7 30 mm.\n\nThe fillet is still attached to the lip edge. FreeCAD sometimes moves a fillet to the wrong edge after a change like this, and it didn't here.\n\nI haven't saved the document. Save it in FreeCAD if you want to keep the change.\n"
+  }
+ ],
+ "calls": [
+  {
+   "tool": "list_documents",
+   "arguments": {}
+  },
+  {
+   "tool": "execute_code",
+   "arguments": {
+    "code": "doc=App.getDocument(\"hook_lesson5\")\nfor o in doc.Objects:\n    print(o.Name,o.TypeId,o.Label)\n    if o.TypeId==\"Spreadsheet::Sheet\":\n        for c in sorted(o.getUsedCells() if hasattr(o,'getUsedCells') else []):\n            print(\"  \",c,o.getContents(c), o.get(c) if o.getContents(c) else '')\n        print(\" alias:\",[(c,o.getAlias(c)) for c in o.getUsedCells() if o.getAlias(c)])\n    print(\"  exprs:\",o.ExpressionEngine)\n    if hasattr(o,'Shape') and not o.Shape.isNull(): print(\"  vol\",o.Shape.Volume,o.Shape.BoundBox)\n",
+    "include_screenshot": false
+   }
+  },
+  {
+   "tool": "execute_code",
+   "arguments": {
+    "code": "doc=App.getDocument(\"hook_lesson5\")\ns=doc.Sketch\nfor i,g in enumerate(s.Geometry): print(i,g)\nfor i,c in enumerate(s.Constraints): print(i,c)\nf=doc.Fillet; print(f.Base,f.Radius,f.Profile if hasattr(f,'Profile') else '',f.UsageState if hasattr(f,'UsageState') else '')\nprint(doc.Hole.Profile, doc.Hole.DrillPoint, doc.Hole.Depth, doc.Hole.DepthType)\n",
+    "include_screenshot": false
+   }
+  },
+  {
+   "tool": "execute_code",
+   "arguments": {
+    "code": "doc=App.getDocument(\"hook_lesson5\")\nsh=doc.Spreadsheet\nsh.set(\"B1\",\"=55 mm\"); doc.recompute()\nfor o in doc.Objects:\n    if o.TypeId.startswith((\"PartDesign\",\"Sketcher\",\"Spreadsheet\")) and o.State: print(\"STATE\",o.Name,o.State)\nb=doc.Body; S=b.Shape\nprint(\"valid\",S.isValid(),\"solids\",len(S.Solids),\"shells\",len(S.Shells),\"tip\",b.Tip.Name)\nbb=S.BoundBox; print(\"bbox\",bb)\nsk=doc.Sketch\nprint(\"sketch pts\",[(round(g.StartPoint.x,3),round(g.StartPoint.y,3)) for g in sk.Geometry])\nprint(\"sketch solve/DoF\",sk.solve(), getattr(sk,'FullyConstrained',None))\n# opening / thickness / lip / plate from sketch\nimport FreeCAD\nprint(\"opening\",sk.Geometry[3].StartPoint.x-sk.Geometry[5].StartPoint.x)\nprint(\"plate thick\",sk.Geometry[5].StartPoint.x-sk.Geometry[7].StartPoint.x, \"base\",sk.Geometry[3].StartPoint.y, \"lip wall\",sk.Geometry[1].StartPoint.x-sk.Geometry[3].StartPoint.x)\nprint(\"plate h\",bb.ZMax-bb.ZMin,\"width\",bb.YLength,\"lip h\",sk.Geometry[1].EndPoint.y)\n# holes\nfor f in S.Faces:\n    if f.Surface.__class__.__name__==\"Cylinder\":\n        print(\"hole d\",2*f.Surface.Radius,\"axis\",f.Surface.Axis,\"centre\",f.Surface.Center, \"fillet?\" ) \n# fillet radius\nfor f in S.Faces:\n    if f.Surface.__class__.__name__==\"Cylinder\" and abs(f.Surface.Radius-2)<1e-6: print(\"fillet r\",f.Surface.Radius,\"at\",f.CenterOfMass)\nprint(\"fillet obj\",doc.Fillet.Base[1],doc.Fillet.Radius)\nprint(\"hole sk\",doc.Sketch001.Placement, [(g.Center.x,g.Center.y,g.Radius) if hasattr(g,'Center') else g for g in doc.Sketch001.Geometry])\nprint(\"exprs ok\", [(o.Name,o.ExpressionEngine) for o in (doc.Sketch,doc.Pad,doc.Hole)])\nprint(\"vol\",S.Volume)\n",
+    "include_screenshot": true
+   }
+  }
+ ],
+ "start.md5": "4d0c19bf292910e43e5d0e071704ca49",
+ "start-after.md5": "4d0c19bf292910e43e5d0e071704ca49",
+ "start_file_saved_over": false
+}

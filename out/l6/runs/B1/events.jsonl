@@ -1,0 +1,33 @@
+{"t": 0.041, "event": "recording started: Claude Code (left), FreeCAD with lesson 5's hook (right)"}
+{"t": 2.113, "event": "turn 1: typing", "text": "In FreeCAD, the open document is my wall hook. Make its opening, the gap between the back plate and the front lip, 45 mm wide so a backpack strap fits. These must stay true: one solid with no errors; the back plate 60 mm tall and 30 mm wide; every wall 5 mm thick; the lip 10 mm tall; both screw holes hole_d (4 mm), centred across the width, 15 and 45 mm up from the bottom; the 2 mm rounded edge on the lip; and the sizes still driven by the names in the spreadsheet. After the change, check each one and show me the numbers."}
+{"t": 27.628, "event": "turn 1: Enter"}
+{"t": 31.112, "event": "tool call: list_documents", "seq": 18}
+{"t": 31.122, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 34.402, "event": "tool call: execute_code", "seq": 20}
+{"t": 34.416, "event": "tool reply: execute_code", "seq": 21, "isError": false}
+{"t": 38.656, "event": "tool call: execute_code", "seq": 22}
+{"t": 38.665, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 46.219, "event": "tool call: execute_code", "seq": 24}
+{"t": 46.979, "event": "tool reply: execute_code", "seq": 25, "isError": false}
+{"t": 55.624, "event": "turn 1: end-of-turn line seen"}
+{"t": 57.626, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 62.757, "event": "lab query: save every open document, hash the start file"}
+{"t": 63.078, "event": "our check, no AI: Tools > Measure on the opening"}
+{"t": 64.353, "event": "the 3D view: an empty spot", "x": 1684, "y": 1594, "button": 1}
+{"t": 65.462, "event": "key 0: isometric", "keys": "0"}
+{"t": 66.085, "event": "key V", "keys": "v"}
+{"t": 66.705, "event": "key F (fit all)", "keys": "f"}
+{"t": 70.379, "event": "Tools menu", "x": 1402, "y": 33, "button": 1}
+{"t": 73.436, "event": "Tools: Measure", "x": 1462, "y": 119, "button": 1}
+{"t": 77.576, "event": "Measurement: the Mode list", "x": 2650, "y": 591, "button": 1}
+{"t": 79.089, "event": "Mode list: top (Auto)", "keys": "Home"}
+{"t": 79.708, "event": "Mode list: down", "keys": "Down"}
+{"t": 80.985, "event": "Mode: Distance", "keys": "Return"}
+{"t": 83.384, "event": "hover: the back plate's inside face"}
+{"t": 84.84, "event": "click: the back plate's inside face", "x": 1890, "y": 882, "button": 1}
+{"t": 87.386, "event": "hover: the lip's inside top edge"}
+{"t": 88.216, "event": "key: hold Ctrl"}
+{"t": 88.877, "event": "Ctrl + click: the lip's inside top edge", "x": 2458, "y": 1368, "button": 1}
+{"t": 90.525, "event": "Result: 48.00 mm"}
+{"t": 96.984, "event": "Measurement: Close", "x": 2587, "y": 1695, "button": 1}
+{"t": 99.896, "event": "recording stopped"}

@@ -192,6 +192,30 @@ slicer, keys reach the 3D view only after a click in it, Tab switches to the pre
 shows a "Send system info" dialog and a hint popup. In FreeCAD, the Export dialog proposes 3MF; the Evaluate panel
 docks cut off at the right edge (widened before its button is clicked).
 
+## Lesson 6 (31 Oct 2026): change one thing, keep the rest, check it (the opening 30 to 45 mm for a backpack strap)
+
+Start file: lesson 5's hook (= lesson 4's `out/l4/hand/width30.FCStd`, opened as `hook-lesson5.FCStd`): hook_depth 40,
+width 30, the opening (back plate to lip) 30 mm, 14,848.584 mm3. Pre-registration (`out/l6/prereg.json`, messages,
+`checker/l6read.py`, `checker/score_l6.py`, `tests/test_l6.py`) committed before any Claude run (710c967). The
+must-stay-true list is read by a script from the saved file (no recompute, the part's Placement undone): the opening 45
++-0.05; one solid, no errors, FreeCAD's STL closed; plate 60 x 30; walls 5; lip 10; two 4 mm holes centred at 15/45;
+the 2 mm lip fillet; the names still drive it (the 12 bindings, hook_depth = the depth, two drive tests); volume
+17,098.584 +-1. FreeCAD's own tape measure (Tools > Measure) is driven like a person by `lab/l6common.sh`.
+
+| # | Question | Answer | Files |
+|---|---|---|---|
+| L6-Q1 | The by-hand path | Tools > Measure, Mode **Distance** (Auto gives 90.00 deg for these picks), the plate's inside face, **Ctrl** + the lip's inside top edge (without Ctrl the second click replaces the first): **30.00 mm**; the sheet's B1 hook_depth 45: **35.00**; 55: **45.00**; Radius on a hole's rim **2.00**, on the small curve at the lip's end **2.00**; the volume line 17098.58 | `out/l6/hand/` |
+| L6-Q2 | Read by the script | 40: fails only C and V (30.0, 14,848.584); 45: fails only C and V (35.0, 15,598.584); 55: passes every line (17,098.584) | `out/l6/hand/score-*.json` |
+| L6-Q3 | Claude (2.1.308, Sonnet 5.5, auto mode, no prompt) | B1, B2: one cell, `set("B1", "=55 mm")`, then a table of every line with numbers; B3: a new name `opening` = 45 mm and `hook_depth = 2 * thickness + opening`; A1 (no list): one cell (55 mm), reported the opening, box and volume, said the other sizes were "unchanged", nothing about the names. ~30 s each from Enter to the reply; $0.113 / $0.098 / $0.093 / $0.129; the guard never fired, no "Your choice." needed | `out/l6/runs/*/` |
+| L6-Q4 | Scored | **B: 3 of 3 passed; A1 passed** (one run). Lines Claude said with a number: 6 of 7 in every B run (the names line said without a number), 5 in A1 (the fillet without a number, the names not mentioned) | `out/l6/compare.json` |
+| L6-Q5 | Real? | no-AI replays of all four runs' logged calls on a fresh hook: the same verdict on every line, 17,098.584 mm3: **4 of 4 matched** | `out/l6/replay-*/compare.json` |
+
+Gotchas: `lab.fcrpc vp` points are ~60 px off at Qt scale 1.5 in the side-by-side layout, so B1's in-run filmed
+Measure picked the fillet's edge and read 48.00 (a lab error, not the part: the script read 45.0); `m6_aim` now moves
+the cursor until FreeCAD preselects the wanted face or edge (`lab.l6pick hit`), and B1's check was re-filmed on its saved
+copy (`lab/take_inspect6.sh`, `out/l6/inspect-B1/`: 45.00). Any socket query clears the Measurement panel's Result, so
+it is read once after the last pick. The Show Delta box can't be unticked through Qt before the panel opens (it stays on).
+
 ## Tests
 
 `tools/test.sh` runs every test in the lab image (unit tests, plus real Xvfb/tmux checks). The leak scan before any
