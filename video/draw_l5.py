@@ -128,7 +128,7 @@ def card_compare():
             ok = cl['ok']
             text(d, (x, y), cl['text'], 56, GREEN if ok else (RED if ok is False else INK), anchor='ma')
     rp = c['replay_B1']['replay']
-    chip(d, (W / 2, 1250), f"no-AI replay of the first run: {rp['triangles']} triangles · "
+    chip(d, (W / 2, 1250), f"no-AI replay of the run with the sentence: {rp['triangles']} triangles · "
                            f"{rp['volume_mm3']:,.0f} mm³ · {'same' if c['replay_B1']['pass'] else 'different'}",
          52, PAPER, INK, anchor='m')
     save(im, 'card-compare.png')
