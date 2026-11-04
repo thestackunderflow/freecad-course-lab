@@ -233,17 +233,17 @@ def card_cab(step):
 def card_paths(n=4):
     im, d = canvas()
     header(d, 'The same v1-1/Mod, four places')
+    # cut 3: each row names its own source (the small footer was unreadable on a phone); one large footer line
     rows = [('Linux AppImage (filmed here):', '~/.local/share/FreeCAD/v1-1/Mod'),
-            ('Windows:', '%APPDATA%\\FreeCAD\\v1-1\\Mod'),
-            ('macOS:', '~/Library/Application Support/FreeCAD/v1-1/Mod'),
-            ('Flatpak:', '~/.var/app/org.freecad.FreeCAD/data/FreeCAD/v1-1/Mod')]
+            ('Windows (project issues #116, #140):', '%APPDATA%\\FreeCAD\\v1-1\\Mod'),
+            ("macOS (the project's install page):", '~/Library/Application Support/FreeCAD/v1-1/Mod'),
+            ("Flatpak (the project's install page):", '~/.var/app/org.freecad.FreeCAD/data/FreeCAD/v1-1/Mod')]
     for k, (a, b) in enumerate(rows[:n]):
-        y = 250 + k * 255
+        y = 235 + k * 250
         box(d, 120, y, 2440, y + 225, fill=GREEN_BG if k == 0 else LIGHT, outline=GREEN if k == 0 else INK, w=5)
         text(d, (170, y + 60), a, 58, INK, B, 'lm')
         text(d, (170, y + 155), b, 60, BLUE, MONOB, 'lm')
-    text(d, (W / 2, 1290), "Linux: as filmed.  Windows: issues #116, #140.  macOS, Flatpak: the project's install page.", 46, GREY, R, 'mm')
-    text(d, (W / 2, 1370), 'not filmed: check with the console line', 46, GREY, R, 'mm')
+    text(d, (W / 2, 1335), 'not filmed: check yours with the console line', 60, INK, B, 'mm')
     save(im, f'card-paths-{n}.png')
 
 
