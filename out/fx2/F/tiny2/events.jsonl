@@ -1,0 +1,7 @@
+{"t": 0.045, "event": "recording started: PrusaSlicer 2.9.2"}
+{"t": 3.394, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 4.605, "event": "Import: Ctrl+I (tiny)", "keys": "ctrl+i"}
+{"t": 7.742, "event": "Import: typed /home/maker/fx2/tiny.stl", "text": "/home/maker/fx2/tiny.stl"}
+{"t": 10.129, "event": "Import: Enter (tiny)", "keys": "Return"}
+{"t": 14.752, "event": "tiny.stl: opened"}
+{"t": 18.288, "event": "dialog: shown (tiny)"}

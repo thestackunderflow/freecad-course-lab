@@ -1,0 +1,6 @@
+Take A, 4 Nov 2026 (container date), FreeCAD 1.1.4, freecad-mcp add-on only used to open the Python console (not filmed as a step).
+Export dialog filter text: "STL Mesh (*.stl *.ast)" (one filter handles both .stl and .ast); "3D Manufacturing Format (*.3mf)" is the dialog's default filter. The Export menu is File, Export (second block of the File menu).
+.ast typed into the same STL Mesh filter: accepted, no fallback needed. 3MF exported by typing washer.3mf (default filter).
+Volume line typed in the console: print(Gui.Selection.getSelection()[0].Shape.Volume). volume.txt holds repr from the socket: 4.7500880922277675.
+The text viewer is xterm + less (gedit not in the image). The terminal window filled the screen width (geometry units), fine for footage.
+No mesh-export options dialog appeared.

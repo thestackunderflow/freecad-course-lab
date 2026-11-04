@@ -1,0 +1,1 @@
+Size [World]: 5 x 5 x 0.3 mm (Scale factors 100 100 100; Position 125 105 0.15). s-size-no.png

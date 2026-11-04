@@ -1,0 +1,1 @@
+The file Claude wrote (washer.stl, 504 triangles) opened in PrusaSlicer 2.9.2 shows the inches dialog ("The object is too small", file claude-washer.stl). Not scored; second check for the label. Still: check/s-open.png.

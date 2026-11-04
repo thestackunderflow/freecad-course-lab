@@ -1,0 +1,12 @@
+{"t": 0.045, "event": "recording started: PrusaSlicer 2.9.2"}
+{"t": 3.359, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 4.569, "event": "Import: Ctrl+I (block)", "keys": "ctrl+i"}
+{"t": 7.705, "event": "Import: typed /home/maker/fx2/block.stl", "text": "/home/maker/fx2/block.stl"}
+{"t": 10.132, "event": "Import: Enter (block)", "keys": "Return"}
+{"t": 14.756, "event": "dialog: shown"}
+{"t": 22.474, "event": "Yes: clicked"}
+{"t": 23.125, "event": "dialog: Yes", "x": 1846, "y": 1022, "button": 1}
+{"t": 28.31, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 29.423, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 32.058, "event": "size boxes: 25.40 x 12.70 x 6.35"}
+{"t": 42.6, "event": "Delete: the object", "keys": "Delete"}

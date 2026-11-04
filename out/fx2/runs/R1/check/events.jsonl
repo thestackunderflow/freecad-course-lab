@@ -1,0 +1,6 @@
+{"t": 0.068, "event": "recording started: PrusaSlicer 2.9.2"}
+{"t": 3.392, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 4.601, "event": "Import: Ctrl+I (claude)", "keys": "ctrl+i"}
+{"t": 7.739, "event": "Import: typed /home/maker/fx2/claude-washer.stl", "text": "/home/maker/fx2/claude-washer.stl"}
+{"t": 10.497, "event": "Import: Enter (claude)", "keys": "Return"}
+{"t": 15.121, "event": "claude export: opened"}

@@ -1,0 +1,1 @@
+Size [World]: 5 x 5 x 0.3 mm (object name "washer", from the 3MF); no dialog of any kind. s-size-3mf.png

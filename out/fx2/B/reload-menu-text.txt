@@ -1,0 +1,2 @@
+Reload from disk
+(also in the menu: Convert from meters / Revert conversion from imperial units / Replace with STL / Export as STL/OBJ...)

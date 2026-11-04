@@ -1,0 +1,67 @@
+{"t": 0.06, "event": "recording started: FreeCAD 1.1.4"}
+{"t": 2.888, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 3.594, "event": "console: typed washer line", "text": "import FreeCAD as App, Part"}
+{"t": 4.972, "event": "console: Enter (washer line)", "keys": "Return"}
+{"t": 7.857, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 8.563, "event": "console: typed washer line", "text": "doc = App.newDocument(\"washer\")"}
+{"t": 10.049, "event": "console: Enter (washer line)", "keys": "Return"}
+{"t": 12.933, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 13.641, "event": "console: typed washer line", "text": "obj = doc.addObject(\"Part::Feature\", \"washer\")"}
+{"t": 15.571, "event": "console: Enter (washer line)", "keys": "Return"}
+{"t": 18.457, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 19.163, "event": "console: typed washer line", "text": "obj.Shape = Part.makeCylinder(2.5, 0.3).cut(Part.makeCylinder(1.1, 0.3))"}
+{"t": 21.821, "event": "console: Enter (washer line)", "keys": "Return"}
+{"t": 24.688, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 25.397, "event": "console: typed washer line", "text": "doc.recompute()"}
+{"t": 26.434, "event": "console: Enter (washer line)", "keys": "Return"}
+{"t": 29.304, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 30.011, "event": "console: typed washer line", "text": "Gui.SendMsgToActiveView(\"ViewFit\")"}
+{"t": 31.592, "event": "console: Enter (washer line)", "keys": "Return"}
+{"t": 34.49, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 35.197, "event": "console: typed washer line", "text": "Gui.Selection.addSelection(obj)"}
+{"t": 36.678, "event": "console: Enter (washer line)", "keys": "Return"}
+{"t": 40.301, "event": "washer: shown"}
+{"t": 44.125, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 44.831, "event": "console: typed the volume line", "text": "print(Gui.Selection.getSelection()[0].Shape.Volume)"}
+{"t": 46.89, "event": "console: Enter (the volume line)", "keys": "Return"}
+{"t": 49.016, "event": "volume: printed"}
+{"t": 55.093, "event": "File menu (Save As)", "x": 45, "y": 36, "button": 1}
+{"t": 57.263, "event": "close menu", "keys": "Escape"}
+{"t": 59.508, "event": "File menu (STL)", "x": 45, "y": 36, "button": 1}
+{"t": 61.862, "event": "File: Export (STL)", "x": 105, "y": 554, "button": 1}
+{"t": 67.022, "event": "Export: the type list", "x": 1404, "y": 1225, "button": 1}
+{"t": 71.062, "event": "Export: hover STL Mesh"}
+{"t": 73.224, "event": "Export: STL Mesh", "x": 1253, "y": 1421, "button": 1}
+{"t": 75.907, "event": "Export: the file name box (STL)", "x": 1400, "y": 1171, "button": 1}
+{"t": 76.64, "event": "Export: typed /home/maker/fx2/washer.stl", "text": "/home/maker/fx2/washer.stl"}
+{"t": 79.11, "event": "Export: Enter (STL)", "keys": "Return"}
+{"t": 83.732, "event": "Export STL: done"}
+{"t": 85.728, "event": "File menu (AST)", "x": 45, "y": 36, "button": 1}
+{"t": 88.094, "event": "File: Export (AST)", "x": 105, "y": 554, "button": 1}
+{"t": 93.23, "event": "Export: the file name box (AST)", "x": 1400, "y": 1171, "button": 1}
+{"t": 93.968, "event": "Export: typed /home/maker/fx2/washer.ast", "text": "/home/maker/fx2/washer.ast"}
+{"t": 96.44, "event": "Export: Enter (AST)", "keys": "Return"}
+{"t": 101.064, "event": "Export AST: done"}
+{"t": 102.511, "event": "File menu (3MF)", "x": 45, "y": 36, "button": 1}
+{"t": 104.895, "event": "File: Export (3MF)", "x": 105, "y": 554, "button": 1}
+{"t": 108.603, "event": "Export 3MF: clicked"}
+{"t": 110.065, "event": "Export: the type list", "x": 1404, "y": 1225, "button": 1}
+{"t": 113.807, "event": "close list", "keys": "Escape"}
+{"t": 115.875, "event": "Export: the file name box (3MF)", "x": 1400, "y": 1171, "button": 1}
+{"t": 116.611, "event": "Export: typed washer.3mf", "text": "/home/maker/fx2/washer.3mf"}
+{"t": 119.082, "event": "Export: Enter (3MF)", "keys": "Return"}
+{"t": 123.703, "event": "Export 3MF: done"}
+{"t": 124.695, "event": "less washer.ast", "text": "less /home/maker/fx2/washer.ast"}
+{"t": 126.408, "event": "less washer.ast: Enter", "keys": "Return"}
+{"t": 127.03, "event": "washer.ast: opened in text viewer"}
+{"t": 151.165, "event": "quit less", "keys": "q"}
+{"t": 152.834, "event": "head ast", "text": "clear; head -n 12 /home/maker/fx2/washer.ast"}
+{"t": 155.018, "event": "head ast: Enter", "keys": "Return"}
+{"t": 158.69, "event": "grep unit words", "text": "grep -c -i -E 'mm|inch|unit' /home/maker/fx2/washer.ast"}
+{"t": 161.264, "event": "grep unit words: Enter", "keys": "Return"}
+{"t": 164.933, "event": "unzip", "text": "clear; cd /home/maker/fx2 && unzip -o washer.3mf -d washer-3mf"}
+{"t": 167.758, "event": "unzip: Enter", "keys": "Return"}
+{"t": 171.431, "event": "grep unit=", "text": "grep -n 'unit=' washer-3mf/3D/3dmodel.model"}
+{"t": 173.576, "event": "grep unit=: Enter", "keys": "Return"}
+{"t": 177.199, "event": "3mf unit line: shown"}
+{"t": 183.76, "event": "recording stopped"}

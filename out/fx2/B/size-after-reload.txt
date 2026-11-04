@@ -1,0 +1,2 @@
+After Reload from disk: no dialog; Size 127 x 127 x 7.62 mm (unchanged). s-size-after-reload.png
+After Revert conversion from imperial units: Size 5 x 5 x 0.3 mm. s-size-after-revert.png

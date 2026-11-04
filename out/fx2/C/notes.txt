@@ -1,0 +1,1 @@
+Take C in two recordings: FreeCAD half in out/fx2/C/fc (block, volume, STL export), PrusaSlicer half here. Dialog names the file block.stl (name only). volume 0.125 mm3.

@@ -1,0 +1,202 @@
+[2026-11-04 04:20:50.676744] [0x0000735f78bb94c0] [error]   UserAccount: Failed to read token - no datafile found.
+[2026-11-04 04:20:50.743062] [0x0000735e96ffd6c0] [error]   DBus Connection Error: /usr/bin/dbus-launch terminated abnormally without any error message
+[2026-11-04 04:20:50.743495] [0x0000735e96ffd6c0] [error]   Dbus Messages listening terminating.
+[2026-11-04 04:20:50.746525] [0x0000735e967fc6c0] [error]   listen_multicast: DBus Connection Error: /usr/bin/dbus-launch terminated abnormally without any error message
+[2026-11-04 04:20:50.746898] [0x0000735e967fc6c0] [error]   listen_multicast: Dbus Messages listening terminating.
+
+(prusa-slicer:24): Gtk-WARNING **: 04:20:50.800: Could not load a pixbuf from /org/gtk/libgtk/theme/Adwaita/assets/bullet-symbolic.svg.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+(prusa-slicer:24): Gtk-CRITICAL **: 04:20:50.832: gtk_distribute_natural_allocation: assertion 'extra_space >= 0' failed
+04:20:51 AM: Debug: window wxTreeCtrl@0x55f265519b90 ("treeCtrl") lost focus even though it didn't have it
+04:20:51 AM: Debug: window wxTreeCtrl@0x55f265519b90 ("treeCtrl") lost focus even though it didn't have it
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:31.917: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:31.933: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:31.949: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:31.966: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:31.982: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:31.999: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.015: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.033: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.049: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.067: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.083: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.100: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.117: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.134: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.151: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.167: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.184: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.201: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:32.217: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:35.021: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:37.457: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:37.474: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:37.491: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:37.946: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:21:37.948: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.304: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.325: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.342: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.358: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.374: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.391: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.408: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.425: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.442: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.458: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.474: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.491: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.507: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.524: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.541: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.558: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.574: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:16.591: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:20.000: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:22.450: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:22.466: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:22.483: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:22.924: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:22:22.927: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:09.893: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:09.978: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:09.995: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.012: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.030: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.046: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.063: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.079: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.096: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.112: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.129: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.146: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.163: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.180: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:10.196: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:16.510: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:16.527: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:16.543: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:16.560: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:17.001: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:17.002: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.850: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.867: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.882: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.900: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.916: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.933: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.950: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.967: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:28.983: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.001: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.017: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.035: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.051: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.068: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.085: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.102: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.119: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.136: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:29.153: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:31.886: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:34.291: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:34.308: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:34.325: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:34.774: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(prusa-slicer:24): dconf-WARNING **: 04:23:34.776: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)

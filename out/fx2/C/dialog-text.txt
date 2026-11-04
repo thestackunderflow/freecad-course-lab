@@ -1,0 +1,1 @@
+The object is too small / ...from file block.stl seem to be defined in inches... (same text and buttons as take B). Inches dialog, not the metres one.

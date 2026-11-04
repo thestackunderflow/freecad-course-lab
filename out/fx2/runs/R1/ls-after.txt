@@ -1,0 +1,7 @@
+/home/maker/fx2:
+total 8
+-rw-r--r-- 1 maker maker 7528 Nov  4 04:28 washer.FCStd
+
+/home/maker/run-fx2:
+total 28
+-rw-r--r-- 1 maker maker 25284 Nov  4 04:28 washer.stl

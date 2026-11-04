@@ -1,0 +1,1 @@
+Size [World]: 127 x 127 x 7.62 mm (Scale factors 100 100 100; Position 125 105 3.81). 5 x 25.4 = 127, 0.3 x 25.4 = 7.62. s-size-yes.png

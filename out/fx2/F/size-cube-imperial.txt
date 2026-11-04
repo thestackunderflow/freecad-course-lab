@@ -1,0 +1,1 @@
+76.2 x 76.2 x 76.2 mm after Import STL (Imperial Units); no confirmation dialog

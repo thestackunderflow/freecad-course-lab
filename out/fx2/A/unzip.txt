@@ -1,0 +1,5 @@
+Archive:  washer.3mf
+  inflating: washer-3mf/3D/3dmodel.model  
+  inflating: washer-3mf/_rels/.rels  
+  inflating: washer-3mf/[Content_Types].xml  
+  inflating: washer-3mf/Metadata/thumbnail.png  

@@ -1,0 +1,6 @@
+The object is too small
+The dimensions of the object from file washer.stl seem to be defined in inches.
+The internal unit of PrusaSlicer is a millimeter. Do you want to recalculate the dimensions of the object?
+[ ] Apply to all the remaining small objects being loaded.
+Buttons: No   Yes
+(matches Plater.cpp at version_2.9.2 word for word, %s = the file NAME washer.stl; read off out/fx2/B/s-dialog.png)

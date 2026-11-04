@@ -1,0 +1,9 @@
+ToolSearch {"query": "select:mcp__freecad__list_documents,mcp__freecad__get_objects,mcp__freecad__execute_code,mcp__freecad__get_rpc_status", "max_results": 10}
+Bash {"command": "ls -la /home/maker/run-fx2", "description": "List project directory"}
+ToolSearch {"query": "select:mcp__freecad__list_documents,mcp__freecad__get_objects,mcp__freecad__execute_code,mcp__freecad__get_rpc_status", "max_results": 10}
+Bash {"command": "ls -la /home/maker/run-fx2", "description": "List project directory"}
+mcp__freecad__list_documents {}
+mcp__freecad__get_objects {"doc_name": "washer", "include_screenshot": false}
+mcp__freecad__execute_code {"code": "o = App.getDocument(\"washer\").getObject(\"washer\")\ns = o.Shape\nbb = s.BoundBox\nprint(\"ShapeType:\", s.ShapeType, \"Solids:\", len(s.Solids), \"Valid:\", s.isValid(), \"Closed:\", s.isClosed())\nprint(\"BBox:\", bb.XMin, bb.XMax, bb.YMin, bb.YMax, bb.ZMin, bb.ZMax)\nprint(\"Size X,Y,Z:\", bb.XLength, bb.YLength, bb.ZLength)\nfor i,f in enumerate(s.Faces):\n    print(i, f.Surface, f.Area)\n", "include_screenshot": false}
+mcp__freecad__execute_code {"code": "import Mesh, MeshPart\no = App.getDocument(\"washer\").getObject(\"washer\")\nm = MeshPart.meshFromShape(Shape=o.Shape, LinearDeflection=0.01, AngularDeflection=0.2)\nm.write(\"/home/maker/run-fx2/washer.stl\")\nprint(\"facets:\", m.CountFacets, \"solid:\", m.isSolid(), \"manifold ok:\", not m.hasNonManifolds())\nb = m.BoundBox\nprint(\"mesh size:\", b.XLength, b.YLength, b.ZLength)\n", "include_screenshot": false}
+Bash {"command": "ls -la /home/maker/run-fx2; head -c 200 /home/maker/run-fx2/washer.stl", "description": "Verify STL file was written"}

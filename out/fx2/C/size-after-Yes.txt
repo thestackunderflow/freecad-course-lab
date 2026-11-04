@@ -1,0 +1,1 @@
+Size [World]: 25.4 x 12.7 x 6.35 mm (the box shows 25.4, 12.7, 6.35; i.e. 25.40 x 12.70 x 6.35). Position 125 105 3.17. s-size-yes.png

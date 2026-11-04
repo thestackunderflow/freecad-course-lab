@@ -1,0 +1,3 @@
+A
+half
+It exported an STL and said "If your slicer asks about units, pick mm" (the right answer, No), but never named the inches question or its words, and the rest of its list (layer height, hole size, speed, adhesion) is about printing, not the size dialog; borderline A/C, scored A-half by the section 4 rule (prediction of a question without naming No or Yes by dialog).

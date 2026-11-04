@@ -1,0 +1,38 @@
+{"t": 0.081, "event": "recording started: PrusaSlicer 2.9.2"}
+{"t": 3.393, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 4.605, "event": "Import: Ctrl+I (cube3)", "keys": "ctrl+i"}
+{"t": 7.742, "event": "Import: typed /home/maker/fx2/cube3.stl", "text": "/home/maker/fx2/cube3.stl"}
+{"t": 10.174, "event": "Import: Enter (cube3)", "keys": "Return"}
+{"t": 18.343, "event": "cube3.stl: opened, no dialog"}
+{"t": 21.001, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 22.112, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 31.293, "event": "Delete: the object", "keys": "Delete"}
+{"t": 35.394, "event": "File menu", "x": 36, "y": 49, "button": 1}
+{"t": 38.51, "event": "Import menu: shown"}
+{"t": 48.348, "event": "Import STL (Imperial Units): clicked"}
+{"t": 49.007, "event": "Import STL (Imperial Units)", "x": 792, "y": 428, "button": 1}
+{"t": 52.72, "event": "Import: typed cube3.stl", "text": "/home/maker/fx2/cube3.stl"}
+{"t": 55.152, "event": "Import: Enter", "keys": "Return"}
+{"t": 61.594, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 62.704, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 65.345, "event": "size boxes: shown (imperial import)"}
+{"t": 75.327, "event": "File menu", "x": 36, "y": 49, "button": 1}
+{"t": 78.443, "event": "Export menu: shown"}
+{"t": 86.988, "event": "close menu", "keys": "Escape"}
+{"t": 88.115, "event": "close menu", "keys": "Escape"}
+{"t": 91.194, "event": "Scale factor X", "x": 2249, "y": 939, "button": 1}
+{"t": 91.937, "event": "Scale: typed 2.6316", "text": "2.6316"}
+{"t": 92.91, "event": "Tab", "keys": "Tab"}
+{"t": 97.527, "event": "File menu", "x": 36, "y": 49, "button": 1}
+{"t": 102.598, "event": "Export Plate as STL/OBJ", "x": 782, "y": 592, "button": 1}
+{"t": 106.837, "event": "Export: typed tiny.stl", "text": "/home/maker/fx2/tiny.stl"}
+{"t": 109.226, "event": "Export: Enter", "keys": "Return"}
+{"t": 114.395, "event": "Export Plate as STL/OBJ: done"}
+{"t": 115.631, "event": "the 3D view", "x": 300, "y": 1500, "button": 1}
+{"t": 116.345, "event": "Ctrl+A", "keys": "ctrl+a"}
+{"t": 116.978, "event": "Delete: the object", "keys": "Delete"}
+{"t": 120.263, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 121.473, "event": "Import: Ctrl+I (tiny)", "keys": "ctrl+i"}
+{"t": 124.612, "event": "Import: typed /home/maker/fx2/tiny.stl", "text": "/home/maker/fx2/tiny.stl"}
+{"t": 126.999, "event": "Import: Enter (tiny)", "keys": "Return"}
+{"t": 131.624, "event": "tiny.stl: opened"}

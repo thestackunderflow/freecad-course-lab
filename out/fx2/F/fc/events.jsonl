@@ -1,0 +1,35 @@
+{"t": 0.06, "event": "recording started: FreeCAD 1.1.4"}
+{"t": 2.859, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 3.566, "event": "console: typed cube3 line", "text": "import FreeCAD as App, Part"}
+{"t": 4.942, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 7.828, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 8.537, "event": "console: typed cube3 line", "text": "doc = App.newDocument(\"cube3\")"}
+{"t": 10.005, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 12.889, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 13.596, "event": "console: typed cube3 line", "text": "obj = doc.addObject(\"Part::Feature\", \"cube3\")"}
+{"t": 15.494, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 18.365, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 19.074, "event": "console: typed cube3 line", "text": "obj.Shape = Part.makeBox(3, 3, 3)"}
+{"t": 20.632, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 23.498, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 24.21, "event": "console: typed cube3 line", "text": "doc.recompute()"}
+{"t": 25.265, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 28.123, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 28.831, "event": "console: typed cube3 line", "text": "Gui.SendMsgToActiveView(\"ViewFit\")"}
+{"t": 30.407, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 33.271, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 33.984, "event": "console: typed cube3 line", "text": "Gui.Selection.addSelection(obj)"}
+{"t": 35.477, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 38.372, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 39.086, "event": "console: typed cube3 line", "text": "print(Gui.Selection.getSelection()[0].Shape.Volume)"}
+{"t": 41.205, "event": "console: Enter (cube3 line)", "keys": "Return"}
+{"t": 45.335, "event": "cube 3 mm: shown in FreeCAD"}
+{"t": 50.394, "event": "File menu (cube)", "x": 45, "y": 36, "button": 1}
+{"t": 52.761, "event": "File: Export (cube)", "x": 105, "y": 554, "button": 1}
+{"t": 57.923, "event": "Export: the type list", "x": 1404, "y": 1225, "button": 1}
+{"t": 61.975, "event": "Export: hover STL Mesh"}
+{"t": 64.127, "event": "Export: STL Mesh", "x": 1253, "y": 1421, "button": 1}
+{"t": 66.825, "event": "Export: the file name box (cube)", "x": 1400, "y": 1171, "button": 1}
+{"t": 67.559, "event": "Export: typed /home/maker/fx2/cube3.stl", "text": "/home/maker/fx2/cube3.stl"}
+{"t": 69.986, "event": "Export: Enter (cube)", "keys": "Return"}
+{"t": 74.608, "event": "Export STL: done"}

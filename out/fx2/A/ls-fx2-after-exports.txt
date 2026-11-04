@@ -1,0 +1,5 @@
+total 120
+-rw-r--r-- 1 maker maker  8472 Nov  4 03:54 washer.3mf
+-rw-r--r-- 1 maker maker  7528 Nov  4 03:53 washer.FCStd
+-rw-r--r-- 1 maker maker 81585 Nov  4 03:53 washer.ast
+-rw-r--r-- 1 maker maker 20084 Nov  4 03:53 washer.stl

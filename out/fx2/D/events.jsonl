@@ -1,0 +1,11 @@
+{"t": 0.044, "event": "recording started: PrusaSlicer 2.9.2"}
+{"t": 0.047, "event": "PrusaSlicer: empty bed"}
+{"t": 3.726, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 4.935, "event": "Import: Ctrl+I (washer3mf)", "keys": "ctrl+i"}
+{"t": 8.071, "event": "Import: typed /home/maker/fx2/washer.3mf", "text": "/home/maker/fx2/washer.3mf"}
+{"t": 10.545, "event": "Import: Enter (washer3mf)", "keys": "Return"}
+{"t": 18.699, "event": "washer.3mf: opened in PrusaSlicer, no dialog"}
+{"t": 21.355, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 22.465, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 25.107, "event": "size boxes: shown"}
+{"t": 35.646, "event": "Delete: the object", "keys": "Delete"}

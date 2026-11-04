@@ -1,0 +1,36 @@
+    because the circle is approximated by flat
+    facets. I can tighten it if you want.
+
+  What the slicer will likely say
+  - Layer height: at the usual 0.2 mm, 0.3 mm
+    is only 1.5 layers. The slicer will round
+    to 1 or 2 layers, or print one layer
+    thicker than you asked for. A 0.1 mm layer
+    height gives exactly 3 layers.
+  - Hole size: a 2.2 mm hole usually prints
+    undersized and may partly close up,
+    because plastic bulges inward on small
+    holes. You may need to enlarge the hole in
+    the model.
+  - Print speed: the slicer may slow the print
+    or add a "minimum layer time" cooling
+    pause, because each layer is so small.
+  - Adhesion: it will probably warn about
+    small bed contact. A brim could fill in
+    the hole, so it's safer to print several
+    washers in one batch.
+  - Thin walls: with a standard 0.4 mm nozzle,
+    the ring is about 1.4 mm wide. That is
+    only 3 to 4 perimeter lines, so it should
+    print as solid walls with no infill.
+
+  I haven't loaded the file into a slicer, so
+  these are expectations based on the
+  dimensions, not slicer output.
+
+✻ Cogitated for 18s · done 4:29 AM
+
+──────────────────────────────────────────────
+❯ enlarge the hole to 2.6mm and re-export
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

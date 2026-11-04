@@ -1,0 +1,60 @@
+{"t": 0.051, "event": "recording started: PrusaSlicer 2.9.2"}
+{"t": 0.055, "event": "PrusaSlicer: empty bed"}
+{"t": 4.39, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 5.599, "event": "Import: Ctrl+I (washer)", "keys": "ctrl+i"}
+{"t": 8.734, "event": "Import: typed /home/maker/fx2/washer.stl", "text": "/home/maker/fx2/washer.stl"}
+{"t": 11.208, "event": "Import: Enter (washer)", "keys": "Return"}
+{"t": 15.83, "event": "washer.stl: dropped"}
+{"t": 15.833, "event": "dialog: shown"}
+{"t": 32.542, "event": "No: clicked"}
+{"t": 33.193, "event": "dialog: No", "x": 1663, "y": 1022, "button": 1}
+{"t": 38.378, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 39.486, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 42.123, "event": "size boxes: shown"}
+{"t": 52.658, "event": "Delete: the object", "keys": "Delete"}
+{"t": 53.285, "event": "object: deleted"}
+{"t": 55.439, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 56.648, "event": "Import: Ctrl+I (washer)", "keys": "ctrl+i"}
+{"t": 59.782, "event": "Import: typed /home/maker/fx2/washer.stl", "text": "/home/maker/fx2/washer.stl"}
+{"t": 62.25, "event": "Import: Enter (washer)", "keys": "Return"}
+{"t": 66.871, "event": "washer.stl: opened"}
+{"t": 66.875, "event": "dialog: shown"}
+{"t": 71.049, "event": "No: clicked"}
+{"t": 71.701, "event": "dialog: No", "x": 1663, "y": 1022, "button": 1}
+{"t": 76.861, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 77.969, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 80.608, "event": "size boxes: shown"}
+{"t": 86.612, "event": "Delete: the object", "keys": "Delete"}
+{"t": 87.231, "event": "object: deleted"}
+{"t": 89.389, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 90.599, "event": "Import: Ctrl+I (washer)", "keys": "ctrl+i"}
+{"t": 93.737, "event": "Import: typed /home/maker/fx2/washer.stl", "text": "/home/maker/fx2/washer.stl"}
+{"t": 96.203, "event": "Import: Enter (washer)", "keys": "Return"}
+{"t": 100.824, "event": "washer.stl: opened again"}
+{"t": 100.826, "event": "dialog: shown"}
+{"t": 105.007, "event": "Yes: clicked"}
+{"t": 105.658, "event": "dialog: Yes", "x": 1846, "y": 1022, "button": 1}
+{"t": 110.823, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 111.933, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 114.571, "event": "size boxes: shown (x 25.4)"}
+{"t": 126.124, "event": "the object (to select it)", "x": 763, "y": 1008, "button": 1}
+{"t": 128.49, "event": "right-click the object", "x": 763, "y": 1008, "button": 3}
+{"t": 131.2, "event": "right-click menu: shown"}
+{"t": 137.013, "event": "Reload from disk: clicked"}
+{"t": 137.667, "event": "Reload from disk", "x": 932, "y": 431, "button": 1}
+{"t": 142.923, "event": "after reload: looked"}
+{"t": 148.239, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 149.35, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 156.544, "event": "right-click the object (again)", "x": 763, "y": 1008, "button": 3}
+{"t": 161.083, "event": "Revert conversion from imperial units: clicked"}
+{"t": 161.734, "event": "Revert conversion", "x": 1060, "y": 539, "button": 1}
+{"t": 167.767, "event": "the 3D view: an empty spot", "x": 300, "y": 1500, "button": 1}
+{"t": 168.876, "event": "Ctrl+A: select the object", "keys": "ctrl+a"}
+{"t": 175.117, "event": "Delete: the object", "keys": "Delete"}
+{"t": 175.736, "event": "object: deleted"}
+{"t": 177.899, "event": "the 3D view", "x": 300, "y": 1500, "button": 1}
+{"t": 178.606, "event": "Import: Ctrl+I (your turn)", "keys": "ctrl+i"}
+{"t": 182.249, "event": "your turn: file dialog opened live"}
+{"t": 207.787, "event": "Escape", "keys": "Escape"}
+{"t": 209.912, "event": "PrusaSlicer: window hold"}
+{"t": 229.921, "event": "recording stopped"}

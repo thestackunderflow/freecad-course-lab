@@ -1,0 +1,35 @@
+{"t": 0.054, "event": "recording started: FreeCAD 1.1.4"}
+{"t": 2.856, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 3.562, "event": "console: typed block line", "text": "import FreeCAD as App, Part"}
+{"t": 4.949, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 7.83, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 8.546, "event": "console: typed block line", "text": "doc = App.newDocument(\"block\")"}
+{"t": 10.009, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 12.874, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 13.58, "event": "console: typed block line", "text": "obj = doc.addObject(\"Part::Feature\", \"block\")"}
+{"t": 15.474, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 18.328, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 19.038, "event": "console: typed block line", "text": "obj.Shape = Part.makeBox(1, 0.5, 0.25)"}
+{"t": 20.722, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 23.628, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 24.335, "event": "console: typed block line", "text": "doc.recompute()"}
+{"t": 25.372, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 28.235, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 28.942, "event": "console: typed block line", "text": "Gui.SendMsgToActiveView(\"ViewFit\")"}
+{"t": 30.536, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 33.413, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 34.12, "event": "console: typed block line", "text": "Gui.Selection.addSelection(obj)"}
+{"t": 35.622, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 38.516, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 39.222, "event": "console: typed block line", "text": "print(Gui.Selection.getSelection()[0].Shape.Volume)"}
+{"t": 41.289, "event": "console: Enter (block line)", "keys": "Return"}
+{"t": 45.415, "event": "block 1 x 0.5 x 0.25: shown in FreeCAD"}
+{"t": 50.545, "event": "File menu (block)", "x": 45, "y": 36, "button": 1}
+{"t": 52.922, "event": "File: Export (block)", "x": 105, "y": 554, "button": 1}
+{"t": 58.08, "event": "Export: the type list", "x": 1404, "y": 1225, "button": 1}
+{"t": 62.115, "event": "Export: hover STL Mesh"}
+{"t": 64.266, "event": "Export: STL Mesh", "x": 1253, "y": 1421, "button": 1}
+{"t": 66.957, "event": "Export: the file name box (block)", "x": 1400, "y": 1171, "button": 1}
+{"t": 67.691, "event": "Export: typed /home/maker/fx2/block.stl", "text": "/home/maker/fx2/block.stl"}
+{"t": 70.118, "event": "Export: Enter (block)", "keys": "Return"}
+{"t": 74.74, "event": "Export STL: done"}

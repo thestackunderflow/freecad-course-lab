@@ -1,0 +1,14 @@
+0.0	recording started: a terminal (left), FreeCAD with the washer open (right)
+3.0	claude: start screen
+10.9	turn 1: Enter
+15.2	tool call: list_documents
+15.2	tool reply: list_documents
+16.6	tool call: get_objects
+16.6	tool reply: get_objects
+19.2	tool call: execute_code
+19.2	tool reply: execute_code
+23.2	tool call: execute_code
+23.2	tool reply: execute_code
+29.2	turn 1: end-of-turn line seen
+31.2	turn 1: reply done
+40.2	recording stopped

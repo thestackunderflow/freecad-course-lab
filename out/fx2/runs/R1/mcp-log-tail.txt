@@ -1,0 +1,23 @@
+=== /home/maker/.cache/claude-cli-nodejs/-home-maker-run-fx2/mcp-logs-freecad/2026-11-04T04-28-35-488Z.jsonl
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-04T04:28:35.491Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Successfully connected (transport: stdio) in 1050ms","timestamp":"2026-11-04T04:28:36.521Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Connection established with capabilities: {\"hasTools\":true,\"hasPrompts\":true,\"hasResources\":true,\"hasResourceSubscribe\":true,\"serverVersion\":{\"name\":\"FreeCADMCP\",\"version\":\"\"},\"protocolEra\":\"modern\",\"negotiatedProtocolVersion\":\"2026-07-28\"}","timestamp":"2026-11-04T04:28:36.521Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Tool \"create_object\" description truncated from 5735 to 4096 chars","timestamp":"2026-11-04T04:28:36.531Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Channel notifications skipped: server did not declare claude/channel capability","timestamp":"2026-11-04T04:28:36.532Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Calling MCP tool: list_documents","timestamp":"2026-11-04T04:28:47.843Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Tool 'list_documents' completed successfully in 16ms","timestamp":"2026-11-04T04:28:47.859Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Calling MCP tool: get_objects","timestamp":"2026-11-04T04:28:49.192Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Tool 'get_objects' completed successfully in 21ms","timestamp":"2026-11-04T04:28:49.213Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Calling MCP tool: execute_code","timestamp":"2026-11-04T04:28:51.789Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Tool 'execute_code' completed successfully in 16ms","timestamp":"2026-11-04T04:28:51.805Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Calling MCP tool: execute_code","timestamp":"2026-11-04T04:28:55.796Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+{"debug":"Tool 'execute_code' completed successfully in 60ms","timestamp":"2026-11-04T04:28:55.856Z","sessionId":"5efa621a-d0fe-4ad0-a752-311169c71bd2","cwd":"/home/maker/run-fx2"}
+=== /home/maker/.cache/claude-cli-nodejs/-home-maker-run-fx2/mcp-logs-freecad/2026-11-04T04-28-31-021Z.jsonl
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-04T04:28:31.023Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}
+{"debug":"Successfully connected (transport: stdio) in 969ms","timestamp":"2026-11-04T04:28:31.988Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}
+{"debug":"Connection established with capabilities: {\"hasTools\":true,\"hasPrompts\":true,\"hasResources\":true,\"hasResourceSubscribe\":true,\"serverVersion\":{\"name\":\"FreeCADMCP\",\"version\":\"\"},\"protocolEra\":\"modern\",\"negotiatedProtocolVersion\":\"2026-07-28\"}","timestamp":"2026-11-04T04:28:31.988Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}
+{"debug":"Sending SIGINT to MCP server process","timestamp":"2026-11-04T04:28:32.000Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}
+{"debug":"SIGINT failed, sending SIGTERM to MCP server process","timestamp":"2026-11-04T04:28:32.100Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}
+{"debug":"STDIO connection closed after 0s (cleanly)","timestamp":"2026-11-04T04:28:32.102Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}
+{"debug":"Cleared connection cache for reconnection","timestamp":"2026-11-04T04:28:32.103Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}
+{"debug":"MCP server process exited cleanly","timestamp":"2026-11-04T04:28:32.150Z","sessionId":"29e92c2d-9e4c-41bb-ad14-bfa1839a3507","cwd":"/home/maker/run-fx2"}

@@ -1,0 +1,2 @@
+/home/maker/.cache/claude-cli-nodejs/-home-maker-run-fx2/mcp-logs-freecad/2026-11-04T04-28-35-488Z.jsonl
+/home/maker/.cache/claude-cli-nodejs/-home-maker-run-fx2/mcp-logs-freecad/2026-11-04T04-28-31-021Z.jsonl

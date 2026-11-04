@@ -1,0 +1,3 @@
+Checking MCP server health…
+
+freecad: python3 /lab/proxy/mcp_log_proxy.py --log /lab/out/fx2/runs/R1/transcript.jsonl --png-dir /lab/out/fx2/runs/R1 -- uvx freecad-mcp@0.1.28 - ✔ Connected
