@@ -9,7 +9,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from draw_l2 import B, BLUE, GREEN, GREY, INK, PAPER, R, RED, W, canvas, header, text  # noqa: E402
+from draw_l2 import B, BLUE, GREEN, GREY, INK, PAPER, R, RED, W, canvas, font, header, text  # noqa: E402
 
 LAB = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(LAB, 'video', 'frames-fx2')
@@ -285,7 +285,150 @@ def card_teaser():
     save(im, 'card-teaser-1.png')
 
 
-if __name__ == '__main__':
+# --- rev 5 (owner rework, 4 Nov 2026): one picture per diagram that builds step by step (each step only adds) -----
+def r5_ast(step):
+    """F2: the file as text, 4 steps: facet line + tag; + the 3 vertex lines + tag; + plain numbers; + unit words 0."""
+    im, d = canvas(bg=WHITE); header(d, 'washer.ast: FreeCAD’s text (ASCII) STL')
+    d.rounded_rectangle((100, 200, 1500, 1000), radius=26, fill=LIGHT, outline=INK, width=6)
+    shown = (2, 6, 8, 8)[step - 1]
+    for k, ln in enumerate(AST[:shown]):
+        text(d, (150, 250 + k * 92), ln, 52, INK, MONO)
+    # tags on the right, each pointing at its line
+    arrow(d, (1740, 342), (1520, 342), BLUE, 8)
+    text(d, (1760, 342), 'facet = one triangle', 56, BLUE, anchor='lm')
+    if step >= 2:
+        arrow(d, (1740, 618), (1520, 618), BLUE, 8)
+        text(d, (1760, 618), 'vertex = one corner', 56, BLUE, anchor='lm')
+        text(d, (1760, 700), '(x, y, z)', 52, GREY, R, anchor='lm')
+    if step >= 3:
+        text(d, (910, 1110), 'plain numbers: mm? in?', 84, RED, anchor='mm')
+    if step >= 4:
+        text(d, (910, 1250), 'unit words in the whole file: 0', 70, GREEN, anchor='mm')
+    save(im, f'card-r5-ast-{step}.png')
+
+
+def r5_why(step):
+    """F4: why tiny means inches, 4 steps: the squares; + 25.4 per side; + about 16,000 in volume; + so: probably inches."""
+    im, d = canvas(bg=WHITE); header(d, 'Why tiny means "probably inches"')
+    d.rectangle((300, 230, 700, 630), fill=(236, 240, 246), outline=INK, width=8)
+    text(d, (500, 430), '1 inch', 80, INK, anchor='mm')
+    text(d, (500, 690), 'typed: 1 (inch)', 56, GREY, R, anchor='mm')
+    arrow(d, (800, 430), (1500, 430), RED, 14)
+    text(d, (1160, 350), 'typed in inches, read as mm', 52, RED, B, anchor='mm')
+    d.rectangle((1640, 414, 1672, 446), fill=(176, 190, 212), outline=INK, width=4)
+    text(d, (1656, 520), '1 mm', 70, INK, anchor='mm')
+    text(d, (1656, 600), 'read: 1 (mm)', 56, GREY, R, anchor='mm')
+    if step >= 2:
+        text(d, (1280, 830), '25.4 x smaller on every side   (1 inch = 25.4 mm)', 70, INK, anchor='mm')
+    if step >= 3:
+        text(d, (1280, 990), '25.4 x 25.4 x 25.4 = about 16,000 x smaller in volume', 70, RED, anchor='mm')
+    if step >= 4:
+        d.rounded_rectangle((160, 1110, 2400, 1290), radius=26, fill=(221, 240, 227), outline=GREEN, width=8)
+        text(d, (1280, 1200), 'so tiny means probably inches  ·  Yes = x 25.4', 72, GREEN, anchor='mm')
+    save(im, f'card-r5-why-{step}.png')
+
+
+def r5_rule(step):
+    """F5: the 9 mm3 rule, 4 steps: the bar and the line; + under asks / above no question; + 2 mm cube 8; + washer 4.75."""
+    im, d = canvas(bg=WHITE); header(d, 'PrusaSlicer’s rule: the whole part’s volume')
+    d.rounded_rectangle((BX0, BY - 70, vx(9), BY + 70), radius=18, fill=(253, 236, 214), outline=AMBER, width=6)
+    d.rounded_rectangle((vx(9), BY - 70, BX1, BY + 70), radius=18, fill=(221, 240, 227), outline=GREEN, width=6)
+    d.line((vx(9), BY - 150, vx(9), BY + 150), fill=INK, width=12)
+    text(d, (vx(9), BY - 200), 'the line: 9 mm3', 78, INK, anchor='mm')
+    text(d, (BX0, BY + 110), '0', 56, GREY, R, anchor='mm')
+    text(d, (BX1, BY + 110), '20 mm3', 56, GREY, R, anchor='mm')
+    text(d, (1280, 300), 'the whole part’s volume, in mm3', 66, GREY, R, anchor='mm')
+    if step >= 2:
+        text(d, ((BX0 + vx(9)) / 2, BY + 230), 'under: it asks', 72, AMBER, anchor='mm')
+        text(d, ((vx(9) + BX1) / 2, BY + 230), 'above: no question (2.9.2)', 72, GREEN, anchor='mm')
+    if step >= 3:
+        d.ellipse((vx(8) - 30, BY - 30, vx(8) + 30, BY + 30), fill=GREY)
+        text(d, (vx(8), BY + 360), '2 mm cube: 2 x 2 x 2 = 8', 60, GREY, anchor='mm')
+    if step >= 4:
+        d.ellipse((vx(4.75) - 36, BY - 36, vx(4.75) + 36, BY + 36), fill=RED)
+        text(d, (vx(4.75), BY - 110), 'our washer: 4.75', 66, RED, anchor='mm')
+    save(im, f'card-r5-rule-{step}.png')
+
+
+def r5_quote(step):
+    """F10: Claude's reply line 14 (run R1, reply.txt:14) word for word; + "pick mm" lit; + the real dialog's buttons."""
+    im, d = canvas(bg=WHITE); header(d, 'Claude’s reply, word for word')
+    d.rounded_rectangle((120, 200, 2440, 860), radius=26, fill=LIGHT, outline=INK, width=6)
+    for k, ln in enumerate(QUOTE[:3]):
+        text(d, (200, 290 + k * 140), ln, 76, INK, R, anchor='lm')
+    y = 290 + 3 * 140
+    lead = 'If your slicer asks about units, '
+    text(d, (200, y), lead, 76, INK, R, anchor='lm')
+    x = 200 + font(R, 76).getlength(lead)
+    if step >= 2:
+        d.rounded_rectangle((x - 14, y - 58, x + font(B, 76).getlength('pick mm.') + 14, y + 58), radius=14, fill=(221, 240, 227), outline=GREEN, width=6)
+    text(d, (x, y), 'pick mm.', 76, GREEN if step >= 2 else INK, B if step >= 2 else R, anchor='lm')
+    text(d, (2400, 920), 'run R1, reply line 14', 48, GREY, R, anchor='rm')
+    if step >= 3:
+        text(d, (480, 1150), 'the real dialog:', 72, INK, anchor='mm')
+        for bx, lab in ((860, 'No'), (1320, 'Yes')):
+            d.rounded_rectangle((bx, 1070, bx + 380, 1230), radius=22, fill=LIGHT, outline=INK, width=8)
+            text(d, (bx + 190, 1150), lab, 84, INK, anchor='mm')
+        text(d, (1780, 1150), 'no mm button', 72, RED, anchor='lm')
+    save(im, f'card-r5-quote-{step}.png')
+
+
+def r5_turn(step):
+    """F12 + F11a: your turn (steps 1-5), then the answer builds onto the same card (steps 6-8)."""
+    im, d = canvas(bg=WHITE); header(d, 'Your turn' if step <= 5 else 'Your turn: the answer')
+    rows = [('1  Export a 2 mm cube', 'as an STL and a 3MF'), ('2  Open both in PrusaSlicer', ''), ('3  Which one asks?', '')]
+    for k, (a, b) in enumerate(rows[:min(step, 3)]):
+        y = 230 + k * 270
+        d.rounded_rectangle((100, y, 1260, y + 220), radius=26, fill=LIGHT, outline=INK, width=6)
+        text(d, (150, y + (80 if b else 110)), a, 66, INK, anchor='lm')
+        if b:
+            text(d, (150, y + 165), '   ' + b, 58, GREY, R, anchor='lm')
+    if step >= 4:
+        d.rounded_rectangle((1300, 230, 2460, 1070), radius=26, fill=WHITE, outline=AMBER, width=6)
+        cube(d, 1440, 380, 130)
+        text(d, (1560, 330), 'a 3 mm cube: 27 mm3', 66, INK, anchor='lm')
+        text(d, (1560, 420), 'drawn in inch numbers', 56, AMBER, R, anchor='lm')
+        text(d, (1560, 490), 'by mistake', 56, AMBER, R, anchor='lm')
+        for k, q in enumerate(('Will it ask?', 'Why not?', 'What tells you it is wrong?')):
+            text(d, (1350, 600 + k * 80), q, 60, INK, anchor='lm')
+    if step == 5:
+        d.rounded_rectangle((100, 1100, 2460, 1300), radius=26, fill=(221, 240, 227), outline=GREEN, width=8)
+        text(d, (1280, 1200), 'Pause and try it', 96, GREEN, anchor='mm')
+    if step >= 6:
+        x0, x1, by = 1360, 2400, 975
+        def ax(v):
+            return x0 + (x1 - x0) * v / 30.0
+        d.rounded_rectangle((x0, by - 40, ax(9), by + 40), radius=12, fill=(253, 236, 214), outline=AMBER, width=5)
+        d.rounded_rectangle((ax(9), by - 40, x1, by + 40), radius=12, fill=(221, 240, 227), outline=GREEN, width=5)
+        d.line((ax(9), by - 80, ax(9), by + 80), fill=INK, width=8)
+        text(d, (ax(9), by - 105), '9 mm3', 48, INK, anchor='mm')
+        text(d, (x0, by + 70), '0', 44, GREY, R, anchor='mm')
+        text(d, (x1, by + 70), '30', 44, GREY, R, anchor='mm')
+        d.ellipse((ax(27) - 26, by - 26, ax(27) + 26, by + 26), fill=GREEN)
+        text(d, (ax(27) + 20, by - 105), '3 x 3 x 3 = 27', 48, GREEN, anchor='rm')
+    if step >= 7:
+        text(d, (1880, 1135), 'above 9: no question', 66, GREEN, anchor='mm')
+    if step >= 8:
+        d.rounded_rectangle((100, 1200, 2460, 1340), radius=26, fill=(253, 236, 214), outline=AMBER, width=8)
+        text(d, (1280, 1270), 'no question does not mean the size is right', 72, AMBER, anchor='mm')
+    save(im, f'card-r5-turn-{step}.png')
+
+
+def rev5():
+    for s in (1, 2, 3, 4):
+        r5_ast(s)
+        r5_why(s)
+        r5_rule(s)
+    for s in (1, 2, 3):
+        r5_quote(s)
+        card_recap(s)
+    for s in range(1, 9):
+        r5_turn(s)
+
+
+if __name__ == '__main__' and 'rev5' in sys.argv:
+    rev5()
+elif __name__ == '__main__':
     card_vol()
     card_teaser()
     for s in (1, 2):
