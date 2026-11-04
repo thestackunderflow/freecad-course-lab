@@ -66,24 +66,25 @@ def card_lists(step):
     im, d = canvas(bg=WHITE)
     if step == 1:
         header(d, 'Two lists on one computer')
-        box(d, 120, 330, 1230, 1100, fill=GREEN_BG, outline=GREEN)
-        text(d, (675, 410), 'your terminal', 70, INK, anchor='mm')
-        for k, p in enumerate(LONG[1:]):
+        box(d, 120, 270, 1230, 1260, fill=GREEN_BG, outline=GREEN)
+        text(d, (675, 350), 'your terminal', 70, INK, anchor='mm')
+        for k, p in enumerate(LONG):
             hot = '.local/bin' in p
-            text(d, (180, 500 + k * 70), p, 46, AMBER if hot else INK, path=MONOB if hot else MONO, anchor='lm')
-        box(d, 1330, 330, 2440, 1100, fill=LIGHT, outline=INK)
-        text(d, (1885, 410), 'a desktop app', 70, INK, anchor='mm')
-        for k, p in enumerate(SHORT[:6]):
-            text(d, (1390, 500 + k * 70), p, 46, INK, path=MONO, anchor='lm')
-        text(d, (1885, 960), 'shorter: no .local/bin', 58, RED, anchor='mm')
-        text(d, (1280, 1250), 'same computer, two different lists', 70, INK, anchor='mm')
+            text(d, (170, 440 + k * 86), p, 54, AMBER if hot else INK, path=MONOB if hot else MONO, anchor='lm')
+        box(d, 1330, 270, 2440, 1260, fill=LIGHT, outline=INK)
+        text(d, (1885, 350), 'a desktop app', 70, INK, anchor='mm')
+        for k, p in enumerate(SHORT):
+            text(d, (1380, 440 + k * 86), p, 54, INK, path=MONO, anchor='lm')
+        text(d, (675, 1310), '9 entries, .local/bin twice', 52, GREY, R, anchor='mm')
+        text(d, (1885, 1310), '9 folders, none is .local/bin', 52, RED, anchor='mm')
+        text(d, (1280, 1400), 'same computer, two different lists', 70, INK, anchor='mm')
     elif step == 2:
         header(d, 'The system\'s default list')
         box(d, 160, 300, 2400, 1080)
         for k, p in enumerate(SHORT):
             col, row = divmod(k, 5)
             text(d, (260 + col * 1080, 400 + row * 120), p, 58, INK, path=MONO, anchor='lm')
-        text(d, (1280, 1000), 'nine folders, no .local/bin on it', 64, RED, anchor='mm')
+        text(d, (1280, 1000), 'nine folders, none is .local/bin', 64, RED, anchor='mm')
         text(d, (1280, 1140), 'measured in Docker, from /etc/environment', 52, GREY, R, anchor='mm')
         text(d, (1280, 1230), 'a real app\'s list may be longer:', 52, GREY, R, anchor='mm')
         text(d, (1280, 1310), 'what matters is that .local/bin is missing', 52, GREY, R, anchor='mm')
@@ -152,18 +153,29 @@ def card_paths():
     rows = [('macOS', '~/Library/Application Support/Claude/', '~/Library/Logs/Claude'),
             ('Windows', '%APPDATA%\\Claude\\', '%APPDATA%\\Claude\\logs'),
             ('Linux', '~/.config/Claude/', '~/.config/Claude/logs')]
-    text(d, (560, 270), 'config file folder', 54, GREY, R, anchor='mm')
-    text(d, (1850, 270), 'log folder', 54, GREY, R, anchor='mm')
     for k, (osn, cfg, log) in enumerate(rows):
-        y = 330 + k * 270
-        box(d, 100, y, 2460, y + 230)
-        text(d, (150, y + 50), osn, 62, BLUE, anchor='lm')
-        text(d, (150, y + 150), cfg, 48, INK, path=MONO, anchor='lm')
-        text(d, (1330, y + 150), log, 48, INK, path=MONO, anchor='lm')
-    text(d, (1280, 1180), 'file: claude_desktop_config.json', 58, INK, path=MONO, anchor='mm')
-    text(d, (1280, 1280), 'from the MCP docs (connect-local-servers)', 52, GREY, R, anchor='mm')
-    text(d, (1280, 1360), 'Windows: write every backslash twice', 52, AMBER, anchor='mm')
+        y = 230 + k * 330
+        box(d, 80, y, 2480, y + 300)
+        text(d, (130, y + 52), osn, 66, BLUE, anchor='lm')
+        text(d, (560, y + 52), 'config:', 54, GREY, R, anchor='lm')
+        text(d, (790, y + 52), cfg, 64, INK, path=MONO, anchor='lm')
+        text(d, (560, y + 150), 'logs:', 54, GREY, R, anchor='lm')
+        text(d, (790, y + 150), log, 64, INK, path=MONO, anchor='lm')
+    text(d, (1280, 1250), 'file: claude_desktop_config.json', 66, INK, path=MONO, anchor='mm')
+    text(d, (1280, 1340), 'Windows: write every backslash twice', 66, AMBER, anchor='mm')
+    text(d, (1280, 1410), 'from the MCP docs (connect-local-servers)', 48, GREY, R, anchor='mm')
     save(im, 'card-paths.png')
+
+
+def card_quiz():
+    im, d = canvas(bg=WHITE)
+    header(d, 'Your turn: pause and think')
+    box(d, 160, 330, 2400, 1000, fill=AMBER_BG, outline=AMBER)
+    text(d, (1280, 520), 'you add .local/bin to', 96, INK, anchor='mm')
+    text(d, (1280, 650), "your terminal's start-up file", 96, INK, anchor='mm')
+    text(d, (1280, 840), 'does the desktop app find uvx?', 100, AMBER, anchor='mm')
+    text(d, (1280, 1180), 'pause the video and think', 64, GREY, R, anchor='mm')
+    save(im, 'card-quiz.png')
 
 
 def card_sofar(step):
@@ -245,6 +257,7 @@ if __name__ == '__main__':
     for s in (1, 2, 3, 4):
         card_lists(s)
     card_paths()
+    card_quiz()
     for s in (1, 2, 3):
         card_sofar(s)
         card_recap(s)
