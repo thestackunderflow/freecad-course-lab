@@ -79,7 +79,7 @@ def dots(d, step, n, y=1360):
 
 
 # ---------------- the cabinet ----------------
-def cabinet(d, open_new=False, old_dust=True, addon_old=False, hand=False):
+def cabinet(d, open_new=False, old_dust=True, addon_old=False, hand=False, new_label='v1-1', hand_text='FreeCAD 1.1'):
     """A cabinet at the left-centre: top drawer = old FreeCAD/Mod, bottom drawer = v1-1."""
     x0, x1 = 420, 1500
     d.rectangle((x0 - 30, 300, x1 + 30, 1220), fill=WOOD_D)
@@ -91,17 +91,17 @@ def cabinet(d, open_new=False, old_dust=True, addon_old=False, hand=False):
     # new drawer (pulled out to the right when open)
     dx = 260 if open_new else 0
     d.rectangle((x0 + dx, 780, x1 + dx, 1190), fill=WOOD, outline=WOOD_D, width=8)
-    text(d, ((x0 + x1) / 2 + dx, 920), 'v1-1', 110, BLUE, MONOB, 'mm')
+    text(d, ((x0 + x1) / 2 + dx, 920), new_label, 110, BLUE, MONOB, 'mm')
     text(d, ((x0 + x1) / 2 + dx, 1050), 'the new drawer', 56, INK, R, 'mm')
     d.rounded_rectangle(((x0 + x1) / 2 + dx - 90, 1110, (x0 + x1) / 2 + dx + 90, 1150), radius=12, fill=WOOD_D)
     if addon_old:
-        box(d, 1060, 600, 1480, 720, fill=AMBER_BG, outline=AMBER, w=5)
-        text(d, (1270, 660), 'FreeCADMCP', 60, AMBER, MONOB, 'mm')
+        box(d, 450, 628, 850, 728, fill=AMBER_BG, outline=AMBER, w=5)   # rev 5: clear of 'the old drawer'
+        text(d, (650, 678), 'FreeCADMCP', 56, AMBER, MONOB, 'mm')
     if hand:
         # FreeCAD's hand: a blue pointer on the new drawer's handle
         hx, hy = x1 + dx - 260, 1280
         d.ellipse((hx, hy - 60, hx + 120, hy + 60), fill=BLUE)
-        text(d, (hx + 160, hy), 'FreeCAD 1.1', 60, BLUE, B, 'lm')
+        text(d, (hx + 160, hy), hand_text, 60, BLUE, B, 'lm')
 
 
 def card_drawer(step):
@@ -168,6 +168,53 @@ def card_drawer(step):
         text(d, (2030, 520), 'the files are there;', 64, RED, B, 'mm')
         text(d, (2030, 610), 'FreeCAD never looks', 64, RED, B, 'mm')
     save(im, f'card-drawer-{step}.png')
+
+
+def card_cab(step):
+    """Rev 5 (4 Nov): ONE cabinet that builds. 1a drawers + a box (the mapping), 1b + the name rule, 1c + the new
+    drawer open (FreeCAD 1.1's hand). 2a..2c are built on 1c: the older guide, the conclusion, trap one.
+    Mapping everywhere: drawer = a Mod folder, box = one add-on's folder."""
+    im, d = canvas()
+    two = step.startswith('2')
+    header(d, 'Trap one: the wrong drawer' if step == '2c' else 'A tool cabinet: one drawer per version')
+    opened = step != '1a' and step != '1b'
+    cabinet(d, open_new=opened, addon_old=True, hand=opened, new_label='v1-1/Mod', hand_text='1.1 opens v1-1/Mod')
+    X = 1840
+    if not two:
+        done = step != '1a'
+        c1, c2 = (GREY, GREY) if done else (INK, AMBER)
+        text(d, (X, 330), 'drawer = a Mod folder', 54, c1, B, 'la')
+        text(d, (X, 410), 'box = one add-on', 54, c2, B, 'la')
+        text(d, (X, 480), "(its folder: FreeCADMCP)", 46, GREY, R, 'la')
+        if step in ('1b', '1c'):
+            c = GREY if step == '1c' else None
+            x = X
+            for s_, col in [('v', INK), ('1', BLUE), ('-', INK), ('1', GREEN)]:
+                text(d, (x, 700), s_, 170, c or col, MONOB, 'lm')
+                x += 125
+            text(d, (X + 125 + 50, 840), 'major', 50, c or BLUE, B, 'mm')
+            text(d, (X + 375 + 50, 840), 'minor', 50, c or GREEN, B, 'mm')
+            text(d, (X, 940), '1.1 = major 1, minor 1', 50, c or INK, B, 'la')
+            text(d, (X, 1020), "(the rule in FreeCAD's code)", 44, GREY, R, 'la')
+    else:
+        box(d, 1840, 320, 2500, 840, fill=(250, 248, 240), outline=GREY)
+        text(d, (2170, 390), 'an older guide', 56, GREY, B, 'mm')
+        for k in range(3):
+            d.line((1900, 470 + k * 60, 2440, 470 + k * 60), fill=FAINT, width=12)
+        text(d, (2170, 690), 'copy to', 50, INK, B, 'mm')
+        text(d, (2170, 770), 'FreeCAD/Mod', 56, INK, MONOB, 'mm')
+        arrow(d, 1840, 640, 1560, 560, AMBER)
+        c = GREY if step != '2a' else AMBER
+        text(d, (2170, 920), 'that folder: easy to make,', 44, c, B, 'mm')
+        text(d, (2170, 980), 'or left from an older FreeCAD', 44, c, B, 'mm')
+        if step in ('2b', '2c'):
+            c = RED if step == '2b' else GREY
+            text(d, (2170, 1100), 'the files are there;', 56, c, B, 'mm')
+            text(d, (2170, 1175), 'FreeCAD never looks', 56, c, B, 'mm')
+        if step == '2c':
+            d.rounded_rectangle((560, 1330, 2000, 1425), radius=24, fill=(253, 226, 226), outline=RED, width=6)
+            text(d, (1280, 1378), 'trap one: the add-on is in the wrong drawer', 52, RED, B, 'mm')
+    save(im, f'card-cab-{step}.png')
 
 
 def card_paths(n=4):
@@ -276,6 +323,8 @@ def card_short_q():
 
 
 if __name__ == '__main__':
+    for s in ('1a', '1b', '1c', '2a', '2b', '2c'):
+        card_cab(s)
     for s in (1, 2, 3, '4a', 4, '4b', 5, '5b', '5c', 6):
         card_drawer(s)
     for n in (1, 2, 3, 4):
