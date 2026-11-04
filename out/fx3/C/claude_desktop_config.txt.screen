@@ -1,0 +1,35 @@
+$ cat ~/.config/Claude/claude_desktop_config.json
+{
+  "mcpServers": {
+    "freecad": {
+      "command": "/home/maker/.local/bin/uvx",
+      "args": ["freecad-mcp@0.1.28"]
+    }
+  }
+}
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

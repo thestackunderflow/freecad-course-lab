@@ -1,0 +1,2 @@
+Removed MCP server freecad from user config
+File modified: /home/maker/.claude.json

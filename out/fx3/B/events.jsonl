@@ -1,0 +1,6 @@
+{"t": 0.077, "event": "recording started: same terminal, nothing installed since take A"}
+{"t": 7.095, "event": "launcher short: typed", "keys": "Return"}
+{"t": 7.722, "event": "launcher short: ENOENT"}
+{"t": 20.384, "event": "launcher full: typed", "keys": "Return"}
+{"t": 21.01, "event": "launcher full: starts"}
+{"t": 30.65, "event": "recording stopped"}

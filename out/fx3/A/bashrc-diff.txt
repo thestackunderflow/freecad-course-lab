@@ -1,0 +1,3 @@
+118a119,120
+> 
+> . "$HOME/.local/bin/env"

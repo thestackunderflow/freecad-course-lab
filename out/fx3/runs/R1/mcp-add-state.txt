@@ -1,0 +1,2 @@
+Added stdio MCP server freecad with command: /home/maker/.local/bin/uvx freecad-mcp@0.1.28 to user config
+File modified: /home/maker/.claude.json

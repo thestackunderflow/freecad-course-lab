@@ -1,0 +1,9 @@
+{"t": 0.028, "event": "recording started: a terminal in an empty folder, no plug connected"}
+{"t": 1.578, "event": "claude start: typed", "text": "claude"}
+{"t": 2.4, "event": "claude start: typed: Enter", "keys": "Return"}
+{"t": 3.023, "event": "claude: start screen"}
+{"t": 6.271, "event": "turn 1: typing", "text": "The FreeCAD MCP plug fails in Claude Desktop. The log says: spawn uvx ENOENT. In my terminal, uvx works. What should I change?"}
+{"t": 7.079, "event": "turn 1: Enter"}
+{"t": 14.757, "event": "turn 1: end-of-turn line seen"}
+{"t": 16.758, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 24.919, "event": "recording stopped"}

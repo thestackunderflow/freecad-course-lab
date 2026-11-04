@@ -1,0 +1,1 @@
+auto mode: Claude Code 2.1.308 default launch (no flags), as lesson 7 R1; no CLAUDE.md in the folder

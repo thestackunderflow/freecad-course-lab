@@ -1,0 +1,1 @@
+The FreeCAD MCP plug fails in Claude Desktop. The log says: spawn uvx ENOENT. In my terminal, uvx works. What should I change?

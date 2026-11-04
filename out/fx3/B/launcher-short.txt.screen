@@ -1,0 +1,35 @@
+$ env -i HOME=/home/maker PATH=/usr/bin:/bin $(which node) /home/maker/fx3/launcher.js uvx
+spawn uvx ENOENT
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

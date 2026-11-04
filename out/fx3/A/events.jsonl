@@ -1,0 +1,13 @@
+{"t": 0.076, "event": "recording started: a new login shell, uv installed"}
+{"t": 3.904, "event": "uvx --version: typed", "keys": "Return"}
+{"t": 5.327, "event": "uvx --version: printed"}
+{"t": 10.573, "event": "echo PATH: typed", "keys": "Return"}
+{"t": 12.001, "event": "echo PATH: printed"}
+{"t": 17.212, "event": "which uvx: typed", "keys": "Return"}
+{"t": 24.878, "event": "grep startup: typed", "keys": "Return"}
+{"t": 32.118, "event": "env file: typed", "keys": "Return"}
+{"t": 39.139, "event": "etc-environment: typed", "keys": "Return"}
+{"t": 40.563, "event": "short list: shown"}
+{"t": 46.622, "event": "systemd-user: typed", "keys": "Return"}
+{"t": 53.251, "event": "which uvx again: typed", "keys": "Return"}
+{"t": 74.678, "event": "recording stopped"}

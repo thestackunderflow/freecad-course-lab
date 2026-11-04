@@ -1,0 +1,4 @@
+/home/maker/.bashrc:120:. "$HOME/.local/bin/env"
+/home/maker/.profile:25:if [ -d "$HOME/.local/bin" ] ; then
+/home/maker/.profile:26:    PATH="$HOME/.local/bin:$PATH"
+/home/maker/.profile:29:. "$HOME/.local/bin/env"

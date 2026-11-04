@@ -1,0 +1,36 @@
+     tray icon, and reopen it.
+
+  If you run Claude Desktop on Windows but uvx
+  is installed in WSL, as your environment
+  suggests, a Linux path won't work from
+  Windows. Either:
+  - Install uv on Windows (winget install
+    astral-sh.uv) and use its .exe path,
+    typically
+    C:\\Users\\<you>\\.local\\bin\\uvx.exe.
+    Remember to double the backslashes in
+    JSON. This is the better option if FreeCAD
+    itself runs on Windows.
+  - Or launch it through WSL:
+  "command": "wsl.exe",
+  "args": ["-e", "/home/maker/.local/bin/uvx",
+  "freecad-mcp"]
+    This only works if FreeCAD is reachable
+    from inside WSL.
+
+  Also check the FreeCAD side. The FreeCAD MCP
+  addon (workbench) usually has to be
+  installed in FreeCAD with its RPC server
+  started. Otherwise the server will launch
+  but fail to connect.
+
+  If it still fails, paste the output of which
+  uvx and your config block and I'll look at
+  it.
+
+✻ Worked for 7s · done 7:13 AM
+  tmux detected · scroll with PgUp/PgDn · o…
+──────────────────────────────────────────────
+❯ which uvx gives /home/maker/.local/bin/uvx
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

@@ -23,7 +23,7 @@ open(sys.argv[1], 'w').write('CLAUDE_CODE_OAUTH_TOKEN=' + d['claudeAiOauth']['ac
 PY
 T0=$(date +%s)
 MSYS_NO_PATHCONV=1 docker run --rm --name "${FCC_PREFIX:-fcc}-claude-$RUN" --hostname pc --shm-size 1g --memory 6g --user maker \
-  --env-file "$ENVF" -e LESSON="$LESSON" -v "$LAB:/lab" -w /lab fcc-app:1.1.4-0.1.28 bash "/lab/$TAKE" "$RUN" > "$S/container.log" 2>&1 \
+  --env-file "$ENVF" -e LESSON="$LESSON" -v "$LAB:/lab" -w /lab ${FCC_IMAGE:-fcc-app:1.1.4-0.1.28} bash "/lab/$TAKE" "$RUN" > "$S/container.log" 2>&1 \
   || echo "container exit $?"
 rm -f "$ENVF"
 COST=$(python - "$S" <<'PY'

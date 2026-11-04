@@ -1,0 +1,6 @@
+{"t": 0.074, "event": "recording started: same terminal"}
+{"t": 5.613, "event": "config: full path", "keys": "Return"}
+{"t": 23.93, "event": "add full path: typed", "keys": "Return"}
+{"t": 29.766, "event": "list: typed", "keys": "Return"}
+{"t": 30.696, "event": "list: Connected"}
+{"t": 46.529, "event": "recording stopped"}

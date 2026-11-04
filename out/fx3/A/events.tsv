@@ -1,0 +1,13 @@
+recording started: a new login shell, uv installed	0.08
+uvx --version: typed	3.90
+uvx --version: printed	5.33
+echo PATH: typed	10.57
+echo PATH: printed	12.00
+which uvx: typed	17.21
+grep startup: typed	24.88
+env file: typed	32.12
+etc-environment: typed	39.14
+short list: shown	40.56
+systemd-user: typed	46.62
+which uvx again: typed	53.25
+recording stopped	74.68
