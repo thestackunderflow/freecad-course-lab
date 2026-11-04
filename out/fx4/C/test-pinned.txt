@@ -1,0 +1,11 @@
+reply: {"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2025-06-18","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listCha
+exit: -9
+plug's stderr after exit:
+2026-11-04 05:33:34,422 - FreeCADMCPserver - INFO - Only text feedback: False
+2026-11-04 05:33:34,422 - FreeCADMCPserver - INFO - Connecting to FreeCAD RPC server at: localhost
+2026-11-04 05:33:34,447 - FreeCADMCPserver - INFO - FreeCADMCP server starting up
+2026-11-04 05:33:34,448 - FreeCADMCPserver - WARNING - Could not connect to FreeCAD on startup: [Errno 111] Connection refused
+2026-11-04 05:33:34,448 - FreeCADMCPserver - WARNING - Make sure the FreeCAD addon is running before using FreeCAD resources or tools
+2026-11-04 05:33:36,452 - FreeCADMCPserver - INFO - Disconnecting from FreeCAD on shutdown
+2026-11-04 05:33:36,452 - FreeCADMCPserver - INFO - FreeCADMCP server shut down
+

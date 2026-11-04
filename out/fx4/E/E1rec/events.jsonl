@@ -1,0 +1,8 @@
+{"t": 10.057, "event": "recording started: a terminal, Python 3.11 only"}
+{"t": 14.78, "event": "pip 3.11: typed", "keys": "Return"}
+{"t": 16.238, "event": "pip 3.11: error block"}
+{"t": 38.138, "event": "uvx 0.1.28: typed", "keys": "Return"}
+{"t": 38.763, "event": "uv: downloading cpython 3.12"}
+{"t": 48.768, "event": "0.1.28: waits"}
+{"t": 128.338, "event": "uvx 0.1.28: timeout returned"}
+{"t": 131.383, "event": "recording stopped"}

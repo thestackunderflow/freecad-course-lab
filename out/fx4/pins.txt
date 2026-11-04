@@ -1,0 +1,9 @@
+uv 0.13.6 (x86_64-unknown-linux-gnu)
+2.1.308 (Claude Code)
+prereg commit b2e37a3
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+Wed Nov  4 05:30:16 UTC 2026
+mcp resolved by 0.1.19 today: 2.3.0

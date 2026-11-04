@@ -1,0 +1,7 @@
+Installed 39 packages in 22ms
+2026-11-04 05:36:54,551 - FreeCADMCPserver - INFO - Only text feedback: False
+2026-11-04 05:36:54,551 - FreeCADMCPserver - INFO - Connecting to FreeCAD RPC server at: localhost
+2026-11-04 05:36:54,583 - FreeCADMCPserver - INFO - FreeCADMCP server starting up
+2026-11-04 05:36:54,589 - FreeCADMCPserver - WARNING - Could not connect to FreeCAD on startup: Failed to connect to FreeCAD ([Errno 111] Connection refused). Make sure the FreeCAD addon is running.
+2026-11-04 05:36:54,589 - FreeCADMCPserver - WARNING - Make sure the FreeCAD addon is running before using FreeCAD resources or tools
+exit=124

@@ -1,0 +1,2 @@
+RPC Server started at 127.0.0.1:9875 (PID 37).
+(transcribed from E2-status-bar.png; same words as lesson 7 plus the PID suffix)

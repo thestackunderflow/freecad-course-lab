@@ -1,0 +1,33 @@
+$ uvx --exclude-newer 2026-07-27T00:00:00Z --from freecad-mcp python -c "import importlib.metadata as m; print(m.version('freecad-mcp'), m.version('mcp'))"
+0.1.19 1.28.1
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

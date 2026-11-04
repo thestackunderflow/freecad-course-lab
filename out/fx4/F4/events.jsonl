@@ -1,0 +1,12 @@
+{"t": 0.062, "event": "recording started: the container of F3"}
+{"t": 3.941, "event": "cache clean: typed", "keys": "Return"}
+{"t": 5.367, "event": "cache clean: done"}
+{"t": 8.767, "event": "unpinned: typed", "keys": "Return"}
+{"t": 38.924, "event": "unpinned: waits"}
+{"t": 74.978, "event": "unpinned versions: typed", "keys": "Return"}
+{"t": 76.402, "event": "unpinned versions: printed"}
+{"t": 81.124, "event": "unpinned july: typed", "keys": "Return"}
+{"t": 96.299, "event": "unpinned july: waits"}
+{"t": 118.699, "event": "unpinned july versions: typed", "keys": "Return"}
+{"t": 120.125, "event": "unpinned july versions: printed"}
+{"t": 123.151, "event": "recording stopped"}

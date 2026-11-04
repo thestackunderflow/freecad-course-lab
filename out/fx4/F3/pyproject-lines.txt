@@ -1,0 +1,4 @@
+2:name = "freecad-mcp"
+10:requires-python = ">=3.12"
+12:    "mcp[cli]>=1.12.2",
+17:freecad-mcp = "freecad_mcp.server:main"

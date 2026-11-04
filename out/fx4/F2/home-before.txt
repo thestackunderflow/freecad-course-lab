@@ -1,0 +1,5 @@
+/home/maker/.local:
+total 16
+drwxr-xr-x 3 maker maker 4096 Nov  4 05:38 .
+drwxr-x--- 1 maker maker 4096 Nov  4 05:38 ..
+drwxr-xr-x 2 maker maker 4096 Nov  4 05:38 bin

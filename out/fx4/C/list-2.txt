@@ -1,0 +1,1 @@
+freecad: uvx freecad-mcp@0.1.28 - ✔ Connected

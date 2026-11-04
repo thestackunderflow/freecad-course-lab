@@ -1,0 +1,32 @@
+Pin `mcp` below 2 in the command that launches the server. The `freecad-mcp` package was written against mcp 1.x (`from mcp.server.fastmcp import FastMCP`), and mcp 2.x renamed that module.
+
+If you launch it with `uvx`, as your traceback suggests, add `--with "mcp<2"`:
+
+```
+uvx --with "mcp<2" freecad-mcp
+```
+
+If it's configured in an MCP client config (Claude Desktop, Claude Code `.mcp.json`, etc.), change the args there:
+
+```json
+{
+  "mcpServers": {
+    "freecad": {
+      "command": "uvx",
+      "args": ["--with", "mcp<2", "freecad-mcp"]
+    }
+  }
+}
+```
+
+For Claude Code, the CLI equivalent is:
+
+```
+claude mcp add freecad -- uvx --with "mcp<2" freecad-mcp
+```
+
+(Remove the old entry first with `claude mcp remove freecad`.)
+
+If you installed it another way, run `pip install "mcp<2"` or `uv pip install "mcp<2"` in that environment.
+
+The permanent fix is for the `freecad-mcp` maintainers to cap the dependency (`mcp<2`) or migrate to `MCPServer`. Until they do, the pin is the right workaround. If `--with` doesn't override the version, because the package pulls in 2.x first, use `uvx --from freecad-mcp --with "mcp<2" freecad-mcp`.

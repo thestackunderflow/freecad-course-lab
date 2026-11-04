@@ -1,0 +1,13 @@
+total 44
+drwxr-xr-x  9 maker maker 4096 Nov  4 05:30 .
+drwxr-xr-x  5 maker maker 4096 Nov  4 05:30 ..
+-rw-r--r--  1 maker maker    1 Nov  4 05:30 .gitignore
+-rw-rw-rw-  1 maker maker    0 Nov  4 05:30 .lock
+-rw-r--r--  1 maker maker   43 Nov  4 05:30 CACHEDIR.TAG
+drwxr-xr-x 43 maker maker 4096 Nov  4 05:30 archive-v0
+drwxr-xr-x  2 maker maker 4096 Nov  4 05:30 builds-v0
+drwxr-xr-x  3 maker maker 4096 Nov  4 05:30 environments-v2
+drwxr-xr-x  3 maker maker 4096 Nov  4 05:30 interpreter-v4
+drwxr-xr-x  2 maker maker 4096 Nov  4 05:30 sdists-v10
+drwxr-xr-x  3 maker maker 4096 Nov  4 05:30 simple-v27
+drwxr-xr-x  3 maker maker 4096 Nov  4 05:30 wheels-v7

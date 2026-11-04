@@ -1,0 +1,2 @@
+readable
+Readable only through the JSON viewer's Filter box (filter text mcp[cli] shows the requires_dist line; 2026-07-05 shows upload_time); the unfiltered view is a wall of description text, so F3 films the filtered view. Issue 98 not needed.

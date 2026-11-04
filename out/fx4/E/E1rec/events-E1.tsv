@@ -1,0 +1,8 @@
+recording started: a terminal, Python 3.11 only	10.06
+pip 3.11: typed	14.78
+pip 3.11: error block	16.24
+uvx 0.1.28: typed	38.14
+uv: downloading cpython 3.12	38.76
+0.1.28: waits	48.77
+uvx 0.1.28: timeout returned	128.34
+recording stopped	131.38

@@ -1,0 +1,34 @@
+$ uvx --with "mcp[cli]<2" --from freecad-mcp@0.1.19 python -c "import importlib.metadata as m; print(m.version('mcp'))"
+Installed 38 packages in 25ms
+1.30.0
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

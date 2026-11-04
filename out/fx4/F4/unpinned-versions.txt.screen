@@ -1,0 +1,34 @@
+$ uvx --from freecad-mcp python -c "import importlib.metadata as m; print(m.version('freecad-mcp'), m.version('mcp'))"
+0.1.28 2.3.0
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

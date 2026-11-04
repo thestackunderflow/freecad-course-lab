@@ -1,0 +1,12 @@
+{"t": 0.029, "event": "recording started: the home of take B, Claude Code installed"}
+{"t": 5.826, "event": "pinned 0.1.19: typed", "keys": "Return"}
+{"t": 13.328, "event": "pinned 0.1.19: waits"}
+{"t": 21.206, "event": "add 0.1.28: typed", "keys": "Return"}
+{"t": 22.629, "event": "add 0.1.28: done"}
+{"t": 27.062, "event": "list: typed", "keys": "Return"}
+{"t": 28.295, "event": "list: Connected"}
+{"t": 51.768, "event": "your turn get: typed", "keys": "Return"}
+{"t": 53.447, "event": "get freecad: printed"}
+{"t": 82.876, "event": "list 2: typed", "keys": "Return"}
+{"t": 84.556, "event": "list 2: printed"}
+{"t": 104.587, "event": "recording stopped"}

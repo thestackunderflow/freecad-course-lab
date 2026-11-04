@@ -1,0 +1,20 @@
+recording started: an old checkout, July state	0.06
+lock july: typed	5.67
+lock july: done	7.09
+sync july: typed	9.24
+sync july: done	10.67
+clone july: typed	14.17
+clone july: waits	29.37
+resync locked: sync typed	47.25
+resync locked: sync done	48.67
+resync locked: typed	52.18
+resync locked: waits	67.36
+resync upgrade sync: typed	84.91
+resync upgrade sync: done	86.34
+resync upgrade: typed	89.85
+resync nolock sync: typed	94.50
+resync nolock sync: done	95.92
+resync nolock: typed	99.42
+uv run old form: typed	105.61
+uv run old form: waits	135.75
+recording stopped	168.81

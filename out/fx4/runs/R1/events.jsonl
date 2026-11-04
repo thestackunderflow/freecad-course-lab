@@ -1,0 +1,9 @@
+{"t": 0.055, "event": "recording started: a terminal in an empty folder, no plug connected"}
+{"t": 1.614, "event": "claude: typed", "text": "claude"}
+{"t": 2.436, "event": "claude: typed: Enter", "keys": "Return"}
+{"t": 3.06, "event": "claude: start screen"}
+{"t": 6.385, "event": "turn 1: typing", "text": "Installed 38 packages in 26ms\nTraceback (most recent call last):\n  File \"/home/maker/.cache/uv/archive-v0/qb0vnN0zrg5cuZem/bin/freecad-mcp\", line 6, in <module>\n    from freecad_mcp.server import main\n  File \"/home/maker/.cache/uv/archive-v0/qb0vnN0zrg5cuZem/lib/python3.12/site-packages/freecad_mcp/server.py\", line 5, in <module>\n    from mcp.server.fastmcp import Context, FastMCP\n  File \"/home/maker/.cache/uv/archive-v0/qb0vnN0zrg5cuZem/lib/python3.12/site-packages/mcp/server/fastmcp.py\", line 16, in <module>\n    raise ModuleNotFoundError(_MESSAGE, name=__name__)\nModuleNotFoundError: No module named 'mcp.server.fastmcp'. This is mcp 2.x, where FastMCP was renamed to MCPServer (from mcp.server.mcpserver import MCPServer) and other APIs changed; see the migration guide at https://py.sdk.modelcontextprotocol.io/v2/migration/#fastmcp-renamed-to-mcpserver or pin 'mcp<2' to keep running v1 code.\n\nwhat do I change?"}
+{"t": 7.195, "event": "turn 1: Enter"}
+{"t": 12.05, "event": "turn 1: end-of-turn line seen"}
+{"t": 14.051, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 22.213, "event": "recording stopped"}

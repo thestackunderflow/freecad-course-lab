@@ -1,0 +1,1 @@
+uvx re-resolved on the unflagged line (traceback); baseline = installed tool

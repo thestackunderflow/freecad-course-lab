@@ -1,0 +1,6 @@
+{"t": 0.023, "event": "recording started: a terminal, uv installed, cache empty"}
+{"t": 4.177, "event": "0.1.19: typed", "keys": "Return"}
+{"t": 7.883, "event": "0.1.19: traceback last line"}
+{"t": 26.656, "event": "0.1.20: typed", "keys": "Return"}
+{"t": 34.158, "event": "0.1.20: waits"}
+{"t": 38.99, "event": "recording stopped"}

@@ -1,0 +1,36 @@
+  {
+    "mcpServers": {
+      "freecad": {
+        "command": "uvx",
+        "args": ["--with", "mcp<2",
+  "freecad-mcp"]
+      }
+    }
+  }
+
+  For Claude Code, the CLI equivalent is:
+
+  claude mcp add freecad -- uvx --with "mcp<2"
+  freecad-mcp
+
+  (Remove the old entry first with claude mcp
+  remove freecad.)
+
+  If you installed it another way, run pip
+  install "mcp<2" or uv pip install "mcp<2" in
+  that environment.
+
+  The permanent fix is for the freecad-mcp
+  maintainers to cap the dependency (mcp<2) or
+  migrate to MCPServer. Until they do, the
+  pin is the right workaround. If --with
+  doesn't override the version, because the
+  package pulls in 2.x first, use uvx --from
+  freecad-mcp --with "mcp<2" freecad-mcp.
+
+✻ Cogitated for 4s · done 5:41 AM
+  tmux focus-events off · add 'set -g focus…
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

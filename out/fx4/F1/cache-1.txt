@@ -1,0 +1,5 @@
+/home/maker/.cache/uv/environments-v2
+total 12
+drwxr-xr-x 3 maker maker 4096 Nov  4 05:36 .
+drwxr-xr-x 9 maker maker 4096 Nov  4 05:36 ..
+drwxr-xr-x 2 maker maker 4096 Nov  4 05:36 a18ede1e7dd8e4d9

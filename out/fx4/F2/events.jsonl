@@ -1,0 +1,6 @@
+{"t": 0.039, "event": "recording started: a brand-new machine, uv installed"}
+{"t": 5.181, "event": "new machine: typed", "keys": "Return"}
+{"t": 11.215, "event": "new machine: traceback"}
+{"t": 16.569, "event": "new machine version: typed", "keys": "Return"}
+{"t": 17.993, "event": "new machine version: printed"}
+{"t": 21.023, "event": "recording stopped"}

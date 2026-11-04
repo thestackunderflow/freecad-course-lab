@@ -1,0 +1,3 @@
+Resolving despite existing lockfile due to addition of global exclude newer 2026-07-27T00:00:00Z
+Resolved 36 packages in 223ms
+Updated freecad-mcp v0.1.17 -> v0.1.19

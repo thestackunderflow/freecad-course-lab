@@ -1,0 +1,20 @@
+{"t": 0.058, "event": "recording started: an old checkout, July state"}
+{"t": 5.666, "event": "lock july: typed", "keys": "Return"}
+{"t": 7.092, "event": "lock july: done"}
+{"t": 9.243, "event": "sync july: typed", "keys": "Return"}
+{"t": 10.666, "event": "sync july: done"}
+{"t": 14.17, "event": "clone july: typed", "keys": "Return"}
+{"t": 29.368, "event": "clone july: waits"}
+{"t": 47.246, "event": "resync locked: sync typed", "keys": "Return"}
+{"t": 48.669, "event": "resync locked: sync done"}
+{"t": 52.177, "event": "resync locked: typed", "keys": "Return"}
+{"t": 67.36, "event": "resync locked: waits"}
+{"t": 84.913, "event": "resync upgrade sync: typed", "keys": "Return"}
+{"t": 86.337, "event": "resync upgrade sync: done"}
+{"t": 89.854, "event": "resync upgrade: typed", "keys": "Return"}
+{"t": 94.495, "event": "resync nolock sync: typed", "keys": "Return"}
+{"t": 95.919, "event": "resync nolock sync: done"}
+{"t": 99.422, "event": "resync nolock: typed", "keys": "Return"}
+{"t": 105.605, "event": "uv run old form: typed", "keys": "Return"}
+{"t": 135.749, "event": "uv run old form: waits"}
+{"t": 168.814, "event": "recording stopped"}

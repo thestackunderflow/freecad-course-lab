@@ -1,0 +1,68 @@
+[
+    {
+        "Id": "sha256:6cfc2fc760ecd5381a214768966475cb6f648c6695a5ae8249d98d61c863ace9",
+        "RepoTags": [
+            "fx4-py311:latest"
+        ],
+        "RepoDigests": [
+            "fx4-py311@sha256:6cfc2fc760ecd5381a214768966475cb6f648c6695a5ae8249d98d61c863ace9"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-04T05:28:19.334206201Z",
+        "DockerVersion": "27.4.0",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "XCURSOR_THEME=DMZ-White",
+                "XCURSOR_SIZE=48",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "XDG_RUNTIME_DIR=/tmp/xdg",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONPATH=/lab/vendor/screenlab-lib:/lab",
+                "UV_PYTHON_INSTALL_DIR=/home/maker/.local/share/uv/python"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/lab",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 284543935,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:44a87794b739d471ec360bec56cc0ceac640d06bbf579ee7d9061a0b88d09818",
+                "sha256:160592d087d2be56e33280676fc2744b0699a4450baa2bf12ae18f4bd060af77",
+                "sha256:aeed9f2f8f5826a424bbc68a256298f23f1ced57424e0f45cc47c455e16e6c07",
+                "sha256:efb4957a98bc8523f504249b8d461c9b2095ba8e36f95776b7836ed6f3535de2",
+                "sha256:3b91addb0e31a3493689ea9414624f70e97c885673bbd7c077da56d6cf16ff3c"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-04T05:28:39.805525998Z"
+        }
+    }
+]

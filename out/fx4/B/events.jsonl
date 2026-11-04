@@ -1,0 +1,8 @@
+{"t": 0.025, "event": "recording started: the home of take A"}
+{"t": 6.868, "event": "metadata 0.1.19: typed", "keys": "Return"}
+{"t": 8.294, "event": "metadata: 2.x printed"}
+{"t": 20.375, "event": "metadata pinned: typed", "keys": "Return"}
+{"t": 21.799, "event": "metadata pinned: 1.x printed"}
+{"t": 34.379, "event": "metadata 0.1.28: typed", "keys": "Return"}
+{"t": 35.801, "event": "metadata 0.1.28: printed"}
+{"t": 41.833, "event": "recording stopped"}

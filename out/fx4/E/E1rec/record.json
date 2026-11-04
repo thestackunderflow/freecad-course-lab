@@ -1,0 +1,11 @@
+{
+ "video": "screen.mp4",
+ "size": [
+  2880,
+  1800
+ ],
+ "fps": 30,
+ "t0_epoch": 1793770567.1424623,
+ "t0_source": "launch",
+ "time_base": "seconds from the first frame of screen.mp4"
+}

@@ -1,0 +1,12 @@
+Collecting freecad-mcp==0.1.19
+  Downloading freecad_mcp-0.1.19.tar.gz (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.5/51.5 kB 2.0 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Saved ./out/fx4/F3/sdist/freecad_mcp-0.1.19.tar.gz
+Successfully downloaded freecad-mcp
+freecad_mcp-0.1.19.tar.gz

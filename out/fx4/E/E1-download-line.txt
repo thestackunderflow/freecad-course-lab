@@ -1,0 +1,6 @@
+DEBUG Downloading `https://releases.astral.sh/github/python-build-standalone/releases/download/20261026/cpython-3.12.16%2B20261026-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz`
+DEBUG Extracting `cpython-3.12.16-20261026-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz` to temporary location `/home/maker/.local/share/uv/python/.temp/.tmpMzMlEA`
+Downloading cpython-3.12.16-linux-x86_64-gnu (download) (32.9MiB)
+ Downloaded cpython-3.12.16-linux-x86_64-gnu (download)
+DEBUG Moving `/home/maker/.local/share/uv/python/.temp/.tmpMzMlEA/python` to `/home/maker/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu`
+(frame at 41 s of rec shows, in the terminal: cpython-3.12.16-linux-x86_64-gnu (download) [progress bar] 27.64 MiB/3x MiB; the line is a progress bar that disappears when done)

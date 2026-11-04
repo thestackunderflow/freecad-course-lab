@@ -1,0 +1,28 @@
+$ timeout 30 freecad-mcp; echo "exit=$?"
+2026-11-04 05:37:58,182 - FreeCADMCPserver - INFO - Only text feedback: False
+2026-11-04 05:37:58,182 - FreeCADMCPserver - INFO - Connecting to FreeCAD RPC server at: localhost
+2026-11-04 05:37:58,199 - FreeCADMCPserver - INFO - FreeCADMCP server starting up
+2026-11-04 05:37:58,203 - FreeCADMCPserver - WARNING - Could not connect to FreeCAD on startup: [Errno 111] Connection refused
+2026-11-04 05:37:58,203 - FreeCADMCPserver - WARNING - Make sure the FreeCAD addon is running before using FreeCAD resources or tools
+exit=124
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+✻ Cogitated for 4s · done 5:41 AM
+ tmux focus-events off · add 'set -g focus-… ▔
+   Settings  Status   Config   Usage
+    Stats
+
+   Session
+
+   Total cost:            $0.0335
+   Total duration (API):  5s
+   Total duration (wall): 20s
+   Total code changes:    0 lines added, 0
+   lines removed
+   Usage by model:
+       claude-haiku-5-5:  1.6k input, 243
+   output, 0 cache read, 0 cache write
+   ($0.0003)
+      claude-sonnet-5-5:  2 input, 499
+   output, 25.5k cache read, 6.4k cache
+   write ($0.0332)
+   Prompt cache (main):   1 request · 80%
+   of input tokens from cache · no misses ·
+   warm (1h TTL, last activity 15s ago)
+
+   Esc to cancel
+
+
+
+
+
+
+
+
+
+
+

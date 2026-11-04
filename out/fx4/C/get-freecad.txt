@@ -1,0 +1,11 @@
+freecad:
+  Scope: User config (available in all your
+projects)
+  Status: ✔ Connected
+  Type: stdio
+  Command: uvx
+  Args: freecad-mcp@0.1.28
+  Environment:
+
+To remove this server, run: claude mcp remove
+freecad -s user

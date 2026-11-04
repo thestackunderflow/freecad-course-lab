@@ -1,0 +1,17 @@
+recording started: fresh home, uv installed, cache empty	0.06
+july run: typed	6.55
+july run: waits	21.72
+july version: typed	43.54
+july version: printed	44.97
+old copy: typed	48.67
+tool install: typed	57.08
+tool install: done	58.51
+tool run before: typed	61.76
+tool run before: waits	71.84
+cache clean: typed	94.42
+cache clean: done	95.85
+after clean: typed	99.52
+after clean: traceback	104.50
+tool run after: typed	107.73
+tool run after: waits	117.81
+recording stopped	140.81

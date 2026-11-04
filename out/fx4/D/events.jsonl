@@ -1,0 +1,14 @@
+{"t": 0.072, "event": "recording started: Firefox"}
+{"t": 4.141, "event": "typed: release page", "keys": "Return"}
+{"t": 13.769, "event": "firefox: release v2.0.0 opened"}
+{"t": 51.815, "event": "typed: pypi json", "keys": "Return"}
+{"t": 58.443, "event": "firefox: pypi 0.1.19 json opened"}
+{"t": 59.862, "event": "JSON filter box", "x": 554, "y": 271, "button": 1}
+{"t": 60.569, "event": "typed: filter mcp", "text": "mcp[cli]"}
+{"t": 64.644, "event": "json: requires_dist shown"}
+{"t": 72.678, "event": "typed: filter upload_time", "text": "2026-07-05"}
+{"t": 76.826, "event": "json: upload_time shown"}
+{"t": 85.081, "event": "typed: pypi project page", "keys": "Return"}
+{"t": 92.704, "event": "firefox: pypi 0.1.28"}
+{"t": 102.305, "event": "firefox: pypi 0.1.28 Requires Python"}
+{"t": 112.451, "event": "recording stopped"}

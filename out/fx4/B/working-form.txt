@@ -1,0 +1,1 @@
+uvx --from freecad-mcp@0.1.19 python -c "import importlib.metadata as m; print(m.version('mcp'))"   (uvx accepted python as the command with --from: yes, first try)

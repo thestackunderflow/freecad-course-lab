@@ -1,0 +1,2 @@
+3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]
+read by the lab through the add-on socket (xclip not in the image); the console shows the same line (E2-console-sys-version.png)

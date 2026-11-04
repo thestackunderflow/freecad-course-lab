@@ -1,0 +1,28 @@
+$ timeout 30 uvx --exclude-newer 2026-07-27T00:00:00Z freecad-mcp@0.1.19; echo "exit=$?"
+Installed 38 packages in 23ms
+2026-11-04 05:36:21,848 - FreeCADMCPserver - INFO - Only text feedback: False
+2026-11-04 05:36:21,848 - FreeCADMCPserver - INFO - Connecting to FreeCAD RPC server at: localhost
+2026-11-04 05:36:21,887 - FreeCADMCPserver - INFO - FreeCADMCP server starting up
+2026-11-04 05:36:21,889 - FreeCADMCPserver - WARNING - Could not connect to FreeCAD on startup: [Errno 111] Connection refused
+2026-11-04 05:36:21,889 - FreeCADMCPserver - WARNING - Make sure the FreeCAD addon is running before using FreeCAD resources or tools
+exit=124
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

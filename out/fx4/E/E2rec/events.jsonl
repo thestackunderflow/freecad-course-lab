@@ -1,0 +1,14 @@
+{"t": 0.057, "event": "recording started: FreeCAD 1.1.4, Python console open"}
+{"t": 2.76, "event": "console: click", "x": 1440, "y": 1704, "button": 1}
+{"t": 3.467, "event": "console: typed sys.version", "text": "import sys; print(sys.version)"}
+{"t": 4.999, "event": "console: Enter (sys.version)", "keys": "Return"}
+{"t": 6.626, "event": "console: sys.version"}
+{"t": 17.789, "event": "console: typed version_info", "text": "print(sys.version_info[:3])"}
+{"t": 19.168, "event": "console: Enter (version_info)", "keys": "Return"}
+{"t": 21.292, "event": "console: typed implementation", "text": "import platform; print(platform.python_implementation())"}
+{"t": 23.502, "event": "console: Enter (implementation)", "keys": "Return"}
+{"t": 27.874, "event": "workbench list: opened", "x": 703, "y": 86, "button": 1}
+{"t": 31.615, "event": "workbench list: MCP Addon chosen", "keys": "Return"}
+{"t": 35.697, "event": "FreeCAD: Start RPC Server", "x": 126, "y": 219, "button": 1}
+{"t": 37.406, "event": "status: rpc started"}
+{"t": 44.546, "event": "recording stopped"}

@@ -1,0 +1,10 @@
+{
+ "freecad": {
+  "type": "stdio",
+  "command": "uvx",
+  "args": [
+   "freecad-mcp@0.1.28"
+  ],
+  "env": {}
+ }
+}

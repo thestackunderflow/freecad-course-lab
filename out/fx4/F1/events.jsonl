@@ -1,0 +1,17 @@
+{"t": 0.059, "event": "recording started: fresh home, uv installed, cache empty"}
+{"t": 6.547, "event": "july run: typed", "keys": "Return"}
+{"t": 21.718, "event": "july run: waits"}
+{"t": 43.538, "event": "july version: typed", "keys": "Return"}
+{"t": 44.967, "event": "july version: printed"}
+{"t": 48.667, "event": "old copy: typed", "keys": "Return"}
+{"t": 57.084, "event": "tool install: typed", "keys": "Return"}
+{"t": 58.509, "event": "tool install: done"}
+{"t": 61.758, "event": "tool run before: typed", "keys": "Return"}
+{"t": 71.845, "event": "tool run before: waits"}
+{"t": 94.418, "event": "cache clean: typed", "keys": "Return"}
+{"t": 95.846, "event": "cache clean: done"}
+{"t": 99.519, "event": "after clean: typed", "keys": "Return"}
+{"t": 104.495, "event": "after clean: traceback"}
+{"t": 107.726, "event": "tool run after: typed", "keys": "Return"}
+{"t": 117.807, "event": "tool run after: waits"}
+{"t": 140.814, "event": "recording stopped"}

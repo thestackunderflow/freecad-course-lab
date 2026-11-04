@@ -1,0 +1,14 @@
+recording started: FreeCAD 1.1.4, Python console open	0.06
+console: click	2.76
+console: typed sys.version	3.47
+console: Enter (sys.version)	5.00
+console: sys.version	6.63
+console: typed version_info	17.79
+console: Enter (version_info)	19.17
+console: typed implementation	21.29
+console: Enter (implementation)	23.50
+workbench list: opened	27.87
+workbench list: MCP Addon chosen	31.61
+FreeCAD: Start RPC Server	35.70
+status: rpc started	37.41
+recording stopped	44.55
