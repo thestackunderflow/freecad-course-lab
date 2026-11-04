@@ -1,0 +1,16 @@
+0.07	recording started: C-terminal
+2.02	terminal: ls FreeCAD typed
+3.52	terminal: ls FreeCAD typed: Enter
+7.32	terminal: mkdir -p typed
+9.35	terminal: mkdir -p typed: Enter
+13.15	terminal: mv typed
+16.38	terminal: mv typed: Enter
+20.18	terminal: ls InitGui shown
+22.40	terminal: ls InitGui shown: Enter
+26.16	FreeCAD: restarting
+52.06	workbench list: opened
+58.81	workbench list: MCP Addon chosen
+62.47	FreeCAD: Start RPC Server
+64.18	status bar: started
+69.32	FreeCAD: quit
+71.95	recording stopped

@@ -1,0 +1,18 @@
+{"t": 0.066, "event": "recording started: E"}
+{"t": 1.115, "event": "clear", "text": "clear"}
+{"t": 1.901, "event": "clear: Enter", "keys": "Return"}
+{"t": 3.568, "event": "terminal: mkdir FreeCADMCP typed", "text": "mkdir ~/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP"}
+{"t": 5.896, "event": "terminal: mkdir FreeCADMCP typed: Enter", "keys": "Return"}
+{"t": 9.691, "event": "terminal: mv loose typed", "text": "cd ~/.local/share/FreeCAD/v1-1/Mod && mv Init.py InitGui.py package.xml rpc_server FreeCADMCP/"}
+{"t": 13.657, "event": "terminal: mv loose typed: Enter", "keys": "Return"}
+{"t": 17.455, "event": "terminal: ls Mod after mv", "text": "ls ~/.local/share/FreeCAD/v1-1/Mod"}
+{"t": 19.278, "event": "terminal: ls Mod after mv: Enter", "keys": "Return"}
+{"t": 22.902, "event": "FreeCAD: restarting"}
+{"t": 48.838, "event": "workbench list: MCP Addon", "x": 1735, "y": 75, "button": 1}
+{"t": 54.685, "event": "workbench list: closed", "keys": "Escape"}
+{"t": 56.307, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 57.994, "event": "clear 2", "text": "clear"}
+{"t": 58.779, "event": "clear 2: Enter", "keys": "Return"}
+{"t": 60.448, "event": "terminal: ls -R typed", "text": "ls -R ~/.local/share/FreeCAD/v1-1/Mod | head -8"}
+{"t": 62.735, "event": "terminal: ls -R typed: Enter", "keys": "Return"}
+{"t": 69.493, "event": "recording stopped"}

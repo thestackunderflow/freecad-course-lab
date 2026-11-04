@@ -1,0 +1,15 @@
+0.07	recording started: D
+2.00	terminal: cd typed
+3.79	terminal: cd typed: Enter
+5.96	terminal: cp star typed
+8.61	terminal: cp star typed: Enter
+12.40	terminal: ls Mod loose
+14.22	terminal: ls Mod loose: Enter
+19.00	FreeCAD: restarting
+45.49	workbench list: opened (no MCP Addon)
+51.34	workbench list: closed
+53.80	view menu
+56.66	panels
+59.26	report view: shown
+65.14	FreeCAD: quit
+67.79	recording stopped

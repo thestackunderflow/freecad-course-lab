@@ -1,0 +1,2 @@
+0x00600040  0 pc FreeCAD 1.1.4
+0x00600069  0 pc Addon Manager version 2026.2.19 

@@ -1,0 +1,6 @@
+/home/maker/.local/share/FreeCAD
+/home/maker/.local/share/FreeCAD/v1-1
+/home/maker/.local/share/FreeCAD/v1-1/Macro
+/home/maker/.local/share/FreeCAD/v1-1/SavedPreferencePacks
+/home/maker/.local/share/FreeCAD/v1-1/SavedPreferencePacks/user.cfg.backup
+/home/maker/.local/share/FreeCAD/v1-1/SavedPreferencePacks/Backups

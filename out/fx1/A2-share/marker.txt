@@ -1,0 +1,2 @@
+/home/maker/.local/share/FreeCAD/v1-1.do_not_migrate
+/home/maker/.config/FreeCAD/v1-1.do_not_migrate

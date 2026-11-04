@@ -1,0 +1,16 @@
+{"t": 0.068, "event": "recording started: C-terminal"}
+{"t": 2.015, "event": "terminal: ls FreeCAD typed", "text": "ls ~/.local/share/FreeCAD"}
+{"t": 3.52, "event": "terminal: ls FreeCAD typed: Enter", "keys": "Return"}
+{"t": 7.316, "event": "terminal: mkdir -p typed", "text": "mkdir -p ~/.local/share/FreeCAD/v1-1/Mod"}
+{"t": 9.352, "event": "terminal: mkdir -p typed: Enter", "keys": "Return"}
+{"t": 13.152, "event": "terminal: mv typed", "text": "mv ~/.local/share/FreeCAD/Mod/FreeCADMCP ~/.local/share/FreeCAD/v1-1/Mod/"}
+{"t": 16.376, "event": "terminal: mv typed: Enter", "keys": "Return"}
+{"t": 20.176, "event": "terminal: ls InitGui shown", "text": "ls ~/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP"}
+{"t": 22.396, "event": "terminal: ls InitGui shown: Enter", "keys": "Return"}
+{"t": 26.156, "event": "FreeCAD: restarting"}
+{"t": 52.063, "event": "workbench list: opened", "x": 1735, "y": 75, "button": 1}
+{"t": 58.808, "event": "workbench list: MCP Addon chosen", "keys": "Return"}
+{"t": 62.466, "event": "FreeCAD: Start RPC Server", "x": 1254, "y": 186, "button": 1}
+{"t": 64.177, "event": "status bar: started"}
+{"t": 69.317, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 71.955, "event": "recording stopped"}

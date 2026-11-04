@@ -1,0 +1,9 @@
+{"t": 0.062, "event": "recording started: D-half"}
+{"t": 1.07, "event": "FreeCAD: starting"}
+{"t": 27.061, "event": "view menu", "x": 1326, "y": 33, "button": 1}
+{"t": 29.891, "event": "panels", "x": 1361, "y": 873, "button": 1}
+{"t": 32.49, "event": "report view: shown", "x": 1803, "y": 1007, "button": 1}
+{"t": 39.472, "event": "workbench list: opened", "x": 1735, "y": 75, "button": 1}
+{"t": 45.316, "event": "workbench list: closed", "keys": "Escape"}
+{"t": 46.942, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 49.585, "event": "recording stopped"}

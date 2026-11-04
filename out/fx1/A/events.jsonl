@@ -1,0 +1,10 @@
+{"t": 0.064, "event": "recording started: A"}
+{"t": 4.156, "event": "file manager: old Mod/FreeCADMCP"}
+{"t": 7.29, "event": "FreeCAD: starting"}
+{"t": 16.468, "event": "workbench list: opened (no MCP Addon)", "x": 1735, "y": 75, "button": 1}
+{"t": 22.318, "event": "workbench list: closed", "keys": "Escape"}
+{"t": 24.793, "event": "view menu", "x": 1326, "y": 33, "button": 1}
+{"t": 27.629, "event": "panels", "x": 1361, "y": 873, "button": 1}
+{"t": 30.226, "event": "report view: shown", "x": 1803, "y": 1007, "button": 1}
+{"t": 36.073, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 38.727, "event": "recording stopped"}

@@ -1,0 +1,36 @@
+maker@pc:~$ cd ~/Downloads/freecad-mcp-0.1.2
+8
+maker@pc:~/Downloads/freecad-mcp-0.1.28$ cp
+-r addon/FreeCADMCP/* ~/.local/share/FreeCAD
+/v1-1/Mod/
+maker@pc:~/Downloads/freecad-mcp-0.1.28$ ls
+~/.local/share/FreeCAD/v1-1/Mod
+Init.py     package.xml
+InitGui.py  rpc_server
+maker@pc:~/Downloads/freecad-mcp-0.1.28$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

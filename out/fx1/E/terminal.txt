@@ -1,0 +1,36 @@
+maker@pc:~/.local/share/FreeCAD/v1-1/Mod$ ls
+ -R ~/.local/share/FreeCAD/v1-1/Mod | head -
+8
+/home/maker/.local/share/FreeCAD/v1-1/Mod:
+FreeCADMCP
+
+/home/maker/.local/share/FreeCAD/v1-1/Mod/Fr
+eeCADMCP:
+Init.py
+InitGui.py
+package.xml
+rpc_server
+maker@pc:~/.local/share/FreeCAD/v1-1/Mod$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

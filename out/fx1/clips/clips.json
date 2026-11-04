@@ -1,0 +1,128 @@
+[
+{
+"clip": "F0-A-filemanager",
+"take": "A",
+"t0": 3.86,
+"t1": 8.16
+},
+{
+"clip": "F0-A-workbench-list",
+"take": "A",
+"t0": 15.47,
+"t1": 21.97
+},
+{
+"clip": "A-report-view",
+"take": "A",
+"t0": 29.23,
+"t1": 35.23
+},
+{
+"clip": "F2-B-console",
+"take": "B",
+"t0": 14.92,
+"t1": 26.72
+},
+{
+"clip": "F1-C-drag",
+"take": "C-drag",
+"t0": 6.88,
+"t1": 21.12
+},
+{
+"clip": "F1-C-drag-list",
+"take": "C-drag",
+"t0": 47.06,
+"t1": 57.8
+},
+{
+"clip": "F5-C-drag-start",
+"take": "C-drag",
+"t0": 57.49,
+"t1": 65.2
+},
+{
+"clip": "F4-1-ls",
+"take": "C-terminal",
+"t0": 1.52,
+"t1": 6.52
+},
+{
+"clip": "F4-2-mkdir",
+"take": "C-terminal",
+"t0": 6.82,
+"t1": 12.35
+},
+{
+"clip": "F4-3-mv",
+"take": "C-terminal",
+"t0": 12.65,
+"t1": 19.38
+},
+{
+"clip": "F4-4-ls-InitGui",
+"take": "C-terminal",
+"t0": 19.68,
+"t1": 25.4
+},
+{
+"clip": "F5-C-terminal-list",
+"take": "C-terminal",
+"t0": 51.06,
+"t1": 61.81
+},
+{
+"clip": "F7-1-cp-star",
+"take": "D",
+"t0": 5.46,
+"t1": 12.11
+},
+{
+"clip": "F7-2-ls-loose",
+"take": "D",
+"t0": 11.9,
+"t1": 17.73
+},
+{
+"clip": "F7-D-list",
+"take": "D",
+"t0": 44.49,
+"t1": 50.49
+},
+{
+"clip": "D-report-view",
+"take": "D",
+"t0": 58.26,
+"t1": 64.26
+},
+{
+"clip": "F8-1-mkdir",
+"take": "E",
+"t0": 3.07,
+"t1": 8.9
+},
+{
+"clip": "F8-2-mv",
+"take": "E",
+"t0": 9.19,
+"t1": 16.66
+},
+{
+"clip": "F8-3-ls-Mod",
+"take": "E",
+"t0": 16.95,
+"t1": 22.28
+},
+{
+"clip": "F8-E-list",
+"take": "E",
+"t0": 47.84,
+"t1": 55.19
+},
+{
+"clip": "F8-4-ls-R",
+"take": "E",
+"t0": 59.95,
+"t1": 67.73
+}
+]

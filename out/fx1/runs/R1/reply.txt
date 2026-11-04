@@ -1,0 +1,21 @@
+I'll check what's on this machine instead of guessing.
+
+I'll check what's on this machine instead of guessing.
+
+The FreeCADMCP add-on folder goes here:
+
+```
+/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP
+```
+
+I got this by asking the installed FreeCAD (`/opt/freecad/usr/bin/freecadcmd`, version 1.1.4) for its user data directory. It returned `/home/maker/.local/share/FreeCAD/v1-1/`. FreeCAD 1.1 loads user add-ons from the `Mod` folder inside that directory.
+
+Neither `v1-1/` nor `Mod/` exists yet, because FreeCAD hasn't been run with a user profile on this machine. You'll need to create them first:
+
+```bash
+mkdir -p ~/.local/share/FreeCAD/v1-1/Mod
+```
+
+Then copy or clone the add-on's `FreeCADMCP` folder into that `Mod` folder. It should contain `InitGui.py` directly, so the path is `Mod/FreeCADMCP/InitGui.py` and not nested one level deeper. Restart FreeCAD afterwards.
+
+The older locations `~/.FreeCAD/Mod` and `~/.local/share/FreeCAD/Mod` are not used by 1.1, because it puts user data in the versioned `v1-1` folder.

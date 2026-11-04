@@ -1,0 +1,18 @@
+0.07	recording started: E
+1.11	clear
+1.90	clear: Enter
+3.57	terminal: mkdir FreeCADMCP typed
+5.90	terminal: mkdir FreeCADMCP typed: Enter
+9.69	terminal: mv loose typed
+13.66	terminal: mv loose typed: Enter
+17.45	terminal: ls Mod after mv
+19.28	terminal: ls Mod after mv: Enter
+22.90	FreeCAD: restarting
+48.84	workbench list: MCP Addon
+54.69	workbench list: closed
+56.31	FreeCAD: quit
+57.99	clear 2
+58.78	clear 2: Enter
+60.45	terminal: ls -R typed
+62.73	terminal: ls -R typed: Enter
+69.49	recording stopped

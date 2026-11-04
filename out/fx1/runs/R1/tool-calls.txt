@@ -1,0 +1,2 @@
+{"command": "/opt/freecad/usr/bin/freecadcmd -c \"import FreeCAD as F; print(F.getUserAppDataDir()); print(F.getUserMacroDir()); print(F.__version__ if hasattr(F,'__version__') else F.Version())\" 2>&1 | head; echo ---; echo $XDG_DATA_HOME $XDG_CONFIG_HOME $FREECAD_USER_DATA"}  [Bash]
+{"command": "ls -la ~/.local/share/FreeCAD ~/.config/FreeCAD ~/.FreeCAD 2>&1; find ~ -maxdepth 6 -type d \\( -name Mod -o -name 'FreeCADMCP*' \\) -not -path '*/node_modules/*' 2>/dev/null; which freecad FreeCAD freecadcmd 2>&1; ls ~/snap ~/.var/app 2>&1 | grep -i freecad"}  [Bash]

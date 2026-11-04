@@ -1,0 +1,9 @@
+{"t": 0.076, "event": "recording started: a terminal in an empty folder, no plug"}
+{"t": 1.624, "event": "claude: started", "text": "claude"}
+{"t": 2.445, "event": "claude: started: Enter", "keys": "Return"}
+{"t": 3.068, "event": "claude: start screen"}
+{"t": 6.257, "event": "turn 1: typing", "text": "Where exactly does the FreeCADMCP add-on folder go for FreeCAD 1.1 on this Linux computer? Give the full path."}
+{"t": 12.241, "event": "turn 1: Enter"}
+{"t": 25.991, "event": "turn 1: end-of-turn line seen"}
+{"t": 27.996, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 34.15, "event": "recording stopped"}

@@ -1,0 +1,36 @@
+maker@pc:~$ ls ~/.local/share/FreeCAD
+Mod  v1-1
+maker@pc:~$ mkdir -p ~/.local/share/FreeCAD/
+v1-1/Mod
+maker@pc:~$ mv ~/.local/share/FreeCAD/Mod/Fr
+eeCADMCP ~/.local/share/FreeCAD/v1-1/Mod/
+maker@pc:~$ ls ~/.local/share/FreeCAD/v1-1/M
+od/FreeCADMCP
+Init.py     package.xml
+InitGui.py  rpc_server
+maker@pc:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

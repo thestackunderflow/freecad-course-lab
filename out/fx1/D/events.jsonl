@@ -1,0 +1,15 @@
+{"t": 0.074, "event": "recording started: D"}
+{"t": 2.001, "event": "terminal: cd typed", "text": "cd ~/Downloads/freecad-mcp-0.1.28"}
+{"t": 3.791, "event": "terminal: cd typed: Enter", "keys": "Return"}
+{"t": 5.957, "event": "terminal: cp star typed", "text": "cp -r addon/FreeCADMCP/* ~/.local/share/FreeCAD/v1-1/Mod/"}
+{"t": 8.607, "event": "terminal: cp star typed: Enter", "keys": "Return"}
+{"t": 12.405, "event": "terminal: ls Mod loose", "text": "ls ~/.local/share/FreeCAD/v1-1/Mod"}
+{"t": 14.225, "event": "terminal: ls Mod loose: Enter", "keys": "Return"}
+{"t": 18.997, "event": "FreeCAD: restarting"}
+{"t": 45.49, "event": "workbench list: opened (no MCP Addon)", "x": 1735, "y": 75, "button": 1}
+{"t": 51.335, "event": "workbench list: closed", "keys": "Escape"}
+{"t": 53.803, "event": "view menu", "x": 1326, "y": 33, "button": 1}
+{"t": 56.658, "event": "panels", "x": 1361, "y": 873, "button": 1}
+{"t": 59.26, "event": "report view: shown", "x": 1803, "y": 1007, "button": 1}
+{"t": 65.144, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 67.789, "event": "recording stopped"}

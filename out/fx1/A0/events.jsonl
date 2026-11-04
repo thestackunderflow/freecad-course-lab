@@ -1,0 +1,10 @@
+{"t": 0.029, "event": "recording started: A0"}
+{"t": 1.034, "event": "FreeCAD: starting"}
+{"t": 12.4, "event": "view menu", "x": 1326, "y": 33, "button": 1}
+{"t": 15.232, "event": "panels", "x": 1361, "y": 873, "button": 1}
+{"t": 17.825, "event": "console: opened", "x": 1818, "y": 973, "button": 1}
+{"t": 20.674, "event": "console: print typed", "text": "print(App.getUserAppDataDir())"}
+{"t": 22.507, "event": "console: Return", "keys": "Return"}
+{"t": 24.129, "event": "console: path printed"}
+{"t": 29.271, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 31.912, "event": "recording stopped"}

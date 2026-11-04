@@ -1,0 +1,5 @@
+{"t": 0.028, "event": "FreeCAD: restarting"}
+{"t": 26.495, "event": "workbench list: opened (no SecondAddon)", "x": 1735, "y": 75, "button": 1}
+{"t": 32.346, "event": "closed", "keys": "Escape"}
+{"t": 32.968, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 35.613, "event": "recording stopped"}

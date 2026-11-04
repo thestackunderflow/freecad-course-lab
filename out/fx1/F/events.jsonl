@@ -1,0 +1,9 @@
+{"t": 0.07, "event": "recording started: F"}
+{"t": 1.075, "event": "FreeCAD: starting"}
+{"t": 12.231, "event": "tools menu", "x": 1403, "y": 33, "button": 1}
+{"t": 14.628, "event": "addon manager: opened", "x": 1479, "y": 67, "button": 1}
+{"t": 19.632, "event": "addon manager: Continue clicked", "x": 1564, "y": 968, "button": 1}
+{"t": 69.6, "event": "addon manager: search box clicked", "x": 2342, "y": 518, "button": 1}
+{"t": 70.309, "event": "addon manager: search MCP typed", "text": "MCP"}
+{"t": 80.191, "event": "addon manager: hit 1 clicked", "x": 1700, "y": 577, "button": 1}
+{"t": 92.055, "event": "recording stopped"}

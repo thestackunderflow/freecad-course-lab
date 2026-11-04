@@ -1,0 +1,14 @@
+{"t": 0.044, "event": "recording started: C-drag"}
+{"t": 7.877, "event": "file manager: new folder Mod", "keys": "ctrl+shift+n"}
+{"t": 9.649, "event": "file manager: new folder named", "keys": "Return"}
+{"t": 11.932, "event": "file manager: address bar", "keys": "ctrl+l"}
+{"t": 13.418, "event": "file manager: open v1-1/Mod", "keys": "Return"}
+{"t": 17.123, "event": "file manager: drag FreeCADMCP to v1-1/Mod", "x": 203, "y": 118, "button": 1}
+{"t": 18.119, "event": "file manager: drag FreeCADMCP to v1-1/Mod: released", "x": 2100, "y": 500, "button": 1}
+{"t": 22.363, "event": "FreeCAD: restarting"}
+{"t": 48.059, "event": "workbench list: opened", "x": 1735, "y": 75, "button": 1}
+{"t": 54.803, "event": "workbench list: MCP Addon chosen", "keys": "Return"}
+{"t": 58.491, "event": "FreeCAD: Start RPC Server", "x": 1254, "y": 186, "button": 1}
+{"t": 60.2, "event": "status bar: started"}
+{"t": 65.477, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 68.117, "event": "recording stopped"}

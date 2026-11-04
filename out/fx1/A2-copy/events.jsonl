@@ -1,0 +1,19 @@
+{"t": 0.023, "event": "recording started: A2-copy"}
+{"t": 1.031, "event": "FreeCAD: starting"}
+{"t": 4.878, "event": "welcome dialog: shown"}
+{"t": 11.794, "event": "welcome dialog: Copy clicked", "x": 2170, "y": 983, "button": 1}
+{"t": 19.483, "event": "FreeCAD: restarting"}
+{"t": 47.027, "event": "view menu", "x": 1326, "y": 33, "button": 1}
+{"t": 49.86, "event": "panels", "x": 1361, "y": 873, "button": 1}
+{"t": 52.466, "event": "console: opened", "x": 1818, "y": 973, "button": 1}
+{"t": 55.179, "event": "console: print typed", "text": "print(App.getUserAppDataDir())"}
+{"t": 57.012, "event": "console: Return", "keys": "Return"}
+{"t": 58.635, "event": "console: path printed"}
+{"t": 64.93, "event": "workbench list: opened", "x": 1735, "y": 75, "button": 1}
+{"t": 70.784, "event": "workbench list: closed", "keys": "Escape"}
+{"t": 73.265, "event": "view menu", "x": 1326, "y": 33, "button": 1}
+{"t": 76.099, "event": "panels", "x": 1361, "y": 873, "button": 1}
+{"t": 78.698, "event": "report view: shown", "x": 1803, "y": 1007, "button": 1}
+{"t": 85.567, "event": "report tab", "x": 1226, "y": 1752, "button": 1}
+{"t": 89.419, "event": "FreeCAD: quit", "keys": "ctrl+q"}
+{"t": 92.058, "event": "recording stopped"}

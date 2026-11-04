@@ -1,0 +1,63 @@
+total 20
+drwxr-xr-x 4 maker maker 4096 Nov  4 04:12 .
+drwxr-xr-x 3 maker maker 4096 Nov  4 04:11 ..
+drwxr-xr-x 2 maker maker 4096 Nov  4 04:12 Macro
+drwxr-xr-x 3 maker maker 4096 Nov  4 04:12 Mod
+-rw-r--r-- 1 maker maker   85 Nov  4 04:12 v1-1.do_not_migrate
+total 40
+drwxr-xr-x 2 maker maker  4096 Nov  4 04:12 .
+drwxr-xr-x 3 maker maker  4096 Nov  4 04:11 ..
+-rw-r--r-- 1 maker maker    56 Nov  4 04:11 FreeCAD.conf
+-rw-r--r-- 1 maker maker  1099 Nov  4 04:13 system.cfg
+-rw-r--r-- 1 maker maker 16763 Nov  4 04:13 user.cfg
+-rw-r--r-- 1 maker maker    85 Nov  4 04:12 v1-1.do_not_migrate
+/home/maker/.local/share/FreeCAD:
+Macro
+Mod
+v1-1.do_not_migrate
+
+/home/maker/.local/share/FreeCAD/Macro:
+
+/home/maker/.local/share/FreeCAD/Mod:
+FreeCADMCP
+
+/home/maker/.local/share/FreeCAD/Mod/FreeCADMCP:
+Init.py
+InitGui.py
+package.xml
+rpc_server
+
+/home/maker/.local/share/FreeCAD/Mod/FreeCADMCP/rpc_server:
+__init__.py
+__pycache__
+commands.py
+dispatch_health.py
+fem_executor.py
+gui_dispatch.py
+ip_filter.py
+object_factory.py
+object_validation.py
+parts_library.py
+property_mapper.py
+rpc_server.py
+serialize.py
+settings.py
+version.py
+view_manager.py
+
+/home/maker/.local/share/FreeCAD/Mod/FreeCADMCP/rpc_server/__pycache__:
+__init__.cpython-311.pyc
+commands.cpython-311.pyc
+dispatch_health.cpython-311.pyc
+fem_executor.cpython-311.pyc
+gui_dispatch.cpython-311.pyc
+ip_filter.cpython-311.pyc
+object_factory.cpython-311.pyc
+object_validation.cpython-311.pyc
+parts_library.cpython-311.pyc
+property_mapper.cpython-311.pyc
+rpc_server.cpython-311.pyc
+serialize.cpython-311.pyc
+settings.cpython-311.pyc
+version.cpython-311.pyc
+view_manager.cpython-311.pyc
