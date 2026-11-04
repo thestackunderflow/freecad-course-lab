@@ -130,26 +130,39 @@ def card_drawer(step):
         text(d, (1830, 520), '1.1 opens', 72, INK, B, 'la')
         text(d, (1830, 610), 'this one', 72, INK, B, 'la')
         arrow(d, 1950, 680, 1950, 820, BLUE)
-    elif step == 4:
+    elif step in ('4a', 4, '4b'):
         cabinet(d)
         box(d, 1580, 330, 2500, 1100, fill=WHITE, outline=INK)
         text(d, (2040, 400), 'a computer that ran', 54, INK, B, 'mm')
         text(d, (2040, 470), 'an older FreeCAD:', 54, INK, B, 'mm')
-        text(d, (2040, 580), 'first start of 1.1 asks', 52, GREY, R, 'mm')
-        text(d, (2040, 690), 'Welcome to FreeCAD 1.1', 52, INK, B, 'mm')
-        box(d, 1660, 770, 2420, 880, fill=(0, 120, 212), outline=(0, 90, 170), w=4)
-        text(d, (2040, 825), 'Copy Configuration (Recommended)', 40, WHITE, B, 'mm')
-        text(d, (2040, 980), 'old settings -> new drawer', 50, GREY, R, 'mm')
-        text(d, (2040, 1050), 'the old drawer stays', 50, GREY, R, 'mm')
-    elif step == 5:
+        if step == '4a':
+            text(d, (2040, 640), 'its old settings are', 52, GREY, R, 'mm')
+            text(d, (2040, 710), 'still in the old place', 52, GREY, R, 'mm')
+            text(d, (2040, 900), 'first start of 1.1: a question', 52, INK, B, 'mm')
+        else:
+            text(d, (2040, 580), 'first start of 1.1 asks', 52, GREY, R, 'mm')
+            text(d, (2040, 690), 'Welcome to FreeCAD 1.1', 52, INK, B, 'mm')
+            box(d, 1660, 770, 2420, 880, fill=(0, 120, 212), outline=(0, 90, 170), w=4)
+            text(d, (2040, 825), 'Copy Configuration (Recommended)', 40, WHITE, B, 'mm')
+            if step == 4:
+                text(d, (2040, 980), 'old settings -> new drawer', 50, GREY, R, 'mm')
+                text(d, (2040, 1050), 'the old drawer stays', 50, GREY, R, 'mm')
+            else:
+                text(d, (2040, 960), 'picked Share instead?', 50, AMBER, B, 'mm')
+                text(d, (2040, 1040), 'it keeps the old drawer: check', 46, AMBER, R, 'mm')
+    elif step in (5, '5b', '5c'):
         cabinet(d)
         box(d, 1700, 330, 2460, 900, fill=(250, 248, 240), outline=GREY)
         text(d, (2080, 400), 'an older guide', 60, GREY, B, 'mm')
         for k in range(4):
             d.line((1780, 490 + k * 70, 2380, 490 + k * 70), fill=FAINT, width=14)
         text(d, (2080, 800), 'copy to FreeCAD/Mod', 52, INK, MONOB, 'mm')
-        arrow(d, 1700, 700, 1520, 540, AMBER)
-        text(d, (2080, 1020), 'the old drawer still exists', 54, AMBER, B, 'mm')
+        if step != 5:
+            arrow(d, 1700, 700, 1520, 540, AMBER)
+            text(d, (2080, 1000), 'that folder: left from an older', 46, AMBER, B, 'mm')
+            text(d, (2080, 1060), 'FreeCAD, or easy to make', 46, AMBER, B, 'mm')
+        if step == '5c':
+            text(d, (2080, 1170), 'so the copy seems to work', 54, RED, B, 'mm')
     elif step == 6:
         cabinet(d, open_new=True, addon_old=True, hand=True)
         text(d, (2030, 520), 'the files are there;', 64, RED, B, 'mm')
@@ -263,7 +276,7 @@ def card_short_q():
 
 
 if __name__ == '__main__':
-    for s in range(1, 7):
+    for s in (1, 2, 3, '4a', 4, '4b', 5, '5b', '5c', 6):
         card_drawer(s)
     for n in (1, 2, 3, 4):
         card_paths(n)
