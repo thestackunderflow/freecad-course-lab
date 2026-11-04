@@ -175,6 +175,19 @@ def card_cab(step):
     drawer open (FreeCAD 1.1's hand). 2a..2c are built on 1c: the older guide, the conclusion, trap one.
     Mapping everywhere: drawer = a Mod folder, box = one add-on's folder."""
     im, d = canvas()
+    if step.startswith('0'):
+        # fx1 cut 2 (watch r1): the intro's analogy line gets the cabinet itself, not plain boxes.
+        # 0a the new drawer opened by FreeCAD 1.1; 0b + your add-on, still in the old drawer
+        header(d, 'Think of a tool cabinet')
+        cabinet(d, open_new=True, addon_old=True, hand=True, new_label='v1-1/Mod', hand_text='1.1 opens v1-1/Mod')
+        text(d, (1840, 400), 'FreeCAD 1.1 opened', 60, BLUE, B, 'la')
+        text(d, (1840, 480), 'a new drawer', 60, BLUE, B, 'la')
+        if step == '0b':
+            text(d, (1840, 640), 'your add-on: still', 60, AMBER, B, 'la')
+            text(d, (1840, 720), 'in the old drawer', 60, AMBER, B, 'la')
+            arrow(d, 1820, 680, 1540, 600, AMBER)
+        save(im, f'card-cab-{step}.png')
+        return
     two = step.startswith('2')
     header(d, 'Trap one: the wrong drawer' if step == '2c' else 'A tool cabinet: one drawer per version')
     opened = step != '1a' and step != '1b'
@@ -323,7 +336,7 @@ def card_short_q():
 
 
 if __name__ == '__main__':
-    for s in ('1a', '1b', '1c', '2a', '2b', '2c'):
+    for s in ('0a', '0b', '1a', '1b', '1c', '2a', '2b', '2c'):
         card_cab(s)
     for s in (1, 2, 3, '4a', 4, '4b', 5, '5b', '5c', 6):
         card_drawer(s)
