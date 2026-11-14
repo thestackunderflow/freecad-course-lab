@@ -200,7 +200,8 @@ DECODE = [  # one step about every 8 s, in the spoken order (SCRIPT F4)
     ('new size 17: two orders, one line', '= over-constrained'),
     ("datum = FreeCAD's word", "for a size's number"),
     ("negative = FreeCAD's wording", 'for this clash', '(nothing typed is negative)'),
-    ("index 23 = the new size's number", '(rules 0 to 22 were there)'),
+    # cut 3: the count's source named (R1's rule print, 0 to 22) and squared with the panel's 1-based names
+    ("index 23 = the new size's number", '(rules 0 to 22: read by a script;', "the panel's names: Constraint1 to 23)"),
 ]
 
 
@@ -235,6 +236,9 @@ def card_decode(step):
     save(im, f'card-decode-{step}.png')
 
 
+STAMP = (650, 1010, 1100, 1110)     # cut 3: wide enough for "for information" (it spilled past 660-1000)
+
+
 # --- F8: so far -------------------------------------------------------------------------------------------------------
 def card_sofar(step):
     """SCRIPT F8: 1 the four notes, the fourth crossed out, "one order too many"; 2 the shelf note 25 to 27, "change the
@@ -254,9 +258,9 @@ def card_sofar(step):
     if step >= 3:
         c3 = BLUE
         note(d, 200, 1000, 'arm 17', c3, fill=WHITE, w=420)
-        d.rectangle((660, 1010, 1000, 1110), outline=GREEN, width=7)
-        text(d, (830, 1060), 'for information', 46, GREEN, anchor='mm')
-        text(d, (1100, 1060), 'or add it as a Reference', 72, c3, anchor='lm')
+        d.rectangle(STAMP, outline=GREEN, width=7)
+        text(d, ((STAMP[0] + STAMP[2]) / 2, (STAMP[1] + STAMP[3]) / 2), 'for information', 46, GREEN, anchor='mm')
+        text(d, (1140, 1060), 'or add it as a Reference', 72, c3, anchor='lm')
     save(im, f'card-sofar-{step}.png')
 
 

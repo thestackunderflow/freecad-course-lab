@@ -93,3 +93,19 @@ def test_overlays_cover_only_their_boxes(drawn):
     # SCRIPT 0.1: the banner + "Auto mode" notice (y 0-800 until ~24 s) covered across the whole left pane
     assert d.R1_TOP[1] == 0 and d.R1_TOP[3] >= 840 and d.R1_TOP[2] >= 1160
     assert drawn.LOG['ov-a-rep.png'] == []                # a plain panel, no text
+
+
+# cut 3 (WATCH-fx20-c2): the index count is labelled with its source and squares with the panel's 1-based names;
+# the "for information" stamp text sits inside its green outline
+def test_c3_index_card_names_its_source(drawn):
+    txt = ' '.join(s for s, _ in drawn.LOG['card-decode-7.png']).lower()
+    assert '(rules 0 to 22 were there)' not in txt
+    assert 'read by a script' in txt and 'constraint1' in txt
+
+
+def test_c3_sofar_stamp_text_inside_its_outline(drawn):
+    from PIL import ImageDraw
+    x0, y0, x1, y1 = drawn.STAMP
+    dr = ImageDraw.Draw(Image.new('RGB', (10, 10)))
+    bb = dr.textbbox(((x0 + x1) / 2, (y0 + y1) / 2), 'for information', font=drawn.font(drawn.B, 46), anchor='mm')
+    assert bb[0] >= x0 + 12 and bb[2] <= x1 - 12, (bb, drawn.STAMP)
