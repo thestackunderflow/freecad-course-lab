@@ -1,0 +1,10 @@
+hook
+Sketch row 210 437
+notification button 2311 1787
+fit all 943 88, label distance 6.019045829772949
+map origin 1845 1480 k 8.64
+B bottom label at 1953 1532
+sketch Close 2529 615
+Pad row 172 405
+console at 1440 1702
+READ B pad valid True volume 8700.0 solve 0 DoF 0 bottom 27.0 arm top 17.0

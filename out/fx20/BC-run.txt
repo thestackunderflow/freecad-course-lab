@@ -1,0 +1,302 @@
+unknown opt: 63
+mousemove: unrecognized option '-94'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+mousemove: unrecognized option '-234'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-371'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-500'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-620'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-727'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+unknown opt: 63
+mousemove: unrecognized option '-818'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-891'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+mousemove: unrecognized option '-945'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+unknown opt: 63
+mousemove: unrecognized option '-978'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+mousemove: unrecognized option '-990'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-2'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-23'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-48'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-75'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-106'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+unknown opt: 63
+mousemove: unrecognized option '-139'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+mousemove: unrecognized option '-175'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+unknown opt: 63
+mousemove: unrecognized option '-213'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-253'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+mousemove: unrecognized option '-295'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-338'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-382'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-426'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+unknown opt: 63
+mousemove: unrecognized option '-471'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+mousemove: unrecognized option '-517'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-561'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-605'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-648'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-690'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-730'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-768'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-804'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-837'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-868'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-895'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-920'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-941'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-958'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-971'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+mousemove: unrecognized option '-981'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+unknown opt: 63
+mousemove: unrecognized option '-987'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+mousemove: unrecognized option '-990'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+ABC done

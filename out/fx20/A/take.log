@@ -1,0 +1,9 @@
+hook
+Sketch row 210 437
+notification button 2311 1787
+map origin 1491 1237, bottom end 1879 1237, k 15.52 px/mm; bottom size: DistanceX 25.0 -6.019045829772949 0.014016935601830482
+sketch Close 2529 615
+windows 38
+A after:
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']

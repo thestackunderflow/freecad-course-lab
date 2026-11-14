@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Negative datum values are not valid for the constraint with index 23
+App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('17 mm'))

@@ -1,0 +1,32 @@
+MCP RPC: GUI task raised ValueError: Negative datum values are not valid for the constraint with index 23
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 5, in <module>
+ValueError: Negative datum values are not valid for the constraint with index 23
+Error executing Python code: ValueError: Negative datum values are not valid for the constraint with index 23
+--- code ---
+import FreeCAD, Sketcher
+d = FreeCAD.openDocument('/home/maker/fx20/size-1.FCStd')
+s = d.getObject('Sketch')
+i = s.addConstraint(Sketcher.Constraint('DistanceX', 4, 2, 4, 1, 15))
+s.setDatum(i, FreeCAD.Units.Quantity('17 mm'))
+d.recompute()
+
+--- end ---
+Sketch: Sketch with redundant constraints
+Remove the following redundant constraint:
+24
+
+
+Sketch: Over-constrained sketch
+Remove at least one of the following conflicting constraints:3
+, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 20, 23, 24
+
+Sketch: Over-constrained sketch
+Remove at least one of the following conflicting constraints:3
+, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 20, 23, 24
+

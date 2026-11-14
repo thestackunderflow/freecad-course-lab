@@ -1,0 +1,43 @@
+$ python3 noai.py
+=== call 1: arm-top size 17, no prints
+reply text: Failed to execute code: ValueError: Negative datum values are not valid for the constraint with index 23
+isError: True | types: ['text']
+
+=== call 2: arm-top size 17, the error printed
+reply text: Code executed successfully: Python code executed successfully.
+Output: ValueError: Negative datum values are not valid for the constraint with index 23
+arm top 15.0
+
+isError: False | types: ['text', 'image']
+
+=== call 3: hook-red opened, no prints
+reply text: Code executed successfully: Python code executed successfully.
+Output:
+isError: False | types: ['text', 'image']
+
+=== call 4: hook-red opened, solve + conflicts printed
+reply text: Code executed successfully: Python code executed successfully.
+Output: solve -4 conflicting [3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 20, 23, 24]
+
+isError: False | types: ['text', 'image']
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

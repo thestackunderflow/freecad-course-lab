@@ -1,0 +1,16 @@
+{"t": 0.053, "event": "recording started: the sketch as take A left it"}
+{"t": 4.004, "event": "Fit all", "x": 943, "y": 88, "button": 1}
+{"t": 9.761, "event": "B: double-click the bottom size (25)"}
+{"t": 12.284, "event": "B: typed 27", "text": "27"}
+{"t": 14.646, "event": "B: Return (OK)", "keys": "Return"}
+{"t": 22.626, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 27.102, "event": "key 0: isometric", "keys": "0"}
+{"t": 32.839, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 35.75, "event": "View menu", "x": 211, "y": 36, "button": 1}
+{"t": 37.391, "event": "View: Panels"}
+{"t": 39.938, "event": "Panels: Python console", "x": 800, "y": 1124, "button": 1}
+{"t": 45.699, "event": "tab: Python Console", "x": -990, "y": -914, "button": 1}
+{"t": 49.444, "event": "console: click", "x": 1440, "y": 1702, "button": 1}
+{"t": 50.154, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 52.726, "event": "console: Enter", "keys": "Return"}
+{"t": 57.536, "event": "recording stopped"}

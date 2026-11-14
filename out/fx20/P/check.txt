@@ -1,0 +1,3 @@
+hook: constraints 23 solve 0 DoF 0 conflicting [] pad valid True volume 8500.0
+hook-red: constraints 24 solve -4 DoF -1 conflicting [3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 20, 23, 24] pad valid True volume 8500.0
+P0 PASS

@@ -1,0 +1,89 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR IndexError: list index out of range
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                                                                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+clk: no place for none sketch: Close
+clk: no place for tree: Pad
+clk: no place for console: click
+E done (fx20)

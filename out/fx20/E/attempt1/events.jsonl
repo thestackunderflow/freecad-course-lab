@@ -1,0 +1,44 @@
+{"t": 0.032, "event": "recording started: FreeCAD, start page, Part workbench"}
+{"t": 4.487, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 5.912, "event": "File: New Document", "x": 143, "y": 76, "button": 1}
+{"t": 9.151, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 12.992, "event": "workbench: Part Design", "x": 630, "y": 338, "button": 1}
+{"t": 17.826, "event": "New Body", "x": 510, "y": 158, "button": 1}
+{"t": 22.159, "event": "New Sketch", "x": 570, "y": 158, "button": 1}
+{"t": 26.991, "event": "attachment: XY-plane", "x": 2340, "y": 750, "button": 1}
+{"t": 29.922, "event": "attachment: OK", "x": 2430, "y": 616, "button": 1}
+{"t": 34.825, "event": "pan: middle drag", "x": 1500, "y": 900, "button": 2}
+{"t": 35.838, "event": "pan: middle drag: released", "x": 1350, "y": 1470, "button": 2}
+{"t": 38.158, "event": "key G", "keys": "g"}
+{"t": 38.778, "event": "key R: Rectangle", "keys": "r"}
+{"t": 42.395, "event": "rectangle: first corner on the origin", "x": 1529, "y": 1558, "button": 1}
+{"t": 45.557, "event": "rectangle: opposite corner", "x": 2279, "y": 1165, "button": 1}
+{"t": 47.567, "event": "Esc: tool off", "keys": "Escape"}
+{"t": 54.461, "event": "key D: Dimension", "keys": "d"}
+{"t": 58.089, "event": "dimension bottom 40: pick", "x": 0, "y": 0, "button": 1}
+{"t": 60.493, "event": "dimension bottom 40: place", "x": 0, "y": 0, "button": 1}
+{"t": 62.405, "event": "dimension bottom 40: typed 40", "text": "40"}
+{"t": 63.239, "event": "dimension bottom 40: Enter", "keys": "Return"}
+{"t": 68.022, "event": "dimension right 20: pick", "x": 0, "y": 0, "button": 1}
+{"t": 70.428, "event": "dimension right 20: place", "x": 0, "y": 0, "button": 1}
+{"t": 72.343, "event": "dimension right 20: typed 20", "text": "20"}
+{"t": 73.176, "event": "dimension right 20: Enter", "keys": "Return"}
+{"t": 78.124, "event": "dimension top 41: pick", "x": 0, "y": 0, "button": 1}
+{"t": 80.537, "event": "dimension top 41: place", "x": 0, "y": 0, "button": 1}
+{"t": 82.446, "event": "dimension top 41: typed 41", "text": "41"}
+{"t": 83.281, "event": "dimension top 41: Enter", "keys": "Return"}
+{"t": 86.103, "event": "popup: the refusal"}
+{"t": 93.405, "event": "dimension top, Reference: pick", "x": 0, "y": 0, "button": 1}
+{"t": 95.857, "event": "dimension top, Reference: place", "x": 0, "y": 0, "button": 1}
+{"t": 99.732, "event": "dimension top, Reference: tick Reference", "x": 36, "y": 150, "button": 1}
+{"t": 101.649, "event": "dimension top, Reference: Enter", "keys": "Return"}
+{"t": 106.857, "event": "Esc: Dimension off"}
+{"t": 113.403, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 117.353, "event": "Pad", "x": 50, "y": 228, "button": 1}
+{"t": 120.567, "event": "Pad: typed 10", "text": "10"}
+{"t": 125.285, "event": "Pad: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 128.682, "event": "key 0: isometric", "keys": "0"}
+{"t": 155.054, "event": "View menu", "x": 211, "y": 36, "button": 1}
+{"t": 156.671, "event": "View: Panels"}
+{"t": 159.196, "event": "Panels: Python console", "x": 800, "y": 1124, "button": 1}
+{"t": 202.121, "event": "recording stopped"}

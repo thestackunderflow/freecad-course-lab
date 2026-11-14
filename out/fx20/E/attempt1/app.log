@@ -1,0 +1,25 @@
+Pad: Sub shape not found: Unnamed#Sketch.
+Pad: Sub shape not found: Unnamed#Sketch.
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 90.0s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a modal dialog is open in FreeCAD; 4 task(s) queued)"}
+--- code ---
+try:
+    import FreeCAD, FreeCADGui
+    from PySide import QtCore, QtWidgets
+    QtWidgets.QApplication.processEvents()
+    mw = FreeCADGui.getMainWindow()
+    d = FreeCAD.getDocument('Unnamed')
+    target, doclabel = d.getObject('Pad').Label, d.Label
+    found = None
+    for tree in mw.findChildren(QtWidgets.QTreeWidget):
+        if found or not tree.isVisible():
+            continue
+        m = tree.model()
+        for ix in m.match(m.index(0, 0), QtCore.Qt.DisplayRole, target, -1, QtCore.Qt.MatchExactly | QtCore.Qt.MatchRecursive):
+            if not ix.parent().isValid():
+                continue                       # a document row with the same name
+            top = ix
+            while top.parent().isValid():
+                top = top.parent()
+            if top.data() != doclabe
+...(truncated)
+--- end ---

@@ -1,0 +1,13 @@
+{"t": 0.076, "event": "recording started: B's result (bottom 27, Pad 8700)"}
+{"t": 3.421, "event": "tree: double-click Sketch"}
+{"t": 7.919, "event": "key D: Dimension", "keys": "d"}
+{"t": 11.556, "event": "C: pick the arm's top", "x": 1700, "y": 1159, "button": 1}
+{"t": 15.223, "event": "C: place the size", "x": 1700, "y": 1049, "button": 1}
+{"t": 20.252, "event": "Insert Length: tick Reference", "x": 1736, "y": 1199, "button": 1}
+{"t": 22.462, "event": "C: Return (OK), no value typed", "keys": "Return"}
+{"t": 27.834, "event": "Esc: Dimension tool off", "keys": "Escape"}
+{"t": 32.157, "event": "C: double-click the bottom size (27)"}
+{"t": 34.661, "event": "C: typed 30", "text": "30"}
+{"t": 37.034, "event": "C: Return (OK)", "keys": "Return"}
+{"t": 43.436, "event": "Ctrl+Z: back to 27", "keys": "ctrl+z"}
+{"t": 47.22, "event": "recording stopped"}

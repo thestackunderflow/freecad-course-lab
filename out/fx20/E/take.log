@@ -1,0 +1,11 @@
+1
+origin 1280 1558
+bottom 0 right 1 top 2 left 3
+after rectangle 9 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0)] DoF 0 2
+after sizes 11 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 40.0), ('DistanceY', 1, 1, 1, 2, 20.0)] DoF 0 0
+after 41 11 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 40.0), ('DistanceY', 1, 1, 1, 2, 20.0)] DoF 0 0
+after Reference 12 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 40.0), ('DistanceY', 1, 1, 1, 2, 20.0), ('DistanceX', 2, 2, 2, 1, 40.0)] DoF 0 0
+Sketch row 189 405
+Pad row 172 405
+console at 1438 1704
+READ pad True 7999.999999999998

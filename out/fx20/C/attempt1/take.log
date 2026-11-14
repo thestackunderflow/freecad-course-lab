@@ -1,0 +1,9 @@
+Sketch row 210 437
+C ref:
+constraints 24 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 15.0, False)
+C bottom 30:
+constraints 24 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 15.0, False)
+['Fully constrained']
+C after:
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']

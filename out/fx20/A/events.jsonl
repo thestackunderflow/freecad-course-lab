@@ -1,0 +1,15 @@
+{"t": 0.028, "event": "recording started: FreeCAD, hook open, Part Design, front view"}
+{"t": 4.349, "event": "tree: double-click Sketch"}
+{"t": 8.357, "event": "hold: Fully constrained"}
+{"t": 13.84, "event": "drag the arm's corner"}
+{"t": 15.343, "event": "released: nothing moved"}
+{"t": 18.345, "event": "key D: Dimension", "keys": "d"}
+{"t": 21.991, "event": "A: pick the arm's top", "x": 1685, "y": 1159, "button": 1}
+{"t": 25.662, "event": "A: place the size", "x": 1685, "y": 1049, "button": 1}
+{"t": 28.878, "event": "A: typed 17", "text": "17"}
+{"t": 31.239, "event": "A: Return (OK)", "keys": "Return"}
+{"t": 31.858, "event": "popup: Negative datum values ..."}
+{"t": 38.828, "event": "notification list: open", "x": 2311, "y": 1787, "button": 1}
+{"t": 49.49, "event": "notification list: close", "x": 2311, "y": 1787, "button": 1}
+{"t": 52.205, "event": "Esc: Dimension tool off", "keys": "Escape"}
+{"t": 56.963, "event": "recording stopped"}

@@ -1,0 +1,12 @@
+Sketch row 210 437
+map origin 1792 1147 k 6.18519
+C ref:
+constraints 24 arm-top length 17.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 17.0, False)
+map origin 1792 1147 k 6.18519
+C bottom label at 1875 1184
+C bottom 30:
+constraints 24 arm-top length 20.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 20.0, False)
+['Fully constrained']
+C after:
+constraints 24 arm-top length 17.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 17.0, False)
+['Fully constrained']

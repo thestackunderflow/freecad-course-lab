@@ -1,0 +1,4 @@
+sketch Close 2527 615
+Pad row 172 405
+console at 1438 1661
+READ B pad valid True volume 8500.0 solve 0 DoF 0 bottom 25.0 arm top 15.0
