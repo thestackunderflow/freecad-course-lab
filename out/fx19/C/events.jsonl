@@ -1,0 +1,56 @@
+{"t": 0.036, "event": "recording started: FreeCAD, start page, Part workbench"}
+{"t": 4.49, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 5.89, "event": "File: New Document", "x": 143, "y": 76, "button": 1}
+{"t": 9.059, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 12.892, "event": "workbench: Part Design", "x": 630, "y": 338, "button": 1}
+{"t": 17.722, "event": "New Body", "x": 510, "y": 158, "button": 1}
+{"t": 20.605, "event": "hover: New Sketch"}
+{"t": 22.457, "event": "New Sketch", "x": 570, "y": 158, "button": 1}
+{"t": 26.626, "event": "attachment: XZ-plane", "x": 2340, "y": 774, "button": 1}
+{"t": 29.588, "event": "attachment: OK", "x": 2430, "y": 616, "button": 1}
+{"t": 34.492, "event": "pan: middle drag", "x": 1500, "y": 900, "button": 2}
+{"t": 35.503, "event": "pan: middle drag: released", "x": 1350, "y": 1470, "button": 2}
+{"t": 38.083, "event": "hover: Polyline"}
+{"t": 39.951, "event": "Polyline", "x": 316, "y": 228, "button": 1}
+{"t": 43.122, "event": "polyline: origin", "x": 1529, "y": 1558, "button": 1}
+{"t": 46.294, "event": "polyline: corner 1 (right)", "x": 2029, "y": 1558, "button": 1}
+{"t": 49.457, "event": "polyline: corner 2 (up)", "x": 2029, "y": 1343, "button": 1}
+{"t": 52.624, "event": "polyline: corner 3 (left)", "x": 1921, "y": 1343, "button": 1}
+{"t": 55.791, "event": "polyline: corner 4 (down)", "x": 1921, "y": 1450, "button": 1}
+{"t": 58.958, "event": "polyline: corner 5 (left)", "x": 1636, "y": 1450, "button": 1}
+{"t": 62.127, "event": "polyline: corner 6 (up)", "x": 1636, "y": 575, "button": 1}
+{"t": 65.29, "event": "polyline: corner 7 (left)", "x": 1529, "y": 575, "button": 1}
+{"t": 68.848, "event": "polyline: last click 2 mm above the first point", "x": 1529, "y": 1522, "button": 1}
+{"t": 70.858, "event": "Esc: polyline ended", "keys": "Escape"}
+{"t": 74.536, "event": "zoom in on the corner"}
+{"t": 85.089, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 90.223, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 92.404, "event": "Space: Sketch hidden", "keys": "space"}
+{"t": 95.202, "event": "hover: New Sketch"}
+{"t": 97.058, "event": "New Sketch", "x": 570, "y": 158, "button": 1}
+{"t": 101.226, "event": "attachment: XZ-plane", "x": 2340, "y": 774, "button": 1}
+{"t": 104.195, "event": "attachment: OK", "x": 2430, "y": 616, "button": 1}
+{"t": 109.091, "event": "pan: middle drag", "x": 1500, "y": 900, "button": 2}
+{"t": 110.109, "event": "pan: middle drag: released", "x": 1350, "y": 1470, "button": 2}
+{"t": 112.671, "event": "hover: Polyline"}
+{"t": 114.525, "event": "Polyline", "x": 316, "y": 228, "button": 1}
+{"t": 117.688, "event": "polyline: origin", "x": 1528, "y": 1558, "button": 1}
+{"t": 120.859, "event": "polyline: corner 1 (right)", "x": 2028, "y": 1558, "button": 1}
+{"t": 124.024, "event": "polyline: corner 2 (up)", "x": 2028, "y": 1343, "button": 1}
+{"t": 127.189, "event": "polyline: corner 3 (left)", "x": 1920, "y": 1343, "button": 1}
+{"t": 130.358, "event": "polyline: corner 4 (down)", "x": 1920, "y": 1450, "button": 1}
+{"t": 133.522, "event": "polyline: corner 5 (left)", "x": 1635, "y": 1450, "button": 1}
+{"t": 136.689, "event": "polyline: corner 6 (up)", "x": 1635, "y": 575, "button": 1}
+{"t": 139.856, "event": "polyline: corner 7 (left)", "x": 1528, "y": 575, "button": 1}
+{"t": 141.969, "event": "hover: the first point (highlight cue?)"}
+{"t": 144.859, "event": "polyline: close on the first point", "x": 1528, "y": 1558, "button": 1}
+{"t": 147.773, "event": "Esc: tool off", "keys": "Escape"}
+{"t": 152.589, "event": "sketch: Close", "x": 2527, "y": 615, "button": 1}
+{"t": 155.802, "event": "recording paused: hook-touch opened (not filmed)"}
+{"t": 159.795, "event": "hook-touch open"}
+{"t": 164.623, "event": "tree: Sketch (hook-touch)", "x": 189, "y": 437, "button": 1}
+{"t": 168.455, "event": "Pad", "x": 50, "y": 228, "button": 1}
+{"t": 171.67, "event": "Pad: typed 20", "text": "20"}
+{"t": 176.357, "event": "Pad: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 182.904, "event": "key 0: isometric", "keys": "0"}
+{"t": 186.53, "event": "recording stopped"}

@@ -1,0 +1,57 @@
+{"t": 0.051, "event": "recording started: FreeCAD, start page, Part workbench"}
+{"t": 4.493, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 5.891, "event": "File: New Document", "x": 143, "y": 76, "button": 1}
+{"t": 9.058, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 12.892, "event": "workbench: Part Design", "x": 630, "y": 338, "button": 1}
+{"t": 17.726, "event": "New Body", "x": 510, "y": 158, "button": 1}
+{"t": 22.06, "event": "New Sketch", "x": 570, "y": 158, "button": 1}
+{"t": 26.892, "event": "attachment: XY-plane", "x": 2340, "y": 750, "button": 1}
+{"t": 29.824, "event": "attachment: OK", "x": 2430, "y": 616, "button": 1}
+{"t": 34.727, "event": "pan: middle drag", "x": 1500, "y": 900, "button": 2}
+{"t": 35.739, "event": "pan: middle drag: released", "x": 1350, "y": 1470, "button": 2}
+{"t": 38.04, "event": "key G", "keys": "g"}
+{"t": 38.659, "event": "key R: Rectangle", "keys": "r"}
+{"t": 42.258, "event": "rectangle: first corner on the origin", "x": 1529, "y": 1558, "button": 1}
+{"t": 45.426, "event": "rectangle: opposite corner", "x": 2100, "y": 1165, "button": 1}
+{"t": 47.44, "event": "Esc: tool off", "keys": "Escape"}
+{"t": 50.207, "event": "key D: Dimension", "keys": "d"}
+{"t": 53.822, "event": "dimension bottom 30: pick", "x": 1815, "y": 1558, "button": 1}
+{"t": 56.229, "event": "dimension bottom 30: place", "x": 1815, "y": 1638, "button": 1}
+{"t": 58.142, "event": "dimension bottom 30: typed 30", "text": "30"}
+{"t": 58.971, "event": "dimension bottom 30: Enter", "keys": "Return"}
+{"t": 63.763, "event": "dimension right 20: pick", "x": 2101, "y": 1362, "button": 1}
+{"t": 66.188, "event": "dimension right 20: place", "x": 2011, "y": 1362, "button": 1}
+{"t": 68.101, "event": "dimension right 20: typed 20", "text": "20"}
+{"t": 68.93, "event": "dimension right 20: Enter", "keys": "Return"}
+{"t": 71.768, "event": "Esc: Dimension off"}
+{"t": 75.856, "event": "corner: top-left clicked", "x": 1529, "y": 1177, "button": 1}
+{"t": 77.571, "event": "Delete: the corner's rules", "keys": "Delete"}
+{"t": 80.784, "event": "drag the end: down"}
+{"t": 81.955, "event": "drag the end: released (about 1 mm)"}
+{"t": 85.752, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 91.022, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 94.556, "event": "Sketch menu", "x": 514, "y": 36, "button": 1}
+{"t": 98.231, "event": "Validate Sketch", "x": 595, "y": 249, "button": 1}
+{"t": 103.764, "event": "Highlight Troublesome Vertices", "x": 2518, "y": 799, "button": 1}
+{"t": 110.422, "event": "validation: Close", "x": 2530, "y": 616, "button": 1}
+{"t": 114.453, "event": "tree: double-click Sketch"}
+{"t": 118.818, "event": "zoom in on the corner"}
+{"t": 126.456, "event": "pick: one end", "x": 1669, "y": 691, "button": 1}
+{"t": 129.986, "event": "pick: the other end", "x": 1669, "y": 691, "button": 1}
+{"t": 132.105, "event": "key C: coincident", "keys": "c"}
+{"t": 136.635, "event": "Esc: selection cleared", "keys": "Escape"}
+{"t": 140.191, "event": "sketch: Close", "x": 2527, "y": 615, "button": 1}
+{"t": 145.221, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 149.054, "event": "Pad", "x": 50, "y": 228, "button": 1}
+{"t": 152.263, "event": "Pad: typed 10", "text": "10"}
+{"t": 156.956, "event": "Pad: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 160.337, "event": "key 0: isometric", "keys": "0"}
+{"t": 165.89, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 168.66, "event": "View menu", "x": 211, "y": 36, "button": 1}
+{"t": 170.206, "event": "View: Panels"}
+{"t": 172.657, "event": "Panels: Python console", "x": 800, "y": 1124, "button": 1}
+{"t": 178.086, "event": "tab: Python Console", "x": -990, "y": -914, "button": 1}
+{"t": 181.758, "event": "console: click", "x": 1438, "y": 1704, "button": 1}
+{"t": 182.467, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 184.987, "event": "console: Enter", "keys": "Return"}
+{"t": 189.752, "event": "recording stopped"}

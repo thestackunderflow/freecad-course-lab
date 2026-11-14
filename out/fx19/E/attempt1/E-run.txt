@@ -1,0 +1,123 @@
+clk: no place for none sketch: Close
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 162, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 151, in main
+    print(run(ARROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Label'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 162, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 151, in main
+    print(run(ARROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Label'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 162, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 151, in main
+    print(run(ARROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Label'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 162, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 151, in main
+    print(run(ARROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Label'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 162, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 158, in main
+    print(run(ROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Label'
+clk: no place for tree: Sketch
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'getGlobalPlacement'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'getGlobalPlacement'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'getGlobalPlacement'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/sketchpt.py", line 46, in <module>
+    x, y = where(a[0], a[1], a[2], a[3], *(a[4:6] or []))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/sketchpt.py", line 40, in where
+    x, y = (int(s) for s in fcrpc.run(CODE.format(doc=doc, sk=sk, geo=int(geo), where=at)).split())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'getGlobalPlacement'
+clk: no place for pick: one end
+clk: no place for pick: the other end
+clk: no place for none sketch: Close
+clk: no place for tree: Sketch
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/lab/lab/fcrpc.py", line 162, in <module>
+    main(sys.argv[1:])
+  File "/lab/lab/fcrpc.py", line 158, in main
+    print(run(ROW.format(doc=argv[1], obj=argv[2])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Label'
+clk: no place for tree: Pad
+clk: no place for none console: click
+E done

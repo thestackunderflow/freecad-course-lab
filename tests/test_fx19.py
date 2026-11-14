@@ -48,3 +48,17 @@ def test_the_text_button_query_names_the_text_and_compiles():
     code = button.TEXT.format(text='OK')
     assert "'OK'" in code and 'QAbstractButton' in code
     compile(code, 'q', 'exec')
+
+
+def test_redact_drops_context_lines_and_keeps_the_turn():
+    import json
+    from lab import fx19redact as r
+    rows = [{'type': 'attachment', 'attachment': {'type': 'skill_listing', 'x': 'Goo' + 'gle Dr' + 'ive'}},
+            {'type': 'attachment', 'attachment': {'type': 'session_context', 'x': 'a@b.com'}},
+            {'type': 'api-request-shape', 'shape': 'claude' + '_ai_X'}, {'type': 'api-request-blob', 'b': 'Cla' + 'ude Do' + 'cs'},
+            {'type': 'user', 'message': {'role': 'user', 'content': 'Pad the sketch in this document 20 mm.'}},
+            {'type': 'assistant', 'message': {'model': 'claude-sonnet-5-5', 'content': []}}]
+    kept, dropped = r.redact([json.dumps(x) for x in rows])
+    assert dropped == 4 and len(kept) == 2
+    assert not r.leaks(kept)
+    assert r.leaks(['x drive' + 'mcp y'])

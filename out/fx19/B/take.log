@@ -1,0 +1,13 @@
+corner before zoom: closing end 1477 1241, first start 1477 1249
+scroll 3 button 4: apart 15 px
+scroll 6 button 4: apart 27 px
+scroll 9 button 4: apart 49 px
+scroll 12 button 4: apart 90 px
+constraints before 22
+constraints after 23 ['DistanceX', 'Coincident'] DoF 0 0 closing end Vector (0.0, 0.0, 0.0)
+sketch Close none 
+no box: box after the second highlight: Return
+windows after Pad OK 38 (baseline 38)
+Pad row 172 405
+console -990 -936
+READ pad valid True volume 8500.0 wire closed [True] DoF 0

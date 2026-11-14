@@ -1,0 +1,16 @@
+1
+origin 1529 1558
+bottom 0 right 1 top 2 left 3
+after rectangle 9 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0)] DoF 0 2
+after sizes 11 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 30.0), ('DistanceY', 1, 1, 1, 2, 20.0)] DoF 0 0
+GUARD True
+top-left: left start 1529 1177, top end 1529 1177
+after Delete 10 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 30.0), ('DistanceY', 1, 1, 1, 2, 20.0)] DoF 0 2
+after drag 10 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 30.0), ('DistanceY', 1, 1, 1, 2, 20.0)] DoF 0 2
+ends Vector (0.0, 20.0, 0.0) Vector (-0.9153939999999992, 20.0, 0.0) gap 0.9153939999999992
+Sketch row 189 405
+zoomed: 1740 691 / 1660 691
+after join 11 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 30.0), ('DistanceY', 1, 1, 1, 2, 20.0), ('Coincident', 3, 1, 2, 2, 0.0)] DoF 0 0
+Pad row 172 405
+console at 1438 1704
+READ pad True 6000.0

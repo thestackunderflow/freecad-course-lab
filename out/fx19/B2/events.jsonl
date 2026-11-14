@@ -1,0 +1,10 @@
+{"t": 0.044, "event": "recording started: take B's fixed hook (saved at the end of take B), isometric"}
+{"t": 4.858, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 7.628, "event": "View menu", "x": 211, "y": 36, "button": 1}
+{"t": 9.177, "event": "View: Panels"}
+{"t": 11.624, "event": "Panels: Python console", "x": 800, "y": 1124, "button": 1}
+{"t": 17.093, "event": "tab: Python Console", "x": -990, "y": -914, "button": 1}
+{"t": 20.74, "event": "console: click", "x": 1440, "y": 1702, "button": 1}
+{"t": 21.447, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 23.971, "event": "console: Enter", "keys": "Return"}
+{"t": 28.757, "event": "recording stopped"}

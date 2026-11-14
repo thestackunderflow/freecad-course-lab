@@ -1,0 +1,40 @@
+$ python3 noai.py
+=== call 1: execute_code, no prints
+reply text: Code executed successfully: Python code executed successfully.
+Output:
+isError: False | content types: ['text', 'image']
+
+=== call 2: execute_code, with the two prints
+reply text: Code executed successfully: Python code executed successfully.
+Output: False
+Wire is not closed.
+
+isError: False | content types: ['text', 'image']
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

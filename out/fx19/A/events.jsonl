@@ -1,0 +1,12 @@
+{"t": 0.032, "event": "recording started: FreeCAD, hook-gap open, Part Design, front view"}
+{"t": 3.705, "event": "key 0: isometric", "keys": "0"}
+{"t": 7.833, "event": "key 1: front", "keys": "1"}
+{"t": 12.791, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 15.675, "event": "hover: Pad"}
+{"t": 17.526, "event": "Pad", "x": 50, "y": 228, "button": 1}
+{"t": 20.738, "event": "Pad: typed 20", "text": "20"}
+{"t": 25.424, "event": "Pad: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 27.14, "event": "Input error box: Wire is not closed."}
+{"t": 37.126, "event": "box: OK", "x": 1503, "y": 945, "button": 1}
+{"t": 42.29, "event": "task: Cancel (the Pad is removed)", "x": 2631, "y": 615, "button": 1}
+{"t": 46.147, "event": "recording stopped"}

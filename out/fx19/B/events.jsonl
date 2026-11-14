@@ -1,0 +1,32 @@
+{"t": 0.027, "event": "recording started: the state take A left (sketch only, the Pad removed)"}
+{"t": 3.858, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 7.396, "event": "Sketch menu", "x": 514, "y": 36, "button": 1}
+{"t": 9.809, "event": "hover: Validate Sketch"}
+{"t": 11.27, "event": "Validate Sketch", "x": 595, "y": 249, "button": 1}
+{"t": 16.794, "event": "Highlight Troublesome Vertices", "x": 2518, "y": 799, "button": 1}
+{"t": 23.458, "event": "validation: Close", "x": 2530, "y": 616, "button": 1}
+{"t": 27.486, "event": "tree: double-click Sketch"}
+{"t": 32.001, "event": "zoom in on the corner"}
+{"t": 42.325, "event": "pick: the closing line's end", "x": 1474, "y": 1153, "button": 1}
+{"t": 45.86, "event": "pick: the first line's start", "x": 1474, "y": 1243, "button": 1}
+{"t": 48.177, "event": "key C: coincident", "keys": "c"}
+{"t": 52.708, "event": "Esc: selection cleared", "keys": "Escape"}
+{"t": 59.323, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 62.861, "event": "Sketch menu", "x": 514, "y": 36, "button": 1}
+{"t": 66.525, "event": "Validate Sketch (again)", "x": 595, "y": 249, "button": 1}
+{"t": 72.056, "event": "Highlight Troublesome Vertices (again)", "x": 2518, "y": 799, "button": 1}
+{"t": 79.736, "event": "validation: Close", "x": 2530, "y": 616, "button": 1}
+{"t": 84.258, "event": "tree: Sketch", "x": 189, "y": 405, "button": 1}
+{"t": 86.637, "event": "hover: Pad"}
+{"t": 88.294, "event": "Pad (again)", "x": 50, "y": 228, "button": 1}
+{"t": 91.504, "event": "Pad: typed 20", "text": "20"}
+{"t": 96.188, "event": "Pad: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 99.58, "event": "key 0: isometric", "keys": "0"}
+{"t": 104.894, "event": "View menu", "x": 211, "y": 36, "button": 1}
+{"t": 106.437, "event": "View: Panels"}
+{"t": 108.892, "event": "Panels: Python console", "x": 800, "y": 1124, "button": 1}
+{"t": 113.421, "event": "tree: Pad", "x": 172, "y": 405, "button": 1}
+{"t": 118.058, "event": "console: click", "x": -990, "y": -936, "button": 1}
+{"t": 118.769, "event": "console: typed the volume line", "text": "Gui.Selection.getSelection()[0].Shape.Volume"}
+{"t": 121.339, "event": "console: Enter", "keys": "Return"}
+{"t": 126.105, "event": "recording stopped"}

@@ -1,0 +1,1 @@
+{"hook_gap": {"file": "/home/maker/fx19/hook-gap.FCStd", "pads": [{"name": "Pad", "valid": true, "status": "Valid", "volume": 8500.0}], "sketches": [{"name": "Sketch", "wires_closed": [true], "open_vertices": [], "constraints": 23, "dof": 0}], "solids": [{"name": "Body", "type": "PartDesign::Body", "valid": true, "volume": 8500.0}]}}

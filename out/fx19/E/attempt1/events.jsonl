@@ -1,0 +1,46 @@
+{"t": 0.07, "event": "recording started: FreeCAD, start page, Part workbench"}
+{"t": 4.522, "event": "File menu", "x": 45, "y": 36, "button": 1}
+{"t": 5.913, "event": "File: New Document", "x": 143, "y": 76, "button": 1}
+{"t": 9.073, "event": "workbench list", "x": 700, "y": 88, "button": 1}
+{"t": 12.89, "event": "workbench: Part Design", "x": 630, "y": 338, "button": 1}
+{"t": 17.721, "event": "New Body", "x": 510, "y": 158, "button": 1}
+{"t": 22.054, "event": "New Sketch", "x": 570, "y": 158, "button": 1}
+{"t": 26.887, "event": "attachment: XY-plane", "x": 2340, "y": 750, "button": 1}
+{"t": 29.819, "event": "attachment: OK", "x": 2430, "y": 616, "button": 1}
+{"t": 34.723, "event": "pan: middle drag", "x": 1500, "y": 900, "button": 2}
+{"t": 35.738, "event": "pan: middle drag: released", "x": 1350, "y": 1470, "button": 2}
+{"t": 38.063, "event": "key G", "keys": "g"}
+{"t": 38.684, "event": "key R: Rectangle", "keys": "r"}
+{"t": 42.29, "event": "rectangle: first corner on the origin", "x": 1529, "y": 1558, "button": 1}
+{"t": 45.462, "event": "rectangle: opposite corner", "x": 2100, "y": 1165, "button": 1}
+{"t": 47.474, "event": "Esc: tool off", "keys": "Escape"}
+{"t": 50.197, "event": "key D: Dimension", "keys": "d"}
+{"t": 53.789, "event": "dimension bottom 30: pick", "x": 1815, "y": 1558, "button": 1}
+{"t": 56.187, "event": "dimension bottom 30: place", "x": 1815, "y": 1638, "button": 1}
+{"t": 58.1, "event": "dimension bottom 30: typed 30", "text": "30"}
+{"t": 58.936, "event": "dimension bottom 30: Enter", "keys": "Return"}
+{"t": 63.721, "event": "dimension right 20: pick", "x": 2101, "y": 1362, "button": 1}
+{"t": 66.167, "event": "dimension right 20: place", "x": 2191, "y": 1362, "button": 1}
+{"t": 68.077, "event": "dimension right 20: typed 20", "text": "20"}
+{"t": 68.911, "event": "dimension right 20: Enter", "keys": "Return"}
+{"t": 71.749, "event": "Esc: Dimension off"}
+{"t": 75.686, "event": "corner: top-left clicked", "x": 1829, "y": 839, "button": 1}
+{"t": 77.401, "event": "Delete: the corner's rules", "keys": "Delete"}
+{"t": 84.636, "event": "drag the end: down"}
+{"t": 85.813, "event": "drag the end: released (about 1 mm)"}
+{"t": 126.057, "event": "Sketch menu", "x": 514, "y": 36, "button": 1}
+{"t": 129.723, "event": "Validate Sketch", "x": 595, "y": 249, "button": 1}
+{"t": 135.253, "event": "Highlight Troublesome Vertices", "x": 2518, "y": 799, "button": 1}
+{"t": 141.92, "event": "validation: Close", "x": 2530, "y": 616, "button": 1}
+{"t": 145.949, "event": "tree: double-click Sketch"}
+{"t": 158.373, "event": "zoom in on the corner"}
+{"t": 174.605, "event": "key C: coincident", "keys": "c"}
+{"t": 183.164, "event": "Esc: selection cleared", "keys": "Escape"}
+{"t": 190.519, "event": "Pad", "x": 50, "y": 228, "button": 1}
+{"t": 193.731, "event": "Pad: typed 10", "text": "10"}
+{"t": 198.419, "event": "Pad: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 201.796, "event": "key 0: isometric", "keys": "0"}
+{"t": 212.249, "event": "View menu", "x": 211, "y": 36, "button": 1}
+{"t": 213.795, "event": "View: Panels"}
+{"t": 216.247, "event": "Panels: Python console", "x": 800, "y": 1124, "button": 1}
+{"t": 219.348, "event": "recording stopped"}

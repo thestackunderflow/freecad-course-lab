@@ -1,0 +1,31 @@
+1
+origin 1529 1558
+bottom 0 right 1 top 2 left 3
+after rectangle 9 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0)] DoF 0 2
+after sizes 10 [('Coincident', 0, 2, 1, 1, 0.0), ('Coincident', 1, 2, 2, 1, 0.0), ('Coincident', 2, 2, 3, 1, 0.0), ('Coincident', 3, 2, 0, 1, 0.0), ('Horizontal', 0, 0, -2000, 0, 0.0), ('Horizontal', 2, 0, -2000, 0, 0.0), ('Vertical', 1, 0, -2000, 0, 0.0), ('Vertical', 3, 0, -2000, 0, 0.0), ('Coincident', 0, 1, -1, 1, 0.0), ('DistanceX', 0, 1, 0, 2, 30.0)] DoF 0 1
+top-left: left start 1829 839, top end 1829 839
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Constraints'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Constraints'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Geometry'
+Sketch row  
+zoomed:   /  
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'Constraints'
+Pad row  
+console at none
+READ pad None None

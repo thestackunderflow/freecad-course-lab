@@ -1,0 +1,18 @@
+1
+origin 1529 1558 (Sketch)
+C1 after Esc 16 [('Coincident', -1, 1, 0, 1), ('Coincident', 0, 2, 1, 1), ('Coincident', 1, 2, 2, 1), ('Coincident', 2, 2, 3, 1), ('Coincident', 3, 2, 4, 1), ('Coincident', 4, 2, 5, 1), ('Coincident', 5, 2, 6, 1), ('Coincident', 6, 2, 7, 1)]
+in edit <View provider geometry object at 0x5f45f4395f00>
+C1 zoomed: last end 1528 1342, first start 1524 1553
+C1 geometry 8 last end Vector (0.03886599999999962, 2.418539999999993, 0.0) first start Vector (0.0, 0.0, 0.0) wires []
+sketch Close 2529 615
+Sketch row 189 405
+origin 1528 1558 (Sketch001)
+C2 before the closing click 14 [('Coincident', -1, 1, 0, 1), ('Coincident', 0, 2, 1, 1), ('Coincident', 1, 2, 2, 1), ('Coincident', 2, 2, 3, 1), ('Coincident', 3, 2, 4, 1), ('Coincident', 4, 2, 5, 1), ('Coincident', 5, 2, 6, 1)]
+C2 after the closing click 17 [('Coincident', -1, 1, 0, 1), ('Coincident', 0, 2, 1, 1), ('Coincident', 1, 2, 2, 1), ('Coincident', 2, 2, 3, 1), ('Coincident', 3, 2, 4, 1), ('Coincident', 4, 2, 5, 1), ('Coincident', 5, 2, 6, 1), ('Coincident', 6, 2, 7, 1), ('Coincident', 7, 2, 0, 1)]
+C2 geometry 8 wires [] in edit <View provider geometry object at 0x5f45f744b880>
+sketch Close 2527 615
+hook_touch
+touch Sketch row 189 437
+windows after OK 38 (baseline 38)
+no box: box after the touch Pad: Return
+READ touch pad True Valid 8500.0

@@ -1,0 +1,36 @@
+  the start point, so I'm adding a coincident
+  constraint to close the gap before padding
+  20 mm. · summary
+
+  Called freecad
+
+● The sketch in hook_gap is now padded 20 mm.
+  The resulting solid is valid, 8500 mm³, and
+  measures 25 × 20 × 60 mm.
+
+  One change I made to your sketch: the
+  profile was open. The last line ended at (0,
+  0.5) instead of at the start point (0, 0),
+  so a pad couldn't be made. I added a
+  coincident constraint between that line's
+  end and the start point, which closes the
+  0.5 mm gap. If the gap was intentional, say
+  so and I'll undo it. In that case a pad
+  isn't possible without closing the profile
+  some other way.
+
+  Direction: the pad goes in the sketch's
+  default direction, which is −Y here. If you
+  want it the other way, I can set Reversed or
+  make the pad symmetric.
+
+  I left the sketch's dimensions as they were.
+  The sketch still isn't fully constrained,
+  but that doesn't affect the pad.
+
+✻ Churned for 18s · done 6:06 AM
+  tmux focus-events off · add 'set -g focus…
+──────────────────────────────────────────────
+❯ Reverse the pad direction
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

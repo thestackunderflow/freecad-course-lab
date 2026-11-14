@@ -1,0 +1,3 @@
+/lab/vendor/screenlab-lib/screenlab.sh: line 33: printf: none: invalid number
+/lab/vendor/screenlab-lib/screenlab.sh: line 33: printf: tree: Sketch: invalid number
+/lab/lab/fx19_lib.sh: line 52: $3: unbound variable

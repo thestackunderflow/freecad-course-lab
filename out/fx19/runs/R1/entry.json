@@ -1,0 +1,17 @@
+{
+ "mcpServers": {
+  "freecad": {
+   "command": "python3",
+   "args": [
+    "/lab/proxy/mcp_log_proxy.py",
+    "--log",
+    "/lab/out/fx19/runs/R1/transcript.jsonl",
+    "--png-dir",
+    "/lab/out/fx19/runs/R1",
+    "--",
+    "uvx",
+    "freecad-mcp@0.1.28"
+   ]
+  }
+ }
+}
