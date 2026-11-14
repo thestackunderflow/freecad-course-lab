@@ -1,0 +1,14 @@
+G0-20 PASS (rung a, the predicted case). 2026-11-14, FreeCAD 1.1.4 GUI on Xvfb (G0/b3 = clean run; b = attempt 1, b2 = attempt 2, both kept)
+Rung a (17): Dimension tool (key D in the Sketcher; Sketcher_ConstrainDistance = "K, D") on the arm top, placed, Insert Length 17, Return.
+  Popup (non-modal, bottom right; columns Type / Notifier / Message): red X | hook#Sketch | "Negative datum values are not valid for the constraint with index 23"
+  Visible at 0, 3 and 8 s; gone by 20 s. Notification list (status-bar button) keeps the line. No "Value Error" caption on screen.
+  Report view (red): "<class 'ValueError'>: Negative datum values are not valid for the constraint with index 23" + "hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('17 mm'))"
+  Size NOT kept: 23 constraints, arm top 15.0, "Fully constrained" (green). NonIntrusiveNotificationsEnabled True (default; not changed).
+Rung a (15, Q12): popup "Datum 15.00 mm for the constraint with index 23 is invalid"; size not kept (23).
+Rung a (Reference box ticked, no value typed): kept as a non-driving DistanceX, shown grey in brackets "(15 mm)"; still "Fully constrained"; 24 constraints.
+Rung b: not run (rung a refused).
+Rung c (G0a step 3's hook-red.FCStd): Sketch Edit "Over-constrained" (red) + link "(3, 4, 5, and 13 more)"; lines orange; click on the link selects
+  the 16 conflicting constraints (Constraint3 ... Constraint24). After Close: Report view (red, twice) + popup:
+  "Sketch: Over-constrained sketch / Remove at least one of the following conflicting constraints:3 , 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 20, 23, 24".
+Headless G0a: setDatum 17 -> ValueError "Negative datum values ... index 23" (solve -2 redundant before, value kept 15); 15 -> "Datum 15.00 mm ... is invalid";
+  addConstraint 17 -> solve -4, DoF -1, 16 conflicting; control bottom 25 -> 27: solve 0, DoF 0, Pad 8700.0; reference on arm top reads 17.0.

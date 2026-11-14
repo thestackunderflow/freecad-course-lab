@@ -1,0 +1,32 @@
+hook
+NonIntrusiveNotificationsEnabled True (default True if unset)
+NotificationTime -1 MinimumOnScreenTime -1
+Sketcher_Dimension shortcut ''
+Sketcher_ConstrainDistance shortcut ''
+dimension key: 
+Sketch row 210 437
+windows 38
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']
+a17 arm-top mid 1711 1107
+a17 windows after place 38
+a17 windows after Return 38 (base 38)
+a17 state after:
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']
+a17 notification area at none
+a15 arm-top mid 1711 1107
+a15 windows after place 38
+a15 windows after Return 38 (base 38)
+a15 state after:
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']
+a15 notification area at none
+sketch Close 2529 615
+hook_red
+red Sketch row 210 469
+['Over-constrained: ', '(3, 4, 5, and 13 more)']
+numbers link none 
+sketch Close 2527 615
+windows after close 39
+G0B-DONE

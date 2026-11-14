@@ -1,0 +1,5 @@
+dialogs []
+task {'labels': ['Fully constrained'], 'buttons': ['Sketch Edit', 'Constraints', 'Filter', 'Elements', 'Filter', 'Close'], 'groups': []}
+tree tips []
+report tail 
+status MCP: processing…

@@ -1,0 +1,12 @@
+dialogs []
+task {'labels': ['Fully constrained'], 'buttons': ['Sketch Edit', 'Constraints', 'Filter', 'Elements', 'Filter', 'Close'], 'groups': []}
+tree tips []
+report tail rror'>: Datum 15.00 mm for the constraint with index 23 is invalid
+08:08:19  hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('15 mm'))
+08:08:42  Python code executed successfully.
+08:08:42  Python code executed successfully.
+08:08:42  Python code executed successfully.
+08:08:42  Python code executed successfully.
+08:08:47  Python code executed successfully.
+
+status MCP: processing…

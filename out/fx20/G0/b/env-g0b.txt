@@ -1,0 +1,4 @@
+NonIntrusiveNotificationsEnabled True (default True if unset)
+NotificationTime -1 MinimumOnScreenTime -1
+Sketcher_Dimension shortcut ''
+Sketcher_ConstrainDistance shortcut ''

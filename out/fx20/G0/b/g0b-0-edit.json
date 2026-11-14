@@ -1,0 +1,101 @@
+{
+ "dialogs": [],
+ "report": "",
+ "tree": [
+  {
+   "text": "Attachment",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Base",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Internal Geometry",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "hook",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Pad",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 3
+  }
+ ],
+ "status": "MCP: processing\u2026",
+ "task": {
+  "labels": [
+   "Fully constrained"
+  ],
+  "buttons": [
+   "Sketch Edit",
+   "Constraints",
+   "Filter",
+   "Elements",
+   "Filter",
+   "Close"
+  ],
+  "groups": []
+ }
+}

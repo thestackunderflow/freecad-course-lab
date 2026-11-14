@@ -1,0 +1,40 @@
+hook
+NonIntrusiveNotificationsEnabled True (default True if unset)
+NotificationTime -1 MinimumOnScreenTime -1
+Sketcher_Dimension shortcut ''
+Sketcher_ConstrainDistance shortcut ''
+dimension key: 
+Sketch row 210 437
+windows 38
+dimension key 'D', toolbar button none
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']
+a17 arm-top mid 1685 1159
+a17 tool by key D
+a17 windows after place 74
+a17 windows after Return 39 (base 38)
+a17 modal closed by Return
+a17 state after:
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']
+a17 notification area at 2311_1789
+a17 windows with the list 39
+a15 arm-top mid 1685 1159
+a15 tool by key D
+a15 windows after place 74
+a15 windows after Return 39 (base 38)
+a15 modal closed by Return
+a15 state after:
+constraints 23 arm-top length 15.0 solve 0 DoF 0 conflicting [] redundant [] last ('DistanceX', 5.0, True)
+['Fully constrained']
+a15 notification area at 2311_1789
+a15 windows with the list 39
+sketch Close 2529 615
+hook_red
+red Sketch row 210 469
+['Over-constrained: ', '(3, 4, 5, and 13 more)']
+numbers link 2539 752
+selection ('Constraint3', 'Constraint4', 'Constraint5', 'Constraint7', 'Constraint8', 'Constraint9', 'Constraint11', 'Constraint12', 'Constraint13', 'Constraint15', 'Constraint16', 'Constraint17', 'Constraint18', 'Constraint20', 'Constraint23', 'Constraint24')
+sketch Close 2527 615
+windows after close 39
+G0B-DONE

@@ -1,0 +1,12 @@
+dialogs []
+task {'labels': ['Fully constrained'], 'buttons': ['Sketch Edit', 'Constraints', 'Filter', 'Elements', 'Filter', 'Close'], 'groups': []}
+tree tips []
+report tail successfully.
+08:07:35  Python code executed successfully.
+08:07:36  Python code executed successfully.
+08:07:43  pyException: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Negative datum values are not valid for the constraint with index 23
+08:07:43  hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('17 mm'))
+
+status MCP: processing…

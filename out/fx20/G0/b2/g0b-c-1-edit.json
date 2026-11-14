@@ -1,0 +1,162 @@
+{
+ "dialogs": [],
+ "report": "08:04:53  Python code executed successfully.\n08:04:53  Python code executed successfully.\n08:04:53  Python code executed successfully.\n08:04:53  Python code executed successfully.\n08:04:53  Python code executed successfully.\n08:04:54  Python code executed successfully.\n08:05:02  pyException: Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n<class 'ValueError'>: Negative datum values are not valid for the constraint with index 23\n08:05:02  hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('17 mm'))\n08:05:26  Python code executed successfully.\n08:05:26  Python code executed successfully.\n08:05:26  Python code executed successfully.\n08:05:27  Python code executed successfully.\n08:05:31  Python code executed successfully.\n08:05:39  pyException: Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n<class 'ValueError'>: Datum 15.00 mm for the constraint with index 23 is invalid\n08:05:39  hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('15 mm'))\n08:06:02  Python code executed successfully.\n08:06:03  Python code executed successfully.\n08:06:03  Python code executed successfully.\n08:06:03  Python code executed successfully.\n08:06:08  Python code executed successfully.\n08:06:12  Python code executed successfully.\n08:06:15  Python code executed successfully.\n08:06:15  Python code executed successfully.\n08:06:15  Python code executed successfully.\n",
+ "tree": [
+  {
+   "text": "Attachment",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Base",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Internal Geometry",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "hook",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Pad",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "hook_red",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Pad",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 3
+  }
+ ],
+ "status": "MCP: processing\u2026",
+ "task": {
+  "labels": [
+   "Over-constrained: ",
+   "(3, 4, 5, and 13 more)"
+  ],
+  "buttons": [
+   "Sketch Edit",
+   "Constraints",
+   "Filter",
+   "Elements",
+   "Filter",
+   "Close"
+  ],
+  "groups": []
+ }
+}

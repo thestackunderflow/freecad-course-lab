@@ -1,0 +1,162 @@
+{
+ "dialogs": [],
+ "report": "08:02:46  Python code executed successfully.\n08:02:46  Python code executed successfully.\n08:02:46  Python code executed successfully.\n08:02:46  Python code executed successfully.\n08:03:15  Python code executed successfully.\n08:03:15  Python code executed successfully.\n08:03:15  Python code executed successfully.\n08:03:15  Python code executed successfully.\n08:03:15  Python code executed successfully.\n08:03:44  Python code executed successfully.\n08:03:44  Python code executed successfully.\n08:03:44  Python code executed successfully.\n08:03:44  Python code executed successfully.\n08:03:45  Python code executed successfully.\n08:03:49  Python code executed successfully.\n08:03:51  Python code executed successfully.\n08:03:51  Python code executed successfully.\n08:03:51  Python code executed successfully.\n",
+ "tree": [
+  {
+   "text": "Attachment",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Base",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Internal Geometry",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "hook",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Pad",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "hook_red",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Pad",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 3
+  }
+ ],
+ "status": "MCP: processing\u2026",
+ "task": {
+  "labels": [
+   "Over-constrained: ",
+   "(3, 4, 5, and 13 more)"
+  ],
+  "buttons": [
+   "Sketch Edit",
+   "Constraints",
+   "Filter",
+   "Elements",
+   "Filter",
+   "Close"
+  ],
+  "groups": []
+ }
+}

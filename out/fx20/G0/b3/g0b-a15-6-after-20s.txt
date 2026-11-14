@@ -1,0 +1,12 @@
+dialogs []
+task {'labels': ['Fully constrained'], 'buttons': ['Sketch Edit', 'Constraints', 'Filter', 'Elements', 'Filter', 'Close'], 'groups': []}
+tree tips []
+report tail  executed successfully.
+08:08:07  Python code executed successfully.
+08:08:11  Python code executed successfully.
+08:08:19  pyException: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Datum 15.00 mm for the constraint with index 23 is invalid
+08:08:19  hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('15 mm'))
+
+status MCP: processing…

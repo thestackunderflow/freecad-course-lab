@@ -1,0 +1,332 @@
+{
+ "dialogs": [],
+ "report": "08:07:35  Python code executed successfully.\n08:07:35  Python code executed successfully.\n08:07:35  Python code executed successfully.\n08:07:35  Python code executed successfully.\n08:07:35  Python code executed successfully.\n08:07:36  Python code executed successfully.\n08:07:43  pyException: Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n<class 'ValueError'>: Negative datum values are not valid for the constraint with index 23\n08:07:43  hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('17 mm'))\n08:08:07  Python code executed successfully.\n08:08:07  Python code executed successfully.\n08:08:07  Python code executed successfully.\n08:08:07  Python code executed successfully.\n08:08:11  Python code executed successfully.\n08:08:19  pyException: Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n<class 'ValueError'>: Datum 15.00 mm for the constraint with index 23 is invalid\n08:08:19  hook#Sketch: App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('15 mm'))\n08:08:42  Python code executed successfully.\n08:08:42  Python code executed successfully.\n08:08:42  Python code executed successfully.\n08:08:42  Python code executed successfully.\n08:08:47  Python code executed successfully.\n08:09:15  Python code executed successfully.\n08:09:15  Python code executed successfully.\n08:09:15  Python code executed successfully.\n08:09:16  Python code executed successfully.\n08:09:20  Python code executed successfully.\n08:09:22  Python code executed successfully.\n08:09:22  Python code executed successfully.\n",
+ "tree": [
+  {
+   "text": "Attachment",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Attacher Engine",
+   "tip": "Type: App::PropertyEnumeration\nName: AttacherEngine\n\nAttach engine object driving the attachment.",
+   "depth": 1
+  },
+  {
+   "text": "Attachment Support",
+   "tip": "Type: App::PropertyLinkSubList\nName: AttachmentSupport\n\nSupport of the 2D geometry",
+   "depth": 1
+  },
+  {
+   "text": "Map Mode",
+   "tip": "Type: App::PropertyEnumeration\nName: MapMode\n\nMode of attachment to other object",
+   "depth": 1
+  },
+  {
+   "text": "Map Reversed",
+   "tip": "Type: App::PropertyBool\nName: MapReversed\n\nReverse Z-direction (flip sketch upside down)",
+   "depth": 1
+  },
+  {
+   "text": "Attachment Offset",
+   "tip": "Type: App::PropertyPlacement\nName: AttachmentOffset\n\nExtra placement to apply in addition to attachment (in local coordinates)",
+   "depth": 1
+  },
+  {
+   "text": "Angle",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Axis",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "x",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "y",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "z",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Position",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "x",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "y",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "z",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Base",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Placement",
+   "tip": "Type: App::PropertyPlacement\nName: Placement\n\nAxis: (1.00 0.00 0.00)\nAngle: 90.00\u00b0\nPosition: (0.00 mm  0.00 mm  0.00 mm)",
+   "depth": 1
+  },
+  {
+   "text": "Angle",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Axis",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "x",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "y",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "z",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Position",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "x",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "y",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "z",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Label",
+   "tip": "Type: App::PropertyString\nName: Label\n\nUser name of the object (UTF8)",
+   "depth": 1
+  },
+  {
+   "text": "Internal Geometry",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Make Internals",
+   "tip": "Type: App::PropertyBool\nName: MakeInternals\n\nEnables selection of closed profiles within a sketch as input for operations",
+   "depth": 1
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Constraints",
+   "tip": "Type: Sketcher::PropertyConstraintList\nName: Constraints\n\nSketch constraints",
+   "depth": 1
+  },
+  {
+   "text": "Constraint18",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Constraint19",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Constraint20",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Constraint21",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Constraint22",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Constraint23",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Constraint24",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "External Geometry",
+   "tip": "Type: App::PropertyLinkSubList\nName: ExternalGeometry\n\nSketch external geometry",
+   "depth": 1
+  },
+  {
+   "text": "Arc Fit Tolerance",
+   "tip": "Type: App::PropertyPrecision\nName: ArcFitTolerance\n\nTolerance for fitting arcs of projected external geometry",
+   "depth": 1
+  },
+  {
+   "text": "hook",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Pad",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "hook_red",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Pad",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 3
+  }
+ ],
+ "status": "MCP: processing\u2026",
+ "task": {
+  "labels": [],
+  "buttons": [],
+  "groups": []
+ }
+}

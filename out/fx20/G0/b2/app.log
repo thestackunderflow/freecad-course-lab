@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Negative datum values are not valid for the constraint with index 23
+App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('17 mm'))
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Datum 15.00 mm for the constraint with index 23 is invalid
+App.getDocument('hook').getObject('Sketch').setDatum(23,App.Units.Quantity('15 mm'))
+Sketch: Over-constrained sketch
+Remove at least one of the following conflicting constraints:3
+, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 20, 23, 24
+
+Sketch: Over-constrained sketch
+Remove at least one of the following conflicting constraints:3
+, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 20, 23, 24
+

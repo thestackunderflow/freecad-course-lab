@@ -1,0 +1,12 @@
+NonIntrusiveNotificationsEnabled True (default True if unset)
+NotificationTime -1 MinimumOnScreenTime -1
+Sketcher_Dimension shortcut ''
+Sketcher_ConstrainDistance shortcut ''
+in edit: Sketcher_Dimension shortcut 'D'
+in edit: Sketcher_ConstrainDistance shortcut 'K, D'
+statusbar QSizeGrip '' '' (1593, 1002)
+statusbar Gui::DimensionWidget '' '' (1492, 993)
+statusbar Gui::StatusBarLabel 'rightSideLabel' '' (1249, 993)
+statusbar QPushButton 'notificationArea' '' (1283, 993)
+statusbar IndicatorButton 'NavigationIndicator' "<p align='center'><b>CAD</b> Navigation style</p>\n    <table>\n     <tr>\n      <t" (1356, 993)
+statusbar Gui::ToolBarAreaWidget 'StatusBarArea' '' (1241, 993)
