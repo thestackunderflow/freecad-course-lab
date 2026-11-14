@@ -1,0 +1,2 @@
+hook-gap: gap 0.500000 mm, wires [{'edges': 8, 'isClosed': False}], DoF 2, Pad 20 valid False, status 'Wire is not closed.', volume None
+hook-touch: gap 0.000000 mm, wires [{'edges': 8, 'isClosed': True}], DoF 2, Pad 20 valid True, status 'Valid', volume 8500.0

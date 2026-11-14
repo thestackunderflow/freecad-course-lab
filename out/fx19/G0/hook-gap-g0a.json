@@ -1,0 +1,112 @@
+{
+ "gap_target": 0.5,
+ "closing": 7,
+ "join": 15,
+ "sizes_on_closing": [],
+ "origin_tied": [
+  [
+   0,
+   1
+  ]
+ ],
+ "move": [
+  7,
+  2,
+  [
+   0,
+   0.5
+  ]
+ ],
+ "gap_measured": 0.5,
+ "wires": [
+  {
+   "edges": 8,
+   "isClosed": false
+  }
+ ],
+ "dof": {
+  "solve": 0,
+  "DoF": 2,
+  "FullyConstrained": false,
+  "MalformedConstraints": []
+ },
+ "1b": {
+  "volume": 8500.0,
+  "valid": true,
+  "wires": [
+   {
+    "edges": 8,
+    "isClosed": true
+   }
+  ],
+  "dof": {
+   "solve": 0,
+   "DoF": 0,
+   "FullyConstrained": true,
+   "MalformedConstraints": []
+  },
+  "closing_end": [
+   0.0,
+   0.0
+  ],
+  "first_start": [
+   0.0,
+   0.0
+  ]
+ },
+ "pad": {
+  "isValid": false,
+  "status": "Wire is not closed.",
+  "isNull": true,
+  "objects": {
+   "Body": {
+    "valid": true,
+    "status": "Touched"
+   },
+   "Origin": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "X_Axis": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "Y_Axis": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "Z_Axis": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "XY_Plane": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "XZ_Plane": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "YZ_Plane": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "Origin001": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "Sketch": {
+    "valid": true,
+    "status": "Valid"
+   },
+   "Pad": {
+    "valid": false,
+    "status": "Wire is not closed."
+   }
+  }
+ },
+ "control": {
+  "valid": true,
+  "volume": 8500.0
+ }
+}

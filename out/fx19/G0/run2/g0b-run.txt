@@ -1,0 +1,8 @@
+mousemove: unrecognized option '-10'
+Usage: mousemove [options] <x> <y>
+-c, --clearmodifiers      - reset active modifiers (alt, etc) while typing
+--screen SCREEN           - which screen to move on, default is current screen
+--sync                    - only exit once the mouse has moved
+-w, --window <windowid>   - specify a window to move relative to.
+unknown opt: 63
+G0b done

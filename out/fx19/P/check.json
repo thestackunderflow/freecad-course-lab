@@ -1,0 +1,52 @@
+{
+ "hook-gap": {
+  "objects": [
+   "Body",
+   "Origin",
+   "X_Axis",
+   "Y_Axis",
+   "Z_Axis",
+   "XY_Plane",
+   "XZ_Plane",
+   "YZ_Plane",
+   "Origin001",
+   "Sketch"
+  ],
+  "gap": 0.5,
+  "wires": [
+   {
+    "edges": 8,
+    "isClosed": false
+   }
+  ],
+  "dof": 2,
+  "pad_valid": false,
+  "pad_status": "Wire is not closed.",
+  "pad_volume": null
+ },
+ "hook-touch": {
+  "objects": [
+   "Body",
+   "Origin",
+   "X_Axis",
+   "Y_Axis",
+   "Z_Axis",
+   "XY_Plane",
+   "XZ_Plane",
+   "YZ_Plane",
+   "Origin001",
+   "Sketch"
+  ],
+  "gap": 0.0,
+  "wires": [
+   {
+    "edges": 8,
+    "isClosed": true
+   }
+  ],
+  "dof": 2,
+  "pad_valid": true,
+  "pad_status": "Valid",
+  "pad_volume": 8500.0
+ }
+}

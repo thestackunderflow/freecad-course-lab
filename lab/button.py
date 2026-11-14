@@ -80,6 +80,12 @@ if vw:
 print(out)"""
 
 
+TEXT = HEAD + """for b in mw.findChildren(QtWidgets.QAbstractButton):
+    if out == 'none' and b.isVisible() and b.text().replace('&', '') == {text!r}:
+        out = px(b, b.rect().center())
+print(out)"""
+
+
 def where(cmd):
     return fcrpc.run(CODE.format(cmd=cmd))
 
@@ -95,6 +101,8 @@ def main(a):
         return fcrpc.run(VIEW)
     if a[0] == 'console':
         return fcrpc.run(CONSOLE)
+    if a[0] == 'text':   # fx19: a visible push/tool button by its text (OK, Cancel ...)
+        return fcrpc.run(TEXT.format(text=a[1]))
     return where(a[0])
 
 

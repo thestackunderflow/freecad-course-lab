@@ -1,0 +1,92 @@
+{
+ "dialogs": [],
+ "report": "05:36:42  [MCP] Auto-start: RPC Server started at 127.0.0.1:9875 (PID 36).\n05:36:50  Python code executed successfully.\n05:36:52  Python code executed successfully.\n05:36:53  Python code executed successfully.\n05:36:55  Pad: Wire is not closed.\n05:36:55  Pad: Wire is not closed.\n05:36:59  Python code executed successfully.\n05:37:03  Python code executed successfully.\n05:37:03  Python code executed successfully.\n05:37:38  Python code executed successfully.\n05:37:38  Python code executed successfully.\n05:37:39  Python code executed successfully.\n05:37:43  Python code executed successfully.\n",
+ "tree": [
+  {
+   "text": "Attachment",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Base",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Internal Geometry",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "hook-gap",
+   "tip": null,
+   "depth": 0
+  },
+  {
+   "text": "Body",
+   "tip": null,
+   "depth": 1
+  },
+  {
+   "text": "Origin",
+   "tip": null,
+   "depth": 2
+  },
+  {
+   "text": "X-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Y-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Z-axis",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XY-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "XZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "YZ-plane",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Origin001",
+   "tip": null,
+   "depth": 3
+  },
+  {
+   "text": "Sketch",
+   "tip": null,
+   "depth": 2
+  }
+ ],
+ "status": "MCP: processing\u2026",
+ "task": {
+  "labels": [],
+  "buttons": [
+   "Start Part",
+   "New Body"
+  ],
+  "groups": [
+   "box:"
+  ]
+ }
+}

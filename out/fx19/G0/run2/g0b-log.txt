@@ -1,0 +1,17 @@
+env: display 2880x1800 QT_SCALE 1.8
+hook_gap ['Body', 'Origin', 'X_Axis', 'Y_Axis', 'Z_Axis', 'XY_Plane', 'XZ_Plane', 'YZ_Plane', 'Origin001', 'Sketch']
+[<Sketcher::SketchObject>]
+Pad button 50 228
+OK button 2430 615
+dump g0b-3-after-ok failed/blocked
+=== after OK
+G0B-PHASE1-DONE
+dialog OK  
+dump g0b-4-dialog-closed failed/blocked
+Pad row  
+Cancel  
+dump g0b-6-after-cancel failed/blocked
+Sketch menu  
+validate
+Highlight 2518 799
+G0B-PHASE2-DONE

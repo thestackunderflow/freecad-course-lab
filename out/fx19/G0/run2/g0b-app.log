@@ -1,0 +1,104 @@
+Pad: Wire is not closed.
+Pad: Wire is not closed.
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 90.0s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a modal dialog is open in FreeCAD; 4 task(s) queued)"}
+--- code ---
+try:
+    import FreeCADGui, json
+    from PySide import QtWidgets, QtCore
+    QtWidgets.QApplication.processEvents()
+    mw = FreeCADGui.getMainWindow()
+    R = {'dialogs': [], 'report': '', 'tree': [], 'status': '', 'task': {'labels': [], 'buttons': [], 'groups': []}}
+    for w in QtWidgets.QApplication.topLevelWidgets():
+        if w is mw or not w.isVisible():
+            continue
+        R['dialogs'].append({'class': w.metaObject().className(), 'title': w.windowTitle(),
+            'labels': [l.text() for l in w.findChildren(QtWidgets.QLabel) if l.isVisible() and l.text()],
+            'buttons': [b.text() for b in w.findChildren(QtWidgets.QAbstractButton) if b.isVisible() and b.text()]})
+    for d in mw.findChildren(QtWidgets.QDockWidget):
+        if not d.isVisible():
+            con
+...(truncated)
+--- end ---
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 90.0s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a modal dialog is open in FreeCAD; 5 task(s) queued)"}
+--- code ---
+try:
+    import FreeCADGui
+    from PySide import QtWidgets
+    QtWidgets.QApplication.processEvents()
+    mw = FreeCADGui.getMainWindow()
+    def px(w, p):
+        k = w.devicePixelRatioF()
+        g = w.mapToGlobal(p)
+        return '%d %d' % (int(g.x() * k), int(g.y() * k))
+    out = 'none'
+    for w in QtWidgets.QApplication.topLevelWidgets():
+        if out == 'none' and w.isVisible() and isinstance(w, QtWidgets.QMessageBox):
+            for b in w.buttons():
+                out = px(b, b.rect().center())
+    print(out)
+except BaseException as _lab_e:
+    print('LABERR' + " " + type(_lab_e).__name__ + ": " + str(_lab_e))
+
+--- end ---
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 90.0s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a modal dialog is open in FreeCAD; 6 task(s) queued)"}
+--- code ---
+try:
+    import FreeCADGui, json
+    from PySide import QtWidgets, QtCore
+    QtWidgets.QApplication.processEvents()
+    mw = FreeCADGui.getMainWindow()
+    R = {'dialogs': [], 'report': '', 'tree': [], 'status': '', 'task': {'labels': [], 'buttons': [], 'groups': []}}
+    for w in QtWidgets.QApplication.topLevelWidgets():
+        if w is mw or not w.isVisible():
+            continue
+        R['dialogs'].append({'class': w.metaObject().className(), 'title': w.windowTitle(),
+            'labels': [l.text() for l in w.findChildren(QtWidgets.QLabel) if l.isVisible() and l.text()],
+            'buttons': [b.text() for b in w.findChildren(QtWidgets.QAbstractButton) if b.isVisible() and b.text()]})
+    for d in mw.findChildren(QtWidgets.QDockWidget):
+        if not d.isVisible():
+            con
+...(truncated)
+--- end ---
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 90.0s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a modal dialog is open in FreeCAD; 7 task(s) queued)"}
+--- code ---
+try:
+    import FreeCAD, FreeCADGui
+    from PySide import QtCore, QtWidgets
+    QtWidgets.QApplication.processEvents()
+    mw = FreeCADGui.getMainWindow()
+    d = FreeCAD.getDocument('hook_gap')
+    target, doclabel = d.getObject('Pad').Label, d.Label
+    found = None
+    for tree in mw.findChildren(QtWidgets.QTreeWidget):
+        if found or not tree.isVisible():
+            continue
+        m = tree.model()
+        for ix in m.match(m.index(0, 0), QtCore.Qt.DisplayRole, target, -1, QtCore.Qt.MatchExactly | QtCore.Qt.MatchRecursive):
+            if not ix.parent().isValid():
+                continue                       # a document row with the same name
+            top = ix
+            while top.parent().isValid():
+                top = top.parent()
+            if top.data() != doclab
+...(truncated)
+--- end ---
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 90.0s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a modal dialog is open in FreeCAD; 9 task(s) queued)"}
+--- code ---
+try:
+    import FreeCADGui
+    from PySide import QtWidgets
+    QtWidgets.QApplication.processEvents()
+    mw = FreeCADGui.getMainWindow()
+    def px(w, p):
+        k = w.devicePixelRatioF()
+        g = w.mapToGlobal(p)
+        return '%d %d' % (int(g.x() * k), int(g.y() * k))
+    out = 'none'
+    for b in mw.findChildren(QtWidgets.QAbstractButton):
+        if out == 'none' and b.isVisible() and b.text().replace('&', '') == 'Cancel':
+            out = px(b, b.rect().center())
+    print(out)
+except BaseException as _lab_e:
+    print('LABERR' + " " + type(_lab_e).__name__ + ": " + str(_lab_e))
+
+--- end ---

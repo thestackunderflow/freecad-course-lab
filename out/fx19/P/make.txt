@@ -1,0 +1,4 @@
+P touch: closing end (0.0, 0.0) first start (0.0, 0.0) coincidents on the closing end []
+P hook-gap {'objects': ['Body', 'Origin', 'X_Axis', 'Y_Axis', 'Z_Axis', 'XY_Plane', 'XZ_Plane', 'YZ_Plane', 'Origin001', 'Sketch'], 'gap': 0.5, 'wires': [{'edges': 8, 'isClosed': False}], 'dof': 2, 'pad_valid': False, 'pad_status': 'Wire is not closed.', 'pad_volume': None}
+P hook-touch {'objects': ['Body', 'Origin', 'X_Axis', 'Y_Axis', 'Z_Axis', 'XY_Plane', 'XZ_Plane', 'YZ_Plane', 'Origin001', 'Sketch'], 'gap': 0.0, 'wires': [{'edges': 8, 'isClosed': True}], 'dof': 2, 'pad_valid': True, 'pad_status': 'Valid', 'pad_volume': 8500.0}
+P done

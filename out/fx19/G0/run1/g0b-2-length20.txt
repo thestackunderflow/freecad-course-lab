@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/lab/out/fx19/G0/g0bdump.py", line 51, in <module>
+    out = fcrpc.run(CODE)
+          ^^^^^^^^^^^^^^^
+  File "/lab/lab/fcrpc.py", line 54, in run
+    raise RuntimeError('lab query failed %d times (inside FreeCAD it was caught): %s' % (TRIES, out))
+RuntimeError: lab query failed 4 times (inside FreeCAD it was caught): LABERR AttributeError: 'NoneType' object has no attribute 'rowCount'

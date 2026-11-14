@@ -1,0 +1,17 @@
+G0-19: PASS (2026-11-14)
+G0a (headless, g0a.txt / hook-gap-g0a.json): closing line = Geometry 7 (0,60)-(0,0); on it: Coincident 14 (to line 6),
+Coincident 15 (its end to line 0's start), Vertical 16; no length size on it. Origin tie: root Coincident on line 0's
+start (0,0). Deleted only Coincident 15; moved the closing line's end to (0, 0.5) (moveGeometry, see DEVIATIONS 1).
+After 2 recomputes: gap 0.500000 mm; 1 wire, 8 edges, isClosed False; DoF 2, not fully constrained.
+1b: join re-added: closing end back to (0,0), DoF 0 fully constrained, Pad 20 valid, 8500.0.
+Step 2: Pad 20: isValid False, status "Wire is not closed.", Shape.isNull True; console "Pad: Wire is not closed."
+Rung 2 not run (not needed). Control: hand.FCStd valid, 8500.0.
+G0b (GUI, stills; final clean run = G0/g0b-*.png, earlier runs in G0/run1, G0/run2):
+- Pad, 20, OK -> modal box title "Input error", text "Wire is not closed.", button "OK" (g0b-3-after-ok.png).
+- Report view: "Pad: Wire is not closed." in red (twice).
+- After the box's OK the Pad task panel stays open (Pad Parameters, Length 20.00 mm); tree: Pad with an error mark
+  on its icon, greyed (g0b-4, g0b-5). Tooltip not captured (no popup in the still; the model gives no tooltip text).
+- Cancel removes the Pad: tree = Body > Origin, Sketch (g0b-6; doc objects: Sketch only).
+- Sketch menu item: "Validate Sketch" (g0b-7). Task panel title "Sketch Validation"; section
+  "Open and Non-Manifold Vertices"; button "Highlight Troublesome Vertices" (g0b-8).
+- Highlight: 2 marks at (0,0)/(0,0.5): orange square outlines with a small yellow plus; no count text (g0b-9, run2/crop-hl.png).
