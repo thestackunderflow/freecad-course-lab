@@ -1,0 +1,5 @@
+{"t": 0.03, "event": "recording started: a terminal in ~/fx19 (left), FreeCAD with its socket on (right)"}
+{"t": 3.086, "event": "noai: typed", "text": "python3 noai.py"}
+{"t": 4.23, "event": "noai: typed: Enter", "keys": "Return"}
+{"t": 8.285, "event": "both replies printed"}
+{"t": 18.424, "event": "recording stopped"}
