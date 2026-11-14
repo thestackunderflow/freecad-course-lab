@@ -1,0 +1,24 @@
+{"t": 0.056, "event": "recording started: FreeCAD 1.1.4, typo.FCStd open"}
+{"t": 3.499, "event": "workbench: Assembly"}
+{"t": 7.594, "event": "New Assembly", "x": 50, "y": 228, "button": 1}
+{"t": 12.362, "event": "Insert Component", "x": 122, "y": 228, "button": 1}
+{"t": 17.526, "event": "Insert: Rail", "x": 2550, "y": 871, "button": 1}
+{"t": 22.909, "event": "dialog: ground the first part automatically? No", "x": 1738, "y": 928, "button": 1}
+{"t": 27.055, "event": "Insert: Hook", "x": 2550, "y": 838, "button": 1}
+{"t": 31.599, "event": "Insert: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 36.163, "event": "tree: Hook (the body)", "x": 158, "y": 372, "button": 1}
+{"t": 38.711, "event": "tree: Ctrl + Rail (the body)", "x": 151, "y": 405, "button": 1}
+{"t": 39.434, "event": "Space: hide the two bodies (the components stay)", "keys": "space"}
+{"t": 43.368, "event": "tree: Rail001", "x": 192, "y": 534, "button": 1}
+{"t": 46.6, "event": "Toggle Grounded", "x": 464, "y": 228, "button": 1}
+{"t": 50.758, "event": "empty space: nothing selected", "x": 1500, "y": 1500, "button": 1}
+{"t": 54.515, "event": "Slider Joint", "x": 730, "y": 228, "button": 1}
+{"t": 59.563, "event": "Slider: Rail001 (the whole component)", "x": 192, "y": 534, "button": 1}
+{"t": 63.655, "event": "Slider: Ctrl + Hook001", "x": 199, "y": 567, "button": 1}
+{"t": 68.828, "event": "Slider: OK", "x": 2430, "y": 615, "button": 1}
+{"t": 74.146, "event": "drag the hook up the rail"}
+{"t": 78.265, "event": "drag the hook up the rail: released"}
+{"t": 80.913, "event": "drag it off the top"}
+{"t": 83.566, "event": "drag it off the top: released"}
+{"t": 87.723, "event": "drag it back down onto the rail"}
+{"t": 93.44, "event": "drag it back down onto the rail: released"}

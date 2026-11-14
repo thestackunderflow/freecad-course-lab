@@ -1,0 +1,13 @@
+gap04
+prepped gap04
+1
+1
+hook z after slider 0.0
+1
+1
+drag the hook up the whole rail: hook z 83.9081 {"common_mm3": 0.0, "solids": 0}
+1
+and back down: hook z -0.1642 {"common_mm3": 0.0, "solids": 0}
+saved
+TAKE E DONE
+FC8 check {"common_mm3": 0.0, "head_side_mm": {"left": 0.4, "right": 0.4}, "used": ["Hook001", "Rail001"], "bodies": {"Hook": 16204.0, "Rail": 12000.0}}

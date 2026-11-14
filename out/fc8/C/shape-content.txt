@@ -1,0 +1,1 @@
+['Checked object: Common\nShape type:  Compound\nVertices:  0\nEdges:  0\nWires:  0\nFaces:  0\nShells:  0\nSolids:  0\nCompSolids:  0\nCompounds:  1\nShapes:  1\n----------\nArea:  0.0\nVolume:  0.0\nLength:  0.0\nOrientation:  Forward\nGlobal placement = Placement\nTolerance information: \n Global minimum: 0.0\n Global average: 0.0\n Global maximum: 0.0']

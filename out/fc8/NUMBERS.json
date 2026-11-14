@@ -1,0 +1,433 @@
+{
+ "freecad": "1.1.4 (fcc-app:1.1.4-0.1.28, freecad-mcp add-on + plug 0.1.28)",
+ "cases": {
+  "typo": {
+   "gap": 0,
+   "slot_head": 11.6,
+   "hook_mm3": 17332.0,
+   "rail_mm3": 12000.0,
+   "common_mm3": 72.0,
+   "common_solids": 2,
+   "head_side_mm": {
+    "left": -0.2,
+    "right": -0.2
+   },
+   "min_distance_mm": 0.0
+  },
+  "touch": {
+   "gap": 0,
+   "slot_head": 12,
+   "hook_mm3": 17260.0,
+   "rail_mm3": 12000.0,
+   "common_mm3": 0.0,
+   "common_solids": 0,
+   "head_side_mm": {
+    "left": 0.0,
+    "right": 0.0
+   },
+   "min_distance_mm": 0.0
+  },
+  "gap01": {
+   "gap": 0.1,
+   "slot_head": 12.2,
+   "hook_mm3": 16996.0,
+   "rail_mm3": 12000.0,
+   "common_mm3": 0.0,
+   "common_solids": 0,
+   "head_side_mm": {
+    "left": 0.1,
+    "right": 0.1
+   },
+   "min_distance_mm": 0.1
+  },
+  "gap04": {
+   "gap": 0.4,
+   "slot_head": 12.8,
+   "hook_mm3": 16204.0,
+   "rail_mm3": 12000.0,
+   "common_mm3": 0.0,
+   "common_solids": 0,
+   "head_side_mm": {
+    "left": 0.4,
+    "right": 0.4
+   },
+   "min_distance_mm": 0.4
+  }
+ },
+ "g0": {
+  "asm_headless": {
+   "slider_refs_tried": [
+    [
+     "whole bodies, subs \"RailLink.\"",
+     "ok",
+     "(<Assembly object>, ['RailLink.', 'RailLink.'])",
+     "(<Assembly object>, ['HookLink.', 'HookLink.'])"
+    ]
+   ],
+   "after_raise_85": {
+    "solve": 0,
+    "hook_link_base": [
+     0.0,
+     0.0,
+     85.0
+    ],
+    "rot": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "common_mm3": 0.0
+   },
+   "moved_to_z_40": {
+    "solve": 0,
+    "hook_link_base": [
+     0.0,
+     0.0,
+     40.0
+    ],
+    "common_mm3": 48.0
+   },
+   "moved_to_z_0": {
+    "solve": 0,
+    "hook_link_base": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "common_mm3": 72.0
+   },
+   "moved_to_z_-30": {
+    "solve": 0,
+    "hook_link_base": [
+     0.0,
+     0.0,
+     -30.0
+    ],
+    "common_mm3": 36.0
+   },
+   "pushed_off_line_x3_y1": {
+    "solve": 0,
+    "hook_link_base": [
+     3.0,
+     1.0,
+     20.0
+    ]
+   }
+  },
+  "gui": {
+   "measure_result_fields": [
+    "0.40 mm"
+   ],
+   "measure_selection": [
+    [
+     "Hook",
+     [
+      "Edge22"
+     ]
+    ],
+    [
+     "Rail",
+     [
+      "Edge35"
+     ]
+    ]
+   ],
+   "touch_common": {
+    "solids": 0,
+    "faces": 0,
+    "volume": 0.0
+   }
+  },
+  "after_drag_check": {
+   "common_mm3": 72.0,
+   "used": [
+    "Hook001",
+    "Rail001"
+   ]
+  }
+ },
+ "takes": {
+  "A": {
+   "end_check": {
+    "common_mm3": 72.0,
+    "head_side_mm": {
+     "left": -0.2,
+     "right": -0.2
+    },
+    "bodies": {
+     "Hook": 17332.0,
+     "Rail": 12000.0
+    },
+    "used": [
+     "Hook",
+     "Rail"
+    ],
+    "sheet_Params": {
+     "gap": 0,
+     "rib_head": 12,
+     "slot_head": 11.6,
+     "rib_stem": 6,
+     "slot_stem": 6
+    }
+   },
+   "recorded": true,
+   "record": {
+    "fps": 30
+   },
+   "check_geometry_shape_content": {
+    "volume_mm3": 72.0,
+    "solids": 2
+   }
+  },
+  "B": {
+   "end_check": {
+    "common_mm3": 72.0,
+    "head_side_mm": {
+     "left": -0.2,
+     "right": -0.2
+    },
+    "bodies": {
+     "Hook": 17332.0,
+     "Rail": 12000.0
+    },
+    "used": [
+     "Hook001",
+     "Rail001"
+    ],
+    "sheet_Params": {
+     "gap": 0,
+     "rib_head": 12,
+     "slot_head": 11.6,
+     "rib_stem": 6,
+     "slot_stem": 6
+    }
+   },
+   "recorded": true,
+   "record": {
+    "fps": 30
+   },
+   "slider_hook_z_mm": 0.0,
+   "drags": [
+    {
+     "step": "drag the hook up the rail",
+     "hook_z_mm": 58.8377,
+     "common_mm3": 25.3948,
+     "solids": 2
+    },
+    {
+     "step": "drag it off the top",
+     "hook_z_mm": 97.5887,
+     "common_mm3": 0.0,
+     "solids": 0
+    },
+    {
+     "step": "drag it back down onto the rail",
+     "hook_z_mm": 18.7827,
+     "common_mm3": 72.0,
+     "solids": 2
+    }
+   ]
+  },
+  "C": {
+   "end_check": {
+    "common_mm3": 0.0,
+    "head_side_mm": {
+     "left": 0.0,
+     "right": 0.0
+    },
+    "bodies": {
+     "Hook": 17260.0,
+     "Rail": 12000.0
+    },
+    "used": [
+     "Hook",
+     "Rail"
+    ],
+    "sheet_Params": {
+     "gap": 0,
+     "rib_head": 12,
+     "slot_head": 12,
+     "rib_stem": 6,
+     "slot_stem": 6
+    }
+   },
+   "recorded": true,
+   "record": {
+    "fps": 30
+   },
+   "check_geometry_shape_content": {
+    "volume_mm3": 0.0,
+    "solids": 0
+   }
+  },
+  "D": {
+   "end_check": {
+    "common_mm3": 0.0,
+    "head_side_mm": {
+     "left": 0.4,
+     "right": 0.4
+    },
+    "bodies": {
+     "Hook": 16204.0,
+     "Rail": 12000.0
+    },
+    "used": [
+     "Hook",
+     "Rail"
+    ],
+    "sheet_Params": {
+     "gap": 0.4,
+     "rib_head": 12,
+     "slot_head": 12.8,
+     "rib_stem": 6,
+     "slot_stem": 6.8
+    }
+   },
+   "recorded": true,
+   "record": {
+    "fps": 30
+   },
+   "measure_gui": {
+    "left": "0.40 mm",
+    "right": "0.40 mm"
+   }
+  },
+  "E": {
+   "end_check": {
+    "common_mm3": 0.0,
+    "head_side_mm": {
+     "left": 0.4,
+     "right": 0.4
+    },
+    "bodies": {
+     "Hook": 16204.0,
+     "Rail": 12000.0
+    },
+    "used": [
+     "Hook001",
+     "Rail001"
+    ],
+    "sheet_Params": {
+     "gap": 0.4,
+     "rib_head": 12,
+     "slot_head": 12.8,
+     "rib_stem": 6,
+     "slot_stem": 6.8
+    }
+   },
+   "recorded": true,
+   "record": {
+    "fps": 30
+   },
+   "slider_hook_z_mm": 0.0,
+   "drags": [
+    {
+     "step": "drag the hook up the whole rail",
+     "hook_z_mm": 83.9081,
+     "common_mm3": 0.0,
+     "solids": 0
+    },
+    {
+     "step": "and back down",
+     "hook_z_mm": -0.1642,
+     "common_mm3": 0.0,
+     "solids": 0
+    }
+   ]
+  }
+ },
+ "claude_runs": {
+  "A1": {
+   "cost_usd": "0.2390",
+   "wall_s": 494,
+   "guard": {
+    "stopped": true,
+    "estimate_usd": 0.3094,
+    "cap_usd": 0.3,
+    "at": 1794676133.069179
+   },
+   "tool_calls": 7,
+   "after": {
+    "after-hook_rail.check.json": {
+     "used": [
+      "Hook_Link",
+      "Rail_Link"
+     ],
+     "bodies": {
+      "Hook": 17260.0,
+      "Rail": 12000.0
+     },
+     "common_mm3": 0.0,
+     "head_side_mm": {
+      "left": 0.0,
+      "right": 0.0
+     },
+     "joints": [
+      {
+       "Name": "GroundedJoint",
+       "Label": "GroundedJoint",
+       "JointType": "None",
+       "ObjectToGround": "<App::Link object>",
+       "Reference1": "None",
+       "Reference2": "None",
+       "Activated": "None"
+      },
+      {
+       "Name": "Slider",
+       "Label": "Slider",
+       "JointType": "Slider",
+       "ObjectToGround": "None",
+       "Reference1": "None",
+       "Reference2": "None",
+       "Activated": "None"
+      }
+     ],
+     "sheet_Params": {
+      "gap": 0,
+      "rib_head": 12,
+      "slot_head": 12,
+      "rib_stem": 6,
+      "slot_stem": 6
+     }
+    }
+   }
+  },
+  "B1": {
+   "cost_usd": "0.2846",
+   "wall_s": 502,
+   "guard": {
+    "stopped": true,
+    "estimate_usd": 0.3694,
+    "cap_usd": 0.36,
+    "at": 1794676673.1625872
+   },
+   "tool_calls": 9,
+   "after": {
+    "after-hook_rail.check.json": {
+     "used": [
+      "Hook",
+      "Rail"
+     ],
+     "bodies": {
+      "Hook": 16204.0,
+      "Rail": 12000.0
+     },
+     "common_mm3": 0.0,
+     "head_side_mm": {
+      "left": 0.4,
+      "right": 0.4
+     },
+     "joints": [],
+     "sheet_Params": {
+      "gap": 0.4,
+      "rib_head": 12,
+      "slot_head": 12.8,
+      "rib_stem": 6,
+      "slot_stem": 6.8
+     }
+    }
+   }
+  }
+ }
+}

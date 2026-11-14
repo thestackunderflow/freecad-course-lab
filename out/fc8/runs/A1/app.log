@@ -1,0 +1,31 @@
+MCP RPC: GUI task raised TypeError: ViewProviderJoint.__init__() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 12, in <module>
+TypeError: ViewProviderJoint.__init__() takes 2 positional arguments but 3 were given
+Error executing Python code: TypeError: ViewProviderJoint.__init__() takes 2 positional arguments but 3 were given
+--- code ---
+import FreeCAD as App, JointObject
+doc = App.getDocument("hook_rail")
+asm = doc.Assembly; jg = asm.Group[0]
+rail, hook = doc.Rail_Link, doc.Hook_Link
+
+g = jg.newObject("App::FeaturePython", "GroundedJoint")
+JointObject.GroundedJoint(g, rail)
+if App.GuiUp: JointObject.ViewProviderGroundedJoint(g.ViewObject)
+
+j = jg.newObject("App::FeaturePython", "Slider")
+JointObject.Joint(j, 3)  # Slider
+if App.GuiUp: JointObject.ViewProviderJoint(j.ViewObject, j)
+j.Reference1 = [rail, ["Rail.Origin002.Origin003.", "Rail.Origin002.Origin003."]]
+j.Reference2 = [hook, ["Hook.Origin.Origin001.", "Hook.Origin.Origin001."]]
+doc.recompute()
+print(j.JointType, j.Reference1, j.Reference2)
+print(asm.solve() if hasattr(asm,"solve") else "no solve")
+print("Hook_Link placement:", hook.Placement, "| rail:", rail.Place
+...(truncated)
+--- end ---

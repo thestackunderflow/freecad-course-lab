@@ -1,0 +1,36 @@
+
+
+  Called freecad
+
+● Both bodies share an origin and the rib runs
+  along Z, which is the slide direction. I'm
+  checking for collisions next, then building
+  the Assembly with the Rail grounded and the
+  Hook on a slider joint. · summary
+
+  Called freecad
+
+● No interference, so the rib fits the T-slot
+  exactly. Next: ground the rail and add the
+  slider joint, with both bodies' origin
+  points as the joint frames so the slide axis
+  is Z.
+
+  Called freecad
+
+● The script failed partway, so grounded joint
+  and slider objects may already exist. I'll
+  look at what was created before retrying.
+
+  Called freecad
+
+● The grounded joint is complete. The Slider
+  was created but is missing its view provider
+  and references, so I'll finish it on the
+  existing object.
+  ⎿  Interrupted· What should Claude do
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

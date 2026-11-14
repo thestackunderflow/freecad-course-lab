@@ -1,0 +1,24 @@
+{"ts": 1794675771.563925625, "event": "recording started: FreeCAD 1.1.4, gap04.FCStd open"}
+{"ts": 1794675775.219145740, "event": "workbench: Assembly"}
+{"ts": 1794675779.333001833, "event": "New Assembly", "x": 50, "y": 228, "button": 1}
+{"ts": 1794675784.215392811, "event": "Insert Component", "x": 122, "y": 228, "button": 1}
+{"ts": 1794675789.451634509, "event": "Insert: Rail", "x": 2550, "y": 871, "button": 1}
+{"ts": 1794675794.866159887, "event": "dialog: ground the first part automatically? No", "x": 1738, "y": 928, "button": 1}
+{"ts": 1794675799.053887375, "event": "Insert: Hook", "x": 2550, "y": 838, "button": 1}
+{"ts": 1794675803.614348205, "event": "Insert: OK", "x": 2430, "y": 615, "button": 1}
+{"ts": 1794675808.216614015, "event": "tree: Hook (the body)", "x": 158, "y": 372, "button": 1}
+{"ts": 1794675810.816069450, "event": "tree: Ctrl + Rail (the body)", "x": 151, "y": 405, "button": 1}
+{"ts": 1794675811.540314581, "event": "Space: hide the two bodies (the components stay)", "keys": "space"}
+{"ts": 1794675815.550985401, "event": "tree: Rail001", "x": 192, "y": 534, "button": 1}
+{"ts": 1794675818.882143387, "event": "Toggle Grounded", "x": 464, "y": 228, "button": 1}
+{"ts": 1794675823.114299377, "event": "empty space: nothing selected", "x": 1500, "y": 1500, "button": 1}
+{"ts": 1794675826.929631148, "event": "Slider Joint", "x": 730, "y": 228, "button": 1}
+{"ts": 1794675832.163295123, "event": "Slider: Rail001 (the whole component)", "x": 192, "y": 534, "button": 1}
+{"ts": 1794675836.324059350, "event": "Slider: Ctrl + Hook001", "x": 199, "y": 567, "button": 1}
+{"ts": 1794675841.586639871, "event": "Slider: OK", "x": 2430, "y": 615, "button": 1}
+{"ts": 1794675845.699081316, "event": "(view fitted)"}
+{"ts": 1794675848.226820098, "event": "drag the hook up the whole rail"}
+{"ts": 1794675854.647387020, "event": "drag the hook up the whole rail: released"}
+{"ts": 1794675857.543302649, "event": "(view fitted)"}
+{"ts": 1794675859.967171337, "event": "and back down"}
+{"ts": 1794675866.398918824, "event": "and back down: released"}

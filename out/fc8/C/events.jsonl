@@ -1,0 +1,12 @@
+{"t": 0.07, "event": "recording started: FreeCAD 1.1.4, touch.FCStd open"}
+{"t": 4.894, "event": "tree: Hook", "x": 158, "y": 372, "button": 1}
+{"t": 7.442, "event": "tree: Ctrl + Rail", "x": 151, "y": 405, "button": 1}
+{"t": 11.198, "event": "Intersection", "x": 1918, "y": 228, "button": 1}
+{"t": 16.386, "event": "empty space", "x": 1500, "y": 1500, "button": 1}
+{"t": 21.958, "event": "tree: Common", "x": 180, "y": 372, "button": 1}
+{"t": 25.703, "event": "Check Geometry", "x": 2149, "y": 228, "button": 1}
+{"t": 30.834, "event": "tick: Expand shape content", "x": 2530, "y": 804, "button": 1}
+{"t": 34.49, "event": "Run check", "x": 2295, "y": 1665, "button": 1}
+{"t": 40.129, "event": "Check Geometry Results: fold", "x": 2509, "y": 613, "button": 1}
+{"t": 44.266, "event": "Shape Content: open", "x": 2509, "y": 1285, "button": 1}
+{"t": 52.555, "event": "empty space: the result's own colour", "x": 1000, "y": 1500, "button": 1}

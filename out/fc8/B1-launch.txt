@@ -1,0 +1,4 @@
+GO-28-Oct spend $0.2390; this run may cost up to $0.36; stop at $0.60: GO
+GO-28-Oct total now $0.5236
+scrubbed 0 files in out/fc8/runs/B1
+cost 0.2846

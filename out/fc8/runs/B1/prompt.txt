@@ -1,0 +1,1 @@
+Make this hook slide onto this rail as an assembly. Leave a 0.4 mm gap each side, then check for interference and measure the gap on both sides before you finish; tell me the numbers.

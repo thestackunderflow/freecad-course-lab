@@ -1,0 +1,12 @@
+touch
+prepped touch
+1
+gap cell 855 518
+3D tab 765 1731
+left edges 1479 789 1479 891
+left measure: combo:Distance field:0.40 mm 
+right edges 1479 4079 1479 3976
+right measure: combo:Distance field:0.40 mm 
+saved
+TAKE D DONE
+FC8 check {"common_mm3": 0.0, "head_side_mm": {"left": 0.4, "right": 0.4}, "used": ["Hook", "Rail"], "bodies": {"Hook": 16204.0, "Rail": 12000.0}}

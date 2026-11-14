@@ -1,0 +1,23 @@
+{"t": 0.047, "event": "recording started: Claude Code (left, FreeCAD plug only), FreeCAD with hook-rail open, gap 0 (right)"}
+{"t": 2.128, "event": "turn 1: typing", "text": "Make this hook slide onto this rail as an assembly. Leave a 0.4 mm gap each side, then check for interference and measure the gap on both sides before you finish; tell me the numbers."}
+{"t": 11.581, "event": "turn 1: Enter"}
+{"t": 16.425, "event": "tool call: list_documents", "seq": 18}
+{"t": 16.439, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 16.451, "event": "tool call: get_rpc_status", "seq": 20}
+{"t": 16.455, "event": "tool reply: get_rpc_status", "seq": 21, "isError": false}
+{"t": 19.515, "event": "tool call: get_objects", "seq": 22}
+{"t": 20.283, "event": "tool reply: get_objects", "seq": 23, "isError": false}
+{"t": 20.301, "event": "tool call: execute_code", "seq": 24}
+{"t": 20.365, "event": "tool reply: execute_code", "seq": 25, "isError": false}
+{"t": 36.901, "event": "tool call: execute_code", "seq": 26}
+{"t": 36.92, "event": "tool reply: execute_code", "seq": 27, "isError": false}
+{"t": 40.928, "event": "tool call: execute_code", "seq": 28}
+{"t": 41.014, "event": "tool reply: execute_code", "seq": 29, "isError": false}
+{"t": 64.843, "event": "tool call: execute_code", "seq": 30}
+{"t": 65.125, "event": "tool reply: execute_code", "seq": 31, "isError": false}
+{"t": 67.975, "event": "tool call: execute_code", "seq": 32}
+{"t": 67.984, "event": "tool reply: execute_code", "seq": 33, "isError": false}
+{"t": 73.744, "event": "tool call: execute_code", "seq": 34}
+{"t": 73.755, "event": "tool reply: execute_code", "seq": 35, "isError": false}
+{"t": 431.838, "event": "turn 1: reply done", "approvals": 0, "timed_out": true}
+{"t": 437.897, "event": "recording stopped"}

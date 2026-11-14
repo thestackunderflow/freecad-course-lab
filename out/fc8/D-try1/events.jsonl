@@ -1,0 +1,18 @@
+{"t": 0.043, "event": "recording started: FreeCAD 1.1.4, touch.FCStd open"}
+{"t": 4.341, "event": "double-click: open Params"}
+{"t": 9.529, "event": "cell B3: gap = 0", "x": 855, "y": 518, "button": 1}
+{"t": 11.242, "event": "typed 0.4", "text": "0.4"}
+{"t": 12.227, "event": "Enter", "keys": "Return"}
+{"t": 16.407, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 22.08, "event": "tab: back to the 3D view", "x": 765, "y": 1731, "button": 1}
+{"t": 25.298, "event": "key 5: bottom view", "keys": "5"}
+{"t": 33.471, "event": "wheel: zoom on the left wall"}
+{"t": 37.196, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 42.226, "event": "left: the slot's wall edge", "x": 1479, "y": 789, "button": 1}
+{"t": 46.762, "event": "left: Ctrl + the rib's wall edge", "x": 1479, "y": 891, "button": 1}
+{"t": 55.646, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 58.382, "event": "key 5: bottom view", "keys": "5"}
+{"t": 66.561, "event": "wheel: zoom on the right wall"}
+{"t": 70.306, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 76.125, "event": "right: the slot's wall edge", "x": 1479, "y": 4079, "button": 1}
+{"t": 81.477, "event": "right: Ctrl + the rib's wall edge", "x": 1479, "y": 3976, "button": 1}
