@@ -30,3 +30,11 @@
    no rectangle. Fix 1: the pan drag 250 px further left. E (final) ran once: DoF 0 after 40 and 20; top 41 refused
    "Negative datum values are not valid for the constraint with index 11" (not kept); Reference "(40 mm)"; Pad 10;
    the console prints 7999.999999999998, not 8000.0 (floating point; the script says "8000" or shows the line as is).
+9. R1 ran once (claude-run/fx20run.sh -> lab/fx20_R1.sh, copied from fx19's with the strict MCP config; tools.txt
+   parser now skips non-dict proxy lines). Claude Code was started before the recording, so its start banner (version,
+   model, plan name, folder; no e-mail) is on screen from 0 s of runs/R1/screen.mp4: cut or crop it. pane-start.txt:
+   the plan name replaced by "[plan]" before commit. session.jsonl: 14 context lines dropped by lab/fx19redact.py
+   (kept 61). model.txt counts one "claude-opus-5-5" string: it sits in an api-request-shape line (dropped by the
+   redaction), not in the turn; every assistant line is claude-sonnet-5-5.
+10. Cost guard: lab/costguard.py (the live session-log guard, the FreeCAD lab's equivalent of SolidCraft's
+   costguard6.py), cap $0.25; estimate $0.1853, not fired; /cost $0.1490 into ../freecad-course-BUDGET.tsv.

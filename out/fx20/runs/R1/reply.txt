@@ -1,0 +1,36 @@
+▎ odes
+  1 more notice hidden
+
+❯ Make the top of the hook's arm 17 mm long.
+
+  Listed 1 directory, called freecad 4 times,
+  ran 1 shell command
+
+● Applying the change now. I'm checking the
+  result, since my length print failed.
+
+  Called freecad
+
+● The top of the hook's arm is now 17 mm long,
+  up from 15 mm. I changed the sketch's
+  overall width constraint from 25 mm to 27
+  mm, which moves the end lip outward by 2 mm.
+
+  I read "top of the arm" as the flat top
+  surface between the vertical back and the
+  end lip, so that is the edge I measured. The
+  sketch stays fully constrained and the
+  solid is valid. The part is now 27 mm wide.
+
+  The lip is still 5 mm wide and 10 mm tall,
+  and the arm thickness (5 mm) and the back (5
+  × 60 mm) are unchanged. I haven't saved the
+  document. If you meant the lip's top edge
+  instead, that one is 5 mm, so tell me.
+
+✻ Worked for 18s · done 8:29 AM
+
+──────────────────────────────────────────────
+❯ save the document
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

@@ -1,0 +1,16 @@
+{"t": 0.048, "event": "recording started: Claude Code (left, FreeCAD plug only), FreeCAD with hook open, Pad 8500 (right)"}
+{"t": 2.13, "event": "turn 1: typing", "text": "Make the top of the hook's arm 17 mm long."}
+{"t": 4.907, "event": "turn 1: Enter"}
+{"t": 8.409, "event": "tool call: list_documents", "seq": 18}
+{"t": 8.418, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 9.797, "event": "tool call: get_objects", "seq": 20}
+{"t": 10.515, "event": "tool reply: get_objects", "seq": 21, "isError": false}
+{"t": 14.621, "event": "tool call: execute_code", "seq": 22}
+{"t": 14.634, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 18.011, "event": "tool call: execute_code", "seq": 24}
+{"t": 18.032, "event": "tool reply: execute_code", "seq": 25, "isError": true}
+{"t": 20.746, "event": "tool call: execute_code", "seq": 26}
+{"t": 21.384, "event": "tool reply: execute_code", "seq": 27, "isError": false}
+{"t": 24.049, "event": "turn 1: end-of-turn line seen"}
+{"t": 26.05, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 32.076, "event": "recording stopped"}

@@ -1,0 +1,4 @@
+GO-28-Oct spend $0.0000; this run may cost up to $0.25; stop at $0.90: GO
+GO-28-Oct total now $0.1490
+scrubbed 0 files in out/fx20/runs/R1
+cost 0.1490
