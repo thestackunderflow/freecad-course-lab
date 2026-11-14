@@ -1,0 +1,52 @@
+fc8 G0 ($0, no Claude), 14 Nov 2026. FreeCAD 1.1.4 (fcc-app:1.1.4-0.1.28), Xvfb 2880x1800, Qt scale 1.8.
+G0a headless: lab/fc8parts.py (build + asm modes) -> P/build.json, P/asm.json. G0b GUI probe: container fc8p
+(lab/fc8_up.sh + lab/fc8x.sh steps, lab/fc8q.py queries), stills b/p01h-p24h (halved), b/g0b-gui.json, b/check-after-drag.json.
+
+VERDICT: PASS for stop rules 1 and 2; stop rule 7 branch (NO collision stop) is what FreeCAD does.
+
+What the Assembly workbench offers (toolbars read by code, b/p01h):
+  Assembly: New Assembly, Insert Component, Solve Assembly, Exploded View, Simulation, Bill of Materials.
+  Assembly Joints: Toggle Grounded, Fixed, Revolute, Cylindrical, Slider, Ball, Distance, Parallel, Perpendicular, Angle,
+  Rack and Pinion, Screw, Gears/Belt. No interference / collision / clearance tool anywhere in Mod/Assembly (grep of the
+  module for "collision|interfer": no file).
+
+Routes (all clicked under Xvfb):
+  1 New Assembly (toolbar) -> "Assembly" in the tree, active (b/p03h).
+  2 Insert Component: panel lists the open file's bodies (typo > Rail, Hook). Click Rail -> dialog "Do you want to ground
+    the first inserted part automatically? ... Yes / Always / Never / No" (b/p04h). Probe answered No; click Hook ->
+    Hook001 placed 12.75 mm off in x, y and z (FreeCAD's insert offset); OK. The original bodies stay visible beside the
+    components: the takes hide them (Space) or the lesson says so.
+  3 Ground: select Rail001 row, Toggle Grounded -> GroundedJoint, red padlock (b/p07h, p08h).
+  4 Slider Joint: picks are the two COMPONENTS, clicked in the tree (second one with Ctrl; a plain second click replaces
+    the first, b/p10h). Whole-part references put the joint at each body's origin with Z up; both bodies were drawn in one
+    coordinate system, so the slider runs along the rail and the hook snapped from (12.75, 12.75, 12.75) to (0, 0, 0):
+    the drawn place, gap kept as drawn (b/p11h). Joint read back: Slider, Reference1/2 = (link, ['', '']).
+    Faces: from Assembly's own code (UtilsAssembly.findPlacement) a flat face's joint axis is its normal, so a slider on
+    the slot floor + rib top would slide across the slot, not along it: not tried in the GUI. PLAN F7 "click a face on
+    each part" must change to "click the two parts in the tree".
+  5 Drag (typo file, slider on): dragging the hook in the 3D view moves it along Z only. Code readings after each drag:
+    z 72.6982 (shared volume 8.7622 mm3), z 96.4683 (0 mm3, above the rail), then dragged DOWN to z 18.1571: shared
+    volume 72.0 mm3 again. Nothing stopped it at the rail's top, no message in the Report view (b/p14h, p15h, p17h).
+    -> stop rule 7 branch: "it went straight through: FreeCAD's joint does not check contact".
+  6 Overlap by hand: Part workbench; the button for Part_Common is named "Intersection" in 1.1 (toolbar text read by
+    code). Selecting the two components inside the assembly + Intersection moves both UNDER the new Common (it swallows
+    them; b/p18h): the take uses the two bodies, outside the assembly. Result on typo: two thin slivers (b/p18h).
+    Volume: Part > Check Geometry, tick "Expand shape content", Run check -> Shape Content "Volume: 72.0" (2 solids)
+    (b/p20h; text read by code). Check Geometry's results box must be collapsed to see Shape Content at this size.
+  7 Touching (gap 0): Intersection makes "Common" with 0 solids, 0 faces, valid, no warning; the 3D view is empty
+    (b/p21h, g0b-gui.json touch_common). The trap holds (stop rule 3 not hit).
+  8 Measure (gap 0.4 file): toolbar Measure; bottom view, zoomed on the left head walls; click the slot's wall edge,
+    Ctrl+click the rib's wall edge -> Mode Distance, Result "0.40 mm", label "Δy: 0.40" (b/p24h; g0b-gui.json). The
+    first try without Ctrl gave Length 3.00 mm (one edge only, b/p23h).
+
+Headless solver (P/asm.json): with the slider made by Python, solve() returned 0 at every z (85, 40, 0, -30) with
+shared volume 0 / 48 / 72 / 36 mm3; an off-line push (x 3, y 1) was also kept, so headless solving is NOT evidence of
+the joint: the GUI drag is.
+
+For the plan / script gate (accuracy + teacher re-gate of B2, PLAN DECISIONS "gap in the gate"):
+  - "Common" -> FreeCAD 1.1 labels it "Intersection" (Part_Common); volume via Check Geometry > Shape Content.
+  - F7: joint picks = the two components in the tree (Ctrl for the second), not faces.
+  - F8: no stop (branch 7): thumbnail arm "IT WENT THROUGH", recap "a drag is not a check".
+  - F4: the insert asks "ground the first inserted part automatically?": Yes grounds the rail (simpler F5) or No +
+    Toggle Grounded (as filmed in the takes).
+  - Measure: second pick needs Ctrl.

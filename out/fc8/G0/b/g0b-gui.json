@@ -1,0 +1,24 @@
+{
+ "measure_result_fields": [
+  "0.40 mm"
+ ],
+ "measure_selection": [
+  [
+   "Hook",
+   [
+    "Edge22"
+   ]
+  ],
+  [
+   "Rail",
+   [
+    "Edge35"
+   ]
+  ]
+ ],
+ "touch_common": {
+  "solids": 0,
+  "faces": 0,
+  "volume": 0.0
+ }
+}

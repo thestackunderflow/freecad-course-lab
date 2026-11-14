@@ -1,0 +1,60 @@
+{
+ "slider_refs_tried": [
+  [
+   "whole bodies, subs \"RailLink.\"",
+   "ok",
+   "(<Assembly object>, ['RailLink.', 'RailLink.'])",
+   "(<Assembly object>, ['HookLink.', 'HookLink.'])"
+  ]
+ ],
+ "after_raise_85": {
+  "solve": 0,
+  "hook_link_base": [
+   0.0,
+   0.0,
+   85.0
+  ],
+  "rot": [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "common_mm3": 0.0
+ },
+ "moved_to_z_40": {
+  "solve": 0,
+  "hook_link_base": [
+   0.0,
+   0.0,
+   40.0
+  ],
+  "common_mm3": 48.0
+ },
+ "moved_to_z_0": {
+  "solve": 0,
+  "hook_link_base": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "common_mm3": 72.0
+ },
+ "moved_to_z_-30": {
+  "solve": 0,
+  "hook_link_base": [
+   0.0,
+   0.0,
+   -30.0
+  ],
+  "common_mm3": 36.0
+ },
+ "pushed_off_line_x3_y1": {
+  "solve": 0,
+  "hook_link_base": [
+   3.0,
+   1.0,
+   20.0
+  ]
+ }
+}

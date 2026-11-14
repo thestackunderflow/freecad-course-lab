@@ -1,0 +1,275 @@
+{
+ "doc": "/lab/out/fc8/G0/b/g0b-after-drag.FCStd",
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Hook",
+   "Hook",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "Plate",
+   "Plate",
+   "PartDesign::AdditiveBox"
+  ],
+  [
+   "Arm",
+   "Arm",
+   "PartDesign::AdditiveBox"
+  ],
+  [
+   "Lip",
+   "Lip",
+   "PartDesign::AdditiveBox"
+  ],
+  [
+   "Block",
+   "Block",
+   "PartDesign::AdditiveBox"
+  ],
+  [
+   "SlotStem",
+   "SlotStem",
+   "PartDesign::SubtractiveBox"
+  ],
+  [
+   "SlotHead",
+   "SlotHead",
+   "PartDesign::SubtractiveBox"
+  ],
+  [
+   "Rail",
+   "Rail",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin002",
+   "Origin004",
+   "App::Origin"
+  ],
+  [
+   "X_Axis001",
+   "X-axis001",
+   "App::Line"
+  ],
+  [
+   "Y_Axis001",
+   "Y-axis001",
+   "App::Line"
+  ],
+  [
+   "Z_Axis001",
+   "Z-axis001",
+   "App::Line"
+  ],
+  [
+   "XY_Plane001",
+   "XY-plane001",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane001",
+   "XZ-plane001",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane001",
+   "YZ-plane001",
+   "App::Plane"
+  ],
+  [
+   "Origin003",
+   "Origin003",
+   "App::Point"
+  ],
+  [
+   "Base",
+   "Base",
+   "PartDesign::AdditiveBox"
+  ],
+  [
+   "RibStem",
+   "RibStem",
+   "PartDesign::AdditiveBox"
+  ],
+  [
+   "RibHead",
+   "RibHead",
+   "PartDesign::AdditiveBox"
+  ],
+  [
+   "Assembly",
+   "Assembly",
+   "Assembly::AssemblyObject"
+  ],
+  [
+   "Origin004",
+   "Origin007",
+   "App::Origin"
+  ],
+  [
+   "X_Axis002",
+   "X-axis002",
+   "App::Line"
+  ],
+  [
+   "Y_Axis002",
+   "Y-axis002",
+   "App::Line"
+  ],
+  [
+   "Z_Axis002",
+   "Z-axis002",
+   "App::Line"
+  ],
+  [
+   "XY_Plane002",
+   "XY-plane002",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane002",
+   "XZ-plane002",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane002",
+   "YZ-plane002",
+   "App::Plane"
+  ],
+  [
+   "Origin005",
+   "Origin006",
+   "App::Point"
+  ],
+  [
+   "Joints",
+   "Joints",
+   "Assembly::JointGroup"
+  ],
+  [
+   "Rail001",
+   "Rail001",
+   "App::Link"
+  ],
+  [
+   "Hook001",
+   "Hook001",
+   "App::Link"
+  ],
+  [
+   "GroundedJoint",
+   "GroundedJoint",
+   "App::FeaturePython"
+  ],
+  [
+   "Joint",
+   "Slider",
+   "App::FeaturePython"
+  ]
+ ],
+ "bodies": {
+  "Hook": 17332.0,
+  "Rail": 12000.0
+ },
+ "used": [
+  "Hook001",
+  "Rail001"
+ ],
+ "hook_mm3": 17332.0,
+ "rail_mm3": 12000.0,
+ "common_mm3": 72.0,
+ "common_solids": 2,
+ "hook_bbox": [
+  -10.0,
+  -20.0,
+  18.1571,
+  25.0,
+  0.0,
+  78.1571
+ ],
+ "slot_head_walls_y": [
+  -15.8,
+  -4.2
+ ],
+ "rib_head_walls_y": [
+  -16.0,
+  -4.0
+ ],
+ "min_distance_mm": 0.0,
+ "head_side_mm": {
+  "left": -0.2,
+  "right": -0.2
+ },
+ "sheet_Params": {
+  "gap": 0,
+  "rib_head": 12,
+  "slot_head": 11.6,
+  "rib_stem": 6,
+  "slot_stem": 6
+ },
+ "joints": [
+  {
+   "Name": "GroundedJoint",
+   "Label": "GroundedJoint",
+   "JointType": "None",
+   "ObjectToGround": "<App::Link object>",
+   "Reference1": "None",
+   "Reference2": "None",
+   "Activated": "None"
+  },
+  {
+   "Name": "Joint",
+   "Label": "Slider",
+   "JointType": "Slider",
+   "ObjectToGround": "None",
+   "Reference1": "(<App::Link object>, ['', ''])",
+   "Reference2": "(<App::Link object>, ['', ''])",
+   "Activated": "None"
+  }
+ ]
+}
