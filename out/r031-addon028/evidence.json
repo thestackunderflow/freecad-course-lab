@@ -1,0 +1,56 @@
+{
+ "workbench_menu": "MCP Addon",
+ "commands": {
+  "Start_RPC_Server": "Start RPC Server",
+  "Stop_RPC_Server": "Stop RPC Server"
+ },
+ "freecad_version": "1.1.4",
+ "freecad_python": "3.11.14",
+ "report": "03:06:45  RPC Server started at 127.0.0.1:9875 (PID 38).\n",
+ "initialize_ok": true,
+ "server_info": {
+  "name": "FreeCADMCP",
+  "version": ""
+ },
+ "call": "Code executed successfully: Python code executed successfully.\nOutput: ['1', '1', '4'] 3.11.14\n",
+ "tools28": [
+  "create_document",
+  "create_object",
+  "delete_object",
+  "edit_object",
+  "execute_code",
+  "execute_code_async",
+  "execute_code_headless",
+  "get_async_status",
+  "get_object",
+  "get_objects",
+  "get_parts_list",
+  "get_rpc_status",
+  "get_view",
+  "insert_part_from_library",
+  "list_documents",
+  "reload_document",
+  "run_fem_analysis"
+ ],
+ "tools31": [
+  "create_document",
+  "create_object",
+  "delete_object",
+  "edit_object",
+  "execute_code",
+  "execute_code_async",
+  "execute_code_headless",
+  "get_async_status",
+  "get_object",
+  "get_objects",
+  "get_parts_list",
+  "get_rpc_status",
+  "get_view",
+  "insert_part_from_library",
+  "list_documents",
+  "reload_document",
+  "run_fem_analysis"
+ ],
+ "mcp_list": "maker@bfe4eff89996:~/proj$ claude mcp add freecad -- uvx freecad-mcp@0.1.31\nAdded stdio MCP server freecad with command: uvx freecad-mcp@0.1.31 to local config\nFile modified: /home/maker/.claude.json [project: /home/maker/proj]\nmaker@bfe4eff89996:~/proj$ claude mcp list\nfreecad: uvx freecad-mcp@0.1.31 - \u2714 Connected\nmaker@bfe4eff89996:~/proj$\n\n\n\n\n\n\n\n\n\n\n",
+ "addon_version": "<version>0.1.28"
+}

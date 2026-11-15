@@ -1,0 +1,16 @@
+maker@bfe4eff89996:~/proj$ claude mcp add freecad -- uvx freecad-mcp@0.1.31
+Added stdio MCP server freecad with command: uvx freecad-mcp@0.1.31 to local config
+File modified: /home/maker/.claude.json [project: /home/maker/proj]
+maker@bfe4eff89996:~/proj$ claude mcp list
+freecad: uvx freecad-mcp@0.1.31 - ✔ Connected
+maker@bfe4eff89996:~/proj$
+
+
+
+
+
+
+
+
+
+

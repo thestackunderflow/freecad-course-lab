@@ -1,0 +1,10 @@
+{
+ "workbench_menu": "MCP Addon",
+ "commands": {
+  "Start_RPC_Server": "Start RPC Server",
+  "Stop_RPC_Server": "Stop RPC Server"
+ },
+ "freecad_version": "1.1.4",
+ "freecad_python": "3.11.14",
+ "report": "03:05:58  RPC Server started at 127.0.0.1:9875 (PID 38).\n"
+}

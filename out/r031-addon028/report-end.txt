@@ -1,0 +1,3 @@
+03:06:45  RPC Server started at 127.0.0.1:9875 (PID 38).
+03:06:59  Python code executed successfully.
+03:06:59  MCP RPC: view type 'None' does not support screenshots
