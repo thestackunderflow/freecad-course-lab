@@ -149,3 +149,32 @@ def test_end_card_course_words_no_next_no_label(drawn):
     e = ' '.join(texts(drawn, 'card-end.png')).lower()
     assert 'lesson 9' in e and 'lesson 8' in e and 'subscribe' in e
     assert 'next' not in e and 'ai-generated' not in e
+
+
+CODE_PANELS = {'ov-code-fix.png': ('fix', ), 'ov-code-proof.png': ('proof', ),
+               'ov-code-control.png': ('proof', 'control')}
+
+
+def test_cut3_code_panels(drawn):
+    """WATCH-fc9-c2 #1: the right-end numbers read by code are on screen when said: a small "checked by code" panel
+    with fc9numbers.py's NUMBERS.json values, inside the Measure zoom (MEAS_Z x 2080-2880, y 582-1032), below the
+    Measurement panel (y 810) and above the caption band (y 968); readable after the 3.2x zoom (44 px+)."""
+    c = NUM['cases']
+    for n, cases in CODE_PANELS.items():
+        a = Image.open(os.path.join(drawn.OUT, n))
+        assert a.size == (2880, 1800) and a.mode == 'RGBA', n
+        bb = a.getchannel('A').getbbox()
+        assert bb[0] >= 2090 and bb[2] <= 2870 and bb[1] >= 815 and bb[3] <= 962, (n, bb)
+        t = texts(drawn, n)
+        assert t[0] == 'checked by code · Measure above = left end', t
+        assert len(t) == 1 + len(cases), t
+        for s, case in zip(t[1:], cases):
+            k = c[case]
+            assert s.startswith(case) and f"right_gap_mm {k['right_gap_mm']:.1f}" in s, s
+            if case != 'fix':
+                assert f"length_mm {k['length_mm']:.1f}" in s, s
+            else:
+                assert f"left_gap_mm {k['left_gap_mm']:.1f}" in s, s
+        for s, px in drawn.LOG[n]:
+            assert px >= 44 and len(s) <= 44 and '%' not in s, (n, s, px)
+    assert '60.0' in texts(drawn, 'ov-code-control.png')[2]

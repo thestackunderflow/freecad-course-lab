@@ -12,6 +12,8 @@ arithmetic (tests/test_draw_fc9.py checks it); no "80" anywhere (the your-turn a
       ov-cc-save  (y 1630-1700, from the "save the document" suggestion: A1 33.0, B1 47.0)
       ov-cc-start (y 1540-1705, 0-2.15 s: the tmux hint row and the greyed "Try ..." placeholder)
       ov-cc-hint  (y 1540-1600, to 4.0 s: the tmux hint row)
+  cut 3 (WATCH-fc9-c2 #1) "checked by code" panels (RGBA, 2880 x 1800; burnt into the derived takes Bc / Cc), inside
+  the Measure zoom below the Measurement panel: ov-code-fix (F1, F12), ov-code-proof, ov-code-control (F15)
 Run in the draw image:  docker run --rm -v "<lab>:/lab" -w /lab cad3way-draw:1 python3 video/draw_fc9.py [sheet OUTDIR]
 Test: tests/test_draw_fc9.py"""
 import json
@@ -305,6 +307,38 @@ def _ov(name, box):
     save(im, name)
 
 
+# --- cut 3: the "checked by code" panels (2880 x 1800, read after the 3.2x Measure zoom) -------------------------------
+MONO = b.FD + 'DejaVuSansMono.ttf'
+ZOOM = 2880 / 800                      # MEAS_Z is 800 px wide on the 2880 source (the frame is 2560 + the pad)
+CODE_X, CODE_Y = 2110, 838
+CODE_HEAD = 'checked by code · Measure above = left end'
+
+
+def code_line(case):
+    k = CS[case]
+    if case == 'fix':
+        return f"fix      left_gap_mm {k['left_gap_mm']:.1f}  right_gap_mm {k['right_gap_mm']:.1f}"
+    return f"{case:<8} length_mm {k['length_mm']:.1f}  right_gap_mm {k['right_gap_mm']:.1f}"
+
+
+def code_panel(name, cases):
+    im, d = source()
+    hs, ls, lh = 16, 20, 28
+    rows = [CODE_HEAD] + [code_line(c) for c in cases]
+    fh, fl = b.font(b.B, hs), b.font(MONO, ls)
+    w = max(d.textlength(r, font=fl if i else fh) for i, r in enumerate(rows)) + 32
+    h = 14 + 24 + lh * len(cases) + 10
+    d.rectangle((CODE_X, CODE_Y, CODE_X + w, CODE_Y + h), fill=WHITE + (255,), outline=PARTLINE + (255,), width=2)
+    d.text((CODE_X + 16, CODE_Y + 12), CODE_HEAD, font=fh, fill=GREY + (255,))
+    b.CUR.append((CODE_HEAD, round(hs * ZOOM * 2560 / 2880)))
+    for i, r in enumerate(rows[1:]):
+        d.text((CODE_X + 16, CODE_Y + 40 + lh * i), r, font=fl, fill=INK + (255,))
+        b.CUR.append((r, round(ls * ZOOM * 2560 / 2880)))
+        if '%' in r or len(r) > 44:
+            PROBLEMS.append(f'{r!r}: code panel line')
+    save(im, name)
+
+
 def sheet(outdir):
     names = sorted(n for n in os.listdir(OUT) if n.startswith('card-'))
     tw, th, cols = 640, 360, 4
@@ -341,6 +375,9 @@ def main():
     _ov('ov-cc-save.png', CC_SAVE)
     _ov('ov-cc-start.png', CC_START)
     _ov('ov-cc-hint.png', CC_HINT)
+    code_panel('ov-code-fix.png', ('fix',))
+    code_panel('ov-code-proof.png', ('proof',))
+    code_panel('ov-code-control.png', ('proof', 'control'))
     print('PROBLEMS:', PROBLEMS or 'none')
 
 
