@@ -1,0 +1,25 @@
+hook
+prepped hook
+1
+start: {"dof": 2, "constraints": 22, "zmin": 0.0, "zmax": 60.0, "xmin": 0.0, "hole_z": 45.0, "hole_to_top": 15.0, "volume": 8420.478, "plate_height": 60}
+rows open: 237 469
+1
+look Front 12 0 30 90
+solver: ['Under-constrained: ', '2 Degrees of Freedom']
+back line mid 1488 986
+after drag: Vector (2.0381699999999996, -9.14988, 0.0)
+after close: {"dof": 2, "constraints": 22, "zmin": -9.1499, "zmax": 50.8501, "xmin": 2.0382, "hole_z": 45.0, "hole_to_top": 5.8501, "volume": 8420.478, "plate_height": 60}
+1
+front z -9.1499 50.8501
+look Front 12 0 30 110
+front px: floor-left 1392 1379 floor-right 2047 1379 top-back 1523 712 bottom-back 1523 1498 at60 1523 593 at0 1523 1379
+top corner at 1523 712
+top measure: -
+bottom corner at 1523 1498
+bottom measure: -
+look Right 0 -10 30 90
+right px: top-mid 1681 652 hole 1681 745 floor 1681 1466
+1
+saved
+TAKE T DONE
+check: FC10 check {"dof": 2, "zmin": -9.14988, "zmax": 50.85012, "xmin": 2.03817, "hole_to_top": 5.85012, "sketch_hole_to_top": 5.85012, "volume_mm3": 8420.4784, "constraints": 22}

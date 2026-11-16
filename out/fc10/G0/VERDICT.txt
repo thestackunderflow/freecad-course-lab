@@ -1,0 +1,46 @@
+fc10 G0 (16 Nov 2026), FreeCAD 1.1.4 in fcc-app:1.1.4-0.1.28, $0, no Claude. Probe steps: s1.sh .. s11.sh (run
+in a probe container by lab/fc10_up.sh + lab/fc10x.sh); every line below is in g0-log.txt; stills q*.png.
+
+Start files (lab/fc10parts.py, built from scratch): hook-pinned.FCStd (23 constraints: 8 joins, 4 Horizontal +
+4 Vertical, 6 sizes bound to Params, + Coincident bottom back corner / origin) and hook-unpinned.FCStd (22, the same
+without the tie, drawn exactly on the origin). Both: bottom 0, top 60, hole 15.0 below the top, 8,420.48 mm3
+(8,500 minus the 4.5 hole through the 5 mm plate, 79.52 mm3). Pad goes to world -Y (y -20..0); up = world +Z (front
+view still q2-*-front.png shows the plate standing, arm at the bottom right: film agrees with ZMin/ZMax).
+
+Q1 counter / message: Sketch Edit panel, unpinned: "Under-constrained: " + link "2 Degrees of Freedom" (link colour
+#0061a7; the panel truncates it to "2 Degrees of Freedc" at the default width). Clicking the link selects all 16
+corners (Vertex1..Vertex16): the whole shape is what can move. Pinned: "Fully constrained" in green; every line turns
+green (q4e-after-coincident.png). Unpinned lines are white/grey with red sizes.
+
+Q2 T1 size change, unpinned, Params plate_height 60 -> 80, Recompute:
+  GUI run 1 (fresh copy): bottom -10.39, top 69.61, hole 4.61 below the top (q2-unpinned-run1)
+  GUI run 2 (fresh copy): bottom -6.97,  top 73.03, hole 8.03 below the top (q2-unpinned-run2)
+  GUI = code: each GUI file re-read headless gives the same numbers to 0.000001 mm.
+  Headless (freecadcmd, the same start file, 8 tries incl. the build): bottom -1.32 six times, -6.97 twice.
+  Pinned (GUI): bottom 0.00, top 80.00, hole 15.0. No slide across (XMin 0.00) in any try.
+  60 -> 100 headless, 3 tries: bottom -19.23 (top 80.77, hole at 85 ABOVE the plate: no hole at all, 12,500 mm3),
+  -3.07, -3.07.
+  => T1 counts (|ZMin| >= 1 mm in every try, 11 of 11 at 80), but HOW FAR the bottom drops is not the same from try to
+  try on the same file and the same change (1.32 / 6.97 / 10.39 at 80). Say "this time".
+  Take A (filmed, the first trap take): bottom -1.32, top 78.68, hole 13.68 below the top.
+
+Q3 T2 nudge: in sketch edit, one drag on the back line (~75 px): the whole hook slid 3.79 across and 2.65 up; hole
+17.65 below the top (q3-after-drag.png). The same drag on the pinned copy: nothing moves (bottom 0.00, top 60.00,
+hole 15.0).
+
+Q4 the pin: menu text "Coincident Constraint" (Sketcher_ConstrainCoincidentUnified, shortcut C; tooltip "Constrains
+the selected elements to be coincident"). ROUTE CHANGE: the corner sits exactly on the origin, so click corner +
+Ctrl-click origin DESELECTS the corner (q4: selection [] after the Ctrl-click); tool first + two clicks on the spot
+adds nothing. What works: drag a small selection box around the corner: it selects Vertex1, Vertex16 and RootPoint
+(the origin); Coincident Constraint then adds ONE constraint (Vertex1 / origin), no redundancy, message "Fully
+constrained", lines green. Other names offered: "Lock Position" (shortcut K, L) adds two 0 distances.
+
+Q5 your turn: the rectangle tool (G, R) clicked at (30, 20) and (75, 55), away from both axes: no snap, 4 joins +
+2 Horizontal + 2 Vertical, "Under-constrained: 4 Degrees of Freedom". Sizes 40 and 30 (by code): 2. Corner tied to the
+origin: 0. 40 -> 60: the tied corner stays at 0, the far side ends at 60.
+
+Q6 stake visible (>= 4 mm or >= 50 px in the 9:16 crop): G0 GUI tries yes (10.39 / 6.97 mm); TAKE A NO (1.32 mm, about
+23 px in the front view at 16.7 px/mm, x1.07 in the 9:16 crop: 24 px).
+BRANCH (PLAN 2.4): "T1 >= 1 mm but the stake not visible" -> T2 with the stake for the cold open (F0 / S0), T1 kept in
+F7 as "this time the size change moved it 1.32 mm"; take T films the nudge, take TB the same drag on the pinned copy.
+Not chosen: re-filming A until a big drop (that would pick the number).

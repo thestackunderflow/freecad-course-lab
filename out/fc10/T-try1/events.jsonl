@@ -1,0 +1,20 @@
+{"t": 0.08, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (T)"}
+{"t": 4.528, "event": "double-click: HookSketch (edit)"}
+{"t": 8.962, "event": "(sketch view set)"}
+{"t": 14.859, "event": "drag: the back line (a slip)"}
+{"t": 16.086, "event": "drag: released"}
+{"t": 21.539, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 25.412, "event": "key 0: isometric", "keys": "0"}
+{"t": 26.766, "event": "(view fitted)"}
+{"t": 31.401, "event": "key 1: Front view", "keys": "1"}
+{"t": 32.724, "event": "(view set: Front centred 12 0 30, 110 mm tall)"}
+{"t": 40.505, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 45.57, "event": "top: corner", "x": 1523, "y": 712, "button": 1}
+{"t": 54.256, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 58.773, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 63.871, "event": "bottom: corner", "x": 1523, "y": 1498, "button": 1}
+{"t": 72.494, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 75.476, "event": "key 3: Right view", "keys": "3"}
+{"t": 76.722, "event": "(view set: Right centred 0 -10 30, 90 mm tall)"}
+{"t": 83.37, "event": "key 0: isometric", "keys": "0"}
+{"t": 84.661, "event": "(view fitted)"}

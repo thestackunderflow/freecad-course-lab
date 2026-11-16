@@ -1,0 +1,27 @@
+{"t": 0.071, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (D)"}
+{"t": 4.522, "event": "double-click: HookSketch (edit)"}
+{"t": 8.964, "event": "(sketch view set)"}
+{"t": 13.96, "event": "drag: the back line"}
+{"t": 15.68, "event": "drag: released"}
+{"t": 21.274, "event": "sketch: Close", "x": 2527, "y": 615, "button": 1}
+{"t": 26.495, "event": "double-click: open Params"}
+{"t": 30.57, "event": "hover: plate_height"}
+{"t": 32.766, "event": "cell B1: plate_height", "x": 855, "y": 410, "button": 1}
+{"t": 34.482, "event": "typed 100", "text": "100"}
+{"t": 35.474, "event": "Enter", "keys": "Return"}
+{"t": 40.058, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 45.845, "event": "tab: back to the 3D view", "x": 761, "y": 1731, "button": 1}
+{"t": 48.754, "event": "key 0: isometric", "keys": "0"}
+{"t": 50.014, "event": "(view fitted)"}
+{"t": 54.744, "event": "key 1: Front view", "keys": "1"}
+{"t": 56.006, "event": "(view set: Front centred 12 0 50, 150 mm tall)"}
+{"t": 63.458, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 68.519, "event": "top: corner", "x": 1564, "y": 505, "button": 1}
+{"t": 77.241, "event": "Measure: Close", "x": 2527, "y": 1665, "button": 1}
+{"t": 81.807, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 86.83, "event": "bottom: corner", "x": 1564, "y": 1466, "button": 1}
+{"t": 95.531, "event": "Measure: Close", "x": 2527, "y": 1665, "button": 1}
+{"t": 98.447, "event": "key 3: Right view", "keys": "3"}
+{"t": 99.721, "event": "(view set: Right centred 0 -10 50, 130 mm tall)"}
+{"t": 106.614, "event": "key 0: isometric", "keys": "0"}
+{"t": 107.894, "event": "(view fitted)"}

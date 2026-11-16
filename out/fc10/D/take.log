@@ -1,0 +1,32 @@
+hook
+prepped hook
+1
+start: {"dof": 0, "constraints": 23, "zmin": 0.0, "zmax": 80.0, "xmin": 0.0, "hole_z": 65.0, "hole_to_top": 15.0, "volume": 10420.478, "plate_height": 80}
+rows open: 237 469
+1
+look Front 12 0 40 110
+solver: ['Fully constrained']
+back line mid 1522 986
+before drag: Vector (0.0, 0.0, 0.0)
+after drag: Vector (0.0, 0.0, 0.0)
+plate_height cell 855 410
+3D tab 761 1731
+after 100: {"dof": 0, "constraints": 23, "zmin": 0.0, "zmax": 100.0, "xmin": 0.0, "hole_z": 85.0, "hole_to_top": 15.0, "volume": 12420.478, "plate_height": 100}
+1
+front x 0.0 z 0.0 100.0
+look Front 12 0 50 150
+front px: floor-left 1468 1466 floor-right 1948 1466 top-back 1564 505 bottom-back 1564 1466 at60 1564 889 at0 1564 1466
+top corner at 1564 505
+top measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 100.00 mm
+bottom corner at 1564 1466
+bottom measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 0.00 mm
+look Right 0 -10 50 130
+right px: top-mid 1680 431 hole 1680 598 floor 1680 1540
+1
+saved
+TAKE D DONE
+check: FC10 check {"dof": 0, "zmin": -0.0, "zmax": 100.0, "xmin": 0.0, "hole_to_top": 15.0, "sketch_hole_to_top": 15.0, "volume_mm3": 12420.4784, "constraints": 23}
