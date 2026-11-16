@@ -3,6 +3,8 @@
     FC8_OUT=/lab/out/fc8/P FC8_MODE=build freecadcmd /lab/lab/fc8parts.py
         fc8-{typo,touch,gap01,gap04}.FCStd + build.json: the sc8 hook and rail (solidcraft-course-lab/lab/sc8parts.py)
         as two Part Design bodies of boxes driven by a spreadsheet `Params` (lesson 3); every number read back by code.
+    FC8_OUT=/lab/out/fc8/P2 FC8_MODE=ladder freecadcmd /lab/lab/fc8parts.py
+        video D probe P2: gap02/gap03 built if missing, then the six rungs by code -> ladder.json.
     FC8_OUT=... FC8_MODE=asm freecadcmd /lab/lab/fc8parts.py
         G0a: an Assembly by Python on the typo file (links, ground, slider by whole-body references, solve); the hook
         moved 85 up and back into the rail: solver result and the shared volume after each move -> asm.json.
@@ -21,6 +23,7 @@ MODE = os.environ.get('FC8_MODE', 'build')
 V = FreeCAD.Vector
 
 CASES = {'typo': (0, '11.6'), 'touch': (0, None), 'gap01': (0.1, None), 'gap04': (0.4, None)}
+LADDER = {'gap02': (0.2, None), 'gap03': (0.3, None)}   # video D probe P2 rungs (FC8_MODE=ladder)
 
 
 def log(*a):
@@ -45,7 +48,7 @@ def box(body, kind, name, L, W, H, x, y, z):
 
 
 def build(case):
-    gap, typo = CASES[case]
+    gap, typo = {**CASES, **LADDER}[case]
     d = FreeCAD.newDocument('fc8_' + case)
     s = d.addObject('Spreadsheet::Sheet', 'Params')
     rows = [('rib_stem', '6'), ('rib_head', '12'), ('gap', str(gap)), ('slot_stem', '=rib_stem + 2 * gap'),
@@ -186,11 +189,51 @@ def asm():
     log('asm', json.dumps(r)[:900])
 
 
+def edge_near(shape, pt):
+    """The edge a click at pt picks: the edge of shape nearest to pt."""
+    return min(shape.Edges, key=lambda e: e.distToShape(Part.Vertex(pt))[0])
+
+
+def ladder():
+    """Video D probe P2: rungs gap02/gap03 built (if missing) next to fc8's files in /lab/out/fc8/P; then on all six rungs
+    the Intersection volume, the head walls each side, distToShape hook-rail (ground truth) and the GUI's Measure picks
+    (the slot's wall edge + the rib's wall edge at z 0, x -5.5, as take D) -> OUT/ladder.json."""
+    P = '/lab/out/fc8/P'
+    res = {}
+    for case in ('gap02', 'gap03'):
+        if not os.path.exists(os.path.join(P, 'fc8-%s.FCStd' % case)):
+            global OUT
+            o, OUT = OUT, P
+            build(case)
+            OUT = o
+    for case in ('typo', 'touch', 'gap01', 'gap02', 'gap03', 'gap04'):
+        d = FreeCAD.openDocument(os.path.join(P, 'fc8-%s.FCStd' % case))
+        d.recompute()
+        hs, rs = d.getObject('Hook').Shape, d.getObject('Rail').Shape
+        r = check_shapes(hs, rs)
+        sh = d.getObject('Params').get('slot_head')
+        r['slot_head'] = sh
+        dts = hs.distToShape(rs)
+        r['nearest_points'] = [[[round(c, 4) for c in p] for p in pr] for pr in dts[1][:4]]
+        r['gui_picks_mm'] = {}
+        for side, sg in (('left', -1), ('right', 1)):
+            he = edge_near(hs, V(-5.5, -10 + sg * sh / 2, 0))
+            re_ = edge_near(rs, V(-5.5, -10 + sg * 6, 0))
+            r['gui_picks_mm'][side] = round(he.distToShape(re_)[0], 6)
+        res[case] = r
+        FreeCAD.closeDocument(d.Name)
+        log('ladder', case, json.dumps({k: r.get(k) for k in ('common_mm3', 'min_distance_mm', 'head_side_mm', 'gui_picks_mm')}))
+    os.makedirs(OUT, exist_ok=True)
+    json.dump(res, open(os.path.join(OUT, 'ladder.json'), 'w'), indent=1)
+
+
 if MODE == 'build':
     os.makedirs(OUT, exist_ok=True)
     allr = {c: build(c) for c in CASES}
     json.dump(allr, open(os.path.join(OUT, 'build.json'), 'w'), indent=1)
     log('build', json.dumps({c: (v['hook_mm3'], v['common_mm3'], v.get('head_side_mm')) for c, v in allr.items()}))
+elif MODE == 'ladder':
+    ladder()
 elif MODE == 'asm':
     asm()
 elif MODE == 'check':

@@ -1,0 +1,46 @@
+{"t": 0.057, "event": "recording started: FreeCAD 1.1.4, gap01.FCStd open"}
+{"t": 4.379, "event": "double-click: open Params"}
+{"t": 9.644, "event": "cell B3: gap", "x": 855, "y": 518, "button": 1}
+{"t": 11.353, "event": "typed 0.2", "text": "0.2"}
+{"t": 12.345, "event": "Enter", "keys": "Return"}
+{"t": 16.815, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 22.59, "event": "tab: back to the 3D view", "x": 768, "y": 1731, "button": 1}
+{"t": 26.017, "event": "key 5: bottom view", "keys": "5"}
+{"t": 27.851, "event": "(view fitted)"}
+{"t": 35.545, "event": "wheel: zoom on the left wall"}
+{"t": 39.305, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 44.46, "event": "left: the slot's wall edge", "x": 1479, "y": 829, "button": 1}
+{"t": 49.062, "event": "left: Ctrl + the rib's wall edge", "x": 1479, "y": 880, "button": 1}
+{"t": 57.856, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 60.663, "event": "key 5: bottom view", "keys": "5"}
+{"t": 62.437, "event": "(view fitted)"}
+{"t": 70.054, "event": "wheel: zoom on the right wall"}
+{"t": 74.04, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 79.178, "event": "right: the slot's wall edge", "x": 1479, "y": 1127, "button": 1}
+{"t": 83.821, "event": "right: Ctrl + the rib's wall edge", "x": 1479, "y": 1075, "button": 1}
+{"t": 92.509, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 96.097, "event": "double-click: open Params"}
+{"t": 101.378, "event": "cell B3: gap", "x": 855, "y": 518, "button": 1}
+{"t": 103.092, "event": "typed 0.3", "text": "0.3"}
+{"t": 104.087, "event": "Enter", "keys": "Return"}
+{"t": 108.467, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 114.234, "event": "tab: back to the 3D view", "x": 768, "y": 1731, "button": 1}
+{"t": 117.715, "event": "key 5: bottom view", "keys": "5"}
+{"t": 119.624, "event": "(view fitted)"}
+{"t": 127.42, "event": "wheel: zoom on the left wall"}
+{"t": 131.419, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 136.708, "event": "left: the slot's wall edge", "x": 1479, "y": 803, "button": 1}
+{"t": 141.308, "event": "left: Ctrl + the rib's wall edge", "x": 1479, "y": 880, "button": 1}
+{"t": 150.275, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 153.161, "event": "key 5: bottom view", "keys": "5"}
+{"t": 155.083, "event": "(view fitted)"}
+{"t": 162.777, "event": "wheel: zoom on the right wall"}
+{"t": 166.711, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 171.871, "event": "right: the slot's wall edge", "x": 1479, "y": 1152, "button": 1}
+{"t": 176.483, "event": "right: Ctrl + the rib's wall edge", "x": 1479, "y": 1075, "button": 1}
+{"t": 185.378, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 187.827, "event": "(iso view)"}
+{"t": 190.656, "event": "empty space: nothing selected", "x": 1500, "y": 1500, "button": 1}
+{"t": 194.432, "event": "tree: Hook (the whole body)", "x": 158, "y": 372, "button": 1}
+{"t": 197.208, "event": "tree: Ctrl + Rail (the whole body)", "x": 151, "y": 631, "button": 1}
+{"t": 201.092, "event": "Measure (two whole bodies selected)", "x": 1486, "y": 88, "button": 1}

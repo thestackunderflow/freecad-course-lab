@@ -1,0 +1,12 @@
+typo
+prepped typo
+1
+1
+typo left edges 1496 932 1496 880
+typo left measure: combo:Angle field:90.00\u00b0 
+1
+typo right edges 1496 1024 1496 1075
+typo right measure: combo:Distance Free field:0.19 mm 
+saved
+TAKE P2T DONE
+FC8 check {"common_mm3": 72.0, "head_side_mm": {"left": -0.2, "right": -0.2}, "used": ["Hook", "Rail"], "bodies": {"Hook": 17332.0, "Rail": 12000.0}}

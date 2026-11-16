@@ -1,0 +1,15 @@
+{"t": 0.081, "event": "recording started: FreeCAD 1.1.4, typo.FCStd open"}
+{"t": 3.65, "event": "key 5: bottom view", "keys": "5"}
+{"t": 5.528, "event": "(view fitted)"}
+{"t": 13.329, "event": "wheel: zoom on the left wall"}
+{"t": 17.423, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 22.613, "event": "left: the slot's wall edge", "x": 1496, "y": 932, "button": 1}
+{"t": 27.176, "event": "left: Ctrl + the rib's wall edge", "x": 1496, "y": 880, "button": 1}
+{"t": 35.843, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 38.657, "event": "key 5: bottom view", "keys": "5"}
+{"t": 40.551, "event": "(view fitted)"}
+{"t": 48.174, "event": "wheel: zoom on the right wall"}
+{"t": 52.12, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 57.237, "event": "right: the slot's wall edge", "x": 1496, "y": 1024, "button": 1}
+{"t": 61.738, "event": "right: Ctrl + the rib's wall edge", "x": 1496, "y": 1075, "button": 1}
+{"t": 70.29, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

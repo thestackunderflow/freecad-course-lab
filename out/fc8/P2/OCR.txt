@@ -1,0 +1,3 @@
+SCANNED /lab/out/fc8/P2/P2F/screen.mp4 frames=106 hits=0
+SCANNED /lab/out/fc8/P2/P2T/screen.mp4 frames=37 hits=0
+SCANNED stills=7 hits=0

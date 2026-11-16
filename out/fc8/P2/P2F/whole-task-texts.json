@@ -1,0 +1,1 @@
+[["QSint::ActionLabel", "Measurement", [2507, 613]], ["QLabel", "Mode:", [2230, 705]], ["QComboBox", "combo:Distance Free", [2604, 705]], ["QLabel", "Show Delta:", [2262, 745]], ["QLabel", "Result:", [2233, 783]], ["QLineEdit", "field:0.00 mm", [2604, 783]], ["QPushButton", "Close", [2529, 1665]], ["QPushButton", "Save", [2730, 1665]], ["QPushButton", "Reset", [2327, 1665]]]

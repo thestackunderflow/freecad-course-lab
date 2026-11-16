@@ -1,0 +1,26 @@
+gap01
+prepped gap01
+1
+gap cell 855 518
+3D tab 768 1731
+gap 0.2: {"common_mm3": 0.0, "solids": 0}
+1
+g02 left edges 1479 829 1479 880
+g02 left measure: combo:Distance field:0.20 mm 
+1
+g02 right edges 1479 1127 1479 1075
+g02 right measure: combo:Distance field:0.20 mm 
+gap cell 855 518
+3D tab 768 1731
+gap 0.3: {"common_mm3": 0.0, "solids": 0}
+1
+g03 left edges 1479 803 1479 880
+g03 left measure: combo:Distance field:0.30 mm 
+1
+g03 right edges 1479 1152 1479 1075
+g03 right measure: combo:Distance field:0.30 mm 
+1
+whole measure: combo:Distance Free field:0.00 mm 
+saved
+TAKE P2F DONE
+FC8 check {"common_mm3": 0.0, "head_side_mm": {"left": 0.3, "right": 0.3}, "used": ["Hook", "Rail"], "bodies": {"Hook": 16468.0, "Rail": 12000.0}}
