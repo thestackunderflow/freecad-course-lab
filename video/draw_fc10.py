@@ -52,7 +52,8 @@ CC_SAVE = (40, 1625, 1110, 80)      # the input row's text (the greyed "save the
 FULL_PX, FULL_K = 56, 0.8           # full window: 2880 + 2 x 160 pad = 3200 -> 2560
 SMALL_PX, SMALL_K = 24, 2560 / 704  # the Measurement / message zoom: 704 px wide
 SHORT_PX, SHORT_K = 32, 1080 / 444  # cut 2: the Short's close-up rect 444 px wide (was 30 px in 690: too small)
-SHORT_MEAS_R = [2286, 580, 444, 444]   # = shorts-footage-fc10.py RECTS['meas'] (the Result values x ~2303-2715)
+SHORT_MEAS_R = [2286, 640, 444, 444]   # = shorts-footage-fc10.py RECTS['meas'] (the Result values x ~2303-2715; cut 3:
+#                                         from y 640, below the "Measurement" heading the 444 px width cut to "surement")
 SHORT_MSG_R = [2190, 600, 484, 484]    # = RECTS['msg'] (the message x 2196-2666)
 SHORT_MEAS_XY = (2300, 806)            # under the Result row, left-aligned with its values
 SHORT_MSG_XY = (2200, 790)             # under the solver message
@@ -112,6 +113,9 @@ def pin(d, x, y, col, r=22):
     d.line((x, y + r, x, y + r + 40), fill=col, width=7)
 
 
+RULER_TAG_XY = (200, 60)   # cut 3: left of the note's column (x 1000-1400: the build-3 arrow + dashed line ran through it)
+
+
 # --- F2: the sticky note -------------------------------------------------------------------------------------------------
 def card_note(step):
     """1 a square note on a whiteboard against a ruler, 2 arrows: 2 ways to move, 3 taller with no pin: top up? bottom
@@ -126,7 +130,7 @@ def card_note(step):
     for i in range(16):
         x = 560 + i * 96
         d.line((x, ry, x, ry + (40 if i % 2 == 0 else 24)), fill=c1, width=5)
-    text(d, (560, ry + 60), 'ruler: keeps it straight', 52, c1)
+    text(d, (RULER_TAG_XY[0], ry + RULER_TAG_XY[1]), 'ruler: keeps it straight', 52, c1)
     if step >= 2:
         c2 = BLUE if step == 2 else DONE
         biarrow(d, x0 - 300, 760, x0 - 60, 760, c2)

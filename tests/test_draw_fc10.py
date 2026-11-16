@@ -189,3 +189,13 @@ def test_cut2_redaction_box_restored_after_the_header(drawn):
         assert line[(600 - d.TERM_X0) // d.TERM_COL + 1:][:len(want)] == want, run
         ink = [im.getpixel((x, y)) for x in range(603, 918) for y in range(125, 165)]
         assert sum(1 for p in ink if p[0] < 160) > 400, run           # the words are drawn
+
+
+def test_cut3_ruler_tag_clear_of_the_bottom_arrow():
+    """Cut 3 (WATCH-fc10-cut2: the "bottom down" arrow and dashed line (x 1000-1400 from build 3) ran through "ruler:
+    keeps it straight"): the tag sits left of the note's column, its right edge 40 px+ short of x 1000."""
+    from PIL import ImageFont
+    f = ImageFont.truetype(d.b.B, 52)
+    x = d.RULER_TAG_XY[0]
+    assert x + f.getlength('ruler: keeps it straight') <= 1000 - 40
+    assert x >= d.SAFE[0]
