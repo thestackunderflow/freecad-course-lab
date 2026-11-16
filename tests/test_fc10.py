@@ -96,3 +96,17 @@ def test_prereg_classes(check, stopped, cls):
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
     from lab.fc10score import classify
     assert classify(check, stopped) == cls
+
+
+def test_unpinned_80_tries_are_11_distinct_tries_from_the_raw_logs():
+    """The F8 card says "11 tries": 2 GUI G0 runs (each logged twice, GUI + its headless re-read: counted once),
+    take A (filmed), the build's unpinned_80 and the 7 headless G0 tries (60->80 + repeats 1-6)."""
+    if not os.path.exists(os.path.join(HERE, 'NUMBERS.json')):
+        pytest.skip('NUMBERS.json not written yet')
+    tries = load('NUMBERS.json')['g0']['unpinned_80_tries']
+    names = [t['try'] for t in tries]
+    assert len(tries) == 11 and len(set(names)) == 11, names
+    drops = sorted(round(-t['zmin'], 2) for t in tries)
+    assert drops == [1.32] * 7 + [6.97] * 3 + [10.39], drops
+    for t in tries:
+        assert abs(t['zmax'] - t['zmin'] - 80) < 1e-3 and t['zmin'] <= -1.0

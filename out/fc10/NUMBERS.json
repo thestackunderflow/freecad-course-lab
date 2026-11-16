@@ -309,67 +309,67 @@
   "verdict": "out/fc10/G0/VERDICT.txt",
   "unpinned_80_tries": [
    {
-    "try": "q2-unpinned-run1",
-    "zmin": -10.3908,
-    "zmax": 69.6092,
-    "hole_to_top": 4.6092
-   },
-   {
-    "try": "q2-unpinned-run1",
+    "try": "G0 GUI unpinned-run1",
     "zmin": -10.390771,
     "zmax": 69.609229,
     "hole_to_top": 4.609229
    },
    {
-    "try": "q2-unpinned-run2",
-    "zmin": -6.9676,
-    "zmax": 73.0324,
-    "hole_to_top": 8.0324
-   },
-   {
-    "try": "q2-unpinned-run2",
+    "try": "G0 GUI unpinned-run2",
     "zmin": -6.967565,
     "zmax": 73.032435,
     "hole_to_top": 8.032435
    },
    {
-    "try": "q2",
+    "try": "take A (GUI, filmed)",
     "zmin": -1.320832,
     "zmax": 78.679168,
     "hole_to_top": 13.679168
    },
    {
-    "try": "q2",
-    "zmin": -1.320832,
-    "zmax": 78.679168,
-    "hole_to_top": 13.679168
-   },
-   {
-    "try": "q2",
-    "zmin": -1.320832,
-    "zmax": 78.679168,
-    "hole_to_top": 13.679168
-   },
-   {
-    "try": "q2",
+    "try": "build unpinned_80 (headless)",
     "zmin": -6.967565,
     "zmax": 73.032435,
     "hole_to_top": 8.032435
    },
    {
-    "try": "q2",
+    "try": "G0 headless 60->80",
     "zmin": -1.320832,
     "zmax": 78.679168,
     "hole_to_top": 13.679168
    },
    {
-    "try": "q2",
+    "try": "G0 headless repeat 1",
     "zmin": -1.320832,
     "zmax": 78.679168,
     "hole_to_top": 13.679168
    },
    {
-    "try": "q2",
+    "try": "G0 headless repeat 2",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "G0 headless repeat 3",
+    "zmin": -6.967565,
+    "zmax": 73.032435,
+    "hole_to_top": 8.032435
+   },
+   {
+    "try": "G0 headless repeat 4",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "G0 headless repeat 5",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "G0 headless repeat 6",
     "zmin": -1.320832,
     "zmax": 78.679168,
     "hole_to_top": 13.679168

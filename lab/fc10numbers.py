@@ -41,11 +41,20 @@ def take(t):
 
 def g0():
     log = txt('G0', 'g0-log.txt')
+    # 11 distinct unpinned 60 -> 80 tries, each counted once: the two G0 GUI runs (by their headless re-read of the GUI
+    # file; the "GUI after" line is the same try), take A (filmed GUI), the build's unpinned_80 (P/build.json) and the
+    # seven headless G0 tries ("q2 headless 60->80" + "q2 headless repeat 1..6"; the 100 repeats are not 80 tries)
     tries = []
-    for m in re.finditer(r'^(q2[-\w ]*?)(?: GUI after| headless[^:]*|): (?:FC10 check )?(\{.*\})$', log, re.M):
-        d = json.loads(m.group(2))
-        if d.get('dof') == 2 and abs(d.get('zmax', 0) - d.get('zmin', 0) - 80) < 1e-3:
-            tries.append({'try': m.group(1).strip(), 'zmin': d['zmin'], 'zmax': d['zmax'], 'hole_to_top': d['hole_to_top']})
+
+    def add(name, d):
+        if d and d.get('dof') == 2 and abs(d.get('zmax', 0) - d.get('zmin', 0) - 80) < 1e-3:
+            tries.append({'try': name, 'zmin': d['zmin'], 'zmax': d['zmax'], 'hole_to_top': d['hole_to_top']})
+    for m in re.finditer(r'^(q2-unpinned-run\d) headless check of the GUI file: FC10 check (\{.*\})$', log, re.M):
+        add('G0 GUI ' + m.group(1)[3:], json.loads(m.group(2)))
+    add('take A (GUI, filmed)', (j('A', 'check.json') or {}))
+    add('build unpinned_80 (headless)', (j('P', 'build.json') or {}).get('unpinned_80'))
+    for m in re.finditer(r'^q2 headless (60->80 of the start file|repeat \d): FC10 check (\{.*\})$', log, re.M):
+        add('G0 headless ' + m.group(1).replace(' of the start file', ''), json.loads(m.group(2)))
     h100 = [json.loads(m.group(1)) for m in re.finditer(r'^q2 headless 100 repeat \d: FC10 check (\{.*\})$', log, re.M)]
     return {'verdict': 'out/fc10/G0/VERDICT.txt', 'unpinned_80_tries': tries,
             'unpinned_100_headless': [{'zmin': d['zmin'], 'zmax': d['zmax'], 'hole_to_top': d['hole_to_top'],
