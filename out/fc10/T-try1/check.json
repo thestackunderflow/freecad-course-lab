@@ -1,0 +1,157 @@
+{
+ "used": "Body",
+ "zmin": -9.14988,
+ "zmax": 50.85012,
+ "xmin": 2.03817,
+ "xmax": 27.03817,
+ "ymin": -20.0,
+ "ymax": 0.0,
+ "volume_mm3": 8420.4784,
+ "solids": 1,
+ "hole_faces": 1,
+ "hole_z": 45.0,
+ "hole_y": -10.0,
+ "sketch_hole_z": 45.0,
+ "sketch_hole_y": -10.0,
+ "hole_to_top": 5.85012,
+ "sketch_hole_to_top": 5.85012,
+ "hole_in_plate": true,
+ "sketch": "HookSketch",
+ "solve": 0,
+ "dof": 2,
+ "constraints": 22,
+ "by_type": {
+  "Coincident": 8,
+  "Horizontal": 4,
+  "Vertical": 4,
+  "Distance": 5,
+  "DistanceY": 1
+ },
+ "redundant": [],
+ "conflicting": [],
+ "origin_tied": false,
+ "expressions": [
+  [
+   ".Constraints.arm_thickness",
+   "Params.thickness"
+  ],
+  [
+   ".Constraints.hook_depth",
+   "Params.hook_depth"
+  ],
+  [
+   ".Constraints.lip_height",
+   "Params.lip_height"
+  ],
+  [
+   ".Constraints.lip_thickness",
+   "Params.thickness"
+  ],
+  [
+   ".Constraints.plate_height",
+   "Params.plate_height"
+  ],
+  [
+   ".Constraints.thickness",
+   "Params.thickness"
+  ]
+ ],
+ "sketch_bbox": [
+  2.03817,
+  -9.14988,
+  27.03817,
+  50.85012
+ ],
+ "features": [
+  [
+   "Pad",
+   "Pad",
+   true
+  ],
+  [
+   "Pocket",
+   "Pocket",
+   true
+  ]
+ ],
+ "sheet": {
+  "plate_height": 60,
+  "thickness": 5,
+  "hook_depth": 25,
+  "lip_height": 10,
+  "width": 20
+ },
+ "doc": "/lab/out/fc10/T/end.FCStd",
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Hook",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "HookSketch",
+   "HookSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad",
+   "Pad",
+   "PartDesign::Pad"
+  ],
+  [
+   "HoleSketch",
+   "HoleSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pocket",
+   "Pocket",
+   "PartDesign::Pocket"
+  ]
+ ]
+}

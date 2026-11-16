@@ -1,0 +1,36 @@
+
+● plate_height is now 80, and the hook is 20
+  mm taller (the plate's top edge moved from
+  z=60 to z=80).
+
+  Degrees of freedom in HookSketch
+  - Before: 2. Every edge was already
+    dimensioned and kept horizontal or
+    vertical, but nothing tied the profile to
+    the origin, so it could slide freely in x
+    and y.
+  - After: 0, so the sketch is fully
+    constrained, with no conflicting or
+    redundant constraints. I added one
+    constraint: the corner at the start of the
+    bottom edge is coincident with the sketch
+    origin.
+
+  Height change
+  - I set plate_height to 80 in the Params
+    spreadsheet (cell B1), which the sketch's
+    plate_height constraint reads through its
+    expression.
+  - After the change the sketch still has 0
+    degrees of freedom, and Pad and Pocket
+    both recompute cleanly with a valid shape.
+  - The hole follows the new height, because
+    its position is driven by plate_height -
+    15. It moved from z=45 to z=65.
+
+✻ Cooked for 23s · done 2:27 PM
+
+──────────────────────────────────────────────
+❯ save the document
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

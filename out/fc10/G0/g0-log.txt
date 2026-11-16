@@ -1,0 +1,56 @@
+open: hook
+live60: {"dof": 2, "constraints": 22, "zmin": 0.0, "zmax": 60.0, "xmin": 0.0, "hole_z": 45.0, "hole_to_top": 15.0, "volume": 8420.478, "plate_height": 60}
+HookSketch row 237 469
+q1 solver_text: ['Under-constrained: ', '2 Degrees of Freedom']
+q1 link: none
+q1 coincident cmd: {'name': 'Sketcher_ConstrainCoincidentUnified', 'menuText': 'Coincident Constraint', 'toolTip': 'Constrains the selected elements to be coincident', 'whatsThis': 'Sketcher_ConstrainCoincidentUnified', 'statusTip': 'Constrains the selected elements to be coincident', 'pixmap': 'Constraint_Coincident', 'shortcut': 'C'}
+q1 coincident cmd2: {'name': 'Sketcher_ConstrainCoincident', 'menuText': 'Coincident Constraint', 'toolTip': 'Constrains the selected elements to be coincident', 'whatsThis': 'Sketcher_ConstrainCoincident', 'statusTip': 'Constrains the selected elements to be coincident', 'pixmap': 'Constraint_PointOnPoint', 'shortcut': ''}
+q1 lock cmd: {'name': 'Sketcher_ConstrainLock', 'menuText': 'Lock Position', 'toolTip': 'Constrains the selected vertices by adding horizontal and vertical distance constraints', 'whatsThis': 'Sketcher_ConstrainLock', 'statusTip': 'Constrains the selected vertices by adding horizontal and vertical distance constraints', 'pixmap': 'Constraint_Lock', 'shortcut': 'K, L'}
+q1 button unified: 1161 228 plain: none
+q1 link label at 2539 752
+'2 Degrees of Freedom'  #0061a7
+q1 selection after link click: [('HookSketch', ['Vertex1', 'Vertex2', 'Vertex3', 'Vertex4', 'Vertex5', 'Vertex6', 'Vertex7', 'Vertex8', 'Vertex9', 'Vertex10', 'Vertex11', 'Vertex12', 'Vertex13', 'Vertex14', 'Vertex15', 'Vertex16'])]
+look Front 12 0 30 90
+q4 corner 1487 1466 origin 1487 1466
+q4 after click: [('HookSketch', ['Vertex1'])]
+q4 after ctrl-click same spot: []
+q4d box select: [('HookSketch', ['Vertex1', 'Vertex16', 'RootPoint'])]
+q4e box select: [('HookSketch', ['Vertex1', 'Vertex16', 'RootPoint'])]
+q4e solver_text: ['Fully constrained']
+constraints 23 [('Coincident', 0, 1, -1, 1)] redundant []
+q4g after undo: ['Under-constrained: ', '2 Degrees of Freedom']
+q4g tool-first two clicks: ['Under-constrained: ', '2 Degrees of Freedom']
+constraints 22 []
+q4g after Esc: ['Under-constrained: ', '2 Degrees of Freedom']
+q3 back line mid 1487 986
+q3 corner after drag 3.787 2.654
+q3 live after close: {"dof": 2, "constraints": 22, "zmin": 2.6544, "zmax": 62.6544, "xmin": 3.787, "hole_z": 45.0, "hole_to_top": 17.6544, "volume": 8420.478, "plate_height": 60}
+q2-unpinned-run1 before: {"dof": 2, "constraints": 22, "zmin": 0.0, "zmax": 60.0, "xmin": 0.0, "hole_z": 45.0, "hole_to_top": 15.0, "volume": 8420.478, "plate_height": 60}
+q2-unpinned-run1 GUI after: {"dof": 2, "constraints": 22, "zmin": -10.3908, "zmax": 69.6092, "xmin": 0.0, "hole_z": 65.0, "hole_to_top": 4.6092, "volume": 10420.478, "plate_height": 80}
+q2-unpinned-run1 headless check of the GUI file: FC10 check {"dof": 2, "zmin": -10.390771, "zmax": 69.609229, "xmin": 0.0, "hole_to_top": 4.609229, "sketch_hole_to_top": 4.609229, "volume_mm3": 10420.4784, "constraints": 22}
+q2-unpinned-run2 before: {"dof": 2, "constraints": 22, "zmin": 0.0, "zmax": 60.0, "xmin": 0.0, "hole_z": 45.0, "hole_to_top": 15.0, "volume": 8420.478, "plate_height": 60}
+q2-unpinned-run2 GUI after: {"dof": 2, "constraints": 22, "zmin": -6.9676, "zmax": 73.0324, "xmin": 0.0, "hole_z": 65.0, "hole_to_top": 8.0324, "volume": 10420.478, "plate_height": 80}
+q2-unpinned-run2 headless check of the GUI file: FC10 check {"dof": 2, "zmin": -6.967565, "zmax": 73.032435, "xmin": 0.0, "hole_to_top": 8.032435, "sketch_hole_to_top": 8.032435, "volume_mm3": 10420.4784, "constraints": 22}
+q2-pinned before: {"dof": 0, "constraints": 23, "zmin": 0.0, "zmax": 60.0, "xmin": 0.0, "hole_z": 45.0, "hole_to_top": 15.0, "volume": 8420.478, "plate_height": 60}
+q2-pinned GUI after: {"dof": 0, "constraints": 23, "zmin": 0.0, "zmax": 80.0, "xmin": 0.0, "hole_z": 65.0, "hole_to_top": 15.0, "volume": 10420.478, "plate_height": 80}
+q2-pinned headless check of the GUI file: FC10 check {"dof": 0, "zmin": -0.0, "zmax": 80.0, "xmin": 0.0, "hole_to_top": 15.0, "sketch_hole_to_top": 15.0, "volume_mm3": 10420.4784, "constraints": 23}
+q2 headless 60->80 of the start file: FC10 check {"dof": 2, "zmin": -1.320832, "zmax": 78.679168, "xmin": 0.0, "hole_to_top": 13.679168, "sketch_hole_to_top": 13.679168, "volume_mm3": 10420.4784, "constraints": 22}
+q2 headless repeat 1: FC10 check {"dof": 2, "zmin": -1.320832, "zmax": 78.679168, "xmin": 0.0, "hole_to_top": 13.679168, "sketch_hole_to_top": 13.679168, "volume_mm3": 10420.4784, "constraints": 22}
+q2 headless repeat 2: FC10 check {"dof": 2, "zmin": -1.320832, "zmax": 78.679168, "xmin": 0.0, "hole_to_top": 13.679168, "sketch_hole_to_top": 13.679168, "volume_mm3": 10420.4784, "constraints": 22}
+q2 headless repeat 3: FC10 check {"dof": 2, "zmin": -6.967565, "zmax": 73.032435, "xmin": 0.0, "hole_to_top": 8.032435, "sketch_hole_to_top": 8.032435, "volume_mm3": 10420.4784, "constraints": 22}
+q2 headless repeat 4: FC10 check {"dof": 2, "zmin": -1.320832, "zmax": 78.679168, "xmin": 0.0, "hole_to_top": 13.679168, "sketch_hole_to_top": 13.679168, "volume_mm3": 10420.4784, "constraints": 22}
+q2 headless repeat 5: FC10 check {"dof": 2, "zmin": -1.320832, "zmax": 78.679168, "xmin": 0.0, "hole_to_top": 13.679168, "sketch_hole_to_top": 13.679168, "volume_mm3": 10420.4784, "constraints": 22}
+q2 headless repeat 6: FC10 check {"dof": 2, "zmin": -1.320832, "zmax": 78.679168, "xmin": 0.0, "hole_to_top": 13.679168, "sketch_hole_to_top": 13.679168, "volume_mm3": 10420.4784, "constraints": 22}
+q2 headless 100 repeat 1: FC10 check {"dof": 2, "zmin": -19.225637, "zmax": 80.774363, "xmin": 0.0, "hole_to_top": null, "sketch_hole_to_top": -4.225637, "volume_mm3": 12500.0, "constraints": 22}
+q2 headless 100 repeat 2: FC10 check {"dof": 2, "zmin": -3.069834, "zmax": 96.930166, "xmin": 0.0, "hole_to_top": 11.930166, "sketch_hole_to_top": 11.930166, "volume_mm3": 12420.4784, "constraints": 22}
+q2 headless 100 repeat 3: FC10 check {"dof": 2, "zmin": -3.069834, "zmax": 96.930166, "xmin": 0.0, "hole_to_top": 11.930166, "sketch_hole_to_top": 11.930166, "volume_mm3": 12420.4784, "constraints": 22}
+q5 rect corners at 1613 858 / 1909 627
+q5 rect button: none
+q5 solver_text: []
+q5 drawn 0 geos [] DoF 0 []
+q5 in edit: <View provider geometry object at 0x5b7a8b9a7b30>
+q5 rect corners at 1612 858 / 1909 627
+q5 solver_text: ['Under-constrained: ', '4 Degrees of Freedom']
+q5 drawn 4 cons ['Coincident', 'Coincident', 'Coincident', 'Coincident', 'Horizontal', 'Horizontal', 'Vertical', 'Vertical'] DoF 4 [(30.13, 19.68), (75.22, 19.68), (75.22, 54.9), (30.13, 54.9)]
+q1 pinned label 'Fully constrained'
+q3 pinned live after drag + close: {"dof": 0, "constraints": 23, "zmin": 0.0, "zmax": 60.0, "xmin": 0.0, "hole_z": 45.0, "hole_to_top": 15.0, "volume": 8420.478, "plate_height": 60}

@@ -1,0 +1,36 @@
+
+✻ Cooked for 23s · done 2:27 PM
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+   Settings  Status   Config   Usage
+    Stats
+
+   Session
+
+   Total cost:            $0.1250
+   Total duration (API):  23s
+   Total duration (wall): 1m 18s
+   Total code changes:    0 lines added, 0
+   lines removed
+   Usage by model:
+       claude-haiku-5-5:  1.2k input, 22
+   output, 0 cache read, 0 cache write
+   ($0.0001)
+      claude-sonnet-5-5:  524 input, 2.4k
+   output, 352.2k cache read, 16.2k cache
+   write ($0.1248)
+   Prompt cache (main):   8 requests · 95%
+   of input tokens from cache · no misses ·
+   warm (1h TTL, last activity 11s ago)
+
+   Current week (all models) · Resets Nov
+   17, 2am (UTC)
+   █████████████████████████
+
+   57% used
+
+   Current week (Fable) · Resets Nov 17,
+   2am (UTC)
+   ▉
+
+   2% used
+                                            ↓

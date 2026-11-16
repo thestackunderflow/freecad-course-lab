@@ -1,0 +1,32 @@
+hook
+prepped hook
+1
+start: {"dof": 2, "constraints": 22, "zmin": 0.0, "zmax": 60.0, "xmin": 0.0, "hole_z": 45.0, "hole_to_top": 15.0, "volume": 8420.478, "plate_height": 60}
+rows open: 237 469
+1
+look Front 12 0 30 90
+solver: ['Under-constrained: ', '2 Degrees of Freedom']
+corner px 1488 1466
+selection: [('HookSketch', ['Vertex1', 'Vertex16', 'RootPoint'])]
+solver: ['Fully constrained']
+plate_height cell 855 410
+3D tab 761 1731
+after 80: {"dof": 0, "constraints": 23, "zmin": 0.0, "zmax": 80.0, "xmin": 0.0, "hole_z": 65.0, "hole_to_top": 15.0, "volume": 10420.478, "plate_height": 80}
+1
+front x 0.0 z 0.0 80.0
+look Front 12 0 40 130
+front px: floor-left 1437 1429 floor-right 1991 1429 top-back 1547 542 bottom-back 1547 1429 at60 1547 764 at0 1547 1429
+top corner at 1547 542
+top measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 80.00 mm
+bottom corner at 1547 1429
+bottom measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 0.00 mm
+look Right 0 -10 40 110
+right px: top-mid 1681 461 hole 1681 658 floor 1681 1509
+1
+saved
+TAKE C DONE
+check: FC10 check {"dof": 0, "zmin": -0.0, "zmax": 80.0, "xmin": 0.0, "hole_to_top": 15.0, "sketch_hole_to_top": 15.0, "volume_mm3": 10420.4784, "constraints": 23}

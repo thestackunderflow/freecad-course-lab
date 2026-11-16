@@ -1,0 +1,1189 @@
+{
+ "freecad": "1.1.4 (fcc-app:1.1.4-0.1.28, freecad-mcp add-on + plug 0.1.28)",
+ "part": {
+  "plate_height": 60,
+  "thickness": 5,
+  "hook_depth": 25,
+  "lip_height": 10,
+  "width": 20,
+  "hole_mm": 4.5,
+  "hole_mm3": 79.5216,
+  "hook_mm3_no_hole_60": 8500
+ },
+ "cases": {
+  "pinned_60": {
+   "dof": 0,
+   "constraints": 23,
+   "by_type": {
+    "Coincident": 9,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": true,
+   "zmin": 0.0,
+   "zmax": 60.0,
+   "xmin": -0.0,
+   "hole_to_top": 15.0,
+   "sketch_hole_to_top": 15.0,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 8420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "pinned_80": {
+   "dof": 0,
+   "constraints": 23,
+   "by_type": {
+    "Coincident": 9,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": true,
+   "zmin": 0.0,
+   "zmax": 80.0,
+   "xmin": 0.0,
+   "hole_to_top": 15.0,
+   "sketch_hole_to_top": 15.0,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 10420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "pinned_100": {
+   "dof": 0,
+   "constraints": 23,
+   "by_type": {
+    "Coincident": 9,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": true,
+   "zmin": 0.0,
+   "zmax": 100.0,
+   "xmin": 0.0,
+   "hole_to_top": 15.0,
+   "sketch_hole_to_top": 15.0,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 12420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "pinned_80_100": {
+   "dof": 0,
+   "constraints": 23,
+   "by_type": {
+    "Coincident": 9,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": true,
+   "zmin": 0.0,
+   "zmax": 100.0,
+   "xmin": 0.0,
+   "hole_to_top": 15.0,
+   "sketch_hole_to_top": 15.0,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 12420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "unpinned_60": {
+   "dof": 2,
+   "constraints": 22,
+   "by_type": {
+    "Coincident": 8,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": false,
+   "zmin": 0.0,
+   "zmax": 60.0,
+   "xmin": -0.0,
+   "hole_to_top": 15.0,
+   "sketch_hole_to_top": 15.0,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 8420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "unpinned_80": {
+   "dof": 2,
+   "constraints": 22,
+   "by_type": {
+    "Coincident": 8,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": false,
+   "zmin": -6.967565,
+   "zmax": 73.032435,
+   "xmin": 0.0,
+   "hole_to_top": 8.032435,
+   "sketch_hole_to_top": 8.032435,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 10420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "unpinned_100": {
+   "dof": 2,
+   "constraints": 22,
+   "by_type": {
+    "Coincident": 8,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": false,
+   "zmin": -3.069834,
+   "zmax": 96.930166,
+   "xmin": 0.0,
+   "hole_to_top": 11.930166,
+   "sketch_hole_to_top": 11.930166,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 12420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "unpinned_80_100": {
+   "dof": 2,
+   "constraints": 22,
+   "by_type": {
+    "Coincident": 8,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": false,
+   "zmin": -2.641664,
+   "zmax": 97.358336,
+   "xmin": 0.0,
+   "hole_to_top": 12.358336,
+   "sketch_hole_to_top": 12.358336,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 12420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "yourturn": {
+   "dof_drawn": 4,
+   "dof_sized": 2,
+   "sized_corners": [
+    [
+     31.4294,
+     21.4294
+    ],
+    [
+     71.4294,
+     21.4294
+    ],
+    [
+     71.4294,
+     51.4294
+    ],
+    [
+     31.4294,
+     51.4294
+    ]
+   ],
+   "dof_pinned": 0,
+   "pinned_corner_before": 0.0,
+   "pinned_corner_after": 0.0,
+   "far_side_after": 60.0,
+   "width_after": 60.0,
+   "corners_after": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     60.0,
+     0.0
+    ],
+    [
+     60.0,
+     30.0
+    ],
+    [
+     0.0,
+     30.0
+    ]
+   ]
+  }
+ },
+ "g0": {
+  "verdict": "out/fc10/G0/VERDICT.txt",
+  "unpinned_80_tries": [
+   {
+    "try": "q2-unpinned-run1",
+    "zmin": -10.3908,
+    "zmax": 69.6092,
+    "hole_to_top": 4.6092
+   },
+   {
+    "try": "q2-unpinned-run1",
+    "zmin": -10.390771,
+    "zmax": 69.609229,
+    "hole_to_top": 4.609229
+   },
+   {
+    "try": "q2-unpinned-run2",
+    "zmin": -6.9676,
+    "zmax": 73.0324,
+    "hole_to_top": 8.0324
+   },
+   {
+    "try": "q2-unpinned-run2",
+    "zmin": -6.967565,
+    "zmax": 73.032435,
+    "hole_to_top": 8.032435
+   },
+   {
+    "try": "q2",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "q2",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "q2",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "q2",
+    "zmin": -6.967565,
+    "zmax": 73.032435,
+    "hole_to_top": 8.032435
+   },
+   {
+    "try": "q2",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "q2",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   },
+   {
+    "try": "q2",
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "hole_to_top": 13.679168
+   }
+  ],
+  "unpinned_100_headless": [
+   {
+    "zmin": -19.225637,
+    "zmax": 80.774363,
+    "hole_to_top": null,
+    "volume_mm3": 12500.0
+   },
+   {
+    "zmin": -3.069834,
+    "zmax": 96.930166,
+    "hole_to_top": 11.930166,
+    "volume_mm3": 12420.4784
+   },
+   {
+    "zmin": -3.069834,
+    "zmax": 96.930166,
+    "hole_to_top": 11.930166,
+    "volume_mm3": 12420.4784
+   }
+  ],
+  "pinned_80_gui": {
+   "dof": 0,
+   "constraints": 23,
+   "by_type": {
+    "Coincident": 9,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": true,
+   "zmin": -0.0,
+   "zmax": 80.0,
+   "xmin": 0.0,
+   "hole_to_top": 15.0,
+   "sketch_hole_to_top": 15.0,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 10420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "message_unpinned": "Under-constrained: 2 Degrees of Freedom",
+  "message_pinned": "Fully constrained",
+  "link_selects": "Vertex1..Vertex16 (every corner)",
+  "pin_route": "box around the corner (Vertex1, Vertex16, RootPoint) -> Coincident Constraint (one constraint)",
+  "ctrl_click_same_spot": "deselects the corner",
+  "coincident_menu_text": "Coincident Constraint",
+  "coincident_shortcut": "C",
+  "lock_menu_text": "Lock Position"
+ },
+ "takes": {
+  "A": {
+   "gui_measure": {
+    "top": {
+     "x": "Measurement | Mode: | combo:Position | Result: | field:0.00 mm",
+     "y": "-20.00 mm",
+     "z": "78.68 mm | Close | Save | Reset"
+    },
+    "bottom": {
+     "x": "Measurement | Mode: | combo:Position | Result: | field:0.00 mm",
+     "y": "-20.00 mm",
+     "z": "-1.32 mm | Close | Save | Reset"
+    }
+   },
+   "live": {
+    "start": {
+     "dof": 2,
+     "constraints": 22,
+     "zmin": 0.0,
+     "zmax": 60.0,
+     "xmin": 0.0,
+     "hole_z": 45.0,
+     "hole_to_top": 15.0,
+     "volume": 8420.478,
+     "plate_height": 60
+    },
+    "after 80": {
+     "dof": 2,
+     "constraints": 22,
+     "zmin": -1.3208,
+     "zmax": 78.6792,
+     "xmin": 0.0,
+     "hole_z": 65.0,
+     "hole_to_top": 13.6792,
+     "volume": 10420.478,
+     "plate_height": 80
+    }
+   },
+   "px": {
+    "front px": "floor-left 1305 1632 floor-right 2141 1632 top-back 1472 317 bottom-back 1472 1654 at60 1472 629 at0 1472 1632",
+    "right px": "top-mid 1682 317 hole 1682 545 floor 1682 1632"
+   },
+   "solver_text": [],
+   "selection": [],
+   "check": {
+    "dof": 2,
+    "constraints": 22,
+    "by_type": {
+     "Coincident": 8,
+     "Horizontal": 4,
+     "Vertical": 4,
+     "Distance": 5,
+     "DistanceY": 1
+    },
+    "origin_tied": false,
+    "zmin": -1.320832,
+    "zmax": 78.679168,
+    "xmin": 0.0,
+    "hole_to_top": 13.679168,
+    "sketch_hole_to_top": 13.679168,
+    "hole_in_plate": true,
+    "hole_faces": 1,
+    "volume_mm3": 10420.4784,
+    "solids": 1,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    },
+    "used": "Body",
+    "redundant": [],
+    "conflicting": []
+   },
+   "done": true
+  },
+  "B": {
+   "gui_measure": {
+    "top": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "80.00 mm"
+    },
+    "bottom": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "0.00 mm"
+    }
+   },
+   "live": {
+    "start": {
+     "dof": 0,
+     "constraints": 23,
+     "zmin": 0.0,
+     "zmax": 60.0,
+     "xmin": 0.0,
+     "hole_z": 45.0,
+     "hole_to_top": 15.0,
+     "volume": 8420.478,
+     "plate_height": 60
+    },
+    "after 80": {
+     "dof": 0,
+     "constraints": 23,
+     "zmin": 0.0,
+     "zmax": 80.0,
+     "xmin": 0.0,
+     "hole_z": 65.0,
+     "hole_to_top": 15.0,
+     "volume": 10420.478,
+     "plate_height": 80
+    }
+   },
+   "px": {
+    "front px": "floor-left 1304 1654 floor-right 2140 1654 top-back 1471 317 bottom-back 1471 1654 at60 1471 651 at0 1471 1654",
+    "right px": "top-mid 1681 317 hole 1681 567 floor 1681 1654"
+   },
+   "solver_text": [
+    "['Fully constrained']"
+   ],
+   "selection": [],
+   "check": {
+    "dof": 0,
+    "constraints": 23,
+    "by_type": {
+     "Coincident": 9,
+     "Horizontal": 4,
+     "Vertical": 4,
+     "Distance": 5,
+     "DistanceY": 1
+    },
+    "origin_tied": true,
+    "zmin": -0.0,
+    "zmax": 80.0,
+    "xmin": 0.0,
+    "hole_to_top": 15.0,
+    "sketch_hole_to_top": 15.0,
+    "hole_in_plate": true,
+    "hole_faces": 1,
+    "volume_mm3": 10420.4784,
+    "solids": 1,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    },
+    "used": "Body",
+    "redundant": [],
+    "conflicting": []
+   },
+   "done": true
+  },
+  "P": {
+   "gui_measure": {},
+   "live": {
+    "start": {
+     "dof": 2,
+     "constraints": 22,
+     "zmin": 0.0,
+     "zmax": 60.0,
+     "xmin": 0.0,
+     "hole_z": 45.0,
+     "hole_to_top": 15.0,
+     "volume": 8420.478,
+     "plate_height": 60
+    }
+   },
+   "px": {},
+   "solver_text": [
+    "['Under-constrained: ', '2 Degrees of Freedom']"
+   ],
+   "selection": [
+    "[('HookSketch', ['Vertex1', 'Vertex2', 'Vertex3', 'Vertex4', 'Vertex5', 'Vertex6', 'Vertex7', 'Vertex8', 'Vertex9', 'Vertex10', 'Vertex11', 'Vertex12', 'Vertex13', 'Vertex14', 'Vertex15', 'Vertex16'])]"
+   ],
+   "check": {
+    "dof": 2,
+    "constraints": 22,
+    "by_type": {
+     "Coincident": 8,
+     "Horizontal": 4,
+     "Vertical": 4,
+     "Distance": 5,
+     "DistanceY": 1
+    },
+    "origin_tied": false,
+    "zmin": -0.0,
+    "zmax": 60.0,
+    "xmin": 0.0,
+    "hole_to_top": 15.0,
+    "sketch_hole_to_top": 15.0,
+    "hole_in_plate": true,
+    "hole_faces": 1,
+    "volume_mm3": 8420.4784,
+    "solids": 1,
+    "sheet": {
+     "plate_height": 60,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    },
+    "used": "Body",
+    "redundant": [],
+    "conflicting": []
+   },
+   "done": true
+  },
+  "C": {
+   "gui_measure": {
+    "top": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "80.00 mm"
+    },
+    "bottom": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "0.00 mm"
+    }
+   },
+   "live": {
+    "start": {
+     "dof": 2,
+     "constraints": 22,
+     "zmin": 0.0,
+     "zmax": 60.0,
+     "xmin": 0.0,
+     "hole_z": 45.0,
+     "hole_to_top": 15.0,
+     "volume": 8420.478,
+     "plate_height": 60
+    },
+    "after 80": {
+     "dof": 0,
+     "constraints": 23,
+     "zmin": 0.0,
+     "zmax": 80.0,
+     "xmin": 0.0,
+     "hole_z": 65.0,
+     "hole_to_top": 15.0,
+     "volume": 10420.478,
+     "plate_height": 80
+    }
+   },
+   "px": {
+    "front px": "floor-left 1437 1429 floor-right 1991 1429 top-back 1547 542 bottom-back 1547 1429 at60 1547 764 at0 1547 1429",
+    "right px": "top-mid 1681 461 hole 1681 658 floor 1681 1509"
+   },
+   "solver_text": [
+    "['Under-constrained: ', '2 Degrees of Freedom']",
+    "['Fully constrained']"
+   ],
+   "selection": [
+    "[('HookSketch', ['Vertex1', 'Vertex16', 'RootPoint'])]"
+   ],
+   "check": {
+    "dof": 0,
+    "constraints": 23,
+    "by_type": {
+     "Coincident": 9,
+     "Horizontal": 4,
+     "Vertical": 4,
+     "Distance": 5,
+     "DistanceY": 1
+    },
+    "origin_tied": true,
+    "zmin": -0.0,
+    "zmax": 80.0,
+    "xmin": 0.0,
+    "hole_to_top": 15.0,
+    "sketch_hole_to_top": 15.0,
+    "hole_in_plate": true,
+    "hole_faces": 1,
+    "volume_mm3": 10420.4784,
+    "solids": 1,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    },
+    "used": "Body",
+    "redundant": [],
+    "conflicting": []
+   },
+   "done": true
+  },
+  "D": {
+   "gui_measure": {
+    "top": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "100.00 mm"
+    },
+    "bottom": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "0.00 mm"
+    }
+   },
+   "live": {
+    "start": {
+     "dof": 0,
+     "constraints": 23,
+     "zmin": 0.0,
+     "zmax": 80.0,
+     "xmin": 0.0,
+     "hole_z": 65.0,
+     "hole_to_top": 15.0,
+     "volume": 10420.478,
+     "plate_height": 80
+    },
+    "after 100": {
+     "dof": 0,
+     "constraints": 23,
+     "zmin": 0.0,
+     "zmax": 100.0,
+     "xmin": 0.0,
+     "hole_z": 85.0,
+     "hole_to_top": 15.0,
+     "volume": 12420.478,
+     "plate_height": 100
+    }
+   },
+   "px": {
+    "front px": "floor-left 1468 1466 floor-right 1948 1466 top-back 1564 505 bottom-back 1564 1466 at60 1564 889 at0 1564 1466",
+    "right px": "top-mid 1680 431 hole 1680 598 floor 1680 1540"
+   },
+   "solver_text": [
+    "['Fully constrained']"
+   ],
+   "selection": [],
+   "check": {
+    "dof": 0,
+    "constraints": 23,
+    "by_type": {
+     "Coincident": 9,
+     "Horizontal": 4,
+     "Vertical": 4,
+     "Distance": 5,
+     "DistanceY": 1
+    },
+    "origin_tied": true,
+    "zmin": -0.0,
+    "zmax": 100.0,
+    "xmin": 0.0,
+    "hole_to_top": 15.0,
+    "sketch_hole_to_top": 15.0,
+    "hole_in_plate": true,
+    "hole_faces": 1,
+    "volume_mm3": 12420.4784,
+    "solids": 1,
+    "sheet": {
+     "plate_height": 100,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    },
+    "used": "Body",
+    "redundant": [],
+    "conflicting": []
+   },
+   "done": true
+  },
+  "T": {
+   "gui_measure": {
+    "top": {
+     "x": "1.98 mm",
+     "y": "-20.00 mm",
+     "z": "50.85 mm"
+    },
+    "bottom": {
+     "x": "1.98 mm",
+     "y": "-20.00 mm",
+     "z": "-9.15 mm"
+    }
+   },
+   "live": {
+    "start": {
+     "dof": 2,
+     "constraints": 22,
+     "zmin": 0.0,
+     "zmax": 60.0,
+     "xmin": 0.0,
+     "hole_z": 45.0,
+     "hole_to_top": 15.0,
+     "volume": 8420.478,
+     "plate_height": 60
+    },
+    "after close": {
+     "dof": 2,
+     "constraints": 22,
+     "zmin": -9.1499,
+     "zmax": 50.8501,
+     "xmin": 1.9757,
+     "hole_z": 45.0,
+     "hole_to_top": 5.8501,
+     "volume": 8420.478,
+     "plate_height": 60
+    }
+   },
+   "px": {
+    "front px": "floor-left 1391 1379 floor-right 2046 1379 top-back 1548 712 bottom-back 1548 1498 at60 1522 593 at0 1522 1379",
+    "right px": "top-mid 1680 652 hole 1680 745 floor 1680 1466"
+   },
+   "solver_text": [
+    "['Under-constrained: ', '2 Degrees of Freedom']"
+   ],
+   "selection": [],
+   "check": {
+    "dof": 2,
+    "constraints": 22,
+    "by_type": {
+     "Coincident": 8,
+     "Horizontal": 4,
+     "Vertical": 4,
+     "Distance": 5,
+     "DistanceY": 1
+    },
+    "origin_tied": false,
+    "zmin": -9.14988,
+    "zmax": 50.85012,
+    "xmin": 1.97571,
+    "hole_to_top": 5.85012,
+    "sketch_hole_to_top": 5.85012,
+    "hole_in_plate": true,
+    "hole_faces": 1,
+    "volume_mm3": 8420.4784,
+    "solids": 1,
+    "sheet": {
+     "plate_height": 60,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    },
+    "used": "Body",
+    "redundant": [],
+    "conflicting": []
+   },
+   "done": true
+  },
+  "TB": {
+   "gui_measure": {
+    "top": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "60.00 mm"
+    },
+    "bottom": {
+     "x": "0.00 mm",
+     "y": "-20.00 mm",
+     "z": "0.00 mm"
+    }
+   },
+   "live": {
+    "start": {
+     "dof": 0,
+     "constraints": 23,
+     "zmin": 0.0,
+     "zmax": 60.0,
+     "xmin": 0.0,
+     "hole_z": 45.0,
+     "hole_to_top": 15.0,
+     "volume": 8420.478,
+     "plate_height": 60
+    },
+    "after close": {
+     "dof": 0,
+     "constraints": 23,
+     "zmin": 0.0,
+     "zmax": 60.0,
+     "xmin": 0.0,
+     "hole_z": 45.0,
+     "hole_to_top": 15.0,
+     "volume": 8420.478,
+     "plate_height": 60
+    }
+   },
+   "px": {
+    "front px": "floor-left 1392 1379 floor-right 2047 1379 top-back 1523 593 bottom-back 1523 1379 at60 1523 593 at0 1523 1379",
+    "right px": "top-mid 1681 505 hole 1681 745 floor 1681 1466"
+   },
+   "solver_text": [
+    "['Fully constrained']"
+   ],
+   "selection": [],
+   "check": {
+    "dof": 0,
+    "constraints": 23,
+    "by_type": {
+     "Coincident": 9,
+     "Horizontal": 4,
+     "Vertical": 4,
+     "Distance": 5,
+     "DistanceY": 1
+    },
+    "origin_tied": true,
+    "zmin": -0.0,
+    "zmax": 60.0,
+    "xmin": 0.0,
+    "hole_to_top": 15.0,
+    "sketch_hole_to_top": 15.0,
+    "hole_in_plate": true,
+    "hole_faces": 1,
+    "volume_mm3": 8420.4784,
+    "solids": 1,
+    "sheet": {
+     "plate_height": 60,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    },
+    "used": "Body",
+    "redundant": [],
+    "conflicting": []
+   },
+   "done": true
+  }
+ },
+ "controls": {
+  "takeA-80-to-100": {
+   "dof": 2,
+   "constraints": 22,
+   "by_type": {
+    "Coincident": 8,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": false,
+   "zmin": -2.641664,
+   "zmax": 97.358336,
+   "xmin": 0.0,
+   "hole_to_top": 12.358336,
+   "sketch_hole_to_top": 12.358336,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 12420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  },
+  "takeT-60-to-80": {
+   "dof": 2,
+   "constraints": 22,
+   "by_type": {
+    "Coincident": 8,
+    "Horizontal": 4,
+    "Vertical": 4,
+    "Distance": 5,
+    "DistanceY": 1
+   },
+   "origin_tied": false,
+   "zmin": -10.470712,
+   "zmax": 69.529288,
+   "xmin": 1.97571,
+   "hole_to_top": 4.529288,
+   "sketch_hole_to_top": 4.529288,
+   "hole_in_plate": true,
+   "hole_faces": 1,
+   "volume_mm3": 10420.4784,
+   "solids": 1,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   },
+   "used": "Body",
+   "redundant": [],
+   "conflicting": []
+  }
+ },
+ "claude_runs": {
+  "A1": {
+   "cost_usd": "0.1272",
+   "wall_s": 90,
+   "prompt": "Make this hook taller: set plate_height to 80.",
+   "guard": {
+    "stopped": false,
+    "estimate_usd": 0.1548,
+    "cap_usd": 0.45
+   },
+   "version": "2.1.308 (Claude Code)",
+   "checks": {
+    "after-hook.check.json": {
+     "dof": 2,
+     "constraints": 22,
+     "by_type": {
+      "Coincident": 8,
+      "Horizontal": 4,
+      "Vertical": 4,
+      "Distance": 5,
+      "DistanceY": 1
+     },
+     "origin_tied": false,
+     "zmin": -1.320832,
+     "zmax": 78.679168,
+     "xmin": 0.0,
+     "hole_to_top": 13.679168,
+     "sketch_hole_to_top": 13.679168,
+     "hole_in_plate": true,
+     "hole_faces": 1,
+     "volume_mm3": 10420.4784,
+     "solids": 1,
+     "sheet": {
+      "plate_height": 80,
+      "thickness": 5,
+      "hook_depth": 25,
+      "lip_height": 10,
+      "width": 20
+     },
+     "used": "Body",
+     "redundant": [],
+     "conflicting": []
+    }
+   },
+   "score": {
+    "class": "moved",
+    "stopped": false,
+    "tool_calls": [
+     "list_documents",
+     "get_objects",
+     "execute_code"
+    ],
+    "used_execute_code": true,
+    "hook": {
+     "dof": 2,
+     "zmin": -1.320832,
+     "zmax": 78.679168,
+     "hole_to_top": 13.679168,
+     "constraints": 22,
+     "by_type": {
+      "Coincident": 8,
+      "Horizontal": 4,
+      "Vertical": 4,
+      "Distance": 5,
+      "DistanceY": 1
+     },
+     "origin_tied": false,
+     "sheet": {
+      "plate_height": 80,
+      "thickness": 5,
+      "hook_depth": 25,
+      "lip_height": 10,
+      "width": 20
+     },
+     "volume_mm3": 10420.4784
+    },
+    "rules_added": 0
+   }
+  },
+  "B1": {
+   "cost_usd": "0.1250",
+   "wall_s": 109,
+   "prompt": "Make this hook taller: set plate_height to 80. Before you change anything, make the sketch fully constrained, with a corner on the origin, and tell me the degrees of freedom before and after.",
+   "guard": {
+    "stopped": false,
+    "estimate_usd": 0.1564,
+    "cap_usd": 0.45
+   },
+   "version": "2.1.308 (Claude Code)",
+   "checks": {
+    "after-hook.check.json": {
+     "dof": 0,
+     "constraints": 23,
+     "by_type": {
+      "Coincident": 9,
+      "Horizontal": 4,
+      "Vertical": 4,
+      "Distance": 5,
+      "DistanceY": 1
+     },
+     "origin_tied": true,
+     "zmin": -0.0,
+     "zmax": 80.0,
+     "xmin": 0.0,
+     "hole_to_top": 15.0,
+     "sketch_hole_to_top": 15.0,
+     "hole_in_plate": true,
+     "hole_faces": 1,
+     "volume_mm3": 10420.4784,
+     "solids": 1,
+     "sheet": {
+      "plate_height": 80,
+      "thickness": 5,
+      "hook_depth": 25,
+      "lip_height": 10,
+      "width": 20
+     },
+     "used": "Body",
+     "redundant": [],
+     "conflicting": []
+    }
+   },
+   "score": {
+    "class": "right + pinned",
+    "stopped": false,
+    "tool_calls": [
+     "list_documents",
+     "execute_code",
+     "execute_code",
+     "execute_code",
+     "execute_code",
+     "execute_code"
+    ],
+    "used_execute_code": true,
+    "hook": {
+     "dof": 0,
+     "zmin": -0.0,
+     "zmax": 80.0,
+     "hole_to_top": 15.0,
+     "constraints": 23,
+     "by_type": {
+      "Coincident": 9,
+      "Horizontal": 4,
+      "Vertical": 4,
+      "Distance": 5,
+      "DistanceY": 1
+     },
+     "origin_tied": true,
+     "sheet": {
+      "plate_height": 80,
+      "thickness": 5,
+      "hook_depth": 25,
+      "lip_height": 10,
+      "width": 20
+     },
+     "volume_mm3": 10420.4784
+    },
+    "rules_added": 1
+   }
+  }
+ }
+}

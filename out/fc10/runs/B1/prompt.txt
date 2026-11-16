@@ -1,0 +1,1 @@
+Make this hook taller: set plate_height to 80. Before you change anything, make the sketch fully constrained, with a corner on the origin, and tell me the degrees of freedom before and after.
