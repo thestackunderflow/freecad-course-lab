@@ -1,0 +1,25 @@
+{"t": 0.043, "event": "recording started: FreeCAD 1.1.4, rack.FCStd open (B)"}
+{"t": 4.456, "event": "double-click: LinearPattern (edit)"}
+{"t": 9.569, "event": "Length: select"}
+{"t": 9.977, "event": "Length: typed 120", "text": "120"}
+{"t": 11.528, "event": "Tab", "keys": "Tab"}
+{"t": 18.94, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 22.654, "event": "key 0: isometric", "keys": "0"}
+{"t": 23.958, "event": "(view fitted)"}
+{"t": 28.71, "event": "key 2: top view", "keys": "2"}
+{"t": 30.023, "event": "(view fitted)"}
+{"t": 32.691, "event": "key 2: top view", "keys": "2"}
+{"t": 33.969, "event": "(view fitted)"}
+{"t": 39.149, "event": "wheel: zoom in on left"}
+{"t": 43.319, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 48.53, "event": "left: first edge", "x": 830, "y": 848, "button": 1}
+{"t": 53.233, "event": "left: Ctrl + second edge", "x": 1328, "y": 973, "button": 1}
+{"t": 62.174, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 64.969, "event": "key 2: top view", "keys": "2"}
+{"t": 66.326, "event": "(view fitted)"}
+{"t": 70.029, "event": "middle-drag: pan left"}
+{"t": 76.14, "event": "wheel: zoom in on right"}
+{"t": 80.251, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 85.402, "event": "right: first edge", "x": 2207, "y": 929, "button": 1}
+{"t": 90.21, "event": "right: Ctrl + second edge", "x": 2357, "y": 892, "button": 1}
+{"t": 99.083, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

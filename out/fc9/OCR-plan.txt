@@ -1,0 +1,5 @@
+SCANNED /lab/out/fc9/A/screen.mp4 frames=59 hits=0
+SCANNED /lab/out/fc9/B/screen.mp4 frames=52 hits=0
+SCANNED /lab/out/fc9/C/screen.mp4 frames=61 hits=0
+SCANNED /lab/out/fc9/runs/A1/screen.mp4 frames=20 hits=0
+SCANNED /lab/out/fc9/runs/B1/screen.mp4 frames=27 hits=0

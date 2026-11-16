@@ -1,0 +1,18 @@
+rack
+prepped rack
+1
+rows open: 180 469 none
+direction box 2556 1162
+direction: [{"name": "LinearPattern", "mode": "Extent", "length": 100.0, "occ": 2, "dir": "(<GeoFeature object>, [''])", "solids": 1, "state": ["Up-to-date"], "expr": []}]
+Length = 180: [{"name": "LinearPattern", "mode": "Extent", "length": 180.0, "occ": 2, "dir": "(<GeoFeature object>, [''])", "solids": 2, "state": ["Up-to-date"], "expr": []}]
+Occurrences = 5: [{"name": "LinearPattern", "mode": "Extent", "length": 180.0, "occ": 5, "dir": "(<GeoFeature object>, [''])", "solids": 2, "state": ["Up-to-date"], "expr": []}]
+1
+1
+end-hook5 edges 2119 907 2244 939
+end-hook5 measure: combo:Distance field:20.00 mm 
+1
+hook4-end edges 2002 1009 2192 820
+hook4-end measure: combo:Distance field:5.00 mm 
+saved
+TAKE A DONE
+FC9 check {"hooks": 5, "left_gap_mm": 20.0, "right_gap_mm": 5.0, "solids": 2, "used": ["Body"]}

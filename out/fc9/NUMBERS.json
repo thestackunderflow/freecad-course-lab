@@ -1,0 +1,487 @@
+{
+ "freecad": "1.1.4 (fcc-app:1.1.4-0.1.28, freecad-mcp add-on + plug 0.1.28)",
+ "part": {
+  "rack_width": 180,
+  "width": 20,
+  "margin": 20,
+  "hooks": 5,
+  "hook_mm3": 8500,
+  "strip": "180 x 5 x 60"
+ },
+ "cases": {
+  "start": {
+   "hooks": 1,
+   "hooks_on_strip": 1,
+   "floating": [],
+   "left_gap_mm": 20.0,
+   "right_gap_mm": 140.0,
+   "air_mm": [],
+   "starts": [
+    20.0
+   ],
+   "solids": 1,
+   "volume_mm3": 62500.0,
+   "allow_compound": true
+  },
+  "trap": {
+   "hooks": 5,
+   "hooks_on_strip": 4,
+   "floating": [
+    [
+     200.0,
+     220.0
+    ]
+   ],
+   "left_gap_mm": 20.0,
+   "right_gap_mm": 5.0,
+   "air_mm": [
+    25.0,
+    25.0,
+    25.0,
+    25.0
+   ],
+   "starts": [
+    20.0,
+    65.0,
+    110.0,
+    155.0,
+    200.0
+   ],
+   "solids": 2,
+   "volume_mm3": 96500.0,
+   "length_mm": 180.0,
+   "occurrences": 5,
+   "allow_compound": true,
+   "rack_width": 180
+  },
+  "fix": {
+   "hooks": 5,
+   "hooks_on_strip": 5,
+   "floating": [],
+   "left_gap_mm": 20.0,
+   "right_gap_mm": 20.0,
+   "air_mm": [
+    10.0,
+    10.0,
+    10.0,
+    10.0
+   ],
+   "starts": [
+    20.0,
+    50.0,
+    80.0,
+    110.0,
+    140.0
+   ],
+   "solids": 1,
+   "volume_mm3": 96500.0,
+   "length_mm": 120.0,
+   "occurrences": 5,
+   "allow_compound": true,
+   "rack_width": 180
+  },
+  "proof": {
+   "hooks": 6,
+   "hooks_on_strip": 6,
+   "floating": [],
+   "left_gap_mm": 20.0,
+   "right_gap_mm": 20.0,
+   "air_mm": [
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0
+   ],
+   "starts": [
+    20.0,
+    52.0,
+    84.0,
+    116.0,
+    148.0,
+    180.0
+   ],
+   "solids": 1,
+   "volume_mm3": 117000.0,
+   "length_mm": 160.0,
+   "occurrences": 6,
+   "allow_compound": true,
+   "rack_width": 220
+  },
+  "control": {
+   "hooks": 6,
+   "hooks_on_strip": 6,
+   "floating": [],
+   "left_gap_mm": 20.0,
+   "right_gap_mm": 60.0,
+   "air_mm": [
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0
+   ],
+   "starts": [
+    20.0,
+    44.0,
+    68.0,
+    92.0,
+    116.0,
+    140.0
+   ],
+   "solids": 1,
+   "volume_mm3": 117000.0,
+   "length_mm": 120.0,
+   "occurrences": 6,
+   "allow_compound": true,
+   "rack_width": 220
+  },
+  "yourturn": {
+   "hooks": 3,
+   "hooks_on_strip": 3,
+   "floating": [],
+   "left_gap_mm": 20.0,
+   "right_gap_mm": 20.0,
+   "air_mm": [
+    20.0,
+    20.0
+   ],
+   "starts": [
+    20.0,
+    60.0,
+    100.0
+   ],
+   "solids": 1,
+   "volume_mm3": 67500.0,
+   "length_mm": 80.0,
+   "occurrences": 3,
+   "allow_compound": true,
+   "rack_width": 140
+  },
+  "trap_nocompound": {
+   "hooks": 4,
+   "hooks_on_strip": 4,
+   "floating": [],
+   "left_gap_mm": 20.0,
+   "right_gap_mm": 5.0,
+   "air_mm": [
+    25.0,
+    25.0,
+    25.0
+   ],
+   "starts": [
+    20.0,
+    65.0,
+    110.0,
+    155.0
+   ],
+   "solids": 1,
+   "volume_mm3": 88000.0,
+   "length_mm": 180.0,
+   "occurrences": 5,
+   "allow_compound": false,
+   "rack_width": 180
+  }
+ },
+ "g0": {
+  "verdict": "out/fc9/G0/VERDICT.txt",
+  "trap_gui_check": {
+   "solids": 2,
+   "volume_mm3": 96500.0
+  },
+  "toast": "One transformed shape does not intersect the support (3 times)",
+  "allow_compound_new_gui_body": true,
+  "direction_default_for_hook": "Horizontal sketch axis",
+  "mode_default": "Extent"
+ },
+ "takes": {
+  "A": {
+   "gui_measure": {
+    "end-hook5": "combo:Distance field:20.00 mm",
+    "hook4-end": "combo:Distance field:5.00 mm"
+   },
+   "check": {
+    "hooks": 5,
+    "hooks_on_strip": 4,
+    "floating": [
+     [
+      200.0,
+      220.0
+     ]
+    ],
+    "left_gap_mm": 20.0,
+    "right_gap_mm": 5.0,
+    "air_mm": [
+     25.0,
+     25.0,
+     25.0,
+     25.0
+    ],
+    "starts": [
+     20.0,
+     65.0,
+     110.0,
+     155.0,
+     200.0
+    ],
+    "solids": 2,
+    "volume_mm3": 96500.0
+   },
+   "pattern": [
+    {
+     "name": "LinearPattern",
+     "mode": "Extent",
+     "length_mm": 180.0,
+     "occurrences": 5,
+     "originals": [
+      "Hook"
+     ],
+     "expressions": [],
+     "valid": true,
+     "status": "Valid"
+    }
+   ],
+   "sheet": {
+    "rack_width": 180,
+    "width": 20,
+    "margin": 20,
+    "hooks": 5
+   },
+   "done": true
+  },
+  "B": {
+   "gui_measure": {
+    "left": "combo:Distance field:20.00 mm",
+    "right": "combo:Auto field:-"
+   },
+   "check": {
+    "hooks": 5,
+    "hooks_on_strip": 5,
+    "floating": [],
+    "left_gap_mm": 20.0,
+    "right_gap_mm": 20.0,
+    "air_mm": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "starts": [
+     20.0,
+     50.0,
+     80.0,
+     110.0,
+     140.0
+    ],
+    "solids": 1,
+    "volume_mm3": 96500.0
+   },
+   "pattern": [
+    {
+     "name": "LinearPattern",
+     "mode": "Extent",
+     "length_mm": 120.0,
+     "occurrences": 5,
+     "originals": [
+      "Hook"
+     ],
+     "expressions": [],
+     "valid": true,
+     "status": "Valid"
+    }
+   ],
+   "sheet": {
+    "rack_width": 180,
+    "width": 20,
+    "margin": 20,
+    "hooks": 5
+   },
+   "done": true
+  },
+  "C": {
+   "gui_measure": {
+    "left": "combo:Distance field:20.00 mm"
+   },
+   "check": {
+    "hooks": 6,
+    "hooks_on_strip": 6,
+    "floating": [],
+    "left_gap_mm": 20.0,
+    "right_gap_mm": 20.0,
+    "air_mm": [
+     12.0,
+     12.0,
+     12.0,
+     12.0,
+     12.0
+    ],
+    "starts": [
+     20.0,
+     52.0,
+     84.0,
+     116.0,
+     148.0,
+     180.0
+    ],
+    "solids": 1,
+    "volume_mm3": 117000.0
+   },
+   "pattern": [
+    {
+     "name": "LinearPattern",
+     "mode": "Extent",
+     "length_mm": 160.0,
+     "occurrences": 6,
+     "originals": [
+      "Hook"
+     ],
+     "expressions": [
+      [
+       "Length",
+       "Params.rack_width - 2 * Params.margin - Params.width"
+      ],
+      [
+       "Occurrences",
+       "Params.hooks"
+      ]
+     ],
+     "valid": true,
+     "status": "Valid"
+    }
+   ],
+   "sheet": {
+    "rack_width": 220,
+    "width": 20,
+    "margin": 20,
+    "hooks": 6
+   },
+   "done": true
+  }
+ },
+ "claude_runs": {
+  "A1": {
+   "cost_usd": "0.1498",
+   "wall_s": 105,
+   "prompt": "Turn this hook into a coat rack: 5 hooks spread evenly across the 180 mm strip.",
+   "guard": {
+    "stopped": false,
+    "estimate_usd": 0.1833,
+    "cap_usd": 0.45
+   },
+   "version": "2.1.308 (Claude Code)",
+   "checks": {
+    "after-coat_rack.check.json": {
+     "used": [
+      "Body"
+     ],
+     "bodies": 1,
+     "pattern": [
+      {
+       "name": "HookPattern",
+       "mode": "Extent",
+       "length_mm": 120.0,
+       "occurrences": 5,
+       "originals": [
+        "Hook"
+       ],
+       "expressions": [
+        [
+         "Length",
+         "Params.rack_width - 2 * Params.margin - Params.width"
+        ],
+        [
+         "Occurrences",
+         "Params.hooks"
+        ]
+       ],
+       "valid": true,
+       "status": "Valid"
+      }
+     ],
+     "volume_mm3": 96500.0,
+     "solids": 1,
+     "hooks": 5,
+     "hooks_on_strip": 5,
+     "floating": [],
+     "left_gap_mm": 20.0,
+     "right_gap_mm": 20.0,
+     "air_mm": [
+      10.0,
+      10.0,
+      10.0,
+      10.0
+     ],
+     "starts": [
+      20.0,
+      50.0,
+      80.0,
+      110.0,
+      140.0
+     ]
+    }
+   }
+  },
+  "B1": {
+   "cost_usd": "0.1951",
+   "wall_s": 116,
+   "prompt": "Turn this hook into a coat rack: 5 hooks spread evenly across the 180 mm strip. Keep 20 mm from each end of the strip to the outer face of the end hooks, use a pattern, then measure both end gaps and tell me the numbers before you finish.",
+   "guard": {
+    "stopped": false,
+    "estimate_usd": 0.2439,
+    "cap_usd": 0.45
+   },
+   "version": "2.1.308 (Claude Code)",
+   "checks": {
+    "after-coat_rack.check.json": {
+     "used": [
+      "Body"
+     ],
+     "bodies": 1,
+     "pattern": [
+      {
+       "name": "HookPattern",
+       "mode": "Extent",
+       "length_mm": 120.0,
+       "occurrences": 5,
+       "originals": [
+        "Hook"
+       ],
+       "expressions": [
+        [
+         "Length",
+         "Params.rack_width - 2 * Params.margin - Params.width"
+        ],
+        [
+         "Occurrences",
+         "Params.hooks"
+        ]
+       ],
+       "valid": true,
+       "status": "Valid"
+      }
+     ],
+     "volume_mm3": 96500.0,
+     "solids": 1,
+     "hooks": 5,
+     "hooks_on_strip": 5,
+     "floating": [],
+     "left_gap_mm": 20.0,
+     "right_gap_mm": 20.0,
+     "air_mm": [
+      10.0,
+      10.0,
+      10.0,
+      10.0
+     ],
+     "starts": [
+      20.0,
+      50.0,
+      80.0,
+      110.0,
+      140.0
+     ]
+    }
+   }
+  }
+ }
+}

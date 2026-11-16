@@ -1,0 +1,28 @@
+fc9 G0 (FreeCAD 1.1.4, fcc-app:1.1.4-0.1.28, $0, no AI), 15 Nov 2026. Probe container fc9p, stills in G0/b (*-h.png,
+half size). G0 ran on the first start file (hooks toward +Y); the takes use the final file (hooks toward -Y, so a
+person's isometric view shows them); the pattern behaviour is the same (headless build.json, both versions).
+
+PASS: LinearPattern filmable. Recipe: tree: click Hook (the Pad) -> Part Design toolbar LinearPattern -> task panel.
+Dialog words: "Linear Pattern Parameters"; Transform body / Transform tool shapes (tool shapes chosen when a feature is
+picked first; with nothing picked it opens on "Transform body" and an empty list); Add Feature / Remove Feature; list
+"Hook"; Direction box; Mode (Extent | Spacing, default Extent: stop rule 3 not hit); Length (100.00 mm default);
+Occurrences (2 default); Direction 2 check box; Recompute on change; Preview: Show final result / Show preview overlay.
+Direction default for the hook (sketch on the YZ plane) = "Horizontal sketch axis" = global Y: the copy goes OUT from
+the strip, floating, and the toast shows. Items: Horizontal / Vertical / Normal sketch axis, Base X-/Y-/Z-axis,
+Select reference... The takes pick "Base X-axis" (along the strip). Script must say so (one more step than the plan).
+
+TRAP (Length 180, Occurrences 5, Base X-axis): FreeCAD 1.1.4 KEEPS the 5th hook, floating 20 mm past the strip's end
+(x 200..220), as a second solid of the body. Notification toast (bottom, Type warning / Notifier ViewProviderTransformed):
+"One transformed shape does not intersect the support (3 times)". OK accepts it with no further warning; the tree
+shows LinearPattern normal. Cause: Body.AllowCompound = True, the 1.1.4 default for a new GUI body (probe: True, pref
+AllowCompoundDefault True). With AllowCompound off the 5th IS dropped (headless case trap_nocompound: 4 hooks).
+=> PLAN 4.3 stop rule (2) branch ("drawn floating"): cold open shows the floating hook + toast; thumbnail falls back /
+   rewrite F0/F9/F10/S0/S1 from the frame; re-gate teacher + producer before the script.
+
+FORMULAS: Length accepts "=" then Params.rack_width - 2 * Params.margin - Params.width (Expression Editor, "Result
+120.00", autocomplete list shows; Return closes the list, the editor's OK button commits). Occurrences accepts
+=Params.hooks (Result 5.00). Both bound (ExpressionEngine), pattern 5 hooks, 20 / 20.
+Data panel shows Offset 30.00 mm (greyed) = the step FreeCAD worked out from Extent: usable callout.
+
+MEASURE: top view, Std_Measure, click the hook's top edge, Ctrl+click the strip end's top edge -> Mode Distance,
+Result 20.00 mm (fix state). Same route as fc8 (edges with Ctrl).

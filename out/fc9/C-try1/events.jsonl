@@ -1,0 +1,40 @@
+{"t": 0.066, "event": "recording started: FreeCAD 1.1.4, rack.FCStd open (C)"}
+{"t": 4.552, "event": "double-click: LinearPattern (edit)"}
+{"t": 10.079, "event": "Length: click", "x": 2562, "y": 1272, "button": 1}
+{"t": 11.232, "event": "Length: typed = (Expression Editor)", "text": "="}
+{"t": 13.457, "event": "Length: typed Params.rack_width - 2 * Params.margin - Params.width", "text": "Params.rack_width - 2 * Params.margin - Params.width"}
+{"t": 18.542, "event": "Return: name list closed", "keys": "Return"}
+{"t": 23.147, "event": "Expression Editor: OK", "x": 2772, "y": 1477, "button": 1}
+{"t": 28.64, "event": "Occurrences: click", "x": 2562, "y": 1328, "button": 1}
+{"t": 29.787, "event": "Occurrences: typed = (Expression Editor)", "text": "="}
+{"t": 32.002, "event": "Occurrences: typed Params.hooks", "text": "Params.hooks"}
+{"t": 34.785, "event": "Return: name list closed", "keys": "Return"}
+{"t": 38.97, "event": "Expression Editor: OK", "x": 2772, "y": 1508, "button": 1}
+{"t": 45.735, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 50.754, "event": "double-click: open Params"}
+{"t": 56.071, "event": "cell B1: rack_width = 180", "x": 855, "y": 410, "button": 1}
+{"t": 57.784, "event": "typed 220", "text": "220"}
+{"t": 58.779, "event": "Enter", "keys": "Return"}
+{"t": 63.046, "event": "cell B4: hooks = 5", "x": 855, "y": 572, "button": 1}
+{"t": 64.761, "event": "typed 6", "text": "6"}
+{"t": 65.493, "event": "Enter", "keys": "Return"}
+{"t": 69.84, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 75.756, "event": "tab: back to the 3D view", "x": 757, "y": 1731, "button": 1}
+{"t": 78.618, "event": "key 0: isometric", "keys": "0"}
+{"t": 79.905, "event": "(view fitted)"}
+{"t": 84.615, "event": "key 2: top view", "keys": "2"}
+{"t": 85.905, "event": "(view fitted)"}
+{"t": 88.588, "event": "key 2: top view", "keys": "2"}
+{"t": 89.952, "event": "(view fitted)"}
+{"t": 95.245, "event": "wheel: zoom in on left"}
+{"t": 99.314, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 104.417, "event": "left: first edge", "x": 843, "y": 867, "button": 1}
+{"t": 109.012, "event": "left: Ctrl + second edge", "x": 1259, "y": 971, "button": 1}
+{"t": 117.585, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 120.332, "event": "key 2: top view", "keys": "2"}
+{"t": 121.63, "event": "(view fitted)"}
+{"t": 126.833, "event": "wheel: zoom in on right"}
+{"t": 130.773, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 135.782, "event": "right: first edge", "x": 2244, "y": 939, "button": 1}
+{"t": 140.38, "event": "right: Ctrl + second edge", "x": 2370, "y": 907, "button": 1}
+{"t": 148.949, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}

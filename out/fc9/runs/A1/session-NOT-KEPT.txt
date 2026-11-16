@@ -1,0 +1,1 @@
+session.jsonl not kept in the lab: Claude Code 2.1.506's session log carries the account's e-mail and org (moved out before the commit). Models: model.txt; cost: costguard.json + pane-cost.txt.

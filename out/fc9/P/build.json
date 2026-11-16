@@ -1,0 +1,503 @@
+{
+ "start": {
+  "volume_mm3": 62500.0,
+  "solids": 1,
+  "hooks": 1,
+  "hook_x": [
+   [
+    20.0,
+    40.0
+   ]
+  ],
+  "bbox": [
+   0.0,
+   -25.0,
+   0.0,
+   180.0,
+   5.0,
+   60.0
+  ],
+  "strip_x": [
+   -0.0,
+   180.0
+  ],
+  "hooks_on_strip": 1,
+  "floating": [],
+  "left_gap_mm": 20.0,
+  "right_gap_mm": 140.0,
+  "air_mm": [],
+  "starts": [
+   20.0
+  ],
+  "file": "/lab/out/fc9/P/rack-start.FCStd",
+  "valid": true,
+  "allow_compound": true
+ },
+ "trap": {
+  "volume_mm3": 96500.0,
+  "solids": 2,
+  "hooks": 5,
+  "hook_x": [
+   [
+    20.0,
+    40.0
+   ],
+   [
+    65.0,
+    85.0
+   ],
+   [
+    110.0,
+    130.0
+   ],
+   [
+    155.0,
+    175.0
+   ],
+   [
+    200.0,
+    220.0
+   ]
+  ],
+  "bbox": [
+   0.0,
+   -25.0,
+   0.0,
+   220.0,
+   5.0,
+   60.0
+  ],
+  "strip_x": [
+   -0.0,
+   180.0
+  ],
+  "hooks_on_strip": 4,
+  "floating": [
+   [
+    200.0,
+    220.0
+   ]
+  ],
+  "left_gap_mm": 20.0,
+  "right_gap_mm": 5.0,
+  "air_mm": [
+   25.0,
+   25.0,
+   25.0,
+   25.0
+  ],
+  "starts": [
+   20.0,
+   65.0,
+   110.0,
+   155.0,
+   200.0
+  ],
+  "file": "/lab/out/fc9/P/rack-trap.FCStd",
+  "length_mm": 180.0,
+  "occurrences": 5,
+  "pattern": [
+   {
+    "name": "LinearPattern",
+    "mode": "Extent",
+    "length_mm": 180.0,
+    "occurrences": 5,
+    "originals": [
+     "Hook"
+    ],
+    "expressions": [],
+    "valid": true,
+    "status": "Valid"
+   }
+  ],
+  "rack_width": 180,
+  "allow_compound": true
+ },
+ "fix": {
+  "volume_mm3": 96500.0,
+  "solids": 1,
+  "hooks": 5,
+  "hook_x": [
+   [
+    20.0,
+    40.0
+   ],
+   [
+    50.0,
+    70.0
+   ],
+   [
+    80.0,
+    100.0
+   ],
+   [
+    110.0,
+    130.0
+   ],
+   [
+    140.0,
+    160.0
+   ]
+  ],
+  "bbox": [
+   0.0,
+   -25.0,
+   0.0,
+   180.0,
+   5.0,
+   60.0
+  ],
+  "strip_x": [
+   0.0,
+   180.0
+  ],
+  "hooks_on_strip": 5,
+  "floating": [],
+  "left_gap_mm": 20.0,
+  "right_gap_mm": 20.0,
+  "air_mm": [
+   10.0,
+   10.0,
+   10.0,
+   10.0
+  ],
+  "starts": [
+   20.0,
+   50.0,
+   80.0,
+   110.0,
+   140.0
+  ],
+  "file": "/lab/out/fc9/P/rack-fix.FCStd",
+  "length_mm": 120.0,
+  "occurrences": 5,
+  "pattern": [
+   {
+    "name": "LinearPattern",
+    "mode": "Extent",
+    "length_mm": 120.0,
+    "occurrences": 5,
+    "originals": [
+     "Hook"
+    ],
+    "expressions": [],
+    "valid": true,
+    "status": "Valid"
+   }
+  ],
+  "rack_width": 180,
+  "allow_compound": true
+ },
+ "proof": {
+  "volume_mm3": 117000.0,
+  "solids": 1,
+  "hooks": 6,
+  "hook_x": [
+   [
+    20.0,
+    40.0
+   ],
+   [
+    52.0,
+    72.0
+   ],
+   [
+    84.0,
+    104.0
+   ],
+   [
+    116.0,
+    136.0
+   ],
+   [
+    148.0,
+    168.0
+   ],
+   [
+    180.0,
+    200.0
+   ]
+  ],
+  "bbox": [
+   0.0,
+   -25.0,
+   0.0,
+   220.0,
+   5.0,
+   60.0
+  ],
+  "strip_x": [
+   0.0,
+   220.0
+  ],
+  "hooks_on_strip": 6,
+  "floating": [],
+  "left_gap_mm": 20.0,
+  "right_gap_mm": 20.0,
+  "air_mm": [
+   12.0,
+   12.0,
+   12.0,
+   12.0,
+   12.0
+  ],
+  "starts": [
+   20.0,
+   52.0,
+   84.0,
+   116.0,
+   148.0,
+   180.0
+  ],
+  "file": "/lab/out/fc9/P/rack-proof.FCStd",
+  "length_mm": 160.0,
+  "occurrences": 6,
+  "pattern": [
+   {
+    "name": "LinearPattern",
+    "mode": "Extent",
+    "length_mm": 160.0,
+    "occurrences": 6,
+    "originals": [
+     "Hook"
+    ],
+    "expressions": [
+     [
+      "Length",
+      "Params.rack_width - 2 * Params.margin - Params.width"
+     ],
+     [
+      "Occurrences",
+      "Params.hooks"
+     ]
+    ],
+    "valid": true,
+    "status": "Valid"
+   }
+  ],
+  "rack_width": 220,
+  "allow_compound": true
+ },
+ "control": {
+  "volume_mm3": 117000.0,
+  "solids": 1,
+  "hooks": 6,
+  "hook_x": [
+   [
+    20.0,
+    40.0
+   ],
+   [
+    44.0,
+    64.0
+   ],
+   [
+    68.0,
+    88.0
+   ],
+   [
+    92.0,
+    112.0
+   ],
+   [
+    116.0,
+    136.0
+   ],
+   [
+    140.0,
+    160.0
+   ]
+  ],
+  "bbox": [
+   0.0,
+   -25.0,
+   0.0,
+   220.0,
+   5.0,
+   60.0
+  ],
+  "strip_x": [
+   0.0,
+   220.0
+  ],
+  "hooks_on_strip": 6,
+  "floating": [],
+  "left_gap_mm": 20.0,
+  "right_gap_mm": 60.0,
+  "air_mm": [
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ],
+  "starts": [
+   20.0,
+   44.0,
+   68.0,
+   92.0,
+   116.0,
+   140.0
+  ],
+  "file": "/lab/out/fc9/P/rack-control.FCStd",
+  "length_mm": 120.0,
+  "occurrences": 6,
+  "pattern": [
+   {
+    "name": "LinearPattern",
+    "mode": "Extent",
+    "length_mm": 120.0,
+    "occurrences": 6,
+    "originals": [
+     "Hook"
+    ],
+    "expressions": [],
+    "valid": true,
+    "status": "Valid"
+   }
+  ],
+  "rack_width": 220,
+  "allow_compound": true
+ },
+ "yourturn": {
+  "volume_mm3": 67500.0,
+  "solids": 1,
+  "hooks": 3,
+  "hook_x": [
+   [
+    20.0,
+    40.0
+   ],
+   [
+    60.0,
+    80.0
+   ],
+   [
+    100.0,
+    120.0
+   ]
+  ],
+  "bbox": [
+   0.0,
+   -25.0,
+   0.0,
+   140.0,
+   5.0,
+   60.0
+  ],
+  "strip_x": [
+   0.0,
+   140.0
+  ],
+  "hooks_on_strip": 3,
+  "floating": [],
+  "left_gap_mm": 20.0,
+  "right_gap_mm": 20.0,
+  "air_mm": [
+   20.0,
+   20.0
+  ],
+  "starts": [
+   20.0,
+   60.0,
+   100.0
+  ],
+  "file": "/lab/out/fc9/P/rack-yourturn.FCStd",
+  "length_mm": 80.0,
+  "occurrences": 3,
+  "pattern": [
+   {
+    "name": "LinearPattern",
+    "mode": "Extent",
+    "length_mm": 80.0,
+    "occurrences": 3,
+    "originals": [
+     "Hook"
+    ],
+    "expressions": [
+     [
+      "Length",
+      "Params.rack_width - 2 * Params.margin - Params.width"
+     ],
+     [
+      "Occurrences",
+      "Params.hooks"
+     ]
+    ],
+    "valid": true,
+    "status": "Valid"
+   }
+  ],
+  "rack_width": 140,
+  "allow_compound": true
+ },
+ "trap_nocompound": {
+  "volume_mm3": 88000.0,
+  "solids": 1,
+  "hooks": 4,
+  "hook_x": [
+   [
+    20.0,
+    40.0
+   ],
+   [
+    65.0,
+    85.0
+   ],
+   [
+    110.0,
+    130.0
+   ],
+   [
+    155.0,
+    175.0
+   ]
+  ],
+  "bbox": [
+   0.0,
+   -25.0,
+   0.0,
+   180.0,
+   5.0,
+   60.0
+  ],
+  "strip_x": [
+   -0.0,
+   180.0
+  ],
+  "hooks_on_strip": 4,
+  "floating": [],
+  "left_gap_mm": 20.0,
+  "right_gap_mm": 5.0,
+  "air_mm": [
+   25.0,
+   25.0,
+   25.0
+  ],
+  "starts": [
+   20.0,
+   65.0,
+   110.0,
+   155.0
+  ],
+  "file": "/lab/out/fc9/P/rack-trap_nocompound.FCStd",
+  "length_mm": 180.0,
+  "occurrences": 5,
+  "pattern": [
+   {
+    "name": "LinearPattern",
+    "mode": "Extent",
+    "length_mm": 180.0,
+    "occurrences": 5,
+    "originals": [
+     "Hook"
+    ],
+    "expressions": [],
+    "valid": true,
+    "status": "Valid"
+   }
+  ],
+  "rack_width": 180,
+  "allow_compound": false
+ }
+}

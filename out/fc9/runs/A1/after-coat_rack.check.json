@@ -1,0 +1,167 @@
+{
+ "doc": "/lab/out/fc9/runs/A1/after-coat_rack.FCStd",
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Rack",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "StripSketch",
+   "StripSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Strip",
+   "Strip",
+   "PartDesign::Pad"
+  ],
+  [
+   "HookSketch",
+   "HookSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Hook",
+   "Hook",
+   "PartDesign::Pad"
+  ],
+  [
+   "HookPattern",
+   "HookPattern",
+   "PartDesign::LinearPattern"
+  ]
+ ],
+ "used": [
+  "Body"
+ ],
+ "bodies": 1,
+ "pattern": [
+  {
+   "name": "HookPattern",
+   "mode": "Extent",
+   "length_mm": 120.0,
+   "occurrences": 5,
+   "originals": [
+    "Hook"
+   ],
+   "expressions": [
+    [
+     "Length",
+     "Params.rack_width - 2 * Params.margin - Params.width"
+    ],
+    [
+     "Occurrences",
+     "Params.hooks"
+    ]
+   ],
+   "valid": true,
+   "status": "Valid"
+  }
+ ],
+ "volume_mm3": 96500.0,
+ "solids": 1,
+ "hooks": 5,
+ "hook_x": [
+  [
+   20.0,
+   40.0
+  ],
+  [
+   50.0,
+   70.0
+  ],
+  [
+   80.0,
+   100.0
+  ],
+  [
+   110.0,
+   130.0
+  ],
+  [
+   140.0,
+   160.0
+  ]
+ ],
+ "bbox": [
+  0.0,
+  -25.0,
+  0.0,
+  180.0,
+  5.0,
+  60.0
+ ],
+ "strip_x": [
+  0.0,
+  180.0
+ ],
+ "hooks_on_strip": 5,
+ "floating": [],
+ "left_gap_mm": 20.0,
+ "right_gap_mm": 20.0,
+ "air_mm": [
+  10.0,
+  10.0,
+  10.0,
+  10.0
+ ],
+ "starts": [
+  20.0,
+  50.0,
+  80.0,
+  110.0,
+  140.0
+ ],
+ "sheet_Params": {
+  "rack_width": 180,
+  "width": 20,
+  "margin": 20,
+  "hooks": 5
+ }
+}

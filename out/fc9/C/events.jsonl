@@ -1,0 +1,33 @@
+{"t": 0.043, "event": "recording started: FreeCAD 1.1.4, rack.FCStd open (C)"}
+{"t": 4.306, "event": "double-click: LinearPattern (edit)"}
+{"t": 9.589, "event": "Length: click", "x": 2562, "y": 1272, "button": 1}
+{"t": 10.726, "event": "Length: typed = (Expression Editor)", "text": "="}
+{"t": 12.936, "event": "Length: typed Params.rack_width - 2 * Params.margin - Params.width", "text": "Params.rack_width - 2 * Params.margin - Params.width"}
+{"t": 17.956, "event": "Return: name list closed", "keys": "Return"}
+{"t": 22.366, "event": "Expression Editor: OK", "x": 2772, "y": 1477, "button": 1}
+{"t": 28.174, "event": "Occurrences: click", "x": 2562, "y": 1328, "button": 1}
+{"t": 29.327, "event": "Occurrences: typed = (Expression Editor)", "text": "="}
+{"t": 31.548, "event": "Occurrences: typed Params.hooks", "text": "Params.hooks"}
+{"t": 34.326, "event": "Return: name list closed", "keys": "Return"}
+{"t": 38.568, "event": "Expression Editor: OK", "x": 2772, "y": 1508, "button": 1}
+{"t": 45.662, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 50.768, "event": "double-click: open Params"}
+{"t": 56.099, "event": "cell B1: rack_width = 180", "x": 855, "y": 410, "button": 1}
+{"t": 57.821, "event": "typed 220", "text": "220"}
+{"t": 58.818, "event": "Enter", "keys": "Return"}
+{"t": 63.066, "event": "cell B4: hooks = 5", "x": 855, "y": 572, "button": 1}
+{"t": 64.782, "event": "typed 6", "text": "6"}
+{"t": 65.521, "event": "Enter", "keys": "Return"}
+{"t": 70.074, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 75.837, "event": "tab: back to the 3D view", "x": 757, "y": 1731, "button": 1}
+{"t": 78.642, "event": "key 0: isometric", "keys": "0"}
+{"t": 79.851, "event": "(view fitted)"}
+{"t": 84.534, "event": "key 2: top view", "keys": "2"}
+{"t": 85.838, "event": "(view fitted)"}
+{"t": 88.542, "event": "key 2: top view", "keys": "2"}
+{"t": 89.85, "event": "(view fitted)"}
+{"t": 95.161, "event": "wheel: zoom in on left"}
+{"t": 98.861, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 103.881, "event": "left: first edge", "x": 843, "y": 867, "button": 1}
+{"t": 108.508, "event": "left: Ctrl + second edge", "x": 1259, "y": 971, "button": 1}
+{"t": 117.181, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}

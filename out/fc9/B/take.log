@@ -1,0 +1,17 @@
+rack
+prepped rack
+1
+rows open: 180 469 225 502
+Length = 120: [{"name": "LinearPattern", "mode": "Extent", "length": 120.0, "occ": 5, "dir": "(<GeoFeature object>, [''])", "solids": 1, "state": ["Up-to-date"], "expr": []}]
+1
+1
+1
+left edges 830 848 1328 973
+left measure: combo:Distance field:20.00 mm 
+1
+right after pan 2282 910
+right edges 2207 929 2357 892
+right measure: combo:Auto field:- 
+saved
+TAKE B DONE
+FC9 check {"hooks": 5, "left_gap_mm": 20.0, "right_gap_mm": 20.0, "solids": 1, "used": ["Body"]}

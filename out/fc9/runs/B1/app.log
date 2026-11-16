@@ -1,0 +1,31 @@
+MCP RPC: GUI task raised ValueError: 'Length' is not part of the enumeration in coat_rack#HookPattern.Mode
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 10, in <module>
+ValueError: 'Length' is not part of the enumeration in coat_rack#HookPattern.Mode
+Error executing Python code: ValueError: 'Length' is not part of the enumeration in coat_rack#HookPattern.Mode
+--- code ---
+doc = App.getDocument("coat_rack")
+body = doc.getObject("Body")
+hook = doc.getObject("Hook")
+print("Tip:", body.Tip.Name)
+sheet = doc.getObject("Params")
+print({c: sheet.getAlias(c) for c in ["B1","B2","B3","B4"]})
+lp = body.newObject("PartDesign::LinearPattern", "HookPattern")
+lp.Originals = [hook]
+lp.Direction = (doc.getObject("X_Axis"), [""])
+lp.Mode = "Length" if "Mode" in lp.PropertiesList else None
+lp.Length = 120
+lp.Occurrences = 5
+lp.setExpression("Length", "Params.rack_width - 2 * Params.margin - Params.width")
+lp.setExpression("Occurrences", "Params.hooks")
+body.Tip = lp
+doc.recompute()
+print("valid:", lp.isValid(), "state:", lp.State)
+print("mode props:", [p for p in lp.PropertiesList if p in ("Mode","Length","Occurrences","Reversed","Refine")], lp.Mode)
+
+--- end ---

@@ -1,0 +1,21 @@
+rack
+prepped rack
+1
+rows open: 180 469 225 502
+Length = Params.rack_width - 2 * Params.margin - Params.width: [{"name": "LinearPattern", "mode": "Extent", "length": 120.0, "occ": 5, "dir": "(<GeoFeature object>, [''])", "solids": 1, "state": ["Up-to-date"], "expr": [["Length", "Params.rack_width - 2 * Params.margin - Params.width"]]}]
+Occurrences = Params.hooks: [{"name": "LinearPattern", "mode": "Extent", "length": 120.0, "occ": 5, "dir": "(<GeoFeature object>, [''])", "solids": 1, "state": ["Touched"], "expr": [["Length", "Params.rack_width - 2 * Params.margin - Params.width"], ["Occurrences", "Params.hooks"]]}]
+rack_width cell 855 410
+hooks cell 855 572
+3D tab 757 1731
+after recompute: [{"name": "LinearPattern", "mode": "Extent", "length": 160.0, "occ": 6, "dir": "(<GeoFeature object>, [''])", "solids": 1, "state": ["Up-to-date"], "expr": [["Length", "Params.rack_width - 2 * Params.margin - Params.width"], ["Occurrences", "Params.hooks"]]}]
+1
+1
+1
+left edges 843 867 1259 971
+left measure: combo:Distance field:20.00 mm 
+1
+right edges 2244 939 2370 907
+right measure: combo:Auto field:- 
+saved
+TAKE C DONE
+FC9 check {"hooks": 6, "left_gap_mm": 20.0, "right_gap_mm": 20.0, "solids": 1, "used": ["Body"]}
