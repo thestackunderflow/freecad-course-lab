@@ -439,14 +439,14 @@
   "A": {
    "gui_measure": {
     "top": {
-     "x": "Measurement | Mode: | combo:Position | Result: | field:0.00 mm",
+     "x": "0.00 mm",
      "y": "-20.00 mm",
-     "z": "78.68 mm | Close | Save | Reset"
+     "z": "78.68 mm"
     },
     "bottom": {
-     "x": "Measurement | Mode: | combo:Position | Result: | field:0.00 mm",
+     "x": "0.00 mm",
      "y": "-20.00 mm",
-     "z": "-1.32 mm | Close | Save | Reset"
+     "z": "-1.32 mm"
     }
    },
    "live": {
@@ -1027,13 +1027,13 @@
  },
  "claude_runs": {
   "A1": {
-   "cost_usd": "0.1272",
+   "cost_usd": "0.1291",
    "wall_s": 90,
    "prompt": "Make this hook taller: set plate_height to 80.",
    "guard": {
     "stopped": false,
-    "estimate_usd": 0.1548,
-    "cap_usd": 0.45
+    "estimate_usd": 0.1572,
+    "cap_usd": 0.25
    },
    "version": "2.1.308 (Claude Code)",
    "checks": {
@@ -1048,11 +1048,11 @@
       "DistanceY": 1
      },
      "origin_tied": false,
-     "zmin": -1.320832,
-     "zmax": 78.679168,
+     "zmin": -10.390771,
+     "zmax": 69.609229,
      "xmin": 0.0,
-     "hole_to_top": 13.679168,
-     "sketch_hole_to_top": 13.679168,
+     "hole_to_top": 4.609229,
+     "sketch_hole_to_top": 4.609229,
      "hole_in_plate": true,
      "hole_faces": 1,
      "volume_mm3": 10420.4784,
@@ -1080,9 +1080,9 @@
     "used_execute_code": true,
     "hook": {
      "dof": 2,
-     "zmin": -1.320832,
-     "zmax": 78.679168,
-     "hole_to_top": 13.679168,
+     "zmin": -10.390771,
+     "zmax": 69.609229,
+     "hole_to_top": 4.609229,
      "constraints": 22,
      "by_type": {
       "Coincident": 8,
@@ -1105,13 +1105,13 @@
    }
   },
   "B1": {
-   "cost_usd": "0.1250",
-   "wall_s": 109,
+   "cost_usd": "0.1239",
+   "wall_s": 108,
    "prompt": "Make this hook taller: set plate_height to 80. Before you change anything, make the sketch fully constrained, with a corner on the origin, and tell me the degrees of freedom before and after.",
    "guard": {
     "stopped": false,
-    "estimate_usd": 0.1564,
-    "cap_usd": 0.45
+    "estimate_usd": 0.1537,
+    "cap_usd": 0.25
    },
    "version": "2.1.308 (Claude Code)",
    "checks": {
@@ -1152,7 +1152,6 @@
     "stopped": false,
     "tool_calls": [
      "list_documents",
-     "execute_code",
      "execute_code",
      "execute_code",
      "execute_code",
