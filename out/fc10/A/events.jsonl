@@ -1,22 +1,22 @@
-{"t": 0.052, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (A)"}
-{"t": 4.451, "event": "double-click: open Params"}
-{"t": 8.502, "event": "hover: plate_height"}
-{"t": 10.656, "event": "cell B1: plate_height", "x": 855, "y": 410, "button": 1}
-{"t": 12.365, "event": "typed 80", "text": "80"}
-{"t": 13.225, "event": "Enter", "keys": "Return"}
-{"t": 17.501, "event": "Recompute", "x": 455, "y": 88, "button": 1}
-{"t": 23.496, "event": "tab: back to the 3D view", "x": 761, "y": 1731, "button": 1}
-{"t": 26.419, "event": "key 0: isometric", "keys": "0"}
-{"t": 27.752, "event": "(view fitted)"}
-{"t": 32.645, "event": "key 1: Front view", "keys": "1"}
-{"t": 37.991, "event": "(view set: Front centred 12 0 40, 130 mm tall)"}
-{"t": 45.547, "event": "Measure", "x": 1486, "y": 88, "button": 1}
-{"t": 50.767, "event": "top: corner", "x": 1472, "y": 317, "button": 1}
-{"t": 59.632, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
-{"t": 64.387, "event": "Measure", "x": 1486, "y": 88, "button": 1}
-{"t": 69.624, "event": "bottom: corner", "x": 1472, "y": 1654, "button": 1}
-{"t": 78.357, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
-{"t": 81.388, "event": "key 3: Right view", "keys": "3"}
-{"t": 86.831, "event": "(view set: Right centred 0 -10 40, 110 mm tall)"}
-{"t": 93.676, "event": "key 0: isometric", "keys": "0"}
-{"t": 94.944, "event": "(view fitted)"}
+{"t": 0.05, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (A)"}
+{"t": 4.309, "event": "double-click: open Params"}
+{"t": 8.353, "event": "hover: plate_height"}
+{"t": 11.128, "event": "cell B1: plate_height", "x": 855, "y": 410, "button": 1}
+{"t": 12.874, "event": "typed 80", "text": "80"}
+{"t": 13.734, "event": "Enter", "keys": "Return"}
+{"t": 18.368, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 24.158, "event": "tab: back to the 3D view", "x": 761, "y": 1731, "button": 1}
+{"t": 27.087, "event": "key 0: isometric", "keys": "0"}
+{"t": 28.387, "event": "(view fitted)"}
+{"t": 33.57, "event": "key 1: Front view", "keys": "1"}
+{"t": 39.055, "event": "(view set: Front centred 12 0 40, 130 mm tall)"}
+{"t": 46.872, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 51.976, "event": "top: corner", "x": 1472, "y": 317, "button": 1}
+{"t": 60.872, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 65.344, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 70.432, "event": "bottom: corner", "x": 1472, "y": 1654, "button": 1}
+{"t": 79.142, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 82.148, "event": "key 3: Right view", "keys": "3"}
+{"t": 87.585, "event": "(view set: Right centred 0 -10 40, 110 mm tall)"}
+{"t": 94.43, "event": "key 0: isometric", "keys": "0"}
+{"t": 95.769, "event": "(view fitted)"}

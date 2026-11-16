@@ -1,15 +1,15 @@
-{"t": 0.06, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (P)"}
-{"t": 4.337, "event": "double-click: open Params"}
-{"t": 8.371, "event": "hover: Params row 1"}
-{"t": 11.011, "event": "hover: Params row 2"}
-{"t": 13.573, "event": "hover: Params row 3"}
-{"t": 16.149, "event": "hover: Params row 4"}
-{"t": 18.713, "event": "hover: Params row 5"}
-{"t": 24.658, "event": "tab: back to the 3D view", "x": 761, "y": 1731, "button": 1}
-{"t": 28.671, "event": "double-click: HookSketch (edit)"}
-{"t": 33.038, "event": "(sketch view set)"}
-{"t": 35.139, "event": "hold: rule marks"}
-{"t": 40.281, "event": "hold: message"}
-{"t": 46.532, "event": "message link: 2 Degrees of Freedom", "x": 2499, "y": 752, "button": 1}
-{"t": 53.436, "event": "hover: near the origin"}
-{"t": 58.521, "event": "sketch: Close", "x": 2527, "y": 615, "button": 1}
+{"t": 0.052, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (P)"}
+{"t": 4.311, "event": "double-click: open Params"}
+{"t": 8.335, "event": "hover: Params row 1"}
+{"t": 10.904, "event": "hover: Params row 2"}
+{"t": 13.505, "event": "hover: Params row 3"}
+{"t": 16.138, "event": "hover: Params row 4"}
+{"t": 18.669, "event": "hover: Params row 5"}
+{"t": 24.609, "event": "tab: back to the 3D view", "x": 761, "y": 1731, "button": 1}
+{"t": 28.575, "event": "double-click: HookSketch (edit)"}
+{"t": 32.927, "event": "(sketch view set)"}
+{"t": 35.022, "event": "hold: rule marks"}
+{"t": 40.175, "event": "hold: message"}
+{"t": 46.388, "event": "message link: 2 Degrees of Freedom", "x": 2499, "y": 752, "button": 1}
+{"t": 53.313, "event": "hover: near the origin"}
+{"t": 58.358, "event": "sketch: Close", "x": 2527, "y": 615, "button": 1}

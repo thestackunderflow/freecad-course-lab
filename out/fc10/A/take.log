@@ -8,16 +8,16 @@ plate_height cell 855 410
 3D tab 761 1731
 after 80: {"dof": 2, "constraints": 22, "zmin": -1.3208, "zmax": 78.6792, "xmin": 0.0, "hole_z": 65.0, "hole_to_top": 13.6792, "volume": 10420.478, "plate_height": 80}
 1
-front z -1.3208 78.6792
+front x 0.0 z -1.3208 78.6792
 front px: floor-left 1305 1632 floor-right 2141 1632 top-back 1472 317 bottom-back 1472 1654 at60 1472 629 at0 1472 1632
 top corner at 1472 317
-top measure: Measurement | Mode: | combo:Position | Result: | field:X: 0.00 mm
+top measure: X: 0.00 mm
 Y: -20.00 mm
-Z: 78.68 mm | Close | Save | Reset
+Z: 78.68 mm
 bottom corner at 1472 1654
-bottom measure: Measurement | Mode: | combo:Position | Result: | field:X: 0.00 mm
+bottom measure: X: 0.00 mm
 Y: -20.00 mm
-Z: -1.32 mm | Close | Save | Reset
+Z: -1.32 mm
 right px: top-mid 1682 317 hole 1682 545 floor 1682 1632
 1
 saved

@@ -9,9 +9,9 @@
  "used_execute_code": true,
  "hook": {
   "dof": 2,
-  "zmin": -1.320832,
-  "zmax": 78.679168,
-  "hole_to_top": 13.679168,
+  "zmin": -10.390771,
+  "zmax": 69.609229,
+  "hole_to_top": 4.609229,
   "constraints": 22,
   "by_type": {
    "Coincident": 8,

@@ -1,7 +1,7 @@
 {
  "used": "Body",
- "zmin": -1.320832,
- "zmax": 78.679168,
+ "zmin": -10.390771,
+ "zmax": 69.609229,
  "xmin": 0.0,
  "xmax": 25.0,
  "ymin": -20.0,
@@ -13,8 +13,8 @@
  "hole_y": -10.0,
  "sketch_hole_z": 65.0,
  "sketch_hole_y": -10.0,
- "hole_to_top": 13.679168,
- "sketch_hole_to_top": 13.679168,
+ "hole_to_top": 4.609229,
+ "sketch_hole_to_top": 4.609229,
  "hole_in_plate": true,
  "sketch": "HookSketch",
  "solve": 0,
@@ -58,9 +58,9 @@
  ],
  "sketch_bbox": [
   0.0,
-  -1.320832,
+  -10.390771,
   25.0,
-  78.679168
+  69.609229
  ],
  "features": [
   [

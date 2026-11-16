@@ -31,6 +31,6 @@
 
   tmux focus-events off · add 'set -g focus…
 ──────────────────────────────────────────────
-❯ Try "refactor <filepath>"
+❯ Try "how do I log an error?"
 ──────────────────────────────────────────────
   ⏵⏵ auto mode on (shift+tab to cycle)

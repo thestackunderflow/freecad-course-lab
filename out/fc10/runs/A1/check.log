@@ -1,1 +1,1 @@
-FC10 check {"dof": 2, "zmin": -1.320832, "zmax": 78.679168, "xmin": 0.0, "hole_to_top": 13.679168, "sketch_hole_to_top": 13.679168, "volume_mm3": 10420.4784, "constraints": 22}
+FC10 check {"dof": 2, "zmin": -10.390771, "zmax": 69.609229, "xmin": 0.0, "hole_to_top": 4.609229, "sketch_hole_to_top": 4.609229, "volume_mm3": 10420.4784, "constraints": 22}

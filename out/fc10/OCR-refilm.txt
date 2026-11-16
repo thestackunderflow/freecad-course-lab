@@ -1,0 +1,9 @@
+SCANNED out/fc10/A/screen.mp4 fps=1/2 frames=51 hits=0
+SCANNED out/fc10/B/screen.mp4 fps=1/2 frames=64 hits=0
+SCANNED out/fc10/C/screen.mp4 fps=1/2 frames=62 hits=0
+SCANNED out/fc10/D/screen.mp4 fps=1/2 frames=55 hits=0
+SCANNED out/fc10/P/screen.mp4 fps=1/2 frames=32 hits=0
+SCANNED out/fc10/T/screen.mp4 fps=1/2 frames=47 hits=0
+SCANNED out/fc10/TB/screen.mp4 fps=1/2 frames=48 hits=0
+SCANNED out/fc10/runs/A1/screen.mp4 fps=1 frames=25 hits=0
+SCANNED out/fc10/runs/B1/screen.mp4 fps=1 frames=48 hits=0

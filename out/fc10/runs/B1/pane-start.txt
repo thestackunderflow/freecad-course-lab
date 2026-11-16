@@ -13,7 +13,7 @@
 ▎ rest.
 ▎ https://code.claude.com/docs/en/permission-m
 ▎ odes
-  1 more notice hidden
+
 
 
 
@@ -31,6 +31,6 @@
 
   tmux focus-events off · add 'set -g focus…
 ──────────────────────────────────────────────
-❯ Try "write a test for <filepath>"
+❯ Try "fix lint errors"
 ──────────────────────────────────────────────
   ⏵⏵ auto mode on (shift+tab to cycle)

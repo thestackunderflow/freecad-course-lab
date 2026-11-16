@@ -1,20 +1,20 @@
-{"t": 0.07, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (TB)"}
-{"t": 4.372, "event": "double-click: HookSketch (edit)"}
-{"t": 8.732, "event": "(sketch view set)"}
-{"t": 14.414, "event": "drag: the back line (a slip)"}
-{"t": 15.607, "event": "drag: released"}
-{"t": 20.824, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
-{"t": 24.631, "event": "key 0: isometric", "keys": "0"}
-{"t": 25.869, "event": "(view fitted)"}
-{"t": 30.476, "event": "key 1: Front view", "keys": "1"}
-{"t": 31.692, "event": "(view set: Front centred 12 0 30, 110 mm tall)"}
-{"t": 38.821, "event": "Measure", "x": 1486, "y": 88, "button": 1}
-{"t": 43.816, "event": "top: corner", "x": 1523, "y": 593, "button": 1}
-{"t": 52.257, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
-{"t": 56.666, "event": "Measure", "x": 1486, "y": 88, "button": 1}
-{"t": 61.651, "event": "bottom: corner", "x": 1523, "y": 1379, "button": 1}
-{"t": 70.03, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
-{"t": 72.939, "event": "key 3: Right view", "keys": "3"}
-{"t": 74.256, "event": "(view set: Right centred 0 -10 30, 90 mm tall)"}
-{"t": 80.919, "event": "key 0: isometric", "keys": "0"}
-{"t": 82.199, "event": "(view fitted)"}
+{"t": 0.069, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (TB)"}
+{"t": 4.537, "event": "double-click: HookSketch (edit)"}
+{"t": 9.036, "event": "(sketch view set)"}
+{"t": 15.077, "event": "drag: the back line (a slip)"}
+{"t": 16.433, "event": "drag: released"}
+{"t": 22.185, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 26.1, "event": "key 0: isometric", "keys": "0"}
+{"t": 27.435, "event": "(view fitted)"}
+{"t": 32.23, "event": "key 1: Front view", "keys": "1"}
+{"t": 33.614, "event": "(view set: Front centred 12 0 30, 110 mm tall)"}
+{"t": 41.661, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 46.701, "event": "top: corner", "x": 1523, "y": 593, "button": 1}
+{"t": 55.566, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 60.954, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 66.338, "event": "bottom: corner", "x": 1523, "y": 1379, "button": 1}
+{"t": 75.809, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 79.019, "event": "key 3: Right view", "keys": "3"}
+{"t": 80.562, "event": "(view set: Right centred 0 -10 30, 90 mm tall)"}
+{"t": 87.829, "event": "key 0: isometric", "keys": "0"}
+{"t": 89.276, "event": "(view fitted)"}

@@ -1,34 +1,34 @@
 
 
-❯ Make this hook taller: set plate_height to
-  80.
+  Searched for 1 pattern, called freecad 2
+  times
 
-  Searched for 1 pattern, listed 1 directory,
-  called freecad 2 times, ran 1 shell command
-
-● The parameter lives in the Params
-  spreadsheet (cell B1). I'll set it and
-  recompute.
+● The value lives in the Params spreadsheet
+  (cell B1), and the sketch and hole are
+  driven by expressions from it. I'll set B1
+  to 80.
 
   Called freecad
 
 ● I set plate_height to 80 in the Params
-  spreadsheet (cell B1, was 60) and
-  recomputed. The hook's plate is now taller,
-  and the model rebuilt without errors.
+  spreadsheet (cell B1, previously 60). The
+  model recomputed cleanly.
 
-  - Volume: 8420 → 10420 mm³. The increase of
-    2000 mm³ is what 20 mm of extra height on
-    a 5 mm thick, 20 mm wide plate should add.
-  - Hole: it moved up with the plate, from 45
-    to 65 mm. It is tied to plate_height - 15,
-    so it stays 15 mm below the top.
+  - Plate height: the plate is now 80 mm tall
+    (bounding box height 80).
+  - Volume: up from about 8420 to about 10420
+    mm³.
+  - Hole: it follows the height automatically,
+    because its position is plate_height -
+    15. It moved from 45 to 65, so it stays 15
+    mm below the top.
 
-  The document isn't saved to disk, because
-  the change was made in the open FreeCAD
-  session only.
+  I changed the value in the spreadsheet only,
+  so the sketch constraints are untouched. I
+  didn't save the document, so the change is
+  only in the open FreeCAD session.
 
-✻ Worked for 12s · done 2:25 PM
+✻ Sautéed for 11s · done 7:04 PM
 
 ──────────────────────────────────────────────
 ❯ save the document
