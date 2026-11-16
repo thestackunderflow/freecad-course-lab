@@ -1,0 +1,12 @@
+rack
+prepped rack
+1
+rows open: 180 469 none
+row 0 cell 855 410
+row 1 cell 855 464
+row 2 cell 855 518
+row 3 cell 855 572
+params: []
+saved
+TAKE P1 DONE
+FC9 check {"hooks": 1, "left_gap_mm": 20.0, "right_gap_mm": 140.0, "solids": 1, "used": ["Body"]}

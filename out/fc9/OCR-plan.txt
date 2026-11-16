@@ -3,3 +3,5 @@ SCANNED /lab/out/fc9/B/screen.mp4 frames=52 hits=0
 SCANNED /lab/out/fc9/C/screen.mp4 frames=61 hits=0
 SCANNED /lab/out/fc9/runs/A1/screen.mp4 frames=20 hits=0
 SCANNED /lab/out/fc9/runs/B1/screen.mp4 frames=27 hits=0
+SCANNED /lab/out/fc9/P1/screen.mp4 + stills frames=15 hits=0 (pickup, pattern claude ultra|ultra|@gmail|sk-ant)
+SCANNED /lab/out/fc9/P2/screen.mp4 + stills frames=23 hits=0 (pickup, pattern claude ultra|ultra|@gmail|sk-ant)

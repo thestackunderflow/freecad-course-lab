@@ -1,0 +1,10 @@
+{"t": 0.063, "event": "recording started: FreeCAD 1.1.4, rack.FCStd open (P2)"}
+{"t": 3.069, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.291, "event": "(view fitted)"}
+{"t": 8.923, "event": "key 2: top view", "keys": "2"}
+{"t": 10.161, "event": "(view fitted)"}
+{"t": 15.23, "event": "wheel: zoom in on left"}
+{"t": 18.892, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 23.892, "event": "left: first edge", "x": 830, "y": 848, "button": 1}
+{"t": 28.4, "event": "left: Ctrl + second edge", "x": 1328, "y": 973, "button": 1}
+{"t": 36.79, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

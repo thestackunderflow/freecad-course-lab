@@ -1,0 +1,11 @@
+rack
+prepped rack
+1
+rows open: 180 469 none
+1
+1
+left edges 830 848 1328 973
+left measure: combo:Distance field:20.00 mm 
+saved
+TAKE P2 DONE
+FC9 check {"hooks": 1, "left_gap_mm": 20.0, "right_gap_mm": 140.0, "solids": 1, "used": ["Body"]}

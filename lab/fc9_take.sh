@@ -6,10 +6,12 @@
 #   B  fix: A's file; double-click LinearPattern; Length 120; OK; top view; Measure left end, right end   F1 F11 S2
 #   C  proof: B's file; Length = formula, Occurrences = Params.hooks (Expression Editor); Params rack_width 220,
 #      hooks 6; Recompute; top view; Measure left end, right end                                        F13 F14
+#   P1 pickup (rev 3): start file (180 / 5, no pattern); double-click Params; the four rows shown; hold    F4
+#   P2 pickup (rev 3): start file; top view; Measure strip end edge -> hook 1 outer edge (20.00)          F5
 set -u
 . /lab/lab/common.sh; . /lab/lab/fx19_lib.sh; . /lab/lab/fx20_lib.sh; . /lab/lab/fc9_lib.sh
 T=$1; O=$X/$T; mkdir -p $O; L=$O/take.log; : > $L
-case $T in A) SRC=$X/P/rack-start.FCStd;; B) SRC=$X/A/end.FCStd;; C) SRC=$X/B/end.FCStd;; *) echo "A|B|C"; exit 2;; esac
+case $T in A|P1|P2) SRC=$X/P/rack-start.FCStd;; B) SRC=$X/A/end.FCStd;; C) SRC=$X/B/end.FCStd;; *) echo "A|B|C|P1|P2"; exit 2;; esac
 F=rack
 fx_start $O
 mkdir -p /tmp/fc9; cp "$SRC" /tmp/fc9/$F.FCStd
@@ -151,6 +153,21 @@ C)
   topview; shot $O/proof-top.png
   m left 0 2.5 20 -2.5 6
   # right end: GUI Measure failed twice in B (task panel over the right end; DEVIATIONS 4): by code only
+  ;;
+P1)
+  dblrow Params "double-click: open Params"
+  sl_nap 2
+  for r in 0 1 2 3; do
+    c=$(B cell $r 1); echo "row $r cell $c" >> $L
+    sl_glide ${c% *} ${c#* } 20; sl_mark "hover: Params row $((r + 1))"; sl_nap 1.8
+  done
+  xdotool mousemove 1500 1500; sl_nap 3
+  shot $O/params-180-5.png; sl_nap 3
+  echo "params: $(FQ "pattern_state('$F')")" >> $L
+  ;;
+P2)
+  isofit; shot $O/start-iso.png; sl_nap 2
+  m left 0 2.5 20 -2.5 6
   ;;
 esac
 sl_nap 2; sl_stop
