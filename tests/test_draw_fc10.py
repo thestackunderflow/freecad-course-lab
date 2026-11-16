@@ -1,5 +1,5 @@
 """fc10 cards and panels (FreeCAD course lesson 10, fully constrained sketches; SCRIPT-fc10.md rev 2 section 3):
-every card drawn, light, 2560 x 1440 (the Short's 1080 x 960), text 44 px+ and 44 columns at most (code panels on the
+every card drawn, light, 2560 x 1440 (the Short's 1080 x 1080, cut 2), text 44 px+ and 44 columns at most (code panels on the
 source sized for their shot), no percent sign, each step only adds, every text inside the 5 percent safe area, every
 number on a card or code panel equal to NUMBERS.json (or a lesson / typed number), the your-turn cards carry no
 answer, the "checked by code" panels in one style with the script's lines, the ghost outline at the 60 anchors and
@@ -23,7 +23,7 @@ SHORT = ['card-short-why-1.png', 'card-short-why-2.png']
 PANELS = ['ov-full-T.png', 'ov-meas-T.png', 'ov-meas-TB.png', 'ov-full-P.png', 'ov-msg-P.png', 'ov-meas-A.png',
           'ov-full-A.png', 'ov-meas-C.png', 'ov-full-D1.png', 'ov-full-D2.png', 'ov-cc-A1.png', 'ov-cc-B1.png',
           'ov-short-T.png', 'ov-short-P.png', 'ov-short-TB.png']
-OVERLAYS = ['ov-cc-top.png', 'ov-cc-title.png', 'ov-cc-save.png', 'ov-floor-T.png', 'ov-floor-TB.png',
+OVERLAYS = ['ov-cc-top.png', 'ov-cc-title.png', 'ov-cc-save.png', 'ov-cc-fix-A1.png', 'ov-cc-fix-B1.png', 'ov-floor-T.png', 'ov-floor-TB.png',
             'ov-floor-A.png', 'ov-recap-1.png', 'ov-recap-2.png'] + PANELS
 NUM = json.load(open(os.path.join(d.TAKES, 'NUMBERS.json')))
 LESSON = {'1', '2', '3', '4', '9', '10', '1.1.4', '0.1.28', '2.1.308', '0', '15', '30', '40', '60', '80', '100',
@@ -60,7 +60,7 @@ def test_all_drawn_without_problems(drawn):
     for n in EXPECTED:
         assert Image.open(os.path.join(drawn.OUT, n)).size == (2560, 1440), n
     for n in SHORT:
-        assert Image.open(os.path.join(drawn.OUT, n)).size == (1080, 960), n
+        assert Image.open(os.path.join(drawn.OUT, n)).size == (1080, 1080), n     # cut 2: the taller Short view
     for n in OVERLAYS:
         assert Image.open(os.path.join(drawn.OUT, n)).size == (2880, 1800), n
 
@@ -119,9 +119,10 @@ def test_panel_lines_say_what_the_script_says(drawn):
                                      'top 69.61 · hole 4.61 from top']
     assert lines('ov-cc-B1.png') == ['checked by code (its file):', '0 degrees of freedom · bottom 0.00',
                                      'top 80.00 · hole 15.0 from top']
-    assert lines('ov-short-T.png') == ['checked by code', 'bottom -9.15 · hole 5.85 from top', '(was 0 · 15)']
+    # cut 2 (WATCH-fc10-cut1): the Short's panels ~1.6x bigger, so one fact per line
+    assert lines('ov-short-T.png') == ['checked by code', 'bottom -9.15', 'hole 5.85 from top', '(was 0 · 15)']
     assert lines('ov-short-P.png') == ['checked by code', 'panel text:', '2 Degrees of Freedom']
-    assert lines('ov-short-TB.png') == ['checked by code', 'bottom 0.00 · hole 15.0 from top']
+    assert lines('ov-short-TB.png') == ['checked by code', 'bottom 0.00', 'hole 15.0 from top']
 
 
 def test_why_card_tries(drawn):
@@ -161,3 +162,30 @@ def test_claude_covers_left_pane_only(drawn):
         assert im.getbbox()[2] <= 1160, n
     top = Image.open(os.path.join(drawn.OUT, 'ov-cc-top.png'))
     assert top.getpixel((600, 140))[3] == 255          # "Claude Code v..." header row covered
+
+
+def test_cut2_short_panels_bigger_and_inside_their_rects(drawn):
+    """Cut 2 (WATCH-fc10-cut1: Measurement text and the check box too small on a phone): the panels 75 px+ on the
+    Short (was 47), the rects at most 490 wide (FreeCAD's text 2.2x+, was 1.57x), each panel inside the rect
+    shorts-footage-fc10.py crops."""
+    assert d.SHORT_PX * d.SHORT_K >= 75 and d.SHORT_MEAS_R[2] <= 490 and d.SHORT_MSG_R[2] <= 490
+    for n, rect in (('ov-short-T.png', d.SHORT_MEAS_R), ('ov-short-TB.png', d.SHORT_MEAS_R),
+                    ('ov-short-P.png', d.SHORT_MSG_R)):
+        x0, y0, x1, y1 = Image.open(os.path.join(drawn.OUT, n)).getbbox()
+        assert rect[0] <= x0 and x1 <= rect[0] + rect[2] - 8 and rect[1] <= y0 and y1 <= rect[1] + rect[3] - 8, n
+
+
+def test_cut2_redaction_box_restored_after_the_header(drawn):
+    """Cut 2 (WATCH-fc10-cut1: the "Claude [plan]" box hid reply words once the header scrolled away): the box of
+    lab/fc10redact.sh (600, 118, 320, 52) is repainted with the words the run's own reply.txt has at those columns
+    (DejaVu Sans Mono 41 px, 25 px columns from x 3: frame-fitted); used only after the header left the screen."""
+    for run, want in (('A1', ', called fre'), ('B1', 'ere, so the w')):
+        im = Image.open(os.path.join(drawn.OUT, f'ov-cc-fix-{run}.png'))
+        assert im.getbbox() == (600, 118, 920, 170), run
+        assert im.getpixel((601, 119)) == (255, 255, 255, 255)
+        line = d.RESTORE[run]
+        reply = open(os.path.join(d.TAKES, 'runs', run, 'reply.txt'), encoding='utf-8').read().splitlines()
+        assert line in reply, run
+        assert line[(600 - d.TERM_X0) // d.TERM_COL + 1:][:len(want)] == want, run
+        ink = [im.getpixel((x, y)) for x in range(603, 918) for y in range(125, 165)]
+        assert sum(1 for p in ink if p[0] < 160) > 400, run           # the words are drawn

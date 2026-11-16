@@ -5,7 +5,7 @@ sticky note is the one analogy), each step adds and earlier steps turn grey, tex
 percent sign, everything inside the 5 percent safe area, highlight boxes thin orange outlines, never filled. Every
 number is NUMBERS.json's (out/fc10) or a lesson / typed number (tests/test_draw_fc10.py checks it).
   full frame (RGB):  card-note-1..5 (F2), card-why-1..6 (F8), card-yourturn-1..4 (F18, alone), card-end (F19)
-  Short (1080 x 960, RGB): card-short-why-1..2 (S1)
+  Short (1080 x 1080, RGB; cut 2 taller view): card-short-why-1..2 (S1)
   source overlays (RGBA, 2880 x 1800; burnt into derived takes by mcp-canvas primers/footage-fc10.py):
       ov-floor-T / -TB / -A  the front view (fixed camera per take, NUMBERS takes.*.px): the hook drawn at the 60
                     anchors dashed grey (T, A: where it stood), the floor line z = 0 red
@@ -13,10 +13,13 @@ number is NUMBERS.json's (out/fc10) or a lesson / typed number (tests/test_draw_
       ov-cc-top     A1 / B1 while Claude Code's header is on screen (A1 to 17.0 s, B1 to 21.0 s): y 0-230, left pane
       ov-cc-title   after that: the window title row only (y 0-24, left pane)
       ov-cc-save    the input row, from Claude Code's greyed "save the document" suggestion (A1 ~19 s, B1 ~41 s)
+      ov-cc-fix-A1 / -B1  cut 2: the "Claude [plan]" box burnt in by lab/fc10redact.sh stays on screen after the header
+                    scrolls away and hid reply words; repainted with the words reply.txt has at those columns, used
+                    only after the header left (A1 17.0 s, B1 40.5 s: the row is static from there, frame-checked)
       ov-full-*     "checked by code" panels for full-window shots: bottom left over the property view, 56 px on the
                     source (45 px on the 2560 frame); ov-meas-* / ov-msg-* small ones under the Measurement panel /
                     the solver message, read inside the 704 px wide zoom (24 px on the source = 87 px on the frame);
-                    ov-cc-A1 / -B1 over the terminal's unquoted lines; ov-short-* for the Short's 1080 x 960 view
+                    ov-cc-A1 / -B1 over the terminal's unquoted lines; ov-short-* for the Short's 1080 x 1080 view (cut 2: 32 px in a 444 px rect, one fact per line)
 Run in the draw image:  docker run --rm -v "<lab>:/lab" -w /lab cad3way-draw:1 python3 video/draw_fc10.py [sheet OUTDIR]
 Test: tests/test_draw_fc10.py"""
 import json
@@ -48,7 +51,11 @@ CC_TITLE = (0, 0, 1160, 24)         # the terminal window's title row
 CC_SAVE = (40, 1625, 1110, 80)      # the input row's text (the greyed "save the document" suggestion)
 FULL_PX, FULL_K = 56, 0.8           # full window: 2880 + 2 x 160 pad = 3200 -> 2560
 SMALL_PX, SMALL_K = 24, 2560 / 704  # the Measurement / message zoom: 704 px wide
-SHORT_PX, SHORT_K = 30, 1080 / 690  # the Short's close-up rect, 690 px wide
+SHORT_PX, SHORT_K = 32, 1080 / 444  # cut 2: the Short's close-up rect 444 px wide (was 30 px in 690: too small)
+SHORT_MEAS_R = [2286, 580, 444, 444]   # = shorts-footage-fc10.py RECTS['meas'] (the Result values x ~2303-2715)
+SHORT_MSG_R = [2190, 600, 484, 484]    # = RECTS['msg'] (the message x 2196-2666)
+SHORT_MEAS_XY = (2300, 806)            # under the Result row, left-aligned with its values
+SHORT_MSG_XY = (2200, 790)             # under the solver message
 FULL_XY = (20, 1700)                # bottom-left anchor of the full-window panels (the property view, left of the hook)
 MEAS_XY = (2196, 806)               # top-left: under the Measurement panel's Result row
 MSG_XY = (2196, 790)                # top-left: under the solver message
@@ -236,21 +243,21 @@ def card_end():
 # --- the Short's why card (1080 x 960) ----------------------------------------------------------------------------------
 def card_short_why(step):
     CUR.clear()
-    im = Image.new('RGB', (1080, 960), WHITE)
+    fr = (1080, 1080)                   # cut 2: the Short's taller view; lines and words stay in ink (sc10 cut 2)
+    im = Image.new('RGB', fr, WHITE)
     d = ImageDraw.Draw(im)
-    fr = (1080, 960)
-    k, x0, base = 7.0, 380, 760
-    c1 = INK if step == 1 else DONE
+    k, x0, base = 7.5, 380, 840
+    c1 = INK
     pts = [(x0 + x * k, base - y * k) for x, y in b.HOOK]
-    d.line(pts, fill=c1, width=6)
-    text(d, (540, 110), 'every line held straight', 52, c1, anchor='mm', frame=fr)
-    text(d, (x0 - 30, base - 30 * k), 'held', 44, c1, anchor='rm', frame=fr)
-    text(d, (x0 + 25 * k + 30, base - 5 * k), 'held', 44, c1, anchor='lm', frame=fr)
+    d.line(pts, fill=c1, width=8)
+    text(d, (540, 110), 'every line held straight', 56, c1, anchor='mm', frame=fr)
+    text(d, (x0 - 30, base - 30 * k), 'held', 48, c1, anchor='rm', frame=fr)
+    text(d, (x0 + 25 * k + 30, base - 5 * k), 'held', 48, c1, anchor='lm', frame=fr)
     if step >= 2:
         biarrow(d, x0 - 220, base - 50 * k, x0 - 60, base - 50 * k, BLUE)
         biarrow(d, x0 + 25 * k + 90, base - 58 * k, x0 + 25 * k + 90, base - 38 * k, BLUE)
-        d.line((x0 - 260, base + 40, x0 + 25 * k + 200, base + 40), fill=ORANGE, width=4)
-        text(d, (540, 870), 'no tie to the origin (0, 0)', 52, ORANGE, anchor='mm', frame=fr)
+        d.line((x0 - 260, base + 40, x0 + 25 * k + 200, base + 40), fill=ORANGE, width=6)
+        text(d, (540, 975), 'no tie to the origin (0, 0)', 54, ORANGE, anchor='mm', frame=fr)
     save(im, f'card-short-why-{step}.png')
 
 
@@ -373,11 +380,37 @@ def panels():
         code_panel(f'ov-cc-{run}.png', [f"{h['dof']} degrees of freedom · bottom {f2(h['zmin'])}",
                                         f"top {f2(h['zmax'])} · hole {hole(h['hole_to_top'])} from top"],
                    xy, FULL_PX, FULL_K, title='checked by code (its file):')
-    short = (MEAS_XY, SHORT_PX, SHORT_K, 'lt')
-    code_panel('ov-short-T.png', [f"bottom {f2(T['zmin'])} · hole {hole(T['hole_to_top'])} from top",
+    short = (SHORT_MEAS_XY, SHORT_PX, SHORT_K, 'lt')
+    code_panel('ov-short-T.png', [f"bottom {f2(T['zmin'])}", f"hole {hole(T['hole_to_top'])} from top",
                                   f"(was 0 · {hole(P['hole_to_top'])[:-2]})"], *short)
-    code_panel('ov-short-P.png', ['panel text:', link], MSG_XY, SHORT_PX, SHORT_K)
-    code_panel('ov-short-TB.png', [f"bottom {f2(TB['zmin'])} · hole {hole(TB['hole_to_top'])} from top"], *short)
+    code_panel('ov-short-P.png', ['panel text:', link], SHORT_MSG_XY, SHORT_PX, SHORT_K)
+    code_panel('ov-short-TB.png', [f"bottom {f2(TB['zmin'])}", f"hole {hole(TB['hole_to_top'])} from top"], *short)
+
+
+# --- cut 2: the redaction box repainted with the reply's own words -------------------------------------------------------
+REDACT = (600, 118, 320, 52)            # lab/fc10redact.sh: drawbox x=600 y=118 w=320 h=52 (the header's plan name)
+TERM_X0, TERM_COL, TERM_PX, TERM_Y = 3, 25, 41, 120   # xterm DejaVu Sans Mono: column c at x 3 + 25c (fitted on frames)
+TERM_INK = {'A1': (83, 88, 84), 'B1': (0, 0, 0)}      # A1's row is a grey tool summary, B1's the reply in ink
+RESTORE = {}
+
+
+def ov_cc_fix(run, key):
+    """The reply.txt line holding `key` (it sits on the redaction row once the header is gone), its characters at the
+    box's columns drawn on the terminal's white, clipped to the box."""
+    line = next(ln for ln in open(os.path.join(TAKES, 'runs', run, 'reply.txt'), encoding='utf-8').read().splitlines()
+                if key in ln)
+    RESTORE[run] = line
+    im, _ = source()
+    x, y, w, h = REDACT
+    lay = Image.new('RGBA', (w, h), WHITE + (255,))
+    dl = ImageDraw.Draw(lay)
+    f = b.font(MONO, TERM_PX)
+    c0 = (x - TERM_X0) // TERM_COL
+    for c in range(c0, c0 + w // TERM_COL + 2):
+        if c < len(line):
+            dl.text((TERM_X0 + TERM_COL * c - x, TERM_Y - y), line[c], font=f, fill=TERM_INK[run] + (255,))
+    im.paste(lay, (x, y))
+    save(im, f'ov-cc-fix-{run}.png')
 
 
 def sheet(outdir):
@@ -414,6 +447,8 @@ def main():
     _ov('ov-cc-top.png', CC_TOP)
     _ov('ov-cc-title.png', CC_TITLE)
     _ov('ov-cc-save.png', CC_SAVE)
+    ov_cc_fix('A1', 'Searched for 1 pattern')
+    ov_cc_fix('B1', 'nothing pinned it there')
     ov_floor('T', True)
     ov_floor('TB', False)
     ov_floor('A', True)
