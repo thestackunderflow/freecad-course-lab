@@ -76,6 +76,7 @@ N = {'freecad': '1.1.4 (fcc-app:1.1.4-0.1.28, freecad-mcp add-on + plug 0.1.28)'
      'takes': {t: take(t) for t in ('A', 'B', 'P', 'C', 'D', 'T', 'TB') if os.path.isdir(os.path.join(X, t))},
      'controls': {os.path.basename(f)[:-5]: pick(json.load(open(f, encoding='utf-8')))
                   for f in sorted(glob.glob(os.path.join(X, 'controls', '*.json')))},
+     'controls_refilm': j('controls-refilm.json'),
      'claude_runs': {}}
 for d in sorted(glob.glob(os.path.join(X, 'runs', '*'))):
     r = os.path.basename(d)

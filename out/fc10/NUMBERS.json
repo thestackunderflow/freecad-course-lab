@@ -1025,6 +1025,44 @@
    "conflicting": []
   }
  },
+ "controls_refilm": {
+  "source": "out/fc10/RESULTS-fc10-refilm.md section 2 (re-film session, 16 Nov 2026); the per-try check logs were not kept, values are the re-film agent's 2-decimal record",
+  "takeA_80_to_100_tries": [
+   {
+    "try": 1,
+    "zmin": -2.64,
+    "hole_to_top": 12.36,
+    "note": "same as controls/takeA-80-to-100.json"
+   },
+   {
+    "try": 2,
+    "zmin": -11.71,
+    "hole_to_top": 3.29
+   },
+   {
+    "try": 3,
+    "zmin": -11.71,
+    "hole_to_top": 3.29
+   }
+  ],
+  "takeT_60_to_80_tries": [
+   {
+    "try": 1,
+    "zmin": -10.47,
+    "hole_to_top": 4.53
+   },
+   {
+    "try": 2,
+    "zmin": -10.47,
+    "hole_to_top": 4.53
+   },
+   {
+    "try": 3,
+    "zmin": -10.47,
+    "hole_to_top": 4.53
+   }
+  ]
+ },
  "claude_runs": {
   "A1": {
    "cost_usd": "0.1291",

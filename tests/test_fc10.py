@@ -110,3 +110,13 @@ def test_unpinned_80_tries_are_11_distinct_tries_from_the_raw_logs():
     assert drops == [1.32] * 7 + [6.97] * 3 + [10.39], drops
     for t in tries:
         assert abs(t['zmax'] - t['zmin'] - 80) < 1e-3 and t['zmin'] <= -1.0
+
+
+def test_control_at_100_lists_the_3_refilm_tries():
+    """F13 shows all 3 tries of take A's file 80 -> 100 (re-film): -2.64 once, -11.71 twice; each 100 tall."""
+    if not os.path.exists(os.path.join(HERE, 'NUMBERS.json')):
+        pytest.skip('NUMBERS.json not written yet')
+    tries = load('NUMBERS.json')['controls_refilm']['takeA_80_to_100_tries']
+    assert sorted(t['zmin'] for t in tries) == [-11.71, -11.71, -2.64]
+    for t in tries:
+        assert abs(t['hole_to_top'] - (15 + t['zmin'])) < 0.011

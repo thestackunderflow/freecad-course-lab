@@ -6,7 +6,8 @@ had been committed (c88f393). Re-filmed in the main checkout with the same scrip
 Code 2.1.308, `claude-sonnet-5-5`, `--strict-mcp-config` (FreeCAD plug only). Start files rebuilt from scratch
 (`fc10parts.py` build, 60 mm states identical; its own resize legs vary, see `P/build-refilm.json`; the original
 `P/build.json` is kept). Every take's `events.jsonl`, `check.json`, `take.log` and stills now belong to the new
-`screen.mp4` (the old ones are in git at c88f393). NUMBERS.json was NOT regenerated (it still holds the first run).
+`screen.mp4` (the old ones are in git at c88f393). NUMBERS.json was regenerated afterwards (11e8b10; control tries in
+controls-refilm.json; `cases.unpinned_80/100` still hold the first build legs from P/build.json).
 
 ## 1. Takes: every on-screen number reproduced exactly
 | Take | GUI Measure (Position Z) | Code check (new) | Script value | Same? |
