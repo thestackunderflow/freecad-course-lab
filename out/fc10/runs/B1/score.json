@@ -1,0 +1,37 @@
+{
+ "class": "right + pinned",
+ "stopped": false,
+ "tool_calls": [
+  "list_documents",
+  "execute_code",
+  "execute_code",
+  "execute_code",
+  "execute_code",
+  "execute_code"
+ ],
+ "used_execute_code": true,
+ "hook": {
+  "dof": 0,
+  "zmin": -0.0,
+  "zmax": 80.0,
+  "hole_to_top": 15.0,
+  "constraints": 23,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 5,
+   "DistanceY": 1
+  },
+  "origin_tied": true,
+  "sheet": {
+   "plate_height": 80,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "volume_mm3": 10420.4784
+ },
+ "rules_added": 1
+}

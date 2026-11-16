@@ -23,3 +23,5 @@
 7. The panel truncates the link to "2 Degrees of Freedc" at the default panel width (full words read from the widget:
    "Under-constrained: " + "2 Degrees of Freedom"). The message zoom in F5 should show the full words: an overlay of
    the widget text or a wider panel at the script stage.
+8. TB first try (TB-try1): its screen.mp4 is unreadable (no moov atom; the shell running it was moved to the background mid-take). Re-filmed as TB: nothing moves (bottom 0.00, top 60.00, hole 15.0).
+9. Claude B1: the Claude Code header scrolled to the top of the screen at 28-34 s, outside the fc9 cover box; a second box was burned in (OCR-plan.txt). Session logs (account e-mail) kept outside the repo.

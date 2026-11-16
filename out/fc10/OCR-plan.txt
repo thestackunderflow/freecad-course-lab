@@ -1,0 +1,18 @@
+SCANNED /lab/out/fc10/A/screen.mp4 frames=51 hits=0
+SCANNED /lab/out/fc10/B/screen.mp4 frames=61 hits=0
+SCANNED /lab/out/fc10/C/screen.mp4 frames=61 hits=0
+SCANNED /lab/out/fc10/D/screen.mp4 frames=57 hits=0
+SCANNED /lab/out/fc10/P/screen.mp4 frames=32 hits=0
+SCANNED /lab/out/fc10/T-try1/screen.mp4 frames=45 hits=0
+SCANNED /lab/out/fc10/T/screen.mp4 frames=46 hits=0
+SCANNED /lab/out/fc10/TB/screen.mp4 frames=1 hits=0
+SCANNED /lab/out/fc10/runs/A1/screen.mp4 frames=13 hits=0
+/lab/out/fc10/runs/B1/screen.mp4 t=28s: 7 Sonnet 5.5 - Claude [plan]
+/lab/out/fc10/runs/B1/screen.mp4 t=30s: Sonnet 5.5 - Claude [plan] Fle Eat Yiew Tools Macro Sketch Bart Design windows Help
+/lab/out/fc10/runs/B1/screen.mp4 t=32s: 7 Sonnet 5.5 - Claude [plan] File Edit View Tools Macro Sketch Bart Design Windows Help
+/lab/out/fc10/runs/B1/screen.mp4 t=34s: 7 Sonnet 5.5 - Claude [plan] file Edit Yiew Tools Macro Sketch art Design Windows Help
+SCANNED /lab/out/fc10/runs/B1/screen.mp4 frames=22 hits=4
+# fix (16 Nov): B1's header scrolled to y 20-72 at 28-34 s; second cover box (x 600-920, y 20-72, t 24-40 s) burned in
+SCANNED /lab/out/fc10/runs/B1/screen.mp4 (after the fix, 1 fps) frames=44 hits=0
+# TB re-filmed (TB-try1's recording had no moov atom: unreadable, not used)
+SCANNED /lab/out/fc10/TB/screen.mp4 frames=44 hits=0
