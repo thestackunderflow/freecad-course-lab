@@ -1,0 +1,37 @@
+{"t": 0.029, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (U)"}
+{"t": 4.308, "event": "double-click: HookSketch (edit)"}
+{"t": 8.657, "event": "(sketch view set)"}
+{"t": 15.097, "event": "click: the 55", "x": 1536, "y": 1069, "button": 1}
+{"t": 18.882, "event": "key K", "keys": "k"}
+{"t": 19.803, "event": "key X: Toggle Driving/Reference", "keys": "x"}
+{"t": 22.425, "event": "hold: blue 55, Under-constrained 1 DoF"}
+{"t": 29.688, "event": "click: the back line", "x": 1547, "y": 824, "button": 1}
+{"t": 32.485, "event": "key K", "keys": "k"}
+{"t": 33.405, "event": "key D: Insert Length box", "keys": "d"}
+{"t": 37.049, "event": "typed = (Expression Editor opens)", "text": "="}
+{"t": 39.283, "event": "typed Params.plate_height", "text": "Params.plate_height"}
+{"t": 44.075, "event": "Enter: expression", "keys": "Return"}
+{"t": 46.224, "event": "Enter: expression editor", "keys": "Return"}
+{"t": 48.482, "event": "hold: box with the expression"}
+{"t": 52.59, "event": "box: OK", "x": 1936, "y": 1510, "button": 1}
+{"t": 55.297, "event": "hold: Fully constrained, blue reads 75"}
+{"t": 62.653, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 68.369, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 72.077, "event": "key 0: isometric", "keys": "0"}
+{"t": 73.309, "event": "(view fitted)"}
+{"t": 78.037, "event": "key 1: Front view", "keys": "1"}
+{"t": 79.258, "event": "(view set: Front centred 12 0 40, 130 mm tall)"}
+{"t": 86.168, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 91.153, "event": "top: corner", "x": 1547, "y": 542, "button": 1}
+{"t": 99.509, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 103.854, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 108.854, "event": "bottom: corner", "x": 1547, "y": 1429, "button": 1}
+{"t": 117.252, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 119.461, "event": "key 0: isometric", "keys": "0"}
+{"t": 120.684, "event": "(view fitted)"}
+{"t": 124.947, "event": "double-click: HookSketch (edit)"}
+{"t": 129.298, "event": "(sketch view set)"}
+{"t": 131.391, "event": "hold: blue 75"}
+{"t": 138.563, "event": "sketch: Close", "x": 2527, "y": 615, "button": 1}
+{"t": 142.272, "event": "key 0: isometric", "keys": "0"}
+{"t": 143.481, "event": "(view fitted)"}

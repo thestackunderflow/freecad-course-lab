@@ -1,0 +1,35 @@
+hook
+prepped hook
+1
+start: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+rows open: 237 469
+1
+look Front 12 0 40 130
+solver: ['Fully constrained']
+the 55 is index 22
+sel: [('HookSketch', ['Constraint23'])]
+solver (blue 55, Under-constrained 1 DoF): ['Under-constrained: ', '1 Degrees of Freedom']
+sel: [('HookSketch', ['Edge8'])]
+box: Window 4194421   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+solver (Fully constrained, blue reads 75): ['Fully constrained']
+after fix: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 75.0, false]], "len5": 75.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+1
+front x 0.0 z 0.0 80.0
+look Front 12 0 40 130
+front px: floor-left 1437 1429 floor-right 1991 1429 top-back 1547 542 bottom-back 1547 1429 at60 1547 764 at0 1547 1429
+top corner at 1547 542
+top measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 80.00 mm
+bottom corner at 1547 1429
+bottom measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 0.00 mm
+1
+look Front 12 0 40 130
+solver: ['Fully constrained']
+solver (blue 75): ['Fully constrained']
+1
+saved
+TAKE U DONE
+check: FC11 check {"dof": 0, "solve": 0, "redundant": [], "conflicting": [], "zmax": 80.0, "stl_zmax": 80.0, "inner": {"index": 22, "type": "Distance", "driving": false, "value": 75.0, "expression": null, "name": "", "geometry_length": 75.0}, "plate_height_users": [23], "line_lengths": [25.0, 10.0, 5.0, 5.0, 15.0, 75.0, 5.0, 80.0]}

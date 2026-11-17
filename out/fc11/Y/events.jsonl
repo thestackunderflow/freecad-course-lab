@@ -1,0 +1,16 @@
+{"t": 0.029, "event": "recording started: FreeCAD 1.1.4, rect.FCStd open (Y)"}
+{"t": 4.313, "event": "double-click: Sketch (edit)"}
+{"t": 7.656, "event": "(sketch view set)"}
+{"t": 9.663, "event": "hold: Fully constrained"}
+{"t": 14.892, "event": "Toggle construction geometry", "x": 970, "y": 228, "button": 1}
+{"t": 19.025, "event": "Line tool", "x": 379, "y": 228, "button": 1}
+{"t": 23.725, "event": "line: first corner", "x": 1200, "y": 1346, "button": 1}
+{"t": 27.89, "event": "line: far corner", "x": 2161, "y": 625, "button": 1}
+{"t": 29.598, "event": "Escape: line tool off", "keys": "Escape"}
+{"t": 33.855, "event": "click: the helper line", "x": 1681, "y": 985, "button": 1}
+{"t": 36.643, "event": "key K", "keys": "k"}
+{"t": 37.563, "event": "key D: Insert Length box", "keys": "d"}
+{"t": 43.124, "event": "tick: Reference", "x": 1838, "y": 1452, "button": 1}
+{"t": 47.624, "event": "box: OK (answer on screen from here)", "x": 1936, "y": 1510, "button": 1}
+{"t": 51.333, "event": "hold: reference diagonal"}
+{"t": 57.657, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}

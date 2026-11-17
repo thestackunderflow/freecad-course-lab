@@ -1,0 +1,28 @@
+hook
+prepped hook
+1
+start: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[23, "Distance", 55.0, false]], "len5": 55.0, "states": {"Body": ["Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+rows open: 237 469
+1
+plate_height cell 855 410
+3D tab 761 1731
+after 80: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 80.0, "xmax": 25.0, "inner": [[23, "Distance", 75.0, false]], "len5": 75.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+1
+front x 0.0 z 0.0 80.0
+front px: floor-left 1305 1654 floor-right 2141 1654 top-back 1472 317 bottom-back 1472 1654 at60 1472 651 at0 1472 1654
+top corner at 1472 317
+top measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 80.00 mm
+bottom corner at 1472 1654
+bottom measure: X: 0.00 mm
+Y: -20.00 mm
+Z: 0.00 mm
+1
+look Front 12 0 40 130
+solver: ['Fully constrained']
+solver (sketch message): ['Fully constrained']
+1
+saved
+TAKE F DONE
+check: FC11 check {"dof": 0, "solve": 0, "redundant": [], "conflicting": [], "zmax": 80.0, "stl_zmax": 80.0, "inner": {"index": 23, "type": "Distance", "driving": false, "value": 75.0, "expression": null, "name": "", "geometry_length": 75.0}, "plate_height_users": [20], "line_lengths": [25.0, 10.0, 5.0, 5.0, 15.0, 75.0, 5.0, 80.0]}

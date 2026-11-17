@@ -1,0 +1,12 @@
+{"t": 0.031, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (P)"}
+{"t": 4.34, "event": "double-click: open Params"}
+{"t": 8.369, "event": "hover: Params row 1"}
+{"t": 10.937, "event": "hover: Params row 2"}
+{"t": 13.503, "event": "hover: Params row 3"}
+{"t": 16.07, "event": "hover: Params row 4"}
+{"t": 18.644, "event": "hover: Params row 5"}
+{"t": 24.491, "event": "tab: back to the 3D view", "x": 761, "y": 1731, "button": 1}
+{"t": 28.459, "event": "double-click: HookSketch (edit)"}
+{"t": 32.811, "event": "(sketch view set)"}
+{"t": 34.924, "event": "hold: Fully constrained"}
+{"t": 43.088, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}

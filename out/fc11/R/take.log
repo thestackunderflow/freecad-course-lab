@@ -1,0 +1,15 @@
+hook
+prepped hook
+1
+start: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+rows open: 237 469
+1
+look Front 12 0 30 90
+solver: ['Fully constrained']
+sel: [('HookSketch', ['Edge6'])]
+box: Window 4194428   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+solver (panel after OK): ['Fully constrained']
+after OK: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+saved
+TAKE R DONE
+check: FC11 check {"dof": 0, "solve": 0, "redundant": [], "conflicting": [], "zmax": 60.0, "stl_zmax": 60.0, "inner": null, "plate_height_users": [20], "line_lengths": [25.0, 10.0, 5.0, 5.0, 15.0, 55.0, 5.0, 60.0]}

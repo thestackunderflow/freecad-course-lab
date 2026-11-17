@@ -1,0 +1,11 @@
+rect
+1
+look Top 20 15 0 60
+solver (Fully constrained): ['Fully constrained']
+geo: 5 [False, False, False, False, True] 50.0
+sel: [('Sketch', ['Edge5'])]
+box: Window 4194487   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+solver (reference diagonal): ['Fully constrained']
+diag: Distance 50.0 False 50.0 True
+saved
+TAKE Y DONE

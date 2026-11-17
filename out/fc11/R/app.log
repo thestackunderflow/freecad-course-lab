@@ -1,0 +1,6 @@
+The 'Midplane' property being set for the extrusion of HoleSketch is deprecated and has been replaced by the 'SideType' property in FeatureExtrude. Please update your script, this property will be removed in a future version.
+Deprecated Midplane property was explicitly set to False: assuming SideType='One side'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Datum 55.00 mm for the constraint with index 23 is invalid
+App.getDocument('hook').getObject('HookSketch').setDatum(23,App.Units.Quantity('55 mm'))

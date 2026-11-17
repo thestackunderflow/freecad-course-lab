@@ -1,0 +1,446 @@
+{
+ "used": "Body",
+ "zmin": -0.0,
+ "zmax": 60.0,
+ "xmin": 0.0,
+ "xmax": 25.0,
+ "ymin": -20.0,
+ "ymax": 0.0,
+ "volume_mm3": 8500.0,
+ "solids": 1,
+ "hole_faces": 0,
+ "sketch_hole_z": 65.0,
+ "sketch_hole_y": -10.0,
+ "sketch_hole_to_top": -5.0,
+ "hole_in_plate": false,
+ "sketch": "HookSketch",
+ "solve": 0,
+ "dof": 0,
+ "constraints": 23,
+ "by_type": {
+  "Coincident": 9,
+  "Horizontal": 4,
+  "Vertical": 4,
+  "Distance": 5,
+  "DistanceY": 1
+ },
+ "redundant": [],
+ "conflicting": [],
+ "origin_tied": true,
+ "expressions": [
+  [
+   ".Constraints.arm_thickness",
+   "Params.thickness"
+  ],
+  [
+   ".Constraints.hook_depth",
+   "Params.hook_depth"
+  ],
+  [
+   ".Constraints.lip_height",
+   "Params.lip_height"
+  ],
+  [
+   ".Constraints.lip_thickness",
+   "Params.thickness"
+  ],
+  [
+   ".Constraints.thickness",
+   "Params.thickness"
+  ]
+ ],
+ "sketch_bbox": [
+  0.0,
+  0.0,
+  25.0,
+  60.0
+ ],
+ "features": [
+  [
+   "Pad",
+   "Pad",
+   true
+  ],
+  [
+   "Pocket",
+   "Pocket",
+   true
+  ]
+ ],
+ "sheet": {
+  "plate_height": 80,
+  "thickness": 5,
+  "hook_depth": 25,
+  "lip_height": 10,
+  "width": 20
+ },
+ "line_lengths": [
+  25.0,
+  10.0,
+  5.0,
+  5.0,
+  15.0,
+  55.0,
+  5.0,
+  60.0
+ ],
+ "inner": {
+  "index": 22,
+  "type": "Distance",
+  "driving": true,
+  "value": 55.0,
+  "expression": null,
+  "name": "",
+  "geometry_length": 55.0
+ },
+ "plate_height_users": [],
+ "plate_height_driving": false,
+ "arm_z": 5.0,
+ "cons": [
+  [
+   0,
+   "Coincident",
+   0,
+   2,
+   1,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   1,
+   "Coincident",
+   1,
+   2,
+   2,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   2,
+   "Coincident",
+   2,
+   2,
+   3,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   3,
+   "Coincident",
+   3,
+   2,
+   4,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   4,
+   "Coincident",
+   4,
+   2,
+   5,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   5,
+   "Coincident",
+   5,
+   2,
+   6,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   6,
+   "Coincident",
+   6,
+   2,
+   7,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   7,
+   "Coincident",
+   7,
+   2,
+   0,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   8,
+   "Horizontal",
+   0,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   9,
+   "Vertical",
+   1,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   10,
+   "Horizontal",
+   2,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   11,
+   "Vertical",
+   3,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   12,
+   "Horizontal",
+   4,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   13,
+   "Vertical",
+   5,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   14,
+   "Horizontal",
+   6,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   15,
+   "Vertical",
+   7,
+   0,
+   -2000,
+   0,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   16,
+   "Distance",
+   0,
+   0,
+   -2000,
+   0,
+   25.0,
+   true,
+   "hook_depth"
+  ],
+  [
+   17,
+   "Distance",
+   1,
+   0,
+   -2000,
+   0,
+   10.0,
+   true,
+   "lip_height"
+  ],
+  [
+   18,
+   "Distance",
+   2,
+   0,
+   -2000,
+   0,
+   5.0,
+   true,
+   "lip_thickness"
+  ],
+  [
+   19,
+   "Distance",
+   6,
+   0,
+   -2000,
+   0,
+   5.0,
+   true,
+   "thickness"
+  ],
+  [
+   20,
+   "DistanceY",
+   0,
+   1,
+   4,
+   1,
+   5.0,
+   true,
+   "arm_thickness"
+  ],
+  [
+   21,
+   "Coincident",
+   0,
+   1,
+   -1,
+   1,
+   0.0,
+   true,
+   ""
+  ],
+  [
+   22,
+   "Distance",
+   5,
+   0,
+   -2000,
+   0,
+   55.0,
+   true,
+   ""
+  ]
+ ],
+ "states": {
+  "Body": [
+   "Up-to-date"
+  ],
+  "HookSketch": [
+   "Up-to-date"
+  ],
+  "Pad": [
+   "Up-to-date"
+  ],
+  "HoleSketch": [
+   "Up-to-date"
+  ],
+  "Pocket": [
+   "Up-to-date"
+  ]
+ },
+ "stl_zmax": 60.0,
+ "stl_zmin": 0.0,
+ "doc": "/lab/out/fc11/T/end.FCStd",
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Hook",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "HookSketch",
+   "HookSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad",
+   "Pad",
+   "PartDesign::Pad"
+  ],
+  [
+   "HoleSketch",
+   "HoleSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pocket",
+   "Pocket",
+   "PartDesign::Pocket"
+  ]
+ ]
+}

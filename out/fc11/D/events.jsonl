@@ -1,0 +1,14 @@
+{"t": 0.027, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (D)"}
+{"t": 4.314, "event": "double-click: HookSketch (edit)"}
+{"t": 8.687, "event": "(sketch view set)"}
+{"t": 15.0, "event": "click: plate_height = 60 mm (f)", "x": 1648, "y": 986, "button": 1}
+{"t": 17.318, "event": "hold: the plate_height size selected"}
+{"t": 19.956, "event": "key Delete", "keys": "Delete"}
+{"t": 22.578, "event": "hold: panel after Delete"}
+{"t": 28.855, "event": "click: the inside face", "x": 1568, "y": 945, "button": 1}
+{"t": 31.643, "event": "key K", "keys": "k"}
+{"t": 32.565, "event": "key D: Insert Length box", "keys": "d"}
+{"t": 36.342, "event": "hold: box 55.00"}
+{"t": 41.457, "event": "box: OK", "x": 1936, "y": 1510, "button": 1}
+{"t": 44.167, "event": "hold: Fully constrained again"}
+{"t": 51.522, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
