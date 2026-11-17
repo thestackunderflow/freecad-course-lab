@@ -1,0 +1,1 @@
+FC11 check {"dof": 0, "solve": 0, "redundant": [], "conflicting": [], "zmax": 80.0, "stl_zmax": 80.0, "inner": {"index": 22, "type": "Distance", "driving": true, "value": 75.0, "expression": "Params.plate_height - Params.thickness", "name": "plate_rise", "geometry_length": 75.0}, "plate_height_users": [22], "line_lengths": [25.0, 10.0, 5.0, 5.0, 15.0, 75.0, 5.0, 80.0]}

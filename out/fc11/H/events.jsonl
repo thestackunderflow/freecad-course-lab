@@ -1,0 +1,18 @@
+{"t": 0.03, "event": "recording started: FreeCAD 1.1.4, hook.FCStd open (H)"}
+{"t": 3.613, "event": "key 3: Right view", "keys": "3"}
+{"t": 8.924, "event": "(view set: Right centred 0 -10 30, 90 mm tall)"}
+{"t": 15.415, "event": "hold: the screw hole at 60"}
+{"t": 19.549, "event": "key 0: isometric", "keys": "0"}
+{"t": 20.768, "event": "(view fitted)"}
+{"t": 25.038, "event": "double-click: open Params"}
+{"t": 29.072, "event": "hover: plate_height"}
+{"t": 31.223, "event": "cell B1: plate_height", "x": 855, "y": 410, "button": 1}
+{"t": 32.93, "event": "typed 80", "text": "80"}
+{"t": 33.794, "event": "Enter", "keys": "Return"}
+{"t": 38.069, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 43.691, "event": "tab: back to the 3D view", "x": 761, "y": 1731, "button": 1}
+{"t": 47.111, "event": "key 3: Right view", "keys": "3"}
+{"t": 52.42, "event": "(view set: Right centred 0 -10 30, 90 mm tall)"}
+{"t": 58.887, "event": "hold: no hole after 80"}
+{"t": 64.019, "event": "key 0: isometric", "keys": "0"}
+{"t": 65.248, "event": "(view fitted)"}

@@ -1,0 +1,16 @@
+hook
+prepped hook
+1
+start: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+rows open: 237 469
+1
+right px: top-mid 1682 350 hole 1682 668 floor 1682 1621
+1
+plate_height cell 855 410
+3D tab 761 1731
+after 80: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+right px: top-mid 1682 350 hole 1682 668 floor 1682 1621
+1
+saved
+TAKE H DONE
+check: FC11 check {"dof": 0, "solve": 0, "redundant": [], "conflicting": [], "zmax": 60.0, "stl_zmax": 60.0, "inner": {"index": 22, "type": "Distance", "driving": true, "value": 55.0, "expression": null, "name": "", "geometry_length": 55.0}, "plate_height_users": [], "line_lengths": [25.0, 10.0, 5.0, 5.0, 15.0, 55.0, 5.0, 60.0]}

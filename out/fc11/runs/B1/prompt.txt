@@ -1,0 +1,1 @@
+Make this hook taller: set plate_height to 80. Before you change anything, check which sizes drive this sketch and which Params cells they use. After the change, measure the top height and tell me the number.

@@ -1,0 +1,36 @@
+  at the constraints.
+
+  Called freecad (ctrl+o to expand)
+
+● Constraint 22 is the unbound 55 mm plate
+  length, which is the plate height minus the
+  5 mm arm thickness. I'll bind it to the
+  spreadsheet and set plate_height to 80.
+
+  Called freecad (ctrl+o to expand)
+
+● The hook is now 80 mm tall (plate_height =
+  80 in the Params spreadsheet). The recompute
+  had no errors and the shape is valid.
+
+  Setting plate_height alone would only have
+  moved the mounting hole. The plate length in
+  HookSketch was a hard-coded 55 mm and
+  wasn't linked to the spreadsheet. I named
+  that constraint plate_length and bound it to
+  Params.plate_height - Params.thickness. The
+  sketch is still fully constrained, and the
+  hole now sits at plate_height - 15, which is
+  65 mm. Future changes to plate_height will
+  resize the whole plate.
+
+  I haven't saved the document. Save it in
+  FreeCAD if you want to keep the change.
+
+✻ Cooked for 19s · done 12:59 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

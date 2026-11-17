@@ -9,14 +9,16 @@
 #   U  orphan @80 (G0b GUI file): click the 55, K X (blue), panel; back line K D "=Params.plate_height", OK;
 #      Close, Recompute, front Measure top (80.00); sketch: blue 75 held                                    F8 F9 S2
 #   X  U's end file reopened: Params 100, Recompute, front Measure top (100.00); sketch: blue 95 held              F11
+#   H  (lab finding, 17 Nov) orphan @60: right view on the plate's back, the screw hole; Params 80, Recompute; the same
+#      view: the hole is gone (HoleSketch reads plate_height: hole at z 65 above the 60 top, the Pocket cuts nothing)
 #   Y  your-turn rectangle 40 x 30 pinned: construction mode, line corner to corner, K D, Reference ticked, OK  F16
 set -u
 . /lab/lab/common.sh; . /lab/lab/fx19_lib.sh; . /lab/lab/fx20_lib.sh; . /lab/lab/fc9_lib.sh; . /lab/lab/fc10_lib.sh; . /lab/lab/fc11_lib.sh
 T=$1; O=$X/$T; mkdir -p $O; L=$O/take.log; : > $L
 F=hook
-case $T in T) SRC=$X/G0b/hook-orphan.FCStd;; U) SRC=$X/G0b/hook-orphan-80gui.FCStd;; F) SRC=$X/P/hook-reference.FCStd;;
+case $T in T|H) SRC=$X/G0b/hook-orphan.FCStd;; U) SRC=$X/G0b/hook-orphan-80gui.FCStd;; F) SRC=$X/P/hook-reference.FCStd;;
   P|R|D) SRC=$X/P/hook-pinned.FCStd;; X) SRC=$X/U/end.FCStd;; Y) SRC=$X/P/rect-pinned.FCStd; F=rect;;
-  *) echo "T|F|P|R|D|U|X|Y"; exit 2;; esac
+  *) echo "T|F|P|R|D|U|X|Y|H"; exit 2;; esac
 fx_start $O
 mkdir -p /tmp/fc11; cp "$SRC" /tmp/fc11/$F.FCStd
 open_doc /tmp/fc11/$F.FCStd >> $L 2>&1
@@ -132,6 +134,13 @@ T|F|X)
   isofit; sl_nap 1
   skedit $((H / 2)) $((H + 50)); holdsketch "sketch message" 5 sketch-message
   skclose; isofit; sl_nap 2
+  ;;
+H)
+  hole_view 60; sl_mark "hold: the screw hole at 60"; sl_nap 4; shot $O/hole-60.png
+  isofit; sl_nap 1
+  setheight 80
+  hole_view 60; sl_mark "hold: no hole after 80"; sl_nap 5; shot $O/hole-80.png
+  isofit; sl_nap 2
   ;;
 P)
   dblrow Params "double-click: open Params"

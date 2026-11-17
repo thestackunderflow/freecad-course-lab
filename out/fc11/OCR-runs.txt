@@ -1,0 +1,2 @@
+SCANNED /lab/out/fc11/runs/A1/screen.mp4 frames=16 hits=0
+SCANNED /lab/out/fc11/runs/B1/screen.mp4 frames=22 hits=0

@@ -1,0 +1,2208 @@
+{
+ "lesson": "fc11",
+ "freecad": "1.1.4",
+ "freecad_mcp": "0.1.28",
+ "claude_code": "2.1.308",
+ "model": "claude-sonnet-5-5",
+ "words": {
+  "refusal": "Datum 55.00 mm for the constraint with index 23 is invalid",
+  "redundant_panel": "Redundant constraints: (24)",
+  "after_delete": "Under-constrained: 1 Degrees of Freedom",
+  "full": "Fully constrained",
+  "diagonal_refusal": "Datum 50.00 mm for the constraint with index 13 is invalid",
+  "expression_editor": "Expression Editor (opens on typing =), Result 60.00 / 80.00"
+ },
+ "g0b": {
+  "orphan_60": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": null,
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 45.0,
+   "hole_z": 45.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "orphan_80_headless_1": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": null,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "orphan_80_headless_2": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": null,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "orphan_100_control": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 85.0,
+   "hole_z": null,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "fixed_80": {
+   "zmax": 80.0,
+   "stl_zmax": 80.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": false,
+    "value": 75.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 75.0
+   },
+   "plate_height_users": [
+    23
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    75.0,
+    5.0,
+    80.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": 65.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "fixed_100_proof": {
+   "zmax": 100.0,
+   "stl_zmax": 100.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": false,
+    "value": 95.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 95.0
+   },
+   "plate_height_users": [
+    23
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    95.0,
+    5.0,
+    100.0
+   ],
+   "sketch_hole_z": 85.0,
+   "hole_z": 85.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "other_order_3b_at_80": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": -1,
+   "solve": -4,
+   "redundant": [],
+   "conflicting": [
+    5,
+    6,
+    7,
+    8,
+    13,
+    15,
+    21,
+    23,
+    24
+   ],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [
+    23
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": 45.0,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  }
+ },
+ "takes": {
+  "T": {
+   "start_file": "G0b/hook-orphan.FCStd @60",
+   "measure": {
+    "top": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 60.0
+    },
+    "bottom": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 0.0
+    }
+   },
+   "panel": [
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "sketch message",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": {
+    "zmax": 60.0,
+    "stl_zmax": 60.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 22,
+     "type": "Distance",
+     "driving": true,
+     "value": 55.0,
+     "expression": null,
+     "name": "",
+     "geometry_length": 55.0
+    },
+    "plate_height_users": [],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     55.0,
+     5.0,
+     60.0
+    ],
+    "sketch_hole_z": 65.0,
+    "hole_z": null,
+    "hole_in_plate": false,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/T/screen.mp4",
+   "marks": [
+    [
+     0.04,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (T)"
+    ],
+    [
+     4.31,
+     "double-click: open Params"
+    ],
+    [
+     8.34,
+     "hover: plate_height"
+    ],
+    [
+     10.49,
+     "cell B1: plate_height"
+    ],
+    [
+     12.2,
+     "typed 80"
+    ],
+    [
+     13.06,
+     "Enter"
+    ],
+    [
+     17.32,
+     "Recompute"
+    ],
+    [
+     22.96,
+     "tab: back to the 3D view"
+    ],
+    [
+     25.76,
+     "key 0: isometric"
+    ],
+    [
+     26.96,
+     "(view fitted)"
+    ],
+    [
+     31.7,
+     "key 1: Front view"
+    ],
+    [
+     36.99,
+     "(view set: Front centred 12 0 40, 130 mm tall)"
+    ],
+    [
+     44.03,
+     "Measure"
+    ],
+    [
+     49.02,
+     "top: corner"
+    ],
+    [
+     57.39,
+     "Measure: Close"
+    ],
+    [
+     61.73,
+     "Measure"
+    ],
+    [
+     66.72,
+     "bottom: corner"
+    ],
+    [
+     75.09,
+     "Measure: Close"
+    ],
+    [
+     77.3,
+     "key 0: isometric"
+    ],
+    [
+     78.51,
+     "(view fitted)"
+    ],
+    [
+     82.78,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     87.13,
+     "(sketch view set)"
+    ],
+    [
+     89.22,
+     "hold: sketch message"
+    ],
+    [
+     96.39,
+     "sketch: Close"
+    ],
+    [
+     100.1,
+     "key 0: isometric"
+    ],
+    [
+     101.31,
+     "(view fitted)"
+    ]
+   ]
+  },
+  "F": {
+   "start_file": "P/hook-reference.FCStd @60",
+   "measure": {
+    "top": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 80.0
+    },
+    "bottom": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 0.0
+    }
+   },
+   "panel": [
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "sketch message",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": {
+    "zmax": 80.0,
+    "stl_zmax": 80.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 23,
+     "type": "Distance",
+     "driving": false,
+     "value": 75.0,
+     "expression": null,
+     "name": "",
+     "geometry_length": 75.0
+    },
+    "plate_height_users": [
+     20
+    ],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     75.0,
+     5.0,
+     80.0
+    ],
+    "sketch_hole_z": 65.0,
+    "hole_z": 65.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/F/screen.mp4",
+   "marks": [
+    [
+     0.03,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (F)"
+    ],
+    [
+     4.28,
+     "double-click: open Params"
+    ],
+    [
+     8.3,
+     "hover: plate_height"
+    ],
+    [
+     10.46,
+     "cell B1: plate_height"
+    ],
+    [
+     12.16,
+     "typed 80"
+    ],
+    [
+     13.02,
+     "Enter"
+    ],
+    [
+     17.29,
+     "Recompute"
+    ],
+    [
+     22.92,
+     "tab: back to the 3D view"
+    ],
+    [
+     25.72,
+     "key 0: isometric"
+    ],
+    [
+     26.94,
+     "(view fitted)"
+    ],
+    [
+     31.74,
+     "key 1: Front view"
+    ],
+    [
+     37.05,
+     "(view set: Front centred 12 0 40, 130 mm tall)"
+    ],
+    [
+     43.96,
+     "Measure"
+    ],
+    [
+     48.96,
+     "top: corner"
+    ],
+    [
+     57.32,
+     "Measure: Close"
+    ],
+    [
+     61.69,
+     "Measure"
+    ],
+    [
+     66.69,
+     "bottom: corner"
+    ],
+    [
+     75.03,
+     "Measure: Close"
+    ],
+    [
+     77.23,
+     "key 0: isometric"
+    ],
+    [
+     78.46,
+     "(view fitted)"
+    ],
+    [
+     82.74,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     87.09,
+     "(sketch view set)"
+    ],
+    [
+     89.19,
+     "hold: sketch message"
+    ],
+    [
+     96.39,
+     "sketch: Close"
+    ],
+    [
+     100.11,
+     "key 0: isometric"
+    ],
+    [
+     101.33,
+     "(view fitted)"
+    ]
+   ]
+  },
+  "P": {
+   "start_file": "P/hook-pinned.FCStd",
+   "measure": {},
+   "panel": [
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "Fully constrained",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": {
+    "zmax": 60.0,
+    "stl_zmax": 60.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": null,
+    "plate_height_users": [
+     20
+    ],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     55.0,
+     5.0,
+     60.0
+    ],
+    "sketch_hole_z": 45.0,
+    "hole_z": 45.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 60,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/P/screen.mp4",
+   "marks": [
+    [
+     0.03,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (P)"
+    ],
+    [
+     4.34,
+     "double-click: open Params"
+    ],
+    [
+     8.37,
+     "hover: Params row 1"
+    ],
+    [
+     10.94,
+     "hover: Params row 2"
+    ],
+    [
+     13.5,
+     "hover: Params row 3"
+    ],
+    [
+     16.07,
+     "hover: Params row 4"
+    ],
+    [
+     18.64,
+     "hover: Params row 5"
+    ],
+    [
+     24.49,
+     "tab: back to the 3D view"
+    ],
+    [
+     28.46,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     32.81,
+     "(sketch view set)"
+    ],
+    [
+     34.92,
+     "hold: Fully constrained"
+    ],
+    [
+     43.09,
+     "sketch: Close"
+    ]
+   ]
+  },
+  "R": {
+   "start_file": "P/hook-pinned.FCStd",
+   "measure": {},
+   "panel": [
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "panel after OK",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": {
+    "zmax": 60.0,
+    "stl_zmax": 60.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": null,
+    "plate_height_users": [
+     20
+    ],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     55.0,
+     5.0,
+     60.0
+    ],
+    "sketch_hole_z": 45.0,
+    "hole_z": 45.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 60,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/R/screen.mp4",
+   "marks": [
+    [
+     0.02,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (R)"
+    ],
+    [
+     4.28,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     8.66,
+     "(sketch view set)"
+    ],
+    [
+     14.76,
+     "click: the inside face"
+    ],
+    [
+     17.58,
+     "key K"
+    ],
+    [
+     18.5,
+     "key D: Insert Length box"
+    ],
+    [
+     22.28,
+     "hold: box 55.00, Reference unticked, panel Redundant constraints (24)"
+    ],
+    [
+     29.39,
+     "box: OK"
+    ],
+    [
+     31.74,
+     "hold: notification Datum 55.00 mm ... invalid"
+    ],
+    [
+     36.75,
+     "hold: panel after OK"
+    ],
+    [
+     42.06,
+     "sketch: Close"
+    ]
+   ]
+  },
+  "D": {
+   "start_file": "P/hook-pinned.FCStd",
+   "measure": {},
+   "panel": [
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "panel after Delete",
+     "['Under-constrained: ', '1 Degrees of Freedom']"
+    ],
+    [
+     "Fully constrained again",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": {
+    "zmax": 60.0,
+    "stl_zmax": 60.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 22,
+     "type": "Distance",
+     "driving": true,
+     "value": 55.0,
+     "expression": null,
+     "name": "",
+     "geometry_length": 55.0
+    },
+    "plate_height_users": [],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     55.0,
+     5.0,
+     60.0
+    ],
+    "sketch_hole_z": 45.0,
+    "hole_z": 45.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 60,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/D/screen.mp4",
+   "marks": [
+    [
+     0.03,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (D)"
+    ],
+    [
+     4.31,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     8.69,
+     "(sketch view set)"
+    ],
+    [
+     15.0,
+     "click: plate_height = 60 mm (f)"
+    ],
+    [
+     17.32,
+     "hold: the plate_height size selected"
+    ],
+    [
+     19.96,
+     "key Delete"
+    ],
+    [
+     22.58,
+     "hold: panel after Delete"
+    ],
+    [
+     28.86,
+     "click: the inside face"
+    ],
+    [
+     31.64,
+     "key K"
+    ],
+    [
+     32.56,
+     "key D: Insert Length box"
+    ],
+    [
+     36.34,
+     "hold: box 55.00"
+    ],
+    [
+     41.46,
+     "box: OK"
+    ],
+    [
+     44.17,
+     "hold: Fully constrained again"
+    ],
+    [
+     51.52,
+     "sketch: Close"
+    ]
+   ]
+  },
+  "U": {
+   "start_file": "G0b/hook-orphan-80gui.FCStd @80",
+   "measure": {
+    "top": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 80.0
+    },
+    "bottom": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 0.0
+    }
+   },
+   "panel": [
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "blue 55, Under-constrained 1 DoF",
+     "['Under-constrained: ', '1 Degrees of Freedom']"
+    ],
+    [
+     "Fully constrained, blue reads 75",
+     "['Fully constrained']"
+    ],
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "blue 75",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": {
+    "zmax": 80.0,
+    "stl_zmax": 80.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 22,
+     "type": "Distance",
+     "driving": false,
+     "value": 75.0,
+     "expression": null,
+     "name": "",
+     "geometry_length": 75.0
+    },
+    "plate_height_users": [
+     23
+    ],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     75.0,
+     5.0,
+     80.0
+    ],
+    "sketch_hole_z": 65.0,
+    "hole_z": 65.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/U/screen.mp4",
+   "marks": [
+    [
+     0.03,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (U)"
+    ],
+    [
+     4.31,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     8.66,
+     "(sketch view set)"
+    ],
+    [
+     15.1,
+     "click: the 55"
+    ],
+    [
+     18.88,
+     "key K"
+    ],
+    [
+     19.8,
+     "key X: Toggle Driving/Reference"
+    ],
+    [
+     22.43,
+     "hold: blue 55, Under-constrained 1 DoF"
+    ],
+    [
+     29.69,
+     "click: the back line"
+    ],
+    [
+     32.48,
+     "key K"
+    ],
+    [
+     33.41,
+     "key D: Insert Length box"
+    ],
+    [
+     37.05,
+     "typed = (Expression Editor opens)"
+    ],
+    [
+     39.28,
+     "typed Params.plate_height"
+    ],
+    [
+     44.08,
+     "Enter: expression"
+    ],
+    [
+     46.22,
+     "Enter: expression editor"
+    ],
+    [
+     48.48,
+     "hold: box with the expression"
+    ],
+    [
+     52.59,
+     "box: OK"
+    ],
+    [
+     55.3,
+     "hold: Fully constrained, blue reads 75"
+    ],
+    [
+     62.65,
+     "sketch: Close"
+    ],
+    [
+     68.37,
+     "Recompute"
+    ],
+    [
+     72.08,
+     "key 0: isometric"
+    ],
+    [
+     73.31,
+     "(view fitted)"
+    ],
+    [
+     78.04,
+     "key 1: Front view"
+    ],
+    [
+     79.26,
+     "(view set: Front centred 12 0 40, 130 mm tall)"
+    ],
+    [
+     86.17,
+     "Measure"
+    ],
+    [
+     91.15,
+     "top: corner"
+    ],
+    [
+     99.51,
+     "Measure: Close"
+    ],
+    [
+     103.85,
+     "Measure"
+    ],
+    [
+     108.85,
+     "bottom: corner"
+    ],
+    [
+     117.25,
+     "Measure: Close"
+    ],
+    [
+     119.46,
+     "key 0: isometric"
+    ],
+    [
+     120.68,
+     "(view fitted)"
+    ],
+    [
+     124.95,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     129.3,
+     "(sketch view set)"
+    ],
+    [
+     131.39,
+     "hold: blue 75"
+    ],
+    [
+     138.56,
+     "sketch: Close"
+    ],
+    [
+     142.27,
+     "key 0: isometric"
+    ],
+    [
+     143.48,
+     "(view fitted)"
+    ]
+   ]
+  },
+  "X": {
+   "start_file": "U/end.FCStd @80",
+   "measure": {
+    "top": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 100.0
+    },
+    "bottom": {
+     "x": 0.0,
+     "y": -20.0,
+     "z": 0.0
+    }
+   },
+   "panel": [
+    [
+     "at open",
+     "['Fully constrained']"
+    ],
+    [
+     "sketch message",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": {
+    "zmax": 100.0,
+    "stl_zmax": 100.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 22,
+     "type": "Distance",
+     "driving": false,
+     "value": 95.0,
+     "expression": null,
+     "name": "",
+     "geometry_length": 95.0
+    },
+    "plate_height_users": [
+     23
+    ],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     95.0,
+     5.0,
+     100.0
+    ],
+    "sketch_hole_z": 85.0,
+    "hole_z": 85.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 100,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/X/screen.mp4",
+   "marks": [
+    [
+     0.03,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (X)"
+    ],
+    [
+     4.28,
+     "double-click: open Params"
+    ],
+    [
+     8.3,
+     "hover: plate_height"
+    ],
+    [
+     10.46,
+     "cell B1: plate_height"
+    ],
+    [
+     12.17,
+     "typed 100"
+    ],
+    [
+     13.16,
+     "Enter"
+    ],
+    [
+     17.42,
+     "Recompute"
+    ],
+    [
+     23.06,
+     "tab: back to the 3D view"
+    ],
+    [
+     25.84,
+     "key 0: isometric"
+    ],
+    [
+     27.07,
+     "(view fitted)"
+    ],
+    [
+     31.8,
+     "key 1: Front view"
+    ],
+    [
+     37.09,
+     "(view set: Front centred 12 0 50, 150 mm tall)"
+    ],
+    [
+     44.06,
+     "Measure"
+    ],
+    [
+     49.05,
+     "top: corner"
+    ],
+    [
+     57.41,
+     "Measure: Close"
+    ],
+    [
+     61.75,
+     "Measure"
+    ],
+    [
+     66.75,
+     "bottom: corner"
+    ],
+    [
+     75.12,
+     "Measure: Close"
+    ],
+    [
+     77.33,
+     "key 0: isometric"
+    ],
+    [
+     78.55,
+     "(view fitted)"
+    ],
+    [
+     82.81,
+     "double-click: HookSketch (edit)"
+    ],
+    [
+     87.18,
+     "(sketch view set)"
+    ],
+    [
+     89.29,
+     "hold: sketch message"
+    ],
+    [
+     96.48,
+     "sketch: Close"
+    ],
+    [
+     100.19,
+     "key 0: isometric"
+    ],
+    [
+     101.44,
+     "(view fitted)"
+    ]
+   ]
+  },
+  "Y": {
+   "start_file": "P/rect-pinned.FCStd",
+   "measure": {},
+   "panel": [
+    [
+     "Fully constrained",
+     "['Fully constrained']"
+    ],
+    [
+     "reference diagonal",
+     "['Fully constrained']"
+    ]
+   ],
+   "end_check": null,
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/Y/screen.mp4",
+   "marks": [
+    [
+     0.03,
+     "recording started: FreeCAD 1.1.4, rect.FCStd open (Y)"
+    ],
+    [
+     4.31,
+     "double-click: Sketch (edit)"
+    ],
+    [
+     7.66,
+     "(sketch view set)"
+    ],
+    [
+     9.66,
+     "hold: Fully constrained"
+    ],
+    [
+     14.89,
+     "Toggle construction geometry"
+    ],
+    [
+     19.02,
+     "Line tool"
+    ],
+    [
+     23.73,
+     "line: first corner"
+    ],
+    [
+     27.89,
+     "line: far corner"
+    ],
+    [
+     29.6,
+     "Escape: line tool off"
+    ],
+    [
+     33.85,
+     "click: the helper line"
+    ],
+    [
+     36.64,
+     "key K"
+    ],
+    [
+     37.56,
+     "key D: Insert Length box"
+    ],
+    [
+     43.12,
+     "tick: Reference"
+    ],
+    [
+     47.62,
+     "box: OK (answer on screen from here)"
+    ],
+    [
+     51.33,
+     "hold: reference diagonal"
+    ],
+    [
+     57.66,
+     "sketch: Close"
+    ]
+   ]
+  },
+  "H": {
+   "start_file": "G0b/hook-orphan.FCStd @60",
+   "measure": {},
+   "panel": [],
+   "end_check": {
+    "zmax": 60.0,
+    "stl_zmax": 60.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 22,
+     "type": "Distance",
+     "driving": true,
+     "value": 55.0,
+     "expression": null,
+     "name": "",
+     "geometry_length": 55.0
+    },
+    "plate_height_users": [],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     55.0,
+     5.0,
+     60.0
+    ],
+    "sketch_hole_z": 65.0,
+    "hole_z": null,
+    "hole_in_plate": false,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "record": {
+    "fps": 30
+   },
+   "video": "out/fc11/H/screen.mp4",
+   "marks": [
+    [
+     0.03,
+     "recording started: FreeCAD 1.1.4, hook.FCStd open (H)"
+    ],
+    [
+     3.61,
+     "key 3: Right view"
+    ],
+    [
+     8.92,
+     "(view set: Right centred 0 -10 30, 90 mm tall)"
+    ],
+    [
+     15.41,
+     "hold: the screw hole at 60"
+    ],
+    [
+     19.55,
+     "key 0: isometric"
+    ],
+    [
+     20.77,
+     "(view fitted)"
+    ],
+    [
+     25.04,
+     "double-click: open Params"
+    ],
+    [
+     29.07,
+     "hover: plate_height"
+    ],
+    [
+     31.22,
+     "cell B1: plate_height"
+    ],
+    [
+     32.93,
+     "typed 80"
+    ],
+    [
+     33.79,
+     "Enter"
+    ],
+    [
+     38.07,
+     "Recompute"
+    ],
+    [
+     43.69,
+     "tab: back to the 3D view"
+    ],
+    [
+     47.11,
+     "key 3: Right view"
+    ],
+    [
+     52.42,
+     "(view set: Right centred 0 -10 30, 90 mm tall)"
+    ],
+    [
+     58.89,
+     "hold: no hole after 80"
+    ],
+    [
+     64.02,
+     "key 0: isometric"
+    ],
+    [
+     65.25,
+     "(view fitted)"
+    ]
+   ]
+  }
+ },
+ "claude_runs": {
+  "A1": {
+   "prompt": "Make this hook taller: set plate_height to 80.",
+   "cost_usd": "0.1173",
+   "wall_s": 99,
+   "class": "right, 55 bound to a formula",
+   "tool_calls": [
+    "list_documents",
+    "get_objects",
+    "execute_code",
+    "execute_code"
+   ],
+   "check": {
+    "zmax": 80.0,
+    "stl_zmax": 80.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 22,
+     "type": "Distance",
+     "driving": true,
+     "value": 75.0,
+     "expression": "Params.plate_height - Params.thickness",
+     "name": "plate_length",
+     "geometry_length": 75.0
+    },
+    "plate_height_users": [
+     22
+    ],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     75.0,
+     5.0,
+     80.0
+    ],
+    "sketch_hole_z": 65.0,
+    "hole_z": 65.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "video": "out/fc11/runs/A1/screen.mp4"
+  },
+  "B1": {
+   "prompt": "Make this hook taller: set plate_height to 80. Before you change anything, check which sizes drive this sketch and which Params cells they use. After the change, measure the top height and tell me the number.",
+   "cost_usd": "0.0855",
+   "wall_s": 108,
+   "class": "right, 55 bound to a formula",
+   "tool_calls": [
+    "list_documents",
+    "get_objects",
+    "execute_code",
+    "execute_code"
+   ],
+   "check": {
+    "zmax": 80.0,
+    "stl_zmax": 80.0,
+    "dof": 0,
+    "solve": 0,
+    "redundant": [],
+    "conflicting": [],
+    "inner": {
+     "index": 22,
+     "type": "Distance",
+     "driving": true,
+     "value": 75.0,
+     "expression": "Params.plate_height - Params.thickness",
+     "name": "plate_rise",
+     "geometry_length": 75.0
+    },
+    "plate_height_users": [
+     22
+    ],
+    "line_lengths": [
+     25.0,
+     10.0,
+     5.0,
+     5.0,
+     15.0,
+     75.0,
+     5.0,
+     80.0
+    ],
+    "sketch_hole_z": 65.0,
+    "hole_z": 65.0,
+    "hole_in_plate": true,
+    "sheet": {
+     "plate_height": 80,
+     "thickness": 5,
+     "hook_depth": 25,
+     "lip_height": 10,
+     "width": 20
+    }
+   },
+   "video": "out/fc11/runs/B1/screen.mp4"
+  }
+ },
+ "claude_total_usd": 0.2028,
+ "yourturn": {
+  "diagonal_40x30": 50.0,
+  "diagonal_width_60": 67.082039,
+  "shown": [
+   "50.00 mm",
+   "67.08 mm"
+  ]
+ },
+ "build_by_code": {
+  "pinned_60": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": null,
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 45.0,
+   "hole_z": 45.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "pinned_80": {
+   "zmax": 80.0,
+   "stl_zmax": 80.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": null,
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    75.0,
+    5.0,
+    80.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": 65.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "pinned_100": {
+   "zmax": 100.0,
+   "stl_zmax": 100.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": null,
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    95.0,
+    5.0,
+    100.0
+   ],
+   "sketch_hole_z": 85.0,
+   "hole_z": 85.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "redundant_60": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": -2,
+   "redundant": [
+    24
+   ],
+   "conflicting": [],
+   "inner": {
+    "index": 23,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 45.0,
+   "hole_z": 45.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "redundant_80": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": -1,
+   "solve": -4,
+   "redundant": [],
+   "conflicting": [
+    5,
+    6,
+    7,
+    8,
+    13,
+    15,
+    21,
+    22,
+    24
+   ],
+   "inner": {
+    "index": 23,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": 45.0,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "redundant_100": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": -1,
+   "solve": -4,
+   "redundant": [],
+   "conflicting": [
+    5,
+    6,
+    7,
+    8,
+    13,
+    15,
+    21,
+    22,
+    24
+   ],
+   "inner": {
+    "index": 23,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 85.0,
+   "hole_z": 45.0,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "reference_60": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 23,
+    "type": "Distance",
+    "driving": false,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 45.0,
+   "hole_z": 45.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "reference_80": {
+   "zmax": 80.0,
+   "stl_zmax": 80.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 23,
+    "type": "Distance",
+    "driving": false,
+    "value": 75.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 75.0
+   },
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    75.0,
+    5.0,
+    80.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": 65.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "reference_100": {
+   "zmax": 100.0,
+   "stl_zmax": 100.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 23,
+    "type": "Distance",
+    "driving": false,
+    "value": 95.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 95.0
+   },
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    95.0,
+    5.0,
+    100.0
+   ],
+   "sketch_hole_z": 85.0,
+   "hole_z": 85.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "orphan_60": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 45.0,
+   "hole_z": 45.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "orphan_80": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 65.0,
+   "hole_z": null,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 80,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "orphan_100": {
+   "zmax": 60.0,
+   "stl_zmax": 60.0,
+   "dof": 0,
+   "solve": 0,
+   "redundant": [],
+   "conflicting": [],
+   "inner": {
+    "index": 22,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 85.0,
+   "hole_z": null,
+   "hole_in_plate": false,
+   "sheet": {
+    "plate_height": 100,
+    "thickness": 5,
+    "hook_depth": 25,
+    "lip_height": 10,
+    "width": 20
+   }
+  },
+  "redundant_hookdepth30": {
+   "zmax": 60.0,
+   "stl_zmax": null,
+   "dof": 0,
+   "solve": -2,
+   "redundant": [
+    24
+   ],
+   "conflicting": [],
+   "inner": {
+    "index": 23,
+    "type": "Distance",
+    "driving": true,
+    "value": 55.0,
+    "expression": null,
+    "name": "",
+    "geometry_length": 55.0
+   },
+   "plate_height_users": [
+    20
+   ],
+   "line_lengths": [
+    25.0,
+    10.0,
+    5.0,
+    5.0,
+    15.0,
+    55.0,
+    5.0,
+    60.0
+   ],
+   "sketch_hole_z": 45.0,
+   "hole_z": 45.0,
+   "hole_in_plate": true,
+   "sheet": {
+    "plate_height": 60,
+    "thickness": 5,
+    "hook_depth": 30,
+    "lip_height": 10,
+    "width": 20
+   }
+  }
+ }
+}

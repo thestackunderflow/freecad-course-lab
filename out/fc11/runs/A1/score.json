@@ -1,0 +1,68 @@
+{
+ "class": "right, 55 bound to a formula",
+ "stopped": false,
+ "tool_calls": [
+  "list_documents",
+  "get_objects",
+  "execute_code",
+  "execute_code"
+ ],
+ "used_execute_code": true,
+ "hook": {
+  "solve": 0,
+  "dof": 0,
+  "zmax": 80.0,
+  "stl_zmax": 80.0,
+  "redundant": [],
+  "conflicting": [],
+  "inner": {
+   "index": 22,
+   "type": "Distance",
+   "driving": true,
+   "value": 75.0,
+   "expression": "Params.plate_height - Params.thickness",
+   "name": "plate_length",
+   "geometry_length": 75.0
+  },
+  "plate_height_users": [
+   22
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   75.0,
+   5.0,
+   80.0
+  ],
+  "arm_z": 5.0,
+  "sheet": {
+   "plate_height": 80,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "constraints": 23,
+  "same_as_start": false
+ }
+}

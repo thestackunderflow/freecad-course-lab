@@ -1,0 +1,36 @@
+    plate_height - 15.
+  - Params!B2 (thickness) drives
+    arm_thickness, lip_thickness and thickness
+    in HookSketch.
+  - Params!B3 (hook_depth) drives hook_depth.
+  - Params!B4 (lip_height) drives lip_height.
+  - Params!B5 (width) drives the Pad length,
+    and the hole's across constraint as
+    -width/2.
+  - The 60 mm plate height was not linked to
+    plate_height. It was an unnamed hard-coded
+    55 mm constraint in HookSketch. Setting
+    B1 alone would have moved the hole to 65
+    mm, above the plate, and left the plate
+    at 60.
+
+  What I changed:
+  - I set Params!B1 to 80.
+  - I named that constraint plate_rise and set
+    it to Params.plate_height -
+    Params.thickness. It evaluated to 55 at
+    the old values, so nothing else moved.
+  - The hole is now at z = 65, which is 15 mm
+    below the top as before.
+
+  plate_height now drives the plate height as
+  well as the hole position, so future edits
+  to B1 will work as expected.
+
+✻ Worked for 22s · done 1:01 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+
