@@ -21,7 +21,7 @@ CARDS = [f'{s}-{i}.png' for s, k in STEPS.items() for i in range(1, k + 1)] + ['
 SHORT = [f'card-short-why-{i}.png' for i in (1, 2, 3)]
 OVS = ([f'ov-recap-{i}.png' for i in range(1, 5)] + [f'ov-turn-{i}.png' for i in range(1, 6)] +
        ['ov-ring-60.png', 'ov-ring-80.png', 'ov-cc-top.png', 'ov-cc-auto.png', 'ov-cc-quote-B1.png'])
-STILLS = ['still-other-60.png', 'still-other-80.png', 'short-pair.png']
+STILLS = ['still-other-red.png', 'still-other-inv.png', 'still-other-80.png', 'short-pair.png']
 NUM = json.load(open(os.path.join(d.TAKES, 'NUMBERS.json')))
 LESSON = {'1', '2', '3', '4', '5', '6', '7', '8', '10', '11', '15', '24', '23', '30', '31', '40', '45', '55', '60', '65', '75', '80', '95',
           '100', '1.1.4', '0.1.28', '2.1.308', '5.5', '0', '0.12', '0.09', '60.00', '80.00', '100.00', '80.0'}
@@ -119,3 +119,47 @@ def test_stills_cut_report_band():
         im = Image.open(os.path.join(d.OUT, n)).convert('RGB')
         assert im.size == (2880, 1800)
         assert d.STILL_CUT <= 1380
+
+
+# ---- cut 2 (WATCH-fc11-cut1) ----
+def alpha_box(name, box):
+    im = Image.open(os.path.join(d.OUT, name)).convert('RGBA')
+    return max(im.crop(box).getchannel('A').getextrema())
+
+
+def test_other_order_real_frames_no_lab_words(run):
+    """F8b: FreeCAD's own "Redundant constraints: (24)" panel (G0b s7-after-ok, both sizes on the sketch), the tree's
+    "!" after Close (s9-closed-60) and the 80 still; no "lab" word on any still."""
+    src = Image.open(os.path.join(d.TAKES, 'G0b', 's7-after-ok.png')).convert('RGB')
+    red = Image.open(os.path.join(d.OUT, 'still-other-red.png')).convert('RGB')
+    for xy in ((2300, 755), (1530, 760), (1610, 790)):
+        assert red.getpixel(xy) == src.getpixel(xy), xy
+    for n in ('still-other-red.png', 'still-other-inv.png', 'still-other-80.png'):
+        for t, _ in run.get(n, []):
+            assert 'lab' not in t.lower(), (n, t)
+    assert any('Invalid' in t for t, _ in run['still-other-inv.png'])
+    assert any('top 60.00' in t for t, _ in run['still-other-80.png'])
+    assert not any('top 60.00' in t for t, _ in run['still-other-inv.png'])
+
+
+def test_sketch_panels_lower_left(run):
+    """The sketch-zoom panels sit lower left (the top label covered them at 0:15, 1:27, 4:55); no chip on ov-sk-F0."""
+    for n in ('ov-sk-F0.png', 'ov-sk-F3.png', 'ov-sk-F9.png', 'ov-sk-F1.png'):
+        assert alpha_box(n, (600, 420, 1460, 1000)) == 0, n
+        assert alpha_box(n, (600, 1000, 1460, 1440)) > 0, n
+        assert alpha_box(n, (1470, 0, 2880, 1800)) == 0, n
+    assert d.CHIP not in texts(run, 'ov-sk-F0.png')
+
+
+def test_claude_panels_off_the_reply(run):
+    """Claude Code's reply fills x 0-1160; the panels sit in FreeCAD's empty pane / view, left of the hook (x 2040)."""
+    for n in ('ov-cc-A1.png', 'ov-cc-B1.png', 'ov-cc-quote-B1.png'):
+        assert alpha_box(n, (0, 0, 1165, 1800)) == 0, n
+        assert alpha_box(n, (2035, 0, 2880, 1800)) == 0, n
+        assert alpha_box(n, (1165, 0, 2035, 1800)) > 0, n
+
+
+def test_yourturn_clear_of_the_rectangle(run):
+    """The rectangle's lower-left corner (the diagonal's start) is at about x 1197, y 1345 on take Y."""
+    for i in range(1, 6):
+        assert alpha_box(f'ov-turn-{i}.png', (1180, 0, 2880, 1800)) == 0, i

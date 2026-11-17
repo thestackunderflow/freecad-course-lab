@@ -5,9 +5,10 @@ analogy), each step adds and earlier steps turn grey, card lines 44 columns, cod
 sign, never the word "blue" (FreeCAD 1.1.4 draws a reference size grey, in brackets), highlight rings thin, never
 filled. Every number is NUMBERS.json's (out/fc11) or a lesson / typed number (tests/test_draw_fc11.py).
   full frame:  card-list-1..4 (F2), card-why-1..5 (F7), card-end (F17); Short 1080 x 1080: card-short-why-1..3 (S1)
-  stills (2880 x 1800): still-other-60 / -80 (F8b): G0b's s9 screenshots cut above y STILL_CUT (the Report band reads
-               "Over-constrained sketch" on s9-at-80), labelled "lab still · other order", with the order line and
-               the "lab test (other order)" panel in the white band below
+  stills (2880 x 1800): still-other-red / -inv / -80 (F8b, cut 2): G0b's real FreeCAD screenshots s7-after-ok (the
+               "Redundant constraints: (24)" panel, both sizes kept), s9-closed-60 (the "!" on HookSketch), s9-at-80,
+               cut above y STILL_CUT (the Report band reads "Over-constrained sketch" on s9-at-80), with a
+               checked-by-code panel in the white band below where the screen does not spell it out
   source overlays (RGBA 2880 x 1800, burnt in by mcp-canvas primers/footage-fc11.py):
       ov-ring-60 / -80  take H's right view: a solid ring on the screw hole / a dashed ring where it was
       ov-recap-1..4     F15 lines, lower left;  ov-turn-1..5  F16 your-turn panel (no answer)
@@ -43,9 +44,10 @@ NUM = json.load(open(os.path.join(TAKES, 'NUMBERS.json')))
 TK, CL = NUM['takes'], NUM['claude_runs']
 STILL_CUT = 1370                   # G0b stills kept above this row (the Report view starts ~1380)
 CHIP = 'by code = a script reads the saved model'
+# cut 2: 'sk' lower left (the top label covered it), 'cc' in FreeCAD's empty pane (off Claude Code's reply)
 KIND = {'full': ((20, 1700), 56, 0.8, 'lb'), 'meas': ((2196, 806), 24, 2560 / 704, 'lt'),
-        'msg': ((2196, 790), 24, 2560 / 704, 'lt'), 'sk': ((640, 460), 40, 2560 / 1900, 'lt'),
-        'cc': ((20, 1100), 52, 0.8, 'lt'), 'short': ((2300, 806), 32, 1080 / 444, 'lt')}
+        'msg': ((2196, 790), 24, 2560 / 704, 'lt'), 'sk': ((640, 1420), 40, 2560 / 1900, 'lb'),
+        'cc': ((1175, 1060), 42, 0.8, 'lt'), 'short': ((2300, 806), 32, 1080 / 444, 'lt')}
 PANEL_NAMES = []
 
 
@@ -254,7 +256,10 @@ def quote_b1():
     a, z = 'Params!B1 (plate_height) was used only by', 'The top of the hook is now at 80.0 mm.'
     assert a in reply and z in reply
     im, d = source()
-    code_box(d, 20, 240, ['"' + a, ' HoleSketch ..."', '"' + z + '"'], 'its reply, scrolled up:', 46, 0.8)
+    a1, a2 = a.split(' was ')
+    z1, z2 = z.split(' at ')
+    code_box(d, 1175, 470, ['"' + a1, ' was ' + a2, ' HoleSketch ..."', '"' + z1, ' at ' + z2 + '"'],
+             'its reply, scrolled up:', 42, 0.8)
     save(im, 'ov-cc-quote-B1.png')
 
 
@@ -265,7 +270,7 @@ def panels():
     f0 = [f"sheet {n0(T['sheet']['plate_height'])} · top {f2(T['zmax'])}", 'screw hole: none' if not T['hole_in_plate']
           else 'screw hole: yes']
     code_panel('ov-meas-F0.png', f0, 'meas', chip=CHIP)
-    code_panel('ov-sk-F0.png', f0, 'sk', chip=CHIP)
+    code_panel('ov-sk-F0.png', f0, 'sk')
     f1 = [f"top {f2(F['zmax'])} · inside {n0(F['inner']['value'])} (shown)",
           f"hole {n0(F['zmax'] - F['sketch_hole_z'])} below the top"]
     code_panel('ov-meas-F1.png', f1, 'meas')
@@ -298,32 +303,24 @@ def panels():
                                   f"hole {n0(U['zmax'] - U['sketch_hole_z'])} below the top"], 'short')
 
 
-def still_other(src, name, last=True):
-    """G0b screenshot cut above STILL_CUT on white, the label, the order line and the lab-test panel below."""
+def still_other(src, name, rows=None):
+    """F8b (cut 2): a FreeCAD screenshot of the other-order test (G0b, real app frames, not a filmed take) cut above
+    STILL_CUT on white; below it only a checked-by-code panel for what the screen does not spell out. No "lab" word."""
     CUR.clear()
     im = Image.new('RGB', (SW, SH), WHITE)
     im.paste(Image.open(os.path.join(TAKES, 'G0b', src)).convert('RGB').crop((0, 0, SW, STILL_CUT)), (0, 0))
     d = ImageDraw.Draw(im)
     d.line((0, STILL_CUT, SW, STILL_CUT), fill=PARTLINE, width=3)
-    lab = 'lab still · other order'
-    fb = b.font(b.B, 56)
-    tw = d.textlength(lab, font=fb)
-    d.rounded_rectangle((60, 1410, 60 + tw + 48, 1490), radius=14, fill=(255, 237, 213))
-    d.text((84, 1420), lab, font=fb, fill=INK)
-    CUR.append((lab, 45))
-    o = '✓ 1. make the 55 a reference  2. then size the back'
-    d.text((60, 1540), '✓ 1. make the 55 a reference', font=fb, fill=GREEN)
-    d.text((60, 1630), '   2. then size the back', font=fb, fill=GREEN)
-    CUR.append(('✓ 1. make the 55 a reference', 45))
-    CUR.append(('   2. then size the back', 45))
-    del o
-    g = NUM['g0b']['other_order_3b_at_80']
-    da = ImageDraw.Draw(im, 'RGBA')
-    rows = ['kept:', NUM['words']['redundant_panel'], 'Close: sketch Invalid']
-    if last:                         # "At 80 the top stays 60": only on the still shown with those words
-        rows.append(f"at {n0(U_SHEET)}: top {f2(g['zmax'])}")
-    code_box(da, 1560, 1395, rows, 'lab test (other order)', 52, 0.8)
+    if rows:
+        code_box(ImageDraw.Draw(im, 'RGBA'), 60, 1410, rows, 'checked by code', 52, 0.8)
     save(im, name)
+
+
+def other_order_stills():
+    g = NUM['g0b']['other_order_3b_at_80']
+    still_other('s7-after-ok.png', 'still-other-red.png')       # FreeCAD's panel: Redundant constraints: (24)
+    still_other('s9-closed-60.png', 'still-other-inv.png', ['after Close: HookSketch Invalid', '(the ! in the tree)'])
+    still_other('s9-at-80.png', 'still-other-80.png', [f"at {n0(U_SHEET)}: top {f2(g['zmax'])}"])
 
 
 def short_pair():
@@ -372,13 +369,12 @@ def main():
     for s in range(1, 5):
         ov_lines('ov-recap', RECAP, s, (20, 1160, 1420, 1720))
     for s in range(1, 6):
-        ov_lines('ov-turn', TURN, s, (20, 1040, 1300, 1720))
+        ov_lines('ov-turn', TURN, s, (20, 1040, 1170, 1720), px=50)   # cut 2: clear of the rectangle's corner
     _ov('ov-cc-top.png', (0, 0, 1160, 720))
     _ov('ov-cc-auto.png', (0, 1686, 1160, 114))
     quote_b1()
     panels()
-    still_other('s9-closed-60.png', 'still-other-60.png', last=False)
-    still_other('s9-at-80.png', 'still-other-80.png')
+    other_order_stills()
     short_pair()
     print('PROBLEMS:', PROBLEMS or 'none')
 
