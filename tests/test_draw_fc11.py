@@ -91,7 +91,7 @@ def test_panels_script_lines(run):
             'ov-sk-F1.png': ['top 80.00 · inside 75 (shown)', 'hole 15 below the top'],
             'ov-sk-F3.png': ['hole = plate_height − 15', 'at 60: hole at 45'],
             'ov-msg-D.png': ['panel text: Under-constrained:', '1 Degrees of Freedom'],
-            'ov-full-F6.png': ['top 60.00 · STL 60.00 tall', 'outline sizes on plate_height: 0'],
+            'ov-full-F6.png': ['top 60.00 · part 60.00 tall', 'outline sizes on plate_height: 0'],
             'ov-meas-F9.png': ['top 80.00 · inside 75 (shown)', 'hole at 65: 15 below the top'],
             'ov-meas-X2.png': ['fixed: top 100.00 · shown 95', 'deleted-size copy at 100:', 'top 60.00 · no hole'],
             'ov-cc-A1.png': ['top 80.00 · inside 75 (formula)', 'hole at 65: 15 below the top']}
@@ -163,3 +163,9 @@ def test_yourturn_clear_of_the_rectangle(run):
     """The rectangle's lower-left corner (the diagonal's start) is at about x 1197, y 1345 on take Y."""
     for i in range(1, 6):
         assert alpha_box(f'ov-turn-{i}.png', (1180, 0, 2880, 1800)) == 0, i
+
+
+def test_cut3_no_stl_jargon(run):
+    """WATCH-fc11-cut2 2:40: the F6 panel said "STL 60.00 tall" (jargon, the lesson never says STL): "part"."""
+    for n in d.PANEL_NAMES:
+        assert 'STL' not in ' '.join(texts(run, n)), (n, texts(run, n))

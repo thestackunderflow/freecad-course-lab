@@ -280,7 +280,7 @@ def panels():
     msg = TK['D']['panel'][1][1].strip('[]').split("', '")
     head, link = (x.strip().strip("'").strip() for x in msg)
     code_panel('ov-msg-D.png', [f'panel text: {head}', link], 'msg')
-    code_panel('ov-full-F6.png', [f"top {f2(T['zmax'])} · STL {f2(T['stl_zmax'])} tall",
+    code_panel('ov-full-F6.png', [f"top {f2(T['zmax'])} · part {f2(T['stl_zmax'])} tall",
                                   f"outline sizes on plate_height: {len(T['plate_height_users'])}"], 'full')
     f9 = [f"top {f2(U['zmax'])} · inside {n0(U['inner']['value'])} (shown)",
           f"hole at {n0(U['sketch_hole_z'])}: {n0(U['zmax'] - U['sketch_hole_z'])} below the top"]
