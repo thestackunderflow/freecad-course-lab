@@ -1,0 +1,41 @@
+fc11 G0b (17 Nov 2026 UTC), FreeCAD 1.1.4 in fcc-app:1.1.4-0.1.28, $0, no Claude. Probe container lab/fc11_up.sh
+(out dir G0b) + lab/fc11x.sh; steps s1.sh .. s14.sh, every line in g0b-log.txt; stills s*.png. No lab query was sent
+while a dialog was open. s4 is spoiled (the click on the back line's middle hit the 55's label, which FreeCAD draws on
+the back line; the typed keys only gave "Wrong selection" notices); s5 onward clicks the back line 60 px below its top.
+s12 left sketch edit with a second Escape; s14 redoes s12 + s13.
+
+VERDICT: GO. The delete route works, the top stays 60 at 80 and 100 (no RETHINK), the fix route works.
+
+1 (take D route) pinned hook, HookSketch: click the "plate_height = 60 mm (f)" label, Delete -> no dialog, no warning;
+  panel "Under-constrained: 1 Degrees of Freedom" (as predicted). Inner face (Edge6), K D, "Insert Length" 55.00 mm,
+  Reference unticked, OK -> ACCEPTED: 23 constraints (the 55 = index 22, "Constraint23 (55 mm)" in the list), panel
+  "Fully constrained" (green). Nothing warns that Params.plate_height is now unused: the sheet keeps the cell (60), the
+  Report view shows no line, no tree mark; the expression on plate_height is gone with the size.
+2 Close at 60: every object Up-to-date, top 60.00. Saved hook-orphan.FCStd. Params 60 -> 80 + recompute (twice):
+  no tree mark, no Report line, HookSketch / Pad Up-to-date, top 60.00, sheet 80. Headless twice at 80
+  (orphan-80-h1/h2.json): solve 0, DoF 0, top 60.00, STL ZMax 60.00, plate_height used by: [] (no constraint).
+  At 100 (orphan-100.json, the control): top 60.00, STL 60.00.
+3b (the other order) fresh orphan file at 60: back line, K D, typing "=" opens the Expression Editor, "Params.plate_height"
+  -> "Result 60.00", Return closes it, OK -> KEPT (source prediction right): 24 constraints, panel
+  "Redundant constraints: (24)". Close -> HookSketch Touched + Invalid, top 60.00. Params 80 + recompute ->
+  conflicting [5 6 7 8 13 15 21 23 24], DoF -1, top 60.00 (3b-80.json headless: solve -4, top 60.00, STL 60.00).
+  Branch "kept" -> F8 adds "the other way round, FreeCAD will not stop you, and the part goes stale again" + pinned line.
+3 Fix on the orphan file at 80 (hook-orphan-80gui.FCStd): click the 55's label (selects Constraint23), K X -> no
+  dialog, the 55 turns reference (blue), panel "Under-constrained: 1 Degrees of Freedom" (as predicted). Back line
+  (Edge8), K D, "=" + "Params.plate_height" (Expression Editor, Result 80.00), Return, OK -> panel "Fully constrained",
+  the blue size already reads 75. Close, Recompute -> all Up-to-date, top 80.00, reference 75. Saved hook-fixed.FCStd
+  (fixed-80.json: top 80.00, STL 80.00, plate_height used by [23], DoF 0). The box takes the expression by typing "=":
+  no f(x) button needed. Undo count back to the pinned state: not measured (one line or none in the plan; none).
+4 Proof headless (fixed-100.json): reopened fixed file at 100 -> top 100.00, STL 100.00, reference 95. Control: orphan
+  at 100 -> 60.00. GUI leg of the proof = take X.
+5 Your turn, rect-pinned.FCStd (lesson 10's 40 x 30 rectangle pinned, built by lab/fc11parts.py): line tool corner to
+  corner (two auto-joins, still "Fully constrained"); s12: construction mode on (Toggle construction geometry button)
+  -> a construction line. Driving size on the diagonal (Reference unticked) -> REFUSED like the 55: notification
+  "Datum 50.00 mm for the constraint with index 13 is invalid", size dropped (s14-after-driving.png). Reference ticked
+  -> kept, reads 50.00; width 60 -> 67.082039 (shown 67.08). The construction-mode toggle is sticky for the session
+  (s14's line was drawn with it toggled back off; the numbers are the same).
+
+Branches applied (PLAN 2.4 G0b): top stays 60 -> boards as written; deleting warns nothing and the cell stays -> F5/F6
+as written; the box takes "=Params.plate_height" -> as written (typing "=" opens FreeCAD's Expression Editor: F8 shows
+it); K X on the 55 accepted -> as written; 3b kept -> F8 line + pinned comment; driving diagonal refused -> pinned
+comment says "refused, like the 55: Datum 50.00 mm ... is invalid".

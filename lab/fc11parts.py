@@ -11,6 +11,7 @@ The inner face: line 5, (5,5)-(5,60); its length is plate_height - arm_thickness
 import json
 import math
 import os
+import re
 import shutil
 import sys
 
@@ -39,10 +40,33 @@ def inner_info(sk):
     for i, c in enumerate(sk.Constraints):
         if c.Type in ('Distance', 'DistanceY') and c.First == INNER and c.Second in (-2000, INNER):
             path = '.Constraints.%s' % c.Name if c.Name else '.Constraints[%d]' % i
-            ex = [e for p, e in sk.ExpressionEngine if p in (path, '.Constraints[%d]' % i)]
+            ex = [e for p, e in sk.ExpressionEngine if expr_index(sk, p) == i]
             return {'index': i, 'type': c.Type, 'driving': bool(c.Driving), 'value': round(sk.getDatum(i).Value, 6)
                     if c.Driving else round(c.Value, 6), 'expression': ex[0] if ex else None, 'name': c.Name}
     return None
+
+
+def expr_index(sk, path):
+    """the constraint index an ExpressionEngine path names ('.Constraints.name', '.Constraints[23]', 'Constraints[23]')"""
+    m = re.search(r'Constraints\[(\d+)\]', path)
+    if m:
+        return int(m.group(1))
+    m = re.search(r'Constraints\.(\w+)', path)
+    if m:
+        for i, c in enumerate(sk.Constraints):
+            if c.Name == m.group(1):
+                return i
+    return None
+
+
+def plate_height_users(sk):
+    """driving constraints whose expression reads Params.plate_height ("plate_height used by")"""
+    out = []
+    for p, e in sk.ExpressionEngine:
+        i = expr_index(sk, p)
+        if 'plate_height' in e and i is not None and i < len(sk.Constraints) and sk.Constraints[i].Driving:
+            out.append(i)
+    return sorted(out)
 
 
 def ref_value(sk, info):
@@ -64,10 +88,8 @@ def extra(d, stl_path=None):
         r['inner']['geometry_length'] = ref_value(sk, r['inner'])
         if not r['inner']['driving']:
             r['inner']['value'] = r['inner']['geometry_length']
-    names = {c.Name: (i, c) for i, c in enumerate(sk.Constraints) if c.Name}
-    ph = names.get('plate_height')
-    bound = [e for p, e in sk.ExpressionEngine if 'plate_height' in e]
-    r['plate_height_driving'] = bool(ph and ph[1].Driving and bound)
+    r['plate_height_users'] = plate_height_users(sk)
+    r['plate_height_driving'] = bool(r['plate_height_users'])
     r['arm_z'] = round(min(g.StartPoint.y for g in sk.Geometry[4:5]), 6) if len(sk.Geometry) > 4 else None
     r['cons'] = [[i, c.Type, c.First, c.FirstPos, c.Second, c.SecondPos, round(c.Value, 6), bool(c.Driving), c.Name]
                  for i, c in enumerate(sk.Constraints)]
@@ -94,6 +116,42 @@ def add_inner(d, driving):
         sk.setDriving(i, False)
     d.recompute()
     return i
+
+
+def make_orphan(d):
+    """rev 3 trap by code (the GUI route is filmed in G0b): the plate_height size on the back line deleted, a driving
+    55 on the inner face"""
+    sk = d.getObject('HookSketch')
+    i = [k for k, c in enumerate(sk.Constraints) if c.Name == 'plate_height'][0]
+    sk.setExpression('.Constraints.plate_height', None)
+    sk.delConstraint(i)
+    sk.addConstraint(Sketcher.Constraint('Distance', INNER, 55))
+    d.recompute()
+
+
+def rect_file(path):
+    """the your-turn start file: lesson 10's rectangle 40 x 30, pinned at the origin, no diagonal"""
+    d = FreeCAD.newDocument('rect')
+    sk = d.addObject('Sketcher::SketchObject', 'Sketch')
+    p = [V(30, 20, 0), V(75, 20, 0), V(75, 55, 0), V(30, 55, 0)]
+    for i in range(4):
+        sk.addGeometry(Part.LineSegment(p[i], p[(i + 1) % 4]))
+    for i in range(4):
+        sk.addConstraint(Sketcher.Constraint('Coincident', i, 2, (i + 1) % 4, 1))
+    for i in (0, 2):
+        sk.addConstraint(Sketcher.Constraint('Horizontal', i))
+    for i in (1, 3):
+        sk.addConstraint(Sketcher.Constraint('Vertical', i))
+    sk.addConstraint(Sketcher.Constraint('Distance', 0, 40))
+    sk.addConstraint(Sketcher.Constraint('Distance', 1, 30))
+    sk.addConstraint(Sketcher.Constraint('Coincident', 0, 1, -1, 1))
+    sk.solve()
+    d.recompute()
+    r = {'dof': sk.DoF, 'width': round(sk.Geometry[0].length(), 6), 'height': round(sk.Geometry[1].length(), 6),
+         'file': path}
+    d.saveAs(path)
+    FreeCAD.closeDocument(d.Name)
+    return r
 
 
 def resize(d, h):
@@ -146,9 +204,11 @@ def build():
     os.makedirs(OUT, exist_ok=True)
     allr = {}
     files = {}
-    for kind in ('pinned', 'redundant', 'reference'):
+    for kind in ('pinned', 'redundant', 'reference', 'orphan'):
         d = F10.hook_doc('hook_' + kind, True)
-        if kind != 'pinned':
+        if kind == 'orphan':
+            make_orphan(d)
+        elif kind != 'pinned':
             add_inner(d, kind == 'redundant')
         p = os.path.join(OUT, 'hook-%s.FCStd' % kind)
         d.saveAs(p)
@@ -167,10 +227,11 @@ def build():
     allr['redundant_hookdepth30'] = measure(d)
     FreeCAD.closeDocument(d.Name)
     allr['yourturn'] = yourturn()
+    allr['rect'] = rect_file(os.path.join(OUT, 'rect-pinned.FCStd'))
     json.dump(allr, open(os.path.join(OUT, 'build.json'), 'w'), indent=1)
     log('build', json.dumps({k: (v.get('dof'), v.get('solve'), v.get('redundant'), v.get('conflicting'), v.get('zmax'),
                                  v.get('xmax'), v.get('stl_zmax'), (v.get('inner') or {}).get('value'))
-                             for k, v in allr.items() if k != 'yourturn'}))
+                             for k, v in allr.items() if k not in ('yourturn', 'rect')}))
     log('yourturn', json.dumps(allr['yourturn']))
 
 
@@ -192,7 +253,7 @@ def check(doc_path, out, h=None):
         pass
     json.dump(r, open(out, 'w'), indent=1)
     log('check', json.dumps({k: r.get(k) for k in ('dof', 'solve', 'redundant', 'conflicting', 'zmax', 'stl_zmax',
-                                                    'inner', 'plate_height_driving', 'line_lengths')}))
+                                                    'inner', 'plate_height_users', 'line_lengths')}))
 
 
 if MODE == 'build':

@@ -1,0 +1,135 @@
+The 'Midplane' property being set for the extrusion of HoleSketch is deprecated and has been replaced by the 'SideType' property in FeatureExtrude. Please update your script, this property will be removed in a future version.
+Deprecated Midplane property was explicitly set to False: assuming SideType='One side'
+HookSketch: Sketch with redundant constraints
+Remove the following redundant constraint:
+24
+
+
+HookSketch: Sketch with redundant constraints
+Remove the following redundant constraint:
+24
+
+
+HookSketch: Over-constrained sketch
+Remove at least one of the following conflicting constraints:5
+, 6, 7, 8, 13, 15, 21, 23, 24
+
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+[MCP] Auto-start: RPC Server started at 127.0.0.1:9875 (PID 35).
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python codTraceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Datum 50.00 mm for the constraint with index 13 is invalid
+App.getDocument('rect').getObject('Sketch').setDatum(13,App.Units.Quantity('50 mm'))

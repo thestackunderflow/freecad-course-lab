@@ -1,0 +1,147 @@
+== s1 00:32:02 pinned hook: delete the plate_height size on the back line, then K D 55 on the inner face
+hook
+prepped hook
+rows open: 237 469
+look Front 12 0 30 90
+solver at open: ['Fully constrained']
+sizes: 16 Distance 25.0
+17 Distance 10.0
+18 Distance 5.0
+19 Distance 5.0
+20 Distance 60.0
+21 DistanceY 5.0
+cons: [(16, 'Distance', 0, -2000, 25.0, 'hook_depth'), (17, 'Distance', 1, -2000, 10.0, 'lip_height'), (18, 'Distance', 2, -2000, 5.0, 'lip_thickness'), (19, 'Distance', 6, -2000, 5.0, 'thickness'), (20, 'Distance', 7, -2000, 60.0, 'plate_height'), (21, 'DistanceY', 0, 4, 5.0, 'arm_thickness')]
+expr: [('.Constraints.arm_thickness', 'Params.thickness'), ('.Constraints.hook_depth', 'Params.hook_depth'), ('.Constraints.lip_height', 'Params.lip_height'), ('.Constraints.lip_thickness', 'Params.thickness'), ('.Constraints.plate_height', 'Params.plate_height'), ('.Constraints.thickness', 'Params.thickness')]
+== s2 00:32:27 click the plate_height label, Delete; then K D on the inner face, OK
+label 20 px 1657 793
+sel: [('HookSketch', ['Constraint21'])]
+dialogs after Delete: * hook - FreeCAD 1.1.4|
+solver after delete: ['Under-constrained: ', '1 Degrees of Freedom']
+after delete: {"redundant": [], "conflicting": [], "dof": 1, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+expr after delete: [('.Constraints.arm_thickness', 'Params.thickness'), ('.Constraints.hook_depth', 'Params.hook_depth'), ('.Constraints.lip_height', 'Params.lip_height'), ('.Constraints.lip_thickness', 'Params.thickness'), ('.Constraints.thickness', 'Params.thickness')]
+report after delete:  code executed successfully.\n00:32:16  Python code executed successfully.\n00:32:16  Python code executed successfully.\n00:32:16  Python code executed successfully.\n00:32:27  Python code executed successfully.\n00:32:29  Python code executed successfully.\n00:32:32  Python code executed successfully.\n00:32:32  Python code executed successfully.\n00:32:32  Python code executed successfully.\n"
+sel: [('HookSketch', ['Edge6'])]
+dialog: Window 4194430   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+dialog left: 0
+solver after 55: ['Fully constrained']
+after 55: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+report: 00:32:16  Python code executed successfully.\n00:32:16  Python code executed successfully.\n00:32:16  Python code executed successfully.\n00:32:27  Python code executed successfully.\n00:32:29  Python code executed successfully.\n00:32:32  Python code executed successfully.\n00:32:32  Python code executed successfully.\n00:32:32  Python code executed successfully.\n00:32:32  Python code executed successfully.\n00:32:32  Python code executed successfully.\n00:32:34  Python code executed successfully.\n00:32:43  Python code executed successfully.\n00:32:43  Python code executed successfully.\n"
+== s3 00:32:51 Close at 60, save orphan, Params 80 + recompute
+after close: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+report after close: 
+saved
+1
+at 80: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+report at 80: 
+look Front 12 0 40 110
+1
+at 80 second recompute: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+saved
+== s4 00:33:17 3b: fresh orphan, back line sized =Params.plate_height WHILE the 55 is driving
+1
+hook
+prepped hook
+rows open: 237 469
+look Front 12 0 30 90
+solver at open: ['Fully constrained']
+sel: [('HookSketch', ['Constraint23'])]
+dialog: 
+dialog still: 0
+== s5 00:33:59 3b retry (s4 clicked the 55's label on the back line): back line clicked near its top
+1
+hook
+prepped hook
+rows open: 237 469
+look Front 12 0 30 90
+geo7: Vector (0.0, 60.0, 0.0) Vector (0.0, 0.0, 0.0)
+click 1538 501
+sel: [('HookSketch', ['Edge8'])]
+== s6 00:34:21 3b: K D on the back line, type =Params.plate_height in the box
+dialog: Window 4194481   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+== s7 00:34:40 3b: accept the expression, OK the box
+expr editor open after Return: 1
+expr editor open after 2nd: 0
+insert length: Window 4194481   Position: 1801,1320 (screen: 0)   Geometry: 454x252 
+dialogs: * hook - FreeCAD 1.1.4|
+== s8 00:34:56 3b: state after OK
+solver: ['Redundant constraints: ', '(24)']
+live: {"redundant": [24], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+cons tail: 24 [(21, 'Coincident', 0, 0.0, True), (22, 'Distance', 5, 55.0, True), (23, 'Distance', 7, 60.0, True)] [('.Constraints.thickness', 'Params.thickness'), ('Constraints[23]', 'Params.plate_height')]
+report: 
+== s9 00:35:03 3b: Close at 60, then Params 80 + recompute
+after close: {"redundant": [24], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched", "Invalid"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+report after close: 
+saved
+1
+at 80: {"redundant": [], "conflicting": [5, 6, 7, 8, 13, 15, 21, 23, 24], "dof": -1, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Touched", "Expanded"], "HookSketch": ["Touched", "Invalid"], "Pad": ["Touched", "Expanded"], "HoleSketch": ["Up-to-date"], "Pocket": ["Touched"]}, "sheet": 80}
+report at 80: 
+== s10 00:35:21 G0b 3: fix on the orphan file at 80: click the 55's label, K X
+1
+hook
+prepped hook
+at open: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+rows open: 237 469
+look Front 12 0 30 90
+solver at open: ['Fully constrained']
+label 22 px 1525 764
+sel: [('HookSketch', ['Constraint23'])]
+dialogs after K X: * hook - FreeCAD 1.1.4|
+solver after K X: ['Under-constrained: ', '1 Degrees of Freedom']
+after K X: {"redundant": [], "conflicting": [], "dof": 1, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 55.0, false]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+== s11 00:35:51 G0b 3: back line K D =Params.plate_height, OK, Close, Recompute
+sel: [('HookSketch', ['Edge8'])]
+dialog: Window 4194538   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+dialogs: * hook - FreeCAD 1.1.4|
+solver: ['Fully constrained']
+live: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[22, "Distance", 75.0, false]], "len5": 75.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+after close + recompute: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 80.0, "xmax": 25.0, "inner": [[22, "Distance", 75.0, false]], "len5": 75.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 80}
+report: 
+look Front 12 0 40 110
+saved
+== s12 00:38:00 G0b 5: your-turn rectangle in the GUI: construction line corner to corner
+1
+rect
+row 167 340
+look Top 20 15 0 60
+solver at open: ['Fully constrained']
+toggle btn 970 228
+line btn 379 228
+corners 1324 1057 / 2028 529
+geo: 5 [False, False, False, False, True] 50.0 0 13
+solver: []
+== s13 00:38:36 G0b 5: driving diagonal (Reference unticked), then Reference ticked
+sel: [('Sketch', ['Edge1'])]
+dialog: 
+solver: []
+cons: 13 ('Coincident', 4, 0.0, True) []
+report: 
+sel: [('Sketch', [])]
+dialog: 
+solver: []
+cons: 13 ('Coincident', 4, 0.0, True)
+1
+width 60: 60.0 67.082039 0.0 True
+== s14 (s12+s13 again: one Escape only; s12 left the sketch with the second Escape) 00:39:20 G0b 5: your-turn rectangle in the GUI: construction line corner to corner
+1
+rect
+row 167 340
+look Top 20 15 0 60
+solver at open: ['Fully constrained']
+toggle btn 970 228
+line btn 379 228
+corners 1323 1057 / 2027 529
+geo: 5 [False, False, False, False, False] 50.0 0 13
+solver: ['Fully constrained']
+diag mid 1675 793
+sel: [('Sketch', ['Edge5'])]
+dialog: Window 4194686   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+solver: ['Fully constrained']
+cons: 13 ('Coincident', 4, 0.0, True) []
+report: 
+diag mid 1675 793
+sel: [('Sketch', ['Edge5'])]
+dialog: Window 4194698   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+solver: ['Fully constrained']
+cons: 14 ('Distance', 4, 50.0, False)
+1
+width 60: 60.0 67.082039 67.082039 False
