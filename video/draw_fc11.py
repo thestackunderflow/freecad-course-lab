@@ -286,6 +286,7 @@ def panels():
                f"top {f2(ctl['zmax'])} · " + ('no hole' if not ctl.get('hole_in_plate') else 'hole')]
     code_panel('ov-meas-X1.png', x1, 'meas')
     code_panel('ov-meas-X2.png', x2, 'meas')
+    code_panel('ov-sk-X1.png', x1, 'sk')
     code_panel('ov-sk-X2.png', x2, 'sk')
     for run in ('A1', 'B1'):
         c = CL[run]['check']
@@ -297,7 +298,7 @@ def panels():
                                   f"hole {n0(U['zmax'] - U['sketch_hole_z'])} below the top"], 'short')
 
 
-def still_other(src, name):
+def still_other(src, name, last=True):
     """G0b screenshot cut above STILL_CUT on white, the label, the order line and the lab-test panel below."""
     CUR.clear()
     im = Image.new('RGB', (SW, SH), WHITE)
@@ -318,9 +319,40 @@ def still_other(src, name):
     del o
     g = NUM['g0b']['other_order_3b_at_80']
     da = ImageDraw.Draw(im, 'RGBA')
-    code_box(da, 1560, 1395, ['kept:', NUM['words']['redundant_panel'], 'Close: sketch Invalid',
-                              f"at {n0(U_SHEET)}: top {f2(g['zmax'])}"], 'lab test (other order)', 52, 0.8)
+    rows = ['kept:', NUM['words']['redundant_panel'], 'Close: sketch Invalid']
+    if last:                         # "At 80 the top stays 60": only on the still shown with those words
+        rows.append(f"at {n0(U_SHEET)}: top {f2(g['zmax'])}")
+    code_box(da, 1560, 1395, rows, 'lab test (other order)', 52, 0.8)
     save(im, name)
+
+
+def short_pair():
+    """The Short's frame 1 (S0): take H's right view at 60 (the hole, solid ring) beside the same view at 80 (no hole,
+    dashed ring), both from the fixed camera, labelled with the cell's value; a 2880 x 1800 still, the Short's square
+    rect [640, 100, 1600, 1600]."""
+    CUR.clear()
+    im = Image.new('RGB', (SW, SH), WHITE)
+    x, y, r = HOLE
+    cx0, cy0 = x - 400, 250                      # the crop: 800 x 1200 around the plate
+    for i, f in enumerate(('hole-60.png', 'hole-80.png')):
+        crop = Image.open(os.path.join(TAKES, 'H', f)).convert('RGB').crop((cx0, cy0, cx0 + 800, cy0 + 1200))
+        im.paste(crop, (640 + 800 * i, 100))
+    d = ImageDraw.Draw(im)
+    R = r + 16
+    for i in (0, 1):
+        hx, hy = 640 + 800 * i + (x - cx0), 100 + (y - cy0)
+        if i == 0:
+            d.ellipse((hx - R, hy - R, hx + R, hy + R), outline=ORANGE, width=8)
+        else:
+            for k in range(0, 24, 2):
+                d.arc((hx - R, hy - R, hx + R, hy + R), 15 * k, 15 * (k + 1), fill=ORANGE, width=8)
+    d.line((1440, 100, 1440, 1300), fill=PARTLINE, width=6)
+    fb = b.font(b.B, 96)
+    for i, t in enumerate((f"cell {n0(NUM['build_by_code']['pinned_60']['zmax'])}", f'cell {n0(U_SHEET)}')):
+        tw = d.textlength(t, font=fb)
+        d.text((640 + 800 * i + (800 - tw) / 2, 1360), t, font=fb, fill=INK)
+        CUR.append((t, 65))
+    save(im, 'short-pair.png')
 
 
 def main():
@@ -345,8 +377,9 @@ def main():
     _ov('ov-cc-auto.png', (0, 1686, 1160, 114))
     quote_b1()
     panels()
-    still_other('s9-closed-60.png', 'still-other-60.png')
+    still_other('s9-closed-60.png', 'still-other-60.png', last=False)
     still_other('s9-at-80.png', 'still-other-80.png')
+    short_pair()
     print('PROBLEMS:', PROBLEMS or 'none')
 
 

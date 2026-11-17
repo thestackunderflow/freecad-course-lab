@@ -21,7 +21,7 @@ CARDS = [f'{s}-{i}.png' for s, k in STEPS.items() for i in range(1, k + 1)] + ['
 SHORT = [f'card-short-why-{i}.png' for i in (1, 2, 3)]
 OVS = ([f'ov-recap-{i}.png' for i in range(1, 5)] + [f'ov-turn-{i}.png' for i in range(1, 6)] +
        ['ov-ring-60.png', 'ov-ring-80.png', 'ov-cc-top.png', 'ov-cc-auto.png', 'ov-cc-quote-B1.png'])
-STILLS = ['still-other-60.png', 'still-other-80.png']
+STILLS = ['still-other-60.png', 'still-other-80.png', 'short-pair.png']
 NUM = json.load(open(os.path.join(d.TAKES, 'NUMBERS.json')))
 LESSON = {'1', '2', '3', '4', '5', '6', '7', '8', '10', '11', '15', '24', '23', '30', '31', '40', '45', '55', '60', '65', '75', '80', '95',
           '100', '1.1.4', '0.1.28', '2.1.308', '5.5', '0', '0.12', '0.09', '60.00', '80.00', '100.00', '80.0'}
