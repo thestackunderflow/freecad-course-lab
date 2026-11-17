@@ -1,0 +1,3888 @@
+{
+ "pinned_60": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 60.0,
+  "xmin": -0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 8420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 45.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 45.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": 0,
+  "dof": 0,
+  "constraints": 23,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 5,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   60.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 60,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   55.0,
+   5.0,
+   60.0
+  ],
+  "inner": null,
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    60.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "stl_zmax": 60.0,
+  "stl_zmin": 0.0,
+  "file": "/lab/out/fc11/P/hook-pinned.FCStd"
+ },
+ "pinned_80": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 80.0,
+  "xmin": 0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 10420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 65.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 65.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": 0,
+  "dof": 0,
+  "constraints": 23,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 5,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   80.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 80,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   75.0,
+   5.0,
+   80.0
+  ],
+  "inner": null,
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    80.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Touched"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "stl_zmax": 80.0,
+  "stl_zmin": 0.0
+ },
+ "pinned_100": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 100.0,
+  "xmin": 0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 12420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 85.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 85.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": 0,
+  "dof": 0,
+  "constraints": 23,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 5,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   100.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 100,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   95.0,
+   5.0,
+   100.0
+  ],
+  "inner": null,
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    100.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "stl_zmax": 100.0,
+  "stl_zmin": 0.0
+ },
+ "redundant_60": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 60.0,
+  "xmin": -0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 8420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 45.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 45.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": -2,
+  "dof": 0,
+  "constraints": 24,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 6,
+   "DistanceY": 1
+  },
+  "redundant": [
+   24
+  ],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   60.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 60,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   55.0,
+   5.0,
+   60.0
+  ],
+  "inner": {
+   "index": 23,
+   "type": "Distance",
+   "driving": true,
+   "value": 55.0,
+   "expression": null,
+   "name": "",
+   "geometry_length": 55.0
+  },
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    60.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    23,
+    "Distance",
+    5,
+    0,
+    -2000,
+    0,
+    55.0,
+    true,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Touched",
+    "Invalid"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "stl_zmax": 60.0,
+  "stl_zmin": 0.0,
+  "file": "/lab/out/fc11/P/hook-redundant.FCStd"
+ },
+ "redundant_80": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 60.0,
+  "xmin": -0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 8420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 45.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 65.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": -5.0,
+  "hole_in_plate": false,
+  "sketch": "HookSketch",
+  "solve": -4,
+  "dof": -1,
+  "constraints": 24,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 6,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [
+   5,
+   6,
+   7,
+   8,
+   13,
+   15,
+   21,
+   22,
+   24
+  ],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   60.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 80,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   55.0,
+   5.0,
+   60.0
+  ],
+  "inner": {
+   "index": 23,
+   "type": "Distance",
+   "driving": true,
+   "value": 55.0,
+   "expression": null,
+   "name": "",
+   "geometry_length": 55.0
+  },
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    80.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    23,
+    "Distance",
+    5,
+    0,
+    -2000,
+    0,
+    55.0,
+    true,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Touched"
+   ],
+   "HookSketch": [
+    "Touched",
+    "Invalid"
+   ],
+   "Pad": [
+    "Touched"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Touched"
+   ]
+  },
+  "stl_zmax": 60.0,
+  "stl_zmin": 0.0
+ },
+ "redundant_100": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 60.0,
+  "xmin": -0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 8420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 45.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 85.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": -25.0,
+  "hole_in_plate": false,
+  "sketch": "HookSketch",
+  "solve": -4,
+  "dof": -1,
+  "constraints": 24,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 6,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [
+   5,
+   6,
+   7,
+   8,
+   13,
+   15,
+   21,
+   22,
+   24
+  ],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   60.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 100,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   55.0,
+   5.0,
+   60.0
+  ],
+  "inner": {
+   "index": 23,
+   "type": "Distance",
+   "driving": true,
+   "value": 55.0,
+   "expression": null,
+   "name": "",
+   "geometry_length": 55.0
+  },
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    100.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    23,
+    "Distance",
+    5,
+    0,
+    -2000,
+    0,
+    55.0,
+    true,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Touched"
+   ],
+   "HookSketch": [
+    "Touched",
+    "Invalid"
+   ],
+   "Pad": [
+    "Touched"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Touched"
+   ]
+  },
+  "stl_zmax": 60.0,
+  "stl_zmin": 0.0
+ },
+ "reference_60": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 60.0,
+  "xmin": -0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 8420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 45.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 45.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": 0,
+  "dof": 0,
+  "constraints": 24,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 6,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   60.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 60,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   55.0,
+   5.0,
+   60.0
+  ],
+  "inner": {
+   "index": 23,
+   "type": "Distance",
+   "driving": false,
+   "value": 55.0,
+   "expression": null,
+   "name": "",
+   "geometry_length": 55.0
+  },
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    60.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    23,
+    "Distance",
+    5,
+    0,
+    -2000,
+    0,
+    55.0,
+    false,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "stl_zmax": 60.0,
+  "stl_zmin": 0.0,
+  "file": "/lab/out/fc11/P/hook-reference.FCStd"
+ },
+ "reference_80": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 80.0,
+  "xmin": 0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 10420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 65.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 65.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": 0,
+  "dof": 0,
+  "constraints": 24,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 6,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   80.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 80,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   75.0,
+   5.0,
+   80.0
+  ],
+  "inner": {
+   "index": 23,
+   "type": "Distance",
+   "driving": false,
+   "value": 75.0,
+   "expression": null,
+   "name": "",
+   "geometry_length": 75.0
+  },
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    80.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    23,
+    "Distance",
+    5,
+    0,
+    -2000,
+    0,
+    75.0,
+    false,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "stl_zmax": 80.0,
+  "stl_zmin": 0.0
+ },
+ "reference_100": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 100.0,
+  "xmin": 0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 12420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 85.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 85.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": 0,
+  "dof": 0,
+  "constraints": 24,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 6,
+   "DistanceY": 1
+  },
+  "redundant": [],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   100.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 100,
+   "thickness": 5,
+   "hook_depth": 25,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   95.0,
+   5.0,
+   100.0
+  ],
+  "inner": {
+   "index": 23,
+   "type": "Distance",
+   "driving": false,
+   "value": 95.0,
+   "expression": null,
+   "name": "",
+   "geometry_length": 95.0
+  },
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    25.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    100.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    23,
+    "Distance",
+    5,
+    0,
+    -2000,
+    0,
+    95.0,
+    false,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Up-to-date"
+   ]
+  },
+  "stl_zmax": 100.0,
+  "stl_zmin": 0.0
+ },
+ "redundant_hookdepth30": {
+  "used": "Body",
+  "zmin": 0.0,
+  "zmax": 60.0,
+  "xmin": -0.0,
+  "xmax": 25.0,
+  "ymin": -20.0,
+  "ymax": 0.0,
+  "volume_mm3": 8420.4784,
+  "solids": 1,
+  "hole_faces": 1,
+  "hole_z": 45.0,
+  "hole_y": -10.0,
+  "sketch_hole_z": 45.0,
+  "sketch_hole_y": -10.0,
+  "hole_to_top": 15.0,
+  "sketch_hole_to_top": 15.0,
+  "hole_in_plate": true,
+  "sketch": "HookSketch",
+  "solve": -2,
+  "dof": 0,
+  "constraints": 24,
+  "by_type": {
+   "Coincident": 9,
+   "Horizontal": 4,
+   "Vertical": 4,
+   "Distance": 6,
+   "DistanceY": 1
+  },
+  "redundant": [
+   24
+  ],
+  "conflicting": [],
+  "origin_tied": true,
+  "expressions": [
+   [
+    ".Constraints.arm_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.hook_depth",
+    "Params.hook_depth"
+   ],
+   [
+    ".Constraints.lip_height",
+    "Params.lip_height"
+   ],
+   [
+    ".Constraints.lip_thickness",
+    "Params.thickness"
+   ],
+   [
+    ".Constraints.plate_height",
+    "Params.plate_height"
+   ],
+   [
+    ".Constraints.thickness",
+    "Params.thickness"
+   ]
+  ],
+  "sketch_bbox": [
+   0.0,
+   0.0,
+   25.0,
+   60.0
+  ],
+  "features": [
+   [
+    "Pad",
+    "Pad",
+    true
+   ],
+   [
+    "Pocket",
+    "Pocket",
+    true
+   ]
+  ],
+  "sheet": {
+   "plate_height": 60,
+   "thickness": 5,
+   "hook_depth": 30,
+   "lip_height": 10,
+   "width": 20
+  },
+  "line_lengths": [
+   25.0,
+   10.0,
+   5.0,
+   5.0,
+   15.0,
+   55.0,
+   5.0,
+   60.0
+  ],
+  "inner": {
+   "index": 23,
+   "type": "Distance",
+   "driving": true,
+   "value": 55.0,
+   "expression": null,
+   "name": "",
+   "geometry_length": 55.0
+  },
+  "plate_height_driving": true,
+  "arm_z": 5.0,
+  "cons": [
+   [
+    0,
+    "Coincident",
+    0,
+    2,
+    1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    1,
+    "Coincident",
+    1,
+    2,
+    2,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    2,
+    "Coincident",
+    2,
+    2,
+    3,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    3,
+    "Coincident",
+    3,
+    2,
+    4,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    4,
+    "Coincident",
+    4,
+    2,
+    5,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    5,
+    "Coincident",
+    5,
+    2,
+    6,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    6,
+    "Coincident",
+    6,
+    2,
+    7,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    7,
+    "Coincident",
+    7,
+    2,
+    0,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    8,
+    "Horizontal",
+    0,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    9,
+    "Vertical",
+    1,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    10,
+    "Horizontal",
+    2,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    11,
+    "Vertical",
+    3,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    12,
+    "Horizontal",
+    4,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    13,
+    "Vertical",
+    5,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    14,
+    "Horizontal",
+    6,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    15,
+    "Vertical",
+    7,
+    0,
+    -2000,
+    0,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    16,
+    "Distance",
+    0,
+    0,
+    -2000,
+    0,
+    30.0,
+    true,
+    "hook_depth"
+   ],
+   [
+    17,
+    "Distance",
+    1,
+    0,
+    -2000,
+    0,
+    10.0,
+    true,
+    "lip_height"
+   ],
+   [
+    18,
+    "Distance",
+    2,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "lip_thickness"
+   ],
+   [
+    19,
+    "Distance",
+    6,
+    0,
+    -2000,
+    0,
+    5.0,
+    true,
+    "thickness"
+   ],
+   [
+    20,
+    "Distance",
+    7,
+    0,
+    -2000,
+    0,
+    60.0,
+    true,
+    "plate_height"
+   ],
+   [
+    21,
+    "DistanceY",
+    0,
+    1,
+    4,
+    1,
+    5.0,
+    true,
+    "arm_thickness"
+   ],
+   [
+    22,
+    "Coincident",
+    0,
+    1,
+    -1,
+    1,
+    0.0,
+    true,
+    ""
+   ],
+   [
+    23,
+    "Distance",
+    5,
+    0,
+    -2000,
+    0,
+    55.0,
+    true,
+    ""
+   ]
+  ],
+  "states": {
+   "Body": [
+    "Touched"
+   ],
+   "HookSketch": [
+    "Touched",
+    "Invalid"
+   ],
+   "Pad": [
+    "Touched"
+   ],
+   "HoleSketch": [
+    "Up-to-date"
+   ],
+   "Pocket": [
+    "Touched"
+   ]
+  }
+ },
+ "yourturn": {
+  "dof": 0,
+  "diagonal_40": 50.0,
+  "diagonal_60": 67.082039,
+  "ref_constraint_value_60": 67.082039,
+  "driving_diagonal_solve": -2,
+  "driving_diagonal_redundant": true,
+  "driving_diagonal_lists": [
+   [
+    14
+   ],
+   []
+  ]
+ }
+}

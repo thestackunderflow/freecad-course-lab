@@ -1,0 +1,34 @@
+fc11 G0 (17 Nov 2026 UTC), FreeCAD 1.1.4 in fcc-app:1.1.4-0.1.28, $0, no Claude. Probe steps s1.sh .. s10.sh (probe
+container lab/fc11_up.sh + lab/fc11x.sh); every line is in g0-log.txt; stills q*.png. s1-s6 were spoiled by lab
+queries sent while the modal dialog was up (the add-on's socket blocks; an "GUI dispatch gave up" box); s7 onward is a
+fresh FreeCAD with no query while a dialog is open.
+
+VERDICT: the plan's key claim FAILS on the plan's route (take R). STOP before filming (as instructed).
+
+Q1 (take R route) pinned hook, HookSketch, click the inner face (Edge6), Distance Dimension (K, D):
+  dialog "Insert Length", Length 55.00 mm, Name empty, Reference UNTICKED (q1-dialog.png); while it is open the panel
+  already reads "Redundant constraints: (24)" in orange-red.
+  OK -> FreeCAD runs setDatum(23, 55 mm), which fails: notification + Report view (red)
+  "Datum 55.00 mm for the constraint with index 23 is invalid"; the new size is DROPPED (23 constraints, no size on
+  line 5), panel back to "Fully constrained" in green (q1-after-ok.png). Reproduced twice (s4-s6 spoiled, s7 clean).
+  Prefs: AutoRemoveRedundants / AutoRecompute not set in user.cfg (defaults); ShowDialogOnDistanceConstraint true.
+  => FreeCAD 1.1.4 does NOT keep a driving second size typed through the size box: it catches it.
+
+Route 2 (not in the plan): tick Reference in the same box -> blue reference 55 kept, "Fully constrained"; select it,
+  Toggle Driving/Reference (K, X) -> it turns DRIVING and stays: panel "Redundant constraints: (24)" (s9,
+  q3b-*.png).
+  Q1b on that file: Close at 60 -> HookSketch state Invalid; Report "HookSketch: Sketch with redundant constraints /
+  Remove the following redundant constraint: 24"; top 60.00 (q1b-closed.png).
+  Q2: Params 60 -> 80 + recompute -> Report "HookSketch: Over-constrained sketch / Remove at least one of the
+  following conflicting constraints: 5, 6, 7, 8, 13, 15, 21, 22, 24"; top 60.00 by code and STL ZMax 60.00
+  (q2-redundant-80.check.json). So the stale-part half of the claim holds once a driving 55 exists.
+
+Headless (lab/fc11parts.py, P/build.json, tests/test_fc11.py 17 pass): redundant file solve -2, redundant [24] at 60;
+hook_depth 25 -> 30 at 60: xmax stays 25 (no change reaches the part); at 80 and 100: solve -4, conflicting
+[5 6 7 8 13 15 21 22 24], top 60.00, STL 60.00. Reference file: 80 -> top 80.00, reference 75; 100 -> 100.00 / 95.
+Your turn: diagonal 50, then 67.082039 at width 60; a driving diagonal is redundant (solve -2).
+
+Plan branch that applies (PLAN 2.4): "fc11: the GUI will not keep a driving redundant size" -> SolidCraft spine
+(delete the blocking size, type 55; title 2). Alternative for the owner: keep the plan's spine with route 2 (reference
+then toggled to driving) on screen, or with the code-built start file only. Either way teacher + producer re-gate
+the changed frames (F0, F4-F7, S0-S1) before takes T, R, M, U and the Claude runs.

@@ -1,0 +1,28 @@
+The 'Midplane' property being set for the extrusion of HoleSketch is deprecated and has been replaced by the 'SideType' property in FeatureExtrude. Please update your script, this property will be removed in a future version.
+Deprecated Midplane property was explicitly set to False: assuming SideType='One side'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Datum 55.00 mm for the constraint with index 23 is invalid
+App.getDocument('hook').getObject('HookSketch').setDatum(23,App.Units.Quantity('55 mm'))
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Datum 55.00 mm for the constraint with index 23 is invalid
+App.getDocument('hook').getObject('HookSketch').setDatum(23,App.Units.Quantity('55 mm'))
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'ValueError'>: Not able toggle Driving for constraint with the given index: 22
+App.getDocument('hook').getObject('HookSketch').toggleDriving(22)
+HookSketch: Sketch with redundant constraints
+Remove the following redundant constraint:
+24
+
+
+HookSketch: Sketch with redundant constraints
+Remove the following redundant constraint:
+24
+
+
+HookSketch: Over-constrained sketch
+Remove at least one of the following conflicting constraints:5
+, 6, 7, 8, 13, 15, 21, 22, 24
+

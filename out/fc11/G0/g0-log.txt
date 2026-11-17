@@ -1,0 +1,80 @@
+== s1 00:10:09
+hook
+prepped hook
+cfg: 
+cfgfiles: /home/maker/.config/FreeCAD: FreeCAD.conf v1-1  /home/maker/.local/share/FreeCAD: v1-1 
+start: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+solver open: []
+inner mid 1636 702
+sel: [('Pocket', ['Edge20'])]
+buttons: dist none dim none vdist none
+== s2 00:10:34
+rows open: 237 469
+row 237 469
+editing: <View provider geometry object at 0x5f40ec0c1680>
+look Front 12 0 30 90
+solver open: ['Fully constrained']
+inner mid 1597 764
+sel: [('HookSketch', ['Edge6'])]
+buttons: dist none dim none vdist none
+== s3 00:10:54
+tb: []
+cmd K D: {'name': 'Sketcher_ConstrainDistance', 'menuText': 'Distance Dimension', 'toolTip': 'Constrains the vertical distance between two points, or from a point to the origin if one is selected', 'whatsThis': 'Sketcher_ConstrainDistance', 'statusTip': 'Constrains the vertical distance between two points, or from a point to the origin if one is selected', 'pixmap': 'Constraint_Length', 'shortcut': 'K, D'}
+cmd dim: {'name': 'Sketcher_Dimension', 'menuText': 'Dimension', 'toolTip': 'Constrains contextually based on the selection. The type can be changed with the M key.', 'whatsThis': 'Sketcher_Dimension', 'statusTip': 'Constrains contextually based on the selection. The type can be changed with the M key.', 'pixmap': 'Constraint_Dimension', 'shortcut': 'D'}
+dialogs: 
+== s4 00:11:34
+after OK: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+solver: ['Fully constrained']
+editing after close: None
+after close: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Up-to-date"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+report: '00:11:39  Python code executed successfully.\n00:11:45  Python code executed successfully.\n00:11:46  Python code executed successfully.\n'
+== s5 00:11:58 retry: OK clicked with the mouse
+look Front 12 0 30 90
+sel: [('HookSketch', ['Edge6'])]
+constraints while dialog: 
+ok at 
+after OK click: 
+constraints: 
+solver: 
+== s6 00:14:05 OK clicked at 1936 1510 (dialog 1801,1320 456x252)
+dialog left: 0
+after OK click: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+constraints: 23 ('Coincident', 0, 0.0, True)
+solver: ['Fully constrained']
+== s7 00:14:52 fresh FreeCAD: clean add, no query while the dialog is up
+hook
+prepped hook
+param AutoRemoveRedundants (default True/False asked): True False True False True
+rows open: 237 469
+look Front 12 0 30 90
+sel: [('HookSketch', ['Edge6'])]
+dialog: Window 4194430   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+dialog left: 0
+after OK: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+constraints: 23 ('Coincident', 0, 0.0, True)
+solver: ['Fully constrained']
+report: '00:14:42  [MCP] Auto-start: RPC Server started at 127.0.0.1:9875 (PID 41).\n00:14:53  The \'Midplane\' property being set for the extrusion of HoleSketch is deprecated and has been replaced by the \'SideType\' property in FeatureExtrude. Please update your script, this property will be removed in a future version.\n00:14:53  Deprecated Midplane property was explicitly set to False: assuming SideType=\'One side\'\n00:14:53  Python code executed successfully.\n00:14:53  Python code executed successfully.\n00:14:56  Python code executed successfully.\n00:14:56  Python code executed successfully.\n00:14:57  Python code executed successfully.\n00:14:58  Python code executed successfully.\n00:14:58  Python code executed successfully.\n00:14:59  Python code executed successfully.\n00:15:04  Python code executed successfully.\n00:15:06  Python code executed successfully.\n00:15:08  Python code executed successfully.\n00:15:13  pyException: Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n<class \'ValueError\'>: Datum 55.00 mm for the constraint with index 23 is invalid\n00:15:13  hook#HookSketch: App.getDocument(\'hook\').getObject(\'HookSketch\').setDatum(23,App.Units.Quantity(\'55 mm\'))\n00:15:17  Python code executed successfully.\n00:15:17  Python code executed successfully.\n00:15:17  Python code executed successfully.\n'
+== s8 00:15:42 route 2: Reference ticked in the dialog, then Toggle Driving/Reference (K, X) on it
+after ref OK: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+solver: ['Fully constrained']
+sel: [('HookSketch', ['Constraint23'])]
+dialogs after K X: * hook - FreeCAD 1.1.4|
+after toggle: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+solver: ['Fully constrained']
+report: ode executed successfully.\n00:15:54  Python code executed successfully.\n00:15:54  Python code executed successfully.\n00:15:55  pyException: Traceback (most recent call last):\n  File "<string>", line 1, in <module>\n<class \'ValueError\'>: Not able toggle Driving for constraint with the given index: 22\n00:15:55  hook#HookSketch: App.getDocument(\'hook\').getObject(\'HookSketch\').toggleDriving(22)\n00:15:59  Python code executed successfully.\n00:15:59  Python code executed successfully.\n'
+== s9 (retry, checkbox at +37,+132) 00:16:12 route 2: Reference ticked in the dialog, then Toggle Driving/Reference (K, X) on it
+after ref OK: {"redundant": [], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[23, "Distance", 55.0, false]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+solver: ['Fully constrained']
+sel: [('HookSketch', ['Constraint24'])]
+dialogs after K X: * hook - FreeCAD 1.1.4|
+after toggle: {"redundant": [24], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[23, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+solver: ['Redundant constraints: ', '(24)']
+report:   Python code executed successfully.\n00:15:59  Python code executed successfully.\n00:15:59  Python code executed successfully.\n00:16:12  Python code executed successfully.\n00:16:24  Python code executed successfully.\n00:16:24  Python code executed successfully.\n00:16:24  Python code executed successfully.\n00:16:24  Python code executed successfully.\n00:16:24  Python code executed successfully.\n00:16:29  Python code executed successfully.\n00:16:30  Python code executed successfully.\n'
+== s10 00:16:37 Q1b on the toggled (driving, redundant) 55: Close at 60, then Params 60 -> 80 + Recompute
+after close: {"redundant": [24], "conflicting": [], "dof": 0, "zmax": 60.0, "xmax": 25.0, "inner": [[23, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Expanded", "Up-to-date"], "HookSketch": ["Touched", "Invalid"], "Pad": ["Expanded", "Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"]}, "sheet": 60}
+report: '00:16:38  Python code executed successfully.\n00:16:40  HookSketch: Sketch with redundant constraints\nRemove the following redundant constraint:\n24\n\n\n00:16:40  HookSketch: Sketch with redundant constraints\nRemove the following redundant constraint:\n24\n\n\n00:16:45  Python code executed successfully.\n'
+1
+after 80: {"redundant": [], "conflicting": [5, 6, 7, 8, 13, 15, 21, 22, 24], "dof": -1, "zmax": 60.0, "xmax": 25.0, "inner": [[23, "Distance", 55.0, true]], "len5": 55.0, "states": {"Body": ["Touched", "Expanded"], "HookSketch": ["Touched", "Invalid"], "Pad": ["Touched", "Expanded"], "HoleSketch": ["Up-to-date"], "Pocket": ["Touched"]}, "sheet": 80}
+report: '00:16:38  Python code executed successfully.\n00:16:40  HookSketch: Sketch with redundant constraints\nRemove the following redundant constraint:\n24\n\n\n00:16:40  HookSketch: Sketch with redundant constraints\nRemove the following redundant constraint:\n24\n\n\n00:16:45  Python code executed successfully.\n00:16:45  Python code executed successfully.\n00:16:45  HookSketch: Over-constrained sketch\nRemove at least one of the following conflicting constraints:5\n, 6, 7, 8, 13, 15, 21, 22, 24\n\n00:16:45  Python code executed successfully.\n00:16:48  Python code executed successfully.\n'
+saved
+check saved 80: FC11 check {"dof": -1, "solve": -4, "redundant": [], "conflicting": [5, 6, 7, 8, 13, 15, 21, 22, 24], "zmax": 60.0, "stl_zmax": 60.0, "inner": {"index": 23, "type": "Distance", "driving": true, "value": 55.0, "expression": null, "name": "", "geometry_length": 55.0}, "plate_height_driving": true, "line_lengths": [25.0, 10.0, 5.0, 5.0, 15.0, 55.0, 5.0, 60.0]}
