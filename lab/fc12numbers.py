@@ -51,7 +51,7 @@ def main():
     for d in sorted(glob.glob(os.path.join(X, 'runs', '*'))):
         r = os.path.basename(d)
         meta = ld('runs', r, 'meta.json') or {}
-        n['runs'][r] = {'cost_usd': meta.get('cost_usd'), 'wall_s': meta.get('wall_s'),
+        n['runs'][r] = {'run': 2 if r.endswith('-2') else 1, 'cost_usd': meta.get('cost_usd'), 'wall_s': meta.get('wall_s'),
                         'score': ld('runs', r, 'score.json'),
                         'after': slim(ld('runs', r, 'after.check.json')),
                         'at3': slim(ld('runs', r, 'after-h3.check.json')),

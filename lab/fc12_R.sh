@@ -11,7 +11,7 @@ set -u
 RUN=$1; O=/lab/out/fc12/runs/$RUN
 A1="My coat stand has 4 hooks that should be 60 degrees apart on the front half, but one points into the wall. Fix it so the gap stays 60 when I change the number of hooks."
 B1="$A1 Then check the angle between neighbouring hooks and tell me the numbers."
-case $RUN in A1) M1=$A1;; B1) M1=$B1;; *) echo "RUN A1|B1"; exit 2;; esac
+case $RUN in A1|A1-2) M1=$A1;; B1|B1-2) M1=$B1;; *) echo "RUN A1|B1|A1-2|B1-2"; exit 2;; esac   # -2 = run 2 (18 Nov rerun, guard calibrated)
 CAP=${CAP:-0.20}
 [ -e "$O/events.jsonl" ] && { echo "refusing: $O has a run"; exit 1; }
 mkdir -p "$O"; echo "$M1" > "$O/prompt.txt"

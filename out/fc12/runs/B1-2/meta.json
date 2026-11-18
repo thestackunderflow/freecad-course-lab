@@ -1,0 +1,1 @@
+{"run": "B1-2", "wall_s": 107, "cost_usd": "0.0820", "launch": "claude --model claude-sonnet-5-5 --strict-mcp-config --mcp-config entry.json (freecad only) --max-budget-usd 0.25 --max-turns 40"}

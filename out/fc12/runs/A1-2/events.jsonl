@@ -1,0 +1,12 @@
+{"t": 0.058, "event": "recording started: Claude Code (left, FreeCAD plug only), FreeCAD with stand open (right)"}
+{"t": 2.12, "event": "turn 1: typing", "text": "My coat stand has 4 hooks that should be 60 degrees apart on the front half, but one points into the wall. Fix it so the gap stays 60 when I change the number of hooks."}
+{"t": 10.821, "event": "turn 1: Enter"}
+{"t": 13.909, "event": "tool call: list_documents", "seq": 18}
+{"t": 13.919, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 14.979, "event": "tool call: get_objects", "seq": 20}
+{"t": 15.71, "event": "tool reply: get_objects", "seq": 21, "isError": false}
+{"t": 21.632, "event": "tool call: execute_code", "seq": 22}
+{"t": 22.63, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 26.649, "event": "turn 1: end-of-turn line seen"}
+{"t": 28.652, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 34.676, "event": "recording stopped"}

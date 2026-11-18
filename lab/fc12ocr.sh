@@ -1,8 +1,9 @@
 #!/bin/sh
 # fc12: OCR every 2 s of each recording under out/fc10 for a plan name (Claude Code's header), before the commit.
 #   MSYS_NO_PATHCONV=1 docker run --rm -v "<lab>:/lab" fc8-ocr:1 sh /lab/lab/fc12ocr.sh  -> out/fc12/OCR-runs.txt
-OUT=/lab/out/fc12/OCR-runs.txt; : > $OUT
-for v in $(find /lab/out/fc12 -name screen.mp4 | sort); do
+# optional $1 = a path part (e.g. "-2/") -> only those recordings, into OCR-runs-2.txt (run 2, 18 Nov)
+OUT=/lab/out/fc12/OCR-runs${1:+-2}.txt; : > $OUT
+for v in $(find /lab/out/fc12 -name screen.mp4 -path "*${1:-}*" | sort); do
   d=$(mktemp -d)
   ffmpeg -v error -i "$v" -vf "fps=1/2,scale=1440:-1" "$d/f%04d.png"
   n=0; hits=0

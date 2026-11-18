@@ -1,0 +1,157 @@
+{
+ "angles": [
+  0.0,
+  60.0,
+  120.0,
+  180.0
+ ],
+ "gaps": [
+  60.0,
+  60.0,
+  60.0
+ ],
+ "lip_faces": 4,
+ "hooks_seen": 4,
+ "solids": 1,
+ "valid": true,
+ "volume": 149560.608,
+ "pattern": {
+  "name": "PolarPattern",
+  "mode": "Extent",
+  "angle": 180.0,
+  "offset": 120.0,
+  "occurrences": 4,
+  "spacings": [
+   -1.0,
+   -1.0,
+   -1.0
+  ],
+  "reversed": false,
+  "axis": "(<GeoFeature object>, [''])",
+  "originals": [
+   "Hook"
+  ],
+  "expr": {
+   "Angle": "Params.hook_gap * (Params.hooks - 1)",
+   "Occurrences": "Params.hooks"
+  },
+  "occ_expr": "Params.hooks",
+  "angle_expr": "Params.hook_gap * (Params.hooks - 1)",
+  "offset_expr": null,
+  "state": [
+   "Up-to-date"
+  ]
+ },
+ "count_bound": true,
+ "side_ok": true,
+ "into_wall": false,
+ "sheet": {
+  "plate_height": "60",
+  "thickness": "5",
+  "hook_depth": "25",
+  "lip_height": "10",
+  "width": "20",
+  "post_diameter": "50",
+  "hooks": "4",
+  "hook_gap": "60.0 deg"
+ },
+ "states": {
+  "Body": [
+   "Up-to-date"
+  ],
+  "PostSketch": [
+   "Up-to-date"
+  ],
+  "Post": [
+   "Up-to-date"
+  ],
+  "HookSketch": [
+   "Up-to-date"
+  ],
+  "Hook": [
+   "Up-to-date"
+  ],
+  "PolarPattern": [
+   "Up-to-date"
+  ]
+ },
+ "clearance_mm": 6.6795,
+ "doc": "/lab/out/fc12/runs/B1-2/after-stand.FCStd",
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Stand",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "PostSketch",
+   "PostSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Post",
+   "Post",
+   "PartDesign::Pad"
+  ],
+  [
+   "HookSketch",
+   "HookSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Hook",
+   "Hook",
+   "PartDesign::Pad"
+  ],
+  [
+   "PolarPattern",
+   "PolarPattern",
+   "PartDesign::PolarPattern"
+  ]
+ ]
+}

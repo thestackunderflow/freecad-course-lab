@@ -1,0 +1,36 @@
+  ────────────────────────────────────────
+  hooks: 3
+  pattern Angle: 120°
+  hook angles: 0, 60, 120
+  gaps between neighbours: 60, 60
+  ────────────────────────────────────────
+  hooks: 2
+  pattern Angle: 60°
+  hook angles: 0, 60
+  gaps between neighbours: 60
+  ────────────────────────────────────────
+  hooks: 5
+  pattern Angle: 240°
+  hook angles: 0, 60, 120, 180, 240
+  gaps between neighbours: 60, 60, 60, 60
+
+  The pattern stayed valid at every count. The
+  4-hook case spans exactly 0° to 180°, the
+  front half. In the 5-hook run my script
+  printed one hook as -120° and a 120° gap,
+  but that is the same hook as 240°, so the
+  real gap is 60°.
+
+  The spacing is a rule rather than a
+  fit-to-the-front: with more than 4 hooks at
+  60°, the extra hooks go past 180° and into
+  the back half. At 60° spacing, 4 hooks is
+  the most that fit on the front half.
+
+✻ Cooked for 18s · done 1:39 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

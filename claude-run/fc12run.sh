@@ -8,8 +8,9 @@ LAB="$(pwd -W 2>/dev/null || pwd)"
 RUN=$1; S=out/fc12/runs/$RUN
 LEDGER="$LAB/../freecad-course-BUDGET.tsv"; CAP=${CAP:-0.20}; TOTAL=0.40
 export BUDGET_MARK="# --- GO 17 Nov 2026 fc12"
+case $RUN in *-2) CAP=0.25; TOTAL=0.50; BUDGET_MARK="# --- GO 18 Nov 2026 fc12 rerun";; esac   # run 2: own GO line, $0.25 each, $0.50 total
 [ -e "$S/events.jsonl" ] && { echo "refusing to overwrite $S"; exit 3; }
-grep -qF "$BUDGET_MARK" "$LEDGER" || echo "$BUDGET_MARK (lab stage: runs A1 + B1, cap $CAP each, $TOTAL total, on the PC)" >> "$LEDGER"
+grep -qF "$BUDGET_MARK" "$LEDGER" || echo "$BUDGET_MARK (lab stage: runs A1 + B1 (or A1-2 + B1-2), cap $CAP each, $TOTAL total, on the PC; guard CALIB 0.6)" >> "$LEDGER"
 python claude-run/budget.py check "$LEDGER" "$CAP" "$TOTAL" || { echo "BUDGET STOP"; exit 2; }
 ENVF="${FC12_ENV:-path/to/your/.env}"
 ANTHROPIC_API_KEY="$(python -c "

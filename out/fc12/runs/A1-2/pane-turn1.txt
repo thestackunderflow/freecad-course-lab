@@ -1,0 +1,36 @@
+  spacing, and changing hook_gap changes the
+  spacing.
+
+  I tried 3, 4 and 5 hooks and each gave a
+  valid single solid:
+
+  ┌───────┬───────────────┐
+  │ Hooks │ Pattern angle │
+  ├───────┼───────────────┤
+  │ 3     │ 120°          │
+  ├───────┼───────────────┤
+  │ 4     │ 180°          │
+  ├───────┼───────────────┤
+  │ 5     │ 240°          │
+  └───────┴───────────────┘
+
+  - Limit on hook count: at 60° spacing, 4
+    hooks is the most that stays within the
+    front half (180°). With 5 or more, the
+    extra hooks go past the front half and
+    toward the wall.
+  - Single hook: a hook count of 1 gives a 0°
+    pattern angle, which FreeCAD may reject. I
+    didn't test it.
+  - Saving: the change is made in the open
+    FreeCAD document stand. I didn't save the
+    file, so save it from FreeCAD if you want
+    to keep it.
+
+✻ Crunched for 15s · done 1:37 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

@@ -1099,6 +1099,7 @@
  },
  "runs": {
   "A1": {
+   "run": 1,
    "cost_usd": "0.1094",
    "wall_s": 505,
    "score": {
@@ -1237,7 +1238,151 @@
     }
    }
   },
+  "A1-2": {
+   "run": 2,
+   "cost_usd": "0.1111",
+   "wall_s": 103,
+   "score": {
+    "class": 1,
+    "name": "gap formula / Spacing bound to names",
+    "detail": {
+     "at4": [
+      0.0,
+      60.0,
+      120.0,
+      180.0
+     ],
+     "at3": [
+      0.0,
+      60.0,
+      120.0
+     ],
+     "at6": [
+      0.0,
+      60.0,
+      120.0,
+      180.0,
+      240.0,
+      300.0
+     ],
+     "side_ok_at4": true,
+     "mode": "Extent",
+     "angle": 180.0,
+     "offset": 120.0,
+     "occ_expr": "Params.hooks",
+     "angle_expr": "Params.hook_gap * (Params.hooks - 1)",
+     "offset_expr": null,
+     "spacings": [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     "stopped": false,
+     "pass4": true,
+     "pass3": true,
+     "pass6": true,
+     "passes": true
+    },
+    "guard": {
+     "stopped": false,
+     "estimate_usd": 0.1237,
+     "cap_usd": 0.25,
+     "calib": 0.6
+    },
+    "file_unchanged": false
+   },
+   "after": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": true,
+    "into_wall": false,
+    "clearance_mm": 6.6795,
+    "volume": 149560.608,
+    "mode": "Extent",
+    "angle": 180.0,
+    "offset": 120.0,
+    "occurrences": 4,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at3": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0
+    ],
+    "gaps": [
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 3,
+    "lip_faces": 3,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": true,
+    "into_wall": false,
+    "clearance_mm": 6.6795,
+    "volume": 141622.887,
+    "mode": "Extent",
+    "angle": 120.0,
+    "offset": 120.0,
+    "occurrences": 3,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at6": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0,
+     240.0,
+     300.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 6.6795,
+    "volume": 165436.05,
+    "mode": "Extent",
+    "angle": 300.0,
+    "offset": 120.0,
+    "occurrences": 6,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
   "B1": {
+   "run": 1,
    "cost_usd": "0.1152",
    "wall_s": 507,
    "score": {
@@ -1286,6 +1431,149 @@
      "estimate_usd": 0.209,
      "cap_usd": 0.2,
      "at": 1794964852.207795
+    },
+    "file_unchanged": false
+   },
+   "after": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": true,
+    "into_wall": false,
+    "clearance_mm": 6.6795,
+    "volume": 149560.608,
+    "mode": "Extent",
+    "angle": 180.0,
+    "offset": 120.0,
+    "occurrences": 4,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at3": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0
+    ],
+    "gaps": [
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 3,
+    "lip_faces": 3,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": true,
+    "into_wall": false,
+    "clearance_mm": 6.6795,
+    "volume": 141622.887,
+    "mode": "Extent",
+    "angle": 120.0,
+    "offset": 120.0,
+    "occurrences": 3,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at6": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0,
+     240.0,
+     300.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 6.6795,
+    "volume": 165436.05,
+    "mode": "Extent",
+    "angle": 300.0,
+    "offset": 120.0,
+    "occurrences": 6,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
+  "B1-2": {
+   "run": 2,
+   "cost_usd": "0.0820",
+   "wall_s": 107,
+   "score": {
+    "class": 1,
+    "name": "gap formula / Spacing bound to names",
+    "detail": {
+     "at4": [
+      0.0,
+      60.0,
+      120.0,
+      180.0
+     ],
+     "at3": [
+      0.0,
+      60.0,
+      120.0
+     ],
+     "at6": [
+      0.0,
+      60.0,
+      120.0,
+      180.0,
+      240.0,
+      300.0
+     ],
+     "side_ok_at4": true,
+     "mode": "Extent",
+     "angle": 180.0,
+     "offset": 120.0,
+     "occ_expr": "Params.hooks",
+     "angle_expr": "Params.hook_gap * (Params.hooks - 1)",
+     "offset_expr": null,
+     "spacings": [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     "stopped": false,
+     "pass4": true,
+     "pass3": true,
+     "pass6": true,
+     "passes": true
+    },
+    "guard": {
+     "stopped": false,
+     "estimate_usd": 0.0854,
+     "cap_usd": 0.25,
+     "calib": 0.6
     },
     "file_unchanged": false
    },

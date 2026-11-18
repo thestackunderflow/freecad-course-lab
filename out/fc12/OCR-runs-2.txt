@@ -1,0 +1,2 @@
+SCANNED /lab/out/fc12/runs/A1-2/screen.mp4 frames=18 hits=0
+SCANNED /lab/out/fc12/runs/B1-2/screen.mp4 frames=21 hits=0

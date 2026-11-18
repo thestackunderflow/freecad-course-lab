@@ -1,0 +1,96 @@
+ ▐▛███▛█   Claude Code v2.1.308
+▝▜██████▀  Sonnet 5.5 · API Usage Billing
+ ▝▝   ▝▝   ~/run-fc12
+
+▎ Auto mode is now Claude Code's default
+▎ permission mode.
+▎ Auto mode lets Claude handle permission
+▎ prompts automatically. Claude checks each
+▎ tool call for risky actions and prompt
+▎ injection before executing, runs the ones it
+▎ assesses as lower-risk, and blocks the
+▎ rest.
+▎ https://code.claude.com/docs/en/permission-m
+▎ odes
+
+❯ My coat stand has 4 hooks that should be 60
+  degrees apart on the front half, but one
+  points into the wall. Fix it so the gap
+  stays 60 when I change the number of hooks.
+  Then check the angle between neighbouring
+  hooks and tell me the numbers.
+
+● I'll start by looking at what's open in
+  FreeCAD.
+
+  Called freecad 2 times (ctrl+o to expand)
+
+● The pattern's Angle is a fixed 240° in
+  Extent mode, so 4 hooks get 240/3 = 80°
+  apart rather than 60°. I'll check how the
+  spreadsheet cell is set up, then bind the
+  angle to the parameters.
+
+  Called freecad 2 times (ctrl+o to expand)
+
+● The hooks are now 60° apart, and they stay
+  60° apart when you change the number of
+  hooks. I left hooks at 4.
+
+  Cause: the PolarPattern was in Extent mode
+  with Angle fixed at 240°. Extent spreads the
+  hooks over that angle, so 4 hooks came out
+  240 / 3 = 80° apart. That also pushed the
+  last hook to 240°, past the front half and
+  into the wall.
+
+  Fix: I set an expression on
+  PolarPattern.Angle: Params.hook_gap *
+  (Params.hooks - 1). The existing hook_gap
+  cell in the Params sheet (60°) now sets the
+  spacing, and hooks sets the count.
+
+  Check: I changed hooks and measured the
+  angle of each hook around the post from the
+  solid's geometry:
+
+  hooks: 4 (yours)
+  pattern Angle: 180°
+  hook angles: 0, 60, 120, 180
+  gaps between neighbours: 60, 60, 60
+  ────────────────────────────────────────
+  hooks: 3
+  pattern Angle: 120°
+  hook angles: 0, 60, 120
+  gaps between neighbours: 60, 60
+  ────────────────────────────────────────
+  hooks: 2
+  pattern Angle: 60°
+  hook angles: 0, 60
+  gaps between neighbours: 60
+  ────────────────────────────────────────
+  hooks: 5
+  pattern Angle: 240°
+  hook angles: 0, 60, 120, 180, 240
+  gaps between neighbours: 60, 60, 60, 60
+
+  The pattern stayed valid at every count. The
+  4-hook case spans exactly 0° to 180°, the
+  front half. In the 5-hook run my script
+  printed one hook as -120° and a 120° gap,
+  but that is the same hook as 240°, so the
+  real gap is 60°.
+
+  The spacing is a rule rather than a
+  fit-to-the-front: with more than 4 hooks at
+  60°, the extra hooks go past 180° and into
+  the back half. At 60° spacing, 4 hooks is
+  the most that fit on the front half.
+
+✻ Cooked for 18s · done 1:39 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

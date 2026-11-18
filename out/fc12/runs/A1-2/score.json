@@ -1,0 +1,49 @@
+{
+ "class": 1,
+ "name": "gap formula / Spacing bound to names",
+ "detail": {
+  "at4": [
+   0.0,
+   60.0,
+   120.0,
+   180.0
+  ],
+  "at3": [
+   0.0,
+   60.0,
+   120.0
+  ],
+  "at6": [
+   0.0,
+   60.0,
+   120.0,
+   180.0,
+   240.0,
+   300.0
+  ],
+  "side_ok_at4": true,
+  "mode": "Extent",
+  "angle": 180.0,
+  "offset": 120.0,
+  "occ_expr": "Params.hooks",
+  "angle_expr": "Params.hook_gap * (Params.hooks - 1)",
+  "offset_expr": null,
+  "spacings": [
+   -1.0,
+   -1.0,
+   -1.0
+  ],
+  "stopped": false,
+  "pass4": true,
+  "pass3": true,
+  "pass6": true,
+  "passes": true
+ },
+ "guard": {
+  "stopped": false,
+  "estimate_usd": 0.1237,
+  "cap_usd": 0.25,
+  "calib": 0.6
+ },
+ "file_unchanged": false
+}
