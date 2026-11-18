@@ -137,3 +137,13 @@ def test_panels_clear_of_the_model(run):
         assert alpha_box(n, (0, 0, 2130, 1800)) == 0 and alpha_box(n, (0, 0, 2880, 780)) == 0, n
     for n in ('ov-cc-A1.png', 'ov-cc-B1.png'):
         assert alpha_box(n, (0, 0, 1165, 1800)) == 0, n
+
+
+# ---- cut 2 (WATCH-fc12-cut1, 17 Nov) ----
+def test_c2_fix_card_and_bigger_why_lines(run):
+    assert os.path.exists(os.path.join(d.OUT, 'card-fix-180.png'))
+    t = texts(run, 'card-fix-180.png')
+    assert '4 hooks, 3 gaps' in t and '3 × 60 = 180' in t
+    sz = dict(run['card-why-5.png'])        # nice 4: the 360 / 5 lines read on a phone (the 240 / 3 line is 72)
+    assert sz.get('360 ÷ 5 = 72', 0) >= 72 and sz.get('hook 6 lands on hook 1', 0) >= 60
+    assert dict(run['card-why-6.png']).get('360 ÷ 6 = 60', 0) >= 72

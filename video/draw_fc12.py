@@ -4,7 +4,7 @@ draw_fx20.py / draw_fc10.py helpers: light, 2560 x 1440, clean line art (the clo
 and earlier steps turn grey, card lines 44 columns, code-panel lines 32 columns (Claude's quoted lines 44, re-wrapped
 at word gaps, words unchanged from runs/*/reply.txt), no percent sign, never "tooltip", outlines thin, never filled.
 Every number is NUMBERS.json's (out/fc12) or a lesson / typed / clock number (tests/test_draw_fc12.py).
-  full frame:  card-clock-1..4 (F2), card-why-1..6 (F6), card-end (F15); Short 1080 x 1080: card-short-why-1..3 (S1)
+  full frame:  card-clock-1..4 (F2), card-why-1..6 (F6), card-fix-180 (F7, cut 2), card-end (F15); Short 1080 x 1080: card-short-why-1..3 (S1)
   source overlays (RGBA 2880 x 1800, burnt in by mcp-canvas primers/footage-fc12.py):
       ov-wall-T / -F   the drawn wall line (y = -25 mm) on take T's / F's top view; T: the 4th hook ringed
       ov-sum           F4: "6 x 60 = 360" / "4 x 60 = 240 ?"
@@ -148,18 +148,39 @@ def card_why(step):
         text(d, (1380, 480), '4 hooks, 3 gaps', 56, c3)
     if step >= 4:
         text(d, (1380, 590), '240 ÷ 3 = 80', 72, ORANGE if step == 4 else DONE, path=MONO)
-    if step >= 5:
+    if step >= 5:      # cut 2 (WATCH nice 4): these lines match the 240 / 3 line, the mini ring is bigger
         c5 = INK if step == 5 else DONE
-        text(d, (1380, 730), '6 hooks, first to last: 360 ÷ 5 = 72', 48, c5)
-        text(d, (1380, 805), 'hook 6 lands on hook 1', 48, c5)
-        sc, sr = (1620, 1110), 170
-        d.ellipse((sc[0] - sr, sc[1] - sr, sc[0] + sr, sc[1] + sr), outline=DONE, width=4)
+        text(d, (1380, 710), '6 hooks, first to last:', 60, c5)
+        text(d, (1380, 790), '360 ÷ 5 = 72', 72, c5, path=MONO)
+        text(d, (1380, 890), 'hook 6 lands on hook 1', 60, c5)
+        sc, sr = (1600, 1170), 190
+        d.ellipse((sc[0] - sr, sc[1] - sr, sc[0] + sr, sc[1] + sr), outline=DONE, width=5)
         for k in range(6):
-            dot(d, sc, sr, 72 * k, ORANGE if (k == 5 and step == 5) else GREY, rad=18 if k < 5 else 30, ghost=True)
+            dot(d, sc, sr, 72 * k, ORANGE if (k == 5 and step == 5) else GREY, rad=22 if k < 5 else 36, ghost=True)
     if step >= 6:
-        text(d, (1860, 1060), 'so at 360:', 56, GREEN)
-        text(d, (1860, 1140), '360 ÷ 6 = 60', 64, GREEN, path=MONO)
+        text(d, (1860, 1080), 'so at 360:', 64, GREEN)
+        text(d, (1860, 1170), '360 ÷ 6 = 60', 72, GREEN, path=MONO)
     save(im, f'card-why-{step}.png')
+
+
+def card_fix180():
+    """Cut 2 (WATCH must 2): F7's opening clause ("Extent needs 180: three gaps of 60. Typing that works today, but
+    every new count means a new sum") on the clock, in place of the broken 240 top view."""
+    im, d = canvas()
+    header(d, 'Extent for 4 hooks: 180')
+    c, r = (700, 800), 440
+    face(d, c, r, DONE)
+    arc(d, c, r + 40, 0, 180, GREEN, 14)
+    for a in (0, 60, 120, 180):
+        dot(d, c, r + 40, a, INK)
+    for a in (0, 60, 120):
+        arc(d, c, r - 10, a + 6, a + 54, BLUE, 8)
+    text(d, (1380, 300), 'Length 180: 12 to 6', 60, INK)
+    text(d, (1380, 400), '4 hooks, 3 gaps', 60, BLUE)
+    text(d, (1380, 500), '3 × 60 = 180', 80, GREEN, path=MONO)
+    text(d, (1380, 700), 'typing 180 works today', 60, INK)
+    text(d, (1380, 790), 'every new count: a new sum', 56, ORANGE)
+    save(im, 'card-fix-180.png')
 
 
 def card_short_why(step):
@@ -285,7 +306,7 @@ def ov_proof(step):
     g6 = set(RUNS['A1-2']['at6']['gaps'])
     assert len(g6) == 1
     code_box(d, 40, 560, [f'hooks 3: {angles(a3)} (both)', f'hooks 6: ring, {n0(g6.pop())} apart (both)'],
-             'checked by code (its files):', 48, 0.8)
+             'checked by code (its files):', 56, 0.8)      # cut 2 (WATCH nice 6): was 48
     save(im, f'ov-proof-{step}.png')
     PANEL_NAMES.append(f'ov-proof-{step}.png')
 
@@ -336,6 +357,7 @@ def main():
         card_clock(s)
     for s in range(1, 7):
         card_why(s)
+    card_fix180()
     for s in range(1, 4):
         card_short_why(s)
     card_end()
