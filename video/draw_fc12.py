@@ -335,10 +335,10 @@ def panels():
     code_panel('ov-gap-F8.png', [f"fixed, hooks 3: {' '.join(n0(g) for g in h3['gaps'])}",
                                  f"typed {n0(t3['angle'])}, hooks 3: {' '.join(n0(g) for g in t3['gaps'])}"], RP)
     a4, b4, b3 = RUNS['A1-2']['after'], RUNS['B1-2']['after'], RUNS['B1-2']['at3']
-    code_panel('ov-cc-A1.png', [f"hooks 4: {angles(a4['angles'])}"], (1175, 1330), 42,
+    code_panel('ov-cc-A1.png', [f"hooks 4: {angles(a4['angles'])}"], (1175, 1330), 63,   # cut 3 (WATCH nice 4): 1.5x (was 42)
                title='checked by code (its file):')
     code_panel('ov-cc-B1.png', [f"hooks 4: {angles(b4['angles'])}", f"hooks 3: {angles(b3['angles'])}"],
-               (1175, 1330), 42, title='checked by code (its file):')
+               (1175, 1330), 63, title='checked by code (its file):')
     quote('ov-quote-A1-1.png', wrap('The pattern uses a hardcoded 240° span, so the four hooks sit 80° apart'))
     quote('ov-quote-A1-2.png', ['The four hooks are now 60° apart.'])
     quote('ov-quote-A1-3.png', wrap("Fix: I set the pattern's Angle to the expression Params.hook_gap * "

@@ -147,3 +147,12 @@ def test_c2_fix_card_and_bigger_why_lines(run):
     sz = dict(run['card-why-5.png'])        # nice 4: the 360 / 5 lines read on a phone (the 240 / 3 line is 72)
     assert sz.get('360 ÷ 5 = 72', 0) >= 72 and sz.get('hook 6 lands on hook 1', 0) >= 60
     assert dict(run['card-why-6.png']).get('360 ÷ 6 = 60', 0) >= 72
+
+
+# ---- cut 3 (WATCH-fc12-cut2, 17 Nov) ----
+def test_c3_claude_code_panels_read_on_a_phone(run):
+    """Nice 4: the "checked by code (its file)" panels on Claude's files 1.5x (42 -> 63 px), still right of the
+    terminal and above the REAL RECORDING chip (source y 1700)."""
+    for n in ('ov-cc-A1.png', 'ov-cc-B1.png'):
+        assert dict(run[n]).get('hooks 4: 0 60 120 180', 0) >= 50, run[n]
+        assert alpha_box(n, (0, 0, 1165, 1800)) == 0 and alpha_box(n, (0, 1700, 2880, 1800)) == 0, n
