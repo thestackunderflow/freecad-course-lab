@@ -1,0 +1,49 @@
+{
+ "class": 6,
+ "name": "stopped by the cost guard (estimate 0.2024 >= cap 0.20); file unchanged: the trap is still in",
+ "detail": {
+  "at4": [
+   0.0,
+   80.0,
+   160.0,
+   240.0
+  ],
+  "at3": [
+   0.0,
+   120.0,
+   240.0
+  ],
+  "at6": [
+   0.0,
+   48.0,
+   96.0,
+   144.0,
+   192.0,
+   240.0
+  ],
+  "side_ok_at4": false,
+  "mode": "Extent",
+  "angle": 240.0,
+  "offset": 120.0,
+  "occ_expr": "Params.hooks",
+  "angle_expr": null,
+  "offset_expr": null,
+  "spacings": [
+   -1.0,
+   -1.0,
+   -1.0
+  ],
+  "stopped": true,
+  "pass4": false,
+  "pass3": false,
+  "pass6": false,
+  "passes": false
+ },
+ "guard": {
+  "stopped": true,
+  "estimate_usd": 0.2024,
+  "cap_usd": 0.2,
+  "at": 1794964305.9720814
+ },
+ "file_unchanged": true
+}

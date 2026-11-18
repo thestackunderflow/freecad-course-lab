@@ -1,0 +1,1 @@
+My coat stand has 4 hooks that should be 60 degrees apart on the front half, but one points into the wall. Fix it so the gap stays 60 when I change the number of hooks. Then check the angle between neighbouring hooks and tell me the numbers.

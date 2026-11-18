@@ -1,0 +1,49 @@
+{
+ "class": 1,
+ "name": "stopped by the cost guard (estimate 0.2090 >= cap 0.20); scored as left: gap formula / Spacing bound to names",
+ "detail": {
+  "at4": [
+   0.0,
+   60.0,
+   120.0,
+   180.0
+  ],
+  "at3": [
+   0.0,
+   60.0,
+   120.0
+  ],
+  "at6": [
+   0.0,
+   60.0,
+   120.0,
+   180.0,
+   240.0,
+   300.0
+  ],
+  "side_ok_at4": true,
+  "mode": "Extent",
+  "angle": 180.0,
+  "offset": 120.0,
+  "occ_expr": "Params.hooks",
+  "angle_expr": "Params.hook_gap * (Params.hooks - 1)",
+  "offset_expr": null,
+  "spacings": [
+   -1.0,
+   -1.0,
+   -1.0
+  ],
+  "stopped": true,
+  "pass4": true,
+  "pass3": true,
+  "pass6": true,
+  "passes": true
+ },
+ "guard": {
+  "stopped": true,
+  "estimate_usd": 0.209,
+  "cap_usd": 0.2,
+  "at": 1794964852.207795
+ },
+ "file_unchanged": false
+}

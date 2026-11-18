@@ -1,0 +1,36 @@
+▎ https://code.claude.com/docs/en/permission-m
+▎ odes
+
+❯ My coat stand has 4 hooks that should be 60
+  degrees apart on the front half, but one
+  points into the wall. Fix it so the gap
+  stays 60 when I change the number of hooks.
+
+● I'll start by looking for the model files.
+
+  Listed 1 directory (ctrl+o to expand)
+
+  Called freecad 2 times (ctrl+o to expand)
+
+● The pattern is in "Extent" mode: the fixed
+  240° total is split across 3 gaps, which
+  gives 80° between hooks. I'll drive the
+  spacing from hook_gap and check where the
+  hooks end up.
+
+  Called freecad 2 times (ctrl+o to expand)
+
+● The modes are 'Extent' and 'Spacing'.
+  Spacing mode uses Offset as the angle
+  between each pair of hooks, so I'll use
+  that.
+  ⎿  Interrupted· What should Claude do
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+
+
+
+

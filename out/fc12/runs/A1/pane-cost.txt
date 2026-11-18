@@ -1,0 +1,36 @@
+  that.
+  ⎿  Interrupted· What should Claude do
+
+❯ /cost
+
+──────────────────────────────────────────────
+  Settings  Status   Config   Usage   Stats
+
+  Session
+
+  Total cost:            $0.1094
+  Total duration (API):  15s
+  Total duration (wall): 7m 54s
+  Total code changes:    0 lines added, 0
+  lines removed
+  Usage by model:
+      claude-haiku-5-5:  1.2k input, 95
+  output, 0 cache read, 0 cache write
+  ($0.0002)
+     claude-sonnet-5-5:  12 input, 1.7k
+  output, 88.4k cache read, 33.4k cache
+  write ($0.1093)
+  Prompt cache (main):   6 requests · 78% of
+  input tokens from cache · no misses ·
+  cold — idle 6m 54s, next turn re-caches
+  ~33.7k tokens
+
+  Esc to cancel
+
+
+
+
+
+
+
+

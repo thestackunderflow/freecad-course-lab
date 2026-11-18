@@ -1,0 +1,27 @@
+MCP RPC: GUI task raised AttributeError: 'Part.Compound' object has no attribute 'CenterOfMass'
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 15, in <module>
+AttributeError: 'Part.Compound' object has no attribute 'CenterOfMass'
+Error executing Python code: AttributeError: 'Part.Compound' object has no attribute 'CenterOfMass'
+--- code ---
+import math
+doc=App.getDocument("stand")
+pp=doc.PolarPattern
+print(pp.Mode, pp.Angle, pp.Offset, pp.Occurrences, pp.Reversed, pp.Axis)
+def hooks():
+    doc.recompute()
+    s=pp.Shape
+    res=[]
+    for sol in s.Solids:
+        # hook solid only: use face centroid of far tip; use center of mass minus post (axis symmetric)
+        com=sol.CenterOfMass
+        res.append(round(math.degrees(math.atan2(com.y,com.x)),2))
+    return res, len(s.Solids)
+print(hooks())
+print(doc.Hook.Shape.CenterOfMass, doc.Post.Shape.Volume)
+--- end ---

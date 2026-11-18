@@ -1,0 +1,1383 @@
+{
+ "source": "freecad-course-lab out/fc12 (lab/fc12parts.py, G0, takes, runs); FreeCAD 1.1.4 + freecad-mcp 0.1.28",
+ "build": {
+  "ring": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0,
+    240.0,
+    300.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 6,
+   "lip_faces": 6,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 6.6795,
+   "volume": 165436.05,
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 6,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "trap": {
+   "angles": [
+    0.0,
+    80.0,
+    160.0,
+    240.0
+   ],
+   "gaps": [
+    80.0,
+    80.0,
+    80.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 15.5329,
+   "volume": 149560.608,
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "fixed": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 6.6795,
+   "volume": 149560.608,
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "typed180": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 6.6795,
+   "volume": 149560.608,
+   "mode": "Extent",
+   "angle": 180.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "fixed_h3": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0
+   ],
+   "gaps": [
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 3,
+   "lip_faces": 3,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 6.6795,
+   "volume": 141622.887,
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 3,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "fixed_h6": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0,
+    240.0,
+    300.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 6,
+   "lip_faces": 6,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 6.6795,
+   "volume": 165436.05,
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 6,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "fixed_h7": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0,
+    240.0,
+    300.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 6,
+   "lip_faces": 6,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 6.6795,
+   "volume": 165436.05,
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 7,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "typed180_h3": {
+   "angles": [
+    0.0,
+    90.0,
+    180.0
+   ],
+   "gaps": [
+    90.0,
+    90.0
+   ],
+   "hooks_seen": 3,
+   "lip_faces": 3,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 19.799,
+   "volume": 141622.887,
+   "mode": "Extent",
+   "angle": 180.0,
+   "offset": 120.0,
+   "occurrences": 3,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "typed180_h6": {
+   "angles": [
+    0.0,
+    36.0,
+    72.0,
+    108.0,
+    144.0,
+    180.0
+   ],
+   "gaps": [
+    36.0,
+    36.0,
+    36.0,
+    36.0,
+    36.0
+   ],
+   "hooks_seen": 6,
+   "lip_faces": 6,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 0.0,
+   "volume": 161308.115,
+   "mode": "Extent",
+   "angle": 180.0,
+   "offset": 120.0,
+   "occurrences": 6,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "ring_h7": {
+   "angles": [
+    0.0,
+    51.4286,
+    102.8571,
+    154.2857,
+    205.7143,
+    257.1429,
+    308.5714
+   ],
+   "gaps": [
+    51.4286,
+    51.4285,
+    51.4286,
+    51.4286,
+    51.4286,
+    51.4285
+   ],
+   "hooks_seen": 7,
+   "lip_faces": 7,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 2.807,
+   "volume": 173373.771,
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 7,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "ring_h4": {
+   "angles": [
+    0.0,
+    90.0,
+    180.0,
+    270.0
+   ],
+   "gaps": [
+    90.0,
+    90.0,
+    90.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 19.799,
+   "volume": 149560.608,
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "trap_h3": {
+   "angles": [
+    0.0,
+    120.0,
+    240.0
+   ],
+   "gaps": [
+    120.0,
+    120.0
+   ],
+   "hooks_seen": 3,
+   "lip_faces": 3,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 31.5692,
+   "volume": 141622.887,
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 3,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "trap_h6": {
+   "angles": [
+    0.0,
+    48.0,
+    96.0,
+    144.0,
+    192.0,
+    240.0
+   ],
+   "gaps": [
+    48.0,
+    48.0,
+    48.0,
+    48.0,
+    48.0
+   ],
+   "hooks_seen": 6,
+   "lip_faces": 6,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 1.2524,
+   "volume": 165436.05,
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 6,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "trap_spacing_default": {
+   "angles": [
+    0.0,
+    120.0,
+    240.0
+   ],
+   "gaps": [
+    120.0,
+    120.0
+   ],
+   "hooks_seen": 3,
+   "lip_faces": 3,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 31.5692,
+   "volume": 141622.887,
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "yt_360": {
+   "angles": [
+    0.0,
+    45.0,
+    90.0,
+    135.0,
+    180.0,
+    225.0,
+    270.0,
+    315.0
+   ],
+   "gaps": [
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0
+   ],
+   "hooks_seen": 8,
+   "lip_faces": 8,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 11.3717,
+   "volume": 363890.075,
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "yt_315": {
+   "angles": [
+    0.0,
+    45.0,
+    90.0,
+    135.0,
+    180.0,
+    225.0,
+    270.0,
+    315.0
+   ],
+   "gaps": [
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0
+   ],
+   "hooks_seen": 8,
+   "lip_faces": 8,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 11.3717,
+   "volume": 363890.075,
+   "mode": "Extent",
+   "angle": 315.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "yt_270": {
+   "angles": [
+    0.0,
+    38.5714,
+    77.1429,
+    115.7143,
+    154.2857,
+    192.8571,
+    231.4286,
+    270.0
+   ],
+   "gaps": [
+    38.5714,
+    38.5715,
+    38.5714,
+    38.5714,
+    38.5714,
+    38.5715,
+    38.5714
+   ],
+   "hooks_seen": 8,
+   "lip_faces": 8,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 6.8841,
+   "volume": 363890.075,
+   "mode": "Extent",
+   "angle": 270.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "eight_on_50": {
+   "angles": [
+    0.0,
+    45.0,
+    90.0,
+    135.0,
+    180.0,
+    225.0,
+    270.0,
+    315.0
+   ],
+   "gaps": [
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0
+   ],
+   "hooks_seen": 8,
+   "lip_faces": 8,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 0.0,
+   "volume": 181307.475,
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  }
+ },
+ "g0": {
+  "q2-trap-gui": {
+   "angles": [
+    0.0,
+    80.0,
+    160.0,
+    240.0
+   ],
+   "gaps": [
+    80.0,
+    80.0,
+    80.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 15.5329,
+   "volume": 149560.608,
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "q3-fixed-gui": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 6.6795,
+   "volume": 149560.608,
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 60.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "q3-switch-preview": {
+   "angles": [
+    0.0,
+    120.0,
+    240.0
+   ],
+   "gaps": [
+    120.0,
+    120.0
+   ],
+   "hooks_seen": 3,
+   "lip_faces": 3,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 31.5692,
+   "volume": 141622.887,
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "q4-fixed-gui-h3": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0
+   ],
+   "gaps": [
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 3,
+   "lip_faces": 3,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 6.6795,
+   "volume": 141622.887,
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 60.0,
+   "occurrences": 3,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "q4-fixed-gui-h4": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 6.6795,
+   "volume": 149560.608,
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 60.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "q4-fixed-gui-h6": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0,
+    240.0,
+    300.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 6,
+   "lip_faces": 6,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 6.6795,
+   "volume": 165436.05,
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 60.0,
+   "occurrences": 6,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "q4-fixed-gui-h7": {
+   "angles": [
+    0.0,
+    60.0,
+    120.0,
+    180.0,
+    240.0,
+    300.0
+   ],
+   "gaps": [
+    60.0,
+    60.0,
+    60.0,
+    60.0,
+    60.0
+   ],
+   "hooks_seen": 6,
+   "lip_faces": 6,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 6.6795,
+   "volume": 165436.05,
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 60.0,
+   "occurrences": 7,
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   }
+  },
+  "q4-typed180-h3": {
+   "angles": [
+    0.0,
+    90.0,
+    180.0
+   ],
+   "gaps": [
+    90.0,
+    90.0
+   ],
+   "hooks_seen": 3,
+   "lip_faces": 3,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": true,
+   "into_wall": false,
+   "clearance_mm": 19.799,
+   "volume": 141622.887,
+   "mode": "Extent",
+   "angle": 180.0,
+   "offset": 120.0,
+   "occurrences": 3,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  },
+  "q8-trap": {
+   "angles": [
+    0.0,
+    80.0,
+    160.0,
+    240.0
+   ],
+   "gaps": [
+    80.0,
+    80.0,
+    80.0
+   ],
+   "hooks_seen": 4,
+   "lip_faces": 4,
+   "solids": 1,
+   "count_bound": true,
+   "side_ok": false,
+   "into_wall": true,
+   "clearance_mm": 15.5329,
+   "volume": 149560.608,
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "expr": {
+    "Occurrences": "Params.hooks"
+   }
+  }
+ },
+ "takes": {
+  "R": {
+   "measures": [],
+   "end": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0,
+     240.0,
+     300.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 6.6795,
+    "volume": 165436.05,
+    "mode": "Extent",
+    "angle": 360.0,
+    "offset": 120.0,
+    "occurrences": 6,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
+  "O": {
+   "measures": [],
+   "end": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0,
+     240.0,
+     300.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 6.6795,
+    "volume": 165436.05,
+    "mode": "Extent",
+    "angle": 360.0,
+    "offset": 120.0,
+    "occurrences": 6,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
+  "T": {
+   "measures": [],
+   "messages": "dialogs [] notices []",
+   "end": {
+    "angles": [
+     0.0,
+     80.0,
+     160.0,
+     240.0
+    ],
+    "gaps": [
+     80.0,
+     80.0,
+     80.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 15.5329,
+    "volume": 149560.608,
+    "mode": "Extent",
+    "angle": 240.0,
+    "offset": 120.0,
+    "occurrences": 4,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
+  "M": {
+   "measures": [
+    "80.00"
+   ],
+   "end": {
+    "angles": [
+     0.0,
+     80.0,
+     160.0,
+     240.0
+    ],
+    "gaps": [
+     80.0,
+     80.0,
+     80.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 15.5329,
+    "volume": 149560.608,
+    "mode": "Extent",
+    "angle": 240.0,
+    "offset": 120.0,
+    "occurrences": 4,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
+  "F": {
+   "measures": [
+    "60.00"
+   ],
+   "end": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": true,
+    "into_wall": false,
+    "clearance_mm": 6.6795,
+    "volume": 149560.608,
+    "mode": "Spacing",
+    "angle": 240.0,
+    "offset": 60.0,
+    "occurrences": 4,
+    "expr": {
+     "Occurrences": "Params.hooks",
+     "Offset": "Params.hook_gap"
+    }
+   }
+  },
+  "P": {
+   "measures": [
+    "60.00"
+   ],
+   "end": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0,
+     240.0,
+     300.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 6.6795,
+    "volume": 165436.05,
+    "mode": "Spacing",
+    "angle": 240.0,
+    "offset": 60.0,
+    "occurrences": 6,
+    "expr": {
+     "Occurrences": "Params.hooks",
+     "Offset": "Params.hook_gap"
+    }
+   }
+  },
+  "Y": {
+   "measures": [],
+   "end": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0,
+     240.0,
+     300.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 6.6795,
+    "volume": 165436.05,
+    "mode": "Extent",
+    "angle": 360.0,
+    "offset": 120.0,
+    "occurrences": 6,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
+  "K": {
+   "measures": [],
+   "tooltip": "\"Type: App::PropertyAngle\\nName: Angle\\n\\nThe total angle of the pattern, measured from the first to the last instance. This is only used when the Mode is set to 'Extent'.\"",
+   "end": {
+    "angles": [
+     0.0,
+     80.0,
+     160.0,
+     240.0
+    ],
+    "gaps": [
+     80.0,
+     80.0,
+     80.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 15.5329,
+    "volume": 149560.608,
+    "mode": "Extent",
+    "angle": 240.0,
+    "offset": 120.0,
+    "occurrences": 4,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   }
+  }
+ },
+ "runs": {
+  "A1": {
+   "cost_usd": "0.1094",
+   "wall_s": 505,
+   "score": {
+    "class": 6,
+    "name": "stopped by the cost guard (estimate 0.2024 >= cap 0.20); file unchanged: the trap is still in",
+    "detail": {
+     "at4": [
+      0.0,
+      80.0,
+      160.0,
+      240.0
+     ],
+     "at3": [
+      0.0,
+      120.0,
+      240.0
+     ],
+     "at6": [
+      0.0,
+      48.0,
+      96.0,
+      144.0,
+      192.0,
+      240.0
+     ],
+     "side_ok_at4": false,
+     "mode": "Extent",
+     "angle": 240.0,
+     "offset": 120.0,
+     "occ_expr": "Params.hooks",
+     "angle_expr": null,
+     "offset_expr": null,
+     "spacings": [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     "stopped": true,
+     "pass4": false,
+     "pass3": false,
+     "pass6": false,
+     "passes": false
+    },
+    "guard": {
+     "stopped": true,
+     "estimate_usd": 0.2024,
+     "cap_usd": 0.2,
+     "at": 1794964305.9720814
+    },
+    "file_unchanged": true
+   },
+   "after": {
+    "angles": [
+     0.0,
+     80.0,
+     160.0,
+     240.0
+    ],
+    "gaps": [
+     80.0,
+     80.0,
+     80.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 15.5329,
+    "volume": 149560.608,
+    "mode": "Extent",
+    "angle": 240.0,
+    "offset": 120.0,
+    "occurrences": 4,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at3": {
+    "angles": [
+     0.0,
+     120.0,
+     240.0
+    ],
+    "gaps": [
+     120.0,
+     120.0
+    ],
+    "hooks_seen": 3,
+    "lip_faces": 3,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 31.5692,
+    "volume": 141622.887,
+    "mode": "Extent",
+    "angle": 240.0,
+    "offset": 120.0,
+    "occurrences": 3,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at6": {
+    "angles": [
+     0.0,
+     48.0,
+     96.0,
+     144.0,
+     192.0,
+     240.0
+    ],
+    "gaps": [
+     48.0,
+     48.0,
+     48.0,
+     48.0,
+     48.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 1.2524,
+    "volume": 165436.05,
+    "mode": "Extent",
+    "angle": 240.0,
+    "offset": 120.0,
+    "occurrences": 6,
+    "expr": {
+     "Occurrences": "Params.hooks"
+    }
+   }
+  },
+  "B1": {
+   "cost_usd": "0.1152",
+   "wall_s": 507,
+   "score": {
+    "class": 1,
+    "name": "stopped by the cost guard (estimate 0.2090 >= cap 0.20); scored as left: gap formula / Spacing bound to names",
+    "detail": {
+     "at4": [
+      0.0,
+      60.0,
+      120.0,
+      180.0
+     ],
+     "at3": [
+      0.0,
+      60.0,
+      120.0
+     ],
+     "at6": [
+      0.0,
+      60.0,
+      120.0,
+      180.0,
+      240.0,
+      300.0
+     ],
+     "side_ok_at4": true,
+     "mode": "Extent",
+     "angle": 180.0,
+     "offset": 120.0,
+     "occ_expr": "Params.hooks",
+     "angle_expr": "Params.hook_gap * (Params.hooks - 1)",
+     "offset_expr": null,
+     "spacings": [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     "stopped": true,
+     "pass4": true,
+     "pass3": true,
+     "pass6": true,
+     "passes": true
+    },
+    "guard": {
+     "stopped": true,
+     "estimate_usd": 0.209,
+     "cap_usd": 0.2,
+     "at": 1794964852.207795
+    },
+    "file_unchanged": false
+   },
+   "after": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 4,
+    "lip_faces": 4,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": true,
+    "into_wall": false,
+    "clearance_mm": 6.6795,
+    "volume": 149560.608,
+    "mode": "Extent",
+    "angle": 180.0,
+    "offset": 120.0,
+    "occurrences": 4,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at3": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0
+    ],
+    "gaps": [
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 3,
+    "lip_faces": 3,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": true,
+    "into_wall": false,
+    "clearance_mm": 6.6795,
+    "volume": 141622.887,
+    "mode": "Extent",
+    "angle": 120.0,
+    "offset": 120.0,
+    "occurrences": 3,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   },
+   "at6": {
+    "angles": [
+     0.0,
+     60.0,
+     120.0,
+     180.0,
+     240.0,
+     300.0
+    ],
+    "gaps": [
+     60.0,
+     60.0,
+     60.0,
+     60.0,
+     60.0
+    ],
+    "hooks_seen": 6,
+    "lip_faces": 6,
+    "solids": 1,
+    "count_bound": true,
+    "side_ok": false,
+    "into_wall": true,
+    "clearance_mm": 6.6795,
+    "volume": 165436.05,
+    "mode": "Extent",
+    "angle": 300.0,
+    "offset": 120.0,
+    "occurrences": 6,
+    "expr": {
+     "Angle": "Params.hook_gap * (Params.hooks - 1)",
+     "Occurrences": "Params.hooks"
+    }
+   }
+  }
+ }
+}

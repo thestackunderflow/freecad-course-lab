@@ -44,11 +44,15 @@ def main(run):
     def ld(n):
         p = os.path.join(run, n)
         return json.load(open(p)) if os.path.exists(p) else None
+    g = ld('costguard.json') or {}
     c, name, det = classify(ld('after.check.json'), ld('after-h3.check.json'), ld('after-h6.check.json'),
-                            os.path.exists(os.path.join(run, '.guard-stop-cap')))
-    r = {'class': c, 'name': name, 'detail': det}
+                            bool(g.get('stopped')))
+    same = (ld('after.check.json') or {}).get('angles') == [0.0, 80.0, 160.0, 240.0] and         not ((ld('after.check.json') or {}).get('pattern') or {}).get('offset_expr')
+    r = {'class': c, 'name': name, 'detail': det, 'guard': g, 'file_unchanged': same}
+    if g.get('stopped'):
+        r['name'] = 'stopped by the cost guard (estimate %.4f >= cap %.2f); ' % (g['estimate_usd'], g['cap_usd']) +             ('file unchanged: the trap is still in' if same else 'scored as left: ' + name)
     json.dump(r, open(os.path.join(run, 'score.json'), 'w'), indent=1)
-    print(json.dumps({'class': c, 'name': name}))
+    print(json.dumps({'class': c, 'name': r['name']}))
 
 
 if __name__ == '__main__':
