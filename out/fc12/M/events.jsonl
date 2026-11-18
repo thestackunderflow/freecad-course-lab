@@ -1,0 +1,7 @@
+{"t": 0.028, "event": "recording started: FreeCAD 1.1.4, stand.FCStd (M)"}
+{"t": 3.538, "event": "key 2: top view", "keys": "2"}
+{"t": 4.757, "event": "(view fitted)"}
+{"t": 9.922, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 14.922, "event": "h1-h2: first hook, lip edge", "x": 2128, "y": 902, "button": 1}
+{"t": 19.44, "event": "h1-h2: Ctrl + next hook, lip edge", "x": 1667, "y": 544, "button": 1}
+{"t": 28.97, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

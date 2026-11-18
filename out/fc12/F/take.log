@@ -1,0 +1,14 @@
+stand
+prepped stand
+1
+rows open: 217 502
+switched: {"mode": "Spacing", "angle": 240.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+expr: {"mode": "Spacing", "angle": 240.0, "offset": 60.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"], ["Offset", "Params.hook_gap"]], "state": ["Up-to-date"], "solids": 1}
+1
+1
+h1-h2 edges 2175 999 1836 625
+h1-h2 measure: "QLabel", "Mode:" combo:Angle "QLabel", "Result:" field:60.00\u00b0 
+h1-h2 selection: [('PolarPattern', ['Edge43', 'Edge33'])]
+saved
+TAKE F DONE
+FC12 check {"angles": [0.0, 60.0, 120.0, 180.0], "gaps": [60.0, 60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": true, "error": null}

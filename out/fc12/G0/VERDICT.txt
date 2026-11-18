@@ -1,0 +1,28 @@
+fc12 G0 (17 Nov 2026), FreeCAD 1.1.4 + freecad-mcp 0.1.28 (fcc-app:1.1.4-0.1.28), $0, no Claude. VERDICT: GO, no branch.
+Start files by code: out/fc12/P (lab/fc12parts.py, build.json). GUI steps: s1-s5.sh, log g0-log.txt.
+Q1 ring 6 / 360 Extent, Occurrences = Params.hooks: lips at 0/60/120/180/240/300, ONE solid, copies go counter-clockwise
+   from +X (FreeCAD default). Params hook_gap cell = 60 deg (shown 60 °). Clearance between neighbours (hook pads,
+   distToShape): 6.68 mm at 60, 2.81 mm at 51.43 (7), 0.00 at 45 (8 touch on this post). Plan arithmetic ~5.8 was the
+   corner-to-plane estimate; use the measured numbers only.
+Q2 GUI: Params hooks 6 -> 4, Recompute, double-click PolarPattern, Length 240, Tab, OK: lips 0/80/160/240 (check12 on
+   the saved GUI file). No dialog, no notification row, no Report line (only the lab socket's own lines). PASS.
+Q3 GUI: Mode list = Extent, Spacing. Switching to Spacing replaces the "Length" row with a "Spacing" row at 120.00°;
+   the preview at once = 0/120/240 visible (the 4th at 360 lands on the first: 3 hooks seen). Click in Spacing, type
+   "=": FreeCAD's Expression Editor opens ("Result 120.00°"); Params.hook_gap, Return -> "Result 60.00°"; editor OK,
+   panel OK: Offset expr Params.hook_gap, lips 0/60/120/180, side ok. No message at any step. PASS.
+Q4 headless on the GUI-fixed file: hooks 3 -> 0/60/120; hooks 6 -> full ring 0..300; control stand-typed180 at hooks 3
+   -> 0/90/180. GUI leg = take P. PASS.
+Q5 hooks 7 on the fixed (Spacing 60) file: Occurrences 7, 6 hooks seen: the 7th at 360 sits on the first (one solid).
+   Extent 360 at hooks 7 (ring file): 51.43 apart, 2.81 mm clear. Pinned comment only.
+Q6 task panel words: "Polar Pattern Parameters", Axis "Base Z-axis", "Mode" (Extent / Spacing), "Length" 360.00°,
+   "Occurrences" 6 (fx icon = bound), "Recompute on change", Preview. Spacing mode: "Spacing" 120.00°.
+   Property view (Data tab, "Polar Pattern" group: Axis, Reversed, Mode, Angle, Offset, Spacings, ..., Occurrences):
+   hover on Angle shows "Type: App::PropertyAngle / Name: Angle / The total angle of the pattern, measured from the
+   first to the last instance. This is only used when the Mode is set to 'Extent'." (q6-angle-hover.png). In the
+   Property view the Spacing value is the "Offset" row. Measure route: take M (Std_Measure on two lip faces).
+Q7 your turn, 8 hooks on a post 80 wide: 360 -> 45 apart, 315 -> 45, 270 -> 38.57; one solid each.
+Q8 A1/B1 start file = P/stand-trap.FCStd: hooks 4, Extent 240, lips 0/80/160/240, Occurrences reads Params.hooks.
+LAB NOTE (after the first takes): the first build set the hook Pad's Midplane = True; FreeCAD 1.1.4 shows two
+"Midplane ... deprecated" rows in the notification area when such a file opens (our build's fault, not the lesson's).
+Rebuilt with SideType = Symmetric (same numbers, tests green); all takes refilmed on the rebuilt files; first takes kept
+in out/scratch/fc12-take1 (not for use). G0 GUI files above were made on the first build (numbers identical).

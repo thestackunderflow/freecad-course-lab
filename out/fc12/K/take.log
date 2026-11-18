@@ -1,0 +1,9 @@
+stand
+prepped stand
+1
+rows open: 217 502
+Angle row 102 1414
+tooltip: "Type: App::PropertyAngle\nName: Angle\n\nThe total angle of the pattern, measured from the first to the last instance. This is only used when the Mode is set to 'Extent'."
+saved
+TAKE K DONE
+FC12 check {"angles": [0.0, 80.0, 160.0, 240.0], "gaps": [80.0, 80.0, 80.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}

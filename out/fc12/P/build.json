@@ -1,0 +1,1491 @@
+{
+ "ring": {
+  "angles": [
+   0.0,
+   60.0,
+   120.0,
+   180.0,
+   240.0,
+   300.0
+  ],
+  "gaps": [
+   60.0,
+   60.0,
+   60.0,
+   60.0,
+   60.0
+  ],
+  "lip_faces": 6,
+  "hooks_seen": 6,
+  "solids": 1,
+  "valid": true,
+  "volume": 165436.05,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 6,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "6",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 6.6795,
+  "file": "/lab/out/fc12/P/stand-ring.FCStd"
+ },
+ "trap": {
+  "angles": [
+   0.0,
+   80.0,
+   160.0,
+   240.0
+  ],
+  "gaps": [
+   80.0,
+   80.0,
+   80.0
+  ],
+  "lip_faces": 4,
+  "hooks_seen": 4,
+  "solids": 1,
+  "valid": true,
+  "volume": 149560.608,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "4",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 15.5329,
+  "file": "/lab/out/fc12/P/stand-trap.FCStd"
+ },
+ "fixed": {
+  "angles": [
+   0.0,
+   60.0,
+   120.0,
+   180.0
+  ],
+  "gaps": [
+   60.0,
+   60.0,
+   60.0
+  ],
+  "lip_faces": 4,
+  "hooks_seen": 4,
+  "solids": 1,
+  "valid": true,
+  "volume": 149560.608,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 4,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": "Params.hook_gap",
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": true,
+  "into_wall": false,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "4",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 6.6795,
+  "file": "/lab/out/fc12/P/stand-fixed.FCStd"
+ },
+ "typed180": {
+  "angles": [
+   0.0,
+   60.0,
+   120.0,
+   180.0
+  ],
+  "gaps": [
+   60.0,
+   60.0,
+   60.0
+  ],
+  "lip_faces": 4,
+  "hooks_seen": 4,
+  "solids": 1,
+  "valid": true,
+  "volume": 149560.608,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 180.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": true,
+  "into_wall": false,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "4",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 6.6795,
+  "file": "/lab/out/fc12/P/stand-typed180.FCStd"
+ },
+ "fixed_h3": {
+  "angles": [
+   0.0,
+   60.0,
+   120.0
+  ],
+  "gaps": [
+   60.0,
+   60.0
+  ],
+  "lip_faces": 3,
+  "hooks_seen": 3,
+  "solids": 1,
+  "valid": true,
+  "volume": 141622.887,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 3,
+   "spacings": [
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": "Params.hook_gap",
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": true,
+  "into_wall": false,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "3",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 6.6795
+ },
+ "fixed_h6": {
+  "angles": [
+   0.0,
+   60.0,
+   120.0,
+   180.0,
+   240.0,
+   300.0
+  ],
+  "gaps": [
+   60.0,
+   60.0,
+   60.0,
+   60.0,
+   60.0
+  ],
+  "lip_faces": 6,
+  "hooks_seen": 6,
+  "solids": 1,
+  "valid": true,
+  "volume": 165436.05,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 6,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": "Params.hook_gap",
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "6",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 6.6795
+ },
+ "fixed_h7": {
+  "angles": [
+   0.0,
+   60.0,
+   120.0,
+   180.0,
+   240.0,
+   300.0
+  ],
+  "gaps": [
+   60.0,
+   60.0,
+   60.0,
+   60.0,
+   60.0
+  ],
+  "lip_faces": 6,
+  "hooks_seen": 6,
+  "solids": 1,
+  "valid": true,
+  "volume": 165436.05,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Spacing",
+   "angle": 360.0,
+   "offset": 60.0,
+   "occurrences": 7,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks",
+    "Offset": "Params.hook_gap"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": "Params.hook_gap",
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "7",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 6.6795
+ },
+ "typed180_h3": {
+  "angles": [
+   0.0,
+   90.0,
+   180.0
+  ],
+  "gaps": [
+   90.0,
+   90.0
+  ],
+  "lip_faces": 3,
+  "hooks_seen": 3,
+  "solids": 1,
+  "valid": true,
+  "volume": 141622.887,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 180.0,
+   "offset": 120.0,
+   "occurrences": 3,
+   "spacings": [
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": true,
+  "into_wall": false,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "3",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 19.799
+ },
+ "typed180_h6": {
+  "angles": [
+   0.0,
+   36.0,
+   72.0,
+   108.0,
+   144.0,
+   180.0
+  ],
+  "gaps": [
+   36.0,
+   36.0,
+   36.0,
+   36.0,
+   36.0
+  ],
+  "lip_faces": 6,
+  "hooks_seen": 6,
+  "solids": 1,
+  "valid": true,
+  "volume": 161308.115,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 180.0,
+   "offset": 120.0,
+   "occurrences": 6,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": true,
+  "into_wall": false,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "6",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 0.0
+ },
+ "ring_h7": {
+  "angles": [
+   0.0,
+   51.4286,
+   102.8571,
+   154.2857,
+   205.7143,
+   257.1429,
+   308.5714
+  ],
+  "gaps": [
+   51.4286,
+   51.4285,
+   51.4286,
+   51.4286,
+   51.4286,
+   51.4285
+  ],
+  "lip_faces": 7,
+  "hooks_seen": 7,
+  "solids": 1,
+  "valid": true,
+  "volume": 173373.771,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 7,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "7",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 2.807
+ },
+ "ring_h4": {
+  "angles": [
+   0.0,
+   90.0,
+   180.0,
+   270.0
+  ],
+  "gaps": [
+   90.0,
+   90.0,
+   90.0
+  ],
+  "lip_faces": 4,
+  "hooks_seen": 4,
+  "solids": 1,
+  "valid": true,
+  "volume": 149560.608,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "4",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 19.799
+ },
+ "trap_h3": {
+  "angles": [
+   0.0,
+   120.0,
+   240.0
+  ],
+  "gaps": [
+   120.0,
+   120.0
+  ],
+  "lip_faces": 3,
+  "hooks_seen": 3,
+  "solids": 1,
+  "valid": true,
+  "volume": 141622.887,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 3,
+   "spacings": [
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "3",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 31.5692
+ },
+ "trap_h6": {
+  "angles": [
+   0.0,
+   48.0,
+   96.0,
+   144.0,
+   192.0,
+   240.0
+  ],
+  "gaps": [
+   48.0,
+   48.0,
+   48.0,
+   48.0,
+   48.0
+  ],
+  "lip_faces": 6,
+  "hooks_seen": 6,
+  "solids": 1,
+  "valid": true,
+  "volume": 165436.05,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 6,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "6",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 1.2524
+ },
+ "trap_spacing_default": {
+  "angles": [
+   0.0,
+   120.0,
+   240.0
+  ],
+  "gaps": [
+   120.0,
+   120.0
+  ],
+  "lip_faces": 3,
+  "hooks_seen": 3,
+  "solids": 1,
+  "valid": true,
+  "volume": 141622.887,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Spacing",
+   "angle": 240.0,
+   "offset": 120.0,
+   "occurrences": 4,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "4",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 31.5692
+ },
+ "yt_360": {
+  "angles": [
+   0.0,
+   45.0,
+   90.0,
+   135.0,
+   180.0,
+   225.0,
+   270.0,
+   315.0
+  ],
+  "gaps": [
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0
+  ],
+  "lip_faces": 8,
+  "hooks_seen": 8,
+  "solids": 1,
+  "valid": true,
+  "volume": 363890.075,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "80",
+   "hooks": "8",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 11.3717
+ },
+ "yt_315": {
+  "angles": [
+   0.0,
+   45.0,
+   90.0,
+   135.0,
+   180.0,
+   225.0,
+   270.0,
+   315.0
+  ],
+  "gaps": [
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0
+  ],
+  "lip_faces": 8,
+  "hooks_seen": 8,
+  "solids": 1,
+  "valid": true,
+  "volume": 363890.075,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 315.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "80",
+   "hooks": "8",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 11.3717
+ },
+ "yt_270": {
+  "angles": [
+   0.0,
+   38.5714,
+   77.1429,
+   115.7143,
+   154.2857,
+   192.8571,
+   231.4286,
+   270.0
+  ],
+  "gaps": [
+   38.5714,
+   38.5715,
+   38.5714,
+   38.5714,
+   38.5714,
+   38.5715,
+   38.5714
+  ],
+  "lip_faces": 8,
+  "hooks_seen": 8,
+  "solids": 1,
+  "valid": true,
+  "volume": 363890.075,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 270.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "80",
+   "hooks": "8",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 6.8841
+ },
+ "eight_on_50": {
+  "angles": [
+   0.0,
+   45.0,
+   90.0,
+   135.0,
+   180.0,
+   225.0,
+   270.0,
+   315.0
+  ],
+  "gaps": [
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0,
+   45.0
+  ],
+  "lip_faces": 8,
+  "hooks_seen": 8,
+  "solids": 1,
+  "valid": true,
+  "volume": 181307.475,
+  "pattern": {
+   "name": "PolarPattern",
+   "mode": "Extent",
+   "angle": 360.0,
+   "offset": 120.0,
+   "occurrences": 8,
+   "spacings": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "reversed": false,
+   "axis": "(<GeoFeature object>, [''])",
+   "originals": [
+    "Hook"
+   ],
+   "expr": {
+    "Occurrences": "Params.hooks"
+   },
+   "occ_expr": "Params.hooks",
+   "angle_expr": null,
+   "offset_expr": null,
+   "state": [
+    "Up-to-date"
+   ]
+  },
+  "count_bound": true,
+  "side_ok": false,
+  "into_wall": true,
+  "sheet": {
+   "plate_height": "60",
+   "thickness": "5",
+   "hook_depth": "25",
+   "lip_height": "10",
+   "width": "20",
+   "post_diameter": "50",
+   "hooks": "8",
+   "hook_gap": "60.0 deg"
+  },
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "PostSketch": [
+    "Up-to-date"
+   ],
+   "Post": [
+    "Up-to-date"
+   ],
+   "HookSketch": [
+    "Up-to-date"
+   ],
+   "Hook": [
+    "Up-to-date"
+   ],
+   "PolarPattern": [
+    "Up-to-date"
+   ]
+  },
+  "clearance_mm": 0.0
+ }
+}

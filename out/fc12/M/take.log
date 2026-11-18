@@ -1,0 +1,11 @@
+stand
+prepped stand
+1
+rows open: 217 502
+1
+h1-h2 edges 2128 902 1667 544
+h1-h2 measure: "QLabel", "Mode:" combo:Angle "QLabel", "Result:" field:80.00\u00b0 
+h1-h2 selection: [('PolarPattern', ['Edge43', 'Edge33'])]
+saved
+TAKE M DONE
+FC12 check {"angles": [0.0, 80.0, 160.0, 240.0], "gaps": [80.0, 80.0, 80.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}

@@ -1,0 +1,13 @@
+stand
+prepped stand
+1
+rows open: 217 502
+hooks cell 855 734
+hooks 4: {"mode": "Extent", "angle": 360.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+Length = 240: {"mode": "Extent", "angle": 240.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+1
+1
+messages: dialogs [] notices []
+saved
+TAKE T DONE
+FC12 check {"angles": [0.0, 80.0, 160.0, 240.0], "gaps": [80.0, 80.0, 80.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}

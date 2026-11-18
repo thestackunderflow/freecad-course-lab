@@ -1,0 +1,18 @@
+stand
+prepped stand
+1
+217 502
+hooks cell 855 734
+hooks 3: {"mode": "Spacing", "angle": 240.0, "offset": 60.0, "occ": 3, "expr": [["Occurrences", "Params.hooks"], ["Offset", "Params.hook_gap"]], "state": ["Up-to-date"], "solids": 1}
+1
+h1-h2 edges 2127 1000 1758 593
+h1-h2 measure: "QLabel", "Mode:" combo:Angle "QLabel", "Result:" field:60.00\u00b0 
+h1-h2 selection: [('PolarPattern', ['Edge23', 'Edge13'])]
+hooks cell 855 734
+hooks 6: {"mode": "Spacing", "angle": 240.0, "offset": 60.0, "occ": 6, "expr": [["Occurrences", "Params.hooks"], ["Offset", "Params.hook_gap"]], "state": ["Up-to-date"], "solids": 1}
+1
+1
+1
+saved
+TAKE P DONE
+FC12 check {"angles": [0.0, 60.0, 120.0, 180.0, 240.0, 300.0], "gaps": [60.0, 60.0, 60.0, 60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}

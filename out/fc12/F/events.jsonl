@@ -1,0 +1,18 @@
+{"t": 0.023, "event": "recording started: FreeCAD 1.1.4, stand.FCStd (F)"}
+{"t": 4.307, "event": "double-click: PolarPattern (edit)"}
+{"t": 10.464, "event": "Mode box", "x": 2604, "y": 1216, "button": 1}
+{"t": 14.487, "event": "Mode: Spacing", "x": 2604, "y": 1258, "button": 1}
+{"t": 21.488, "event": "Spacing: click", "x": 2564, "y": 1272, "button": 1}
+{"t": 22.635, "event": "Spacing: typed = (Expression Editor)", "text": "="}
+{"t": 25.346, "event": "Spacing: typed Params.hook_gap", "text": "Params.hook_gap"}
+{"t": 28.29, "event": "Return: name list closed", "keys": "Return"}
+{"t": 32.96, "event": "Expression Editor: OK", "x": 2773, "y": 1477, "button": 1}
+{"t": 38.334, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 42.037, "event": "key 0: isometric", "keys": "0"}
+{"t": 43.252, "event": "(view fitted)"}
+{"t": 47.895, "event": "key 2: top view", "keys": "2"}
+{"t": 49.115, "event": "(view fitted)"}
+{"t": 53.415, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 58.414, "event": "h1-h2: first hook, lip edge", "x": 2175, "y": 999, "button": 1}
+{"t": 62.924, "event": "h1-h2: Ctrl + next hook, lip edge", "x": 1836, "y": 625, "button": 1}
+{"t": 72.445, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

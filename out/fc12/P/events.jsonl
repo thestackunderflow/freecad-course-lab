@@ -1,0 +1,24 @@
+{"t": 0.026, "event": "recording started: FreeCAD 1.1.4, stand.FCStd (P)"}
+{"t": 4.963, "event": "file reopened: F's saved end file"}
+{"t": 11.169, "event": "double-click: open Params"}
+{"t": 16.353, "event": "cell B7: hooks", "x": 855, "y": 734, "button": 1}
+{"t": 18.064, "event": "typed 3", "text": "3"}
+{"t": 18.797, "event": "Enter", "keys": "Return"}
+{"t": 23.085, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 28.753, "event": "tab: back to the 3D view", "x": 765, "y": 1731, "button": 1}
+{"t": 32.042, "event": "key 2: top view", "keys": "2"}
+{"t": 33.251, "event": "(view fitted)"}
+{"t": 37.533, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 42.516, "event": "h1-h2: first hook, lip edge", "x": 2127, "y": 1000, "button": 1}
+{"t": 47.026, "event": "h1-h2: Ctrl + next hook, lip edge", "x": 1758, "y": 593, "button": 1}
+{"t": 56.55, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 60.015, "event": "double-click: open Params"}
+{"t": 65.182, "event": "cell B7: hooks", "x": 855, "y": 734, "button": 1}
+{"t": 66.893, "event": "typed 6", "text": "6"}
+{"t": 67.626, "event": "Enter", "keys": "Return"}
+{"t": 71.881, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 77.511, "event": "tab: back to the 3D view", "x": 765, "y": 1731, "button": 1}
+{"t": 80.826, "event": "key 2: top view", "keys": "2"}
+{"t": 82.058, "event": "(view fitted)"}
+{"t": 86.194, "event": "key 0: isometric", "keys": "0"}
+{"t": 87.401, "event": "(view fitted)"}

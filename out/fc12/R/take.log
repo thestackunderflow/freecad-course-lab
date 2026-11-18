@@ -1,0 +1,9 @@
+stand
+prepped stand
+1
+rows open: 217 502
+1
+1
+saved
+TAKE R DONE
+FC12 check {"angles": [0.0, 60.0, 120.0, 180.0, 240.0, 300.0], "gaps": [60.0, 60.0, 60.0, 60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}

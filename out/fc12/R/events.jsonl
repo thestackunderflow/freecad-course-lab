@@ -1,0 +1,13 @@
+{"t": 0.027, "event": "recording started: FreeCAD 1.1.4, stand.FCStd (R)"}
+{"t": 13.066, "event": "double-click: open Params"}
+{"t": 18.601, "event": "hover: Params row 1"}
+{"t": 20.986, "event": "hover: Params row 2"}
+{"t": 23.349, "event": "hover: Params row 3"}
+{"t": 25.799, "event": "hover: Params row 4"}
+{"t": 28.167, "event": "hover: Params row 5"}
+{"t": 30.532, "event": "hover: Params row 6"}
+{"t": 32.899, "event": "hover: Params row 7"}
+{"t": 35.268, "event": "hover: Params row 8"}
+{"t": 37.469, "event": "hold: hooks 6"}
+{"t": 41.065, "event": "hold: hook_gap 60 \u00b0"}
+{"t": 46.12, "event": "tab: back to the 3D view", "x": 765, "y": 1731, "button": 1}

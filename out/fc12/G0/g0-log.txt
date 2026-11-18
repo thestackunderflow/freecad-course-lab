@@ -1,0 +1,76 @@
+== s1 00:39:48
+stand
+prepped stand
+pstate ring: {"mode": "Extent", "angle": 360.0, "offset": 120.0, "occ": 6, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+sheet hook_gap shown: '=60 deg' 60.0 deg None
+row none
+panel ring: [["QSint::ActionLabel", "Start Part", [2507, 613]], ["QSint::ActionLabel", "New Body", [2529, 671]]]
+== s2 00:40:07
+row 217 502
+panel ring: [["QSint::ActionLabel", "Polar Pattern Parameters", [2507, 689]], ["QRadioButton", "Transform body", [2529, 748]], ["QRadioButton", "Transform tool shapes", [2529, 788]], ["QPushButton", "Add Feature", [2368, 833]], ["QPushButton", "Remove Feature", [2691, 833]], ["list", "Hook", [2529, 878]], ["QComboBox", "combo:Base Z-axis", [2556, 1162]], ["QLabel", "Mode", [2260, 1216]], ["QComboBox", "combo:Extent", [2602, 1216]], ["QLabel", "Length", [2268, 1270]], ["Gui::QuantitySpinBox", "field:360.00\u00b0", [2602, 1272]], ["QLineEdit", "field:360.00\u00b0", [2588, 1272]], ["QLabel", "Occurrences", [2298, 1326]], ["Gui::UIntSpinBox", "field:6", [2602, 1328]], ["QLineEdit", "field:6", [2588, 1328]], ["QCheckBox", "Recompute on change", [2529, 1411]], ["QSint::ActionLabel", "Preview", [2507, 1490]], ["QCheckBox", "Show final result", [2529, 1553]], ["QCheckBox", "Show preview overlay", [2529, 1600]], ["QPushButton", "OK", [2428, 615]], ["QPushButton", "Cancel", [2629, 615]]]
+== s3 (Q2 trap) 00:40:25
+hooks cell 855 734
+after hooks 4 + recompute: {"mode": "Extent", "angle": 360.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+3D tab 765 1731
+Length field 2602 1272
+panel at 240: "combo:Base Z-axis" "combo:Extent" "field:240.00\u00b0" "field:240.00\u00b0" "field:4" "field:4" 
+after OK: {"mode": "Extent", "angle": 240.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+dialogs: []
+notices: []
+report: '00:39:53  Python code executed successfully.\n00:39:53  Python code executed successfully.\n00:39:53  Python code executed successfully.\n00:39:58  Python code executed successfully.\n00:40:07  Python code executed successfully.\n00:40:08  Python code executed successfully.\n00:40:08  Python code executed successfully.\n00:40:13  Python code executed successfully.\n00:40:25  Python code executed successfully.\n00:40:30  Python code executed successfully.\n00:40:30  Python code executed successfully.\n00:40:34  Python code executed successfully.\n00:40:40  Python code executed successfully.\n00:40:47  Python code executed successfully.\n00:40:47  Python code executed successfully.\n00:40:51  Python code executed successfully.\n00:40:56  Python code executed successfully.\n00:41:01  Python code executed successfully.\n00:41:01  Python code executed successfully.\n00:41:08  Python code executed successfully.\n00:41:08  Python code executed successfully.\n00:41:08  Python code executed successfully.\n'
+prepped stand
+1
+saved
+FC12 check {"angles": [0.0, 80.0, 160.0, 240.0], "gaps": [80.0, 80.0, 80.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}
+== s4 (Q3 fix) 00:41:34
+popup Spacing ; items: 
+panel after Spacing: "QSint::ActionLabel", "Polar Pattern Parameters" "combo:Base Z-axis" "QLabel", "Mode" "combo:Extent" "QLabel", "Length" "field:240.00\u00b0" "field:240.00\u00b0" "QLabel", "Occurrences" "field:4" "field:4" "QSint::ActionLabel", "Preview" 
+state after switch: {"mode": "Extent", "angle": 240.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+dialogs: [] notices: []
+saved
+Spacing field none
+after = : [] expr_ok none
+editor texts: []
+panel after expr: "combo:Base Z-axis" "combo:Extent" "field:240.00\u00b0" "field:240.00\u00b0" "field:4" "field:4" 
+after OK: {"mode": "Extent", "angle": 240.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+dialogs: [] notices: []
+1
+saved
+FC12 check {"angles": [0.0, 80.0, 160.0, 240.0], "gaps": [80.0, 80.0, 80.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}
+FC12 check {"angles": [0.0, 80.0, 160.0, 240.0], "gaps": [80.0, 80.0, 80.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}
+== s4 rerun (popup row by offset)
+== s4 (Q3 fix) 00:43:07
+popup Spacing at 2602 1258 (combo 2602 1216 + 42)
+panel after Spacing: "QSint::ActionLabel", "Polar Pattern Parameters" "combo:Base Z-axis" "QLabel", "Mode" "combo:Spacing" "QLabel", "Spacing" "field:120.00\u00b0" "field:120.00\u00b0" "QLabel", "Occurrences" "field:4" "field:4" "QSint::ActionLabel", "Preview" 
+state after switch: {"mode": "Spacing", "angle": 240.0, "offset": 120.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"]], "state": ["Up-to-date"], "solids": 1}
+dialogs: [] notices: []
+saved
+Spacing field 2602 1272
+after = : [['Expression Editor', ['Result', '120.00°'], [], ['OK', 'Reset']]] expr_ok 2772 1452
+editor texts: ['Result', '60.00°']
+panel after expr: "combo:Base Z-axis" "combo:Spacing" "field:60.00\u00b0" "field:60.00\u00b0" "field:4" "field:4" 
+after OK: {"mode": "Spacing", "angle": 240.0, "offset": 60.0, "occ": 4, "expr": [["Occurrences", "Params.hooks"], ["Offset", "Params.hook_gap"]], "state": ["Up-to-date"], "solids": 1}
+dialogs: [] notices: []
+1
+saved
+FC12 check {"angles": [0.0, 120.0, 240.0], "gaps": [120.0, 120.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}
+FC12 check {"angles": [0.0, 60.0, 120.0, 180.0], "gaps": [60.0, 60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": true, "error": null}
+== s5 (Q6 Property view, Q4/Q5 headless) 00:44:04
+tab bars: [['Start', 'stand : 1*', 'Params'], ['View', 'Data'], []]
+Angle row 102 1414
+tooltip: "Type: App::PropertyAngle\nName: Angle\n\nThe total angle of the pattern, measured from the first to the last instance. This is only used when the Mode is set to 'Extent'."
+doc string: "The total angle of the pattern, measured from the first to the last instance. This is only used when the Mode is set to 'Extent'." "The angular distance between each instance of the pattern. This is only used when the Mode is set to 'Spacing'."
+== Q4/Q5 headless on the GUI-fixed file
+hooks 3: FC12 check {"angles": [0.0, 60.0, 120.0], "gaps": [60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": true, "error": null}
+hooks 6: FC12 check {"angles": [0.0, 60.0, 120.0, 180.0, 240.0, 300.0], "gaps": [60.0, 60.0, 60.0, 60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}
+hooks 7: FC12 check {"angles": [0.0, 60.0, 120.0, 180.0, 240.0, 300.0], "gaps": [60.0, 60.0, 60.0, 60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}
+hooks 4: FC12 check {"angles": [0.0, 60.0, 120.0, 180.0], "gaps": [60.0, 60.0, 60.0], "solids": 1, "count_bound": true, "side_ok": true, "error": null}
+control typed180 h3: FC12 check {"angles": [0.0, 90.0, 180.0], "gaps": [90.0, 90.0], "solids": 1, "count_bound": true, "side_ok": true, "error": null}
+Q8 trap start file: FC12 check {"angles": [0.0, 80.0, 160.0, 240.0], "gaps": [80.0, 80.0, 80.0], "solids": 1, "count_bound": true, "side_ok": false, "error": null}
+== s6 (measure route) 00:49:56
+stand
+prepped stand
+1
+side+: combo:Angle field:80.00\u00b0  sel [('PolarPattern', ['Edge43', 'Edge33'])]
+side-: combo:Angle field:80.00\u00b0  sel [('PolarPattern', ['Edge53', 'Edge82'])]
+arm+: combo:Angle field:80.00\u00b0  sel [('PolarPattern', ['Edge45', 'Edge35'])]

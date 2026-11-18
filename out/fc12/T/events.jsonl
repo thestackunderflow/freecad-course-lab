@@ -1,0 +1,16 @@
+{"t": 0.028, "event": "recording started: FreeCAD 1.1.4, stand.FCStd (T)"}
+{"t": 4.311, "event": "double-click: open Params"}
+{"t": 9.493, "event": "cell B7: hooks", "x": 855, "y": 734, "button": 1}
+{"t": 11.205, "event": "typed 4", "text": "4"}
+{"t": 11.94, "event": "Enter", "keys": "Return"}
+{"t": 16.226, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 21.854, "event": "tab: back to the 3D view", "x": 765, "y": 1731, "button": 1}
+{"t": 25.941, "event": "double-click: PolarPattern (edit)"}
+{"t": 31.823, "event": "Length: select"}
+{"t": 32.227, "event": "Length: typed 240", "text": "240"}
+{"t": 33.773, "event": "Tab", "keys": "Tab"}
+{"t": 41.057, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 44.77, "event": "key 0: isometric", "keys": "0"}
+{"t": 45.99, "event": "(view fitted)"}
+{"t": 50.632, "event": "key 2: top view", "keys": "2"}
+{"t": 51.851, "event": "(view fitted)"}
