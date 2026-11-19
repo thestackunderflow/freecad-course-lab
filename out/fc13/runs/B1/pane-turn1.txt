@@ -1,0 +1,36 @@
+  measured):
+
+  ┌─────────────┬───────────┬─────────────┐
+  │    Wall     │  Outside  │   Inside    │
+  ├─────────────┼───────────┼─────────────┤
+  │ 2 mm        │ 64 × 44 × │ 60 × 40, 48 │
+  │ (current)   │  50       │  deep       │
+  ├─────────────┼───────────┼─────────────┤
+  │ 3 mm        │ 66 × 46 × │ 60 × 40, 47 │
+  │             │  50       │  deep       │
+  ├─────────────┼───────────┼─────────────┤
+  │ 1.5 mm      │ 63 × 43 × │ 60 × 40,    │
+  │             │  50       │ 48.5 deep   │
+  └─────────────┴───────────┴─────────────┘
+
+  The model recomputes cleanly and the shape
+  stays valid. I put the wall back to 2 mm.
+
+  Two things to know:
+  - The outside is now larger than before (64
+    × 44 at a 2 mm wall), because the walls
+    add to the inside size.
+  - cup_height is still the outer height, and
+    the floor is also one wall thick. So the
+    inside depth is 50 − wall, which is 48 mm
+    at a 2 mm wall. If you want the inside
+    depth fixed too, I can make the pad
+    cup_height + wall.
+
+✻ Sautéed for 17s · done 4:55 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

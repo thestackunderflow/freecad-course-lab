@@ -1,0 +1,1 @@
+My wall cup should be 60 by 40 inside, but after the shell it came out smaller. Fix it so the inside stays 60 by 40 when I change the wall thickness.

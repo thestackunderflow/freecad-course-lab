@@ -1,0 +1,36 @@
+  └──────┴─────────┴─────────┘
+
+  Cause: The sketch was the outer profile, and
+  the Thickness feature cuts inward from it.
+  So the inside was always 60 − 2·wall by 40 −
+  2·wall.
+
+  Fix: I changed the two sketch constraints to
+  read as follows:
+  - cup_width is now Params.cup_width + 2 *
+    Params.wall.
+  - cup_length is now Params.cup_length + 2 *
+    Params.wall.
+
+  cup_width and cup_length in the Params sheet
+  now mean the inside size. I put wall back
+  to 2 after testing.
+
+  Height: cup_height is still the overall
+  outside height, because the pad is
+  unchanged. The floor is wall thick, so the
+  inside depth is cup_height − wall. If you
+  want cup_height to be the inside depth
+  instead, change the pad length to
+  Params.cup_height + Params.wall.
+
+  I haven't saved the document, so save it in
+  FreeCAD to keep the change.
+
+✻ Cooked for 15s · done 4:53 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

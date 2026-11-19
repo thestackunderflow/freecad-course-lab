@@ -1,0 +1,79 @@
+{
+ "class": "2",
+ "name": "inward + outside drawn from the inside by a names formula",
+ "detail": {
+  "at_wall": [
+   60.0,
+   40.0,
+   48.0,
+   2.0
+  ],
+  "at_wall3": [
+   60.0,
+   40.0,
+   47.0,
+   3.0
+  ],
+  "at_width70": [
+   70.0,
+   40.0,
+   48.0,
+   2.0
+  ],
+  "thickness": {
+   "name": "Thickness",
+   "value": 2.0,
+   "value_expr": "Params.wall",
+   "reversed": true,
+   "mode": "Skin",
+   "join": "Arc",
+   "intersection": false,
+   "base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "state": [
+    "Up-to-date"
+   ],
+   "in_tip_chain": null
+  },
+  "target": {
+   "kind": "name",
+   "alias": "cup_width",
+   "reached": [
+    "cup_length",
+    "wall",
+    "cup_width"
+   ]
+  },
+  "pass_a_wall2": true,
+  "pass_a_wall3": true,
+  "pass_b_width70": true,
+  "passes": true
+ },
+ "guard": {
+  "stopped": false,
+  "estimate_usd": 0.0741,
+  "cap_usd": 0.25,
+  "calib": 0.6
+ },
+ "stored_equals_recomputed": true,
+ "stored": [
+  60.0,
+  40.0,
+  48.0,
+  2.0
+ ],
+ "width_target": {
+  "kind": "name",
+  "alias": "cup_width",
+  "reached": [
+   "cup_length",
+   "wall",
+   "cup_width"
+  ]
+ },
+ "wall_alias": "wall"
+}

@@ -1,0 +1,12 @@
+{"t": 0.053, "event": "recording started: Claude Code (left, FreeCAD plug only), FreeCAD with cup open (right)"}
+{"t": 2.118, "event": "turn 1: typing", "text": "My wall cup should be 60 by 40 inside, but after the shell it came out smaller. Fix it so the inside stays 60 by 40 when I change the wall thickness. Then measure the inside and tell me the numbers."}
+{"t": 12.257, "event": "turn 1: Enter"}
+{"t": 15.706, "event": "tool call: list_documents", "seq": 18}
+{"t": 15.717, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 17.33, "event": "tool call: get_objects", "seq": 20}
+{"t": 17.35, "event": "tool reply: get_objects", "seq": 21, "isError": false}
+{"t": 25.727, "event": "tool call: execute_code", "seq": 22}
+{"t": 25.805, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 30.123, "event": "turn 1: end-of-turn line seen"}
+{"t": 32.127, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 38.158, "event": "recording stopped"}
