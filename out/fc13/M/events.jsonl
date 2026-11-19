@@ -1,0 +1,11 @@
+{"t": 0.028, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (M)"}
+{"t": 3.537, "event": "key 2: top view", "keys": "2"}
+{"t": 4.745, "event": "(view fitted)"}
+{"t": 9.959, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 14.958, "event": "across: first inner edge", "x": 2141, "y": 985, "button": 1}
+{"t": 19.469, "event": "across: Ctrl + opposite inner edge", "x": 1222, "y": 985, "button": 1}
+{"t": 28.988, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 33.454, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 38.454, "event": "front-back: first inner edge", "x": 1682, "y": 690, "button": 1}
+{"t": 42.968, "event": "front-back: Ctrl + opposite inner edge", "x": 1682, "y": 1281, "button": 1}
+{"t": 52.487, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

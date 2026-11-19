@@ -1,0 +1,17 @@
+cup
+prepped cup
+1
+notices at open: []
+rows open: none
+selection: [('Pad', ['Face6'])]
+panel: "QSint::ActionLabel", "Thickness Parameters" "QToolButton", "Select" "list", "Face6" "QLabel", "Thickness" "QLineEdit", "field:1.00 mm" "QLabel", "Mode" "QComboBox", "combo:Skin" "QLabel", "Join type" "QComboBox", "combo:Arc" "QCheckBox", "Intersection" "QCheckBox", "Make thickness inwards" "QSint::ActionLabel", "Preview" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" "QPushButton", "OK" "QPushButton", "Cancel" 
+box at open: [True]
+expr: {"value": 2.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Touched"], "solids": 1, "volume": 12004.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+box before OK: [True]
+after OK: {"value": 2.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 23232.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+1
+1
+messages: dialogs [] notices []
+saved
+TAKE T DONE
+FC13 check {"stored": [56.0, 36.0, 48.0, 2.0], "recomputed": [56.0, 36.0, 48.0, 2.0], "at_wall3": [54.0, 34.0, 47.0, 3.0], "at_width70": [66.0, 36.0, 48.0, 2.0]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}

@@ -1,0 +1,11 @@
+{"t": 0.057, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (R)"}
+{"t": 12.395, "event": "double-click: open Params"}
+{"t": 17.922, "event": "hover: Params row 1"}
+{"t": 20.701, "event": "hover: Params row 2"}
+{"t": 23.489, "event": "hover: Params row 3"}
+{"t": 26.291, "event": "hover: Params row 4"}
+{"t": 28.928, "event": "hold: row 1"}
+{"t": 31.537, "event": "hold: row 2"}
+{"t": 34.14, "event": "hold: row 3"}
+{"t": 36.769, "event": "hold: wall 2"}
+{"t": 41.815, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}

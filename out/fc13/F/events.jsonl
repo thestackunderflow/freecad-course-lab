@@ -1,0 +1,12 @@
+{"t": 0.026, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (F)"}
+{"t": 4.308, "event": "double-click: Thickness (edit)"}
+{"t": 11.589, "event": "Make thickness inwards: unticked", "x": 2292, "y": 1371, "button": 1}
+{"t": 18.587, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 22.39, "event": "key 0: isometric", "keys": "0"}
+{"t": 23.608, "event": "(view fitted)"}
+{"t": 28.245, "event": "key 2: top view", "keys": "2"}
+{"t": 29.456, "event": "(view fitted)"}
+{"t": 33.724, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 38.719, "event": "across: first inner edge", "x": 2144, "y": 985, "button": 1}
+{"t": 43.23, "event": "across: Ctrl + opposite inner edge", "x": 1219, "y": 985, "button": 1}
+{"t": 52.762, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

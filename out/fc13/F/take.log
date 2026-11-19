@@ -1,0 +1,17 @@
+cup
+prepped cup
+1
+notices at open: []
+rows open: 205 469
+box at open: [True]
+box after click: [False] {"value": 2.0, "reversed": false, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Touched"], "solids": 1, "volume": 23232.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+after OK: {"value": 2.0, "reversed": false, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 26073.392, "bbox": [64.0, 44.0, -2.0, 50.0]}
+1
+1
+across edges 2144 985 1219 985
+across measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:60.00 mm 
+across selection: [('Thickness', ['Edge7', 'Edge12'])]
+messages: dialogs [] notices []
+saved
+TAKE F DONE
+FC13 check {"stored": [60.0, 40.0, 50.0, 2.0], "recomputed": [60.0, 40.0, 50.0, 2.0], "at_wall3": [60.0, 40.0, 50.0, 3.0], "at_width70": [70.0, 40.0, 50.0, 2.0]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}

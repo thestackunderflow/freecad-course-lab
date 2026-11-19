@@ -1,0 +1,10 @@
+cup
+prepped cup
+1
+notices at open: []
+rows open: 205 469
+Reversed row 102 1414
+tooltip: 'Type: App::PropertyBool\nName: Reversed\n\nApply the thickness towards the solids interior'
+saved
+TAKE K DONE
+FC13 check {"stored": [56.0, 36.0, 48.0, 2.0], "recomputed": [56.0, 36.0, 48.0, 2.0], "at_wall3": [54.0, 34.0, 47.0, 3.0], "at_width70": [66.0, 36.0, 48.0, 2.0]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}

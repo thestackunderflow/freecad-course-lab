@@ -1,0 +1,19 @@
+{"t": 0.06, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (T)"}
+{"t": 5.431, "event": "top face picked", "x": 1740, "y": 625, "button": 1}
+{"t": 10.259, "event": "Thickness", "x": 1204, "y": 228, "button": 1}
+{"t": 15.351, "event": "O starts: panel open"}
+{"t": 16.138, "event": "hover: Thickness 1.00 mm"}
+{"t": 19.41, "event": "hover: Mode Skin"}
+{"t": 22.222, "event": "hover: Join type Arc"}
+{"t": 24.908, "event": "Thickness: click", "x": 2652, "y": 1166, "button": 1}
+{"t": 26.043, "event": "Thickness: typed = (Expression Editor)", "text": "="}
+{"t": 28.754, "event": "Thickness: typed Params.wall", "text": "Params.wall"}
+{"t": 31.476, "event": "Return: name list closed", "keys": "Return"}
+{"t": 36.155, "event": "Expression Editor: OK", "x": 2773, "y": 1346, "button": 1}
+{"t": 40.765, "event": "hover: Make thickness inwards (ticked)"}
+{"t": 45.01, "event": "O ends: before OK"}
+{"t": 46.952, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 50.758, "event": "key 0: isometric", "keys": "0"}
+{"t": 51.972, "event": "(view fitted)"}
+{"t": 56.606, "event": "key 2: top view", "keys": "2"}
+{"t": 57.853, "event": "(view fitted)"}

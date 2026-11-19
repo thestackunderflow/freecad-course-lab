@@ -1,0 +1,526 @@
+{
+ "doc": "/lab/out/fc13/P/end.FCStd",
+ "stored": {
+  "solids": 1,
+  "valid": true,
+  "volume": 44425.354,
+  "outside_w": 76.0,
+  "outside_l": 46.0,
+  "outside_h": 53.0,
+  "floor_z": -3.0,
+  "rim_z": 50.0,
+  "z_segments": [
+   [
+    -3.0,
+    0.0
+   ]
+  ],
+  "hollow": true,
+  "x_segments": [
+   [
+    -38.0,
+    -35.0
+   ],
+   [
+    35.0,
+    38.0
+   ]
+  ],
+  "y_segments": [
+   [
+    -23.0,
+    -20.0
+   ],
+   [
+    20.0,
+    23.0
+   ]
+  ],
+  "inside_w": 70.0,
+  "inside_l": 40.0,
+  "inside_d": 50.0,
+  "floor_top_z": 0.0,
+  "wall_x": 3.0,
+  "wall_y": 3.0,
+  "floor": 3.0,
+  "edge_radii": [
+   3.0
+  ],
+  "n_cyl_faces": 8,
+  "n_sphere_faces": 4,
+  "n_faces": 23,
+  "thickness": {
+   "name": "Thickness",
+   "value": 3.0,
+   "value_expr": "Params.wall",
+   "reversed": false,
+   "mode": "Skin",
+   "join": "Arc",
+   "intersection": false,
+   "base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "state": [
+    "Up-to-date"
+   ],
+   "in_tip_chain": null
+  },
+  "sheet": {
+   "cup_width": {
+    "cell": "B1",
+    "content": "70",
+    "value": "70"
+   },
+   "cup_length": {
+    "cell": "B2",
+    "content": "40",
+    "value": "40"
+   },
+   "cup_height": {
+    "cell": "B3",
+    "content": "50",
+    "value": "50"
+   },
+   "wall": {
+    "cell": "B4",
+    "content": "3",
+    "value": "3"
+   }
+  },
+  "exprs": {
+   "Sketch": {
+    ".Constraints.cup_length": "Params.cup_length",
+    ".Constraints.cup_width": "Params.cup_width"
+   },
+   "Pad": {
+    "Length": "Params.cup_height"
+   },
+   "Thickness": {
+    "Value": "Params.wall"
+   }
+  },
+  "sizes_typed": false,
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "Sketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "Thickness": [
+    "Up-to-date"
+   ]
+  },
+  "tip": "Thickness",
+  "status": {
+   "Body": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Sketch": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Pad": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Thickness": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   }
+  }
+ },
+ "recomputed": {
+  "solids": 1,
+  "valid": true,
+  "volume": 44425.354,
+  "outside_w": 76.0,
+  "outside_l": 46.0,
+  "outside_h": 53.0,
+  "floor_z": -3.0,
+  "rim_z": 50.0,
+  "z_segments": [
+   [
+    -3.0,
+    0.0
+   ]
+  ],
+  "hollow": true,
+  "x_segments": [
+   [
+    -38.0,
+    -35.0
+   ],
+   [
+    35.0,
+    38.0
+   ]
+  ],
+  "y_segments": [
+   [
+    -23.0,
+    -20.0
+   ],
+   [
+    20.0,
+    23.0
+   ]
+  ],
+  "inside_w": 70.0,
+  "inside_l": 40.0,
+  "inside_d": 50.0,
+  "floor_top_z": 0.0,
+  "wall_x": 3.0,
+  "wall_y": 3.0,
+  "floor": 3.0,
+  "edge_radii": [
+   3.0
+  ],
+  "n_cyl_faces": 8,
+  "n_sphere_faces": 4,
+  "n_faces": 23,
+  "thickness": {
+   "name": "Thickness",
+   "value": 3.0,
+   "value_expr": "Params.wall",
+   "reversed": false,
+   "mode": "Skin",
+   "join": "Arc",
+   "intersection": false,
+   "base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "state": [
+    "Up-to-date"
+   ],
+   "in_tip_chain": null
+  },
+  "sheet": {
+   "cup_width": {
+    "cell": "B1",
+    "content": "70",
+    "value": "70"
+   },
+   "cup_length": {
+    "cell": "B2",
+    "content": "40",
+    "value": "40"
+   },
+   "cup_height": {
+    "cell": "B3",
+    "content": "50",
+    "value": "50"
+   },
+   "wall": {
+    "cell": "B4",
+    "content": "3",
+    "value": "3"
+   }
+  },
+  "exprs": {
+   "Sketch": {
+    ".Constraints.cup_length": "Params.cup_length",
+    ".Constraints.cup_width": "Params.cup_width"
+   },
+   "Pad": {
+    "Length": "Params.cup_height"
+   },
+   "Thickness": {
+    "Value": "Params.wall"
+   }
+  },
+  "sizes_typed": false,
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "Sketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "Thickness": [
+    "Up-to-date"
+   ]
+  },
+  "tip": "Thickness",
+  "status": {
+   "Body": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Sketch": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Pad": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Thickness": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   }
+  }
+ },
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Cup",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "Sketch",
+   "Sketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad",
+   "Pad",
+   "PartDesign::Pad"
+  ],
+  [
+   "Thickness",
+   "Thickness",
+   "PartDesign::Thickness"
+  ]
+ ],
+ "width_target": {
+  "kind": "none",
+  "reached": [
+   "cup_length",
+   "cup_width"
+  ],
+  "seeds": [
+   [
+    ".Constraints.cup_length",
+    "cup_length"
+   ],
+   [
+    ".Constraints.cup_width",
+    "cup_width"
+   ]
+  ]
+ },
+ "wall_alias": "wall",
+ "at_wall3": {
+  "solids": 1,
+  "valid": true,
+  "volume": 44425.354,
+  "outside_w": 76.0,
+  "outside_l": 46.0,
+  "outside_h": 53.0,
+  "floor_z": -3.0,
+  "rim_z": 50.0,
+  "z_segments": [
+   [
+    -3.0,
+    0.0
+   ]
+  ],
+  "hollow": true,
+  "x_segments": [
+   [
+    -38.0,
+    -35.0
+   ],
+   [
+    35.0,
+    38.0
+   ]
+  ],
+  "y_segments": [
+   [
+    -23.0,
+    -20.0
+   ],
+   [
+    20.0,
+    23.0
+   ]
+  ],
+  "inside_w": 70.0,
+  "inside_l": 40.0,
+  "inside_d": 50.0,
+  "floor_top_z": 0.0,
+  "wall_x": 3.0,
+  "wall_y": 3.0,
+  "floor": 3.0,
+  "edge_radii": [
+   3.0
+  ],
+  "n_cyl_faces": 8,
+  "n_sphere_faces": 4,
+  "n_faces": 23,
+  "thickness": {
+   "name": "Thickness",
+   "value": 3.0,
+   "value_expr": "Params.wall",
+   "reversed": false,
+   "mode": "Skin",
+   "join": "Arc",
+   "intersection": false,
+   "base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "state": [
+    "Up-to-date"
+   ],
+   "in_tip_chain": null
+  },
+  "sheet": {
+   "cup_width": {
+    "cell": "B1",
+    "content": "70",
+    "value": "70"
+   },
+   "cup_length": {
+    "cell": "B2",
+    "content": "40",
+    "value": "40"
+   },
+   "cup_height": {
+    "cell": "B3",
+    "content": "50",
+    "value": "50"
+   },
+   "wall": {
+    "cell": "B4",
+    "content": "3",
+    "value": "3"
+   }
+  },
+  "exprs": {
+   "Sketch": {
+    ".Constraints.cup_length": "Params.cup_length",
+    ".Constraints.cup_width": "Params.cup_width"
+   },
+   "Pad": {
+    "Length": "Params.cup_height"
+   },
+   "Thickness": {
+    "Value": "Params.wall"
+   }
+  },
+  "sizes_typed": false,
+  "states": {
+   "Body": [
+    "Up-to-date"
+   ],
+   "Sketch": [
+    "Up-to-date"
+   ],
+   "Pad": [
+    "Up-to-date"
+   ],
+   "Thickness": [
+    "Up-to-date"
+   ]
+  },
+  "tip": "Thickness",
+  "status": {
+   "Body": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Sketch": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Pad": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   },
+   "Thickness": {
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   }
+  }
+ },
+ "at_width70": {
+  "error": "no width name traced"
+ }
+}

@@ -1,0 +1,23 @@
+notices at open: []
+cup
+prepped cup
+1
+notices at reopen: []
+205 469
+wall cell 855 572
+wall 3: {"value": 3.0, "reversed": false, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 40083.982, "bbox": [66.0, 46.0, -3.0, 50.0]}
+1
+across-w3 edges 2130 985 1233 985
+across-w3 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:60.00 mm 
+across-w3 selection: [('Thickness', ['Edge7', 'Edge12'])]
+cup_width cell 855 410
+cup_width 70: {"value": 3.0, "reversed": false, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 44425.354, "bbox": [76.0, 46.0, -3.0, 50.0]}
+1
+across-cw70 edges 2169 985 1194 985
+across-cw70 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:70.00 mm 
+across-cw70 selection: [('Thickness', ['Edge7', 'Edge12'])]
+1
+1
+saved
+TAKE P DONE
+FC13 check {"stored": [70.0, 40.0, 50.0, 3.0], "recomputed": [70.0, 40.0, 50.0, 3.0], "at_wall3": [70.0, 40.0, 50.0, 3.0], "at_width70": [null, null, null, null]} {"kind": "none", "reached": ["cup_length", "cup_width"], "seeds": [[".Constraints.cup_length", "cup_length"], [".Constraints.cup_width", "cup_width"]]}

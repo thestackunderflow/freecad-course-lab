@@ -1,0 +1,28 @@
+{"t": 0.048, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (P)"}
+{"t": 4.891, "event": "file reopened: F's saved end file"}
+{"t": 11.29, "event": "double-click: open Params"}
+{"t": 16.457, "event": "cell B4: wall", "x": 855, "y": 572, "button": 1}
+{"t": 18.165, "event": "typed 3", "text": "3"}
+{"t": 18.902, "event": "Enter", "keys": "Return"}
+{"t": 23.191, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 28.821, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 32.135, "event": "key 2: top view", "keys": "2"}
+{"t": 33.352, "event": "(view fitted)"}
+{"t": 37.636, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 42.623, "event": "across-w3: first inner edge", "x": 2130, "y": 985, "button": 1}
+{"t": 47.137, "event": "across-w3: Ctrl + opposite inner edge", "x": 1233, "y": 985, "button": 1}
+{"t": 56.654, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 60.267, "event": "double-click: open Params"}
+{"t": 65.45, "event": "cell B1: cup_width", "x": 855, "y": 410, "button": 1}
+{"t": 67.161, "event": "typed 70", "text": "70"}
+{"t": 68.019, "event": "Enter", "keys": "Return"}
+{"t": 72.291, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 77.926, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 81.23, "event": "key 2: top view", "keys": "2"}
+{"t": 82.458, "event": "(view fitted)"}
+{"t": 86.722, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 91.717, "event": "across-cw70: first inner edge", "x": 2169, "y": 985, "button": 1}
+{"t": 96.232, "event": "across-cw70: Ctrl + opposite inner edge", "x": 1194, "y": 985, "button": 1}
+{"t": 105.748, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 108.049, "event": "key 0: isometric", "keys": "0"}
+{"t": 109.289, "event": "(view fitted)"}

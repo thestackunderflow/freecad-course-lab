@@ -1,0 +1,39 @@
+fc13 G0 (18 Nov 2026), FreeCAD 1.1.4 + freecad-mcp 0.1.28 (fcc-app:1.1.4-0.1.28), $0, no Claude.
+VERDICT: GO. Trap reproduced. One fallback applied (outward rounds the outside edges, PLAN 6 row 2, fc side);
+one route change (Measure on the two inner rim edges, not faces).
+Start files by code: out/fc13/P (lab/fc13parts.py, build.json; tests/test_fc13.py 6 pass). GUI steps: s1-s5.sh, log g0-log.txt.
+Q1 4 start files, one solid each: cup-box (no shell), cup-trap (inward), cup-fixed (outward), cup-typed (sketch 64 x 44
+   typed, Pad 52 typed, Thickness =Params.wall inward). Sketch width/length = Params.cup_width / cup_length, Pad =
+   Params.cup_height in box/trap/fixed. No notification at open. GUI default: top face picked (Pad Face6), Thickness
+   button: panel opens with "Make thickness inwards" TICKED (Reversed true), Thickness 1.00 mm, Mode Skin, Join type
+   Arc, Intersection unticked. Inward is the default. PASS.
+Q2 GUI trap on cup-box: Thickness box "=" -> Expression Editor (Result 2.00) with Params.wall, OK: inside by code
+   56 x 36, 48 deep, outside 60 x 40 x 50, wall 2, floor 0..2. No dialog, no notification, no Report line. PASS.
+Q3 GUI fix: double-click Thickness, click the "Make thickness inwards" box (the square itself: a click on the label
+   centre only focused it in the probe), OK: inside 60 x 40, 50 deep; outside 64 x 44 across the flats, 52 tall,
+   floor z -2. No message. Outside convex edges ROUNDED: 8 cylinder faces radius 2.00 (= wall) + 4 sphere corners
+   (Join type Arc); at wall 3 radius 3.00. Join type Intersection (recorded only, not filmed) gives square edges.
+   -> fallback PLAN 6 "outward rounds the outside edges" (fc): diagram + fix beat drawn rounded, chip "outside edges
+   rounded, radius 2"; the narration line only if sc13's G0 also shows it.
+   Headless: Reversed = False + recompute() alone re-shells (60 x 40 x 50): NO touch() needed (the scorer touches
+   anyway, harmless).
+Q3a Thickness box takes =Params.wall (Expression Editor, fx). PASS.
+Q4 GUI-fixed file reopened headless: wall 3 -> inside 60 x 40 x 50, wall 3, outside 66 x 46; cup_width 70 -> inside
+   70 x 40 x 50 (outside 74). Comparison cup-typed at wall 3 -> 58 x 38, 49 deep. Trap file at wall 3 -> 54 x 34 x 47.
+   GUI leg = take P. PASS.
+Q5 inward wall 20 (sheet + Recompute button): NO message, no dialog, no notification, Thickness reads Up-to-date /
+   Valid, but the Body shape is INVALID (isValid False), volume 101,333 mm3. Pinned comment only.
+Q6 words: task panel "Thickness Parameters", Select, face list (Face6), "Thickness", "Mode" (Skin), "Join type" (Arc),
+   "Intersection", "Make thickness inwards", "Preview" (Show final result, Show preview overlay), OK / Cancel.
+   Property view hover on Reversed: "Type: App::PropertyBool / Name: Reversed / Apply the thickness towards the solids
+   interior" (q6-reversed-hover.png), = getDocumentationOfProperty. Measure: two inner side faces face each other, so an
+   orthographic view shows one at a time (cross-view pick hit the rim, read 90 deg); the two INNER RIM EDGES in top view
+   (x = +-28 at z 50) read 56.00 mm -> takes use edges (as fc12).
+Q7 your turn (80 wide, 40 long, 50 tall, wall 3): inward 74 wide, 47 deep; outward inside 80 wide, 50 deep, outside 86
+   wide, 53 tall. Short box 50 x 40 x 50, wall 4 inward: 42 wide, 46 deep.
+Q8 A1/B1 start file = P/cup-trap.FCStd: 56 x 36 x 48; Thickness Value = Params.wall; sketch reads cup_width/cup_length.
+Q9 hook = 10 x 10 x 10 block on the +X outside wall at the foot (pinned comment only):
+   joined BEFORE the Thickness, inward: the Thickness gives NO hollow (volume 121,000 = box + block), no message;
+   joined before, outward: cup hollow 60 x 40 x 50 AND the block hollowed too (2 mm skin);
+   padded AFTER the Thickness: cup hollow 56 x 36 x 48, block solid, one solid;
+   a separate Body: the cup's Body hollow, the hook Body untouched (solid).

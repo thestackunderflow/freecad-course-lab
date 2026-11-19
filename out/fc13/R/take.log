@@ -1,0 +1,10 @@
+cup
+prepped cup
+1
+notices at open: []
+rows open: none
+1
+1
+saved
+TAKE R DONE
+FC13 check {"stored": [0.0, 0.0, 0.0, null], "recomputed": [0.0, 0.0, 0.0, null], "at_wall3": [0.0, 0.0, 0.0, null], "at_width70": [0.0, 0.0, 0.0, null]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}

@@ -1,0 +1,74 @@
+== s1 (Q1/Q2/Q6 trap on cup-box) 04:33:29
+cup
+prepped cup
+notices at open: []
+top face centre on screen 1691 646
+selection: [('Pad', ['Face6'])]
+panel: [["QSint::ActionLabel", "Thickness Parameters", [2507, 689]], ["QToolButton", "Select", [2259, 756]], ["list", "Face6", [2529, 801]], ["QLabel", "Thickness", [2368, 1166]], ["Gui::QuantitySpinBox", "field:1.00 mm", [2691, 1166]], ["QLineEdit", "field:1.00 mm", [2676, 1166]], ["QLabel", "Mode", [2368, 1220]], ["QComboBox", "combo:Skin", [2691, 1220]], ["QLabel", "Join type", [2368, 1274]], ["QComboBox", "combo:Arc", [2691, 1274]], ["QCheckBox", "Intersection", [2529, 1324]], ["QCheckBox", "Make thickness inwards", [2529, 1371]], ["QSint::ActionLabel", "Preview", [2507, 1450]], ["QCheckBox", "Show final result", [2529, 1513]], ["QCheckBox", "Show preview overlay", [2529, 1560]], ["QPushButton", "OK", [2428, 615]], ["QPushButton", "Cancel", [2629, 615]]]
+checkbox: [('Do not show this Start page again (start with blank screen)', False), ('Intersection', False), ('Make thickness inwards', True), ('Show final result', False), ('Show preview overlay', True)]
+state in panel: {"value": 1.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 12004.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+== s2 (Q3a name in the box, Q2 OK) 04:33:57
+Thickness field 2691 1166
+after = : expr_ok 2772 1346
+editor texts: ['Result', '2.00']
+panel after expr: "field:2.00" "field:2.00" "combo:Skin" "combo:Arc" 
+state before OK: {"value": 2.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Touched"], "solids": 1, "volume": 12004.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+after OK: {"value": 2.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 23232.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+dialogs: [] notices: []
+report: '04:33:35  Python code executed successfully.\n04:33:35  Python code executed successfully.\n04:33:38  Python code executed successfully.\n04:33:38  Python code executed successfully.\n04:33:46  Python code executed successfully.\n04:33:46  Python code executed successfully.\n04:33:46  Python code executed successfully.\n04:33:57  Python code executed successfully.\n04:34:00  Python code executed successfully.\n04:34:05  Python code executed successfully.\n04:34:05  Python code executed successfully.\n04:34:12  Python code executed successfully.\n04:34:12  Python code executed successfully.\n04:34:12  Python code executed successfully.\n04:34:20  Python code executed successfully.\n04:34:20  Python code executed successfully.\n04:34:20  Python code executed successfully.\n'
+prepped cup
+1
+saved
+FC13 check {"stored": [56.0, 36.0, 48.0, 2.0], "recomputed": [56.0, 36.0, 48.0, 2.0], "at_wall3": [54.0, 34.0, 47.0, 3.0], "at_width70": [66.0, 36.0, 48.0, 2.0]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}
+== s3 (Q3 fix in the GUI, Q6 Reversed hover) 04:34:38
+row 205 469
+panel: "QSint::ActionLabel", "Thickness Parameters" "QToolButton", "Select" "QLabel", "Thickness" "QLineEdit", "field:2.00 mm" "QLabel", "Mode" "QComboBox", "combo:Skin" "QLabel", "Join type" "QComboBox", "combo:Arc" "QCheckBox", "Intersection" "QCheckBox", "Make thickness inwards" "QSint::ActionLabel", "Preview" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" "QPushButton", "OK" "QPushButton", "Cancel" 
+checkbox at 2529 1371
+checkbox: [('Make thickness inwards', True)]
+state before OK: {"value": 2.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 23232.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+after OK: {"value": 2.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 23232.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+dialogs: [] notices: []
+prepped cup
+1
+saved
+FC13 check {"stored": [56.0, 36.0, 48.0, 2.0], "recomputed": [56.0, 36.0, 48.0, 2.0], "at_wall3": [54.0, 34.0, 47.0, 3.0], "at_width70": [66.0, 36.0, 48.0, 2.0]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}
+Reversed row 102 1414
+tooltip: 'Type: App::PropertyBool\nName: Reversed\n\nApply the thickness towards the solids interior'
+doc string: 'Apply the thickness towards the solids interior'
+== s3b (untick retry: the box itself, plain click) 04:35:30
+checkbox at none
+after plain click on the box (-238 none): [] {"value": 2.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 23232.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+== s3b (untick retry: the box itself, plain click) 04:35:40
+checkbox at 2529 1371: [('Make thickness inwards', True)]
+after plain click on the box (2291 1371): [('Make thickness inwards', False)] {"value": 2.0, "reversed": false, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Touched"], "solids": 1, "volume": 23232.0, "bbox": [60.0, 40.0, 0.0, 50.0]}
+== s3c (Q3 OK after the untick) 04:35:58
+after OK: {"value": 2.0, "reversed": false, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 26073.392, "bbox": [64.0, 44.0, -2.0, 50.0]}
+dialogs: [] notices: []
+prepped cup
+1
+saved
+FC13 check {"stored": [60.0, 40.0, 50.0, 2.0], "recomputed": [60.0, 40.0, 50.0, 2.0], "at_wall3": [60.0, 40.0, 50.0, 3.0], "at_width70": [70.0, 40.0, 50.0, 2.0]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}
+== s4 (Q6 Measure route on the GUI trap file) 04:36:45
+trap
+prepped trap
+docs: ['cup', 'trap']
+rot 30: point (28,0,30) at 1933 885 -> [('Thickness', ['Face2'])]
+rot 30: point (-28,0,30) at 1370 935 -> [('Thickness', ['Face1'])]
+rot -30: point (28,0,30) at 2005 1106 -> [('Thickness', ['Face2'])]
+rot -30: point (-28,0,30) at 1356 730 -> [('Thickness', ['Edge4'])]
+faces 1: [('Thickness', ['Face2'])]
+faces 2: [('Thickness', ['Face2', 'Edge4'])]
+faces measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:0.00 mm 
+edges sel: [('Thickness', ['Edge16', 'Edge14'])]
+edges measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:56.00 mm 
+== s4c (faces route: Face8 in one view, Ctrl + Face10 in the mirrored view) 04:38:12
+pick 1 at 2200 994: [('Thickness', ['Face8'])]
+pick 2 at 1222 854: [('Thickness', ['Face8', 'Face6'])]
+faces measure: combo:Angle field:90.00\u00b0 
+== s5 (Q5 edge: inward wall 20, through the sheet + Recompute button) 04:38:41
+state: {"value": 20.0, "reversed": true, "mode": "Skin", "join": "Arc", "expr": [["Value", "Params.wall"]], "base": ["Pad", ["Face6"]], "state": ["Up-to-date"], "solids": 1, "volume": 101333.333, "bbox": [60.0, 40.0, 0.0, 50.0]}
+status: [('Body', ['Expanded', 'Up-to-date'], 'Valid'), ('Pad', ['Up-to-date'], 'Valid'), ('Thickness', ['Up-to-date'], 'Valid')]
+valid: False
+dialogs: [] notices: []
+report: '04:38:43  Python code executed successfully.\n04:38:51  Python code executed successfully.\n04:38:52  Python code executed successfully.\n04:38:52  Python code executed successfully.\n04:38:52  Python code executed successfully.\n04:38:52  Python code executed successfully.\n'
+prepped trap

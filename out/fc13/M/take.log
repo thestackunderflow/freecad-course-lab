@@ -1,0 +1,15 @@
+cup
+prepped cup
+1
+notices at open: []
+rows open: 205 469
+1
+across edges 2141 985 1222 985
+across measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:56.00 mm 
+across selection: [('Thickness', ['Edge16', 'Edge14'])]
+front-back edges 1682 690 1682 1281
+front-back measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:36.00 mm 
+front-back selection: [('Thickness', ['Edge15', 'Edge13'])]
+saved
+TAKE M DONE
+FC13 check {"stored": [56.0, 36.0, 48.0, 2.0], "recomputed": [56.0, 36.0, 48.0, 2.0], "at_wall3": [54.0, 34.0, 47.0, 3.0], "at_width70": [66.0, 36.0, 48.0, 2.0]} {"kind": "name", "alias": "cup_width", "reached": ["cup_length", "cup_width"]}
