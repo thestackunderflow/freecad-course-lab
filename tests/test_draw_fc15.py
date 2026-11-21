@@ -143,7 +143,7 @@ def test_key_words_drawn(run):
               'run 1, wall 3: 1.2 + 1.2', 'run 2, wall 3: 1.35 + 1.35', 'run 1, wall 1.6: 0.64 + 0.64',
               'run 2, wall 1.6: 0.72 + 0.72', '0.8 built, 0.85 failed,', '0.9 built (run 2)',
               'FILLET 3 ON A 2 MM WALL:', 'FAILED', 'Your turn: wall 2.5', 'outside 1.2, inside 1.5',
-              'Builds, or fails?', 'both share', 'checked by code', 'from the run log', 'its reply (words as written):',
+              'Builds, or fails?', 'both share', 'checked by code', 'from the run log', "Claude's reply, quoted:",
               'It builds for walls from 0.75 mm to 10 mm.'):
         assert s in allt, s
 
@@ -163,3 +163,35 @@ def test_numbers_match_the_lab():
     a, b_ = NUM['runs']['A1']['check'], NUM['runs']['B1']['check']
     assert a['at_wall2']['round_radii'] == {'out': [0.8], 'in': [0.8]} and a['at_wall2']['flat'] == 0.4
     assert b_['at_wall2']['round_radii'] == {'out': [0.9], 'in': [0.9]} and b_['at_wall2']['flat'] == 0.2
+
+
+def test_locator_insets(run):
+    """fc15 cut 1 (lesson 14/15 gate: the full part before every close-up): every rim close-up carries an inset of the
+    whole cup (take R's iso view) with the zoomed spot boxed, top left of the 3D view, clear of the labels and rings."""
+    for n, word in (('ov-loc-iso.png', 'close up'), ('ov-loc-top.png', 'from above')):
+        assert n in run, n
+        im = Image.open(os.path.join(d.OUT, n))
+        assert im.size == (2880, 1800)
+        x0, y0, x1, y1 = im.getbbox()
+        assert x0 >= 480 and y0 >= 300 and x1 <= 1120 and y1 <= 900, (n, im.getbbox())
+        assert x1 - x0 >= 380 and y1 - y0 >= 400, n
+        assert any(word in t for t in texts(run, n)), n
+        r, g, b, a = im.getpixel(d.LOC_MARK)
+        assert a > 200 and r > 200 and b < 120, (n, d.LOC_MARK, (r, g, b, a))
+
+
+def test_quotes_read_as_quotes(run):
+    """fc15 cut 1 (lesson 14/15 gate): the re-set reply is a labelled quote, never a look-alike of our code panels."""
+    for n in ('ov-quote-B1a.png', 'ov-quote-B1b.png'):
+        t = texts(run, n)
+        assert t[0] == "Claude's reply, quoted:", t
+        assert t[1].startswith('\u201c') and t[-1].endswith('\u201d'), t
+        assert not any('checked by code' in x for x in t)
+
+
+def test_after_stills_show_the_part_big(run):
+    """fc15 cut 1 (lesson 14 gate: Claude stills show the result): the cup cropped from its 3D view at 1.0x or more
+    (was the whole pane at 0.76x), with a whole-window inset beside it (the full window before a crop)."""
+    for r in ('A1', 'B1'):
+        assert d.STILL_K[r] >= 1.0, (r, d.STILL_K[r])
+        assert 'whole window' in texts(run, f'still-after-{r}.png')

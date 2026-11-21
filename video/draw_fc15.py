@@ -300,19 +300,32 @@ def run_lines():
             f'run 2, wall 1.6: {r(bb, 1.6)}']
 
 
+STILL_CROP = {'A1': (1720, 560, 2720, 1420), 'B1': (1720, 400, 2800, 1500)}   # after.png: the cup in its 3D view
+STILL_K = {}
+
+
 def still_after(run, chip):
     """F14: the run's file after the run (still), the panel beside it (never over it)."""
     im, d = canvas()
-    shot = Image.open(os.path.join(TAKES, 'runs', run, 'after.png')).convert('RGB')
-    shot = shot.crop((1160, 0, SW, SH)) if shot.width == SW else shot
-    k = 1300 / shot.width
-    s = shot.resize((1300, round(shot.height * k)), Image.LANCZOS)
+    full = Image.open(os.path.join(TAKES, 'runs', run, 'after.png')).convert('RGB')
+    # fc15 cut 1: the cup cropped from the 3D view (screen px), big; the whole window as an inset beside it
+    box = STILL_CROP[run]
+    shot = full.crop(box)
+    k = min(1300 / shot.width, 1150 / shot.height)
+    STILL_K[run] = round(k, 2)
+    s = shot.resize((round(shot.width * k), round(shot.height * k)), Image.LANCZOS)
     im.paste(s, (140, 220))
     d.rectangle((137, 217, 140 + s.width + 2, 220 + s.height + 2), outline=PARTLINE, width=3)
     text(d, (140, 130), 'its file after the run (still)', 56, INK)
     chip_on(d, (1500, 220), chip, BLUE, px=48)
     lines = run_lines()
     code_box(d, 1500, 400, lines, 'checked by code', 52, 0.8)
+    ki = 600 / full.width
+    th = full.resize((600, round(full.height * ki)), Image.LANCZOS)
+    im.paste(th, (1500, 860))
+    d.rectangle((1498, 858, 1502 + th.width, 862 + th.height), outline=PARTLINE, width=3)
+    d.rectangle(tuple(round(v * ki) + o for v, o in zip(box, (1500, 860, 1500, 860))), outline=ORANGE, width=5)
+    text(d, (1500, 870 + th.height), 'whole window', 48, GREY)
     for ln in lines:
         if len(ln) > 32:
             PROBLEMS.append(f'{ln!r}: over 32')
@@ -431,10 +444,65 @@ def quote(name, run, lines, xy=CC_XY, px=52):
     """Claude's own words, re-set word for word from reply.txt (lines that scrolled off before the last frame)."""
     reply = ' '.join(open(os.path.join(TAKES, 'runs', run, 'reply.txt'), encoding='utf-8').read().split())
     assert ' '.join(lines) in reply, lines
+    # fc15 cut 1: its own look (pale blue, a quote bar, quote marks), never a look-alike of our "checked by code" panel
     im, d = source()
-    code_box(d, xy[0], xy[1], list(lines), 'its reply (words as written):', px, 0.8)
+    lines = list(lines)
+    lines[0] = lines[0][2:] if lines[0].startswith('- ') else lines[0]   # the Markdown bullet is not a word
+    lines[0] = '“' + lines[0]
+    lines[-1] = lines[-1] + '”'
+    fh, fl = b.font(b.B, px), b.font(f10.MONO, px)
+    title = "Claude's reply, quoted:"
+    lh, pad = round(px * 1.3), round(px * 0.55)
+    rows = [(title, fh)] + [(t, fl) for t in lines]
+    x, y = xy
+    w = max(d.textlength(t, font=f) for t, f in rows) + 2 * pad + 24
+    h = lh * len(rows) + pad
+    d.rounded_rectangle((x, y, x + w, y + h), radius=round(px * 0.3), fill=(219, 234, 254, 250),
+                        outline=BLUE + (255,), width=4)
+    d.rectangle((x + 10, y + 12, x + 22, y + h - 12), fill=BLUE + (255,))
+    for i, (t, f) in enumerate(rows):
+        d.text((x + pad + 24, y + pad * 0.6 + i * lh), t, font=f, fill=(BLUE if i == 0 else INK) + (255,))
+        CUR.append((t, round(px * 0.8)))
+    if x + w > SW or y + h > SH:
+        PROBLEMS.append(f'{name}: quote off the frame')
     save(im, name)
     PANEL_NAMES.append(name)
+
+
+ISO_R = os.path.join(TAKES, 'R', 'iso-32.png')   # take R at 32.0 s, the fitted iso view (ffmpeg, video-qa:2)
+ISO_CROP = (1180, 260, 2380, 1580)                # the whole cup on that frame
+RIM_SPOT = (2068, 814)                            # (31, 0, 50): the right wall's top edge, where every zoom looks
+LOC_XY, LOC_H = (510, 310), 480
+
+
+def _loc_geom():
+    s = LOC_H / (ISO_CROP[3] - ISO_CROP[1])
+    w = round((ISO_CROP[2] - ISO_CROP[0]) * s)
+    mx = LOC_XY[0] + 16 + round((RIM_SPOT[0] - ISO_CROP[0]) * s)
+    my = LOC_XY[1] + 16 + round((RIM_SPOT[1] - ISO_CROP[1]) * s)
+    return s, w, (mx, my)
+
+
+LOC_MARK = (_loc_geom()[2][0] - 36, _loc_geom()[2][1])   # a pixel on the mark's left side (tests)
+
+
+def locator(name, caption):
+    """fc15 cut 1: an inset of the whole cup (R's iso view) with the zoomed spot boxed, for the rim close-ups."""
+    im, d = source()
+    s, w, (mx, my) = _loc_geom()
+    x, y = LOC_XY
+    pic = Image.open(ISO_R).convert('RGB').crop(ISO_CROP).resize((w, LOC_H), Image.LANCZOS)
+    d.rounded_rectangle((x, y, x + w + 32, y + LOC_H + 84), radius=16, fill=WHITE + (250,), outline=ORANGE + (255,),
+                        width=5)
+    im.paste(pic, (x + 16, y + 16))
+    d = ImageDraw.Draw(im)
+    d.rectangle((mx - 36, my - 24, mx + 36, my + 24), outline=ORANGE + (255,), width=7)
+    f = b.font(b.B, 40)
+    d.text((x + 18, y + LOC_H + 26), caption, font=f, fill=INK + (255,))
+    CUR.append((caption, round(40 * 0.8)))
+    if d.textlength(caption, font=f) > w + 10:
+        PROBLEMS.append(f'{caption!r}: wider than the inset')
+    save(im, name)
 
 
 RECAP = ['A round uses its radius\non the top and the side', 'Rim out + rim in\nless than the wall',
@@ -493,6 +561,8 @@ def main():
     ring('ov-flat-F.png', FLAT_F, GREEN)
     ring('ov-err-P.png', ROW_F001, RED)
     sums()
+    locator('ov-loc-iso.png', 'the rim, close up')
+    locator('ov-loc-top.png', 'rim, from above')
     for s in (1, 2, 3):
         ov_lines(f'rc-{s}.png', RECAP, s, (20, 1120, 1300, 1720))
     ov_lines('yt-1.png', TURN, 3, (20, 1300, 1300, 1720), px=56, one=True)
