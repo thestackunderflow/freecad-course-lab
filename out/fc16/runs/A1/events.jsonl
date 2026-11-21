@@ -1,0 +1,16 @@
+{"t": 0.056, "event": "recording started: Claude Code (left, FreeCAD plug only), FreeCAD with cup open (right)"}
+{"t": 2.121, "event": "turn 1: typing", "text": "My wall cup's hanging hole in the back wall closed up when I changed the wall to 3. Fix it so the hole goes through the back wall whatever the wall thickness."}
+{"t": 10.338, "event": "turn 1: Enter"}
+{"t": 15.812, "event": "tool call: list_documents", "seq": 18}
+{"t": 15.824, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 19.297, "event": "tool call: execute_code", "seq": 20}
+{"t": 19.309, "event": "tool reply: execute_code", "seq": 21, "isError": false}
+{"t": 23.021, "event": "tool call: execute_code", "seq": 22}
+{"t": 23.031, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 28.761, "event": "tool call: execute_code", "seq": 24}
+{"t": 29.733, "event": "tool reply: execute_code", "seq": 25, "isError": false}
+{"t": 33.212, "event": "tool call: execute_code", "seq": 26}
+{"t": 33.416, "event": "tool reply: execute_code", "seq": 27, "isError": false}
+{"t": 35.948, "event": "turn 1: end-of-turn line seen"}
+{"t": 37.95, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 43.972, "event": "recording stopped"}

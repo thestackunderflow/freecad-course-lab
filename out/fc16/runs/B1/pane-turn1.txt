@@ -1,0 +1,36 @@
+    z = 40 (z 35–45), and it starts at y =
+    −20, the inside face of the wall. That has
+    three consequences:
+    - The peg tip is always at y = −35, so it
+      sticks out only peg_length − wall, which
+      is 12 mm at wall 3. Thicker walls
+      shorten the peg. If you want 15 mm
+      outside the wall, the peg needs to start
+      at the outer face or its length needs
+      to be peg_length + wall.
+    - The peg's z centre uses a typed-in 40 −
+      peg_size/2, not cup_height. It won't
+      follow height changes.
+    - The peg's lower edge is only 2.5 mm
+      above the hole's top edge in z (peg
+      bottom z = 35, hole top z = 32.5).
+      That's fine as they're on different
+      walls, but it's tight if you ever move
+      them to the same wall.
+  - Skeleton: the walls and floor grow
+    outward, so the outside is 66×46 and the
+    floor is at z = −3…0. The cup_width and
+    cup_length values are therefore inner
+    dimensions.
+
+  I haven't changed the peg or the hole's wall
+  or position. Tell me which you want and
+  I'll update them.
+
+✻ Churned for 47s · done 7:59 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

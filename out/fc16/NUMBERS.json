@@ -1,0 +1,875 @@
+{
+ "source": "out/fc16/P/build.json (lab/fc16parts.py, freecadcmd 1.1.4) + out/fc16/runs/*",
+ "start_file": "/lab/out/fc14/P/peg-fixed.FCStd",
+ "q9_branch": {
+  "lesson14_cup_builds": {
+   "2": true,
+   "3": true,
+   "4": true,
+   "12": true
+  },
+  "lesson15_rim_both_builds": {
+   "2": false,
+   "3": true,
+   "4": true,
+   "12": true
+  }
+ },
+ "pocket_types": [
+  "Length",
+  "ThroughAll",
+  "UpToFirst",
+  "UpToFace",
+  "?TwoLengths",
+  "UpToShape"
+ ],
+ "q1_typed2_wall2": {
+  "skin": 0,
+  "pit_depth": 2.0,
+  "back_hole_w": 5.0,
+  "front_solid": true,
+  "front_hole_w": 0.0,
+  "peg_solid": true,
+  "outside_w": 64.0,
+  "outside_l": 44.0,
+  "inside_w": 60.0,
+  "inside_l": 40.0,
+  "inside_d": 50.0,
+  "solids": 1,
+  "volume": 27334.122,
+  "open": true,
+  "face": "Face13",
+  "reversed": false,
+  "sketch_normal": [
+   0.0,
+   1.0,
+   -0.0
+  ]
+ },
+ "q2_sketch_centre": {
+  "2": [
+   0.0,
+   22.0,
+   30.0
+  ],
+  "3": [
+   0.0,
+   23.0,
+   30.0
+  ],
+  "4": [
+   0.0,
+   24.0,
+   30.0
+  ]
+ },
+ "q2_support": {
+  "2": [
+   [
+    "Pad001",
+    [
+     "Face13"
+    ]
+   ]
+  ],
+  "3": [
+   [
+    "Pad001",
+    [
+     "Face13"
+    ]
+   ]
+  ],
+  "4": [
+   [
+    "Pad001",
+    [
+     "Face13"
+    ]
+   ]
+  ]
+ },
+ "q3_typed2_wall3": {
+  "skin": 1.0,
+  "pit_depth": 2.0,
+  "back_hole_w": 5.0,
+  "front_solid": true,
+  "front_hole_w": 0.0,
+  "peg_solid": true,
+  "outside_w": 66.0,
+  "outside_l": 46.0,
+  "inside_w": 60.0,
+  "inside_l": 40.0,
+  "inside_d": 50.0,
+  "solids": 1,
+  "volume": 41244.712,
+  "axis_air": {
+   "y20.05": false,
+   "ymid": true,
+   "yout-0.05": true
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  }
+ },
+ "q4_through_wall3": {
+  "skin": 0,
+  "pit_depth": 3.0,
+  "back_hole_w": 5.0,
+  "front_solid": false,
+  "front_hole_w": 5.0,
+  "peg_solid": true,
+  "outside_w": 66.0,
+  "outside_l": 46.0,
+  "inside_w": 60.0,
+  "inside_l": 40.0,
+  "inside_d": 50.0,
+  "solids": 1,
+  "volume": 41166.172,
+  "axis_air": {
+   "y20.05": true,
+   "ymid": true,
+   "yout-0.05": true
+  }
+ },
+ "q4_through_wall2": {
+  "skin": 0,
+  "pit_depth": 2.0,
+  "back_hole_w": 5.0,
+  "front_solid": false,
+  "front_hole_w": 5.0,
+  "peg_solid": true,
+  "outside_w": 64.0,
+  "outside_l": 44.0,
+  "inside_w": 60.0,
+  "inside_l": 40.0,
+  "inside_d": 50.0,
+  "solids": 1,
+  "volume": 27294.852
+ },
+ "q5_fix_expr": "Params.wall",
+ "q5_fix": {
+  "2": {
+   "skin": 0,
+   "pit_depth": 2.0,
+   "back_hole_w": 5.0,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "solids": 1,
+   "volume": 27334.122,
+   "open": true
+  },
+  "3": {
+   "skin": 0,
+   "pit_depth": 3.0,
+   "back_hole_w": 5.0,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "solids": 1,
+   "volume": 41225.077,
+   "open": true
+  }
+ },
+ "q6_proof": {
+  "reopen_w2": {
+   "skin": 0,
+   "pit_depth": 2.0,
+   "back_hole_w": 5.0,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "solids": 1,
+   "volume": 27334.122,
+   "open": true
+  },
+  "reopen_w4": {
+   "skin": 0,
+   "pit_depth": 4.0,
+   "back_hole_w": 5.0,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 68.0,
+   "outside_l": 48.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "solids": 1,
+   "volume": 55782.05,
+   "open": true
+  },
+  "hole6": {
+   "skin": 0,
+   "pit_depth": 4.0,
+   "back_hole_w": 6.0,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 68.0,
+   "outside_l": 48.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "solids": 1,
+   "volume": 55747.492,
+   "open": true
+  },
+  "typed_w4": {
+   "skin": 2.0,
+   "pit_depth": 2.0,
+   "back_hole_w": 0.0,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 68.0,
+   "outside_l": 48.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "solids": 1,
+   "volume": 55821.32,
+   "open": false
+  }
+ },
+ "q7_second_ways": {
+  "UpToFirst": {
+   "2": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFirst",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "3": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFirst",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "4": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFirst",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "UpToFace": {
+   "2": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFace",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "uptoface": [
+       "Pad001",
+       [
+        "Face5"
+       ]
+      ],
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "3": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFace",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "uptoface": [
+       "Pad001",
+       [
+        "Face5"
+       ]
+      ],
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "4": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFace",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "uptoface": [
+       "Pad001",
+       [
+        "Face5"
+       ]
+      ],
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "q10_hole_tool": {
+  "defaults": {
+   "DepthType": "Dimension",
+   "Depth": "25.0 mm",
+   "DrillPoint": "Angled",
+   "DrillPointAngle": "118.0 deg",
+   "Diameter": "6.0 mm",
+   "DrillForDepth": "False",
+   "Threaded": "False"
+  },
+  "depth_types": [
+   "Dimension",
+   "ThroughAll"
+  ],
+  "drill_points": [
+   "Flat",
+   "Angled"
+  ],
+  "typed2_Flat_w3": {
+   "builds": true,
+   "axis_air": {
+    "y20.05": false,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [
+    [
+     20.0,
+     21.0
+    ]
+   ],
+   "skin": 1.0,
+   "inside_face_segs_x": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "front_solid": true
+  },
+  "typed2_Angled_w3": {
+   "builds": true,
+   "axis_air": {
+    "y20.05": true,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [],
+   "skin": 0,
+   "inside_face_segs_x": [
+    [
+     -5.0,
+     -0.8524
+    ],
+    [
+     0.8524,
+     5.0
+    ]
+   ],
+   "front_solid": true
+  }
+ },
+ "q11_your_turn": {
+  "long_2.5_w2.5": {
+   "skin": 0,
+   "front_solid": true
+  },
+  "long_2.5_w6": {
+   "skin": 3.5,
+   "front_solid": true
+  },
+  "short_2_w4": {
+   "skin": 2.0,
+   "front_solid": true
+  }
+ },
+ "runs": {
+  "A1": {
+   "cost_usd": 0.0981,
+   "wall_s": 110,
+   "pass": true,
+   "criteria": {
+    "2": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true,
+     "f": true
+    },
+    "3": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true,
+     "f": true
+    },
+    "12": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true,
+     "f": true
+    }
+   },
+   "depth_stored": {
+    "type": "Length",
+    "expr": "Params.wall + 1",
+    "length": 4.0
+   },
+   "at_walls": {
+    "2": {
+     "depth": {
+      "type": "Length",
+      "expr": "Params.wall + 1",
+      "length": 3.0
+     },
+     "skin": 0,
+     "back_hole_w": 5.0,
+     "front_solid": true,
+     "outside_w": 64.0
+    },
+    "3": {
+     "depth": {
+      "type": "Length",
+      "expr": "Params.wall + 1",
+      "length": 4.0
+     },
+     "skin": 0,
+     "back_hole_w": 5.0,
+     "front_solid": true,
+     "outside_w": 66.0
+    },
+    "12": {
+     "depth": {
+      "type": "Length",
+      "expr": "Params.wall + 1",
+      "length": 13.0
+     },
+     "skin": 0,
+     "back_hole_w": 5.0,
+     "front_solid": true,
+     "outside_w": 84.0
+    }
+   },
+   "wall_left": 3.0,
+   "tree": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001",
+    "HoleSketch",
+    "Pocket"
+   ]
+  },
+  "B1": {
+   "cost_usd": 0.1316,
+   "wall_s": 135,
+   "pass": true,
+   "criteria": {
+    "2": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true,
+     "f": true
+    },
+    "3": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true,
+     "f": true
+    },
+    "12": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true,
+     "f": true
+    }
+   },
+   "depth_stored": {
+    "type": "Length",
+    "expr": "Params.wall",
+    "length": 3.0
+   },
+   "at_walls": {
+    "2": {
+     "depth": {
+      "type": "Length",
+      "expr": "Params.wall",
+      "length": 2.0
+     },
+     "skin": 0,
+     "back_hole_w": 5.0,
+     "front_solid": true,
+     "outside_w": 64.0
+    },
+    "3": {
+     "depth": {
+      "type": "Length",
+      "expr": "Params.wall",
+      "length": 3.0
+     },
+     "skin": 0,
+     "back_hole_w": 5.0,
+     "front_solid": true,
+     "outside_w": 66.0
+    },
+    "12": {
+     "depth": {
+      "type": "Length",
+      "expr": "Params.wall",
+      "length": 12.0
+     },
+     "skin": 0,
+     "back_hole_w": 5.0,
+     "front_solid": true,
+     "outside_w": 84.0
+    }
+   },
+   "wall_left": 3.0,
+   "tree": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001",
+    "HoleSketch",
+    "Pocket"
+   ]
+  }
+ },
+ "runs_total_usd": 0.2297
+}

@@ -91,3 +91,9 @@ def test_score_needs_open_back_closed_front_and_bound_depth():
     assert not passes({w: snap(w, front=False) for w in walls})[0]          # Through all
     assert not passes({w: snap(w, bound=False) for w in walls})[0]          # a big typed number (class 4)
     assert not passes({2: snap(2), 3: snap(3), 12: snap(12, open_=False)})[0]
+
+
+def test_numbers_runs_pass_within_cap_and_trap_numbers_carried():
+    n = json.load(open(os.path.join(HERE, 'NUMBERS.json')))
+    assert n['runs_total_usd'] <= 0.50 and all(r['cost_usd'] <= 0.25 for r in n['runs'].values())
+    assert near(n['q3_typed2_wall3']['skin'], 1.0) and not n['q4_through_wall3']['front_solid']

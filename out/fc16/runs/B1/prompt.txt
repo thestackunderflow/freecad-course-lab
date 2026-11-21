@@ -1,0 +1,1 @@
+My wall cup's hanging hole in the back wall closed up when I changed the wall to 3. Fix it so the hole goes through the back wall whatever the wall thickness. Then check the back wall, the front wall and the peg and tell me what you find.

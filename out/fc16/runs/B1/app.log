@@ -1,0 +1,26 @@
+MCP RPC: GUI task raised AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 7, in <module>
+AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+Error executing Python code: AttributeError: 'Sketcher.SketchObject' object has no attribute 'Support'
+--- code ---
+import FreeCAD as App
+d=App.getDocument("cup")
+for n in ["Pad","Thickness","Pad001","Pocket"]:
+    o=d.getObject(n); b=o.Shape.BoundBox
+    print(n,o.Shape.isValid(),len(o.Shape.Solids),round(o.Shape.Volume,1),b)
+hs=d.getObject("HoleSketch")
+print(hs.Support, hs.Placement, hs.Shape.BoundBox)
+for c in hs.Constraints: print(c.Name,c.Type,c.Value)
+p=d.getObject("Pocket"); print(p.Type,p.Reversed,p.Midplane)
+# probe the walls
+s=d.getObject("Pocket").Shape
+import Part
+for y in (-19.5,-18,-17.5,-10,17.5,19.5):
+    print(y,[s.isInside(App.Vector(x,y,z),1e-6,True) for x,z in ((0,30),(0,40),(20,30))])
+--- end ---
