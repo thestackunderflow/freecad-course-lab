@@ -1,0 +1,8 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+saved
+TAKE Y DONE
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 2.0}], "3": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 3.0}], "12": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 12.0}]} PASS

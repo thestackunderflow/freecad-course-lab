@@ -1,0 +1,19 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+inside w3: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+panel open: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Dimension "QLabel", "Length" field:2.00 mm field:2.00 mm "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" 
+Type list rows: "popup": [["Dimension", 2752, 826], ["Through all", 2752, 865], ["To first", 2752, 905], ["Up to face", 2752, 945], ["Up to shape", 2752, 984]]
+panel before OK: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Through all "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" 
+after OK: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+notices: []
+1
+inside through: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+1
+1
+front through: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+saved
+TAKE A DONE
+FC16 check {"2": [true, 0, false, {"type": "ThroughAll", "expr": null, "length": 2.0}], "3": [true, 0, false, {"type": "ThroughAll", "expr": null, "length": 2.0}], "12": [true, 0, false, {"type": "ThroughAll", "expr": null, "length": 2.0}]} FAIL

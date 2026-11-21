@@ -1,0 +1,28 @@
+notices at open: []
+cup
+prepped cup
+1
+notices at reopen: []
+reopened: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+1
+wall cell 855 572
+wall 4: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55782.05, "solids": 1}
+wb combo 703 86
+wb Part Design at 757 336
+1
+1
+inside w4: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55782.05, "solids": 1}
+1
+front w4: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55782.05, "solids": 1}
+1
+hole_size cell 855 734
+hole_size 6: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55747.492, "solids": 1}
+wb combo 703 86
+wb Part Design at 757 336
+1
+1
+1
+inside hole6: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55747.492, "solids": 1}
+saved
+TAKE P DONE
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 2.0}], "3": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 3.0}], "12": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 12.0}]} FAIL

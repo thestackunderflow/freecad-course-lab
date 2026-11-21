@@ -1,0 +1,10 @@
+{"t": 0.031, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (A)"}
+{"t": 7.843, "event": "view: Inside (64 mm high, at 0 20 30)"}
+{"t": 13.376, "event": "double-click: Pocket"}
+{"t": 18.828, "event": "Type list", "x": 2692, "y": 826, "button": 1}
+{"t": 24.761, "event": "Type: Through all", "x": 2752, "y": 865, "button": 1}
+{"t": 30.127, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 38.743, "event": "view: Inside (64 mm high, at 0 20 30)"}
+{"t": 42.989, "event": "key 0: isometric", "keys": "0"}
+{"t": 44.202, "event": "(view fitted)"}
+{"t": 51.96, "event": "view: Front (30 mm high, at 0 -22 34)"}

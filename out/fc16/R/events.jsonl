@@ -1,0 +1,12 @@
+{"t": 0.074, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (R)"}
+{"t": 13.22, "event": "double-click: open Params"}
+{"t": 18.745, "event": "hover: Params row 4"}
+{"t": 22.018, "event": "hover: Params row 7"}
+{"t": 26.562, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 30.798, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 35.562, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 38.771, "event": "key 0: isometric", "keys": "0"}
+{"t": 39.974, "event": "(view fitted)"}
+{"t": 48.231, "event": "view: Rear (70 mm high, at 0 22 25)"}
+{"t": 52.37, "event": "key 0: isometric", "keys": "0"}
+{"t": 53.586, "event": "(view fitted)"}

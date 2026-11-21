@@ -1,0 +1,33 @@
+{"t": 0.066, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (D)"}
+{"t": 8.578, "event": "view: Rear (70 mm high, at 0 22 25)"}
+{"t": 12.208, "event": "click: the back face", "x": 1681, "y": 718, "button": 1}
+{"t": 15.426, "event": "hover: New sketch"}
+{"t": 17.362, "event": "New sketch", "x": 583, "y": 158, "button": 1}
+{"t": 22.177, "event": "key G", "keys": "g"}
+{"t": 22.798, "event": "key C (circle)", "keys": "c"}
+{"t": 26.678, "event": "circle: centre (on the vertical axis)", "x": 1680, "y": 883, "button": 1}
+{"t": 28.849, "event": "circle: typed 5", "text": "5"}
+{"t": 29.587, "event": "circle: Enter (5)", "keys": "Return"}
+{"t": 32.001, "event": "right-click: circle tool off"}
+{"t": 34.58, "event": "double-click: Constraint1 (5 mm), the diameter"}
+{"t": 36.826, "event": "Diameter: typed = (Expression Editor)", "text": "="}
+{"t": 38.912, "event": "editor: typed Params.hole_size", "text": "Params.hole_size"}
+{"t": 41.794, "event": "editor: Enter (the list)", "keys": "Return"}
+{"t": 43.414, "event": "editor: Enter (OK)", "keys": "Return"}
+{"t": 45.182, "event": "Insert Diameter: Enter (OK)", "keys": "Return"}
+{"t": 49.59, "event": "click: empty space above the cup (nothing selected)", "x": 1227, "y": 327, "button": 1}
+{"t": 53.383, "event": "click: the circle's centre", "x": 1680, "y": 884, "button": 1}
+{"t": 55.122, "event": "key I (vertical distance)", "keys": "i"}
+{"t": 57.358, "event": "typed 30", "text": "30"}
+{"t": 58.177, "event": "Enter (30)", "keys": "Return"}
+{"t": 65.053, "event": "Close (the sketch)", "x": 2527, "y": 615, "button": 1}
+{"t": 70.38, "event": "tree: the hole sketch", "x": 208, "y": 534, "button": 1}
+{"t": 73.036, "event": "hover: Pocket"}
+{"t": 74.926, "event": "Pocket", "x": 462, "y": 228, "button": 1}
+{"t": 83.891, "event": "Length: click", "x": 2649, "y": 882, "button": 1}
+{"t": 85.041, "event": "Length: typed 2", "text": "2"}
+{"t": 90.258, "event": "OK", "x": 2426, "y": 615, "button": 1}
+{"t": 95.175, "event": "key 0: isometric", "keys": "0"}
+{"t": 96.488, "event": "(view fitted)"}
+{"t": 105.901, "event": "view: Rear (24 mm high, at 0 22.0 30)"}
+{"t": 113.682, "event": "view: Inside (64 mm high, at 0 20 30)"}

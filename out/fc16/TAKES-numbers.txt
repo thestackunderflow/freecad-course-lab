@@ -1,0 +1,45 @@
+# fc16 GUI takes (21 Nov 2026, FreeCAD 1.1.4 by hand, lab/fc16_take.sh, --network none, no AI): numbers read off-camera per step
+# expected = RESULTS-fc16.md / NUMBERS.json (G0 by code). Take P films into K/ (P/ holds the start files).
+## R
+## D
+sketch: Sketch002 [(<PartDesign::Pad>, ('Face13',))] FlatFace
+sketch: [('Diameter', 5.0), ('PointOnObject', 0.0), ('DistanceY', 30.0)] [('Constraints[0]', 'Params.hole_size')] True ['Circle (Radius : 2.5, Position : (0, 30, 0), Direction : (0, 0, 1))']
+panel before OK: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Dimension "QLabel", "Length" field:2 field:2 "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBox", "S
+after OK: {"wall": 2.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 27334.122, "solids": 1}
+inside w2: {"wall": 2.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 27334.122, "solids": 1}
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": null, "length": 2.0}], "3": [true, 1.0, true, {"type": "Length", "expr": null, "length": 2.0}], "12": [true, 10.0, true, {"type": "Length", "expr": null, "length": 2.0}]} FAIL
+## T
+wall cell 855 572
+wall 3: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+inside w3: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+skin-w3 measure: combo:Distance field:1.00 mm 
+inside w3b: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": null, "length": 2.0}], "3": [true, 1.0, true, {"type": "Length", "expr": null, "length": 2.0}], "12": [true, 10.0, true, {"type": "Length", "expr": null, "length": 2.0}]} FAIL
+## A
+inside w3: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+Type list rows: "popup": [["Dimension", 2752, 826], ["Through all", 2752, 865], ["To first", 2752, 905], ["Up to face", 2752, 945], ["Up to shape", 2752, 984]]
+panel before OK: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Through all "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" 
+after OK: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+inside through: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+front through: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+FC16 check {"2": [true, 0, false, {"type": "ThroughAll", "expr": null, "length": 2.0}], "3": [true, 0, false, {"type": "ThroughAll", "expr": null, "length": 2.0}], "12": [true, 0, false, {"type": "ThroughAll", "expr": null, "length": 2.0}]} FAIL
+## F
+inside through: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+Type list rows: "popup": [["Dimension", 2752, 786], ["Through all", 2752, 826], ["To first", 2752, 865], ["Up to face", 2752, 905], ["Up to shape", 2752, 945]]
+panel before OK: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Dimension "QLabel", "Length" field:3.00 field:3.00 "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBo
+after OK: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+inside fixed: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+front fixed: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 2.0}], "3": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 3.0}], "12": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 12.0}]} PASS
+## K
+reopened: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+wall cell 855 572
+wall 4: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55782.05, "solids": 1}
+inside w4: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55782.05, "solids": 1}
+front w4: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55782.05, "solids": 1}
+hole_size cell 855 734
+hole_size 6: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55747.492, "solids": 1}
+inside hole6: {"wall": 4.0, "type": "Length", "length": 4.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 55747.492, "solids": 1}
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 2.0}], "3": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 3.0}], "12": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 12.0}]} FAIL
+## Y
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 2.0}], "3": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 3.0}], "12": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 12.0}]} PASS

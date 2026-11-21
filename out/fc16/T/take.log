@@ -1,0 +1,22 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+wall cell 855 572
+wall 3: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+wb combo 703 86
+wb Part Design at 757 336
+1
+1
+1
+inside w3: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+1
+1
+skin-w3 measure: combo:Distance field:1.00 mm 
+skin-w3 selection: [('Pocket', ['Face30', 'Face2'])]
+1
+inside w3b: {"wall": 3.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [false, true, true], "front_solid": true, "volume": 41244.712, "solids": 1}
+saved
+TAKE T DONE
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": null, "length": 2.0}], "3": [true, 1.0, true, {"type": "Length", "expr": null, "length": 2.0}], "12": [true, 10.0, true, {"type": "Length", "expr": null, "length": 2.0}]} FAIL

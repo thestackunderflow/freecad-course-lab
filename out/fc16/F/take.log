@@ -1,0 +1,19 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+inside through: {"wall": 3.0, "type": "ThroughAll", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": false, "volume": 41166.172, "solids": 1}
+Type list rows: "popup": [["Dimension", 2752, 786], ["Through all", 2752, 826], ["To first", 2752, 865], ["Up to face", 2752, 905], ["Up to shape", 2752, 945]]
+panel before OK: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Dimension "QLabel", "Length" field:3.00 field:3.00 "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" 
+after OK: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+notices: []
+1
+inside fixed: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+1
+1
+front fixed: {"wall": 3.0, "type": "Length", "length": 3.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 41225.077, "solids": 1}
+1
+saved
+TAKE F DONE
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 2.0}], "3": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 3.0}], "12": [true, 0, true, {"type": "Length", "expr": "Params.wall", "length": 12.0}]} PASS

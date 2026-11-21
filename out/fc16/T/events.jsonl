@@ -1,0 +1,22 @@
+{"t": 0.05, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (T)"}
+{"t": 3.056, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.277, "event": "(view fitted)"}
+{"t": 7.538, "event": "double-click: open Params"}
+{"t": 13.16, "event": "cell B4: wall", "x": 855, "y": 572, "button": 1}
+{"t": 14.884, "event": "typed 3", "text": "3"}
+{"t": 15.625, "event": "Enter", "keys": "Return"}
+{"t": 20.372, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 26.022, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 30.927, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 35.694, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 38.901, "event": "key 0: isometric", "keys": "0"}
+{"t": 40.129, "event": "(view fitted)"}
+{"t": 48.047, "event": "view: Rear (24 mm high, at 0 23.0 30)"}
+{"t": 55.665, "event": "view: Inside (64 mm high, at 0 20 30)"}
+{"t": 65.619, "event": "view: Rear (14 mm high, at 0 23.0 30)"}
+{"t": 68.667, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 73.766, "event": "skin-w3: the pit's floor (the bottom of the 2 mm cut)", "x": 1682, "y": 986, "button": 1}
+{"t": 80.438, "event": "view: Inside (40 mm high, at 0 20 32)"}
+{"t": 83.81, "event": "skin-w3: Ctrl + the inside face of the back wall", "x": 1682, "y": 858, "button": 1}
+{"t": 93.31, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 100.122, "event": "view: Inside (64 mm high, at 0 20 30)"}

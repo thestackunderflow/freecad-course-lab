@@ -1,0 +1,30 @@
+{"t": 0.03, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (P)"}
+{"t": 5.107, "event": "file reopened: F's saved end file (Length = Params.wall)"}
+{"t": 9.321, "event": "key 0: isometric", "keys": "0"}
+{"t": 10.601, "event": "(view fitted)"}
+{"t": 13.998, "event": "double-click: open Params"}
+{"t": 19.223, "event": "cell B4: wall", "x": 855, "y": 572, "button": 1}
+{"t": 20.936, "event": "typed 4", "text": "4"}
+{"t": 21.674, "event": "Enter", "keys": "Return"}
+{"t": 26.137, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 31.899, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 37.082, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 41.869, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 45.085, "event": "key 0: isometric", "keys": "0"}
+{"t": 46.314, "event": "(view fitted)"}
+{"t": 54.133, "event": "view: Inside (64 mm high, at 0 20 30)"}
+{"t": 62.953, "event": "view: Front (30 mm high, at 0 -22 34)"}
+{"t": 67.178, "event": "key 0: isometric", "keys": "0"}
+{"t": 68.4, "event": "(view fitted)"}
+{"t": 71.665, "event": "double-click: open Params"}
+{"t": 76.949, "event": "cell B7: hole_size", "x": 855, "y": 734, "button": 1}
+{"t": 78.657, "event": "typed 6", "text": "6"}
+{"t": 79.39, "event": "Enter", "keys": "Return"}
+{"t": 83.666, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 89.3, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 94.213, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 98.965, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 102.173, "event": "key 0: isometric", "keys": "0"}
+{"t": 103.375, "event": "(view fitted)"}
+{"t": 111.126, "event": "view: Rear (24 mm high, at 0 24.0 30)"}
+{"t": 118.846, "event": "view: Inside (64 mm high, at 0 20 30)"}

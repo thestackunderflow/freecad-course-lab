@@ -1,0 +1,22 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+selection: [('Pad001', ['Face13'])]
+sketch: Sketch002 [(<PartDesign::Pad>, ('Face13',))] FlatFace
+sketch name Sketch002; geo: ['Circle (Radius : 2.5, Position : (0, 29.9307, 0), Direction : (0, 0, 1))'] [('Diameter', 5.0), ('PointOnObject', 0.0)]
+constraint row 2514 954
+centre selection: [('Sketch002', ['Vertex1'])]
+sketch: [('Diameter', 5.0), ('PointOnObject', 0.0), ('DistanceY', 30.0)] [('Constraints[0]', 'Params.hole_size')] True ['Circle (Radius : 2.5, Position : (0, 30, 0), Direction : (0, 0, 1))']
+panel open: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Dimension "QLabel", "Length" field:5.00 mm field:5.00 mm "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" 
+panel before OK: "QLabel", "Mode" combo:One sided "QLabel", "Type" combo:Dimension "QLabel", "Length" field:2 field:2 "QLabel", "Taper angle" field:0.00\u00b0 field:0.00\u00b0 "QCheckBox", "Reversed" "QLabel", "Direction/edge" combo:Sketch normal "QCheckBox", "Recompute on change" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" 
+after OK: {"wall": 2.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 27334.122, "solids": 1}
+notices: []
+1
+1
+1
+inside w2: {"wall": 2.0, "type": "Length", "length": 2.0, "expr": null, "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 27334.122, "solids": 1}
+saved
+TAKE D DONE
+FC16 check {"2": [true, 0, true, {"type": "Length", "expr": null, "length": 2.0}], "3": [true, 1.0, true, {"type": "Length", "expr": null, "length": 2.0}], "12": [true, 10.0, true, {"type": "Length", "expr": null, "length": 2.0}]} FAIL

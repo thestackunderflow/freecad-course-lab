@@ -1,0 +1,17 @@
+{"t": 0.063, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (F)"}
+{"t": 8.857, "event": "view: Inside (64 mm high, at 0 20 30)"}
+{"t": 14.63, "event": "double-click: Pocket"}
+{"t": 20.029, "event": "Type list", "x": 2692, "y": 826, "button": 1}
+{"t": 25.961, "event": "Type: Dimension", "x": 2752, "y": 786, "button": 1}
+{"t": 30.03, "event": "Length: click", "x": 2652, "y": 882, "button": 1}
+{"t": 31.171, "event": "Length: typed = (Expression Editor)", "text": "="}
+{"t": 34.045, "event": "Length: typed Params.wall", "text": "Params.wall"}
+{"t": 36.771, "event": "Return: name list closed", "keys": "Return"}
+{"t": 41.436, "event": "Expression Editor: OK", "x": 2773, "y": 1062, "button": 1}
+{"t": 47.315, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 55.931, "event": "view: Inside (64 mm high, at 0 20 30)"}
+{"t": 60.186, "event": "key 0: isometric", "keys": "0"}
+{"t": 61.407, "event": "(view fitted)"}
+{"t": 69.145, "event": "view: Front (30 mm high, at 0 -22 34)"}
+{"t": 74.545, "event": "key 0: isometric", "keys": "0"}
+{"t": 75.783, "event": "(view fitted)"}

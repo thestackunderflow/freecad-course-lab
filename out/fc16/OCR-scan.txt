@@ -1,0 +1,26 @@
+SCANNED /lab/out/fc16/A/screen.mp4 frames=30 hits=0
+/lab/out/fc16/D/screen.mp4 t=12s: * Datum Point
+0 Datum Piane
++ Datum objects
+* Datum Point
+7 Datum Line
+© Datum Plane
+/lab/out/fc16/D/screen.mp4 t=14s: Label Fado © Datum Plane
+Use Custo... No. + Datum objects ”
+Along Sket..._¥ Yes Z Datum Line
+ayes © datum Plane
+/lab/out/fc16/D/screen.mp4 t=16s: + Datum Point
+cede) FUE Q Datum Plane
+Use Custo... No + Datum objects “
+Pewter + Datum Point
+Along Sket..._¥ Yes Z Datum Line
+(a) Yes Datum Plane
+SCANNED /lab/out/fc16/D/screen.mp4 frames=60 hits=3
+SCANNED /lab/out/fc16/F/screen.mp4 frames=40 hits=0
+SCANNED /lab/out/fc16/K/screen.mp4 frames=62 hits=0
+SCANNED /lab/out/fc16/R/screen.mp4 frames=32 hits=0
+SCANNED /lab/out/fc16/T/screen.mp4 frames=53 hits=0
+SCANNED /lab/out/fc16/Y/screen.mp4 frames=14 hits=0
+SCANNED /lab/out/fc16/runs/A1/screen.mp4 frames=22 hits=0
+SCANNED /lab/out/fc16/runs/B1/screen.mp4 frames=35 hits=0
+SCANNED run stills=5 hits=0
