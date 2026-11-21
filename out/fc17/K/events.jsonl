@@ -1,0 +1,40 @@
+{"t": 0.072, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (P)"}
+{"t": 5.341, "event": "file reopened: F's saved end file (Mirrored across Base YZ)"}
+{"t": 18.003, "event": "key 0: isometric", "keys": "0"}
+{"t": 19.283, "event": "(view fitted)"}
+{"t": 22.652, "event": "double-click: open Params"}
+{"t": 28.112, "event": "cell B8: peg_x", "x": 855, "y": 788, "button": 1}
+{"t": 29.83, "event": "typed 20", "text": "20"}
+{"t": 30.698, "event": "Enter", "keys": "Return"}
+{"t": 35.3, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 41.054, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 54.228, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 59.057, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 67.872, "event": "view: Front (80 mm high, at 0 -28 32)"}
+{"t": 83.103, "event": "view: Rear (80 mm high, at 0 28 32)"}
+{"t": 95.827, "event": "key 0: isometric", "keys": "0"}
+{"t": 97.109, "event": "(view fitted)"}
+{"t": 100.437, "event": "double-click: open Params"}
+{"t": 105.752, "event": "cell B5: peg_size", "x": 855, "y": 626, "button": 1}
+{"t": 107.466, "event": "typed 12", "text": "12"}
+{"t": 108.327, "event": "Enter", "keys": "Return"}
+{"t": 112.742, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 118.589, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 131.841, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 136.728, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 145.611, "event": "view: Front (80 mm high, at 0 -28 32)"}
+{"t": 162.055, "event": "view: Rear (80 mm high, at 0 28 32)"}
+{"t": 172.889, "event": "key 0: isometric", "keys": "0"}
+{"t": 174.156, "event": "(view fitted)"}
+{"t": 177.474, "event": "double-click: open Params"}
+{"t": 182.795, "event": "cell B4: wall", "x": 855, "y": 572, "button": 1}
+{"t": 184.506, "event": "typed 3", "text": "3"}
+{"t": 185.242, "event": "Enter", "keys": "Return"}
+{"t": 189.565, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 195.276, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 208.96, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 213.818, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 222.606, "event": "view: Front (80 mm high, at 0 -28 32)"}
+{"t": 239.393, "event": "view: Rear (80 mm high, at 0 28 32)"}
+{"t": 250.595, "event": "key 0: isometric", "keys": "0"}
+{"t": 251.893, "event": "(view fitted)"}

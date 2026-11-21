@@ -1,0 +1,46 @@
+# fc17 GUI takes (21 Nov 2026, FreeCAD 1.1.4 by hand, lab/fc17_take.sh, --network none, no AI): numbers read off-camera per step.
+# expected = RESULTS-fc17.md / NUMBERS.json. Take P films into K/ (P/ holds the start files). OCR: 6 hits, all FreeCAD "Datum Plane/Point/Line" menu text (false hits).
+## R
+start: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Pocket", "mirrors": [], "state": {}, "volume": 27334.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[10.0, 20.0]], "back_x": [], "hole_open": true}
+Q5 3D click selection: [('Pocket', ['Face29'])]
+FC17 check {"15": ["b", "d", "h", "i", "j"], "20": ["b", "d", "h", "i", "j"], "8": ["b", "d", "h", "i", "j"], "w3": ["b", "d", "h", "i", "j"]} names_same True FAIL
+## T
+start: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Pocket", "mirrors": [], "state": {}, "volume": 27334.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[10.0, 20.0]], "back_x": [], "hole_open": true}
+selection: [('Pad001', [])]
+panel open: [["QSint::ActionLabel", "Mirror Parameters", [2509, 689]], ["QRadioButton", "Transform body", [2530, 748]], ["QRadioButton", "Transform tool shapes", [2530, 788]], ["QPushButton", "Add Feature", [2370, 833]], ["QPushButton", "Remove Feature", [2692, 833]], ["list", "Pad001", [2530, 878]], ["QLabel", "Plane", [2352, 1112]], ["QComboBox", "combo:Vertical sketch axis", [2674, 1112]], ["QCheckBox", "Recompute on change", [2530, 1162]], ["QSint::ActionLabel", "Preview", [2509, 1242]], ["Q
+Q3 panel open (preview): {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "Sketch001", ["V_Axis"], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+Plane list rows: "popup": [["Vertical sketch axis", 2736, 1112], ["Horizontal sketch axis", 2736, 1152], ["Base XY-plane", 2736, 1191], ["Base YZ-plane", 2736, 1231], ["Base XZ-plane", 2736, 1270], ["Select reference\u2026", 2736, 1310]]
+after plane Base XZ-plane (preview): {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "XZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+after OK: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "XZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 35.0, 70.0], "behind_back": 13.0, "front_x": [[10.0, 20.0]], "back_x": [[10.0, 20.0]], "hole_open": true}
+notices: []
+behind13 first: [('Mirrored', ['Face33'])]
+behind13 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:13.00 mm 
+behind13 selection: [('Mirrored', ['Face33', 'Face13'])]
+depth70 first: [('Mirrored', ['Face32'])]
+depth70 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:70.00 mm 
+depth70 selection: [('Mirrored', ['Face32', 'Face33'])]
+FC17 check {"15": ["b", "c", "d", "h", "i"], "20": ["b", "c", "d", "h", "i"], "8": ["b", "c", "d", "h", "i"], "w3": ["b", "c", "d", "h", "i"]} names_same True FAIL
+## F
+start: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "XZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 35.0, 70.0], "behind_back": 13.0, "front_x": [[10.0, 20.0]], "back_x": [[10.0, 20.0]], "hole_open": true}
+panel open: [["QSint::ActionLabel", "Mirror Parameters", [2509, 689]], ["QRadioButton", "Transform body", [2530, 748]], ["QRadioButton", "Transform tool shapes", [2530, 788]], ["QPushButton", "Add Feature", [2370, 833]], ["QPushButton", "Remove Feature", [2692, 833]], ["list", "Pad001", [2530, 878]], ["QLabel", "Plane", [2352, 1112]], ["QComboBox", "combo:Base XZ-plane", [2674, 1112]], ["QCheckBox", "Recompute on change", [2530, 1162]], ["QSint::ActionLabel", "Preview", [2509, 1242]], ["QCheckBo
+Plane list rows: "popup": [["Vertical sketch axis", 2736, 954], ["Horizontal sketch axis", 2736, 993], ["Base XY-plane", 2736, 1033], ["Base YZ-plane", 2736, 1072], ["Base XZ-plane", 2736, 1112], ["Select reference\u2026", 2736, 1152]]
+after plane Base YZ-plane (preview): {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 35.0, 70.0], "behind_back": 13.0, "front_x": [[10.0, 20.0]], "back_x": [[10.0, 20.0]], "hole_open": true}
+after OK: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+notices: []
+gap20 first: [('Mirrored', ['Edge64'])]
+gap20 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:20.00 mm 
+gap20 selection: [('Mirrored', ['Edge64', 'Edge62'])]
+depth57 first: [('Mirrored', ['Face33'])]
+depth57 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:57.00 mm 
+depth57 selection: [('Mirrored', ['Face33', 'Face14'])]
+FC17 check {"15": [], "20": [], "8": [], "w3": []} names_same True PASS
+## K
+start: 
+reopened: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+peg_x 20: {"peg_x": 20.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-25.0, -15.0], [15.0, 25.0]], "back_x": [], "hole_open": true}
+peg_size 12: {"peg_x": 20.0, "peg_size": 12.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 29778.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+wall 3: {"peg_x": 20.0, "peg_size": 12.0, "wall": 3.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 43481.077, "solids": 1, "y": [-35.0, 23.0, 58.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+FC17 check {"15": ["j", "k"], "20": ["j", "k"], "8": ["j", "k"], "w3": ["j", "k"]} names_same False FAIL
+## Y
+start: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+FC17 check {"15": [], "20": [], "8": [], "w3": []} names_same True PASS

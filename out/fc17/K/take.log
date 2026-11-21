@@ -1,0 +1,38 @@
+notices at open: []
+start: 
+cup
+prepped cup
+1
+notices at reopen: []
+reopened: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+1
+peg_x cell 855 788
+peg_x 20: {"peg_x": 20.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-25.0, -15.0], [15.0, 25.0]], "back_x": [], "hole_open": true}
+wb combo 703 86
+wb Part Design at 757 336
+1
+front x20: {"peg_x": 20.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-25.0, -15.0], [15.0, 25.0]], "back_x": [], "hole_open": true}
+1
+rear x20: {"peg_x": 20.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-25.0, -15.0], [15.0, 25.0]], "back_x": [], "hole_open": true}
+1
+peg_size cell 855 626
+peg_size 12: {"peg_x": 20.0, "peg_size": 12.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 29778.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+wb combo 703 86
+wb Part Design at 757 336
+1
+front s12: {"peg_x": 20.0, "peg_size": 12.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 29778.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+1
+rear s12: {"peg_x": 20.0, "peg_size": 12.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 29778.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+1
+wall cell 855 572
+wall 3: {"peg_x": 20.0, "peg_size": 12.0, "wall": 3.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 43481.077, "solids": 1, "y": [-35.0, 23.0, 58.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+wb combo 703 86
+wb Part Design at 757 336
+1
+front w3: {"peg_x": 20.0, "peg_size": 12.0, "wall": 3.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 43481.077, "solids": 1, "y": [-35.0, 23.0, 58.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+1
+rear w3: {"peg_x": 20.0, "peg_size": 12.0, "wall": 3.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "YZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 43481.077, "solids": 1, "y": [-35.0, 23.0, 58.0], "behind_back": 0.0, "front_x": [[-26.0, -14.0], [14.0, 26.0]], "back_x": [], "hole_open": true}
+1
+saved
+TAKE P DONE
+FC17 check {"15": ["j", "k"], "20": ["j", "k"], "8": ["j", "k"], "w3": ["j", "k"]} names_same False FAIL

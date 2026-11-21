@@ -1,0 +1,26 @@
+{"t": 0.061, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (F)"}
+{"t": 3.076, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.325, "event": "(view fitted)"}
+{"t": 9.51, "event": "tree: Mirrored", "x": 198, "y": 567, "button": 1}
+{"t": 11.029, "event": "right-click: Mirrored"}
+{"t": 17.398, "event": "menu: Edit", "x": 509, "y": 19, "button": 1}
+{"t": 25.095, "event": "Plane list", "x": 2674, "y": 1112, "button": 1}
+{"t": 31.957, "event": "Plane: Base YZ-plane", "x": 2736, "y": 1072, "button": 1}
+{"t": 45.359, "event": "key 0: isometric", "keys": "0"}
+{"t": 46.729, "event": "(view fitted)"}
+{"t": 54.545, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 76.916, "event": "view: Front (90 mm high, at 0 -28 32)"}
+{"t": 98.615, "event": "view: Front (40 mm high, at 10 -35 40)"}
+{"t": 102.097, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 107.512, "event": "gap20: the right peg's inner edge", "x": 1682, "y": 986, "button": 1}
+{"t": 112.718, "event": "gap20: Ctrl + the left peg's inner edge", "x": 961, "y": 986, "button": 1}
+{"t": 122.785, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 131.172, "event": "view: Front (90 mm high, at 15 -35 40)"}
+{"t": 134.637, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 140.08, "event": "depth57: the peg's end face", "x": 1682, "y": 986, "button": 1}
+{"t": 148.206, "event": "view: Rear (90 mm high, at 15 22 40)"}
+{"t": 151.897, "event": "depth57: Ctrl + the cup's back face", "x": 1682, "y": 986, "button": 1}
+{"t": 161.978, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 168.918, "event": "view: Rear (90 mm high, at 0 28 32)"}
+{"t": 182.912, "event": "key 0: isometric", "keys": "0"}
+{"t": 184.156, "event": "(view fitted)"}

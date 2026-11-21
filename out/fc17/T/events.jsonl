@@ -1,0 +1,29 @@
+{"t": 0.072, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (T)"}
+{"t": 3.077, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.283, "event": "(view fitted)"}
+{"t": 9.228, "event": "tree: Pad001 (the peg)", "x": 192, "y": 502, "button": 1}
+{"t": 13.592, "event": "menu: Part Design", "x": 653, "y": 36, "button": 1}
+{"t": 24.072, "event": "menu: Mirror", "x": 1056, "y": 455, "button": 1}
+{"t": 35.346, "event": "key 0: isometric", "keys": "0"}
+{"t": 36.594, "event": "(view fitted)"}
+{"t": 44.778, "event": "Plane list", "x": 2674, "y": 1112, "button": 1}
+{"t": 51.477, "event": "Plane: Base XZ-plane", "x": 2736, "y": 1270, "button": 1}
+{"t": 61.269, "event": "key 0: isometric", "keys": "0"}
+{"t": 62.484, "event": "(view fitted)"}
+{"t": 69.929, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 80.599, "event": "key 0: isometric", "keys": "0"}
+{"t": 81.806, "event": "(view fitted)"}
+{"t": 98.552, "event": "view: Rear (90 mm high, at 0 28 32)"}
+{"t": 114.24, "event": "view: Rear (60 mm high, at 15 35 40)"}
+{"t": 117.268, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 122.337, "event": "behind13: the copy's end face (the back peg)", "x": 1682, "y": 986, "button": 1}
+{"t": 127.047, "event": "behind13: Ctrl + the cup's back face", "x": 2402, "y": 986, "button": 1}
+{"t": 136.546, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 143.608, "event": "view: Front (90 mm high, at 15 -35 40)"}
+{"t": 146.617, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 151.675, "event": "depth70: the front peg's end face", "x": 1682, "y": 986, "button": 1}
+{"t": 158.024, "event": "view: Rear (90 mm high, at 15 35 40)"}
+{"t": 161.524, "event": "depth70: Ctrl + the back peg's end face", "x": 1682, "y": 986, "button": 1}
+{"t": 171.04, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 173.392, "event": "key 0: isometric", "keys": "0"}
+{"t": 174.61, "event": "(view fitted)"}

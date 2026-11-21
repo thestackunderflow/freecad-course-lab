@@ -1,0 +1,37 @@
+cup
+prepped cup
+1
+notices at open: []
+start: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Pocket", "mirrors": [], "state": {}, "volume": 27334.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[10.0, 20.0]], "back_x": [], "hole_open": true}
+1
+selection: [('Pad001', [])]
+menubar Part Design 653 36
+Part Design menu: {"menu": [["New Body", true, 752, 75], ["Shape Binder", true, 752, 120], ["Sub-Shape Binder", true, 752, 163], ["Clone", true, 752, 207], ["Additive Features", true, 752, 250], ["Additive Primitive", true, 752, 289], ["Subtractive Features", true, 752, 331], ["Subtractive Primitive", true, 752, 370], ["Dress-Up Features", true, 752, 412], ["Transformation Features", true, 752, 453], ["Boolean Operation", true, 752, 496], ["Inspect Appearance", true, 752, 540], ["Inspect Material", true, 752, 579], ["Check Geometry", true, 752, 622], ["Involute Gear", true, 752, 667], ["Sprocket", true, 752, 711], ["Shaft Design Wizard", true, 752, 756]], "dialogs": [], "popup": []}
+Transformation menu: {"menu": [["New Body", true, 752, 75], ["Shape Binder", true, 752, 120], ["Sub-Shape Binder", true, 752, 163], ["Clone", true, 752, 207], ["Additive Features", true, 752, 250], ["Additive Primitive", true, 752, 289], ["Subtractive Features", true, 752, 331], ["Subtractive Primitive", true, 752, 370], ["Dress-Up Features", true, 752, 412], ["Transformation Features", true, 752, 453], ["Boolean Operation", true, 752, 496], ["Inspect Appearance", true, 752, 540], ["Inspect Material", true, 752, 579], ["Check Geometry", true, 752, 622], ["Involute Gear", true, 752, 667], ["Sprocket", true, 752, 711], ["Shaft Design Wizard", true, 752, 756], ["Mirror", true, 1056, 455], ["Linear Pattern", true, 1056, 498], ["Polar Pattern", true, 1056, 541], ["Multi-Transform", true, 1056, 585]], "dialogs": [], "popup": []}
+panel open: [["QSint::ActionLabel", "Mirror Parameters", [2509, 689]], ["QRadioButton", "Transform body", [2530, 748]], ["QRadioButton", "Transform tool shapes", [2530, 788]], ["QPushButton", "Add Feature", [2370, 833]], ["QPushButton", "Remove Feature", [2692, 833]], ["list", "Pad001", [2530, 878]], ["QLabel", "Plane", [2352, 1112]], ["QComboBox", "combo:Vertical sketch axis", [2674, 1112]], ["QCheckBox", "Recompute on change", [2530, 1162]], ["QSint::ActionLabel", "Preview", [2509, 1242]], ["QCheckBox", "Show final result", [2530, 1305]], ["QCheckBox", "Show preview overlay", [2530, 1351]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+Q3 panel open (preview): {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "Sketch001", ["V_Axis"], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+1
+Plane list rows: "popup": [["Vertical sketch axis", 2736, 1112], ["Horizontal sketch axis", 2736, 1152], ["Base XY-plane", 2736, 1191], ["Base YZ-plane", 2736, 1231], ["Base XZ-plane", 2736, 1270], ["Select reference\u2026", 2736, 1310]]
+after plane Base XZ-plane (preview): {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "XZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[-20.0, -10.0], [10.0, 20.0]], "back_x": [], "hole_open": true}
+1
+panel before OK: [["QSint::ActionLabel", "Mirror Parameters", [2509, 689]], ["QRadioButton", "Transform body", [2530, 748]], ["QRadioButton", "Transform tool shapes", [2530, 788]], ["QPushButton", "Add Feature", [2370, 833]], ["QPushButton", "Remove Feature", [2692, 833]], ["list", "Pad001", [2530, 878]], ["QLabel", "Plane", [2352, 1112]], ["QComboBox", "combo:Base XZ-plane", [2674, 1112]], ["QCheckBox", "Recompute on change", [2530, 1162]], ["QSint::ActionLabel", "Preview", [2509, 1242]], ["QCheckBox", "Show final result", [2530, 1305]], ["QCheckBox", "Show preview overlay", [2530, 1351]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+after OK: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "XZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 35.0, 70.0], "behind_back": 13.0, "front_x": [[10.0, 20.0]], "back_x": [[10.0, 20.0]], "hole_open": true}
+notices: []
+tree: {"Params": ["Up-to-date"], "Body": ["Expanded", "Up-to-date"], "Origin": ["Up-to-date"], "X_Axis": ["Up-to-date"], "Y_Axis": ["Up-to-date"], "Z_Axis": ["Up-to-date"], "XY_Plane": ["Up-to-date"], "XZ_Plane": ["Up-to-date"], "YZ_Plane": ["Up-to-date"], "Origin001": ["Up-to-date"], "Sketch": ["Up-to-date"], "Pad": ["Up-to-date"], "Thickness": ["Up-to-date"], "Sketch001": ["Up-to-date"], "Pad001": ["Up-to-date"], "HoleSketch": ["Up-to-date"], "Pocket": ["Up-to-date"], "Mirrored": ["Up-to-date"]}
+1
+1
+1
+rear trap: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Mirrored", "mirrors": [["Mirrored", "Mirrored", "XZ_Plane", [""], ["Pad001"], ["Up-to-date"]]], "state": {}, "volume": 28634.122, "solids": 1, "y": [-35.0, 35.0, 70.0], "behind_back": 13.0, "front_x": [[10.0, 20.0]], "back_x": [[10.0, 20.0]], "hole_open": true}
+1
+behind13 first: [('Mirrored', ['Face33'])]
+behind13 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:13.00 mm 
+behind13 selection: [('Mirrored', ['Face33', 'Face13'])]
+1
+depth70 first: [('Mirrored', ['Face32'])]
+1
+depth70 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:70.00 mm 
+depth70 selection: [('Mirrored', ['Face32', 'Face33'])]
+1
+saved
+TAKE T DONE
+FC17 check {"15": ["b", "c", "d", "h", "i"], "20": ["b", "c", "d", "h", "i"], "8": ["b", "c", "d", "h", "i"], "w3": ["b", "c", "d", "h", "i"]} names_same True FAIL

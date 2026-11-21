@@ -1,0 +1,35 @@
+/lab/out/fc17/F/screen.mp4 t=122s: 0 Datum Piane
++ Datum objects -
+> Datum Plane
+/lab/out/fc17/F/screen.mp4 t=124s: * Datum Point
+4 Datum Plane
++ Datum objects
++ Datum Point
+Z Datum Line
+© Datum Plane
+SCANNED /lab/out/fc17/F/screen.mp4 frames=94 hits=2
+SCANNED /lab/out/fc17/K/screen.mp4 frames=128 hits=0
+/lab/out/fc17/R/screen.mp4 t=58s: * Datum Point
+'Q Datum Plane
++ Datum objects rm
+* Datum Point
+7 Datum Line
+TY Datum Plane
+/lab/out/fc17/R/screen.mp4 t=60s: * Datum Point
+'Q Datum Plane
++ Datum objects rm
+* Datum Point
+7 Datum Line
+TY Datum Plane
+/lab/out/fc17/R/screen.mp4 t=62s: + Datum Point
+'Q Datum Plane
++ Datum objects rm
+* Datum Point
+7 Datum Line
+TY Datum Plane
+SCANNED /lab/out/fc17/R/screen.mp4 frames=37 hits=3
+SCANNED /lab/out/fc17/T/screen.mp4 frames=89 hits=0
+SCANNED /lab/out/fc17/Y/screen.mp4 frames=14 hits=0
+SCANNED /lab/out/fc17/runs/A1/screen.mp4 frames=27 hits=0
+SCANNED /lab/out/fc17/runs/B1/screen.mp4 frames=32 hits=0
+SCANNED run stills=8 hits=0

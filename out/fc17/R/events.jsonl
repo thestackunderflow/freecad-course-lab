@@ -1,0 +1,13 @@
+{"t": 0.05, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (R)"}
+{"t": 12.264, "event": "double-click: open Params"}
+{"t": 17.777, "event": "hover: Params row 4"}
+{"t": 21.042, "event": "hover: Params row 8"}
+{"t": 25.65, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 29.897, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 34.634, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 37.842, "event": "key 0: isometric", "keys": "0"}
+{"t": 39.052, "event": "(view fitted)"}
+{"t": 45.832, "event": "view: Front (90 mm high, at 0 -28 32)"}
+{"t": 58.229, "event": "Q5: click the peg's front face in the 3D view", "x": 1922, "y": 857, "button": 1}
+{"t": 63.273, "event": "key 0: isometric", "keys": "0"}
+{"t": 64.48, "event": "(view fitted)"}

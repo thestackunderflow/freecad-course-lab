@@ -1,0 +1,17 @@
+cup
+prepped cup
+1
+notices at open: []
+start: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Pocket", "mirrors": [], "state": {}, "volume": 27334.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[10.0, 20.0]], "back_x": [], "hole_open": true}
+1
+wb combo 703 86
+wb Part Design at 757 336
+1
+1
+front peg: {"peg_x": 15.0, "peg_size": 10.0, "wall": 2.0, "tip": "Pocket", "mirrors": [], "state": {}, "volume": 27334.122, "solids": 1, "y": [-35.0, 22.0, 57.0], "behind_back": 0.0, "front_x": [[10.0, 20.0]], "back_x": [], "hole_open": true}
+Q5 3D click selection: [('Pocket', ['Face29'])]
+1
+1
+saved
+TAKE R DONE
+FC17 check {"15": ["b", "d", "h", "i", "j"], "20": ["b", "d", "h", "i", "j"], "8": ["b", "d", "h", "i", "j"], "w3": ["b", "d", "h", "i", "j"]} names_same True FAIL
