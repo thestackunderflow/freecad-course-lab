@@ -1,0 +1,12 @@
+{"t": 0.043, "event": "recording started: Claude Code (left, FreeCAD plug only), FreeCAD with cup open (right)"}
+{"t": 2.108, "event": "turn 1: typing", "text": "Make a round pen cup in this file by drawing its cross-section and revolving it. Use the parameters already here: cup_diameter is the outside diameter, cup_height the height, wall the side wall and the floor. Stand it on the XY plane, base at z 0, open at the top. It should follow cup_diameter when I change it."}
+{"t": 17.594, "event": "turn 1: Enter"}
+{"t": 21.837, "event": "tool call: list_documents", "seq": 18}
+{"t": 21.846, "event": "tool reply: list_documents", "seq": 19, "isError": false}
+{"t": 23.715, "event": "tool call: get_objects", "seq": 20}
+{"t": 23.731, "event": "tool reply: get_objects", "seq": 21, "isError": false}
+{"t": 36.84, "event": "tool call: execute_code", "seq": 22}
+{"t": 37.638, "event": "tool reply: execute_code", "seq": 23, "isError": false}
+{"t": 42.359, "event": "turn 1: end-of-turn line seen"}
+{"t": 44.36, "event": "turn 1: reply done", "approvals": 0, "timed_out": false}
+{"t": 50.382, "event": "recording stopped"}

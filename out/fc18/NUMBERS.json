@@ -1,0 +1,1630 @@
+{
+ "source": "out/fc18/P/build.json (lab/fc18parts.py, freecadcmd 1.1.4) + out/fc18/runs/*",
+ "start_file": "round-start.FCStd: Params cup_diameter 60, cup_height 80, wall 2; empty Body (Cup)",
+ "q1": {
+  "round-name": {
+   "outside_x": 120.0,
+   "outside_y": 120.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 116.0,
+   "volume": 80449.905,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": false,
+   "bbox": [
+    -60.0,
+    60.0,
+    -60.0,
+    60.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 60.0,
+   "width_expr": "Params.cup_diameter",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "round-typed30": {
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 56.0,
+   "volume": 34079.997,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": null,
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "round-fixed": {
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 56.0,
+   "volume": 34079.997,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "round-typed60": {
+   "outside_x": 120.0,
+   "outside_y": 120.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 116.0,
+   "volume": 80449.905,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": false,
+   "bbox": [
+    -60.0,
+    60.0,
+    -60.0,
+    60.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 60.0,
+   "width_expr": null,
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "q1_sketch": {
+  "Sketch": {
+   "support": [
+    [
+     "XZ_Plane",
+     [
+      ""
+     ]
+    ]
+   ],
+   "map_mode": "FlatFace",
+   "exprs": [
+    [
+     "Constraints.floor",
+     "Params.wall"
+    ],
+    [
+     "Constraints.height",
+     "Params.cup_height"
+    ],
+    [
+     "Constraints.rim",
+     "Params.wall"
+    ],
+    [
+     "Constraints.width",
+     "Params.cup_diameter / 2"
+    ]
+   ],
+   "geo": 6,
+   "constraints": 17,
+   "FullyConstrained": true,
+   "solve": 0,
+   "width_value": 30.0
+  }
+ },
+ "q1_revolution": [
+  {
+   "name": "Revolution",
+   "type": "PartDesign::Revolution",
+   "in_body": true,
+   "state": [
+    "Up-to-date"
+   ],
+   "Angle": "360.0 deg",
+   "Type": "Angle",
+   "Reversed": "False",
+   "Midplane": "False",
+   "axis": [
+    "Sketch",
+    [
+     "V_Axis"
+    ]
+   ],
+   "profile": "Sketch",
+   "status": "Valid"
+  }
+ ],
+ "q2_edges": {
+  "xz_vaxis": {
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 56.0,
+   "volume": 34079.997,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "xz_haxis": {
+   "outside_x": 30.0,
+   "outside_y": 160.0,
+   "z": [
+    -80.0,
+    80.0
+   ],
+   "inside": null,
+   "volume": 40564.244,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": false,
+   "bbox": [
+    0.0,
+    30.0,
+    -80.0,
+    80.0,
+    -80.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "yz_vaxis": {
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 56.0,
+   "volume": 34079.997,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "xy_vaxis": {
+   "outside_x": 60.0,
+   "outside_y": 80.0,
+   "z": [
+    -30.0,
+    30.0
+   ],
+   "inside": null,
+   "volume": 34079.997,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": false,
+   "top_open": false,
+   "ring_ok": false,
+   "bbox": [
+    -30.0,
+    30.0,
+    0.0,
+    80.0,
+    -30.0,
+    30.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "q3_trap": {
+  "outside_x": 120.0,
+  "outside_y": 120.0,
+  "z": [
+   -0.0,
+   80.0
+  ],
+  "inside": 116.0,
+  "volume": 80449.905,
+  "solids": 1,
+  "valid": true,
+  "floor_ok": true,
+  "top_open": true,
+  "ring_ok": false,
+  "bbox": [
+   -60.0,
+   60.0,
+   -60.0,
+   60.0,
+   -0.0,
+   80.0
+  ],
+  "builds": true,
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "width_value": 60.0,
+  "width_expr": "Params.cup_diameter",
+  "state": {
+   "Sketch": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Revolution": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  }
+ },
+ "q3_typed60": {
+  "outside_x": 120.0,
+  "outside_y": 120.0,
+  "z": [
+   -0.0,
+   80.0
+  ],
+  "inside": 116.0,
+  "volume": 80449.905,
+  "solids": 1,
+  "valid": true,
+  "floor_ok": true,
+  "top_open": true,
+  "ring_ok": false,
+  "bbox": [
+   -60.0,
+   60.0,
+   -60.0,
+   60.0,
+   -0.0,
+   80.0
+  ],
+  "builds": true,
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "width_value": 60.0,
+  "width_expr": null,
+  "state": {
+   "Sketch": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Revolution": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  }
+ },
+ "q3_trap_reopened": {
+  "outside_x": 120.0,
+  "outside_y": 120.0,
+  "z": [
+   -0.0,
+   80.0
+  ],
+  "inside": 116.0,
+  "volume": 80449.905,
+  "solids": 1,
+  "valid": true,
+  "floor_ok": true,
+  "top_open": true,
+  "ring_ok": false,
+  "bbox": [
+   -60.0,
+   60.0,
+   -60.0,
+   60.0,
+   -0.0,
+   80.0
+  ],
+  "builds": true,
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "width_value": 60.0,
+  "width_expr": "Params.cup_diameter",
+  "state": {
+   "Sketch": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Revolution": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  }
+ },
+ "q4_fix": {
+  "outside_x": 60.0,
+  "outside_y": 60.0,
+  "z": [
+   -0.0,
+   80.0
+  ],
+  "inside": 56.0,
+  "volume": 34079.997,
+  "solids": 1,
+  "valid": true,
+  "floor_ok": true,
+  "top_open": true,
+  "ring_ok": true,
+  "bbox": [
+   -30.0,
+   30.0,
+   -30.0,
+   30.0,
+   -0.0,
+   80.0
+  ],
+  "builds": true,
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "width_value": 30.0,
+  "width_expr": "Params.cup_diameter / 2",
+  "state": {
+   "Sketch": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Revolution": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  }
+ },
+ "q5": {
+  "fixed_reopened_80": {
+   "outside_x": 80.0,
+   "outside_y": 80.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 76.0,
+   "volume": 48279.996,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -40.0,
+    40.0,
+    -40.0,
+    40.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 80.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 40.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "name_80": {
+   "outside_x": 160.0,
+   "outside_y": 160.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 156.0,
+   "volume": 117646.362,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": false,
+   "bbox": [
+    -80.0,
+    80.0,
+    -80.0,
+    80.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 80.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 80.0,
+   "width_expr": "Params.cup_diameter",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "typed30_80": {
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 56.0,
+   "volume": 34079.997,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": false,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 80.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": null,
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "q6": {
+  "d45_w2": {
+   "outside_x": 45.0,
+   "outside_y": 45.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 41.0,
+   "volume": 24254.666,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -22.5,
+    22.5,
+    -22.5,
+    22.5,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 45.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 22.5,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "d45_w3": {
+   "outside_x": 45.0,
+   "outside_y": 45.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 39.0,
+   "volume": 35251.026,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -22.5,
+    22.5,
+    -22.5,
+    22.5,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 45.0,
+   "wall": 3.0,
+   "cup_height": 80.0,
+   "width_value": 22.5,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "d60_w2": {
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 56.0,
+   "volume": 34079.997,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "d60_w3": {
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 54.0,
+   "volume": 49847.651,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 60.0,
+   "wall": 3.0,
+   "cup_height": 80.0,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "d80_w2": {
+   "outside_x": 80.0,
+   "outside_y": 80.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 76.0,
+   "volume": 48279.996,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -40.0,
+    40.0,
+    -40.0,
+    40.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 80.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 40.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "d80_w3": {
+   "outside_x": 80.0,
+   "outside_y": 80.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 74.0,
+   "volume": 70959.153,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -40.0,
+    40.0,
+    -40.0,
+    40.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 80.0,
+   "wall": 3.0,
+   "cup_height": 80.0,
+   "width_value": 40.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "d120_w2": {
+   "outside_x": 120.0,
+   "outside_y": 120.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 116.0,
+   "volume": 80449.905,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -60.0,
+    60.0,
+    -60.0,
+    60.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 120.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 60.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "d120_w3": {
+   "outside_x": 120.0,
+   "outside_y": 120.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 114.0,
+   "volume": 118837.025,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -60.0,
+    60.0,
+    -60.0,
+    60.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 120.0,
+   "wall": 3.0,
+   "cup_height": 80.0,
+   "width_value": 60.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "q9": {
+  "fixed_45": {
+   "outside_x": 45.0,
+   "outside_y": 45.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 41.0,
+   "volume": 24254.666,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": true,
+   "bbox": [
+    -22.5,
+    22.5,
+    -22.5,
+    22.5,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 45.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 22.5,
+   "width_expr": "Params.cup_diameter / 2",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "name_45": {
+   "outside_x": 90.0,
+   "outside_y": 90.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 86.0,
+   "volume": 55851.234,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": false,
+   "bbox": [
+    -45.0,
+    45.0,
+    -45.0,
+    45.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 45.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 45.0,
+   "width_expr": "Params.cup_diameter",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "name_40": {
+   "outside_x": 80.0,
+   "outside_y": 80.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "inside": 76.0,
+   "volume": 48279.996,
+   "solids": 1,
+   "valid": true,
+   "floor_ok": true,
+   "top_open": true,
+   "ring_ok": false,
+   "bbox": [
+    -40.0,
+    40.0,
+    -40.0,
+    40.0,
+    -0.0,
+    80.0
+   ],
+   "builds": true,
+   "cup_diameter": 40.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "width_value": 40.0,
+   "width_expr": "Params.cup_diameter",
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "volume_ratio_trap_to_fix": 2.3606,
+ "runs": {
+  "A1": {
+   "cost_usd": 0.1062,
+   "wall_s": 120,
+   "tool_calls": 3,
+   "pass": true,
+   "cls": 1,
+   "failed_criteria": {
+    "60": [],
+    "80": [],
+    "45": []
+   },
+   "e_revolve_in_body": true,
+   "f_reads_cup_diameter": [
+    [
+     "CupProfile",
+     "Constraints.outer_radius",
+     "Params.cup_diameter / 2"
+    ]
+   ],
+   "asis": {
+    "cup_diameter": 60.0,
+    "cup_height": 80.0,
+    "wall": 2.0,
+    "bad_any": {}
+   },
+   "sketches": {
+    "CupProfile": {
+     "support": [
+      [
+       "XZ_Plane",
+       [
+        ""
+       ]
+      ]
+     ],
+     "map_mode": "FlatFace",
+     "exprs": [
+      [
+       "Constraints.floor",
+       "Params.wall"
+      ],
+      [
+       "Constraints.height",
+       "Params.cup_height"
+      ],
+      [
+       "Constraints.outer_radius",
+       "Params.cup_diameter / 2"
+      ],
+      [
+       "Constraints.side_wall",
+       "Params.wall"
+      ]
+     ],
+     "geo": 6,
+     "constraints": 17,
+     "FullyConstrained": true,
+     "solve": 0
+    }
+   },
+   "revolutions": [
+    {
+     "name": "CupRevolve",
+     "type": "PartDesign::Revolution",
+     "in_body": true,
+     "state": [
+      "Up-to-date"
+     ],
+     "Angle": "360.0 deg",
+     "Type": "Angle",
+     "Reversed": "False",
+     "Midplane": "False",
+     "axis": [
+      "CupProfile",
+      [
+       "V_Axis"
+      ]
+     ],
+     "profile": "CupProfile",
+     "status": "Valid"
+    }
+   ],
+   "tree": [
+    "CupProfile",
+    "CupRevolve"
+   ],
+   "at": {
+    "60": {
+     "outside_x": 60.0,
+     "outside_y": 60.0,
+     "z": [
+      -0.0,
+      80.0
+     ],
+     "inside": 56.0,
+     "volume": 34079.997,
+     "solids": 1,
+     "valid": true,
+     "floor_ok": true,
+     "top_open": true,
+     "ring_ok": true,
+     "bbox": [
+      -30.0,
+      30.0,
+      -30.0,
+      30.0,
+      -0.0,
+      80.0
+     ],
+     "builds": true,
+     "cup_diameter": 60.0,
+     "wall": 2.0,
+     "cup_height": 80.0,
+     "width_value": null,
+     "width_expr": null,
+     "state": {
+      "CupProfile": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ],
+      "CupRevolve": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ]
+     }
+    },
+    "80": {
+     "outside_x": 80.0,
+     "outside_y": 80.0,
+     "z": [
+      -0.0,
+      80.0
+     ],
+     "inside": 76.0,
+     "volume": 48279.996,
+     "solids": 1,
+     "valid": true,
+     "floor_ok": true,
+     "top_open": true,
+     "ring_ok": true,
+     "bbox": [
+      -40.0,
+      40.0,
+      -40.0,
+      40.0,
+      -0.0,
+      80.0
+     ],
+     "builds": true,
+     "cup_diameter": 80.0,
+     "wall": 2.0,
+     "cup_height": 80.0,
+     "width_value": null,
+     "width_expr": null,
+     "state": {
+      "CupProfile": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ],
+      "CupRevolve": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ]
+     }
+    },
+    "45": {
+     "outside_x": 45.0,
+     "outside_y": 45.0,
+     "z": [
+      -0.0,
+      80.0
+     ],
+     "inside": 41.0,
+     "volume": 24254.666,
+     "solids": 1,
+     "valid": true,
+     "floor_ok": true,
+     "top_open": true,
+     "ring_ok": true,
+     "bbox": [
+      -22.5,
+      22.5,
+      -22.5,
+      22.5,
+      -0.0,
+      80.0
+     ],
+     "builds": true,
+     "cup_diameter": 45.0,
+     "wall": 2.0,
+     "cup_height": 80.0,
+     "width_value": null,
+     "width_expr": null,
+     "state": {
+      "CupProfile": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ],
+      "CupRevolve": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ]
+     }
+    }
+   }
+  },
+  "B1": {
+   "cost_usd": 0.0833,
+   "wall_s": 128,
+   "tool_calls": 7,
+   "pass": true,
+   "cls": 1,
+   "failed_criteria": {
+    "60": [],
+    "80": [],
+    "45": []
+   },
+   "e_revolve_in_body": true,
+   "f_reads_cup_diameter": [
+    [
+     "CupProfile",
+     "Constraints.radius",
+     "Params.cup_diameter / 2"
+    ]
+   ],
+   "asis": {
+    "cup_diameter": 60.0,
+    "cup_height": 80.0,
+    "wall": 2.0,
+    "bad_any": {}
+   },
+   "sketches": {
+    "CupProfile": {
+     "support": [
+      [
+       "XZ_Plane",
+       [
+        ""
+       ]
+      ]
+     ],
+     "map_mode": "FlatFace",
+     "exprs": [
+      [
+       "Constraints.floor",
+       "Params.wall"
+      ],
+      [
+       "Constraints.height",
+       "Params.cup_height"
+      ],
+      [
+       "Constraints.radius",
+       "Params.cup_diameter / 2"
+      ],
+      [
+       "Constraints.sidewall",
+       "Params.wall"
+      ]
+     ],
+     "geo": 6,
+     "constraints": 17,
+     "FullyConstrained": true,
+     "solve": 0
+    }
+   },
+   "revolutions": [
+    {
+     "name": "CupRevolution",
+     "type": "PartDesign::Revolution",
+     "in_body": true,
+     "state": [
+      "Up-to-date"
+     ],
+     "Angle": "360.0 deg",
+     "Type": "Angle",
+     "Reversed": "False",
+     "Midplane": "False",
+     "axis": [
+      "CupProfile",
+      [
+       "V_Axis"
+      ]
+     ],
+     "profile": "CupProfile",
+     "status": "Valid"
+    }
+   ],
+   "tree": [
+    "CupProfile",
+    "CupRevolution"
+   ],
+   "at": {
+    "60": {
+     "outside_x": 60.0,
+     "outside_y": 60.0,
+     "z": [
+      -0.0,
+      80.0
+     ],
+     "inside": 56.0,
+     "volume": 34079.997,
+     "solids": 1,
+     "valid": true,
+     "floor_ok": true,
+     "top_open": true,
+     "ring_ok": true,
+     "bbox": [
+      -30.0,
+      30.0,
+      -30.0,
+      30.0,
+      -0.0,
+      80.0
+     ],
+     "builds": true,
+     "cup_diameter": 60.0,
+     "wall": 2.0,
+     "cup_height": 80.0,
+     "width_value": null,
+     "width_expr": null,
+     "state": {
+      "CupProfile": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ],
+      "CupRevolution": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ]
+     }
+    },
+    "80": {
+     "outside_x": 80.0,
+     "outside_y": 80.0,
+     "z": [
+      -0.0,
+      80.0
+     ],
+     "inside": 76.0,
+     "volume": 48279.996,
+     "solids": 1,
+     "valid": true,
+     "floor_ok": true,
+     "top_open": true,
+     "ring_ok": true,
+     "bbox": [
+      -40.0,
+      40.0,
+      -40.0,
+      40.0,
+      -0.0,
+      80.0
+     ],
+     "builds": true,
+     "cup_diameter": 80.0,
+     "wall": 2.0,
+     "cup_height": 80.0,
+     "width_value": null,
+     "width_expr": null,
+     "state": {
+      "CupProfile": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ],
+      "CupRevolution": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ]
+     }
+    },
+    "45": {
+     "outside_x": 45.0,
+     "outside_y": 45.0,
+     "z": [
+      -0.0,
+      80.0
+     ],
+     "inside": 41.0,
+     "volume": 24254.666,
+     "solids": 1,
+     "valid": true,
+     "floor_ok": true,
+     "top_open": true,
+     "ring_ok": true,
+     "bbox": [
+      -22.5,
+      22.5,
+      -22.5,
+      22.5,
+      -0.0,
+      80.0
+     ],
+     "builds": true,
+     "cup_diameter": 45.0,
+     "wall": 2.0,
+     "cup_height": 80.0,
+     "width_value": null,
+     "width_expr": null,
+     "state": {
+      "CupProfile": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ],
+      "CupRevolution": [
+       [
+        "Up-to-date"
+       ],
+       "Valid"
+      ]
+     }
+    }
+   }
+  }
+ },
+ "runs_total_usd": 0.1895
+}

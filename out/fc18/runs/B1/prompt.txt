@@ -1,0 +1,1 @@
+Make a round pen cup in this file by drawing its cross-section and revolving it. Use the parameters already here: cup_diameter is the outside diameter, cup_height the height, wall the side wall and the floor. Stand it on the XY plane, base at z 0, open at the top. It should follow cup_diameter when I change it. Then measure the cup's outside diameter and tell me what you find.
