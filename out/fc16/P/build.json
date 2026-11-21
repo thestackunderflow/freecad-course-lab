@@ -1,0 +1,2167 @@
+{
+ "start_file": "/lab/out/fc14/P/peg-fixed.FCStd",
+ "pocket_types": [
+  "Length",
+  "ThroughAll",
+  "UpToFirst",
+  "UpToFace",
+  "?TwoLengths",
+  "UpToShape"
+ ],
+ "start": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pad001",
+   "last": "Pad001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "wall": 2.0,
+  "depth": null,
+  "hole": {
+   "wall": 2.0,
+   "volume": 27373.392,
+   "solids": 1,
+   "valid": true,
+   "axis_air": {
+    "y20.05": false,
+    "ymid": false,
+    "yout-0.05": false
+   },
+   "axis_segs": [
+    [
+     20.0,
+     22.0
+    ]
+   ],
+   "skin": 2.0,
+   "skin_mid_solid": null,
+   "pit_floor_y": 22.0,
+   "pit_depth": 0.0,
+   "back_hole_w": 0.0,
+   "dia_ok": false,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "outside_l": 44.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "top_open": true
+  },
+  "depths": [],
+  "tree": {
+   "bodies": [
+    "Body"
+   ],
+   "group": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "base_features": {
+    "Pad": null,
+    "Thickness": "Pad",
+    "Pad001": "Thickness"
+   },
+   "visible": [
+    "Body",
+    "Pad001"
+   ]
+  },
+  "params": {
+   "wall": 2.0,
+   "peg_size": 10.0,
+   "hole_size": 5.0
+  }
+ },
+ "q9": {
+  "2": {
+   "builds": true,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "outside_w": 64.0
+  },
+  "3": {
+   "builds": true,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "outside_w": 66.0
+  },
+  "4": {
+   "builds": true,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "outside_w": 68.0
+  },
+  "12": {
+   "builds": true,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "outside_w": 84.0
+  }
+ },
+ "q9_lesson15_rim_both": {
+  "2": {
+   "builds": false,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   }
+  },
+  "3": {
+   "builds": true,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "4": {
+   "builds": true,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "12": {
+   "builds": true,
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "q1_typed_w2": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pocket",
+   "last": "Pocket",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "wall": 2.0,
+  "depth": {
+   "type": "Length",
+   "expr": null,
+   "length": 2.0
+  },
+  "hole": {
+   "wall": 2.0,
+   "volume": 27334.122,
+   "solids": 1,
+   "valid": true,
+   "axis_air": {
+    "y20.05": true,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [],
+   "skin": 0,
+   "skin_mid_solid": null,
+   "pit_floor_y": null,
+   "pit_depth": 2.0,
+   "back_hole_w": 5.0,
+   "dia_ok": true,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "outside_l": 44.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "top_open": true
+  },
+  "depths": [
+   {
+    "name": "Pocket",
+    "kind": "Pocket",
+    "type": "Length",
+    "length": 2.0,
+    "expr": null,
+    "reversed": false,
+    "midplane": false,
+    "profile": "HoleSketch",
+    "support": [
+     [
+      "Pad001",
+      [
+       "Face13"
+      ]
+     ]
+    ]
+   }
+  ],
+  "face": "Face13",
+  "support": [
+   [
+    "Pad001",
+    [
+     "Face13"
+    ]
+   ]
+  ],
+  "map_mode": "FlatFace",
+  "reversed": false,
+  "centre": [
+   0.0,
+   22.0,
+   30.0
+  ],
+  "sketch_normal": [
+   0.0,
+   1.0,
+   -0.0
+  ]
+ },
+ "q2": {
+  "2": {
+   "centre": [
+    0.0,
+    22.0,
+    30.0
+   ],
+   "support": [
+    [
+     "Pad001",
+     [
+      "Face13"
+     ]
+    ]
+   ],
+   "builds": true
+  },
+  "3": {
+   "centre": [
+    0.0,
+    23.0,
+    30.0
+   ],
+   "support": [
+    [
+     "Pad001",
+     [
+      "Face13"
+     ]
+    ]
+   ],
+   "builds": true
+  },
+  "4": {
+   "centre": [
+    0.0,
+    24.0,
+    30.0
+   ],
+   "support": [
+    [
+     "Pad001",
+     [
+      "Face13"
+     ]
+    ]
+   ],
+   "builds": true
+  }
+ },
+ "q3_typed_w3": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pocket",
+   "last": "Pocket",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "wall": 3.0,
+  "depth": {
+   "type": "Length",
+   "expr": null,
+   "length": 2.0
+  },
+  "hole": {
+   "wall": 3.0,
+   "volume": 41244.712,
+   "solids": 1,
+   "valid": true,
+   "axis_air": {
+    "y20.05": false,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [
+    [
+     20.0,
+     21.0
+    ]
+   ],
+   "skin": 1.0,
+   "skin_mid_solid": true,
+   "pit_floor_y": 21.0,
+   "pit_depth": 2.0,
+   "back_hole_w": 5.0,
+   "dia_ok": true,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "outside_l": 46.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "top_open": true
+  },
+  "depths": [
+   {
+    "name": "Pocket",
+    "kind": "Pocket",
+    "type": "Length",
+    "length": 2.0,
+    "expr": null,
+    "reversed": false,
+    "midplane": false,
+    "profile": "HoleSketch",
+    "support": [
+     [
+      "Pad001",
+      [
+       "Face13"
+      ]
+     ]
+    ]
+   }
+  ],
+  "centre": [
+   0.0,
+   23.0,
+   30.0
+  ],
+  "support": [
+   [
+    "Pad001",
+    [
+     "Face13"
+    ]
+   ]
+  ]
+ },
+ "q6_typed_w4": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pocket",
+   "last": "Pocket",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "wall": 4.0,
+  "depth": {
+   "type": "Length",
+   "expr": null,
+   "length": 2.0
+  },
+  "hole": {
+   "wall": 4.0,
+   "volume": 55821.32,
+   "solids": 1,
+   "valid": true,
+   "axis_air": {
+    "y20.05": false,
+    "ymid": false,
+    "yout-0.05": true
+   },
+   "axis_segs": [
+    [
+     20.0,
+     22.0
+    ]
+   ],
+   "skin": 2.0,
+   "skin_mid_solid": true,
+   "pit_floor_y": 22.0,
+   "pit_depth": 2.0,
+   "back_hole_w": 0.0,
+   "dia_ok": false,
+   "front_solid": true,
+   "front_hole_w": 0.0,
+   "peg_solid": true,
+   "outside_w": 68.0,
+   "inside_w": 60.0,
+   "outside_l": 48.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "top_open": true
+  },
+  "depths": [
+   {
+    "name": "Pocket",
+    "kind": "Pocket",
+    "type": "Length",
+    "length": 2.0,
+    "expr": null,
+    "reversed": false,
+    "midplane": false,
+    "profile": "HoleSketch",
+    "support": [
+     [
+      "Pad001",
+      [
+       "Face13"
+      ]
+     ]
+    ]
+   }
+  ],
+  "centre": [
+   0.0,
+   24.0,
+   30.0
+  ],
+  "support": [
+   [
+    "Pad001",
+    [
+     "Face13"
+    ]
+   ]
+  ]
+ },
+ "through_w2": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pocket",
+   "last": "Pocket",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "wall": 2.0,
+  "depth": {
+   "type": "ThroughAll",
+   "expr": null,
+   "length": 2.0
+  },
+  "hole": {
+   "wall": 2.0,
+   "volume": 27294.852,
+   "solids": 1,
+   "valid": true,
+   "axis_air": {
+    "y20.05": true,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [],
+   "skin": 0,
+   "skin_mid_solid": null,
+   "pit_floor_y": null,
+   "pit_depth": 2.0,
+   "back_hole_w": 5.0,
+   "dia_ok": true,
+   "front_solid": false,
+   "front_hole_w": 5.0,
+   "peg_solid": true,
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "outside_l": 44.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "top_open": true
+  },
+  "depths": [
+   {
+    "name": "Pocket",
+    "kind": "Pocket",
+    "type": "ThroughAll",
+    "length": 2.0,
+    "expr": null,
+    "reversed": false,
+    "midplane": false,
+    "profile": "HoleSketch",
+    "support": [
+     [
+      "Pad001",
+      [
+       "Face13"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "q4_through_w3": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pocket",
+   "last": "Pocket",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "wall": 3.0,
+  "depth": {
+   "type": "ThroughAll",
+   "expr": null,
+   "length": 2.0
+  },
+  "hole": {
+   "wall": 3.0,
+   "volume": 41166.172,
+   "solids": 1,
+   "valid": true,
+   "axis_air": {
+    "y20.05": true,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [],
+   "skin": 0,
+   "skin_mid_solid": false,
+   "pit_floor_y": null,
+   "pit_depth": 3.0,
+   "back_hole_w": 5.0,
+   "dia_ok": true,
+   "front_solid": false,
+   "front_hole_w": 5.0,
+   "peg_solid": true,
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "outside_l": 46.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "top_open": true
+  },
+  "depths": [
+   {
+    "name": "Pocket",
+    "kind": "Pocket",
+    "type": "ThroughAll",
+    "length": 2.0,
+    "expr": null,
+    "reversed": false,
+    "midplane": false,
+    "profile": "HoleSketch",
+    "support": [
+     [
+      "Pad001",
+      [
+       "Face13"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "q5": {
+  "2": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 2.0,
+   "depth": {
+    "type": "Length",
+    "expr": "Params.wall",
+    "length": 2.0
+   },
+   "hole": {
+    "wall": 2.0,
+    "volume": 27334.122,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "axis_segs": [],
+    "skin": 0,
+    "skin_mid_solid": null,
+    "pit_floor_y": null,
+    "pit_depth": 2.0,
+    "back_hole_w": 5.0,
+    "dia_ok": true,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 64.0,
+    "inside_w": 60.0,
+    "outside_l": 44.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 2.0,
+     "expr": "Params.wall",
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "3": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 3.0,
+   "depth": {
+    "type": "Length",
+    "expr": "Params.wall",
+    "length": 3.0
+   },
+   "hole": {
+    "wall": 3.0,
+    "volume": 41225.077,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "axis_segs": [],
+    "skin": 0,
+    "skin_mid_solid": false,
+    "pit_floor_y": null,
+    "pit_depth": 3.0,
+    "back_hole_w": 5.0,
+    "dia_ok": true,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 66.0,
+    "inside_w": 60.0,
+    "outside_l": 46.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 3.0,
+     "expr": "Params.wall",
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "expr": "Params.wall"
+ },
+ "q6": {
+  "reopen_w2": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 2.0,
+   "depth": {
+    "type": "Length",
+    "expr": "Params.wall",
+    "length": 2.0
+   },
+   "hole": {
+    "wall": 2.0,
+    "volume": 27334.122,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "axis_segs": [],
+    "skin": 0,
+    "skin_mid_solid": null,
+    "pit_floor_y": null,
+    "pit_depth": 2.0,
+    "back_hole_w": 5.0,
+    "dia_ok": true,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 64.0,
+    "inside_w": 60.0,
+    "outside_l": 44.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 2.0,
+     "expr": "Params.wall",
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "reopen_w4": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 4.0,
+   "depth": {
+    "type": "Length",
+    "expr": "Params.wall",
+    "length": 4.0
+   },
+   "hole": {
+    "wall": 4.0,
+    "volume": 55782.05,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "axis_segs": [],
+    "skin": 0,
+    "skin_mid_solid": false,
+    "pit_floor_y": null,
+    "pit_depth": 4.0,
+    "back_hole_w": 5.0,
+    "dia_ok": true,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 68.0,
+    "inside_w": 60.0,
+    "outside_l": 48.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 4.0,
+     "expr": "Params.wall",
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "hole6": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 4.0,
+   "depth": {
+    "type": "Length",
+    "expr": "Params.wall",
+    "length": 4.0
+   },
+   "hole": {
+    "wall": 4.0,
+    "volume": 55747.492,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "axis_segs": [],
+    "skin": 0,
+    "skin_mid_solid": false,
+    "pit_floor_y": null,
+    "pit_depth": 4.0,
+    "back_hole_w": 6.0,
+    "dia_ok": false,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 68.0,
+    "inside_w": 60.0,
+    "outside_l": 48.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 4.0,
+     "expr": "Params.wall",
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "typed_w4": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 4.0,
+   "depth": {
+    "type": "Length",
+    "expr": null,
+    "length": 2.0
+   },
+   "hole": {
+    "wall": 4.0,
+    "volume": 55821.32,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": false,
+     "ymid": false,
+     "yout-0.05": true
+    },
+    "axis_segs": [
+     [
+      20.0,
+      22.0
+     ]
+    ],
+    "skin": 2.0,
+    "skin_mid_solid": true,
+    "pit_floor_y": 22.0,
+    "pit_depth": 2.0,
+    "back_hole_w": 0.0,
+    "dia_ok": false,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 68.0,
+    "inside_w": 60.0,
+    "outside_l": 48.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 2.0,
+     "expr": null,
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ],
+   "centre": [
+    0.0,
+    24.0,
+    30.0
+   ],
+   "support": [
+    [
+     "Pad001",
+     [
+      "Face13"
+     ]
+    ]
+   ]
+  }
+ },
+ "q7": {
+  "UpToFirst": {
+   "2": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFirst",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "3": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFirst",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "4": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFirst",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "UpToFace": {
+   "2": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFace",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "uptoface": [
+       "Pad001",
+       [
+        "Face5"
+       ]
+      ],
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "3": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFace",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "uptoface": [
+       "Pad001",
+       [
+        "Face5"
+       ]
+      ],
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "4": {
+    "builds": true,
+    "state": {
+     "Pad": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Thickness": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pad001": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ],
+     "Pocket": [
+      [
+       "Up-to-date"
+      ],
+      "Valid"
+     ]
+    },
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "front_solid": true,
+    "skin": 0,
+    "depths": [
+     {
+      "name": "Pocket",
+      "kind": "Pocket",
+      "type": "UpToFace",
+      "length": 2.0,
+      "expr": null,
+      "reversed": false,
+      "midplane": false,
+      "uptoface": [
+       "Pad001",
+       [
+        "Face5"
+       ]
+      ],
+      "profile": "HoleSketch",
+      "support": [
+       [
+        "Pad001",
+        [
+         "Face13"
+        ]
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "q10": {
+  "defaults": {
+   "DepthType": "Dimension",
+   "Depth": "25.0 mm",
+   "DrillPoint": "Angled",
+   "DrillPointAngle": "118.0 deg",
+   "Diameter": "6.0 mm",
+   "DrillForDepth": "False",
+   "Threaded": "False"
+  },
+  "depth_types": [
+   "Dimension",
+   "ThroughAll"
+  ],
+  "drill_points": [
+   "Flat",
+   "Angled"
+  ],
+  "typed2_Flat_w3": {
+   "builds": true,
+   "axis_air": {
+    "y20.05": false,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [
+    [
+     20.0,
+     21.0
+    ]
+   ],
+   "skin": 1.0,
+   "inside_face_segs_x": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "front_solid": true
+  },
+  "typed2_Angled_w3": {
+   "builds": true,
+   "axis_air": {
+    "y20.05": true,
+    "ymid": true,
+    "yout-0.05": true
+   },
+   "axis_segs": [],
+   "skin": 0,
+   "inside_face_segs_x": [
+    [
+     -5.0,
+     -0.8524
+    ],
+    [
+     0.8524,
+     5.0
+    ]
+   ],
+   "front_solid": true
+  }
+ },
+ "q11": {
+  "long_2.5_w2.5": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 2.5,
+   "depth": {
+    "type": "Length",
+    "expr": null,
+    "length": 2.5
+   },
+   "hole": {
+    "wall": 2.5,
+    "volume": 34197.133,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": true,
+     "ymid": true,
+     "yout-0.05": true
+    },
+    "axis_segs": [],
+    "skin": 0,
+    "skin_mid_solid": false,
+    "pit_floor_y": null,
+    "pit_depth": 2.5,
+    "back_hole_w": 5.0,
+    "dia_ok": true,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 65.0,
+    "inside_w": 60.0,
+    "outside_l": 45.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 2.5,
+     "expr": null,
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "long_2.5_w6": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 6.0,
+   "depth": {
+    "type": "Length",
+    "expr": null,
+    "length": 2.5
+   },
+   "hole": {
+    "wall": 6.0,
+    "volume": 87013.036,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": false,
+     "ymid": false,
+     "yout-0.05": true
+    },
+    "axis_segs": [
+     [
+      20.0,
+      23.5
+     ]
+    ],
+    "skin": 3.5,
+    "skin_mid_solid": true,
+    "pit_floor_y": 23.5,
+    "pit_depth": 2.5,
+    "back_hole_w": 0.0,
+    "dia_ok": false,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 72.0,
+    "inside_w": 60.0,
+    "outside_l": 52.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 2.5,
+     "expr": null,
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  "short_2_w4": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pocket",
+    "last": "Pocket",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "wall": 4.0,
+   "depth": {
+    "type": "Length",
+    "expr": null,
+    "length": 2.0
+   },
+   "hole": {
+    "wall": 4.0,
+    "volume": 55821.32,
+    "solids": 1,
+    "valid": true,
+    "axis_air": {
+     "y20.05": false,
+     "ymid": false,
+     "yout-0.05": true
+    },
+    "axis_segs": [
+     [
+      20.0,
+      22.0
+     ]
+    ],
+    "skin": 2.0,
+    "skin_mid_solid": true,
+    "pit_floor_y": 22.0,
+    "pit_depth": 2.0,
+    "back_hole_w": 0.0,
+    "dia_ok": false,
+    "front_solid": true,
+    "front_hole_w": 0.0,
+    "peg_solid": true,
+    "outside_w": 68.0,
+    "inside_w": 60.0,
+    "outside_l": 48.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "top_open": true
+   },
+   "depths": [
+    {
+     "name": "Pocket",
+     "kind": "Pocket",
+     "type": "Length",
+     "length": 2.0,
+     "expr": null,
+     "reversed": false,
+     "midplane": false,
+     "profile": "HoleSketch",
+     "support": [
+      [
+       "Pad001",
+       [
+        "Face13"
+       ]
+      ]
+     ]
+    }
+   ],
+   "centre": [
+    0.0,
+    24.0,
+    30.0
+   ],
+   "support": [
+    [
+     "Pad001",
+     [
+      "Face13"
+     ]
+    ]
+   ]
+  }
+ }
+}
