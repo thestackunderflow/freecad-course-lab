@@ -1,0 +1,36 @@
+
+  Cause: the Mirrored feature was mirroring
+  the peg across the XZ plane, which swaps
+  front and back. That's why the copy landed
+  on the back. I changed its mirror plane to
+  the YZ plane, which swaps left and right.
+
+  What I checked:
+  - At peg_x = 15, the pegs span x = 10 to 20
+    and x = −20 to −10. Both are at y = −35,
+    on the front.
+  - At peg_x = 8, they span 3 to 13 and −13 to
+    −3, so the copy follows the original and
+    stays symmetric.
+  - I set peg_x back to 15, so your document
+    is as you had it apart from the mirror
+    fix.
+  - The model recomputes cleanly and the solid
+    is valid. The cup volume is unchanged, so
+    the hole is intact.
+
+  The mirror is still part of the parametric
+  model, so changing peg_x in the Params sheet
+  moves both pegs together.
+
+  I haven't saved the document, and there's no
+  file in the working directory. Save from
+  FreeCAD if you want to keep the change.
+
+✻ Worked for 32s · done 9:40 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

@@ -1,0 +1,36 @@
+  - Pegs: both are on the front face at the
+    same height (z 35–45). They're 10×10 mm
+    and stick out 15 mm. The original is at x
+    = +10 to +20 and the copy at x = −20 to
+    −10, so each is 15 mm from the middle. The
+    model is valid and still one solid.
+  - Moving the peg: I set peg_x to 25 and both
+    pegs moved out to ±25, with nothing left
+    at ±15. I then put it back to 15, so your
+    file is unchanged apart from the mirror
+    fix.
+  - Back of the cup: nothing sticks out past
+    the back wall. The overall extents are now
+    y −35 to +22 (they were −35 to +35 with
+    the stray peg). The back wall is solid
+    except for the 5 mm hanging hole near z ≈
+    30 (centered on x = 0, as far as I could
+    tell).
+
+  Things to know:
+  - The pocket for the hole isn't part of the
+    mirror. That's fine for a single hole, but
+    if you want a hole through the second peg
+    too, it needs mirroring as well.
+  - The peg's height is hard-coded in the
+    sketch (40 - peg_size/2) rather than
+    coming from Params. Say so if you want it
+    moved into the spreadsheet.
+
+✻ Brewed for 37s · done 9:43 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+
