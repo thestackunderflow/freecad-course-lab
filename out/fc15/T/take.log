@@ -1,0 +1,24 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+selection: [('Pad001', ['Edge16'])]
+panel: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge16", [2530, 801]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.00 mm", [2692, 1166]], ["QLineEdit", "field:1.00 mm", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+panel list: [['Edge16']]
+panel after radius: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge16", [2530, 801]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:3.00", [2692, 1166]], ["QLineEdit", "field:3.00", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+dialogs before OK: []
+ui after OK: {"menu": [], "dialogs": [{"title": "Input error", "labels": ["BRep_API: command not done"], "combos": [], "checks": [], "buttons": [["OK", true, 1566, 945]]}], "popup": []}
+box OK at 1566 945
+dialogs after OK: []
+after OK: {"group": ["Pad", "Thickness", "Pad001", "Fillet"], "tip": "Fillet", "state": {"Fillet": [["Invalid"], "BRep_API: command not done"]}, "fillets": {"Fillet": [3.0, "Params.rim_out", ["Edge16"]]}, "wall": 2.0, "volume": 27328.076, "faces": 36, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": false}
+panel now: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge16", [2530, 801]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:3.00", [2692, 1166]], ["QLineEdit", "field:3.00", [2678, 1166]], ["QCheckBox", "Use all edges", [253
+menubar View 212 36
+Panels at 428 1042
+Report view at none
+report_open failed
+report: ' successfully.\n14:27:02  Python code executed successfully.\n14:27:03  Python code executed successfully.\n14:27:05  Python code executed successfully.\n14:27:06  Python code executed successfully.\n14:27:07  Python code executed successfully.\n14:27:08  Python code executed successfully.\n14:27:10  Python code executed successfully.\n14:27:11  Python code executed successfully.\n14:27:12  Python code executed successfully.\n14:27:13  Python code executed successfully.\n14:27:15  Python code executed successfully.\n14:27:16  Python code executed successfully.\n14:27:16  Python code executed successfully.\n14:27:21  Python code executed successfully.\n14:27:23  Python code executed successfully.\n14:27:23  Python code executed successfully.\n14:27:28  Python code executed successfully.\n14:27:28  Python code executed successfully.\n14:27:28  Python code executed successfully.\n14:27:35  Python code executed successfully.\n14:27:35  Python code executed successfully.\n14:27:35  Python code executed successfully.\n14:27:35  Python code executed successfully.\n14:27:46  Python code executed successfully.\n14:27:53  Python code executed successfully.\n14:27:53  Python code executed successfully.\n14:27:53  Python code executed successfully.\n14:27:53  Python code executed successfully.\n14:28:11  Python code executed successfully.\n14:28:12  Python code executed successfully.\n14:28:12  Python code executed successfully.\n14:28:14  Python code executed successfully.\n14:28:14  Python code executed successfully.\n'
+after Cancel: {"group": ["Pad", "Thickness", "Pad001"], "tip": "Pad001", "state": {}, "fillets": {}, "wall": 2.0, "volume": 27373.392, "faces": 28, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": true}
+1
+saved
+TAKE T DONE

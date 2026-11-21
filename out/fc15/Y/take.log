@@ -1,0 +1,8 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+saved
+TAKE Y DONE
+FC15 check {"2": [true, {"out": [1.5], "in": []}, 0.5], "3": [true, {"out": [1.5], "in": []}, 1.5], "1.6": [true, {"out": [1.5], "in": []}, 0.1]} FAIL

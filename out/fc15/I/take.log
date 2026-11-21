@@ -1,0 +1,22 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+1
+selection: [('Fillet', ['Edge12', 'Edge11', 'Edge10', 'Edge9'])]
+inner edges by code: ['Edge10', 'Edge11', 'Edge12', 'Edge9']
+panel: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge12", [2530, 801]], ["list", "Edge11", [2530, 826]], ["list", "Edge10", [2530, 851]], ["list", "Edge9", [2530, 876]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.00 mm", [2692, 1166]], ["QLineEdit", "field:1.00 mm", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+panel list: [['Edge12', 'Edge11', 'Edge10', 'Edge9']]
+panel after radius: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge12", [2530, 801]], ["list", "Edge11", [2530, 826]], ["list", "Edge10", [2530, 851]], ["list", "Edge9", [2530, 876]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.00", [2692, 1166]], ["QLineEdit", "field:1.00", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+dialogs before OK: []
+ui after OK: {"menu": [], "dialogs": [{"title": "Input error", "labels": ["BRep_API: command not done"], "combos": [], "checks": [], "buttons": [["OK", true, 1566, 945]]}], "popup": []}
+box OK at 1566 945
+dialogs after OK: []
+after OK: {"group": ["Pad", "Thickness", "Pad001", "Fillet", "Fillet001"], "tip": "Fillet001", "state": {"Fillet001": [["Invalid"], "BRep_API: command not done"]}, "fillets": {"Fillet": [1.5, "Params.rim_out", ["Edge16"]], "Fillet001": [1.0, "Params.rim_in", ["Edge12", "Edge11", "Edge10", "Edge9"]]}, "wall": 2.0, "volume": 27271.77, "faces": 36, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": false}
+panel now: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge12", [2530, 801]], ["list", "Edge11", [2530, 826]], ["list", "Edge10", [2530, 851]], ["list", "Edge9", [2530, 876]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.
+after Cancel: {"group": ["Pad", "Thickness", "Pad001", "Fillet"], "tip": "Fillet", "state": {}, "fillets": {"Fillet": [1.5, "Params.rim_out", ["Edge16"]]}, "wall": 2.0, "volume": 27271.77, "faces": 36, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": false}
+1
+saved
+TAKE I DONE
+FC15 check {"2": [true, {"out": [1.5], "in": []}, 0.5], "3": [true, {"out": [1.5], "in": []}, 1.5], "1.6": [true, {"out": [1.5], "in": []}, 0.1]} FAIL

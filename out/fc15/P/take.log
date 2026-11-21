@@ -1,0 +1,39 @@
+notices at open: []
+cup
+prepped cup
+1
+notices at reopen: []
+178 534
+reopened: {"group": ["Pad", "Thickness", "Pad001", "Fillet"], "tip": "Fillet", "state": {}, "fillets": {"Fillet": [1.5, "Params.rim_out", ["Edge16"]]}, "wall": 2.0, "volume": 27271.77, "faces": 36, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": false}
+wall cell 855 572
+wall 3: {"group": ["Pad", "Thickness", "Pad001", "Fillet"], "tip": "Fillet", "state": {}, "fillets": {"Fillet": [1.5, "Params.rim_out", ["Edge16"]]}, "wall": 3.0, "volume": 41179.326, "faces": 36, "solids": 1, "bbox_x": [-33.0, 33.0], "corner_pt": false}
+wb combo 703 86
+wb Part Design at 757 336; ui: {"menu": [], "dialogs": [], "popup": [["Assembly", 757, 19], ["BIM", 757, 59], ["CAM", 757, 99], ["Draft", 757, 138], ["FEM", 757, 178], ["MCP Addon", 757, 217], ["Material", 757, 257], ["Mesh", 757, 297], ["Part Design", 757, 336], ["Part", 757, 376], ["Points", 757, 415], ["Reverse Engineering", 757, 455], ["Sketcher", 757, 495], ["Spreadsheet", 757, 534], ["Surface", 757, 574], ["TechDraw", 757
+1
+1
+selection: [('Fillet', ['Edge12', 'Edge11', 'Edge10', 'Edge9'])]
+inner edges by code: ['Edge10', 'Edge11', 'Edge12', 'Edge9']
+panel: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge12", [2530, 801]], ["list", "Edge11", [2530, 826]], ["list", "Edge10", [2530, 851]], ["list", "Edge9", [2530, 876]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.00 mm", [2692, 1166]], ["QLineEdit", "field:1.00 mm", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+panel list: [['Edge12', 'Edge11', 'Edge10', 'Edge9']]
+panel after radius: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge12", [2530, 801]], ["list", "Edge11", [2530, 826]], ["list", "Edge10", [2530, 851]], ["list", "Edge9", [2530, 876]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.00", [2692, 1166]], ["QLineEdit", "field:1.00", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+dialogs before OK: []
+ui after OK: {"menu": [], "dialogs": [], "popup": []}
+dialogs after OK: []
+after OK: {"group": ["Pad", "Thickness", "Pad001", "Fillet", "Fillet001"], "tip": "Fillet001", "state": {}, "fillets": {"Fillet": [1.5, "Params.rim_out", ["Edge16"]], "Fillet001": [1.0, "Params.rim_in", ["Edge12", "Edge11", "Edge10", "Edge9"]]}, "wall": 3.0, "volume": 41136.022, "faces": 40, "solids": 1, "bbox_x": [-33.0, 33.0], "corner_pt": false}
+panel now: [["QSint::ActionLabel", "Start Part", [2509, 613]], ["QSint::ActionLabel", "New Body", [2530, 671]]]
+1
+1
+1
+flat-w3 edges 1561 985 1802 985
+flat-w3 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:0.50 mm 
+flat-w3 selection: [('Fillet001', ['Edge1', 'Edge5'])]
+1
+198 567
+wall cell 855 572
+wall 2: {"group": ["Pad", "Thickness", "Pad001", "Fillet", "Fillet001"], "tip": "Fillet001", "state": {"Fillet001": [["Touched", "Invalid"], "BRep_API: command not done"]}, "fillets": {"Fillet": [1.5, "Params.rim_out", ["Edge16"]], "Fillet001": [1.0, "Params.rim_in", ["Edge12", "Edge11", "Edge10", "Edge9"]]}, "wall": 2.0, "volume": 41136.022, "faces": 40, "solids": 1, "bbox_x": [-33.0, 33.0], "corner_pt": false}
+1
+tooltip: ''
+1
+saved
+TAKE P DONE
+FC15 check {"2": [false, {"out": [1.5], "in": [1.0]}, 0.5], "3": [true, {"out": [1.5], "in": [1.0]}, 0.5], "1.6": [false, {"out": [1.5], "in": [1.0]}, 0.5]} FAIL

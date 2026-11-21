@@ -1,0 +1,914 @@
+{
+ "doc": "/lab/out/fc15/P/end.FCStd",
+ "stored": {
+  "builds": false,
+  "build_info": {
+   "bad": {
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "tip": "Fillet001",
+   "last": "Fillet001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet001": [
+    [
+     "Touched",
+     "Invalid"
+    ],
+    "BRep_API: command not done"
+   ]
+  },
+  "rim": {
+   "volume": 41136.022,
+   "faces": 40,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     31.0,
+     31.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": [
+     1.0
+    ]
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 4
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": false,
+    "out_air_-x": false,
+    "out_air_+y": false,
+    "out_air_-y": false,
+    "out_air_corner": false,
+    "in_air_+x": true,
+    "in_air_-y": true
+   },
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  }
+ },
+ "recomputed": {
+  "builds": false,
+  "build_info": {
+   "bad": {
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "tip": "Fillet001",
+   "last": "Fillet001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet001": [
+    [
+     "Touched",
+     "Invalid"
+    ],
+    "BRep_API: command not done"
+   ]
+  },
+  "rim": {
+   "volume": 41136.022,
+   "faces": 40,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     31.0,
+     31.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": [
+     1.0
+    ]
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 4
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": false,
+    "out_air_-x": false,
+    "out_air_+y": false,
+    "out_air_-y": false,
+    "out_air_corner": false,
+    "in_air_+x": true,
+    "in_air_-y": true
+   },
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  }
+ },
+ "tree": {
+  "bodies": [
+   "Body"
+  ],
+  "group": [
+   "Sketch",
+   "Pad",
+   "Thickness",
+   "Sketch001",
+   "Pad001",
+   "Fillet",
+   "Fillet001"
+  ],
+  "tip": "Fillet001",
+  "base_features": {
+   "Pad": null,
+   "Thickness": "Pad",
+   "Pad001": "Thickness",
+   "Fillet": "Pad001",
+   "Fillet001": "Fillet"
+  },
+  "visible": [
+   "Body",
+   "Fillet001"
+  ]
+ },
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Cup",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "Sketch",
+   "Sketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad",
+   "Pad",
+   "PartDesign::Pad"
+  ],
+  [
+   "Thickness",
+   "Thickness",
+   "PartDesign::Thickness"
+  ],
+  [
+   "Sketch001",
+   "Sketch001",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad001",
+   "Pad001",
+   "PartDesign::Pad"
+  ],
+  [
+   "Fillet",
+   "Fillet",
+   "PartDesign::Fillet"
+  ],
+  [
+   "Fillet001",
+   "Fillet001",
+   "PartDesign::Fillet"
+  ]
+ ],
+ "fillets": [
+  {
+   "name": "Fillet",
+   "type": "PartDesign::Fillet",
+   "radius": 1.5,
+   "expr": "Params.rim_out",
+   "base": [
+    "Pad001",
+    [
+     "Edge16"
+    ]
+   ]
+  },
+  {
+   "name": "Fillet001",
+   "type": "PartDesign::Fillet",
+   "radius": 1.0,
+   "expr": "Params.rim_in",
+   "base": [
+    "Fillet",
+    [
+     "Edge12",
+     "Edge11",
+     "Edge10",
+     "Edge9"
+    ]
+   ]
+  }
+ ],
+ "params": {
+  "A1": [
+   null,
+   "cup_width"
+  ],
+  "B1": [
+   "cup_width",
+   "60"
+  ],
+  "A2": [
+   null,
+   "cup_length"
+  ],
+  "B2": [
+   "cup_length",
+   "40"
+  ],
+  "A3": [
+   null,
+   "cup_height"
+  ],
+  "B3": [
+   "cup_height",
+   "50"
+  ],
+  "A4": [
+   null,
+   "wall"
+  ],
+  "B4": [
+   "wall",
+   "2"
+  ],
+  "A5": [
+   null,
+   "peg_size"
+  ],
+  "B5": [
+   "peg_size",
+   "10"
+  ],
+  "A6": [
+   null,
+   "peg_length"
+  ],
+  "B6": [
+   "peg_length",
+   "15"
+  ],
+  "A7": [
+   null,
+   "rim_out"
+  ],
+  "B7": [
+   "rim_out",
+   "1.5"
+  ],
+  "A8": [
+   null,
+   "rim_in"
+  ],
+  "B8": [
+   "rim_in",
+   "1"
+  ]
+ },
+ "at_wall2": {
+  "builds": false,
+  "build_info": {
+   "bad": {
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "tip": "Fillet001",
+   "last": "Fillet001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet001": [
+    [
+     "Touched",
+     "Invalid"
+    ],
+    "BRep_API: command not done"
+   ]
+  },
+  "rim": {
+   "volume": 41136.022,
+   "faces": 40,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     31.0,
+     31.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": [
+     1.0
+    ]
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 4
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": false,
+    "out_air_-x": false,
+    "out_air_+y": false,
+    "out_air_-y": false,
+    "out_air_corner": false,
+    "in_air_+x": true,
+    "in_air_-y": true
+   },
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "m": {
+   "solids": 1,
+   "volume": 41136.022,
+   "valid": true,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "bbox": [
+    -33.247,
+    33.247,
+    -35.0,
+    23.247,
+    -3.0,
+    50.0
+   ],
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "outside_l": 46.0,
+   "inside_l": 40.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "inside_d": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x_segs": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0
+  }
+ },
+ "at_wall3": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Fillet001",
+   "last": "Fillet001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 41136.022,
+   "faces": 40,
+   "solids": 1,
+   "wall": 3.0,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     31.0,
+     31.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": [
+     1.0
+    ]
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 4
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": true,
+    "out_air_-x": true,
+    "out_air_+y": true,
+    "out_air_-y": true,
+    "out_air_corner": true,
+    "in_air_+x": true,
+    "in_air_-y": true
+   },
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "m": {
+   "solids": 1,
+   "volume": 41136.022,
+   "valid": true,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "bbox": [
+    -33.247,
+    33.247,
+    -35.0,
+    23.247,
+    -3.0,
+    50.0
+   ],
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "outside_l": 46.0,
+   "inside_l": 40.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "inside_d": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x_segs": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0
+  }
+ },
+ "at_wall1.6": {
+  "builds": false,
+  "build_info": {
+   "bad": {
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "tip": "Fillet001",
+   "last": "Fillet001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet001": [
+    [
+     "Touched",
+     "Invalid"
+    ],
+    "BRep_API: command not done"
+   ]
+  },
+  "rim": {
+   "volume": 41136.022,
+   "faces": 40,
+   "solids": 1,
+   "wall": 1.6,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     31.0,
+     31.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": [
+     1.0
+    ]
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 4
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": true,
+    "out_air_+x": false,
+    "out_air_-x": false,
+    "out_air_+y": false,
+    "out_air_-y": false,
+    "out_air_corner": false,
+    "in_air_+x": true,
+    "in_air_-y": true
+   },
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 49.9798,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "m": {
+   "solids": 1,
+   "volume": 41136.022,
+   "valid": true,
+   "wall_param": 1.6,
+   "peg_param": 10.0,
+   "bbox": [
+    -33.247,
+    33.247,
+    -35.0,
+    23.247,
+    -3.0,
+    50.0
+   ],
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "outside_l": 46.0,
+   "inside_l": 40.0,
+   "floor_top": 0.0,
+   "rim_top": 49.9798,
+   "inside_d": 49.9798,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x_segs": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0
+  }
+ },
+ "pass": false,
+ "criteria": {
+  "2": {
+   "a": false,
+   "b": true,
+   "d": false,
+   "e": true,
+   "sum": 2.5,
+   "sum_fraction": 1.25
+  },
+  "3": {
+   "a": true,
+   "b": true,
+   "d": true,
+   "e": true,
+   "sum": 2.5,
+   "sum_fraction": 0.8333
+  },
+  "1.6": {
+   "a": false,
+   "b": true,
+   "d": false,
+   "e": true,
+   "sum": 2.5,
+   "sum_fraction": 1.5625
+  }
+ }
+}

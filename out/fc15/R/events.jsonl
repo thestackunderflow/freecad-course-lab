@@ -1,0 +1,11 @@
+{"t": 0.031, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (R)"}
+{"t": 13.042, "event": "double-click: open Params"}
+{"t": 18.574, "event": "hover: Params row 4"}
+{"t": 21.347, "event": "hover: Params row 7"}
+{"t": 24.107, "event": "hover: Params row 8"}
+{"t": 28.163, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 30.372, "event": "key 0: isometric", "keys": "0"}
+{"t": 31.592, "event": "(view fitted)"}
+{"t": 39.829, "event": "view: zoomed (Isometric, 12 mm high, at 31 0 50)"}
+{"t": 43.964, "event": "key 0: isometric", "keys": "0"}
+{"t": 45.165, "event": "(view fitted)"}

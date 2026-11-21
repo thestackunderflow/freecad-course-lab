@@ -1,0 +1,715 @@
+{
+ "doc": "/lab/out/fc15/R/end.FCStd",
+ "stored": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pad001",
+   "last": "Pad001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 27373.392,
+   "faces": 28,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 3.0,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     32.0
+    ]
+   ],
+   "flat": 2.0,
+   "round_radii": {
+    "out": [],
+    "in": []
+   },
+   "round_faces": {
+    "out": 0,
+    "in": 0
+   },
+   "torus_faces": 0,
+   "points": {
+    "corner_pt_31.95": true
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  }
+ },
+ "recomputed": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pad001",
+   "last": "Pad001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 27373.392,
+   "faces": 28,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 3.0,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     32.0
+    ]
+   ],
+   "flat": 2.0,
+   "round_radii": {
+    "out": [],
+    "in": []
+   },
+   "round_faces": {
+    "out": 0,
+    "in": 0
+   },
+   "torus_faces": 0,
+   "points": {
+    "corner_pt_31.95": true
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  }
+ },
+ "tree": {
+  "bodies": [
+   "Body"
+  ],
+  "group": [
+   "Sketch",
+   "Pad",
+   "Thickness",
+   "Sketch001",
+   "Pad001"
+  ],
+  "tip": "Pad001",
+  "base_features": {
+   "Pad": null,
+   "Thickness": "Pad",
+   "Pad001": "Thickness"
+  },
+  "visible": [
+   "Body",
+   "Pad001"
+  ]
+ },
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Cup",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "Sketch",
+   "Sketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad",
+   "Pad",
+   "PartDesign::Pad"
+  ],
+  [
+   "Thickness",
+   "Thickness",
+   "PartDesign::Thickness"
+  ],
+  [
+   "Sketch001",
+   "Sketch001",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad001",
+   "Pad001",
+   "PartDesign::Pad"
+  ]
+ ],
+ "fillets": [],
+ "params": {
+  "A1": [
+   null,
+   "cup_width"
+  ],
+  "B1": [
+   "cup_width",
+   "60"
+  ],
+  "A2": [
+   null,
+   "cup_length"
+  ],
+  "B2": [
+   "cup_length",
+   "40"
+  ],
+  "A3": [
+   null,
+   "cup_height"
+  ],
+  "B3": [
+   "cup_height",
+   "50"
+  ],
+  "A4": [
+   null,
+   "wall"
+  ],
+  "B4": [
+   "wall",
+   "2"
+  ],
+  "A5": [
+   null,
+   "peg_size"
+  ],
+  "B5": [
+   "peg_size",
+   "10"
+  ],
+  "A6": [
+   null,
+   "peg_length"
+  ],
+  "B6": [
+   "peg_length",
+   "15"
+  ],
+  "A7": [
+   null,
+   "rim_out"
+  ],
+  "B7": [
+   "rim_out",
+   "3"
+  ],
+  "A8": [
+   null,
+   "rim_in"
+  ],
+  "B8": [
+   "rim_in",
+   "1"
+  ]
+ },
+ "at_wall2": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pad001",
+   "last": "Pad001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 27373.392,
+   "faces": 28,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 3.0,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     32.0
+    ]
+   ],
+   "flat": 2.0,
+   "round_radii": {
+    "out": [],
+    "in": []
+   },
+   "round_faces": {
+    "out": 0,
+    "in": 0
+   },
+   "torus_faces": 0,
+   "points": {
+    "corner_pt_31.95": true
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "m": {
+   "solids": 1,
+   "volume": 27373.392,
+   "valid": true,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "bbox": [
+    -32.0,
+    32.0,
+    -35.0,
+    22.0,
+    -2.0,
+    50.0
+   ],
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "outside_l": 44.0,
+   "inside_l": 40.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "inside_d": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x_segs": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0
+  }
+ },
+ "at_wall3": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pad001",
+   "last": "Pad001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 41283.982,
+   "faces": 28,
+   "solids": 1,
+   "wall": 3.0,
+   "rim_out_param": 3.0,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     33.0
+    ]
+   ],
+   "flat": 3.0,
+   "round_radii": {
+    "out": [],
+    "in": []
+   },
+   "round_faces": {
+    "out": 0,
+    "in": 0
+   },
+   "torus_faces": 0,
+   "points": {
+    "corner_pt_31.95": true
+   },
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "m": {
+   "solids": 1,
+   "volume": 41283.982,
+   "valid": true,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "bbox": [
+    -33.0,
+    33.0,
+    -35.0,
+    23.0,
+    -3.0,
+    50.0
+   ],
+   "outside_w": 66.0,
+   "inside_w": 60.0,
+   "outside_l": 46.0,
+   "inside_l": 40.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "inside_d": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x_segs": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0
+  }
+ },
+ "at_wall1.6": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pad001",
+   "last": "Pad001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 21992.826,
+   "faces": 28,
+   "solids": 1,
+   "wall": 1.6,
+   "rim_out_param": 3.0,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     31.6
+    ]
+   ],
+   "flat": 1.6,
+   "round_radii": {
+    "out": [],
+    "in": []
+   },
+   "round_faces": {
+    "out": 0,
+    "in": 0
+   },
+   "torus_faces": 0,
+   "points": {
+    "corner_pt_31.95": true
+   },
+   "outside_w": 63.2,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "m": {
+   "solids": 1,
+   "volume": 21992.826,
+   "valid": true,
+   "wall_param": 1.6,
+   "peg_param": 10.0,
+   "bbox": [
+    -31.6,
+    31.6,
+    -35.0,
+    21.6,
+    -1.6,
+    50.0
+   ],
+   "outside_w": 63.2,
+   "inside_w": 60.0,
+   "outside_l": 43.2,
+   "inside_l": 40.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "inside_d": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x_segs": [
+    [
+     -5.0,
+     5.0
+    ]
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0
+  }
+ },
+ "pass": false,
+ "criteria": {
+  "2": {
+   "a": true,
+   "b": false,
+   "d": true,
+   "e": true
+  },
+  "3": {
+   "a": true,
+   "b": false,
+   "d": true,
+   "e": true
+  },
+  "1.6": {
+   "a": true,
+   "b": false,
+   "d": true,
+   "e": true
+  }
+ }
+}

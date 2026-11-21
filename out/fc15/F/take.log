@@ -1,0 +1,29 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+rim_out cell 855 734
+rim_out 1.5: {"group": ["Pad", "Thickness", "Pad001"], "tip": "Pad001", "state": {}, "fillets": {}, "wall": 2.0, "volume": 27373.392, "faces": 28, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": true}
+wb combo 703 86
+wb Part Design at 757 336; ui: {"menu": [], "dialogs": [], "popup": [["Assembly", 757, 19], ["BIM", 757, 59], ["CAM", 757, 99], ["Draft", 757, 138], ["FEM", 757, 178], ["MCP Addon", 757, 217], ["Material", 757, 257], ["Mesh", 757, 297], ["Part Design", 757, 336], ["Part", 757, 376], ["Points", 757, 415], ["Reverse Engineering", 757, 455], ["Sketcher", 757, 495], ["Spreadsheet", 757, 534], ["Surface", 757, 574], ["TechDraw", 757
+1
+selection: [('Pad001', ['Edge16'])]
+panel: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge16", [2530, 801]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.00 mm", [2692, 1166]], ["QLineEdit", "field:1.00 mm", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+panel list: [['Edge16']]
+panel after radius: [["QSint::ActionLabel", "Fillet Parameters", [2509, 689]], ["QToolButton", "Select", [2260, 756]], ["list", "Edge16", [2530, 801]], ["QLabel", "Radius", [2370, 1166]], ["Gui::QuantitySpinBox", "field:1.50", [2692, 1166]], ["QLineEdit", "field:1.50", [2678, 1166]], ["QCheckBox", "Use all edges", [2530, 1216]], ["QSint::ActionLabel", "Preview", [2509, 1296]], ["QCheckBox", "Show final result", [2530, 1359]], ["QCheckBox", "Show preview overlay", [2530, 1405]], ["QPushButton", "OK", [2430, 615]], ["QPushButton", "Cancel", [2631, 615]]]
+dialogs before OK: []
+ui after OK: {"menu": [], "dialogs": [], "popup": []}
+dialogs after OK: []
+after OK: {"group": ["Pad", "Thickness", "Pad001", "Fillet"], "tip": "Fillet", "state": {}, "fillets": {"Fillet": [1.5, "Params.rim_out", ["Edge16"]]}, "wall": 2.0, "volume": 27271.77, "faces": 36, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": false}
+panel now: [["QSint::ActionLabel", "Start Part", [2509, 613]], ["QSint::ActionLabel", "New Body", [2530, 671]]]
+1
+1
+1
+flat-w2 edges 1561 985 1802 985
+flat-w2 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:0.50 mm 
+flat-w2 selection: [('Fillet', ['Edge12', 'Edge1'])]
+1
+saved
+TAKE F DONE
+FC15 check {"2": [true, {"out": [1.5], "in": []}, 0.5], "3": [true, {"out": [1.5], "in": []}, 1.5], "1.6": [true, {"out": [1.5], "in": []}, 0.1]} FAIL

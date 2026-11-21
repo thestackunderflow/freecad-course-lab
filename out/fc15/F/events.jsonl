@@ -1,0 +1,31 @@
+{"t": 0.057, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (F)"}
+{"t": 3.076, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.411, "event": "(view fitted)"}
+{"t": 7.875, "event": "double-click: open Params"}
+{"t": 13.449, "event": "cell B7: rim_out", "x": 855, "y": 734, "button": 1}
+{"t": 15.172, "event": "typed 1.5", "text": "1.5"}
+{"t": 16.169, "event": "Enter", "keys": "Return"}
+{"t": 20.785, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 26.703, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 32.149, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 57.682, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 60.895, "event": "key 0: isometric", "keys": "0"}
+{"t": 62.238, "event": "(view fitted)"}
+{"t": 67.021, "event": "click: the outer rim edge (one click)", "x": 2124, "y": 801, "button": 1}
+{"t": 71.724, "event": "Fillet", "x": 1020, "y": 228, "button": 1}
+{"t": 79.127, "event": "Radius: click", "x": 2652, "y": 1166, "button": 1}
+{"t": 80.278, "event": "Radius: typed = (Expression Editor)", "text": "="}
+{"t": 82.996, "event": "Radius: typed Params.rim_out", "text": "Params.rim_out"}
+{"t": 85.91, "event": "Return: name list closed", "keys": "Return"}
+{"t": 90.656, "event": "Expression Editor: OK", "x": 2773, "y": 1346, "button": 1}
+{"t": 98.345, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 104.367, "event": "key 0: isometric", "keys": "0"}
+{"t": 105.675, "event": "(view fitted)"}
+{"t": 118.067, "event": "view: zoomed (Isometric, 12 mm high, at 31 0 50)"}
+{"t": 127.564, "event": "view: zoomed (Top, 3 mm high, at 30.25 0 50)"}
+{"t": 131.085, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 136.261, "event": "flat-w2: the flat's inner edge", "x": 1561, "y": 985, "button": 1}
+{"t": 140.926, "event": "flat-w2: Ctrl + the flat's outer edge (where the round starts)", "x": 1802, "y": 985, "button": 1}
+{"t": 150.998, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 153.396, "event": "key 0: isometric", "keys": "0"}
+{"t": 154.72, "event": "(view fitted)"}

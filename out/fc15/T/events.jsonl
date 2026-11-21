@@ -1,0 +1,17 @@
+{"t": 0.026, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (T)"}
+{"t": 3.031, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.239, "event": "(view fitted)"}
+{"t": 8.624, "event": "click: the outer rim edge (one click)", "x": 2124, "y": 801, "button": 1}
+{"t": 13.088, "event": "Fillet", "x": 1020, "y": 228, "button": 1}
+{"t": 19.884, "event": "Radius: click", "x": 2652, "y": 1166, "button": 1}
+{"t": 21.028, "event": "Radius: typed = (Expression Editor)", "text": "="}
+{"t": 23.739, "event": "Radius: typed Params.rim_out", "text": "Params.rim_out"}
+{"t": 26.626, "event": "Return: name list closed", "keys": "Return"}
+{"t": 31.156, "event": "Expression Editor: OK", "x": 2773, "y": 1346, "button": 1}
+{"t": 38.258, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 43.697, "event": "the box: Input error"}
+{"t": 50.689, "event": "the box: OK", "x": 1566, "y": 945, "button": 1}
+{"t": 58.904, "event": "menu: View", "x": 212, "y": 36, "button": 1}
+{"t": 72.962, "event": "Cancel", "x": 2631, "y": 615, "button": 1}
+{"t": 76.772, "event": "key 0: isometric", "keys": "0"}
+{"t": 78.004, "event": "(view fitted)"}

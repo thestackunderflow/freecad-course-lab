@@ -1,0 +1,14 @@
+cup
+prepped cup
+1
+notices at open: []
+1
+rim_out cell 855 734
+rim_out 1.5: {"group": ["Pad", "Thickness", "Pad001"], "tip": "Pad001", "state": {}, "fillets": {}, "wall": 2.0, "volume": 27373.392, "faces": 28, "solids": 1, "bbox_x": [-32.0, 32.0], "corner_pt": true}
+wb combo 703 86
+1
+selection: [('Pad001', ['Edge16'])]
+no button PartDesign_Fillet
+panel: []
+panel list: []
+BAIL: no Radius field

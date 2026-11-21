@@ -1,0 +1,2040 @@
+{
+ "start_file": "/lab/out/fc14/P/peg-fixed.FCStd",
+ "q1": {
+  "tree": {
+   "bodies": [
+    "Body"
+   ],
+   "group": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "base_features": {
+    "Pad": null,
+    "Thickness": "Pad",
+    "Pad001": "Thickness"
+   },
+   "visible": [
+    "Body",
+    "Pad001"
+   ]
+  },
+  "outer_edges": [
+   [
+    "Edge11",
+    "Circle",
+    [
+     -31.273,
+     21.273,
+     50.0
+    ]
+   ],
+   [
+    "Edge12",
+    "Line",
+    [
+     -32.0,
+     -0.0,
+     50.0
+    ]
+   ],
+   [
+    "Edge13",
+    "Circle",
+    [
+     -31.273,
+     -21.273,
+     50.0
+    ]
+   ],
+   [
+    "Edge14",
+    "Line",
+    [
+     0.0,
+     -22.0,
+     50.0
+    ]
+   ],
+   [
+    "Edge15",
+    "Circle",
+    [
+     31.273,
+     -21.273,
+     50.0
+    ]
+   ],
+   [
+    "Edge16",
+    "Line",
+    [
+     32.0,
+     0.0,
+     50.0
+    ]
+   ],
+   [
+    "Edge17",
+    "Circle",
+    [
+     31.273,
+     21.273,
+     50.0
+    ]
+   ],
+   [
+    "Edge18",
+    "Line",
+    [
+     0.0,
+     22.0,
+     50.0
+    ]
+   ]
+  ],
+  "inner_edges": [
+   [
+    "Edge4",
+    "Line",
+    [
+     -30.0,
+     -0.0,
+     50.0
+    ]
+   ],
+   [
+    "Edge8",
+    "Line",
+    [
+     0.0,
+     -20.0,
+     50.0
+    ]
+   ],
+   [
+    "Edge9",
+    "Line",
+    [
+     0.0,
+     20.0,
+     50.0
+    ]
+   ],
+   [
+    "Edge10",
+    "Line",
+    [
+     30.0,
+     0.0,
+     50.0
+    ]
+   ]
+  ],
+  "rim_face": "Face3",
+  "snap": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Pad001",
+    "last": "Pad001",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "rim": {
+    "volume": 27373.392,
+    "faces": 28,
+    "solids": 1,
+    "wall": 2.0,
+    "rim_out_param": 3.0,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      30.0,
+      32.0
+     ]
+    ],
+    "flat": 2.0,
+    "round_radii": {
+     "out": [],
+     "in": []
+    },
+    "round_faces": {
+     "out": 0,
+     "in": 0
+    },
+    "torus_faces": 0,
+    "points": {
+     "corner_pt_31.95": true
+    },
+    "outside_w": 64.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 50.0,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   }
+  },
+  "params": {
+   "wall": 2.0,
+   "rim_out": 3.0,
+   "rim_in": 1.0,
+   "peg_size": 10.0
+  }
+ },
+ "q2_trap_r3": {
+  "builds": false,
+  "build_info": {
+   "bad": {
+    "Fillet": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "tip": "Fillet",
+   "last": "Fillet",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Touched",
+     "Invalid"
+    ],
+    "BRep_API: command not done"
+   ]
+  },
+  "rim": {
+   "volume": 27373.392,
+   "faces": 28,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 3.0,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     32.0
+    ]
+   ],
+   "flat": 2.0,
+   "round_radii": {
+    "out": [],
+    "in": []
+   },
+   "round_faces": {
+    "out": 0,
+    "in": 0
+   },
+   "torus_faces": 0,
+   "points": {
+    "corner_pt_31.95": true
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "edge": "Edge16",
+  "unchanged_vs_start": true,
+  "fillet_shape_null": true
+ },
+ "fix_r1_5": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Fillet",
+   "last": "Fillet",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 27271.77,
+   "faces": 36,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     30.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": []
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 0
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": true,
+    "out_air_-x": true,
+    "out_air_+y": true,
+    "out_air_-y": true,
+    "out_air_corner": true
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 49.9142,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  }
+ },
+ "second_edge_1": {
+  "builds": false,
+  "build_info": {
+   "bad": {
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "tip": "Fillet001",
+   "last": "Fillet001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet001": [
+    [
+     "Touched",
+     "Invalid"
+    ],
+    "BRep_API: command not done"
+   ]
+  },
+  "rim": {
+   "volume": 27271.77,
+   "faces": 36,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     30.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": []
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 0
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": true,
+    "out_air_-x": true,
+    "out_air_+y": true,
+    "out_air_-y": true,
+    "out_air_corner": true
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 49.9142,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "edges": [
+   "Edge9",
+   "Edge10",
+   "Edge11",
+   "Edge12"
+  ]
+ },
+ "q4_reopen": {
+  "builds": false,
+  "build_info": {
+   "bad": {
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "tip": "Fillet001",
+   "last": "Fillet001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet001": [
+    [
+     "Touched",
+     "Invalid"
+    ],
+    "BRep_API: command not done"
+   ]
+  },
+  "rim": {
+   "volume": 27271.77,
+   "faces": 36,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": 1.5,
+   "rim_in_param": 1.0,
+   "flat_segs": [
+    [
+     30.0,
+     30.5
+    ]
+   ],
+   "flat": 0.5,
+   "round_radii": {
+    "out": [
+     1.5
+    ],
+    "in": []
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 0
+   },
+   "torus_faces": 4,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": true,
+    "out_air_-x": true,
+    "out_air_+y": true,
+    "out_air_-y": true,
+    "out_air_corner": true
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 49.9142,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  }
+ },
+ "q4_walls": {
+  "wall_3_0": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Fillet001",
+    "last": "Fillet001",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "rim": {
+    "volume": 41136.022,
+    "faces": 40,
+    "solids": 1,
+    "wall": 3.0,
+    "rim_out_param": 1.5,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      31.0,
+      31.5
+     ]
+    ],
+    "flat": 0.5,
+    "round_radii": {
+     "out": [
+      1.5
+     ],
+     "in": [
+      1.0
+     ]
+    },
+    "round_faces": {
+     "out": 4,
+     "in": 4
+    },
+    "torus_faces": 4,
+    "points": {
+     "corner_pt_31.95": false,
+     "out_air_+x": true,
+     "out_air_-x": true,
+     "out_air_+y": true,
+     "out_air_-y": true,
+     "out_air_corner": true,
+     "in_air_+x": true,
+     "in_air_-y": true
+    },
+    "outside_w": 66.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 50.0,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   }
+  },
+  "wall_2_1": {
+   "builds": false,
+   "build_info": {
+    "bad": {
+     "Fillet001": [
+      [
+       "Touched",
+       "Invalid"
+      ],
+      "BRep_API: command not done"
+     ]
+    },
+    "tip": "Fillet001",
+    "last": "Fillet001",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "rim": {
+    "volume": 41136.022,
+    "faces": 40,
+    "solids": 1,
+    "wall": 2.0,
+    "rim_out_param": 1.5,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      31.0,
+      31.5
+     ]
+    ],
+    "flat": 0.5,
+    "round_radii": {
+     "out": [
+      1.5
+     ],
+     "in": [
+      1.0
+     ]
+    },
+    "round_faces": {
+     "out": 4,
+     "in": 4
+    },
+    "torus_faces": 4,
+    "points": {
+     "corner_pt_31.95": false,
+     "out_air_+x": false,
+     "out_air_-x": false,
+     "out_air_+y": false,
+     "out_air_-y": false,
+     "out_air_corner": false,
+     "in_air_+x": true,
+     "in_air_-y": true
+    },
+    "outside_w": 66.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 50.0,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   }
+  },
+  "wall_2.6_2": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Fillet001",
+    "last": "Fillet001",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "rim": {
+    "volume": 35493.864,
+    "faces": 44,
+    "solids": 1,
+    "wall": 2.6,
+    "rim_out_param": 1.5,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      31.0,
+      31.1
+     ]
+    ],
+    "flat": 0.1,
+    "round_radii": {
+     "out": [
+      1.5
+     ],
+     "in": [
+      1.0
+     ]
+    },
+    "round_faces": {
+     "out": 4,
+     "in": 4
+    },
+    "torus_faces": 8,
+    "points": {
+     "corner_pt_31.95": false,
+     "out_air_+x": true,
+     "out_air_-x": true,
+     "out_air_+y": true,
+     "out_air_-y": true,
+     "out_air_corner": true,
+     "in_air_+x": true,
+     "in_air_-y": true
+    },
+    "outside_w": 65.2,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 49.9866,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   }
+  },
+  "wall_2.4_3": {
+   "builds": false,
+   "build_info": {
+    "bad": {
+     "Fillet001": [
+      [
+       "Touched",
+       "Invalid"
+      ],
+      "BRep_API: command not done"
+     ]
+    },
+    "tip": "Fillet001",
+    "last": "Fillet001",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "rim": {
+    "volume": 35493.864,
+    "faces": 44,
+    "solids": 1,
+    "wall": 2.4,
+    "rim_out_param": 1.5,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      31.0,
+      31.1
+     ]
+    ],
+    "flat": 0.1,
+    "round_radii": {
+     "out": [],
+     "in": [
+      1.0
+     ],
+     "?": [
+      1.5
+     ]
+    },
+    "round_faces": {
+     "out": 0,
+     "in": 4,
+     "?": 4
+    },
+    "torus_faces": 8,
+    "points": {
+     "corner_pt_31.95": false,
+     "in_air_+x": true,
+     "in_air_-y": true
+    },
+    "outside_w": 65.2,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 49.9967,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   }
+  },
+  "wall_3_4": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Fillet001",
+    "last": "Fillet001",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "rim": {
+    "volume": 41136.022,
+    "faces": 40,
+    "solids": 1,
+    "wall": 3.0,
+    "rim_out_param": 1.5,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      31.0,
+      31.5
+     ]
+    ],
+    "flat": 0.5,
+    "round_radii": {
+     "out": [
+      1.5
+     ],
+     "in": [
+      1.0
+     ]
+    },
+    "round_faces": {
+     "out": 4,
+     "in": 4
+    },
+    "torus_faces": 4,
+    "points": {
+     "corner_pt_31.95": false,
+     "out_air_+x": true,
+     "out_air_-x": true,
+     "out_air_+y": true,
+     "out_air_-y": true,
+     "out_air_corner": true,
+     "in_air_+x": true,
+     "in_air_-y": true
+    },
+    "outside_w": 66.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 50.0,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   }
+  }
+ },
+ "q3": {
+  "out_alone": {
+   "largest_builds": 1.95,
+   "first_fails": 2.0
+  },
+  "in_alone": {
+   "largest_builds": 1.4,
+   "first_fails": 1.45
+  },
+  "equal_pair": {
+   "largest_builds": 0.8,
+   "first_fails": 0.85
+  },
+  "out_2.00": {
+   "builds": false,
+   "flat": 2.0,
+   "radii": {
+    "out": [],
+    "in": []
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   }
+  },
+  "in_2.00": {
+   "builds": false,
+   "flat": 2.0,
+   "radii": {
+    "out": [],
+    "in": []
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   }
+  },
+  "out1.5_in0.5": {
+   "builds": false,
+   "flat": 0.5,
+   "radii": {
+    "out": [
+     1.5
+    ],
+    "in": []
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   }
+  },
+  "out0.5_in1.5": {
+   "builds": false,
+   "flat": 1.5,
+   "radii": {
+    "out": [
+     0.5
+    ],
+    "in": []
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   }
+  },
+  "out1_in1": {
+   "builds": false,
+   "flat": 1.0,
+   "radii": {
+    "out": [
+     1.0
+    ],
+    "in": []
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   }
+  },
+  "out1.5_in0.45": {
+   "builds": true,
+   "flat": 0.05,
+   "radii": {
+    "out": [
+     1.5
+    ],
+    "in": [
+     0.45
+    ]
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "out1.95": {
+   "builds": true,
+   "flat": 0.05,
+   "radii": {
+    "out": [
+     1.95
+    ],
+    "in": []
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "in1.95": {
+   "builds": true,
+   "flat": 0.05,
+   "radii": {
+    "out": [],
+    "in": [
+     1.95
+    ]
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "q5": {
+  "wall2_r1.5": {
+   "builds": false,
+   "build_info": {
+    "bad": {},
+    "tip": "Fillet",
+    "last": "Fillet",
+    "valid": false,
+    "solids": 2
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "rim": {
+    "volume": 238213.736,
+    "faces": 45,
+    "solids": 2,
+    "wall": 2.0,
+    "rim_out_param": 3.0,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      31.5,
+      32.0
+     ],
+     [
+      30.0,
+      30.5
+     ]
+    ],
+    "flat": 1.0,
+    "round_radii": {
+     "out": [
+      1.5
+     ],
+     "in": [
+      1.5
+     ]
+    },
+    "round_faces": {
+     "out": 4,
+     "in": 4
+    },
+    "torus_faces": 8,
+    "points": {
+     "corner_pt_31.95": false,
+     "out_air_+x": true,
+     "out_air_-x": true,
+     "out_air_+y": true,
+     "out_air_-y": true,
+     "out_air_corner": true,
+     "in_air_+x": false,
+     "in_air_-y": false
+    },
+    "outside_w": 160.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 0.0,
+    "m_peg_w": 80.0,
+    "m_peg_h": 35.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": false,
+     "lid_air": false,
+     "side_px": false,
+     "side_nx": false,
+     "side_back": false,
+     "ok": false
+    }
+   },
+   "face": "Face3",
+   "edges_listed": 1
+  },
+  "wall2_r1.0": {
+   "builds": false,
+   "build_info": {
+    "bad": {
+     "Fillet": [
+      [
+       "Touched",
+       "Invalid"
+      ],
+      "BRep_API: command not done"
+     ]
+    },
+    "tip": "Fillet",
+    "last": "Fillet",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "rim": {
+    "volume": 27373.392,
+    "faces": 28,
+    "solids": 1,
+    "wall": 2.0,
+    "rim_out_param": 3.0,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      30.0,
+      32.0
+     ]
+    ],
+    "flat": 2.0,
+    "round_radii": {
+     "out": [],
+     "in": []
+    },
+    "round_faces": {
+     "out": 0,
+     "in": 0
+    },
+    "torus_faces": 0,
+    "points": {
+     "corner_pt_31.95": true
+    },
+    "outside_w": 64.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 50.0,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   },
+   "face": "Face3",
+   "edges_listed": 1
+  },
+  "wall2_r0.8": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Fillet",
+    "last": "Fillet",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "rim": {
+    "volume": 27316.686,
+    "faces": 40,
+    "solids": 1,
+    "wall": 2.0,
+    "rim_out_param": 3.0,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      30.8,
+      31.2
+     ]
+    ],
+    "flat": 0.4,
+    "round_radii": {
+     "out": [
+      0.8
+     ],
+     "in": [
+      0.8
+     ]
+    },
+    "round_faces": {
+     "out": 4,
+     "in": 4
+    },
+    "torus_faces": 4,
+    "points": {
+     "corner_pt_31.95": false,
+     "out_air_+x": true,
+     "out_air_-x": true,
+     "out_air_+y": true,
+     "out_air_-y": true,
+     "out_air_corner": true,
+     "in_air_+x": true,
+     "in_air_-y": true
+    },
+    "outside_w": 64.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 50.0,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   },
+   "face": "Face3",
+   "edges_listed": 1
+  },
+  "wall3_r1.5": {
+   "builds": false,
+   "build_info": {
+    "bad": {
+     "Fillet": [
+      [
+       "Touched",
+       "Invalid"
+      ],
+      "BRep_API: command not done"
+     ]
+    },
+    "tip": "Fillet",
+    "last": "Fillet",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   },
+   "rim": {
+    "volume": 41283.982,
+    "faces": 28,
+    "solids": 1,
+    "wall": 3.0,
+    "rim_out_param": 3.0,
+    "rim_in_param": 1.0,
+    "flat_segs": [
+     [
+      30.0,
+      33.0
+     ]
+    ],
+    "flat": 3.0,
+    "round_radii": {
+     "out": [],
+     "in": []
+    },
+    "round_faces": {
+     "out": 0,
+     "in": 0
+    },
+    "torus_faces": 0,
+    "points": {
+     "corner_pt_31.95": true
+    },
+    "outside_w": 66.0,
+    "inside_w": 60.0,
+    "m_inside_l": 40.0,
+    "m_inside_d": 50.0,
+    "m_peg_w": 10.0,
+    "m_peg_h": 10.0,
+    "m_peg_mid_solid": true,
+    "m_faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    }
+   },
+   "face": "Face3",
+   "edges_listed": 1
+  }
+ },
+ "q7": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Pad001",
+   "last": "Pad001",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Fillet": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "rim": {
+   "volume": 27546.424,
+   "faces": 40,
+   "solids": 1,
+   "wall": 2.0,
+   "rim_out_param": null,
+   "rim_in_param": null,
+   "flat_segs": [
+    [
+     27.0,
+     31.0
+    ]
+   ],
+   "flat": 4.0,
+   "round_radii": {
+    "out": [
+     5.0
+    ],
+    "in": [],
+    "?": [
+     3.0
+    ]
+   },
+   "round_faces": {
+    "out": 4,
+    "in": 0,
+    "?": 4
+   },
+   "torus_faces": 0,
+   "points": {
+    "corner_pt_31.95": false,
+    "out_air_+x": false,
+    "out_air_-x": false,
+    "out_air_+y": false,
+    "out_air_-y": false,
+    "out_air_corner": false
+   },
+   "outside_w": 64.0,
+   "inside_w": 60.0,
+   "m_inside_l": 40.0,
+   "m_inside_d": 50.0,
+   "m_peg_w": 10.0,
+   "m_peg_h": 10.0,
+   "m_peg_mid_solid": true,
+   "m_faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   }
+  },
+  "thickness_base": [
+   "Fillet",
+   [
+    "Face8"
+   ]
+  ],
+  "top_z_at_x31": [
+   [
+    40.0,
+    50.0
+   ]
+  ],
+  "outer_top_at_y0": [],
+  "rim_line_z49": [
+   [
+    29.2361,
+    31.5826
+   ]
+  ]
+ },
+ "q8": {
+  "long_1.2_1.5_w2.5": {
+   "builds": false,
+   "flat": 1.3,
+   "radii": {
+    "out": [
+     1.2
+    ],
+    "in": []
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Touched",
+      "Invalid"
+     ],
+     "BRep_API: command not done"
+    ]
+   }
+  },
+  "long_1.2_1.2_w2.5": {
+   "builds": true,
+   "flat": 0.1,
+   "radii": {
+    "out": [
+     1.2
+    ],
+    "in": [
+     1.2
+    ]
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  },
+  "short_0.8_1_w2": {
+   "builds": true,
+   "flat": 0.2,
+   "radii": {
+    "out": [
+     0.8
+    ],
+    "in": [
+     1.0
+    ]
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Fillet001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   }
+  }
+ },
+ "q2_all8_r1_5": {
+  "builds": true,
+  "faces": 36,
+  "volume": 27271.77,
+  "points": {
+   "corner_pt_31.95": false,
+   "out_air_+x": true,
+   "out_air_-x": true,
+   "out_air_+y": true,
+   "out_air_-y": true,
+   "out_air_corner": true
+  }
+ }
+}

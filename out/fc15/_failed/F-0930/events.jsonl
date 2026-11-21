@@ -1,0 +1,14 @@
+{"t": 0.025, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (F)"}
+{"t": 3.03, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.235, "event": "(view fitted)"}
+{"t": 7.508, "event": "double-click: open Params"}
+{"t": 12.658, "event": "cell B7: rim_out", "x": 855, "y": 734, "button": 1}
+{"t": 14.366, "event": "typed 1.5", "text": "1.5"}
+{"t": 15.35, "event": "Enter", "keys": "Return"}
+{"t": 19.637, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 25.263, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 30.031, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 54.162, "event": "click", "x": 0, "y": 0, "button": 1}
+{"t": 57.376, "event": "key 0: isometric", "keys": "0"}
+{"t": 58.615, "event": "(view fitted)"}
+{"t": 63.018, "event": "click: the outer rim edge (one click)", "x": 2124, "y": 801, "button": 1}

@@ -1,0 +1,44 @@
+{"t": 0.033, "event": "recording started: FreeCAD 1.1.4, cup.FCStd (P)"}
+{"t": 4.861, "event": "file reopened: F's saved end file (rim_out 1.5)"}
+{"t": 11.371, "event": "double-click: open Params"}
+{"t": 16.557, "event": "cell B4: wall", "x": 855, "y": 572, "button": 1}
+{"t": 18.265, "event": "typed 3", "text": "3"}
+{"t": 18.999, "event": "Enter", "keys": "Return"}
+{"t": 23.257, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 28.894, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 33.757, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 59.26, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 62.471, "event": "key 0: isometric", "keys": "0"}
+{"t": 63.701, "event": "(view fitted)"}
+{"t": 70.493, "event": "view: zoomed (Isometric, 54 mm high, at 0 0 45)"}
+{"t": 73.893, "event": "click: inner rim edge 1", "x": 2342, "y": 1149, "button": 1}
+{"t": 78.379, "event": "Ctrl + click: inner rim edge 2", "x": 2153, "y": 713, "button": 1}
+{"t": 82.873, "event": "Ctrl + click: inner rim edge 3", "x": 1210, "y": 495, "button": 1}
+{"t": 87.392, "event": "Ctrl + click: inner rim edge 4", "x": 1398, "y": 1149, "button": 1}
+{"t": 91.93, "event": "Fillet", "x": 1020, "y": 228, "button": 1}
+{"t": 98.729, "event": "Radius: click", "x": 2652, "y": 1166, "button": 1}
+{"t": 99.87, "event": "Radius: typed = (Expression Editor)", "text": "="}
+{"t": 102.579, "event": "Radius: typed Params.rim_in", "text": "Params.rim_in"}
+{"t": 105.415, "event": "Return: name list closed", "keys": "Return"}
+{"t": 109.952, "event": "Expression Editor: OK", "x": 2773, "y": 1346, "button": 1}
+{"t": 117.31, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 123.115, "event": "key 0: isometric", "keys": "0"}
+{"t": 124.339, "event": "(view fitted)"}
+{"t": 132.426, "event": "view: zoomed (Isometric, 12 mm high, at 32 0 50)"}
+{"t": 141.41, "event": "view: zoomed (Top, 3 mm high, at 31.25 0 50)"}
+{"t": 144.706, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 149.699, "event": "flat-w3: the flat's inner edge", "x": 1561, "y": 985, "button": 1}
+{"t": 154.212, "event": "flat-w3: Ctrl + the flat's outer edge (where the round starts)", "x": 1802, "y": 985, "button": 1}
+{"t": 163.771, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 166.072, "event": "key 0: isometric", "keys": "0"}
+{"t": 167.337, "event": "(view fitted)"}
+{"t": 171.868, "event": "double-click: open Params"}
+{"t": 177.077, "event": "cell B4: wall", "x": 855, "y": 572, "button": 1}
+{"t": 178.786, "event": "typed 2", "text": "2"}
+{"t": 179.518, "event": "Enter", "keys": "Return"}
+{"t": 183.845, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 189.471, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 192.277, "event": "key 0: isometric", "keys": "0"}
+{"t": 193.483, "event": "(view fitted)"}
+{"t": 198.388, "event": "hover: the Fillet001 row (its mark)"}
+{"t": 207.826, "event": "view: zoomed (Isometric, 12 mm high, at 31 0 50)"}
