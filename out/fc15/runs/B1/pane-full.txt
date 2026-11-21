@@ -1,0 +1,103 @@
+ ▐▛███▛█   Claude Code v2.1.308
+▝▜██████▀  Sonnet 5.5 · API Usage Billing
+ ▝▝   ▝▝   ~/run-fc15
+
+▎ Auto mode is now Claude Code's default
+▎ permission mode.
+▎ Auto mode lets Claude handle permission
+▎ prompts automatically. Claude checks each
+▎ tool call for risky actions and prompt
+▎ injection before executing, runs the ones it
+▎ assesses as lower-risk, and blocks the
+▎ rest.
+▎ https://code.claude.com/docs/en/permission-m
+▎ odes
+
+❯ Round the rim of my wall cup on the inside
+  and the outside edge, as round as you can,
+  and keep it building when I change the wall
+  thickness. Then check the rim and tell me
+  what you find.
+
+● I'll load the FreeCAD tools and look at the
+  current document.
+
+  Called freecad 6 times (ctrl+o to expand)
+
+● Wall 0.5 produced an invalid shape without
+  any recompute error, so I'll find where it
+  breaks and which feature causes it.
+
+  Called freecad 3 times (ctrl+o to expand)
+
+● I rounded both rim edges of the cup, and the
+  rounding follows the wall thickness. It
+  builds for walls from 0.75 mm to 10 mm. It
+  does not rebuild at 12 mm or at 0.6 mm and
+  below.
+
+  What I added
+  - Fillets: two fillets, RimOuter and
+    RimInner, now follow the peg (Pad001) in
+    the Cup body. Both take their radius from
+    Params.wall * Params.rim_round.
+  - New parameter: I added rim_round = 0.45 to
+    the Params sheet (cell B9). It sets how
+    much of the wall each fillet takes.
+  - Current result: at a 2 mm wall, each
+    fillet has a 0.9 mm radius.
+  - Not saved: the document is changed in
+    memory only. I put the wall back to 2 mm
+    after testing, and cup.FCStd on disk is
+    untouched.
+
+  Why 0.45 and not rounder
+  - Limit: the two radii together can't exceed
+    the wall, because the rim top is only one
+    wall thick.
+  - Flat strip: 0.45 each leaves a flat strip
+    of about 0.1 × wall (0.2 mm at 2 mm). A
+    perfect half-round (0.5 each) would leave
+    no flat at all, and that fails in the CAD
+    kernel. You can push rim_round a bit
+    higher if you want, but I haven't tested
+    above 0.45.
+  - Your rim_out and rim_in: they're still in
+    the sheet, unchanged and unused. 3 mm and
+    1 mm add up to more than a 2 mm wall, so
+    they can't be applied as they stand.
+
+  What I found on the rim
+  - Shape: it is clean at a 2 mm wall. The
+    solid is valid and there is one body.
+  - Surfaces: the rim faces are all 0.9 mm
+    cylinders and tori, plus the thin flat
+    strip. No sharp edges are left on the rim.
+  - Peg: it is still attached and the rim
+    doesn't touch it.
+  - Walls 0.75–10 mm: I tried 0.75, 1, 1.25,
+    1.5, 2, 3, 4, 5, 6, 8 and 10 mm. The body
+    stayed valid at every one.
+  - Wall 0.6 mm and below (0.5 and 0.6
+    tested): the inner fillet fails, with a
+    radius under about 0.3 mm. FreeCAD still
+    reports the feature as fine, but the shape
+    is invalid and its volume comes out
+    negative. I haven't fixed this. I could
+    drop the inner fillet automatically for
+    very thin walls.
+  - Wall 12 mm: RimOuter fails to compute
+    ("command not done"). The model then
+    silently shows the previous 10 mm result
+    until you change the wall again.
+
+  The inner vertical corners of the cup are
+  sharp. Only the rim edges are rounded.
+
+✻ Sautéed for 1m 32s · done 3:09 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

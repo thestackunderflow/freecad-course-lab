@@ -1,0 +1,36 @@
+
+  - Features added: RimInner and RimOuter
+    fillets sit at the end of the Cup body
+    (inner first, then outer).
+  - Driven by wall: both radii now come from
+    the rim_in and rim_out cells in Params. I
+    changed those cells to =wall * 0.4, so the
+    radius scales with the wall (0.8 mm at
+    the current 2 mm wall).
+  - Why 0.4, not fully round: a perfectly
+    round rim would need a radius of 0.5 ×
+    wall on each side, which leaves no flat
+    top. FreeCAD rejects that, and fractions
+    of 0.42 or more failed at every wall I
+    tried. 0.4 is the roundest setting that
+    held up, and it leaves a thin flat of
+    about 20% of the wall.
+  - Old rim values: rim_out was 3 and rim_in
+    was 1, and nothing used them. A 3 mm
+    radius can't fit on a 2 mm wall, so I
+    replaced them. If you want different
+    values, edit those two cells, but keep
+    each one under about 0.4 × wall.
+  - Wall direction: the wall grows outward
+    from the original 60×40 sketch, so the
+    inside stays 60×40 and the outside is
+    64×44. That was already how the model
+    worked, and I left it alone.
+
+✻ Cogitated for 1m 12s · done 3:06 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

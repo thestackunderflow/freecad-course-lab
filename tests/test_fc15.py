@@ -72,3 +72,29 @@ def test_score_pass_needs_both_rounds_build_at_three_walls():
     one = {k: _snap(True, v['rim']['round_radii']['out'][0], None, 1, k) for k, v in good.items()}
     assert not passes(one)[0]
     assert near(det[2]['sum_fraction'], 0.7)
+
+
+def nums():
+    with open(os.path.join(HERE, 'NUMBERS.json')) as f:
+        return json.load(f)
+
+
+def test_takes_trap_fix_inside_proof_as_planned():
+    t = nums()['takes']
+    assert all(t[k]['done'] for k in 'RTFIPY')
+    assert any('Input error' in s and 'BRep_API: command not done' in s for s in t['T']['boxes'])
+    assert any('0.50 mm' in s for s in t['F']['measure'])
+    assert any('Input error' in s for s in t['I']['boxes'])
+    assert any('flat-w3' in s and '0.50 mm' in s for s in t['P']['measure'])
+    assert any(s.startswith('wall 2:') and 'Invalid' in s for s in t['P']['state'])
+
+
+def test_claude_runs_pass_and_within_cap():
+    r = nums()['runs']
+    costs = [float(r[k]['cost_usd']) for k in ('A1', 'B1')]
+    assert all(c <= 0.25 for c in costs) and sum(costs) <= 0.50
+    for k in ('A1', 'B1'):
+        assert r[k]['check']['pass'] is True
+        for w in ('2', '3', '1.6'):
+            c = r[k]['check']['criteria'][w]
+            assert c['sum_fraction'] < 1.0

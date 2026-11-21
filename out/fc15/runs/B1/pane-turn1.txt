@@ -1,0 +1,36 @@
+    they can't be applied as they stand.
+
+  What I found on the rim
+  - Shape: it is clean at a 2 mm wall. The
+    solid is valid and there is one body.
+  - Surfaces: the rim faces are all 0.9 mm
+    cylinders and tori, plus the thin flat
+    strip. No sharp edges are left on the rim.
+  - Peg: it is still attached and the rim
+    doesn't touch it.
+  - Walls 0.75–10 mm: I tried 0.75, 1, 1.25,
+    1.5, 2, 3, 4, 5, 6, 8 and 10 mm. The body
+    stayed valid at every one.
+  - Wall 0.6 mm and below (0.5 and 0.6
+    tested): the inner fillet fails, with a
+    radius under about 0.3 mm. FreeCAD still
+    reports the feature as fine, but the shape
+    is invalid and its volume comes out
+    negative. I haven't fixed this. I could
+    drop the inner fillet automatically for
+    very thin walls.
+  - Wall 12 mm: RimOuter fails to compute
+    ("command not done"). The model then
+    silently shows the previous 10 mm result
+    until you change the wall again.
+
+  The inner vertical corners of the cup are
+  sharp. Only the rim edges are rounded.
+
+✻ Sautéed for 1m 32s · done 3:09 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

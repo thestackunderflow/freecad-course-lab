@@ -1,0 +1,58 @@
+6.5e-08 <App> Document.cpp(2504): The graph must be a DAG.
+RimOuter: Base feature's TopoShape is invalid
+0.0230181 <App> Document.cpp(2504): The graph must be a DAG.
+RimOuter: Base feature's TopoShape is invalid
+RimInner: Base feature's TopoShape is invalid
+MCP RPC: GUI task raised OCCError: 19Standard_NullObject BRepCheck_Analyzer::Init() - NULL shape
+Traceback (most recent call last):
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/gui_dispatch.py", line 299, in _wrapped
+    res = task()
+          ^^^^^^
+  File "/home/maker/.local/share/FreeCAD/v1-1/Mod/FreeCADMCP/./rpc_server/rpc_server.py", line 387, in task
+    exec(code, _EXEC_NAMESPACE)
+  File "<string>", line 15, in <module>
+Part.OCCError: 19Standard_NullObject BRepCheck_Analyzer::Init() - NULL shape
+Error executing Python code: OCCError: 19Standard_NullObject BRepCheck_Analyzer::Init() - NULL shape
+--- code ---
+doc=App.getDocument("cup")
+body=doc.Body
+sh=doc.Params
+sh.set('B7','=wall * 0.45'); sh.set('B8','=wall * 0.45')
+doc.recompute()
+def mk(name, edges, cell):
+    f=body.newObject('PartDesign::Fillet',name)
+    f.Base=(body.Tip,edges)
+    f.setExpression('Radius','Params.'+cell)
+    body.Tip=f
+    doc.recompute()
+    return f
+fo=mk('RimOuter',['Edge%d'%i for i in range(11,19)],'rim_out')
+fi=mk('RimInner',['Edge4','Edge8','Edge9','Edge10'],'rim_in')
+print(fo.Radius, fi.Radius, fi.Shape.isValid(), fi.Shape.Volume, fo.State, fi.State)
+for w in (1,2,3,4,6):
+    sh.set('B4',str(w)); doc.recompute()
+    print(w, fo.State, fi.State, fi.Shape.isValid(), round(fi.Shape.Volume,1), len(fi.Shape.Faces))
+sh.set('B4','2'); doc.recompute()
+--- end ---
+7.75555 <App> Document.cpp(2504): The graph must be a DAG.
+RimOuter: Base feature's TopoShape is invalid
+RimInner: Base feature's TopoShape is invalid
+12.0729 <App> Document.cpp(2504): The graph must be a DAG.
+RimInner: Base feature's TopoShape is invalid
+<PartDesign> FeatureDressUp.cpp(206): cup#RimInner: skip edge ;#132:1;:U4;FLT;:H6a1:8,E.Edge4 that is not C0 continuous
+<PartDesign> FeatureDressUp.cpp(206): cup#RimInner: skip edge ;#132:1;:U8;FLT;:H6a1:8,E.Edge8 that is not C0 continuous
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
+RimOuter: BRep_API: command not done
