@@ -18,7 +18,7 @@ from PIL import Image
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'video'))
 import draw_fc15 as d  # noqa: E402
 
-STEPS = {'card-round': 3, 'card-coin': 3, 'card-why': 4, 'card-rule': 3}
+STEPS = {'card-round': 4, 'card-coin': 3, 'card-why': 4, 'card-rule': 3}
 CARDS = ([f'{s}-{i}.png' for s, k in STEPS.items() for i in range(1, k + 1)] +
          ['card-end.png', 'still-after-A1.png', 'still-after-B1.png'])
 SHORT = ['card-why-s1.png', 'card-why-s2.png', 'card-why-s3.png']
@@ -195,3 +195,24 @@ def test_after_stills_show_the_part_big(run):
     for r in ('A1', 'B1'):
         assert d.STILL_K[r] >= 1.0, (r, d.STILL_K[r])
         assert 'whole window' in texts(run, f'still-after-{r}.png')
+
+
+def _said(fn, step, monkeypatch):
+    seen = []
+    monkeypatch.setattr(d, 'chip_on', lambda _d, _xy, s, *a, **k: seen.append(s))
+    monkeypatch.setattr(d, 'text', lambda _d, _xy, s, *a, **k: seen.append(s))
+    monkeypatch.setattr(d, 'coin', lambda *a, **k: seen.append('COIN'))
+    monkeypatch.setattr(d, 'save', lambda *a, **k: None)
+    fn(step)
+    return seen
+
+
+def test_cards_build_one_idea_per_step(monkeypatch):
+    """fc15 cut 1 blind review (0:27.5, 0:40): the round card dropped radius 3, "3 > 2" and "same 2" at once, and
+    the coin card described a coin in the corner while showing an empty strip. Now: round step 3 = radius 3 + 3 > 2,
+    step 4 adds the inside round "same 2"; coin step 1 draws a coin that fits, touching both edges."""
+    r3, r4 = _said(d.card_round, 3, monkeypatch), _said(d.card_round, 4, monkeypatch)
+    assert '3 > 2' in r3 and 'same 2' not in r3
+    assert 'same 2' in r4 and '3 > 2' in r4
+    c1 = _said(d.card_coin, 1, monkeypatch)
+    assert c1.count('COIN') == 1 and any('both edges' in s for s in c1)

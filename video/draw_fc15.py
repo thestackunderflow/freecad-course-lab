@@ -149,7 +149,8 @@ def overlap_bar(d, xa, xb, yt, col=RED):
 # --- F1: a round, its radius --------------------------------------------------------------------------------------------
 def card_round(step):
     """F1: 1 a sharp edge; 2 the edge as a curve, radius 1 with its arrow, "round = Fillet"; 3 radius 3 past the
-    strip, "3 > 2" beside "the cup's side, 2 thick", and a small inside curve, "same 2"."""
+    strip, "3 > 2" beside "the cup's side, 2 thick"; 4 (cut 1 review: one idea per step) adds a small inside curve,
+    "same 2"."""
     im, d = canvas()
     header(d, 'A round swaps a sharp edge for a curve')
     k, x0, yt, yb = 170, 900, 520, 1260
@@ -164,13 +165,14 @@ def card_round(step):
         text(d, (x0 + r + 20, yt + r + 10), 'radius 1', 52, ORANGE)
         chip_on(d, (200, 300), 'round = Fillet', ORANGE)
     else:
-        x1 = section(d, x0, yt, yb, k, inn=RIN, big=ROUT, out_col=DONE, in_col=BLUE)
+        x1 = section(d, x0, yt, yb, k, inn=RIN if step == 4 else None, big=ROUT, out_col=DONE, in_col=BLUE)
         r = ROUT * k
         f10.harrow(d, x0 + r, yt + r, x0 + r - r * 0.7071, yt + r - r * 0.7071, RED, w=6, s=22)
         text(d, (x0 + r + 20, yt + r + 10), 'radius 3', 52, RED)
         chip_on(d, (200, 300), 'round = Fillet', DONE)
-        chip_on(d, (1700, 520), '3 > 2', RED, px=72)
-        chip_on(d, (1700, 900), 'same 2', BLUE)
+        chip_on(d, (1700, 520), '3 > 2', RED if step == 3 else DONE, px=72)
+        if step == 4:
+            chip_on(d, (1700, 900), 'same 2', BLUE)
     width_mark(d, x0, x1, yb + 70, "the cup's side, 2 thick", INK if step == 3 else DONE)
     save(im, f'card-round-{step}.png')
 
@@ -193,6 +195,10 @@ def card_coin(step):
     if step == 1:
         f10.harrow(d, 800, 300, x0 - 8, yt + 4, ORANGE, w=7)
         chip_on(d, (300, 400), 'its corner', ORANGE)
+        r = 0.6 * k     # cut 1 review: the coin the words describe, laid in the corner, touching both edges
+        coin(d, x0 + r, yt + r, r)
+        d.arc((x0, yt, x0 + 2 * r, yt + 2 * r), 180, 270, fill=ORANGE, width=10)
+        chip_on(d, (160, 560), 'a coin, touching both edges', COIN)
     if step == 2:
         r = ROUT * k
         coin(d, x0 + r, yt + r, r)
@@ -542,6 +548,7 @@ def main():
     PROBLEMS.clear()
     LOG.clear()
     PANEL_NAMES.clear()
+    card_round(4)
     for s in (1, 2, 3):
         card_round(s)
         card_coin(s)
