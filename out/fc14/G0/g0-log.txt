@@ -1,0 +1,67 @@
+peg
+prepped peg
+S1 notices at open: []
+205 502
+S1 before: {"group": ["Sketch", "Pad", "Sketch001", "Pad001", "Thickness"], "tip": "Thickness", "base": ["Pad001", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+S1 row 205 502
+S1 menu: 
+armed
+S2 menu: [["Edit Thickness", true, 516, 19], ["Set Face Colors", true, 516, 61], ["Suppressed", true, 516, 102], ["Set Tip", true, 516, 145], ["Move Object To\u2026", true, 516, 189], ["Move Feature After\u2026", true, 516, 232], ["Toggle Freeze", true, 516, 277], ["Placement", true, 516, 322], ["Toggle Visibility", true, 516, 365], ["Show Selection", true, 516, 408], ["Hide Selection", true, 516, 451], ["Toggle Selectability", true, 516, 495], ["Select All Instances", true, 516, 538], ["Material", true, 516, 583], ["Appearance", true, 516, 626], ["Random Color", true, 516, 669], ["Toggle Transparency", true, 516, 712], ["Cut", false, 516, 757], ["Copy", true, 516, 801], ["Paste", false, 516, 844], ["Delete", true, 516, 887], ["Send to Python Console", true, 516, 930], ["Properties", true, 516, 975], ["Expression Actions", true, 516, 1018], ["Link Actions", true, 516, 1058], ["Show Items Hidden in Tree View", true, 516, 1098], ["Toggle Visibility in Tree View", true, 516, 1137], ["Add Dependent Objects to Selection", true, 516, 1177], ["Mark to Recompute", true, 516, 1220], ["Recompute Object", true, 516, 1263], ["Rename", true, 516, 1306], ["Tree Settings", true, 516, 1348]]
+S3 dialog: 
+S4 menu item at 516 232
+S4 dialog: {"menu": [], "dialogs": [{"title": "Move Feature After\u2026", "labels": ["Select a feature from the list"], "combos": [["Beginning of the body", ["Beginning of the body", "Sketch", "Pad", "Sketch001", "Pad001", "Thickness"], 1438, 887]], "checks": [], "buttons": [["OK", true, 1337, 941], ["Cancel", false, 1539, 941]]}], "popup": []}
+S4 popup: [['Beginning of the body', 1499, 887], ['Sketch', 1499, 927], ['Pad', 1499, 966], ['Sketch001', 1499, 1006], ['Pad001', 1499, 1045], ['Thickness', 1499, 1085]]
+S5 combo now: [[['Pad', ['Beginning of the body', 'Sketch', 'Pad', 'Sketch001', 'Pad001', 'Thickness'], 1438, 887]]]
+S5 after OK ui: {"menu": [], "dialogs": [], "popup": []}
+S5 after OK: {"group": ["Sketch", "Pad", "Thickness", "Sketch001", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {"Thickness": ["Touched", "Invalid"], "Pad001": ["Touched"]}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+S5 report: n code executed successfully.\n05:13:18  Python code executed successfully.\n05:13:19  Python code executed successfully.\n05:14:22  Python code executed successfully.\n05:14:22  Python code executed successfully.\n05:14:29  Python code executed successfully.\n05:14:29  Python code executed successfully.\n05:14:48  Thickness: Invalid face reference\n05:14:52  Python code executed successfully.\n'
+S5 after recompute: {"group": ["Sketch", "Pad", "Thickness", "Sketch001", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {"Thickness": ["Touched", "Invalid"], "Pad001": ["Touched"]}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+S5 dialogs [] notices []
+S6 panel: [["QSint::ActionLabel", "Start Part", [2509, 613]], ["QSint::ActionLabel", "New Body", [2530, 671]]]
+S6 list: []
+S6 state: {"group": ["Sketch", "Pad", "Thickness", "Sketch001", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face4"]], "reversed": false, "shown": ["Pad"], "state": {"Thickness": ["Touched", "Invalid"], "Pad001": ["Touched"]}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+S6 ui: []
+S7 panel: [["QSint::ActionLabel", "Start Part", [2509, 613]], ["QSint::ActionLabel", "New Body", [2530, 671]]]
+S7 notices: []
+S7 edit: None
+S7 rep: ecuted successfully.\n05:15:18  Python code executed successfully.\n05:15:19  Python code executed successfully.\n05:15:19  Python code executed successfully.\n05:15:34  Python code executed successfully.\n05:15:34  Python code executed successfully.\n05:15:35  Python code executed successfully.\n'
+S8 ui: {"menu": [], "dialogs": [], "popup": []}
+S8 panel: [["QSint::ActionLabel", "Start Part", [2509, 613]], ["QSint::ActionLabel", "New Body", [2530, 671]]]
+S8 edit: None
+S9 setEdit: False Invalid face reference Pad Pad
+S9 edit: None
+S9 rep: ecuted successfully.\n05:15:50  Python code executed successfully.\n05:15:56  <Exception> FeatureDressUp.cpp(217): Invalid edge link: ;#38:1;:H9ce,F.Face4\n05:15:56  Python code executed successfully.\n05:15:59  Python code executed successfully.\n'
+S9 notices: []
+S10 popup Thickness at 1499 1083
+S10 after OK ui: {"menu": [], "dialogs": [{"title": "Move Tip", "labels": ["The moved feature appears after the currently set tip.", "Set tip to last feature?"], "combos": [], "checks": [], "buttons": [["Yes", false, 1495, 943], ["No", true, 1697, 943]]}], "popup": []}
+S11 after Yes: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {"Thickness": ["Touched", "Invalid"], "Pad001": ["Touched"]}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+S11 after recompute: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {"Thickness": ["Touched", "Invalid"], "Pad001": ["Touched"]}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+S11 rep: 
+S11 edit: False
+S12 ui after Delete: {"menu": [], "dialogs": [], "popup": []}
+S12 after delete: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad001", "base": null, "reversed": null, "shown": ["Pad001"], "state": {}, "volume": 121500.0, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": false, "side_nx": false}
+S12 ctx Pad Set Tip at 484 145
+S12 ui after Pad Set Tip: {"menu": [], "dialogs": [], "popup": []}
+S12 after Set Tip Pad: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad", "base": null, "reversed": null, "shown": ["Pad"], "state": {}, "volume": 120000.0, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": false, "side_nx": false}
+S12 selection: [('Body', [])]
+S12 panel before OK:  []
+S12 after new Thickness: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad", "base": null, "reversed": null, "shown": ["Pad"], "state": {}, "volume": 120000.0, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": false, "side_nx": false}
+S12 ctx Pad001 Set Tip at 504 145
+S12 ui after Pad001 Set Tip: {"menu": [], "dialogs": [], "popup": []}
+S12 after Set Tip Pad001: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad001", "base": null, "reversed": null, "shown": ["Pad001"], "state": {}, "volume": 121500.0, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": false, "side_nx": false}
+S12 final: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad001", "base": null, "reversed": null, "shown": ["Pad001"], "state": {}, "volume": 121500.0, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": false, "side_nx": false}
+S12 rep: 
+S13 vp 1681 547
+S13 selection: [('Pad', ['Face6'])]
+S14 panel before OK: "Make thickness inwards" [False]
+S14 after new Thickness: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Thickness", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Thickness"], "state": {}, "volume": 26073.392, "solids": 1, "peg_mid": false, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true}
+S14 ui after Pad001 Set Tip: {"menu": [], "dialogs": [], "popup": []}
+S14 after Set Tip Pad001: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Pad001"], "state": {}, "volume": 27373.392, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true}
+S14 final: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Pad001"], "state": {}, "volume": 27373.392, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true}
+S14 rep: 
+S15 open: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad001", "base": null, "reversed": null, "shown": ["Pad001"], "state": {}, "volume": 121500.0, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": false, "side_nx": false}
+S15 selection: [('Pad001', ['Face4'])]
+S15 panel before OK: "Make thickness inwards" [False]
+S15 after new Thickness: {"group": ["Sketch", "Pad", "Sketch001", "Pad001", "Thickness"], "tip": "Thickness", "base": ["Pad001", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+S15 messages: dialogs [] notices [] rep 
+S15 route b on GUI trap: {"group": ["Sketch", "Pad", "Thickness", "Sketch001", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {"Thickness": ["Touched", "Invalid"], "Pad001": ["Touched"]}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true} rep 

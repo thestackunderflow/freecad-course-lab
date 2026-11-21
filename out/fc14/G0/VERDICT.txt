@@ -1,0 +1,40 @@
+fc14 G0 (21 Nov 2026, FreeCAD 1.1.4 in fcc-app:1.1.4-0.1.28, --network none, $0, no Claude). Log: g0-log.txt (S1-S15),
+by-code numbers: ../P/build.json (lab/fc14parts.py), GUI files scored by lab/fc14parts.py check (*.check.json).
+
+VERDICT: GO. Trap reproduced exactly. The planned fix route (b) FAILS in the GUI, and so does (a): PLAN 6 row 4
+(route (c)) applies. Teaching point unchanged (the Thickness must come before the peg); the fix is filmed as route (c).
+
+Q1  3 start files by code, one solid each, names bound: peg sketch on XZ_Plane, AttachmentOffset.Base.z =
+    Params.cup_length / 2 (offset 20), peg y extent -35..-20 (XZ normal -Y confirmed), peg_size / peg_length bound.
+Q2  GUI on peg-noshell: top face (Pad001 Face4), Thickness, "=" Params.wall, "Make thickness inwards" unticked, OK:
+    peg 14 x 14, middle (0,-28,40) air, front wall (0,-21,40) air, opening 10 x 10 (by code), tip y -37, inside
+    60 x 40 x 50, one solid, volume 27,419.174 (= by-code trap). No dialog, no notification, no Report line.
+Q3b route (b) GUI: tree right-click Thickness > "Move Feature After..." (menu item 6 of 32); dialog "Move Feature After..."
+    / "Select a feature from the list", a drop-down (Beginning of the body, Sketch, Pad, Sketch001, Pad001, Thickness);
+    Pad, OK: no dialog, Tip -> Pad001, order Sketch Pad Thickness Sketch001 Pad001, Thickness Base -> Pad [Face4]
+    (sub-name kept), Thickness "Touched, Invalid", notification + Report "Thickness: Invalid face reference";
+    Recompute changes nothing; the shown object stays the OLD Thickness shape (stale 14 x 14 hollow peg).
+    Double-click Thickness does NOT open the panel (setEdit False; Report "<Exception> FeatureDressUp.cpp(217):
+    Invalid edge link: ...Face4"). So PLAN 6 row 2 (open Thickness, re-pick the top face) is impossible in the GUI.
+    Same on the GUI-made trap (S15). By code a forced recompute keeps "Face4" = the Pad's -X side: lid closed,
+    -X side open (wrong face, A3's risk) — headless re-pick of the top face (Pad Face6) gives the fixed numbers.
+    route (a) GUI: right-click Pad001 > Move Feature After... > Thickness, OK: "Move Tip" question ("The moved feature
+    appears after the currently set tip." / "Set tip to last feature?", Yes / No, No default), Yes: same Invalid
+    Thickness (Base Pad [Face4]), cannot be edited.
+    route (c) GUI: click Thickness, Delete key (no dialog; Tip -> Pad001, peg solid, box solid); right-click Pad >
+    "Set Tip" (Pad shown); top face (Pad Face6), Thickness, "=" Params.wall, untick, OK (Thickness lands after Pad,
+    before Sketch001; Tip -> Thickness); right-click Pad001 > "Set Tip" (Pad001 shown): peg 10 x 10 solid, wall
+    closed, inside 60 x 40 x 50, faces right, one solid, volume 27,373.392 (= by-code fixed). No message.
+Q3c peg sketch stays on XZ_Plane (Up-to-date) after route (c) (code and GUI file).
+Q3d face-picked peg (sketch on Pad Face1, y -20): route (b) by code = same wrong face; route (c) by code = fixed
+    (10 solid, faces right, wall 2 and 3), sketch stays on Pad:Face1. Pinned only; no F7 line needed for (c).
+Q4  route (c) GUI file: wall 3 -> peg 10 solid, inside 60 x 40 x 50, outside 66 x 46, faces right; peg_size 12 ->
+    peg 12 x 12 solid. Comparison peg-trap at wall 3: peg 16 x 16 hollow, open.
+Q5  inward (Reversed) with the peg joined first: the cup IS hollowed (inside 56 x 36 at z 25) and the peg is skinned,
+    middle air (lesson 13's foot block gave no hollow at all: differs with this peg); inward, peg after: peg solid.
+    Separate PegBody: cup hollowed, peg body untouched (2 bodies). Pinned only.
+Q6  words: menu "Move Feature After…", "Set Tip"; dialog title "Move Feature After…", label "Select a feature from
+    the list"; "Move Tip" dialog as Q3b; error "Thickness: Invalid face reference".
+Q7  your turn peg 7 wall 3: joined first 13 x 13, middle air; added after 7 x 7 solid. Short peg 10 wall 4: 18 air.
+Q8  A1/B1 start file = P/peg-trap.FCStd (14, hollow, names bound).
+Q9  clipping plane not tried; angled view into the cup (camera turned to look at the front inner wall) for the takes.
