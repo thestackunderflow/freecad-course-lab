@@ -1,0 +1,951 @@
+{
+ "doc": "/lab/out/fc18/P/round-fixed.FCStd",
+ "names": {
+  "params": {
+   "A1": [
+    null,
+    "'cup_diameter"
+   ],
+   "B1": [
+    "cup_diameter",
+    "60"
+   ],
+   "A2": [
+    null,
+    "'cup_height"
+   ],
+   "B2": [
+    "cup_height",
+    "80"
+   ],
+   "A3": [
+    null,
+    "'wall"
+   ],
+   "B3": [
+    "wall",
+    "2"
+   ]
+  },
+  "exprs": {
+   "Sketch": [
+    [
+     "Constraints.floor",
+     "Params.wall"
+    ],
+    [
+     "Constraints.height",
+     "Params.cup_height"
+    ],
+    [
+     "Constraints.rim",
+     "Params.wall"
+    ],
+    [
+     "Constraints.width",
+     "Params.cup_diameter / 2"
+    ]
+   ]
+  }
+ },
+ "stored": {
+  "state": {
+   "Sketch": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Revolution": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "bad_any": {},
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "revolutions": [
+   {
+    "name": "Revolution",
+    "type": "PartDesign::Revolution",
+    "in_body": true,
+    "state": [
+     "Up-to-date"
+    ],
+    "Angle": "360.0 deg",
+    "Type": "Angle",
+    "Reversed": "False",
+    "Midplane": "False",
+    "axis": [
+     "Sketch",
+     [
+      "V_Axis"
+     ]
+    ],
+    "profile": "Sketch",
+    "status": "Valid"
+   }
+  ],
+  "sketches": {
+   "Sketch": {
+    "support": [
+     [
+      "XZ_Plane",
+      [
+       ""
+      ]
+     ]
+    ],
+    "map_mode": "FlatFace",
+    "exprs": [
+     [
+      "Constraints.floor",
+      "Params.wall"
+     ],
+     [
+      "Constraints.height",
+      "Params.cup_height"
+     ],
+     [
+      "Constraints.rim",
+      "Params.wall"
+     ],
+     [
+      "Constraints.width",
+      "Params.cup_diameter / 2"
+     ]
+    ],
+    "geo": 6,
+    "constraints": 17,
+    "FullyConstrained": true,
+    "solve": 0,
+    "width_value": 30.0
+   }
+  },
+  "m": {
+   "src": "Body",
+   "solids": 1,
+   "valid": true,
+   "volume": 34079.997,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "centre_xy": [
+    0.0,
+    0.0
+   ],
+   "x_runs_mid": [
+    [
+     -30.0,
+     -28.0
+    ],
+    [
+     28.0,
+     30.0
+    ]
+   ],
+   "inside": 56.0,
+   "z_runs_axis": [
+    [
+     0.0,
+     2.0
+    ]
+   ],
+   "ring": {
+    "0": [
+     true,
+     true,
+     true
+    ],
+    "1": [
+     true,
+     true,
+     true
+    ],
+    "2": [
+     true,
+     true,
+     true
+    ],
+    "3": [
+     true,
+     true,
+     true
+    ],
+    "4": [
+     true,
+     true,
+     true
+    ]
+   },
+   "ring_ok": true,
+   "floor_ok": true,
+   "top_open": true
+  },
+  "volume": 34079.997,
+  "builds": true,
+  "width_value": 30.0,
+  "width_expr": "Params.cup_diameter / 2",
+  "sketch_dof": 0
+ },
+ "recomputed": {
+  "state": {
+   "Sketch": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Revolution": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "bad_any": {},
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "revolutions": [
+   {
+    "name": "Revolution",
+    "type": "PartDesign::Revolution",
+    "in_body": true,
+    "state": [
+     "Up-to-date"
+    ],
+    "Angle": "360.0 deg",
+    "Type": "Angle",
+    "Reversed": "False",
+    "Midplane": "False",
+    "axis": [
+     "Sketch",
+     [
+      "V_Axis"
+     ]
+    ],
+    "profile": "Sketch",
+    "status": "Valid"
+   }
+  ],
+  "sketches": {
+   "Sketch": {
+    "support": [
+     [
+      "XZ_Plane",
+      [
+       ""
+      ]
+     ]
+    ],
+    "map_mode": "FlatFace",
+    "exprs": [
+     [
+      "Constraints.floor",
+      "Params.wall"
+     ],
+     [
+      "Constraints.height",
+      "Params.cup_height"
+     ],
+     [
+      "Constraints.rim",
+      "Params.wall"
+     ],
+     [
+      "Constraints.width",
+      "Params.cup_diameter / 2"
+     ]
+    ],
+    "geo": 6,
+    "constraints": 17,
+    "FullyConstrained": true,
+    "solve": 0,
+    "width_value": 30.0
+   }
+  },
+  "m": {
+   "src": "Body",
+   "solids": 1,
+   "valid": true,
+   "volume": 34079.997,
+   "bbox": [
+    -30.0,
+    30.0,
+    -30.0,
+    30.0,
+    -0.0,
+    80.0
+   ],
+   "outside_x": 60.0,
+   "outside_y": 60.0,
+   "z": [
+    -0.0,
+    80.0
+   ],
+   "centre_xy": [
+    0.0,
+    0.0
+   ],
+   "x_runs_mid": [
+    [
+     -30.0,
+     -28.0
+    ],
+    [
+     28.0,
+     30.0
+    ]
+   ],
+   "inside": 56.0,
+   "z_runs_axis": [
+    [
+     0.0,
+     2.0
+    ]
+   ],
+   "ring": {
+    "0": [
+     true,
+     true,
+     true
+    ],
+    "1": [
+     true,
+     true,
+     true
+    ],
+    "2": [
+     true,
+     true,
+     true
+    ],
+    "3": [
+     true,
+     true,
+     true
+    ],
+    "4": [
+     true,
+     true,
+     true
+    ]
+   },
+   "ring_ok": true,
+   "floor_ok": true,
+   "top_open": true
+  },
+  "volume": 34079.997,
+  "builds": true,
+  "width_value": 30.0,
+  "width_expr": "Params.cup_diameter / 2",
+  "sketch_dof": 0
+ },
+ "tree": {
+  "bodies": [
+   "Body"
+  ],
+  "group": [
+   "Sketch",
+   "Revolution"
+  ],
+  "tip": "Revolution",
+  "base_features": {
+   "Revolution": null
+  },
+  "visible": [
+   "Body",
+   "Revolution"
+  ]
+ },
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Cup",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "Sketch",
+   "Sketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Revolution",
+   "Revolution",
+   "PartDesign::Revolution"
+  ]
+ ],
+ "asis": {
+  "cup_diameter": 60.0,
+  "cup_height": 80.0,
+  "wall": 2.0,
+  "bad_any": {}
+ },
+ "at": {
+  "60": {
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "bad_any": {},
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "revolutions": [
+    {
+     "name": "Revolution",
+     "type": "PartDesign::Revolution",
+     "in_body": true,
+     "state": [
+      "Up-to-date"
+     ],
+     "Angle": "360.0 deg",
+     "Type": "Angle",
+     "Reversed": "False",
+     "Midplane": "False",
+     "axis": [
+      "Sketch",
+      [
+       "V_Axis"
+      ]
+     ],
+     "profile": "Sketch",
+     "status": "Valid"
+    }
+   ],
+   "sketches": {
+    "Sketch": {
+     "support": [
+      [
+       "XZ_Plane",
+       [
+        ""
+       ]
+      ]
+     ],
+     "map_mode": "FlatFace",
+     "exprs": [
+      [
+       "Constraints.floor",
+       "Params.wall"
+      ],
+      [
+       "Constraints.height",
+       "Params.cup_height"
+      ],
+      [
+       "Constraints.rim",
+       "Params.wall"
+      ],
+      [
+       "Constraints.width",
+       "Params.cup_diameter / 2"
+      ]
+     ],
+     "geo": 6,
+     "constraints": 17,
+     "FullyConstrained": true,
+     "solve": 0,
+     "width_value": 30.0
+    }
+   },
+   "m": {
+    "src": "Body",
+    "solids": 1,
+    "valid": true,
+    "volume": 34079.997,
+    "bbox": [
+     -30.0,
+     30.0,
+     -30.0,
+     30.0,
+     -0.0,
+     80.0
+    ],
+    "outside_x": 60.0,
+    "outside_y": 60.0,
+    "z": [
+     -0.0,
+     80.0
+    ],
+    "centre_xy": [
+     0.0,
+     0.0
+    ],
+    "x_runs_mid": [
+     [
+      -30.0,
+      -28.0
+     ],
+     [
+      28.0,
+      30.0
+     ]
+    ],
+    "inside": 56.0,
+    "z_runs_axis": [
+     [
+      0.0,
+      2.0
+     ]
+    ],
+    "ring": {
+     "0": [
+      true,
+      true,
+      true
+     ],
+     "1": [
+      true,
+      true,
+      true
+     ],
+     "2": [
+      true,
+      true,
+      true
+     ],
+     "3": [
+      true,
+      true,
+      true
+     ],
+     "4": [
+      true,
+      true,
+      true
+     ]
+    },
+    "ring_ok": true,
+    "floor_ok": true,
+    "top_open": true
+   },
+   "volume": 34079.997,
+   "builds": true,
+   "width_value": 30.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "sketch_dof": 0,
+   "set": {
+    "cup_diameter": 60.0,
+    "wall": 2
+   }
+  },
+  "80": {
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "bad_any": {},
+   "cup_diameter": 80.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "revolutions": [
+    {
+     "name": "Revolution",
+     "type": "PartDesign::Revolution",
+     "in_body": true,
+     "state": [
+      "Up-to-date"
+     ],
+     "Angle": "360.0 deg",
+     "Type": "Angle",
+     "Reversed": "False",
+     "Midplane": "False",
+     "axis": [
+      "Sketch",
+      [
+       "V_Axis"
+      ]
+     ],
+     "profile": "Sketch",
+     "status": "Valid"
+    }
+   ],
+   "sketches": {
+    "Sketch": {
+     "support": [
+      [
+       "XZ_Plane",
+       [
+        ""
+       ]
+      ]
+     ],
+     "map_mode": "FlatFace",
+     "exprs": [
+      [
+       "Constraints.floor",
+       "Params.wall"
+      ],
+      [
+       "Constraints.height",
+       "Params.cup_height"
+      ],
+      [
+       "Constraints.rim",
+       "Params.wall"
+      ],
+      [
+       "Constraints.width",
+       "Params.cup_diameter / 2"
+      ]
+     ],
+     "geo": 6,
+     "constraints": 17,
+     "FullyConstrained": true,
+     "solve": 0,
+     "width_value": 40.0
+    }
+   },
+   "m": {
+    "src": "Body",
+    "solids": 1,
+    "valid": true,
+    "volume": 48279.996,
+    "bbox": [
+     -40.0,
+     40.0,
+     -40.0,
+     40.0,
+     -0.0,
+     80.0
+    ],
+    "outside_x": 80.0,
+    "outside_y": 80.0,
+    "z": [
+     -0.0,
+     80.0
+    ],
+    "centre_xy": [
+     0.0,
+     0.0
+    ],
+    "x_runs_mid": [
+     [
+      -40.0,
+      -38.0
+     ],
+     [
+      38.0,
+      40.0
+     ]
+    ],
+    "inside": 76.0,
+    "z_runs_axis": [
+     [
+      0.0,
+      2.0
+     ]
+    ],
+    "ring": {
+     "0": [
+      true,
+      true,
+      true
+     ],
+     "1": [
+      true,
+      true,
+      true
+     ],
+     "2": [
+      true,
+      true,
+      true
+     ],
+     "3": [
+      true,
+      true,
+      true
+     ],
+     "4": [
+      true,
+      true,
+      true
+     ]
+    },
+    "ring_ok": true,
+    "floor_ok": true,
+    "top_open": true
+   },
+   "volume": 48279.996,
+   "builds": true,
+   "width_value": 40.0,
+   "width_expr": "Params.cup_diameter / 2",
+   "sketch_dof": 0,
+   "set": {
+    "cup_diameter": 80.0,
+    "wall": 2
+   }
+  },
+  "45": {
+   "state": {
+    "Sketch": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Revolution": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "bad_any": {},
+   "cup_diameter": 45.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "revolutions": [
+    {
+     "name": "Revolution",
+     "type": "PartDesign::Revolution",
+     "in_body": true,
+     "state": [
+      "Up-to-date"
+     ],
+     "Angle": "360.0 deg",
+     "Type": "Angle",
+     "Reversed": "False",
+     "Midplane": "False",
+     "axis": [
+      "Sketch",
+      [
+       "V_Axis"
+      ]
+     ],
+     "profile": "Sketch",
+     "status": "Valid"
+    }
+   ],
+   "sketches": {
+    "Sketch": {
+     "support": [
+      [
+       "XZ_Plane",
+       [
+        ""
+       ]
+      ]
+     ],
+     "map_mode": "FlatFace",
+     "exprs": [
+      [
+       "Constraints.floor",
+       "Params.wall"
+      ],
+      [
+       "Constraints.height",
+       "Params.cup_height"
+      ],
+      [
+       "Constraints.rim",
+       "Params.wall"
+      ],
+      [
+       "Constraints.width",
+       "Params.cup_diameter / 2"
+      ]
+     ],
+     "geo": 6,
+     "constraints": 17,
+     "FullyConstrained": true,
+     "solve": 0,
+     "width_value": 22.5
+    }
+   },
+   "m": {
+    "src": "Body",
+    "solids": 1,
+    "valid": true,
+    "volume": 24254.666,
+    "bbox": [
+     -22.5,
+     22.5,
+     -22.5,
+     22.5,
+     -0.0,
+     80.0
+    ],
+    "outside_x": 45.0,
+    "outside_y": 45.0,
+    "z": [
+     -0.0,
+     80.0
+    ],
+    "centre_xy": [
+     0.0,
+     0.0
+    ],
+    "x_runs_mid": [
+     [
+      -22.5,
+      -20.5
+     ],
+     [
+      20.5,
+      22.5
+     ]
+    ],
+    "inside": 41.0,
+    "z_runs_axis": [
+     [
+      0.0,
+      2.0
+     ]
+    ],
+    "ring": {
+     "0": [
+      true,
+      true,
+      true
+     ],
+     "1": [
+      true,
+      true,
+      true
+     ],
+     "2": [
+      true,
+      true,
+      true
+     ],
+     "3": [
+      true,
+      true,
+      true
+     ],
+     "4": [
+      true,
+      true,
+      true
+     ]
+    },
+    "ring_ok": true,
+    "floor_ok": true,
+    "top_open": true
+   },
+   "volume": 24254.666,
+   "builds": true,
+   "width_value": 22.5,
+   "width_expr": "Params.cup_diameter / 2",
+   "sketch_dof": 0,
+   "set": {
+    "cup_diameter": 45.0,
+    "wall": 2
+   }
+  }
+ },
+ "e_revolve_in_body": true,
+ "e_part_revolution": false,
+ "f_reads_cup_diameter": [
+  [
+   "Sketch",
+   "Constraints.width",
+   "Params.cup_diameter / 2"
+  ]
+ ],
+ "pass": true,
+ "criteria": {
+  "60": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true
+  },
+  "80": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true
+  },
+  "45": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true
+  }
+ },
+ "cls": 1
+}
