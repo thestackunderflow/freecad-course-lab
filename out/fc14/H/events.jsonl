@@ -1,0 +1,21 @@
+{"t": 0.074, "event": "recording started: FreeCAD 1.1.4, peg.FCStd (H)"}
+{"t": 3.08, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.305, "event": "(view fitted)"}
+{"t": 8.278, "event": "tree: Thickness", "x": 205, "y": 502, "button": 1}
+{"t": 9.791, "event": "Space: Thickness hidden", "keys": "space"}
+{"t": 12.88, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 18.022, "event": "tree: Pad", "x": 172, "y": 437, "button": 1}
+{"t": 19.532, "event": "Space: Pad shown (the box)", "keys": "space"}
+{"t": 22.615, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 29.908, "event": "tree: Pad", "x": 172, "y": 437, "button": 1}
+{"t": 31.418, "event": "Space: Pad hidden", "keys": "space"}
+{"t": 34.488, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 39.63, "event": "tree: Pad001", "x": 192, "y": 469, "button": 1}
+{"t": 41.141, "event": "Space: Pad001 shown (box + peg)", "keys": "space"}
+{"t": 44.209, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 51.465, "event": "tree: Pad001", "x": 192, "y": 469, "button": 1}
+{"t": 52.972, "event": "Space: Pad001 hidden", "keys": "space"}
+{"t": 56.039, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 61.169, "event": "tree: Thickness", "x": 205, "y": 502, "button": 1}
+{"t": 62.678, "event": "Space: Thickness shown (the last step)", "keys": "space"}
+{"t": 65.779, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}

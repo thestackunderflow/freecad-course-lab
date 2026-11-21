@@ -1,0 +1,30 @@
+{"t": 0.041, "event": "recording started: FreeCAD 1.1.4, peg.FCStd (P)"}
+{"t": 4.956, "event": "file reopened: F's saved end file"}
+{"t": 11.383, "event": "double-click: open Params"}
+{"t": 16.554, "event": "cell B4: wall", "x": 855, "y": 572, "button": 1}
+{"t": 18.266, "event": "typed 3", "text": "3"}
+{"t": 18.997, "event": "Enter", "keys": "Return"}
+{"t": 23.278, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 28.927, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 32.23, "event": "key 2: top view", "keys": "2"}
+{"t": 33.457, "event": "(view fitted)"}
+{"t": 36.836, "event": "click: empty space (selection cleared)", "x": 1500, "y": 1650, "button": 1}
+{"t": 40.572, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 45.568, "event": "peg-w3: first peg side edge", "x": 1752, "y": 1323, "button": 1}
+{"t": 50.08, "event": "peg-w3: Ctrl + opposite peg side edge", "x": 1611, "y": 1323, "button": 1}
+{"t": 59.566, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 63.184, "event": "double-click: open Params"}
+{"t": 68.363, "event": "cell B5: peg_size", "x": 855, "y": 626, "button": 1}
+{"t": 70.074, "event": "typed 12", "text": "12"}
+{"t": 70.933, "event": "Enter", "keys": "Return"}
+{"t": 75.227, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 80.862, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 84.178, "event": "key 2: top view", "keys": "2"}
+{"t": 85.398, "event": "(view fitted)"}
+{"t": 88.792, "event": "click: empty space (selection cleared)", "x": 1500, "y": 1650, "button": 1}
+{"t": 92.527, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 97.548, "event": "peg-12: first peg side edge", "x": 1766, "y": 1323, "button": 1}
+{"t": 102.056, "event": "peg-12: Ctrl + opposite peg side edge", "x": 1597, "y": 1323, "button": 1}
+{"t": 111.582, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 113.959, "event": "key 0: isometric", "keys": "0"}
+{"t": 115.189, "event": "(view fitted)"}

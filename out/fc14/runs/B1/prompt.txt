@@ -1,0 +1,1 @@
+My wall cup's key peg should be a solid 10 by 10 peg, but after the shell it came out hollow and bigger, open into the cup. Fix it so the peg stays solid and 10 wide when I change the wall thickness. Then check the peg and the front wall and tell me what you find.

@@ -1,0 +1,8 @@
+peg
+prepped peg
+1
+notices at open: []
+1
+H end: {"group": ["Sketch", "Pad", "Sketch001", "Pad001", "Thickness"], "tip": "Thickness", "base": ["Pad001", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+saved
+TAKE H DONE

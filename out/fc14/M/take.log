@@ -1,0 +1,11 @@
+peg
+prepped peg
+1
+notices at open: []
+1
+peg-trap edges 1781 1305 1582 1305
+peg-trap measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:14.00 mm 
+peg-trap selection: [('Thickness', ['Edge57', 'Edge89'])]
+1
+saved
+TAKE M DONE

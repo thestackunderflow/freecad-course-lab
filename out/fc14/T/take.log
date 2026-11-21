@@ -1,0 +1,14 @@
+peg
+prepped peg
+1
+notices at open: []
+1
+selection: [('Pad001', ['Face4'])]
+panel: "QSint::ActionLabel", "Thickness Parameters" "QToolButton", "Select" "list", "Face4" "QLabel", "Thickness" "QLineEdit", "field:1.00 mm" "QLabel", "Mode" "QComboBox", "combo:Skin" "QLabel", "Join type" "QComboBox", "combo:Arc" "QCheckBox", "Intersection" "QCheckBox", "Make thickness inwards" "QSint::ActionLabel", "Preview" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" "QPushButton", "OK" "QPushButton", "Cancel" 
+box: [False]
+after OK: {"group": ["Sketch", "Pad", "Sketch001", "Pad001", "Thickness"], "tip": "Thickness", "base": ["Pad001", ["Face4"]], "reversed": false, "shown": ["Thickness"], "state": {}, "volume": 27419.174, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": true, "side_nx": true}
+1
+1
+messages: dialogs [] notices []
+saved
+TAKE T DONE

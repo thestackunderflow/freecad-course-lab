@@ -1,0 +1,24 @@
+notices at open: []
+peg
+prepped peg
+1
+notices at reopen: []
+192 502
+wall cell 855 572
+wall 3: 
+wall 3: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Pad001"], "state": {}, "volume": 41283.982, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true}
+1
+peg-w3 edges 1752 1323 1611 1323
+peg-w3 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:10.00 mm 
+peg-w3 selection: [('Pad001', ['Edge52', 'Edge50'])]
+peg_size cell 855 626
+peg_size 12: 
+peg 12: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Pad001"], "state": {}, "volume": 41811.982, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true}
+1
+peg-12 edges 1766 1323 1597 1323
+peg-12 measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:12.00 mm 
+peg-12 selection: [('Pad001', ['Edge52', 'Edge50'])]
+1
+1
+saved
+TAKE P DONE

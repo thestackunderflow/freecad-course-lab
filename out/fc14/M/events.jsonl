@@ -1,0 +1,8 @@
+{"t": 0.07, "event": "recording started: FreeCAD 1.1.4, peg.FCStd (M)"}
+{"t": 3.577, "event": "key 2: top view", "keys": "2"}
+{"t": 4.787, "event": "(view fitted)"}
+{"t": 9.963, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 14.955, "event": "peg-trap: first peg side edge", "x": 1781, "y": 1305, "button": 1}
+{"t": 19.474, "event": "peg-trap: Ctrl + opposite peg side edge", "x": 1582, "y": 1305, "button": 1}
+{"t": 29.047, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 31.362, "event": "view: into the cup"}

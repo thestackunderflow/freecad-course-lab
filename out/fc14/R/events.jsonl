@@ -1,0 +1,12 @@
+{"t": 0.07, "event": "recording started: FreeCAD 1.1.4, peg.FCStd (R)"}
+{"t": 13.191, "event": "tree: Sketch001 (the peg's sketch)", "x": 230, "y": 502, "button": 1}
+{"t": 15.838, "event": "hover: the sketch's attachment"}
+{"t": 21.437, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 24.538, "event": "double-click: open Params"}
+{"t": 30.083, "event": "hover: Params row 1"}
+{"t": 32.648, "event": "hover: Params row 2"}
+{"t": 35.259, "event": "hover: Params row 3"}
+{"t": 37.827, "event": "hover: Params row 4"}
+{"t": 40.39, "event": "hover: Params row 5"}
+{"t": 42.96, "event": "hover: Params row 6"}
+{"t": 46.808, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}

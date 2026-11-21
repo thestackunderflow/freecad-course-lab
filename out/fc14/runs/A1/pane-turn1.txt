@@ -1,0 +1,36 @@
+  the wall thickness, so it came out hollow
+  and oversized, and open into the cup.
+
+  Fix:
+  - Order: the feature order is now Pad (box),
+    then Thickness (shell), then Pad001
+    (peg), and the peg is the body's Tip. The
+    shell no longer touches the peg.
+  - Open face: the shell's open face was
+    recorded as Pad:Face4, which is the −X
+    side wall, but it was actually opening the
+    top. I pointed it at the top face
+    (Pad:Face6) so it can't drift.
+
+  Peg length changes: the peg now starts at y
+  = −20, which is the cavity side of the wall,
+  because the shell grows outward. It reaches
+  y = −35 whatever the wall is, so the part
+  sticking out is peg_length − wall, about 13
+  mm at the default wall. Before, the tip sat
+  at about −37 mm, so it now sticks out about
+  2 mm less.
+
+  If you want the full 15 mm measured from the
+  outer wall surface, tie the peg sketch's y
+  position to Params.wall. I haven't made that
+  change because it alters the peg's overall
+  position.
+
+✻ Cooked for 58s · done 5:24 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

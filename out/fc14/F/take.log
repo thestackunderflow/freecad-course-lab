@@ -1,0 +1,25 @@
+peg
+prepped peg
+1
+notices at open: []
+1
+after Delete: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad001", "base": null, "reversed": null, "shown": ["Pad001"], "state": {}, "volume": 121500.0, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": false, "side_nx": false} dialogs []
+ctx Pad Set Tip at 484 145
+after Pad Set Tip: {"group": ["Sketch", "Pad", "Sketch001", "Pad001"], "tip": "Pad", "base": null, "reversed": null, "shown": ["Pad"], "state": {}, "volume": 120000.0, "solids": 1, "peg_mid": false, "wall_pt": false, "lid_air": true, "bottom": false, "side_nx": false} ui {"menu": [], "dialogs": [], "popup": []}
+1
+selection: [('Pad', ['Face6'])]
+panel: "QSint::ActionLabel", "Thickness Parameters" "QToolButton", "Select" "list", "Face6" "QLabel", "Thickness" "QLineEdit", "field:1.00 mm" "QLabel", "Mode" "QComboBox", "combo:Skin" "QLabel", "Join type" "QComboBox", "combo:Arc" "QCheckBox", "Intersection" "QCheckBox", "Make thickness inwards" "QSint::ActionLabel", "Preview" "QCheckBox", "Show final result" "QCheckBox", "Show preview overlay" "QPushButton", "OK" "QPushButton", "Cancel" 
+box: [False]
+after OK: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Thickness", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Thickness"], "state": {}, "volume": 26073.392, "solids": 1, "peg_mid": false, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true}
+ctx Pad001 Set Tip at 504 145
+after Pad001 Set Tip: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Pad001"], "state": {}, "volume": 27373.392, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true} ui {"menu": [], "dialogs": [], "popup": []}
+fixed: {"group": ["Sketch", "Pad", "Sketch001", "Thickness", "Pad001"], "tip": "Pad001", "base": ["Pad", ["Face6"]], "reversed": false, "shown": ["Pad001"], "state": {}, "volume": 27373.392, "solids": 1, "peg_mid": true, "wall_pt": true, "lid_air": true, "bottom": true, "side_nx": true}
+1
+1
+1
+peg-fixed edges 1753 1323 1610 1323
+peg-fixed measure: "QLabel", "Mode:" combo:Distance "QLabel", "Show Delta:" "QLabel", "Result:" field:10.00 mm 
+peg-fixed selection: [('Pad001', ['Edge52', 'Edge50'])]
+messages: dialogs [] notices []
+saved
+TAKE F DONE

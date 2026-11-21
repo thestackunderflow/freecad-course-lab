@@ -1,0 +1,36 @@
+  - The model is one valid solid at all three
+    wall thicknesses, and I set the wall back
+    to 2.
+
+  Front wall:
+  - The shell grows outward. The cup interior
+    stays 60 × 40 × 50, and the wall sits at y
+    = −20 − wall to −20.
+  - The peg runs from y = −20 to −35 and
+    starts at the inner face of the wall. Its
+    outer end is fixed at y = −35, so it
+    sticks out only peg_length − wall beyond
+    the wall (13 mm now, 11 mm at wall = 4).
+    To keep a constant 15 mm protrusion,
+    Pad001's length would need to be
+    peg_length + wall. I left that alone
+    because you didn't ask for it.
+  - The outer footprint, floor thickness and
+    wall height all grow with the wall
+    setting.
+  - The peg's height is hardcoded: peg_z0 is
+    40 - Params.peg_size / 2, so the 40
+    doesn't come from the spreadsheet. If you
+    want to move the peg vertically, add a
+    peg_z parameter.
+
+  Do you want me to make the protrusion
+  constant or add the peg_z parameter?
+
+✻ Worked for 43s · done 5:26 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)
+

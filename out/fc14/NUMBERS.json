@@ -1,0 +1,4996 @@
+{
+ "source": "freecad-course-lab out/fc14 (lab/fc14parts.py build + check, takes, runs); FreeCAD 1.1.4, freecad-mcp 0.1.28",
+ "build": {
+  "noshell": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": null,
+   "inside_l": null,
+   "inside_d": 0.0,
+   "outside_w": 60.0,
+   "outside_l": 40.0,
+   "floor_top": 50.0,
+   "rim_top": null,
+   "faces": {
+    "bottom": false,
+    "lid_air": true,
+    "side_px": false,
+    "side_nx": false,
+    "side_back": false,
+    "ok": false
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 121500.0,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": null,
+   "reversed": null,
+   "value_expr": null,
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "trap": {
+   "peg_w": 14.0,
+   "peg_h": 14.0,
+   "peg_x": [
+    -7.0,
+    7.0
+   ],
+   "peg_z": [
+    33.0,
+    47.0
+   ],
+   "peg_y": [
+    -37.0,
+    -35.0
+   ],
+   "peg_tip_y": -37.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 10.0,
+   "opening_h": 10.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27419.174,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad001",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "Thickness"
+   ],
+   "tip": "Thickness",
+   "peg_sketch": "XZ_Plane"
+  },
+  "trap_wall3": {
+   "peg_w": 16.0,
+   "peg_h": 16.0,
+   "peg_x": [
+    -8.0,
+    8.0
+   ],
+   "peg_z": [
+    32.0,
+    48.0
+   ],
+   "peg_y": [
+    -38.0,
+    -35.0
+   ],
+   "peg_tip_y": -38.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 10.0,
+   "opening_h": 10.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 42202.566,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad001",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "Thickness"
+   ],
+   "tip": "Thickness",
+   "peg_sketch": "XZ_Plane"
+  },
+  "fixed": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27373.392,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "fixed_wall3": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 41283.982,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "fixed_peg12": {
+   "peg_w": 12.0,
+   "peg_h": 12.0,
+   "peg_x": [
+    -6.0,
+    6.0
+   ],
+   "peg_z": [
+    34.0,
+    46.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 41811.982,
+   "wall_param": 3.0,
+   "peg_param": 12.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "route_b_code": {
+   "peg_w": 14.0,
+   "peg_h": 14.0,
+   "peg_x": [
+    -7.0,
+    7.0
+   ],
+   "peg_z": [
+    33.0,
+    47.0
+   ],
+   "peg_y": [
+    -37.0,
+    -35.0
+   ],
+   "peg_tip_y": -37.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 10.0,
+   "opening_h": 10.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27419.174,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane",
+   "move": {
+    "before": {
+     "tip": "Thickness",
+     "base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ]
+    },
+    "tip_after": "Pad001",
+    "base_after": [
+     "Pad",
+     [
+      "Face4"
+     ]
+    ]
+   }
+  },
+  "route_b_touched": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": null,
+   "inside_l": 40.0,
+   "inside_d": 51.7321,
+   "outside_w": 2.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 51.7321,
+   "faces": {
+    "bottom": true,
+    "lid_air": false,
+    "side_px": true,
+    "side_nx": false,
+    "side_back": true,
+    "ok": false
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 28236.224,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "route_b_code_wall3": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": null,
+   "inside_l": 40.0,
+   "inside_d": 52.5981,
+   "outside_w": 3.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 52.5981,
+   "faces": {
+    "bottom": true,
+    "lid_air": false,
+    "side_px": true,
+    "side_nx": false,
+    "side_back": true,
+    "ok": false
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 42625.354,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "route_b_repick": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27373.392,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "route_b_repick_wall3": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 41283.982,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "route_b_repick_peg12": {
+   "peg_w": 12.0,
+   "peg_h": 12.0,
+   "peg_x": [
+    -6.0,
+    6.0
+   ],
+   "peg_z": [
+    34.0,
+    46.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 41811.982,
+   "wall_param": 3.0,
+   "peg_param": 12.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "route_a_code": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": null,
+   "inside_l": 40.0,
+   "inside_d": 51.7321,
+   "outside_w": 2.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 51.7321,
+   "faces": {
+    "bottom": true,
+    "lid_air": false,
+    "side_px": true,
+    "side_nx": false,
+    "side_back": true,
+    "ok": false
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 28236.224,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Thickness",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "face_trap": {
+   "peg_w": 14.0,
+   "peg_h": 14.0,
+   "peg_x": [
+    -7.0,
+    7.0
+   ],
+   "peg_z": [
+    33.0,
+    47.0
+   ],
+   "peg_y": [
+    -37.0,
+    -35.0
+   ],
+   "peg_tip_y": -37.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 10.0,
+   "opening_h": 10.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27419.174,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad001",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "Thickness"
+   ],
+   "tip": "Thickness",
+   "peg_sketch": "Pad:Face1"
+  },
+  "face_moved": {
+   "peg_w": 14.0,
+   "peg_h": 14.0,
+   "peg_x": [
+    -7.0,
+    7.0
+   ],
+   "peg_z": [
+    33.0,
+    47.0
+   ],
+   "peg_y": [
+    -37.0,
+    -35.0
+   ],
+   "peg_tip_y": -37.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 10.0,
+   "opening_h": 10.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27419.174,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "Pad:Face1",
+   "move": {
+    "before": {
+     "tip": "Thickness",
+     "base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ]
+    },
+    "tip_after": "Pad001",
+    "base_after": [
+     "Pad",
+     [
+      "Face4"
+     ]
+    ]
+   }
+  },
+  "face_moved_touched": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": null,
+   "inside_l": 40.0,
+   "inside_d": 51.7321,
+   "outside_w": 2.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 51.7321,
+   "faces": {
+    "bottom": true,
+    "lid_air": false,
+    "side_px": true,
+    "side_nx": false,
+    "side_back": true,
+    "ok": false
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 28236.224,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "Pad:Face1"
+  },
+  "route_c_code": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27373.392,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Thickness",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "route_c_code_wall3": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 41283.982,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Thickness",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "face_route_c": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 27373.392,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Thickness",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "Pad:Face1"
+  },
+  "face_route_c_wall3": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 41283.982,
+   "wall_param": 3.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Thickness",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "Pad:Face1"
+  },
+  "edge_inward_before": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -33.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 6.0,
+   "opening_h": 6.0,
+   "inside_w": 56.0,
+   "inside_l": 36.0,
+   "inside_d": 0.0,
+   "outside_w": 60.0,
+   "outside_l": 40.0,
+   "floor_top": 2.0,
+   "rim_top": null,
+   "faces": {
+    "bottom": false,
+    "lid_air": true,
+    "side_px": false,
+    "side_nx": false,
+    "side_back": false,
+    "ok": false
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 24168.33,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad001",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": true,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "Thickness"
+   ],
+   "tip": "Thickness",
+   "peg_sketch": "XZ_Plane"
+  },
+  "edge_inward_after": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 56.0,
+   "inside_l": 36.0,
+   "inside_d": 0.0,
+   "outside_w": 60.0,
+   "outside_l": 40.0,
+   "floor_top": 2.0,
+   "rim_top": null,
+   "faces": {
+    "bottom": false,
+    "lid_air": true,
+    "side_px": false,
+    "side_nx": false,
+    "side_back": false,
+    "ok": false
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 24732.0,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": true,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "edge_sep_body": {
+   "peg_w": null,
+   "peg_h": null,
+   "peg_x": null,
+   "peg_z": null,
+   "peg_y": [
+    -22.0,
+    -20.0
+   ],
+   "peg_tip_y": -22.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 64.0,
+   "outside_l": 44.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 26073.392,
+   "wall_param": 2.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness"
+   ],
+   "tip": "Thickness",
+   "peg_sketch": "XZ_Plane",
+   "peg_body_solids": 1,
+   "peg_body_volume": 1500.0
+  },
+  "yt_before": {
+   "peg_w": 13.0,
+   "peg_h": 13.0,
+   "peg_x": [
+    -6.5,
+    6.5
+   ],
+   "peg_z": [
+    33.5,
+    46.5
+   ],
+   "peg_y": [
+    -38.0,
+    -35.0
+   ],
+   "peg_tip_y": -38.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 7.0,
+   "opening_h": 7.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 41685.743,
+   "wall_param": 3.0,
+   "peg_param": 7.0,
+   "thickness_base": [
+    "Pad001",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "Thickness"
+   ],
+   "tip": "Thickness",
+   "peg_sketch": "XZ_Plane"
+  },
+  "yt_after": {
+   "peg_w": 7.0,
+   "peg_h": 7.0,
+   "peg_x": [
+    -3.5,
+    3.5
+   ],
+   "peg_z": [
+    36.5,
+    43.5
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 66.0,
+   "outside_l": 46.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 40671.982,
+   "wall_param": 3.0,
+   "peg_param": 7.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  },
+  "short_before": {
+   "peg_w": 18.0,
+   "peg_h": 18.0,
+   "peg_x": [
+    -9.0,
+    9.0
+   ],
+   "peg_z": [
+    31.0,
+    49.0
+   ],
+   "peg_y": [
+    -39.0,
+    -35.0
+   ],
+   "peg_tip_y": -39.0,
+   "peg_mid_solid": false,
+   "front_wall_solid": false,
+   "opening_w": 10.0,
+   "opening_h": 10.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 68.0,
+   "outside_l": 48.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 57710.206,
+   "wall_param": 4.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad001",
+    [
+     "Face4"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "Thickness"
+   ],
+   "tip": "Thickness",
+   "peg_sketch": "XZ_Plane"
+  },
+  "short_after": {
+   "peg_w": 10.0,
+   "peg_h": 10.0,
+   "peg_x": [
+    -5.0,
+    5.0
+   ],
+   "peg_z": [
+    35.0,
+    45.0
+   ],
+   "peg_y": [
+    -35.0,
+    -20.0
+   ],
+   "peg_tip_y": -35.0,
+   "peg_mid_solid": true,
+   "front_wall_solid": true,
+   "opening_w": 0.0,
+   "opening_h": 0.0,
+   "inside_w": 60.0,
+   "inside_l": 40.0,
+   "inside_d": 50.0,
+   "outside_w": 68.0,
+   "outside_l": 48.0,
+   "floor_top": 0.0,
+   "rim_top": 50.0,
+   "faces": {
+    "bottom": true,
+    "lid_air": true,
+    "side_px": true,
+    "side_nx": true,
+    "side_back": true,
+    "ok": true
+   },
+   "solids": 1,
+   "valid": true,
+   "volume": 55860.59,
+   "wall_param": 4.0,
+   "peg_param": 10.0,
+   "thickness_base": [
+    "Pad",
+    [
+     "Face6"
+    ]
+   ],
+   "reversed": false,
+   "value_expr": "Params.wall",
+   "order": [
+    "Sketch",
+    "Pad",
+    "Thickness",
+    "Sketch001",
+    "Pad001"
+   ],
+   "tip": "Pad001",
+   "peg_sketch": "XZ_Plane"
+  }
+ },
+ "G0": {
+  "trap_gui": {
+   "pass": false,
+   "criteria": {
+    "wall2": {
+     "a": false,
+     "b": false,
+     "c": true,
+     "d": true,
+     "e": true
+    },
+    "wall3": {
+     "a": false,
+     "b": false,
+     "c": true,
+     "d": true,
+     "e": true
+    }
+   },
+   "stored": {
+    "peg_w": 14.0,
+    "peg_h": 14.0,
+    "peg_x": [
+     -7.0,
+     7.0
+    ],
+    "peg_z": [
+     33.0,
+     47.0
+    ],
+    "peg_y": [
+     -37.0,
+     -35.0
+    ],
+    "peg_tip_y": -37.0,
+    "peg_mid_solid": false,
+    "front_wall_solid": false,
+    "opening_w": 10.0,
+    "opening_h": 10.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 64.0,
+    "outside_l": 44.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 27419.174,
+    "wall_param": 2.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad001",
+     [
+      "Face4"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Pad001",
+     "Thickness"
+    ],
+    "tip": "Thickness",
+    "peg_sketch": "XZ_Plane"
+   },
+   "recomputed": {
+    "peg_w": 14.0,
+    "peg_h": 14.0,
+    "peg_x": [
+     -7.0,
+     7.0
+    ],
+    "peg_z": [
+     33.0,
+     47.0
+    ],
+    "peg_y": [
+     -37.0,
+     -35.0
+    ],
+    "peg_tip_y": -37.0,
+    "peg_mid_solid": false,
+    "front_wall_solid": false,
+    "opening_w": 10.0,
+    "opening_h": 10.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 64.0,
+    "outside_l": 44.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 27419.174,
+    "wall_param": 2.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad001",
+     [
+      "Face4"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Pad001",
+     "Thickness"
+    ],
+    "tip": "Thickness",
+    "peg_sketch": "XZ_Plane"
+   },
+   "at_wall2": {
+    "peg_w": 14.0,
+    "peg_h": 14.0,
+    "peg_x": [
+     -7.0,
+     7.0
+    ],
+    "peg_z": [
+     33.0,
+     47.0
+    ],
+    "peg_y": [
+     -37.0,
+     -35.0
+    ],
+    "peg_tip_y": -37.0,
+    "peg_mid_solid": false,
+    "front_wall_solid": false,
+    "opening_w": 10.0,
+    "opening_h": 10.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 64.0,
+    "outside_l": 44.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 27419.174,
+    "wall_param": 2.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad001",
+     [
+      "Face4"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Pad001",
+     "Thickness"
+    ],
+    "tip": "Thickness",
+    "peg_sketch": "XZ_Plane"
+   },
+   "at_wall3": {
+    "peg_w": 16.0,
+    "peg_h": 16.0,
+    "peg_x": [
+     -8.0,
+     8.0
+    ],
+    "peg_z": [
+     32.0,
+     48.0
+    ],
+    "peg_y": [
+     -38.0,
+     -35.0
+    ],
+    "peg_tip_y": -38.0,
+    "peg_mid_solid": false,
+    "front_wall_solid": false,
+    "opening_w": 10.0,
+    "opening_h": 10.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 66.0,
+    "outside_l": 46.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 42202.566,
+    "wall_param": 3.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad001",
+     [
+      "Face4"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Pad001",
+     "Thickness"
+    ],
+    "tip": "Thickness",
+    "peg_sketch": "XZ_Plane"
+   },
+   "at_wall3_peg12": null
+  },
+  "route_c_gui": {
+   "pass": true,
+   "criteria": {
+    "wall2": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true
+    },
+    "wall3": {
+     "a": true,
+     "b": true,
+     "c": true,
+     "d": true,
+     "e": true
+    }
+   },
+   "stored": {
+    "peg_w": 10.0,
+    "peg_h": 10.0,
+    "peg_x": [
+     -5.0,
+     5.0
+    ],
+    "peg_z": [
+     35.0,
+     45.0
+    ],
+    "peg_y": [
+     -35.0,
+     -20.0
+    ],
+    "peg_tip_y": -35.0,
+    "peg_mid_solid": true,
+    "front_wall_solid": true,
+    "opening_w": 0.0,
+    "opening_h": 0.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 64.0,
+    "outside_l": 44.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 27373.392,
+    "wall_param": 2.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad",
+     [
+      "Face6"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Thickness",
+     "Pad001"
+    ],
+    "tip": "Pad001",
+    "peg_sketch": "XZ_Plane"
+   },
+   "recomputed": {
+    "peg_w": 10.0,
+    "peg_h": 10.0,
+    "peg_x": [
+     -5.0,
+     5.0
+    ],
+    "peg_z": [
+     35.0,
+     45.0
+    ],
+    "peg_y": [
+     -35.0,
+     -20.0
+    ],
+    "peg_tip_y": -35.0,
+    "peg_mid_solid": true,
+    "front_wall_solid": true,
+    "opening_w": 0.0,
+    "opening_h": 0.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 64.0,
+    "outside_l": 44.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 27373.392,
+    "wall_param": 2.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad",
+     [
+      "Face6"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Thickness",
+     "Pad001"
+    ],
+    "tip": "Pad001",
+    "peg_sketch": "XZ_Plane"
+   },
+   "at_wall2": {
+    "peg_w": 10.0,
+    "peg_h": 10.0,
+    "peg_x": [
+     -5.0,
+     5.0
+    ],
+    "peg_z": [
+     35.0,
+     45.0
+    ],
+    "peg_y": [
+     -35.0,
+     -20.0
+    ],
+    "peg_tip_y": -35.0,
+    "peg_mid_solid": true,
+    "front_wall_solid": true,
+    "opening_w": 0.0,
+    "opening_h": 0.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 64.0,
+    "outside_l": 44.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 27373.392,
+    "wall_param": 2.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad",
+     [
+      "Face6"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Thickness",
+     "Pad001"
+    ],
+    "tip": "Pad001",
+    "peg_sketch": "XZ_Plane"
+   },
+   "at_wall3": {
+    "peg_w": 10.0,
+    "peg_h": 10.0,
+    "peg_x": [
+     -5.0,
+     5.0
+    ],
+    "peg_z": [
+     35.0,
+     45.0
+    ],
+    "peg_y": [
+     -35.0,
+     -20.0
+    ],
+    "peg_tip_y": -35.0,
+    "peg_mid_solid": true,
+    "front_wall_solid": true,
+    "opening_w": 0.0,
+    "opening_h": 0.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 66.0,
+    "outside_l": 46.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 41283.982,
+    "wall_param": 3.0,
+    "peg_param": 10.0,
+    "thickness_base": [
+     "Pad",
+     [
+      "Face6"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Thickness",
+     "Pad001"
+    ],
+    "tip": "Pad001",
+    "peg_sketch": "XZ_Plane"
+   },
+   "at_wall3_peg12": {
+    "peg_w": 12.0,
+    "peg_h": 12.0,
+    "peg_x": [
+     -6.0,
+     6.0
+    ],
+    "peg_z": [
+     34.0,
+     46.0
+    ],
+    "peg_y": [
+     -35.0,
+     -20.0
+    ],
+    "peg_tip_y": -35.0,
+    "peg_mid_solid": true,
+    "front_wall_solid": true,
+    "opening_w": 0.0,
+    "opening_h": 0.0,
+    "inside_w": 60.0,
+    "inside_l": 40.0,
+    "inside_d": 50.0,
+    "outside_w": 66.0,
+    "outside_l": 46.0,
+    "floor_top": 0.0,
+    "rim_top": 50.0,
+    "faces": {
+     "bottom": true,
+     "lid_air": true,
+     "side_px": true,
+     "side_nx": true,
+     "side_back": true,
+     "ok": true
+    },
+    "solids": 1,
+    "valid": true,
+    "volume": 41811.982,
+    "wall_param": 3.0,
+    "peg_param": 12.0,
+    "thickness_base": [
+     "Pad",
+     [
+      "Face6"
+     ]
+    ],
+    "reversed": false,
+    "value_expr": "Params.wall",
+    "order": [
+     "Sketch",
+     "Pad",
+     "Sketch001",
+     "Thickness",
+     "Pad001"
+    ],
+    "tip": "Pad001",
+    "peg_sketch": "XZ_Plane"
+   }
+  }
+ },
+ "takes": {
+  "R": {
+   "measure": [],
+   "state": [],
+   "messages": [
+    "notices at open: []"
+   ],
+   "check": {
+    "pass": false,
+    "criteria": {
+     "wall2": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true,
+      "e": false
+     },
+     "wall3": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true,
+      "e": false
+     }
+    },
+    "stored": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": null,
+     "inside_l": null,
+     "inside_d": 0.0,
+     "outside_w": 60.0,
+     "outside_l": 40.0,
+     "floor_top": 50.0,
+     "rim_top": null,
+     "faces": {
+      "bottom": false,
+      "lid_air": true,
+      "side_px": false,
+      "side_nx": false,
+      "side_back": false,
+      "ok": false
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 121500.0,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": null,
+     "reversed": null,
+     "value_expr": null,
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": null,
+     "inside_l": null,
+     "inside_d": 0.0,
+     "outside_w": 60.0,
+     "outside_l": 40.0,
+     "floor_top": 50.0,
+     "rim_top": null,
+     "faces": {
+      "bottom": false,
+      "lid_air": true,
+      "side_px": false,
+      "side_nx": false,
+      "side_back": false,
+      "ok": false
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 121500.0,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": null,
+     "reversed": null,
+     "value_expr": null,
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": null,
+     "inside_l": null,
+     "inside_d": 0.0,
+     "outside_w": 60.0,
+     "outside_l": 40.0,
+     "floor_top": 50.0,
+     "rim_top": null,
+     "faces": {
+      "bottom": false,
+      "lid_air": true,
+      "side_px": false,
+      "side_nx": false,
+      "side_back": false,
+      "ok": false
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 121500.0,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": null,
+     "reversed": null,
+     "value_expr": null,
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": null,
+     "inside_l": null,
+     "inside_d": 0.0,
+     "outside_w": 60.0,
+     "outside_l": 40.0,
+     "floor_top": 50.0,
+     "rim_top": null,
+     "faces": {
+      "bottom": false,
+      "lid_air": true,
+      "side_px": false,
+      "side_nx": false,
+      "side_back": false,
+      "ok": false
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 121500.0,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": null,
+     "reversed": null,
+     "value_expr": null,
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": null,
+     "inside_l": null,
+     "inside_d": 0.0,
+     "outside_w": 60.0,
+     "outside_l": 40.0,
+     "floor_top": 50.0,
+     "rim_top": null,
+     "faces": {
+      "bottom": false,
+      "lid_air": true,
+      "side_px": false,
+      "side_nx": false,
+      "side_back": false,
+      "ok": false
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 122160.0,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": null,
+     "reversed": null,
+     "value_expr": null,
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  },
+  "H": {
+   "measure": [],
+   "state": [
+    "H end: {\"group\": [\"Sketch\", \"Pad\", \"Sketch001\", \"Pad001\", \"Thickness\"], \"tip\": \"Thickness\", \"base\": [\"Pad001\", [\"Face4\"]], \"reversed\": false, \"shown\": [\"Thickness\"], \"state\": {}, \"volume\": 27419.174, \"solids\": 1, \"peg_mid\": false, \"wall_pt\": false, \"lid_air\": true, \"bottom\": true, \"side_nx\": true}"
+   ],
+   "messages": [
+    "notices at open: []"
+   ],
+   "check": {
+    "pass": false,
+    "criteria": {
+     "wall2": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 16.0,
+     "peg_h": 16.0,
+     "peg_x": [
+      -8.0,
+      8.0
+     ],
+     "peg_z": [
+      32.0,
+      48.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42202.566,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 18.0,
+     "peg_h": 18.0,
+     "peg_x": [
+      -9.0,
+      9.0
+     ],
+     "peg_z": [
+      31.0,
+      49.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 12.0,
+     "opening_h": 12.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42547.115,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  },
+  "T": {
+   "measure": [],
+   "state": [
+    "after OK: {\"group\": [\"Sketch\", \"Pad\", \"Sketch001\", \"Pad001\", \"Thickness\"], \"tip\": \"Thickness\", \"base\": [\"Pad001\", [\"Face4\"]], \"reversed\": false, \"shown\": [\"Thickness\"], \"state\": {}, \"volume\": 27419.174, \"solids\": 1, \"peg_mid\": false, \"wall_pt\": false, \"lid_air\": true, \"bottom\": true, \"side_nx\": true}"
+   ],
+   "messages": [
+    "notices at open: []",
+    "messages: dialogs [] notices []"
+   ],
+   "check": {
+    "pass": false,
+    "criteria": {
+     "wall2": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 16.0,
+     "peg_h": 16.0,
+     "peg_x": [
+      -8.0,
+      8.0
+     ],
+     "peg_z": [
+      32.0,
+      48.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42202.566,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 18.0,
+     "peg_h": 18.0,
+     "peg_x": [
+      -9.0,
+      9.0
+     ],
+     "peg_z": [
+      31.0,
+      49.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 12.0,
+     "opening_h": 12.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42547.115,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  },
+  "M": {
+   "measure": [
+    "peg-trap measure: \"QLabel\", \"Mode:\" combo:Distance \"QLabel\", \"Show Delta:\" \"QLabel\", \"Result:\" field:14.00 mm"
+   ],
+   "state": [],
+   "messages": [
+    "notices at open: []"
+   ],
+   "check": {
+    "pass": false,
+    "criteria": {
+     "wall2": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 16.0,
+     "peg_h": 16.0,
+     "peg_x": [
+      -8.0,
+      8.0
+     ],
+     "peg_z": [
+      32.0,
+      48.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42202.566,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 18.0,
+     "peg_h": 18.0,
+     "peg_x": [
+      -9.0,
+      9.0
+     ],
+     "peg_z": [
+      31.0,
+      49.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 12.0,
+     "opening_h": 12.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42547.115,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  },
+  "F": {
+   "measure": [
+    "peg-fixed measure: \"QLabel\", \"Mode:\" combo:Distance \"QLabel\", \"Show Delta:\" \"QLabel\", \"Result:\" field:10.00 mm"
+   ],
+   "state": [
+    "after Delete: {\"group\": [\"Sketch\", \"Pad\", \"Sketch001\", \"Pad001\"], \"tip\": \"Pad001\", \"base\": null, \"reversed\": null, \"shown\": [\"Pad001\"], \"state\": {}, \"volume\": 121500.0, \"solids\": 1, \"peg_mid\": true, \"wall_pt\": true, \"lid_air\": true, \"bottom\": false, \"side_nx\": false} dialogs []",
+    "after OK: {\"group\": [\"Sketch\", \"Pad\", \"Sketch001\", \"Thickness\", \"Pad001\"], \"tip\": \"Thickness\", \"base\": [\"Pad\", [\"Face6\"]], \"reversed\": false, \"shown\": [\"Thickness\"], \"state\": {}, \"volume\": 26073.392, \"solids\": 1, \"peg_mid\": false, \"wall_pt\": true, \"lid_air\": true, \"bottom\": true, \"side_nx\": true}",
+    "fixed: {\"group\": [\"Sketch\", \"Pad\", \"Sketch001\", \"Thickness\", \"Pad001\"], \"tip\": \"Pad001\", \"base\": [\"Pad\", [\"Face6\"]], \"reversed\": false, \"shown\": [\"Pad001\"], \"state\": {}, \"volume\": 27373.392, \"solids\": 1, \"peg_mid\": true, \"wall_pt\": true, \"lid_air\": true, \"bottom\": true, \"side_nx\": true}"
+   ],
+   "messages": [
+    "notices at open: []",
+    "messages: dialogs [] notices []"
+   ],
+   "check": {
+    "pass": true,
+    "criteria": {
+     "wall2": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41283.982,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41811.982,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  },
+  "P": {
+   "measure": [
+    "peg-w3 measure: \"QLabel\", \"Mode:\" combo:Distance \"QLabel\", \"Show Delta:\" \"QLabel\", \"Result:\" field:10.00 mm",
+    "peg-12 measure: \"QLabel\", \"Mode:\" combo:Distance \"QLabel\", \"Show Delta:\" \"QLabel\", \"Result:\" field:12.00 mm"
+   ],
+   "state": [
+    "wall 3:",
+    "wall 3: {\"group\": [\"Sketch\", \"Pad\", \"Sketch001\", \"Thickness\", \"Pad001\"], \"tip\": \"Pad001\", \"base\": [\"Pad\", [\"Face6\"]], \"reversed\": false, \"shown\": [\"Pad001\"], \"state\": {}, \"volume\": 41283.982, \"solids\": 1, \"peg_mid\": true, \"wall_pt\": true, \"lid_air\": true, \"bottom\": true, \"side_nx\": true}",
+    "peg 12: {\"group\": [\"Sketch\", \"Pad\", \"Sketch001\", \"Thickness\", \"Pad001\"], \"tip\": \"Pad001\", \"base\": [\"Pad\", [\"Face6\"]], \"reversed\": false, \"shown\": [\"Pad001\"], \"state\": {}, \"volume\": 41811.982, \"solids\": 1, \"peg_mid\": true, \"wall_pt\": true, \"lid_air\": true, \"bottom\": true, \"side_nx\": true}"
+   ],
+   "messages": [
+    "notices at open: []",
+    "notices at reopen: []"
+   ],
+   "check": {
+    "pass": false,
+    "criteria": {
+     "wall2": {
+      "a": false,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": false,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41811.982,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41811.982,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27945.392,
+     "wall_param": 2.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41811.982,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41811.982,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  },
+  "Y": {
+   "measure": [],
+   "state": [],
+   "messages": [
+    "notices at open: []"
+   ],
+   "check": {
+    "pass": false,
+    "criteria": {
+     "wall2": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": false,
+      "b": false,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 14.0,
+     "peg_h": 14.0,
+     "peg_x": [
+      -7.0,
+      7.0
+     ],
+     "peg_z": [
+      33.0,
+      47.0
+     ],
+     "peg_y": [
+      -37.0,
+      -35.0
+     ],
+     "peg_tip_y": -37.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27419.174,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 16.0,
+     "peg_h": 16.0,
+     "peg_x": [
+      -8.0,
+      8.0
+     ],
+     "peg_z": [
+      32.0,
+      48.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 10.0,
+     "opening_h": 10.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42202.566,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 18.0,
+     "peg_h": 18.0,
+     "peg_x": [
+      -9.0,
+      9.0
+     ],
+     "peg_z": [
+      31.0,
+      49.0
+     ],
+     "peg_y": [
+      -38.0,
+      -35.0
+     ],
+     "peg_tip_y": -38.0,
+     "peg_mid_solid": false,
+     "front_wall_solid": false,
+     "opening_w": 12.0,
+     "opening_h": 12.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 42547.115,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad001",
+      [
+       "Face4"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Pad001",
+      "Thickness"
+     ],
+     "tip": "Thickness",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  }
+ },
+ "runs": {
+  "A1": {
+   "cost_usd": "0.1788",
+   "wall_s": 144,
+   "prompt": "My wall cup's key peg should be a solid 10 by 10 peg, but after the shell it came out hollow and bigger, open into the cup. Fix it so the peg stays solid and 10 wide when I change the wall thickness.",
+   "tool_calls": 7,
+   "score": {
+    "pass": true,
+    "criteria": {
+     "wall2": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41283.982,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41811.982,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Sketch001",
+      "Thickness",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  },
+  "B1": {
+   "cost_usd": "0.1265",
+   "wall_s": 135,
+   "prompt": "My wall cup's key peg should be a solid 10 by 10 peg, but after the shell it came out hollow and bigger, open into the cup. Fix it so the peg stays solid and 10 wide when I change the wall thickness. Then check the peg and the front wall and tell me what you find.",
+   "tool_calls": 5,
+   "score": {
+    "pass": true,
+    "criteria": {
+     "wall2": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     },
+     "wall3": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true,
+      "e": true
+     }
+    },
+    "stored": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Thickness",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "recomputed": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Thickness",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall2": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 64.0,
+     "outside_l": 44.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 27373.392,
+     "wall_param": 2.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Thickness",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3": {
+     "peg_w": 10.0,
+     "peg_h": 10.0,
+     "peg_x": [
+      -5.0,
+      5.0
+     ],
+     "peg_z": [
+      35.0,
+      45.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41283.982,
+     "wall_param": 3.0,
+     "peg_param": 10.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Thickness",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    },
+    "at_wall3_peg12": {
+     "peg_w": 12.0,
+     "peg_h": 12.0,
+     "peg_x": [
+      -6.0,
+      6.0
+     ],
+     "peg_z": [
+      34.0,
+      46.0
+     ],
+     "peg_y": [
+      -35.0,
+      -20.0
+     ],
+     "peg_tip_y": -35.0,
+     "peg_mid_solid": true,
+     "front_wall_solid": true,
+     "opening_w": 0.0,
+     "opening_h": 0.0,
+     "inside_w": 60.0,
+     "inside_l": 40.0,
+     "inside_d": 50.0,
+     "outside_w": 66.0,
+     "outside_l": 46.0,
+     "floor_top": 0.0,
+     "rim_top": 50.0,
+     "faces": {
+      "bottom": true,
+      "lid_air": true,
+      "side_px": true,
+      "side_nx": true,
+      "side_back": true,
+      "ok": true
+     },
+     "solids": 1,
+     "valid": true,
+     "volume": 41811.982,
+     "wall_param": 3.0,
+     "peg_param": 12.0,
+     "thickness_base": [
+      "Pad",
+      [
+       "Face6"
+      ]
+     ],
+     "reversed": false,
+     "value_expr": "Params.wall",
+     "order": [
+      "Sketch",
+      "Pad",
+      "Thickness",
+      "Sketch001",
+      "Pad001"
+     ],
+     "tip": "Pad001",
+     "peg_sketch": "XZ_Plane"
+    }
+   }
+  }
+ }
+}

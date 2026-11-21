@@ -1,0 +1,15 @@
+{"t": 0.073, "event": "recording started: FreeCAD 1.1.4, peg.FCStd (T)"}
+{"t": 3.171, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.391, "event": "(view fitted)"}
+{"t": 8.787, "event": "top face picked", "x": 1762, "y": 631, "button": 1}
+{"t": 13.692, "event": "Thickness", "x": 1204, "y": 228, "button": 1}
+{"t": 20.089, "event": "Thickness: click", "x": 2652, "y": 1166, "button": 1}
+{"t": 21.23, "event": "Thickness: typed = (Expression Editor)", "text": "="}
+{"t": 23.939, "event": "Thickness: typed Params.wall", "text": "Params.wall"}
+{"t": 26.659, "event": "Return: name list closed", "keys": "Return"}
+{"t": 31.212, "event": "Expression Editor: OK", "x": 2773, "y": 1346, "button": 1}
+{"t": 37.343, "event": "Make thickness inwards: unticked (walls outward, lesson 13)", "x": 2292, "y": 1371, "button": 1}
+{"t": 43.264, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 47.107, "event": "key 0: isometric", "keys": "0"}
+{"t": 48.322, "event": "(view fitted)"}
+{"t": 52.459, "event": "view: into the cup"}

@@ -1,0 +1,34 @@
+{"t": 0.058, "event": "recording started: FreeCAD 1.1.4, peg.FCStd (F)"}
+{"t": 3.085, "event": "view: into the cup"}
+{"t": 10.174, "event": "tree: Thickness", "x": 205, "y": 502, "button": 1}
+{"t": 11.883, "event": "Delete: Thickness", "keys": "Delete"}
+{"t": 17.778, "event": "tree: Pad", "x": 172, "y": 437, "button": 1}
+{"t": 19.29, "event": "right-click: Pad"}
+{"t": 23.907, "event": "menu: Set Tip", "x": 484, "y": 145, "button": 1}
+{"t": 29.387, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 31.211, "event": "key 0: isometric", "keys": "0"}
+{"t": 32.434, "event": "(view fitted)"}
+{"t": 36.928, "event": "top face picked", "x": 1681, "y": 650, "button": 1}
+{"t": 41.927, "event": "Thickness", "x": 1204, "y": 228, "button": 1}
+{"t": 48.36, "event": "Thickness: click", "x": 2652, "y": 1166, "button": 1}
+{"t": 49.497, "event": "Thickness: typed = (Expression Editor)", "text": "="}
+{"t": 52.207, "event": "Thickness: typed Params.wall", "text": "Params.wall"}
+{"t": 54.929, "event": "Return: name list closed", "keys": "Return"}
+{"t": 59.471, "event": "Expression Editor: OK", "x": 2773, "y": 1346, "button": 1}
+{"t": 65.66, "event": "Make thickness inwards: unticked (walls outward, lesson 13)", "x": 2292, "y": 1371, "button": 1}
+{"t": 71.58, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 77.452, "event": "tree: Pad001", "x": 192, "y": 502, "button": 1}
+{"t": 78.96, "event": "right-click: Pad001"}
+{"t": 83.582, "event": "menu: Set Tip", "x": 504, "y": 145, "button": 1}
+{"t": 89.08, "event": "click: empty space (nothing selected)", "x": 1500, "y": 1650, "button": 1}
+{"t": 92.845, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 96.65, "event": "key 0: isometric", "keys": "0"}
+{"t": 97.911, "event": "(view fitted)"}
+{"t": 102.051, "event": "view: into the cup"}
+{"t": 108.783, "event": "key 2: top view", "keys": "2"}
+{"t": 110.015, "event": "(view fitted)"}
+{"t": 113.372, "event": "click: empty space (selection cleared)", "x": 1500, "y": 1650, "button": 1}
+{"t": 117.115, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 122.119, "event": "peg-fixed: first peg side edge", "x": 1753, "y": 1323, "button": 1}
+{"t": 126.626, "event": "peg-fixed: Ctrl + opposite peg side edge", "x": 1610, "y": 1323, "button": 1}
+{"t": 136.159, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}

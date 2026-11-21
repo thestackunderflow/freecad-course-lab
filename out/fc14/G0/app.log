@@ -1,0 +1,140 @@
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 89.9s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a popup or context menu is open in FreeCAD; 5 task(s) queued)"}
+--- code ---
+try:
+    exec(open('/lab/lab/fc8q.py').read()); exec(open('/lab/lab/fc9q.py').read()); exec(open('/lab/lab/fc12q.py').read()); exec(open('/lab/lab/fc14q.py').read()); menu_items()
+except BaseException as _lab_e:
+    print('LABERR' + " " + type(_lab_e).__name__ + ": " + str(_lab_e))
+
+--- end ---
+Error executing Python code: {'success': False, 'error': "GUI dispatch gave up after 89.9s waiting for 'execute_code' to start (queue_timeout=90s) (GUI thread is not processing tasks: a popup or context menu is open in FreeCAD; 6 task(s) queued)"}
+--- code ---
+try:
+    exec(open('/lab/lab/fc8q.py').read()); exec(open('/lab/lab/fc9q.py').read()); exec(open('/lab/lab/fc12q.py').read()); exec(open('/lab/lab/fc14q.py').read()); menu_items()
+except BaseException as _lab_e:
+    print('LABERR' + " " + type(_lab_e).__name__ + ": " + str(_lab_e))
+
+--- end ---
+Thickness: Invalid face reference
+Thickness: Invalid face reference
+<Exception> FeatureDressUp.cpp(217): Invalid edge link: ;#38:1;:H9ce,F.Face4
+<Exception> FeatureDressUp.cpp(217): Invalid edge link: ;#38:1;:H9ce,F.Face4
+<Exception> FeatureDressUp.cpp(217): Invalid edge link: ;#38:1;:H9ce,F.Face4
+Thickness: Invalid face reference
+Thickness: Invalid face reference
+<Exception> FeatureDressUp.cpp(217): Invalid edge link: ;#38:1;:H9ce,F.Face4
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+[MCP] Auto-start: RPC Server started at 127.0.0.1:9875 (PID 35).
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python code executed successfully.
+Python codThickness: Invalid face reference
