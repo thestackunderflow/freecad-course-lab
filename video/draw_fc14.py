@@ -407,7 +407,7 @@ def panels():
         code_panel(f'ov-cc-{run}.png', [f"its file: {peg(w2, 'solid' if ok else 'hollow')}",
                                         'wall closed' if w2['front_wall_solid'] else 'wall open'], CC_XY)
     quote('ov-quote-B1.png', 'B1', ['- The peg is a single solid, 10 × 10 (area', '100 mm²), spanning x −5…5 and z',
-                                    '35…45.', '- It is fused to the front wall with no gap', 'or cavity.'])
+                                    '35…45.', '- It is fused to the front wall with no gap', 'or cavity.'], y=440)
 
 
 def main():
