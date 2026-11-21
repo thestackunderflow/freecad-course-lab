@@ -1,0 +1,1102 @@
+{
+ "doc": "/lab/out/fc17/P/mirror-vaxis.FCStd",
+ "names": {
+  "params": {
+   "A1": [
+    null,
+    "'cup_width"
+   ],
+   "B1": [
+    "cup_width",
+    "60"
+   ],
+   "A2": [
+    null,
+    "'cup_length"
+   ],
+   "B2": [
+    "cup_length",
+    "40"
+   ],
+   "A3": [
+    null,
+    "'cup_height"
+   ],
+   "B3": [
+    "cup_height",
+    "50"
+   ],
+   "A4": [
+    null,
+    "'wall"
+   ],
+   "B4": [
+    "wall",
+    "2"
+   ],
+   "A5": [
+    null,
+    "'peg_size"
+   ],
+   "B5": [
+    "peg_size",
+    "10"
+   ],
+   "A6": [
+    null,
+    "'peg_length"
+   ],
+   "B6": [
+    "peg_length",
+    "15"
+   ],
+   "A7": [
+    null,
+    "'hole_size"
+   ],
+   "B7": [
+    "hole_size",
+    "5"
+   ],
+   "A8": [
+    null,
+    "'peg_x"
+   ],
+   "B8": [
+    "peg_x",
+    "15"
+   ]
+  },
+  "exprs": {
+   "Sketch": [
+    [
+     "Constraints.cup_length",
+     "Params.cup_length"
+    ],
+    [
+     "Constraints.cup_width",
+     "Params.cup_width"
+    ]
+   ],
+   "Pad": [
+    [
+     "Length",
+     "Params.cup_height"
+    ]
+   ],
+   "Thickness": [
+    [
+     "Value",
+     "Params.wall"
+    ]
+   ],
+   "Sketch001": [
+    [
+     "AttachmentOffset.Base.z",
+     "Params.cup_length / 2"
+    ],
+    [
+     "Constraints.peg_size",
+     "Params.peg_size"
+    ],
+    [
+     "Constraints.peg_size_z",
+     "Params.peg_size"
+    ],
+    [
+     "Constraints.peg_x0",
+     "Params.peg_x - Params.peg_size / 2"
+    ],
+    [
+     "Constraints.peg_z0",
+     "40 - Params.peg_size / 2"
+    ]
+   ],
+   "Pad001": [
+    [
+     "Length",
+     "Params.peg_length"
+    ]
+   ],
+   "HoleSketch": [
+    [
+     "Constraints[0]",
+     "Params.hole_size"
+    ]
+   ],
+   "Pocket": [
+    [
+     "Length",
+     "Params.wall"
+    ]
+   ]
+  }
+ },
+ "stored": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Mirrored",
+   "last": "Mirrored",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Mirrored": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "bad_any": {},
+  "peg_x": 15.0,
+  "wall": 2.0,
+  "peg_size": 10.0,
+  "mirrors": [
+   {
+    "name": "Mirrored",
+    "originals": [
+     "Pad001"
+    ],
+    "plane": [
+     "Sketch001",
+     [
+      "V_Axis"
+     ]
+    ],
+    "mode": "Features",
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   }
+  ],
+  "m": {
+   "solids": 1,
+   "valid": true,
+   "volume": 28634.122,
+   "bbox": [
+    -32.0,
+    32.0,
+    -35.0,
+    22.0,
+    -2.0,
+    50.0
+   ],
+   "y_min": -35.0,
+   "y_max": 22.0,
+   "y_extent": 57.0,
+   "behind_back": 0.0,
+   "pt": {
+    "orig": true,
+    "copy": true,
+    "back_orig": false,
+    "back_copy": false
+   },
+   "plan_pts": {
+    "(15,28,40)": false,
+    "(-15,-28,40)": true,
+    "(15,-28,40)": true,
+    "(-15,28,40)": false,
+    "(15,-28,-40)": false
+   },
+   "x_runs_front": [
+    [
+     -20.0,
+     -10.0
+    ],
+    [
+     10.0,
+     20.0
+    ]
+   ],
+   "x_runs_back": [],
+   "centre_gap": 30.0,
+   "face_gap": 20.0,
+   "hole_open": true,
+   "inside": [
+    60.0,
+    40.0,
+    50.0
+   ],
+   "top_open": true,
+   "outside": [
+    64.0,
+    44.0
+   ],
+   "probe": {
+    "orig": true,
+    "copy": true,
+    "back_orig": false,
+    "back_copy": false,
+    "across": true,
+    "tips": true,
+    "height": true,
+    "back_wall": true
+   }
+  },
+  "volume": 28634.122
+ },
+ "recomputed": {
+  "builds": true,
+  "build_info": {
+   "bad": {},
+   "tip": "Mirrored",
+   "last": "Mirrored",
+   "valid": true,
+   "solids": 1
+  },
+  "state": {
+   "Pad": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Thickness": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pad001": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Pocket": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ],
+   "Mirrored": [
+    [
+     "Up-to-date"
+    ],
+    "Valid"
+   ]
+  },
+  "bad_any": {},
+  "peg_x": 15.0,
+  "wall": 2.0,
+  "peg_size": 10.0,
+  "mirrors": [
+   {
+    "name": "Mirrored",
+    "originals": [
+     "Pad001"
+    ],
+    "plane": [
+     "Sketch001",
+     [
+      "V_Axis"
+     ]
+    ],
+    "mode": "Features",
+    "state": [
+     "Up-to-date"
+    ],
+    "status": "Valid"
+   }
+  ],
+  "m": {
+   "solids": 1,
+   "valid": true,
+   "volume": 28634.122,
+   "bbox": [
+    -32.0,
+    32.0,
+    -35.0,
+    22.0,
+    -2.0,
+    50.0
+   ],
+   "y_min": -35.0,
+   "y_max": 22.0,
+   "y_extent": 57.0,
+   "behind_back": 0.0,
+   "pt": {
+    "orig": true,
+    "copy": true,
+    "back_orig": false,
+    "back_copy": false
+   },
+   "plan_pts": {
+    "(15,28,40)": false,
+    "(-15,-28,40)": true,
+    "(15,-28,40)": true,
+    "(-15,28,40)": false,
+    "(15,-28,-40)": false
+   },
+   "x_runs_front": [
+    [
+     -20.0,
+     -10.0
+    ],
+    [
+     10.0,
+     20.0
+    ]
+   ],
+   "x_runs_back": [],
+   "centre_gap": 30.0,
+   "face_gap": 20.0,
+   "hole_open": true,
+   "inside": [
+    60.0,
+    40.0,
+    50.0
+   ],
+   "top_open": true,
+   "outside": [
+    64.0,
+    44.0
+   ],
+   "probe": {
+    "orig": true,
+    "copy": true,
+    "back_orig": false,
+    "back_copy": false,
+    "across": true,
+    "tips": true,
+    "height": true,
+    "back_wall": true
+   }
+  },
+  "volume": 28634.122
+ },
+ "tree": {
+  "bodies": [
+   "Body"
+  ],
+  "group": [
+   "Sketch",
+   "Pad",
+   "Thickness",
+   "Sketch001",
+   "Pad001",
+   "HoleSketch",
+   "Pocket",
+   "Mirrored"
+  ],
+  "tip": "Mirrored",
+  "base_features": {
+   "Pad": null,
+   "Thickness": "Pad",
+   "Pad001": "Thickness",
+   "Pocket": "Pad001",
+   "Mirrored": "Pocket"
+  },
+  "visible": [
+   "Body",
+   "Mirrored"
+  ]
+ },
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Cup",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ],
+  [
+   "Sketch",
+   "Sketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad",
+   "Pad",
+   "PartDesign::Pad"
+  ],
+  [
+   "Thickness",
+   "Thickness",
+   "PartDesign::Thickness"
+  ],
+  [
+   "Sketch001",
+   "Sketch001",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pad001",
+   "Pad001",
+   "PartDesign::Pad"
+  ],
+  [
+   "HoleSketch",
+   "HoleSketch",
+   "Sketcher::SketchObject"
+  ],
+  [
+   "Pocket",
+   "Pocket",
+   "PartDesign::Pocket"
+  ],
+  [
+   "Mirrored",
+   "Mirrored",
+   "PartDesign::Mirrored"
+  ]
+ ],
+ "asis": {
+  "names_same": true,
+  "params_same": true,
+  "exprs_same": true,
+  "peg_x": 15.0,
+  "bad_any": {}
+ },
+ "at": {
+  "15": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Mirrored",
+    "last": "Mirrored",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Mirrored": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "bad_any": {},
+   "peg_x": 15.0,
+   "wall": 2.0,
+   "peg_size": 10.0,
+   "mirrors": [
+    {
+     "name": "Mirrored",
+     "originals": [
+      "Pad001"
+     ],
+     "plane": [
+      "Sketch001",
+      [
+       "V_Axis"
+      ]
+     ],
+     "mode": "Features",
+     "state": [
+      "Up-to-date"
+     ],
+     "status": "Valid"
+    }
+   ],
+   "m": {
+    "solids": 1,
+    "valid": true,
+    "volume": 28634.122,
+    "bbox": [
+     -32.0,
+     32.0,
+     -35.0,
+     22.0,
+     -2.0,
+     50.0
+    ],
+    "y_min": -35.0,
+    "y_max": 22.0,
+    "y_extent": 57.0,
+    "behind_back": 0.0,
+    "pt": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false
+    },
+    "plan_pts": {
+     "(15,28,40)": false,
+     "(-15,-28,40)": true,
+     "(15,-28,40)": true,
+     "(-15,28,40)": false,
+     "(15,-28,-40)": false
+    },
+    "x_runs_front": [
+     [
+      -20.0,
+      -10.0
+     ],
+     [
+      10.0,
+      20.0
+     ]
+    ],
+    "x_runs_back": [],
+    "centre_gap": 30.0,
+    "face_gap": 20.0,
+    "hole_open": true,
+    "inside": [
+     60.0,
+     40.0,
+     50.0
+    ],
+    "top_open": true,
+    "outside": [
+     64.0,
+     44.0
+    ],
+    "probe": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false,
+     "across": true,
+     "tips": true,
+     "height": true,
+     "back_wall": true
+    }
+   },
+   "volume": 28634.122
+  },
+  "20": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Mirrored",
+    "last": "Mirrored",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Mirrored": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "bad_any": {},
+   "peg_x": 20.0,
+   "wall": 2.0,
+   "peg_size": 10.0,
+   "mirrors": [
+    {
+     "name": "Mirrored",
+     "originals": [
+      "Pad001"
+     ],
+     "plane": [
+      "Sketch001",
+      [
+       "V_Axis"
+      ]
+     ],
+     "mode": "Features",
+     "state": [
+      "Up-to-date"
+     ],
+     "status": "Valid"
+    }
+   ],
+   "m": {
+    "solids": 1,
+    "valid": true,
+    "volume": 28634.122,
+    "bbox": [
+     -32.0,
+     32.0,
+     -35.0,
+     22.0,
+     -2.0,
+     50.0
+    ],
+    "y_min": -35.0,
+    "y_max": 22.0,
+    "y_extent": 57.0,
+    "behind_back": 0.0,
+    "pt": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false
+    },
+    "plan_pts": {
+     "(15,28,40)": false,
+     "(-15,-28,40)": true,
+     "(15,-28,40)": true,
+     "(-15,28,40)": false,
+     "(15,-28,-40)": false
+    },
+    "x_runs_front": [
+     [
+      -25.0,
+      -15.0
+     ],
+     [
+      15.0,
+      25.0
+     ]
+    ],
+    "x_runs_back": [],
+    "centre_gap": 40.0,
+    "face_gap": 30.0,
+    "hole_open": true,
+    "inside": [
+     60.0,
+     40.0,
+     50.0
+    ],
+    "top_open": true,
+    "outside": [
+     64.0,
+     44.0
+    ],
+    "probe": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false,
+     "across": true,
+     "tips": true,
+     "height": true,
+     "back_wall": true
+    }
+   },
+   "volume": 28634.122
+  },
+  "8": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Mirrored",
+    "last": "Mirrored",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Mirrored": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "bad_any": {},
+   "peg_x": 8.0,
+   "wall": 2.0,
+   "peg_size": 10.0,
+   "mirrors": [
+    {
+     "name": "Mirrored",
+     "originals": [
+      "Pad001"
+     ],
+     "plane": [
+      "Sketch001",
+      [
+       "V_Axis"
+      ]
+     ],
+     "mode": "Features",
+     "state": [
+      "Up-to-date"
+     ],
+     "status": "Valid"
+    }
+   ],
+   "m": {
+    "solids": 1,
+    "valid": true,
+    "volume": 28634.122,
+    "bbox": [
+     -32.0,
+     32.0,
+     -35.0,
+     22.0,
+     -2.0,
+     50.0
+    ],
+    "y_min": -35.0,
+    "y_max": 22.0,
+    "y_extent": 57.0,
+    "behind_back": 0.0,
+    "pt": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false
+    },
+    "plan_pts": {
+     "(15,28,40)": false,
+     "(-15,-28,40)": false,
+     "(15,-28,40)": false,
+     "(-15,28,40)": false,
+     "(15,-28,-40)": false
+    },
+    "x_runs_front": [
+     [
+      -13.0,
+      -3.0
+     ],
+     [
+      3.0,
+      13.0
+     ]
+    ],
+    "x_runs_back": [],
+    "centre_gap": 16.0,
+    "face_gap": 6.0,
+    "hole_open": true,
+    "inside": [
+     60.0,
+     40.0,
+     50.0
+    ],
+    "top_open": true,
+    "outside": [
+     64.0,
+     44.0
+    ],
+    "probe": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false,
+     "across": true,
+     "tips": true,
+     "height": true,
+     "back_wall": true
+    }
+   },
+   "volume": 28634.122
+  },
+  "w3": {
+   "builds": true,
+   "build_info": {
+    "bad": {},
+    "tip": "Mirrored",
+    "last": "Mirrored",
+    "valid": true,
+    "solids": 1
+   },
+   "state": {
+    "Pad": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Thickness": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pad001": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Pocket": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ],
+    "Mirrored": [
+     [
+      "Up-to-date"
+     ],
+     "Valid"
+    ]
+   },
+   "bad_any": {},
+   "peg_x": 15.0,
+   "wall": 3.0,
+   "peg_size": 10.0,
+   "mirrors": [
+    {
+     "name": "Mirrored",
+     "originals": [
+      "Pad001"
+     ],
+     "plane": [
+      "Sketch001",
+      [
+       "V_Axis"
+      ]
+     ],
+     "mode": "Features",
+     "state": [
+      "Up-to-date"
+     ],
+     "status": "Valid"
+    }
+   ],
+   "m": {
+    "solids": 1,
+    "valid": true,
+    "volume": 42425.077,
+    "bbox": [
+     -33.0,
+     33.0,
+     -35.0,
+     23.0,
+     -3.0,
+     50.0
+    ],
+    "y_min": -35.0,
+    "y_max": 23.0,
+    "y_extent": 58.0,
+    "behind_back": 0.0,
+    "pt": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false
+    },
+    "plan_pts": {
+     "(15,28,40)": false,
+     "(-15,-28,40)": true,
+     "(15,-28,40)": true,
+     "(-15,28,40)": false,
+     "(15,-28,-40)": false
+    },
+    "x_runs_front": [
+     [
+      -20.0,
+      -10.0
+     ],
+     [
+      10.0,
+      20.0
+     ]
+    ],
+    "x_runs_back": [],
+    "centre_gap": 30.0,
+    "face_gap": 20.0,
+    "hole_open": true,
+    "inside": [
+     60.0,
+     40.0,
+     50.0
+    ],
+    "top_open": true,
+    "outside": [
+     66.0,
+     46.0
+    ],
+    "probe": {
+     "orig": true,
+     "copy": true,
+     "back_orig": false,
+     "back_copy": false,
+     "across": true,
+     "tips": true,
+     "height": true,
+     "back_wall": true
+    }
+   },
+   "volume": 42425.077
+  }
+ },
+ "pass": true,
+ "criteria": {
+  "15": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": true,
+   "f": true,
+   "g": true,
+   "h": true,
+   "i": true,
+   "j": true,
+   "k": true,
+   "l": true
+  },
+  "20": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": true,
+   "f": true,
+   "g": true,
+   "h": true,
+   "i": true,
+   "j": true,
+   "k": true,
+   "l": true
+  },
+  "8": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": true,
+   "f": true,
+   "g": true,
+   "h": true,
+   "i": true,
+   "j": true,
+   "k": true,
+   "l": true
+  },
+  "w3": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": true,
+   "f": true,
+   "g": true,
+   "h": true,
+   "i": true,
+   "j": true,
+   "k": true,
+   "l": true
+  }
+ }
+}
