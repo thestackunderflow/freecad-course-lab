@@ -146,3 +146,19 @@ def test_key_words_drawn(run):
               'joined: one solid', 'never a wall here', 'balloon = the shape you drew', 'paper = the walls Thickness grows',
               'PEG CAME OUT HOLLOW:', '14, NOT 10', 'Your turn: a peg drawn 7 wide'):
         assert s in allt, s
+
+
+def test_still_after_shows_the_peg(monkeypatch):
+    """cut 3 (WATCH-fc14-cut2 must-fix 1): the after-run still is the SAVED file with its Tip shown (after-peg.png),
+    not the end-of-run GUI shot (after.png, Pad001 hidden after the reorder)."""
+    opened = []
+    real = d.Image.open
+
+    def spy(p, *a, **k):
+        opened.append(str(p))
+        return real(p, *a, **k)
+    monkeypatch.setattr(d.Image, 'open', spy)
+    monkeypatch.setattr(d, 'save', lambda im, name: None)
+    d.still_after('A1', 'not asked to check · $0.18')
+    assert any(p.endswith(os.path.join('A1', 'after-peg.png')) for p in opened), opened
+    assert not any(p.endswith('after.png') for p in opened), opened

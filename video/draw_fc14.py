@@ -7,7 +7,7 @@ number (tests/test_draw_fc14.py). FreeCAD's outward corners are rounded by the A
 never giving a radius.
   full frame:  card-balloon-1..4 (F2), card-why-1..5 (F6), card-fixed-1..3 (F7a), still-mfa-1..2 (F7a: the G0 still
                q3b-after-recompute.png, the tree, then the first Report row; still-mfa = the last framing),
-               still-after-A1 / -B1 (F12: runs/*/after.png + the panel beside), card-end (F14)
+               still-after-A1 / -B1 (F12: runs/*/after-peg.png (the saved file, Tip shown) + the panel beside), card-end (F14)
   Short:       card-why-s1..3 (S1, 1080 x 1080), card-short-head (1080 x 1920: the frame-1 headline words)
   source overlays (RGBA 2880 x 1800, burnt in by mcp-canvas primers/footage-fc14.py):
       tip-flag / tip-flag-pad   F7a / F7b: the Tip as a small flag beside the tree's last row (y 504) / Pad (y 439)
@@ -261,7 +261,7 @@ def still_mfa():
 def still_after(run, chip):
     """F12: the run's file after the run (still), the panel beside it (never over it)."""
     im, d = canvas()
-    shot = Image.open(os.path.join(TAKES, 'runs', run, 'after.png')).convert('RGB')
+    shot = Image.open(os.path.join(TAKES, 'runs', run, 'after-peg.png')).convert('RGB')   # cut 3: the saved file, Tip shown (lab/fc14_after_still.sh)
     shot = shot.crop((1160, 0, SW, SH)) if shot.width == SW else shot
     k = 1460 / shot.width
     s = shot.resize((1460, round(shot.height * k)), Image.LANCZOS)
