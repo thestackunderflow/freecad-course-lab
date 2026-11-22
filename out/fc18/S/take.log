@@ -9,5 +9,6 @@ fixed: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip"
 1
 notices at open: []
 Windows menu: {"menu": [["Next", true, 988, 75], ["Previous", true, 988, 118], ["Tile", true, 988, 163], ["Cascade", true, 988, 207], ["1 name : 1*", true, 988, 250], ["2 fixed : 1*", true, 988, 289], ["Activates this window", false, 741, 54], ["Activates this window", false, 741, 54], ["Activates this window", false, 741, 54], ["Activates this window", false, 741, 54], ["Activates this window", false, 741, 54], ["Activates this window", false, 741, 54], ["Activates this window", false, 741, 54], ["Activates this window", false, 741, 54], ["Choose Open Window", true, 988, 333]], "dialogs": [], "popup": []}
+docks hidden 1
 end: 
 TAKE S DONE

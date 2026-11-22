@@ -232,11 +232,15 @@ S)
   sl_glide ${s% *} ${s#* } 15; sl_nap 0.8; sl_click ${s% *} ${s#* } "menu: Tile"; sl_nap 3
   # render 1 (22 Nov): the stale "Start Part" task panel stayed drawn over the 120 cup's rim (right view): make each
   # file's Cup the active body (the Part Design watcher then drops the panel) and close any open task dialog
-  for d in name fixed; do Q "import FreeCAD, FreeCADGui
-g = FreeCADGui.getDocument('$d'); b = [o for o in FreeCAD.getDocument('$d').Objects if o.TypeId == 'PartDesign::Body'][0]
-g.ActiveView.setActiveObject('pdbody', b)
-FreeCADGui.Control.closeDialog()
-print(1)" >> $L 2>&1; done
+  # render 2 (22 Nov): setActiveObject raised "No SWIG wrapped library loaded" and the panel stayed; the Cup is already
+  # the active body (green), so hide the Tasks dock itself through Qt (the same as its close button)
+  Q "import FreeCADGui
+from PySide import QtGui
+n = 0
+for w in FreeCADGui.getMainWindow().findChildren(QtGui.QDockWidget):
+    if w.windowTitle() in ('Tasks', 'Combo View') or w.objectName() in ('Tasks', 'TaskView', 'Combo View'):
+        w.hide(); n += 1
+print('docks hidden', n)" >> $L 2>&1
   for d in name fixed; do FQ "look('$d', 'Isometric', 0, 0, 40, 170)" >> $L; done
   sl_mark "(both views: isometric, 170 mm high)"; sl_nap 6; shot $O/side-by-side.png
   ;;
