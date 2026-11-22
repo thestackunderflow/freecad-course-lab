@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'
 import draw_fc17 as d  # noqa: E402
 
 CARDS = ([f'card-fold-{i}.png' for i in range(1, 5)] + [f'card-names-{i}.png' for i in range(1, 4)] +
-         [f'card-top-{i}.png' for i in range(1, 7)] + ['card-axis-1.png', 'card-centred-1.png', 'card-end.png'])
+         [f'card-top-{i}.png' for i in range(1, 7)] + [f'card-axis-{i}.png' for i in range(1, 4)] + ['card-centred-1.png', 'card-end.png'])
 SHORT = ['card-why-s1.png', 'card-why-s2.png', 'card-why-s3.png']
 SHORT_OV = ['card-short-head.png', 'short-head.png', 'short-q.png', 'short-series.png']
 PANELS = ['ov-in-F1.png', 'ov-in-F5.png', 'ov-in-F8.png', 'ov-in-F9.png', 'ov-in-K1.png', 'ov-in-K2.png',

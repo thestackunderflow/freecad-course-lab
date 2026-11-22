@@ -355,25 +355,30 @@ def card_top(step):
 
 
 # --- F9: FreeCAD's first guess, the sketch's vertical axis = the YZ plane ---------------------------------------------
-def card_axis():
+def card_axis(step=3):
+    """3 builds, one per sentence: 1 the sketch's vertical axis up the middle; 2 the fold stood up along it (YZ, front
+    to back); 3 the paper folded down the middle + "same plane here"."""
     O3[:] = [1250, 1060]
     im, d = canvas()
     header(d, "FreeCAD's first guess: the sketch's axis")
     DEPTH[:] = [0.75, 0.55]
-    d = cup3d(d, copy=True, im=im, plane=([(0, -36, -2), (0, 36, -2), (0, 36, 60), (0, -36, 60)], GREEN, 80))
+    plane = ([(0, -36, -2), (0, 36, -2), (0, 36, 60), (0, -36, 60)], GREEN, 80) if step >= 2 else None
+    d = cup3d(d, copy=True, im=im, plane=plane)
     f10.dashed(d, P(0, -22, -2), P(0, -22, 58), ORANGE, width=9, dash=24)          # the axis, up the cup's middle
     a, e = P(0, -22, 20), P(-32, -22, 20)
     text(d, (e[0] - 40, e[1] - 30), "the sketch's", 48, ORANGE, anchor='rm')
     text(d, (e[0] - 40, e[1] + 30), 'vertical axis', 48, ORANGE, anchor='rm')
     arrow(d, (e[0] - 30, e[1]), (a[0] - 14, a[1]), ORANGE, w=5, size=24)
     DEPTH[:] = [0.55, 0.42]
-    q = P(0, 36, 60)
-    text(d, (q[0] + 26, q[1] - 10), 'YZ: front to back', 56, GREEN)
+    if step >= 2:
+        q = P(0, 36, 60)
+        text(d, (q[0] + 26, q[1] - 10), 'YZ: front to back', 56, GREEN)
     origin_dot(d, label=False)
-    sheet(d, (1880, 560, 2380, 1060), 'down', [((0.8, 0.8), False), ((0.2, 0.8), True)], r=34)
-    text(d, (2130, 1100), 'folded down the middle', 44, GREY, anchor='ma')
-    chip(d, (1560, 1220), 'same plane here', 64, edge=GREEN)
-    save(im, 'card-axis-1.png')
+    if step >= 3:
+        sheet(d, (1880, 560, 2380, 1060), 'down', [((0.8, 0.8), False), ((0.2, 0.8), True)], r=34)
+        text(d, (2130, 1100), 'folded down the middle', 44, GREY, anchor='ma')
+        chip(d, (1560, 1220), 'same plane here', 64, edge=GREEN)
+    save(im, f'card-axis-{step}.png')
 
 
 # --- F10: centred -------------------------------------------------------------------------------------------------------
@@ -690,7 +695,8 @@ def main():
         card_names(s)
     for s in range(1, 7):
         card_top(s)
-    card_axis()
+    for s in range(1, 4):
+        card_axis(s)
     card_centred()
     card_end()
     for s in range(1, 4):
