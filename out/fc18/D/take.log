@@ -1,0 +1,37 @@
+cup
+prepped cup
+1
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {}, "body": "Cup"}
+start sketch: {"sketch": null}
+notices at open: []
+1
+NewSketch: {"name": "PartDesign_NewSketch", "menuText": "New Sketch", "toolTip": "Creates a new sketch", "whatsThis": "PartDesign_NewSketch", "statusTip": "Creates a new sketch", "pixmap": "Sketcher_NewSketch", "shortcut": ""}
+sketch made: {"geo": [], "n_constraints": 0, "constraints": [], "dof": 0, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+skview 15 40 115
+DistanceX: {"name": "Sketcher_ConstrainDistanceX", "menuText": "Horizontal Dimension", "toolTip": "Constrains the horizontal distance between two points, or from a point to the origin if only one is selected", "whatsThis": "Sketcher_ConstrainDistanceX", "statusTip": "Constrains the horizontal distance between two points, or from a point to the origin if only one is selected", "pixmap": "Constraint_HorizontalDistance", "shortcut": "L"} DistanceY: {"name": "Sketcher_ConstrainDistanceY", "menuText": "Vertical Dimension", "toolTip": "Constrains the vertical distance between the selected elements", "whatsThis": "Sketcher_ConstrainDistanceY", "statusTip": "Constrains the vertical distance between the selected elements", "pixmap": "Constraint_VerticalDistance", "shortcut": "I"}
+Polyline: {"name": "Sketcher_CreatePolyline", "menuText": "Polyline", "toolTip": "Creates a continuous polyline. Press the 'M' key to switch segment modes", "whatsThis": "Sketcher_CreatePolyline", "statusTip": "Creates a continuous polyline. Press the 'M' key to switch segment modes", "pixmap": "Sketcher_CreatePolyline", "shortcut": "G, M"}
+drawn: {"geo": [[0.0, 0.0, 29.964, 0.0], [29.964, 0.0, 29.964, 79.863], [29.964, 79.863, 24.138, 79.863], [24.138, 79.863, 24.138, 5.883], [24.138, 5.883, 0.0, 5.883], [0.0, 5.883, 0.0, 0.0]], "n_constraints": 13, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null]], "dof": 4, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+solver drawn: ['Under-constrained: ', '4 Degrees of Freedom']
+sel: [('Sketch', ['Edge2'])]
+box: Window 4195190   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+windows: * cup - FreeCAD 1.1.4|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+after height: {"geo": [[0.0, 0.0, 29.964, 0.0], [29.964, 0.0, 29.964, 80.0], [29.964, 80.0, 24.138, 80.0], [24.138, 80.0, 24.138, 5.883], [24.138, 5.883, 0.0, 5.883], [0.0, 5.883, 0.0, 0.0]], "n_constraints": 14, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "DistanceY", 1, 80.0, true, "Params.cup_height"]], "dof": 3, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+sel: [('Sketch', ['Edge3'])]
+box: Window 4195229   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+windows: * cup - FreeCAD 1.1.4|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+after rim: {"geo": [[0.0, 0.0, 27.057, 0.0], [27.057, 0.0, 27.057, 80.0], [27.057, 80.0, 25.057, 80.0], [25.057, 80.0, 25.057, 5.883], [25.057, 5.883, 0.0, 5.883], [0.0, 5.883, 0.0, 0.0]], "n_constraints": 15, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "DistanceY", 1, 80.0, true, "Params.cup_height"], [14, "DistanceX", 2, 2.0, true, "Params.wall"]], "dof": 2, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+sel: [('Sketch', ['Edge6'])]
+box: Window 4195260   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+windows: * cup - FreeCAD 1.1.4|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+after floor: {"geo": [[0.0, 0.0, 27.057, 0.0], [27.057, 0.0, 27.057, 80.0], [27.057, 80.0, 25.057, 80.0], [25.057, 80.0, 25.057, 2.0], [25.057, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 16, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "DistanceY", 1, 80.0, true, "Params.cup_height"], [14, "DistanceX", 2, 2.0, true, "Params.wall"], [15, "DistanceY", 5, 2.0, true, "Params.wall"]], "dof": 1, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+solver end: ['Under-constrained: ', '1 Degrees of Freedom']
+saved
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {"Sketch": ["Touched"]}, "body": "Cup"}
+TAKE D DONE
+FC18 check {"60": ["a", "b", "c", "d"], "80": ["a", "b", "c", "d"], "45": ["a", "b", "c", "d"]} cls 8 f 0 FAIL

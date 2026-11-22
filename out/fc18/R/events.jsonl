@@ -1,0 +1,11 @@
+{"t": 0.034, "event": "recording started: FreeCAD 1.1.4 (R)"}
+{"t": 12.093, "event": "file opened: round-start (the new file)"}
+{"t": 16.317, "event": "double-click: open Params"}
+{"t": 21.951, "event": "hover: Params row 1"}
+{"t": 24.995, "event": "hover: Params row 2"}
+{"t": 28.186, "event": "hover: Params row 3"}
+{"t": 32.749, "event": "tab: back to the 3D view", "x": 1000, "y": 1729, "button": 1}
+{"t": 37.373, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 42.266, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 45.486, "event": "key 0: isometric", "keys": "0"}
+{"t": 46.782, "event": "(view fitted)"}

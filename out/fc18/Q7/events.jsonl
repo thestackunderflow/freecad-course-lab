@@ -1,0 +1,12 @@
+{"t": 0.049, "event": "recording started: FreeCAD 1.1.4 (Q7)"}
+{"t": 4.509, "event": "double-click: Sketch (edit)"}
+{"t": 8.896, "event": "(sketch view set)"}
+{"t": 12.5, "event": "click: the outside line", "x": 1680, "y": 986, "button": 1}
+{"t": 17.019, "event": "click: the vertical axis", "x": 1304, "y": 296, "button": 1}
+{"t": 19.762, "event": "Diameter tool (Q7)"}
+{"t": 22.963, "event": "Return: message closed", "keys": "Return"}
+{"t": 28.144, "event": "click: the outside line", "x": 1680, "y": 986, "button": 1}
+{"t": 32.462, "event": "click: the vertical axis", "x": 1304, "y": 296, "button": 1}
+{"t": 35.445, "event": "key K", "keys": "k"}
+{"t": 36.375, "event": "key D: Dimension (Q7)", "keys": "d"}
+{"t": 41.56, "event": "Escape", "keys": "Escape"}

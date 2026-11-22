@@ -1,0 +1,23 @@
+cup
+prepped cup
+1
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 80449.905, "outside": 120.0, "inside": 116.0, "z": [-0.0, 80.0]}
+start sketch: {"geo": [[0.0, 0.0, 60.0, 0.0], [60.0, 0.0, 60.0, 80.0], [60.0, 80.0, 58.0, 80.0], [58.0, 80.0, 58.0, 2.0], [58.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "Distance", 1, 80.0, true, "Params.cup_height"], [14, "Distance", 2, 2.0, true, "Params.wall"], [15, "Distance", 5, 2.0, true, "Params.wall"], [16, "Distance", 0, 60.0, true, "Params.cup_diameter"]], "dof": 0, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+notices at open: []
+skview 30 40 115
+width constraint index 16
+box: Window 4194425   Position: 1682,1411 (screen: 0)   Geometry: 456x252 
+windows: * cup - FreeCAD 1.1.4|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+after half: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 32.0, 80.0], [32.0, 80.0, 32.0, 2.0], [32.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "Distance", 1, 80.0, true, "Params.cup_height"], [14, "Distance", 2, 2.0, true, "Params.wall"], [15, "Distance", 5, 2.0, true, "Params.wall"], [16, "Distance", 0, 30.0, true, "Params.cup_diameter / 2"]], "dof": 0, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+1
+after close: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 2, "volume": 36040.351, "outside": 64.0, "inside": 60.0, "z": [-0.0, 80.0]}
+1
+fix60 selection: [('Revolution', ['Edge4'])]
+fix60 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:30.00 mm 
+1
+saved
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 2, "volume": 36040.351, "outside": 64.0, "inside": 60.0, "z": [-0.0, 80.0]}
+TAKE F DONE
+FC18 check {"60": ["a", "c", "d"], "80": [], "45": ["a", "c", "d"]} cls 9 f 1 FAIL

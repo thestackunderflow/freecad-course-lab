@@ -1,0 +1,86 @@
+# fc18 GUI takes (21 Nov 2026, FreeCAD 1.1.4 by hand, lab/fc18_take.sh, --network none, no AI): numbers read off-camera per step.
+# expected = RESULTS-fc18.md / NUMBERS.json: trap 120 (inside 116, 80,449.905), fix 60 (56, 34,079.997), proof 80 (76, 48,279.996). Take P films into K/.
+# FreeCAD 1.1.4 Measure has no Diameter mode: the rim edge reads Radius 60.00 / 30.00 / 40.00 (x 2 = 120 / 60 / 80).
+# OCR (lab/fc18ocr.sh, every 2 s of each take + runs A1/B1 + run stills): 3 hits, all FreeCAD "Datum Point/Line/Plane" menu text (false hits); no plan, connector or email.
+## R
+notices at open: []
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {}, "body": "Cup"}
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {}, "body": "Cup"}
+TAKE R DONE
+FC18 check {"60": ["a", "b", "c", "d"], "80": ["a", "b", "c", "d"], "45": ["a", "b", "c", "d"]} cls 8 f 0 FAIL
+## D
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {}, "body": "Cup"}
+start sketch: {"sketch": null}
+notices at open: []
+drawn: {"geo": [[0.0, 0.0, 29.964, 0.0], [29.964, 0.0, 29.964, 79.863], [29.964, 79.863, 24.138, 79.863], [24.138, 79.863, 24.138, 5.883], [24.138, 5.883, 0.0, 5.883], [0.0, 5.883, 0.0, 0.0]], "n_constraints": 13, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, t
+solver drawn: ['Under-constrained: ', '4 Degrees of Freedom']
+after height: {"geo": [[0.0, 0.0, 29.964, 0.0], [29.964, 0.0, 29.964, 80.0], [29.964, 80.0, 24.138, 80.0], [24.138, 80.0, 24.138, 5.883], [24.138, 5.883, 0.0, 5.883], [0.0, 5.883, 0.0, 0.0]], "n_constraints": 14, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, tr
+after rim: {"geo": [[0.0, 0.0, 27.057, 0.0], [27.057, 0.0, 27.057, 80.0], [27.057, 80.0, 25.057, 80.0], [25.057, 80.0, 25.057, 5.883], [25.057, 5.883, 0.0, 5.883], [0.0, 5.883, 0.0, 0.0]], "n_constraints": 15, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true,
+after floor: {"geo": [[0.0, 0.0, 27.057, 0.0], [27.057, 0.0, 27.057, 80.0], [27.057, 80.0, 25.057, 80.0], [25.057, 80.0, 25.057, 2.0], [25.057, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 16, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null]
+solver end: ['Under-constrained: ', '1 Degrees of Freedom']
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {"Sketch": ["Touched"]}, "body": "Cup"}
+TAKE D DONE
+FC18 check {"60": ["a", "b", "c", "d"], "80": ["a", "b", "c", "d"], "45": ["a", "b", "c", "d"]} cls 8 f 0 FAIL
+## T
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {"Sketch": ["Touched"]}, "body": "Cup"}
+start sketch: {"geo": [[0.0, 0.0, 27.057, 0.0], [27.057, 0.0, 27.057, 80.0], [27.057, 80.0, 25.057, 80.0], [25.057, 80.0, 25.057, 2.0], [25.057, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 16, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null
+notices at open: []
+after width: {"geo": [[0.0, 0.0, 60.0, 0.0], [60.0, 0.0, 60.0, 80.0], [60.0, 80.0, 58.0, 80.0], [58.0, 80.0, 58.0, 2.0], [58.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical
+solver: ['Fully constrained']
+preview: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 80449.905, "outside": 120.0, "inside": 116.0, "z": [-0.0, 80.0]}
+after OK: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 80449.905, "outside": 120.0, "inside": 116.0, "z": [-0.0, 80.0]}
+notices: []
+trap120 selection: [('Revolution', ['Edge2'])]
+trap120 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:60.00 mm 
+Mode rows: [['Auto', 2637, 428], ['Distance', 2637, 468], ['Distance Free', 2637, 507], ['Angle', 2637, 547], ['Length', 2637, 586], ['Position', 2637, 626], ['Area', 2637, 666], ['Radius', 2637, 705], ['Center of mass', 2637, 745]]
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 80449.905, "outside": 120.0, "inside": 116.0, "z": [-0.0, 80.0]}
+TAKE T DONE
+FC18 check {"60": ["a", "c"], "80": ["a", "c"], "45": ["a", "c"]} cls 3 f 1 FAIL
+## S
+name
+fixed
+name: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 80449.905, "outside": 120.0, "inside": 116.0, "z": [-0.0, 80.0]}
+fixed: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+notices at open: []
+end: 
+TAKE S DONE
+## F
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 80449.905, "outside": 120.0, "inside": 116.0, "z": [-0.0, 80.0]}
+start sketch: {"geo": [[0.0, 0.0, 60.0, 0.0], [60.0, 0.0, 60.0, 80.0], [60.0, 80.0, 58.0, 80.0], [58.0, 80.0, 58.0, 2.0], [58.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertica
+notices at open: []
+after half: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 28.0, 80.0], [28.0, 80.0, 28.0, 2.0], [28.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical"
+after close: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+fix60 selection: [('Revolution', ['Edge2'])]
+fix60 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:30.00 mm 
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+TAKE F DONE
+FC18 check {"60": [], "80": [], "45": []} cls 1 f 1 PASS
+## K
+notices at open: []
+notices at reopen: []
+reopened: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+cup_diameter 80: {"params": {"cup_diameter": 80.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 48279.996, "outside": 80.0, "inside": 76.0, "z": [-0.0, 80.0]}
+proof80 selection: [('Revolution', ['Edge2'])]
+proof80 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:40.00 mm 
+end: {"params": {"cup_diameter": 80.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 48279.996, "outside": 80.0, "inside": 76.0, "z": [-0.0, 80.0]}
+TAKE P DONE
+FC18 check {"60": [], "80": [], "45": []} cls 1 f 1 PASS
+## Y
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+start sketch: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 28.0, 80.0], [28.0, 80.0, 28.0, 2.0], [28.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertica
+notices at open: []
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+TAKE Y DONE
+FC18 check {"60": [], "80": [], "45": []} cls 1 f 1 PASS
+## Q7
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+start sketch: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 28.0, 80.0], [28.0, 80.0, 28.0, 2.0], [28.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", 0, null, true, null], [1, "Coincident", 1, null, true, null], [2, "Coincident", 2, null, true, null], [3, "Coincident", 3, null, true, null], [4, "Coincident", 4, null, true, null], [5, "Coincident", 5, null, true, null], [6, "Horizontal", 0, null, true, null], [7, "Horizontal", 2, null, true, null], [8, "Horizontal", 4, null, true, null], [9, "Vertical", 1, null, true, null], [10, "Vertical", 3, null, true, null], [11, "Vertical", 5, null, true, null], [12, "Coincident", 
+notices at open: []
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+TAKE Q7 DONE
+## probe-lists (first T, discarded take: key 0 for isometric typed 0 into the Angle field -> 'Angle of revolution too small')
+Axis rows: [['Vertical sketch axis', 2734, 810], ['Horizontal sketch axis', 2734, 849], ['Base X-axis', 2734, 889], ['Base Y-axis', 2734, 928], ['Base Z-axis', 2734, 968], ['Select reference…', 2734, 1008]]
+Type rows: [['Angle', 2750, 756], ['To last', 2750, 795], ['To first', 2750, 835], ['Up to face', 2750, 874], ['Two angles', 2750, 914]]
+## probe-flip (discarded F: sizes by K D Dimension = unsigned lengths; halving the width folded the rim outward)
+after close: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 2, "volume": 36040.351, "outside": 64.0, "inside": 60.0, "z": [-0.0, 80.0]}
+fix60 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:30.00 mm 

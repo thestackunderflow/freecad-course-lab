@@ -1,0 +1,14 @@
+wallcup
+prepped wallcup
+notices at open: []
+1
+cup
+prepped cup
+1
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {}, "body": "Cup"}
+wb combo 703 86
+1
+saved
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {}, "body": "Cup"}
+TAKE R DONE
+FC18 check {"60": ["a", "b", "c", "d"], "80": ["a", "b", "c", "d"], "45": ["a", "b", "c", "d"]} cls 8 f 0 FAIL

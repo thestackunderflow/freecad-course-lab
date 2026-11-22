@@ -1,0 +1,44 @@
+{"t": 0.034, "event": "recording started: FreeCAD 1.1.4 (D)"}
+{"t": 3.04, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.26, "event": "(view fitted)"}
+{"t": 8.679, "event": "double-click: Cup (the active body)"}
+{"t": 15.011, "event": "Create sketch", "x": 583, "y": 158, "button": 1}
+{"t": 20.945, "event": "plane list: XZ_Plane", "x": 2530, "y": 774, "button": 1}
+{"t": 25.595, "event": "OK", "x": 2430, "y": 615, "button": 1}
+{"t": 30.601, "event": "(sketch view set)"}
+{"t": 34.071, "event": "hover: the vertical sketch axis (lit)"}
+{"t": 39.756, "event": "Polyline tool", "x": 318, "y": 228, "button": 1}
+{"t": 45.526, "event": "polyline: origin (0, 0)", "x": 1493, "y": 1487, "button": 1}
+{"t": 50.477, "event": "polyline: floor (30, 0)", "x": 1868, "y": 1487, "button": 1}
+{"t": 55.387, "event": "polyline: outside (30, 80)", "x": 1868, "y": 484, "button": 1}
+{"t": 60.342, "event": "polyline: rim (24, 80)", "x": 1793, "y": 484, "button": 1}
+{"t": 65.262, "event": "polyline: inside (24, 6)", "x": 1793, "y": 1412, "button": 1}
+{"t": 70.167, "event": "polyline: floor_top (0, 6)", "x": 1493, "y": 1412, "button": 1}
+{"t": 75.11, "event": "polyline: centre_line (0, 0)", "x": 1493, "y": 1487, "button": 1}
+{"t": 78.022, "event": "Escape: polyline tool off", "keys": "Escape"}
+{"t": 81.082, "event": "hold: the 6 lines drawn"}
+{"t": 85.624, "event": "click: the height line", "x": 1868, "y": 986, "button": 1}
+{"t": 88.44, "event": "key I: Insert Length box (height)", "keys": "i"}
+{"t": 92.102, "event": "typed = (the expression editor opens)", "text": "="}
+{"t": 94.503, "event": "typed Params.cup_height", "text": "Params.cup_height"}
+{"t": 99.125, "event": "Enter: expression", "keys": "Return"}
+{"t": 101.296, "event": "Enter: expression editor", "keys": "Return"}
+{"t": 103.6, "event": "hold: the box with the expression"}
+{"t": 108.233, "event": "box: OK (height)", "x": 1936, "y": 1510, "button": 1}
+{"t": 114.08, "event": "click: the rim line", "x": 1831, "y": 484, "button": 1}
+{"t": 117.067, "event": "key L: Insert Length box (rim)", "keys": "l"}
+{"t": 120.781, "event": "typed = (the expression editor opens)", "text": "="}
+{"t": 123.183, "event": "typed Params.wall", "text": "Params.wall"}
+{"t": 127.373, "event": "Enter: expression", "keys": "Return"}
+{"t": 129.555, "event": "Enter: expression editor", "keys": "Return"}
+{"t": 131.868, "event": "hold: the box with the expression"}
+{"t": 136.524, "event": "box: OK (rim)", "x": 1936, "y": 1510, "button": 1}
+{"t": 142.348, "event": "click: the floor line", "x": 1493, "y": 1450, "button": 1}
+{"t": 145.273, "event": "key I: Insert Length box (floor)", "keys": "i"}
+{"t": 148.96, "event": "typed = (the expression editor opens)", "text": "="}
+{"t": 151.455, "event": "typed Params.wall", "text": "Params.wall"}
+{"t": 155.655, "event": "Enter: expression", "keys": "Return"}
+{"t": 157.877, "event": "Enter: expression editor", "keys": "Return"}
+{"t": 160.157, "event": "hold: the box with the expression"}
+{"t": 164.857, "event": "box: OK (floor)", "x": 1936, "y": 1510, "button": 1}
+{"t": 168.258, "event": "hold: 1 degree of freedom left (the width)"}

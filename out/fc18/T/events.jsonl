@@ -1,0 +1,33 @@
+{"t": 0.055, "event": "recording started: FreeCAD 1.1.4 (T)"}
+{"t": 4.459, "event": "double-click: Sketch (edit)"}
+{"t": 8.898, "event": "(sketch view set)"}
+{"t": 12.507, "event": "click: the width line", "x": 1474, "y": 1487, "button": 1}
+{"t": 15.388, "event": "key L: Insert Length box (width)", "keys": "l"}
+{"t": 19.053, "event": "typed = (the expression editor opens)", "text": "="}
+{"t": 21.464, "event": "typed Params.cup_diameter", "text": "Params.cup_diameter"}
+{"t": 26.292, "event": "Enter: expression", "keys": "Return"}
+{"t": 28.464, "event": "Enter: expression editor", "keys": "Return"}
+{"t": 30.726, "event": "hold: the box with the expression"}
+{"t": 35.355, "event": "box: OK (width)", "x": 1936, "y": 1510, "button": 1}
+{"t": 38.679, "event": "hold: fully constrained, width reads 60"}
+{"t": 43.859, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 47.573, "event": "key 0: isometric", "keys": "0"}
+{"t": 48.776, "event": "(view fitted)"}
+{"t": 52.687, "event": "tree: Sketch", "x": 189, "y": 437, "button": 1}
+{"t": 56.175, "event": "hover: Revolve (tooltip)"}
+{"t": 61.328, "event": "Revolve", "x": 111, "y": 228, "button": 1}
+{"t": 66.566, "event": "(view fitted, no key: key 0 would type into the Angle field)"}
+{"t": 67.572, "event": "hold: the preview (no click yet)"}
+{"t": 72.808, "event": "OK", "x": 2428, "y": 615, "button": 1}
+{"t": 77.867, "event": "key 0: isometric", "keys": "0"}
+{"t": 79.072, "event": "(view fitted)"}
+{"t": 87.861, "event": "key 0: isometric", "keys": "0"}
+{"t": 89.078, "event": "(view fitted)"}
+{"t": 94.099, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 99.228, "event": "trap120: the outer rim edge", "x": 1680, "y": 1001, "button": 1}
+{"t": 103.301, "event": "hold: the readout"}
+{"t": 109.491, "event": "Mode list", "x": 2575, "y": 705, "button": 1}
+{"t": 116.091, "event": "Mode list: Radius kept", "x": 2637, "y": 705, "button": 1}
+{"t": 120.225, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 122.522, "event": "key 0: isometric", "keys": "0"}
+{"t": 123.742, "event": "(view fitted)"}

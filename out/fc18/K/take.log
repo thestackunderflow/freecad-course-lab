@@ -1,0 +1,17 @@
+notices at open: []
+cup
+prepped cup
+1
+notices at reopen: []
+reopened: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+1
+cup_diameter 80: {"params": {"cup_diameter": 80.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 48279.996, "outside": 80.0, "inside": 76.0, "z": [-0.0, 80.0]}
+wb combo 703 86
+1
+proof80 selection: [('Revolution', ['Edge2'])]
+proof80 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:40.00 mm 
+1
+saved
+end: {"params": {"cup_diameter": 80.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 48279.996, "outside": 80.0, "inside": 76.0, "z": [-0.0, 80.0]}
+TAKE P DONE
+FC18 check {"60": [], "80": [], "45": []} cls 1 f 1 PASS

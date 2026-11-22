@@ -1,0 +1,11 @@
+cup
+prepped cup
+1
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+start sketch: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 28.0, 80.0], [28.0, 80.0, 28.0, 2.0], [28.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "DistanceY", 1, 80.0, true, "Params.cup_height"], [14, "DistanceX", 2, 2.0, true, "Params.wall"], [15, "DistanceY", 5, 2.0, true, "Params.wall"], [16, "DistanceX", 0, 30.0, true, "Params.cup_diameter / 2"]], "dof": 0, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+notices at open: []
+1
+saved
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+TAKE Y DONE
+FC18 check {"60": [], "80": [], "45": []} cls 1 f 1 PASS

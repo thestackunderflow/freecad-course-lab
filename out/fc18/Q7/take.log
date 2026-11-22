@@ -1,0 +1,21 @@
+cup
+prepped cup
+1
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+start sketch: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 28.0, 80.0], [28.0, 80.0, 28.0, 2.0], [28.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", 0, null, true, null], [1, "Coincident", 1, null, true, null], [2, "Coincident", 2, null, true, null], [3, "Coincident", 3, null, true, null], [4, "Coincident", 4, null, true, null], [5, "Coincident", 5, null, true, null], [6, "Horizontal", 0, null, true, null], [7, "Horizontal", 2, null, true, null], [8, "Horizontal", 4, null, true, null], [9, "Vertical", 1, null, true, null], [10, "Vertical", 3, null, true, null], [11, "Vertical", 5, null, true, null], [12, "Coincident", 0, null, true, null], [13, "DistanceX", 0, 30.0, true, "Params.cup_diameter / 2"], [14, "DistanceY", 1, 80.0, true, "Params.cup_height"], [15, "DistanceX", 2, 2.0, true, "Params.wall"], [16, "DistanceY", 5, 2.0, true, "Params.wall"]], "dof": 0, "support": ["XZ_Plane"], "conflicts": [], "redundant": [], "malformed": []}
+notices at open: []
+skview 30 40 115
+sel: [('Sketch', ['Edge2'])]
+sel: [('Sketch', ['Edge2', 'V_Axis'])]
+Diameter cmd: {"name": "Sketcher_ConstrainDiameter", "menuText": "Diameter Dimension", "toolTip": "Constrains the diameter of the selected circle or arc", "whatsThis": "Sketcher_ConstrainDiameter", "statusTip": "Constrains the diameter of the selected circle or arc", "pixmap": "Constraint_Diameter", "shortcut": "K, O"}
+1
+windows: * cup - FreeCAD 1.1.4|
+windows: * cup - FreeCAD 1.1.4|
+after diameter: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 28.0, 80.0], [28.0, 80.0, 28.0, 2.0], [28.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", 0, null, true, null], [1, "Coincident", 1, null, true, null], [2, "Coincident", 2, null, true, null], [3, "Coincident", 3, null, true, null], [4, "Coincident", 4, null, true, null], [5, "Coincident", 5, null, true, null], [6, "Horizontal", 0, null, true, null], [7, "Horizontal", 2, null, true, null], [8, "Horizontal", 4, null, true, null], [9, "Vertical", 1, null, true, null], [10, "Vertical", 3, null, true, null], [11, "Vertical", 5, null, true, null], [12, "Coincident", 0, null, true, null], [13, "DistanceX", 0, 30.0, true, "Params.cup_diameter / 2"], [14, "DistanceY", 1, 80.0, true, "Params.cup_height"], [15, "DistanceX", 2, 2.0, true, "Params.wall"], [16, "DistanceY", 5, 2.0, true, "Params.wall"]], "dof": 0, "support": ["XZ_Plane"], "conflicts": [], "redundant": [], "malformed": []}
+sel: [('Sketch', ['Edge2'])]
+sel: [('Sketch', ['Edge2', 'V_Axis'])]
+windows: * cup - FreeCAD 1.1.4|
+windows: * cup - FreeCAD 1.1.4|
+after dimension: {"geo": [[0.0, 0.0, 30.0, 0.0], [30.0, 0.0, 30.0, 80.0], [30.0, 80.0, 28.0, 80.0], [28.0, 80.0, 28.0, 2.0], [28.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", 0, null, true, null], [1, "Coincident", 1, null, true, null], [2, "Coincident", 2, null, true, null], [3, "Coincident", 3, null, true, null], [4, "Coincident", 4, null, true, null], [5, "Coincident", 5, null, true, null], [6, "Horizontal", 0, null, true, null], [7, "Horizontal", 2, null, true, null], [8, "Horizontal", 4, null, true, null], [9, "Vertical", 1, null, true, null], [10, "Vertical", 3, null, true, null], [11, "Vertical", 5, null, true, null], [12, "Coincident", 0, null, true, null], [13, "DistanceX", 0, 30.0, true, "Params.cup_diameter / 2"], [14, "DistanceY", 1, 80.0, true, "Params.cup_height"], [15, "DistanceX", 2, 2.0, true, "Params.wall"], [16, "DistanceY", 5, 2.0, true, "Params.wall"]], "dof": 0, "support": ["XZ_Plane"], "conflicts": [], "redundant": [], "malformed": []}
+end: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {"Revolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+TAKE Q7 DONE

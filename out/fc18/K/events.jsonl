@@ -1,0 +1,20 @@
+{"t": 0.034, "event": "recording started: FreeCAD 1.1.4 (P)"}
+{"t": 4.833, "event": "file reopened: F's saved end file"}
+{"t": 8.796, "event": "key 0: isometric", "keys": "0"}
+{"t": 10.025, "event": "(view fitted)"}
+{"t": 13.31, "event": "double-click: open Params"}
+{"t": 18.507, "event": "cell B1: cup_diameter", "x": 855, "y": 410, "button": 1}
+{"t": 20.217, "event": "typed 80", "text": "80"}
+{"t": 21.076, "event": "Enter", "keys": "Return"}
+{"t": 25.531, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 31.163, "event": "tab: back to the 3D view", "x": 754, "y": 1731, "button": 1}
+{"t": 36.07, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 40.834, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 44.124, "event": "key 0: isometric", "keys": "0"}
+{"t": 45.332, "event": "(view fitted)"}
+{"t": 50.37, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 55.502, "event": "proof80: the outer rim edge", "x": 1681, "y": 886, "button": 1}
+{"t": 59.607, "event": "hold: the readout"}
+{"t": 65.567, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 67.859, "event": "key 0: isometric", "keys": "0"}
+{"t": 69.145, "event": "(view fitted)"}

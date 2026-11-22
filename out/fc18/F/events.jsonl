@@ -1,0 +1,24 @@
+{"t": 0.035, "event": "recording started: FreeCAD 1.1.4 (F)"}
+{"t": 4.314, "event": "double-click: Sketch (edit)"}
+{"t": 8.693, "event": "(sketch view set)"}
+{"t": 11.875, "event": "double-click: the width (60)"}
+{"t": 15.28, "event": "hold: the box, bound to Params.cup_diameter"}
+{"t": 17.805, "event": "typed = (the expression editor opens)", "text": "="}
+{"t": 20.222, "event": "Ctrl+A: select the expression", "keys": "ctrl+a"}
+{"t": 21.66, "event": "typed Params.cup_diameter / 2", "text": "Params.cup_diameter / 2"}
+{"t": 26.771, "event": "Enter: expression", "keys": "Return"}
+{"t": 28.968, "event": "Enter: expression editor", "keys": "Return"}
+{"t": 31.229, "event": "hold: the box with the expression"}
+{"t": 35.861, "event": "box: OK (width)", "x": 1817, "y": 1601, "button": 1}
+{"t": 39.225, "event": "hold: width reads 30"}
+{"t": 44.299, "event": "sketch: Close", "x": 2529, "y": 615, "button": 1}
+{"t": 48.013, "event": "key 0: isometric", "keys": "0"}
+{"t": 49.237, "event": "(view fitted)"}
+{"t": 52.459, "event": "key 0: isometric", "keys": "0"}
+{"t": 53.706, "event": "(view fitted)"}
+{"t": 58.862, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 63.965, "event": "fix60: the outer rim edge", "x": 1680, "y": 796, "button": 1}
+{"t": 68.023, "event": "hold: the readout"}
+{"t": 73.938, "event": "Measure: Close", "x": 2529, "y": 1665, "button": 1}
+{"t": 76.225, "event": "key 0: isometric", "keys": "0"}
+{"t": 77.446, "event": "(view fitted)"}

@@ -1,0 +1,32 @@
+cup
+prepped cup
+1
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": null, "state": {"Sketch": ["Touched"]}, "body": "Cup"}
+start sketch: {"geo": [[0.0, 0.0, 27.057, 0.0], [27.057, 0.0, 27.057, 80.0], [27.057, 80.0, 25.057, 80.0], [25.057, 80.0, 25.057, 2.0], [25.057, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 16, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "Distance", 1, 80.0, true, "Params.cup_height"], [14, "Distance", 2, 2.0, true, "Params.wall"], [15, "Distance", 5, 2.0, true, "Params.wall"]], "dof": 1, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+notices at open: []
+skview 30 40 115
+sel: [('Sketch', ['Edge1'])]
+box: Window 4194421   Position: 1801,1320 (screen: 0)   Geometry: 456x252 
+windows: * cup - FreeCAD 1.1.4|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+windows: * cup - FreeCAD 1.1.4|Expression Editor|Insert Length|
+after width: {"geo": [[0.0, 0.0, 60.0, 0.0], [60.0, 0.0, 60.0, 80.0], [60.0, 80.0, 58.0, 80.0], [58.0, 80.0, 58.0, 2.0], [58.0, 2.0, 0.0, 2.0], [0.0, 2.0, 0.0, 0.0]], "n_constraints": 17, "constraints": [[0, "Coincident", -1, null, true, null], [1, "PointOnObject", 0, null, true, null], [2, "Coincident", 0, null, true, null], [3, "Vertical", 1, null, true, null], [4, "Coincident", 1, null, true, null], [5, "Horizontal", 2, null, true, null], [6, "Coincident", 2, null, true, null], [7, "Vertical", 3, null, true, null], [8, "Coincident", 3, null, true, null], [9, "Horizontal", 4, null, true, null], [10, "Coincident", 4, null, true, null], [11, "Coincident", 5, null, true, null], [12, "Vertical", 5, null, true, null], [13, "Distance", 1, 80.0, true, "Params.cup_height"], [14, "Distance", 2, 2.0, true, "Params.wall"], [15, "Distance", 5, 2.0, true, "Params.wall"], [16, "Distance", 0, 60.0, true, "Params.cup_diameter"]], "dof": 0, "support": ["Origin"], "conflicts": [], "redundant": [], "malformed": []}
+solver: ['Fully constrained']
+1
+selection: [('Sketch', [])]
+Revolution cmd: {"name": "PartDesign_Revolution", "menuText": "Revolve", "toolTip": "Revolves the selected sketch or profile around a line or axis and adds it to the body", "whatsThis": "PartDesign_Revolution", "statusTip": "Revolves the selected sketch or profile around a line or axis and adds it to the body", "pixmap": "PartDesign_Revolution", "shortcut": ""}
+preview: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "Revolution", "state": {}, "body": "Cup", "solids": 1, "volume": 80449.905, "outside": 120.0, "inside": 116.0, "z": [-0.0, 80.0]}
+1
+Axis combo at 2673 810
+Axis rows: [['Vertical sketch axis', 2734, 810], ['Horizontal sketch axis', 2734, 849], ['Base X-axis', 2734, 889], ['Base Y-axis', 2734, 928], ['Base Z-axis', 2734, 968], ['Select reference…', 2734, 1008]]
+Type combo at 2691 756
+Type rows: [['Angle', 2750, 756], ['To last', 2750, 795], ['To first', 2750, 835], ['Up to face', 2750, 874], ['Two angles', 2750, 914]]
+after OK: 
+notices: 
+tree: 
+trap120 selection: 
+trap120 measure: 
+mode combo shows 
+Mode combo at 
+Mode rows: []
+BAIL: Mode list: no row 

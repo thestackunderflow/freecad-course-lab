@@ -1,0 +1,29 @@
+SCANNED /lab/out/fc18/D/screen.mp4 frames=88 hits=0
+/lab/out/fc18/F/screen.mp4 t=74s: + Datum Point
+\ datum tine
+Q Datum Plane
+Bate. F + Datum objects -
+‘Suppressed No * Datum Point
+Refine iv) Yes 7 Datum Line
+Fuzzy Toler... -1.00 @ Datum Plane
+SCANNED /lab/out/fc18/F/screen.mp4 frames=41 hits=1
+/lab/out/fc18/K/screen.mp4 t=66s: Q Datum Plane
+Base co 2 Datum objects -
+‘Suppressed No * Datum Point
+Refine Yes Z Datum Line
+Fuzzy Toler... -1.00 > Datum Plane
+SCANNED /lab/out/fc18/K/screen.mp4 frames=37 hits=1
+SCANNED /lab/out/fc18/Q7/screen.mp4 frames=23 hits=0
+SCANNED /lab/out/fc18/R/screen.mp4 frames=27 hits=0
+SCANNED /lab/out/fc18/S/screen.mp4 frames=16 hits=0
+/lab/out/fc18/T/screen.mp4 t=120s: + Datum Fone
+Q Datum Plane
+Base c + Datum objects -
+‘Suppressed No * Datum Point
+ame eves 7 Datum Line
+Fuzzy Toler... -1.00 @ Datum Plane
+SCANNED /lab/out/fc18/T/screen.mp4 frames=64 hits=1
+SCANNED /lab/out/fc18/Y/screen.mp4 frames=14 hits=0
+SCANNED /lab/out/fc18/runs/A1/screen.mp4 frames=25 hits=0
+SCANNED /lab/out/fc18/runs/B1/screen.mp4 frames=32 hits=0
+SCANNED run stills=6 hits=0

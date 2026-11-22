@@ -1,0 +1,230 @@
+{
+ "doc": "/lab/out/fc18/R/end.FCStd",
+ "names": {
+  "params": {
+   "A1": [
+    null,
+    "'cup_diameter"
+   ],
+   "B1": [
+    "cup_diameter",
+    "60"
+   ],
+   "A2": [
+    null,
+    "'cup_height"
+   ],
+   "B2": [
+    "cup_height",
+    "80"
+   ],
+   "A3": [
+    null,
+    "'wall"
+   ],
+   "B3": [
+    "wall",
+    "2"
+   ]
+  },
+  "exprs": {}
+ },
+ "stored": {
+  "state": {},
+  "bad_any": {},
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "revolutions": [],
+  "sketches": {},
+  "m": {
+   "error": "no solid",
+   "src": null
+  },
+  "volume": null,
+  "builds": false,
+  "width_value": null,
+  "width_expr": null,
+  "sketch_dof": null
+ },
+ "recomputed": {
+  "state": {},
+  "bad_any": {},
+  "cup_diameter": 60.0,
+  "wall": 2.0,
+  "cup_height": 80.0,
+  "revolutions": [],
+  "sketches": {},
+  "m": {
+   "error": "no solid",
+   "src": null
+  },
+  "volume": null,
+  "builds": false,
+  "width_value": null,
+  "width_expr": null,
+  "sketch_dof": null
+ },
+ "tree": {
+  "bodies": [
+   "Body"
+  ],
+  "group": [],
+  "tip": null,
+  "base_features": {},
+  "visible": [
+   "Body"
+  ]
+ },
+ "objects": [
+  [
+   "Params",
+   "Params",
+   "Spreadsheet::Sheet"
+  ],
+  [
+   "Body",
+   "Cup",
+   "PartDesign::Body"
+  ],
+  [
+   "Origin",
+   "Origin",
+   "App::Origin"
+  ],
+  [
+   "X_Axis",
+   "X-axis",
+   "App::Line"
+  ],
+  [
+   "Y_Axis",
+   "Y-axis",
+   "App::Line"
+  ],
+  [
+   "Z_Axis",
+   "Z-axis",
+   "App::Line"
+  ],
+  [
+   "XY_Plane",
+   "XY-plane",
+   "App::Plane"
+  ],
+  [
+   "XZ_Plane",
+   "XZ-plane",
+   "App::Plane"
+  ],
+  [
+   "YZ_Plane",
+   "YZ-plane",
+   "App::Plane"
+  ],
+  [
+   "Origin001",
+   "Origin001",
+   "App::Point"
+  ]
+ ],
+ "asis": {
+  "cup_diameter": 60.0,
+  "cup_height": 80.0,
+  "wall": 2.0,
+  "bad_any": {}
+ },
+ "at": {
+  "60": {
+   "state": {},
+   "bad_any": {},
+   "cup_diameter": 60.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "revolutions": [],
+   "sketches": {},
+   "m": {
+    "error": "no solid",
+    "src": null
+   },
+   "volume": null,
+   "builds": false,
+   "width_value": null,
+   "width_expr": null,
+   "sketch_dof": null,
+   "set": {
+    "cup_diameter": 60.0,
+    "wall": 2
+   }
+  },
+  "80": {
+   "state": {},
+   "bad_any": {},
+   "cup_diameter": 80.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "revolutions": [],
+   "sketches": {},
+   "m": {
+    "error": "no solid",
+    "src": null
+   },
+   "volume": null,
+   "builds": false,
+   "width_value": null,
+   "width_expr": null,
+   "sketch_dof": null,
+   "set": {
+    "cup_diameter": 80.0,
+    "wall": 2
+   }
+  },
+  "45": {
+   "state": {},
+   "bad_any": {},
+   "cup_diameter": 45.0,
+   "wall": 2.0,
+   "cup_height": 80.0,
+   "revolutions": [],
+   "sketches": {},
+   "m": {
+    "error": "no solid",
+    "src": null
+   },
+   "volume": null,
+   "builds": false,
+   "width_value": null,
+   "width_expr": null,
+   "sketch_dof": null,
+   "set": {
+    "cup_diameter": 45.0,
+    "wall": 2
+   }
+  }
+ },
+ "e_revolve_in_body": false,
+ "e_part_revolution": false,
+ "f_reads_cup_diameter": [],
+ "pass": false,
+ "criteria": {
+  "60": {
+   "a": false,
+   "b": false,
+   "c": false,
+   "d": false
+  },
+  "80": {
+   "a": false,
+   "b": false,
+   "c": false,
+   "d": false
+  },
+  "45": {
+   "a": false,
+   "b": false,
+   "c": false,
+   "d": false
+  }
+ },
+ "cls": 8
+}
