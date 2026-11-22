@@ -1,0 +1,8 @@
+1
+cup
+prepped cup
+1
+1
+B1 front: {"wall": 2.0, "type": "Length", "length": 2.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 28634.122, "solids": 1}
+1
+B1 rear: {"wall": 2.0, "type": "Length", "length": 2.0, "expr": "Params.wall", "state": {}, "back_open": [true, true, true], "front_solid": true, "volume": 28634.122, "solids": 1}
