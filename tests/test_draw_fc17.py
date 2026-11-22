@@ -18,10 +18,11 @@ import draw_fc17 as d  # noqa: E402
 
 CARDS = ([f'card-fold-{i}.png' for i in range(1, 5)] + [f'card-names-{i}.png' for i in range(1, 4)] +
          [f'card-top-{i}.png' for i in range(1, 7)] + [f'card-axis-{i}.png' for i in range(1, 4)] + ['card-centred-1.png', 'card-end.png'])
-SHORT = ['card-why-s1.png', 'card-why-s2.png', 'card-why-s3.png']
+SHORT = ['card-why-s1a.png', 'card-why-s1b.png', 'card-why-s1.png', 'card-why-s2.png', 'card-why-s3.png']
 SHORT_OV = ['card-short-head.png', 'short-head.png', 'short-q.png', 'short-series.png']
 PANELS = ['ov-in-F1.png', 'ov-in-F5.png', 'ov-in-F8.png', 'ov-in-F9.png', 'ov-in-K1.png', 'ov-in-K2.png',
-          'ov-in-K3.png', 'ov-sk-F4.png', 'ov-cc-A1.png', 'ov-cc-B1.png']
+          'ov-in-K3.png', 'ov-sk-F4.png', 'ov-cc-A1.png', 'ov-cc-B1.png',
+          'ov-in-F8a.png', 'ov-in-F9a.png', 'ov-in-K1a.png', 'ov-sk-F4a.png']   # cut 2: the first build of each
 CHIPS = ['ov-chip-run-A1.png', 'ov-chip-run-B1.png', 'ov-chip-cc-version.png']
 LOWER = ['sub-1.png', 'sub-2.png', 'rc-1.png', 'rc-2.png', 'yt-1.png']
 STILLS = ['st-A1.png', 'st-A1z.png', 'st-B1f.png', 'st-B1b.png']
@@ -89,7 +90,7 @@ def test_columns_and_words(run):
 
 def test_panel_titles(run):
     for n in PANELS:
-        title = "the peg's sketch (lesson 14)" if n == 'ov-sk-F4.png' else 'checked by code'
+        title = "the peg's sketch (lesson 14)" if n.startswith('ov-sk-F4') else 'checked by code'
         assert texts(run, n)[0] == title, n
     for n in ('st-A1z.png', 'st-B1f.png', 'st-B1b.png'):
         assert 'checked by code' in texts(run, n), n
@@ -99,13 +100,16 @@ def test_panel_lines_exact(run):
     want = {
         'ov-in-F1.png': ['2 pegs on the front', 'back clear'],
         'ov-in-F5.png': ['copy at y 20 to 35: behind', 'front: 1 peg · one solid', 'no message, no mark'],
-        'ov-in-F8.png': ['pegs x 10 to 20, −20 to −10', '15 + 15 = 30 centre to centre', '30 − one peg 10 = 20 gap',
-                         'back clear'],
+        'ov-in-F8a.png': ['pegs x 10 to 20, −20 to −10'],
+        'ov-in-F8.png': ['pegs x 10 to 20, −20 to −10', '15 + 15 = 30 centre to centre'],
+        'ov-in-F9a.png': ['sketch axis = Base YZ'],
         'ov-in-F9.png': ['sketch axis = Base YZ', 'same part, same volume'],
-        'ov-in-K1.png': ['peg_x 20: pegs at 15 to 25', 'and −25 to −15', '40 centre to centre', '30 between'],
+        'ov-in-K1a.png': ['peg_x 20: 40 centre to centre'],
+        'ov-in-K1.png': ['peg_x 20: 40 centre to centre', '30 between them'],
         'ov-in-K2.png': ['wall 3: one solid', '58 front to back, back clear'],
         'ov-in-K3.png': ['fixed file, peg_x 20: copy −20', 'XZ file, peg_x 20: copy behind'],
-        'ov-sk-F4.png': ['sketch: XZ plane,', 'pushed 20 forward'],
+        'ov-sk-F4a.png': ['drawn on the XZ plane'],
+        'ov-sk-F4.png': ['drawn on the XZ plane', 'so XZ looks right. It is not.'],
         'ov-cc-A1.png': ['its file: peg_x 15, 20, 8', 'and wall 3:', '2 pegs front, back clear'],
         'ov-cc-B1.png': ['its file: peg_x 15, 20, 8', 'and wall 3: passed', 'pegs stick out 13',
                          'hanging hole: back wall'],
@@ -118,9 +122,9 @@ def test_key_words_drawn(run):
     allt = alltext(run)
     for s in ['fold down the middle', 'copy beside it', 'wrong crease: wrong place', 'the crease sits between them',
               'x: − left, + right · z up', 'y: − front, + back', 'x: − left, + right', 'y: − front, + back · z up',
-              'the paper, seen from above', '27.5 in front → 27.5 behind', 'the crease across → top right',
+              'the paper, seen from above', 'peg centre: x 15, y −27.5', 'its end: y −35', '27.5 in front → 27.5 behind', 'the crease across → top right',
               '15 right → 15 left', 'missing letter flips; the other two stay', 'XZ → y flips', 'YZ → x flips',
-              "the sketch's", 'vertical axis', 'same plane here', 'centred in lesson 14', 'centre 27.5 front → 27.5 back', 'missing letter flips',
+              "the sketch's", 'vertical axis', 'same plane here', 'centred in lesson 14', 'front → back · 13 out', 'missing letter flips',
               'not asked to check · $0.15', 'asked to check · $0.12', 'Claude Code 2.1.308 · Sonnet 5.5',
               'Lesson 18: a round pen cup', 'comes out twice as wide', 'Every fix tested in both programs,',
               'by hand and with Claude · Subscribe', 'Plane = crease halfway between', 'YZ: x is missing, so x flips',
@@ -143,7 +147,20 @@ def test_builds_add(run):
     assert '15 right → 15 left' in texts(run, 'card-why-s3.png')
     assert 'missing letter flips' in texts(run, 'card-why-s3.png')
     assert 'missing letter flips' not in texts(run, 'card-why-s2.png')
-    assert 'centre 27.5 front → 27.5 back' in texts(run, 'card-why-s1.png')
+    assert 'front → back · 13 out' in texts(run, 'card-why-s1.png')
+
+
+def test_short_xz_card_builds_without_27_5(run):
+    """Short cut 2 (REVIEW-watch-fc17-short-c1 must-fix 2): the XZ card builds (plane + peg, + the path, + the copy
+    and 13 out) and never shows the unspoken 27.5."""
+    a, b, c = (set(texts(run, f'card-why-{n}.png')) for n in ('s1a', 's1b', 's1'))
+    assert 'XZ' in a and '13 out' not in a and '13 out' not in b and '13 out' in c
+    assert a <= b <= c
+    for n in ('s1a', 's1b', 's1', 's2', 's3'):
+        assert not any('27.5' in t for t in texts(run, f'card-why-{n}.png')), n
+    from PIL import ImageChops
+    im = [Image.open(os.path.join(d.OUT, f'card-why-{n}.png')).convert('RGB') for n in ('s1a', 's1b', 's1')]
+    assert ImageChops.difference(im[0], im[1]).getbbox() and ImageChops.difference(im[1], im[2]).getbbox()
 
 
 def test_axis_key_every_names_and_top_card(run):
@@ -204,3 +221,9 @@ def test_no_answers(run):
     t = ' | '.join(texts(run, 'yt-1.png'))
     assert '−45' not in t and '30' not in t
     assert '−25' not in ' | '.join(texts(run, 'short-q.png'))
+
+
+def test_fold_labels_do_not_overlap_in_the_dissolve(run):
+    """cut 2 (f021): card-fold-3's chip and card-fold-4's chip sat in the same place, so the 0.35 s dissolve
+    showed one over the other."""
+    assert not hit(d.FOLD_CHIPS[3], d.FOLD_CHIPS[4]), d.FOLD_CHIPS

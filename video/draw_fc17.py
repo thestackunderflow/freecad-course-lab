@@ -144,6 +144,9 @@ def sheet(d, box, crease, blobs, on=True, r=46):
             d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=col)
 
 
+FOLD_CHIPS = {}
+
+
 def card_fold(step):
     im, d = canvas()
     header(d, 'Paint on paper, then fold')
@@ -158,7 +161,7 @@ def card_fold(step):
         sheet(d, one, 'down', [((0.8, 0.8), False), ((0.2, 0.8), True)], on=step == 4)
         sheet(d, two, 'across', [((0.8, 0.8), False), ((0.8, 0.2), True)])
         if step == 3:
-            chip(d, (1420, 1200), 'wrong crease: wrong place', 60)
+            FOLD_CHIPS[3] = chip(d, (1420, 1200), 'wrong crease: wrong place', 60)
         else:
             for bx, horiz in ((one, False), (two, True)):
                 x0, y0, x1, y1 = bx
@@ -167,7 +170,8 @@ def card_fold(step):
                     d.rounded_rectangle((x0 - 14, cy - 34, x1 + 14, cy + 34), radius=30, outline=ORANGE, width=8)
                 else:
                     d.rounded_rectangle((cx - 34, y0 - 14, cx + 34, y1 + 14), radius=30, outline=ORANGE, width=8)
-            chip(d, (760, 1200), 'the crease sits between them', 64)
+            # cut 2 (f021): under sheet one, clear of step 3's chip under sheet two (the 0.35 s dissolve showed both)
+            FOLD_CHIPS[4] = chip(d, (260, 1200), 'the crease sits between them', 64)
     save(im, f'card-fold-{step}.png')
 
 
@@ -319,7 +323,10 @@ def card_top(step):
         top_cup(d)
         rect_xy(d, 10, 20, -35, -20, PAINT, INK, 4)                       # the peg = the blob, front right
         p = T(*peg)
-        text(d, (p[0], T(0, -35)[1] + 18), 'peg: x 15, y −27.5', 44, PAINT, anchor='ma')
+        # cut 2 (REVIEW-watch-fc17-c1): Claude's reply says y −35 (the peg's front end); name both numbers
+        lx, ly = T(10, 0)[0] - 24, T(0, -22)[1] + 18                     # left of the peg, under the cup's front
+        text(d, (lx, ly), 'peg centre: x 15, y −27.5', 44, PAINT, anchor='ra')
+        text(d, (lx, ly + 56), 'its end: y −35', 44, PAINT, anchor='ra')
         o = T(0, 0)
         d.ellipse((o[0] - 10, o[1] - 10, o[0] + 10, o[1] + 10), fill=INK)
         a, z = T(-44, 0), T(44, 0)
@@ -434,7 +441,7 @@ def card_end():
 
 
 # --- Short (S0, S2, S3) -------------------------------------------------------------------------------------------------
-def card_why_short(step):
+def card_why_short(step, build=3):
     """S2 (1080 x 1080), from above, the origin at the cup's middle: 1 XZ across, the peg's centre 27.5 in front, its
     copy 27.5 behind (13 out of the back wall); 2 YZ down the middle, 15 right → 15 left; 3 + "missing letter flips"."""
     CUR.clear()
@@ -455,13 +462,18 @@ def card_why_short(step):
     d.ellipse((o[0] - 8, o[1] - 8, o[0] + 8, o[1] + 8), fill=INK)
     text(d, (540, 1000), 'from above: front at the bottom', 44, GREY, anchor='mm', frame=fr)
     if step == 1:
+        # Short cut 2 (REVIEW-watch-fc17-short-c1): builds a plane + peg, b + the path across, s1 + the copy and
+        # "13 out"; no 27.5 (never spoken)
         d.line((t(-44, 0), t(44, 0)), fill=BLUE, width=7)
         text(d, (t(-44, 0)[0], t(0, 0)[1] - 64), 'XZ', 52, BLUE, frame=fr)
         c = mirror((15, -27.5), 'XZ')
-        f10.dashed(d, t(15, -27.5), t(c[0], c[1] - 2.5), ORANGE, width=6)
-        r(10, 20, 20, 35, BACKFILL, PAINT, 4)
-        text(d, (540, 240), 'centre 27.5 front → 27.5 back', 46, ORANGE, anchor='mm', frame=fr)
-        text(d, (t(21, 0)[0] + 12, t(0, 29)[1]), '13 out', 44, PAINT, anchor='lm', frame=fr)
+        if build >= 2:
+            f10.dashed(d, t(15, -27.5), t(c[0], c[1] - 2.5), ORANGE, width=6)
+            text(d, (t(10, 0)[0] - 24, t(0, 28)[1]), 'straight across', 44, ORANGE, anchor='rm', frame=fr)
+        if build >= 3:
+            r(10, 20, 20, 35, BACKFILL, PAINT, 4)
+            text(d, (540, 240), 'front → back · 13 out', 50, ORANGE, anchor='mm', frame=fr)
+            text(d, (t(21, 0)[0] + 12, t(0, 29)[1]), '13 out', 44, PAINT, anchor='lm', frame=fr)
     else:
         d.line((t(0, -38), t(0, 28)), fill=GREEN, width=7)
         text(d, (t(2, 16)[0], t(2, 16)[1]), 'YZ', 52, GREEN, frame=fr)
@@ -472,7 +484,7 @@ def card_why_short(step):
     if step == 3:
         text(d, (540, 245), 'missing letter flips', 56, ORANGE, anchor='mm', frame=fr)
     axis_key(d, (60, 40), AXIS_S, px=40, frame=fr)
-    save(im, f'card-why-s{step}.png')
+    save(im, f'card-why-s{step}{"ab"[build - 1] if step == 1 and build < 3 else ""}.png')
 
 
 def band_lines(name, lines, y0, px_list, fill=ORANGE + (242,), col=WHITE):
@@ -559,21 +571,26 @@ def panels():
     code_panel('ov-in-F5.png', ['copy at y 20 to 35: behind', 'front: 1 peg · one solid', 'no message, no mark'],
                PANEL_LL)
     assert fx['centre_gap'] == 30.0 and fx['face_gap'] == 20.0 and fx['y_extent'] == 57.0
-    code_panel('ov-in-F8.png', ['pegs x 10 to 20, −20 to −10', '15 + 15 = 30 centre to centre',
-                                '30 − one peg 10 = 20 gap', 'back clear'], PANEL_LL)
+    # cut 2 (REVIEW-watch-fc17-c1 must-fix 1): each box builds (a = its first line) and holds 8 s+; F8 keeps the
+    # spoken lines only (the gap and the back have their own Measure / back shots)
+    f8 = ['pegs x 10 to 20, −20 to −10', '15 + 15 = 30 centre to centre']
+    code_panel('ov-in-F8a.png', f8[:1], PANEL_LL)
+    code_panel('ov-in-F8.png', f8, PANEL_LL)
     assert NUM['q4_fix_vaxis']['volume'] == fx['volume']
+    code_panel('ov-in-F9a.png', ['sketch axis = Base YZ'], PANEL_LL)
     code_panel('ov-in-F9.png', ['sketch axis = Base YZ', 'same part, same volume'], PANEL_LL)
     p20, w3 = pr['peg_x20'], pr['wall3']
     assert p20['x_runs_front'] == [[-25.0, -15.0], [15.0, 25.0]] and p20['centre_gap'] == 40.0
     assert p20['face_gap'] == 30.0 and p20['x_runs_back'] == []
-    code_panel('ov-in-K1.png', ['peg_x 20: pegs at 15 to 25', 'and −25 to −15', '40 centre to centre', '30 between'],
-               PANEL_LL)
+    code_panel('ov-in-K1a.png', ['peg_x 20: 40 centre to centre'], PANEL_LL)
+    code_panel('ov-in-K1.png', ['peg_x 20: 40 centre to centre', '30 between them'], PANEL_LL)
     assert w3['solids'] == 1 and w3['y_extent'] == 58.0 and w3['x_runs_back'] == []
     code_panel('ov-in-K2.png', ['wall 3: one solid', '58 front to back, back clear'], PANEL_LL)
     xz = pr['xz_peg_x20']
     assert xz['x_runs_back'] == [[15.0, 25.0]] and xz['behind_back'] == 13.0
     code_panel('ov-in-K3.png', ['fixed file, peg_x 20: copy −20', 'XZ file, peg_x 20: copy behind'], PANEL_LL)
-    code_panel('ov-sk-F4.png', ['sketch: XZ plane,', 'pushed 20 forward'], PANEL_LL,
+    code_panel('ov-sk-F4a.png', ['drawn on the XZ plane'], PANEL_LL, title="the peg's sketch (lesson 14)")
+    code_panel('ov-sk-F4.png', ['drawn on the XZ plane', 'so XZ looks right. It is not.'], PANEL_LL,
                title="the peg's sketch (lesson 14)")
     for run in ('A1', 'B1'):
         at = RUNS[run]['at']
@@ -701,6 +718,8 @@ def main():
     card_end()
     for s in range(1, 4):
         card_why_short(s)
+    card_why_short(1, 1)
+    card_why_short(1, 2)
     short_overlays()
     chips()
     panels()
