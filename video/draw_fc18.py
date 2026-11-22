@@ -233,7 +233,11 @@ def short_overlays():
     im = Image.new('RGBA', (1080, 1920), (0, 0, 0, 0))     # S0 frame 1: a big label over each stacked cup
     d = ImageDraw.Draw(im)
     CUR.clear()
-    big_label(d, 540, 330, '120 across', RED, px=84)
+    # take S stacked (VIEW_Y 236, 0.5 scale): the 120 cup's rim spans y ~306-510, so its label sits on the body below
+    # the rim (like the 60 label); light patches (FreeCAD grey) hide the nav cube corner of each half
+    for y0, y1 in ((236, 302), (776, 846)):
+        d.rectangle((696, y0, 830, y1), fill=(245, 245, 245, 255))
+    big_label(d, 540, 540, '120 across', RED, px=84)
     big_label(d, 540, 1000, '60 across', GREEN, px=84)
     save(im, 'short-tile.png')
 
