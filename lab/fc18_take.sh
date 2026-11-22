@@ -230,6 +230,13 @@ S)
   echo "Windows menu: $(ui dump | cut -c1-900)" >> $L
   s=$(ui menu "Tile"); [ "$s" != none ] || { xdotool key Escape; bail "no Tile"; }
   sl_glide ${s% *} ${s#* } 15; sl_nap 0.8; sl_click ${s% *} ${s#* } "menu: Tile"; sl_nap 3
+  # render 1 (22 Nov): the stale "Start Part" task panel stayed drawn over the 120 cup's rim (right view): make each
+  # file's Cup the active body (the Part Design watcher then drops the panel) and close any open task dialog
+  for d in name fixed; do Q "import FreeCAD, FreeCADGui
+g = FreeCADGui.getDocument('$d'); b = [o for o in FreeCAD.getDocument('$d').Objects if o.TypeId == 'PartDesign::Body'][0]
+g.ActiveView.setActiveObject('pdbody', b)
+FreeCADGui.Control.closeDialog()
+print(1)" >> $L 2>&1; done
   for d in name fixed; do FQ "look('$d', 'Isometric', 0, 0, 40, 170)" >> $L; done
   sl_mark "(both views: isometric, 170 mm high)"; sl_nap 6; shot $O/side-by-side.png
   ;;
