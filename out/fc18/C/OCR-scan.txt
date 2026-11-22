@@ -1,0 +1,15 @@
+/lab/out/fc18/C/screen.mp4 t=62s: + Datum Point
+\ Datum Line
+Q Datum Plane
+Bate. F & Datum objects x
+‘Suppressed No * Datum Point
+Refine iv) Yes Z Datum Line
+Fuzzy Toler... -1.00 © Datum Plane
+/lab/out/fc18/C/screen.mp4 t=132s: * Datum Point
+‘Q Datum Plane
++ Datum objects
+* Datum Point
+7 Datum Line
+‘© Datum Plane
+SCANNED /lab/out/fc18/C/screen.mp4 frames=70 hits=2
+SCANNED run stills=0 hits=0

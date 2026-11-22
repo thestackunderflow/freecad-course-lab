@@ -1,0 +1,27 @@
+a1
+prepped a1
+1
+start: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "CupRevolve", "state": {}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+start sketch: {"sketch": null}
+notices at open: []
+1
+cup_diameter 80: {"params": {"cup_diameter": 80.0, "cup_height": 80.0, "wall": 2.0}, "tip": "CupRevolve", "state": {}, "body": "Cup", "solids": 1, "volume": 48279.996, "outside": 80.0, "inside": 76.0, "z": [-0.0, 80.0]}
+wb combo 703 86
+1
+a1_80 selection: [('CupRevolve', ['Edge2'])]
+a1_80 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:40.00 mm 
+1
+1
+b1
+prepped b1
+1
+start b1: {"params": {"cup_diameter": 60.0, "cup_height": 80.0, "wall": 2.0}, "tip": "CupRevolution", "state": {"CupRevolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 34079.997, "outside": 60.0, "inside": 56.0, "z": [-0.0, 80.0]}
+1
+cup_diameter 80: {"params": {"cup_diameter": 80.0, "cup_height": 80.0, "wall": 2.0}, "tip": "CupRevolution", "state": {"CupRevolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 48279.996, "outside": 80.0, "inside": 76.0, "z": [-0.0, 80.0]}
+wb combo 703 86
+1
+b1_80 selection: [('CupRevolution', ['Edge2'])]
+b1_80 measure: "QLabel", "Mode:" combo:Radius "QLabel", "Result:" field:40.00 mm 
+1
+end: {"params": {"cup_diameter": 80.0, "cup_height": 80.0, "wall": 2.0}, "tip": "CupRevolution", "state": {"CupRevolution": ["Expanded", "Up-to-date"]}, "body": "Cup", "solids": 1, "volume": 48279.996, "outside": 80.0, "inside": 76.0, "z": [-0.0, 80.0]}
+TAKE C DONE

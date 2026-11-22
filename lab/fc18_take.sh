@@ -12,16 +12,19 @@
 #   P  F's end reopened (films into out/fc18/K: out/fc18/P holds the start files): cup_diameter 80; Measure   F9
 #   Y  F's end orbiting slowly (think pause)                                                                   F14
 #   Q7 round-fixed: in the sketch, outside line + vertical axis, Diameter tool, then Dimension (K D); not saved
+#   C  Claude's two saved files (runs/A1, runs/B1 after-cup), each: full window 3 s, cup_diameter 80, Recompute,
+#      Measure the outer rim edge (Radius 40.00 expected), hold 4 s; copies in /tmp, nothing saved          F13
 . /lab/lab/common.sh; . /lab/lab/fx19_lib.sh; . /lab/lab/fx20_lib.sh; . /lab/lab/fc9_lib.sh; . /lab/lab/fc10_lib.sh; . /lab/lab/fc11_lib.sh; . /lab/lab/fc12_lib.sh; . /lab/lab/fc13_lib.sh; . /lab/lab/fc14_lib.sh; . /lab/lab/fc15_lib.sh; . /lab/lab/fc16_lib.sh; . /lab/lab/fc17_lib.sh; . /lab/lab/fc18_lib.sh
 T=$1; TD=$T; [ "$T" = P ] && TD=K   # take P films into out/fc18/K: out/fc18/P holds the start files
 X=$X18; O=$X/$TD; mkdir -p $O; L=$O/take.log; : > $L
 case $T in R|D|S) SRC=$X/P/round-start.FCStd;; T) SRC=$X/D/end.FCStd;; F) SRC=$X/T/end.FCStd;; P|Y) SRC=$X/F/end.FCStd;;
-  Q7) SRC=$X/P/round-fixed.FCStd;; *) echo "R|D|T|S|F|P|Y|Q7"; exit 2;; esac
+  Q7) SRC=$X/P/round-fixed.FCStd;; C) SRC=$X/runs/A1/after-cup.FCStd;; *) echo "R|D|T|S|F|P|Y|Q7|C"; exit 2;; esac
 [ -f "$SRC" ] || { echo "no $SRC"; exit 2; }
-F=cup
+F=cup; [ "$T" = C ] && { F=a1; [ -f $X/runs/B1/after-cup.FCStd ] || { echo "no B1 file"; exit 2; }; }
 W14=/tmp/fc18-ui.json
 fx_start $O
 mkdir -p /tmp/fc18; cp "$SRC" /tmp/fc18/$F.FCStd   # the take works on a copy in /tmp: never on a start file
+[ "$T" = C ] && cp $X/runs/B1/after-cup.FCStd /tmp/fc18/b1.FCStd
 
 prepdoc() {    # prepdoc DOC: tip shown, orange, no animation
   FQ "prep('$1')" >> $L 2>&1
@@ -275,9 +278,22 @@ Q7)
   sl_glide 1800 1300 15; sl_key k "key K"; sleep 0.3; sl_key d "key D: Dimension (Q7)"; sl_nap 3; wins; shot $O/q7-dimension.png
   sl_key Escape "Escape"; sl_nap 2; wins; echo "after dimension: $(ski)" >> $L
   ;;
+C)
+  for d in a1 b1; do
+    if [ $d = b1 ]; then
+      Q "import FreeCAD; FreeCAD.closeDocument('a1'); print(1)" >> $L 2>&1; sl_mark "a1 closed"; sl_nap 1
+      F=b1; open_doc /tmp/fc18/b1.FCStd >> $L 2>&1; sl_mark "file opened: b1"; prepdoc b1; report_hide; sl_nap 1
+      xdotool mousemove 1500 1500; echo "start b1: $(cst)" >> $L
+    fi
+    isofit; sl_mark "hold: $d full window"; sl_nap 3
+    params_set 0 80 cup_diameter; wb_pd
+    meas_r ${d}_80 40 80
+    isofit; sl_nap 1
+  done
+  ;;
 esac
 sl_nap 2; sl_stop
-[ "$T" = Q7 ] || [ "$T" = S ] || lab_save $F $O/end.FCStd >> $L 2>&1
+[ "$T" = Q7 ] || [ "$T" = S ] || [ "$T" = C ] || lab_save $F $O/end.FCStd >> $L 2>&1
 echo "end: $(cst 2>/dev/null)" >> $L
 echo "TAKE $T DONE" >> $L
 fc_quit; sl_display_stop

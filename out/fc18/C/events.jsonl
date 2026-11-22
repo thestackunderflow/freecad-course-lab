@@ -1,0 +1,41 @@
+{"t": 0.028, "event": "recording started: FreeCAD 1.1.4 (C)"}
+{"t": 3.04, "event": "key 0: isometric", "keys": "0"}
+{"t": 4.263, "event": "(view fitted)"}
+{"t": 6.267, "event": "hold: a1 full window"}
+{"t": 10.553, "event": "double-click: open Params"}
+{"t": 15.731, "event": "cell B1: cup_diameter", "x": 855, "y": 410, "button": 1}
+{"t": 17.439, "event": "typed 80", "text": "80"}
+{"t": 18.3, "event": "Enter", "keys": "Return"}
+{"t": 22.562, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 28.194, "event": "tab: back to the 3D view", "x": 748, "y": 1731, "button": 1}
+{"t": 33.103, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 37.869, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 41.164, "event": "key 0: isometric", "keys": "0"}
+{"t": 42.378, "event": "(view fitted)"}
+{"t": 47.407, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 52.504, "event": "a1_80: the outer rim edge", "x": 1681, "y": 886, "button": 1}
+{"t": 56.581, "event": "hold: the readout"}
+{"t": 62.537, "event": "Measure: Close", "x": 2530, "y": 1665, "button": 1}
+{"t": 64.831, "event": "key 0: isometric", "keys": "0"}
+{"t": 66.055, "event": "(view fitted)"}
+{"t": 69.168, "event": "a1 closed"}
+{"t": 70.748, "event": "file opened: b1"}
+{"t": 72.593, "event": "key 0: isometric", "keys": "0"}
+{"t": 73.827, "event": "(view fitted)"}
+{"t": 75.837, "event": "hold: b1 full window"}
+{"t": 80.119, "event": "double-click: open Params"}
+{"t": 85.276, "event": "cell B1: cup_diameter", "x": 855, "y": 410, "button": 1}
+{"t": 86.984, "event": "typed 80", "text": "80"}
+{"t": 87.845, "event": "Enter", "keys": "Return"}
+{"t": 92.157, "event": "Recompute", "x": 455, "y": 88, "button": 1}
+{"t": 97.781, "event": "tab: back to the 3D view", "x": 748, "y": 1729, "button": 1}
+{"t": 102.676, "event": "workbench list", "x": 703, "y": 86, "button": 1}
+{"t": 107.419, "event": "workbench: Part Design", "x": 757, "y": 336, "button": 1}
+{"t": 110.738, "event": "key 0: isometric", "keys": "0"}
+{"t": 111.962, "event": "(view fitted)"}
+{"t": 116.991, "event": "Measure", "x": 1486, "y": 88, "button": 1}
+{"t": 122.081, "event": "b1_80: the outer rim edge", "x": 1681, "y": 886, "button": 1}
+{"t": 126.146, "event": "hold: the readout"}
+{"t": 132.079, "event": "Measure: Close", "x": 2530, "y": 1663, "button": 1}
+{"t": 134.378, "event": "key 0: isometric", "keys": "0"}
+{"t": 135.593, "event": "(view fitted)"}
