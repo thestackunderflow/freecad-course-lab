@@ -14,9 +14,10 @@ import draw_fc18 as d  # noqa: E402
 
 FULL = ['card-half-1.png', 'card-half-2.png', 'card-end.png']
 SRC = ['ov-tile-0.png', 'ov-in-F1.png', 'ov-in-F7.png', 'ov-in-F7-1.png', 'ov-in-F7-2.png', 'ov-in-K.png',
-       'ov-in-C.png', 'ov-in-B1.png', 'ov-chip-r120.png', 'ov-chip-r60.png', 'ov-chip-r80.png', 'ov-chip-nodia.png',
+       'ov-in-C.png', 'ov-in-B1.png', 'ov-in-A1.png', 'ov-in-F8.png', 'ov-chip-r120.png', 'ov-chip-r60.png', 'ov-chip-r80.png', 'ov-chip-nodia.png',
        'ov-chip-plane.png', 'ov-chip-far.png', 'ov-chip-cc-version.png', 'ov-chip-run-A1.png', 'ov-chip-run-B1.png',
        'rc-1.png', 'yt-1.png', 'yt-2.png', 'sub-1.png', 'sub-2.png']
+STILLS = ['st-A1a.png', 'st-A1b.png', 'st-A1c.png', 'st-B1a.png', 'st-B1b.png', 'st-B1c.png']
 SHORT = ['short-head.png', 'short-q.png', 'short-series.png', 'short-tile.png']
 
 
@@ -33,6 +34,9 @@ def test_files_and_sizes(drawn):
         assert Image.open(os.path.join(d.OUT, f)).size == (2880, 1800), f
     for f in SHORT:
         assert Image.open(os.path.join(d.OUT, f)).size == (1080, 1920), f
+    for f in STILLS:
+        im = Image.open(os.path.join(d.OUT, f))
+        assert im.size == (2880, 1800) and im.mode == 'RGB', f
 
 
 def test_no_problems(drawn):
@@ -56,3 +60,44 @@ def test_numbers_are_the_labs(drawn):
     assert n['q5']['fixed_reopened_80']['outside_x'] == 80.0 and n['q5']['name_80']['outside_x'] == 160.0
     assert n['q9']['name_40']['outside_x'] == 80.0 and n['q9']['fixed_45']['outside_x'] == 45.0 and n['q9']['name_45']['outside_x'] == 90.0
     assert n['runs']['A1']['pass'] and n['runs']['B1']['pass']
+
+
+def texts(name):
+    return [t for t, _ in d.LOG[name]]
+
+
+def test_new_code_panels(drawn):
+    """lab 29f31b3: run one's file panel (Claude frames, FreeCAD side) and the fix's 60.00 / inside 56 panel."""
+    assert texts('ov-in-A1.png') == ['checked by code', 'run 1 file: 60, 80, 45 across', 'width = diameter / 2']
+    assert texts('ov-in-B1.png') == ['checked by code', 'run 2 file: 60, 80, 45 across', 'width = diameter / 2']
+    assert texts('ov-in-F8.png') == ['checked by code', '60.00 across · inside 56']
+    assert d.NUM['q4_fix']['inside'] == 56.0
+
+
+def test_reply_strips(drawn):
+    """Claude's long replies as excerpt strips, three builds each; frames inside the reply windows (A1 42.0-50.7,
+    B1 55.0-63.3, never B1's 51-55 scroll); every strip above the status rows (y 1451) and scaled 2x+ (phone)."""
+    assert 42.0 <= d.REPLY_AT['A1'] <= 50.7 and 55.0 <= d.REPLY_AT['B1'] <= 63.3
+    for run in ('A1', 'B1'):
+        a, b_, c = (texts(f'st-{run}{x}.png') for x in 'abc')
+        chip = 'not asked to check · $0.11' if run == 'A1' else 'asked to check · $0.08'
+        assert chip in a and chip in c
+        assert 'checked by code' in c and 'checked by code' not in b_ and 'checked by code' not in a
+        assert len(d.STRIPS[f'st-{run}a.png']) < len(d.STRIPS[f'st-{run}b.png'])   # b adds strips (builds)
+        for name in (f'st-{run}{x}.png' for x in 'abc'):
+            for box, k, at in d.STRIPS[name]:
+                assert box[3] < 1440, (name, box)                  # never the status rows
+                assert k >= 2.0, (name, k)
+                w, h = (box[2] - box[0]) * k, (box[3] - box[1]) * k
+                assert at[0] >= 40 and at[0] + w <= 2840 and at[1] >= 160 and at[1] + h <= 1760, (name, box)
+    assert 'its reply (excerpts)' in texts('st-A1a.png')
+
+
+def test_tile_labels_on_the_refilmed_cups(drawn):
+    """take S re-filmed (bef6515): left "fixed" cup x 812-1430, y 475-1500; right "name" cup x 1918-2685, y 563-1425.
+    Each label centred over its cup and above its rim."""
+    for key, (x0, x1, y0, _y1) in d.TILE_CUPS.items():
+        box = d.DRAWN[f'ov-tile-0.png:{key}']
+        assert abs((box[0] + box[2]) / 2 - (x0 + x1) / 2) <= 20, key
+        assert box[3] <= y0, key
+    assert texts('ov-tile-0.png')[:2] == ['60 across', '120 across']

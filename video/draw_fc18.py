@@ -7,12 +7,14 @@ RGBA 1080 x 1920 (32 columns); no percent sign, no angle brackets, never the run
 NUMBERS.json's (out/fc18) or the script's arithmetic.
 Geometry (source px 2880 x 1800, gridded stills 22 Nov, scratchpad fc18g):
   T/measure-trap120: cup x 1216-2144, y 464-1504; Measurement panel x 2190-2865, Mode y 704, Result y 746.
-  S/side-by-side (the tile): left window "fixed" (60 cup) x 480-1680, cup x 778-1395, y 490-1514; right window "name"
-  (120 cup) x 1696-2864, cup x 1904-2672, y 570-1434; the stale "Start Part" task panel x 2188-2871, y 593-709 (over
-  the 120 cup's rim: see HANDOVER-fc18-render2.md).
+  S/side-by-side (the tile, re-filmed bef6515: the Tasks dock hidden, no Start Part panel): left window "fixed" (60
+  cup) x 480-1680, cup x 812-1430, y 475-1500; right window "name" (120 cup) x 1696-2864, cup x 1918-2685, y 563-1425.
   R/params: rows y 410 / 464 / 518, column A x 592-768, B x 768-944.
   F/expr-half: Expression Editor x 1776-2400, y 1370-1664 ("Result 30.00" y 1594); the width label y ~1392.
   Panels anchored lower left at (40, 1690) (the property area, left of the cup).
+  Reply strips (st-A1a..c, st-B1a..c, RGB 2880 x 1800): runs/{A1,B1}/reply.png = screen.mp4 at REPLY_AT (A1 46.0 inside
+  the reply window 42.0-50.7, B1 59.0 inside 55.0-63.3, never B1's 51-55 scroll); line boxes by tesseract tsv (22 Nov),
+  row pitch 49 px, monospace 24.6 px from x 60; the status rows (y 1451 down) are outside every strip.
 Run in the draw image:  MSYS_NO_PATHCONV=1 docker run --rm -v "<edu-visualization>:/ev" -w /ev/freecad-course-lab \
   cad3way-draw:1 python3 video/draw_fc18.py
 Test: tests/test_draw_fc18.py"""
@@ -34,17 +36,23 @@ f17.TAKES = TAKES
 NUM = json.load(open(os.path.join(TAKES, 'NUMBERS.json'), encoding='utf-8'))
 RUNS = NUM['runs']
 f17.RUNS = RUNS
-W, H = b.W, b.H
+W, H, SW, SH = b.W, b.H, b.SW, b.SH
 INK, GREY, WHITE, BLUE, ORANGE, RED, GREEN = f17.INK, f17.GREY, f17.WHITE, f17.BLUE, f17.ORANGE, f17.RED, f17.GREEN
 PROBLEMS, LOG, CUR = f17.PROBLEMS, f17.LOG, f17.CUR
 text, save, canvas, source, header = f17.text, f17.save, f17.canvas, f17.source, f17.header
 PANEL_LL = f17.PANEL_LL
+DRAWN = f17.DRAWN
 CHIP_AT = (40, 1350)                    # chips lower left, above the panels' zone
 CHIP_R = (2150, 820)                    # chips under the Measurement panel (x 2190-2865, y 590-770), right of the cup
 PROFILE = [(0, 0), (30, 0), (30, 80), (28, 80), (28, 2), (0, 2)]     # the half-section (x = radius, z), mm
 CUPGREY = (150, 156, 168)
 HEAD = ('MY REVOLVED CUP CAME', 'OUT TWICE AS WIDE')
 WORDS = []
+TILE_CUPS = {'60': (812, 1430, 475, 1500), '120': (1918, 2685, 563, 1425)}   # re-filmed take S cups, source px
+REPLY_AT = {'A1': 46.0, 'B1': 59.0}
+STRIPS = {}
+GHOST = (200, 205, 214)
+STRIP_X, STRIP_K = 170, 2.2
 
 
 def r(v):
@@ -110,10 +118,11 @@ def big_label(d, cx, y, s, col, px=96):
 
 def tile_labels():
     """F0 frame 0 (St, the S tile): '60 across' over the left cup, '120 across' over the right one; the right label's
-    stale 'Start Part' panel (x 2188-2871, y 593-709, over the 120 rim) is NOT masked here: painting it out leaves a hole in the rim; re-film take S without it (HANDOVER-fc18-render2.md)."""
+    centres from the re-filmed take S (TILE_CUPS), each above its rim."""
     im, d = source()
-    big_label(d, 1086, 330, '60 across', GREEN)
-    big_label(d, 2288, 330, '120 across', RED)
+    for key, col in (('60', GREEN), ('120', RED)):
+        x0, x1, y0, _ = TILE_CUPS[key]
+        f17.DRAWN[f'ov-tile-0.png:{key}'] = big_label(d, (x0 + x1) / 2, 320, f'{key} across', col)
     f17.src_chip(d, (40, 1560), 'width 60: cup 120 across', RED, px=60)
     save(im, 'ov-tile-0.png')
 
@@ -148,6 +157,67 @@ def panels():
     f17.code_panel('ov-in-F8.png', ['60.00 across · inside 56'], PANEL_LL)
 
 
+# --- F11 / F12: Claude's replies as excerpt strips (whole terminal first in the footage, then these) ----------------
+def strip(im, d, name, src, box, at, marks):
+    """Paste src.crop(box) at STRIP_K on the still, a ghost frame round it, then each mark (('ring' | 'box', x0, y0,
+    x1, y1) in source px) in orange; records (box, k, at) in STRIPS[name]; returns the bottom y."""
+    k = STRIP_K
+    c = src.crop(box)
+    c = c.resize((round(c.width * k), round(c.height * k)), Image.LANCZOS)
+    im.paste(c, at)
+    d.rectangle((at[0] - 3, at[1] - 3, at[0] + c.width + 2, at[1] + c.height + 2), outline=GHOST, width=3)
+    STRIPS.setdefault(name, []).append((box, k, at))
+    if box[3] >= 1440 or at[0] + c.width > SW - 40 or at[1] + c.height > SH - 40:
+        PROBLEMS.append(f'{name}: strip {box} off the frame / in the status rows')
+    for kind, x0, y0, x1, y1 in marks:
+        a = (at[0] + (x0 - box[0]) * k, at[1] + (y0 - box[1]) * k)
+        z = (at[0] + (x1 - box[0]) * k, at[1] + (y1 - box[1]) * k)
+        if kind == 'ring':
+            d.rounded_rectangle((a[0] - 16, a[1] - 10, z[0] + 16, z[1] + 10), radius=36, outline=ORANGE, width=10)
+        else:
+            d.rectangle((a[0] - 12, a[1] - 8, z[0] + 12, z[1] + 8), outline=ORANGE, width=9)
+    return at[1] + c.height
+
+
+# (crop box, marks) per strip, in build order; source px of runs/<run>/reply.png
+REPLY = {
+    'A1': [[((40, 612, 1150, 662), [('ring', 104, 616, 972, 661)])],                    # outer_radius = d / 2
+           [((40, 853, 1150, 950), [('box', 255, 860, 1128, 897), ('box', 103, 910, 252, 946)]),   # 60 mm across
+            ((40, 1052, 1150, 1244), [('box', 500, 1056, 926, 1100), ('box', 103, 1105, 1103, 1150),
+                                      ('box', 103, 1154, 230, 1198), ('box', 103, 1203, 545, 1240)])]],  # 80, back to 60
+    'B1': [[((40, 72, 1150, 126), [('ring', 104, 77, 778, 123)]),                          # radius = d / 2
+            ((40, 562, 1150, 664), [('box', 870, 567, 1122, 610), ('box', 103, 615, 774, 660)])],   # radius 30 = 60.0
+           [((40, 856, 1150, 1006), [('box', 103, 909, 1122, 1003)])]],                    # 70 -> 70.0, back to 60
+}
+
+
+def still_reply(run, step):
+    """Run one / two's reply in three builds on the voice: a "It halved the diameter, in a size it named outer radius" /
+    "radius thirty, so sixty across", b "read sixty across, tried eighty, and put sixty back" / "At seventy it read
+    seventy, then put sixty back", c + our panel ("By code, it holds at all three sizes we tried")."""
+    CUR.clear()
+    name = f'st-{run}{"abc"[step - 1]}.png'
+    STRIPS.pop(name, None)
+    src = Image.open(os.path.join(TAKES, 'runs', run, 'reply.png')).convert('RGB')
+    im = Image.new('RGB', (SW, SH), WHITE)
+    d = ImageDraw.Draw(im)
+    cost = RUNS[run]['cost_usd']
+    f17.chip(d, (STRIP_X, 180), ('not asked to check' if run == 'A1' else 'asked to check') + f' · ${cost:.2f}', 64,
+             BLUE, BLUE, frame=(SW, SH))
+    text(d, (STRIP_X, 300), 'its reply (excerpts)', 48, GREY, path=b.R, frame=(SW, SH))
+    y = 380
+    for build in REPLY[run][:min(step, 2)]:
+        for box, marks in build:
+            y = strip(im, d, name, src, box, (STRIP_X, y), marks) + 40
+    if step >= 3:
+        f10_box = f17.f10.code_box
+        lines = [f'run {1 if run == "A1" else 2} file: 60, 80, 45 across', 'width = diameter / 2']
+        pb = f10_box(d, STRIP_X, SH - 100, lines, 'checked by code', f17.PX, 0.8, 'lb')
+        if pb[1] < y - 20:
+            PROBLEMS.append(f'{name}: panel {pb} over the strips (bottom {y})')
+    save(im, name)
+
+
 RECAP = ['Revolve spins a half-section', 'width = radius = diameter / 2']
 TURN = ['Your turn: a vase 45 across.', 'What width goes in the sketch?', '45 in the width: how wide?']
 SUB = [['Coming up: Claude Code on a', 'local model, Gemma 4 via Ollama'],
@@ -180,6 +250,9 @@ def main():
     tile_labels()
     chips()
     panels()
+    for run in ('A1', 'B1'):
+        for step in (1, 2, 3):
+            still_reply(run, step)
     f17.ov_lines('rc-1.png', RECAP, 2, (20, 1400, 1300, 1690), one=True)
     f17.ov_lines('yt-1.png', TURN, 2, (20, 1230, 1300, 1690), one=True)
     f17.ov_lines('yt-2.png', TURN, 3, (20, 1230, 1300, 1690), one=True)
