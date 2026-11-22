@@ -103,7 +103,7 @@ MASK = {  # Claude Code footer / spinner / token mask: (t0, t1, y0) = white from
     'A1': [(0.0, 4.0, 898), (4.0, 6.0, 947), (6.0, 8.0, 996), (8.0, 10.34, 1045), (10.34, 12.0, 996),
            (12.0, 35.93, 1192), (35.93, 44.0, 1437)],
     'B1': [(0.0, 4.0, 898), (4.0, 6.0, 947), (6.0, 8.0, 996), (8.0, 10.0, 1045), (10.0, 11.5, 1094),
-           (11.5, 14.28, 1143), (14.28, 16.5, 1192), (16.5, 17.0, 1241), (17.0, 48.5, 1437), (48.5, 61.4, 1290),
+           (11.5, 14.28, 1143), (14.28, 16.0, 1100), (16.0, 16.5, 1192), (16.5, 17.0, 1241), (17.0, 48.5, 1437), (48.5, 61.4, 1290),
            (61.4, 69.9, 1437)],
 }
 HEAD_MASK = {  # header + "Auto mode is now Claude Code's default" banner: (t0, t1, y1) = white from 0 to y1, x 0-1160
@@ -208,9 +208,9 @@ def card_why(step):
     im, d = canvas()
     header(d, 'Seen from above, cut through the hole')
     if step == 5:
-        return card_why_all(im, d)
+        return card_why_all(im, d, 3)
     k, x0, x1, cx, y_in = 120, 500, 2060, 1280, 1000
-    wall = 2 if step == 1 else 3
+    wall = 2 if step <= 1 else 3
     y_out = y_in - wall * k
     hw = round(2.5 * k)
     d.rectangle((x0, y_in, x1, 1300), fill=INSIDE)
@@ -263,22 +263,33 @@ def cup_from_above(d, cx, y_back_in, k, wall, inside_l=40, half=30, width=5):
     return outer, (y_back_out, y_back_in, y_front_in, y_front_out)
 
 
-def card_why_all(im, d):
+def card_why_all(im, d, step=3):
+    """F8 in three builds (cut 2, WATCH-fc16-cut1 3 + 11): 1 the arrow through the back wall, FreeCAD's guide words on
+    screen; 2 on across the inside to the far wall (one solid); 3 the front wall drilled, "front wall too"."""
     global WHY5_OUTER
     k, cx = WHY5_K, 1280
     outer, (y_bo, y_bi, y_fi, y_fo) = cup_from_above(d, cx, 420, k, WHY5_WALL)
     WHY5_OUTER = outer
     hw = round(2.5 * k)
     d.rectangle((cx - hw, y_bo - 2, cx + hw, y_bi), fill=WHITE)
-    d.rectangle((cx - hw, y_fi, cx + hw, y_fo + 2), fill=FRONTHOLE)
-    arrow_down(d, cx, y_bo - 150, y_fo + 120, RED, w=10)
+    if step >= 3:
+        d.rectangle((cx - hw, y_fi, cx + hw, y_fo + 2), fill=FRONTHOLE)
+    tip = {1: y_bi + 160, 2: y_fi, 3: y_fo + 120}[step]
+    arrow_down(d, cx, y_bo - 150, tip, RED, w=10)
     text(d, (cx + 60, y_bo - 120), 'Through all', 60, RED)
     text(d, (outer[2] + 40, (y_bo + y_bi) // 2), 'back wall', 44, INK, anchor='lm')
-    text(d, (outer[2] + 40, (y_fi + y_fo) // 2), 'front wall too', 48, RED, anchor='lm')
-    text(d, (cx + 40, (y_bi + y_fi) // 2 - 30), 'one solid:', 44, GREY, anchor='lm')
-    text(d, (cx + 40, (y_bi + y_fi) // 2 + 30), 'the whole cup', 44, GREY, anchor='lm')
-    chip_on(d, (150, 1230), 'to the last face it meets', INK, px=60, edge=ORANGE)
-    save(im, 'card-why-5.png')
+    chip_on(d, (150, 1230), 'FreeCAD guide: up to the last face it meets', INK if step == 1 else GREY, px=56,
+            edge=ORANGE if step == 1 else DONE)
+    if step >= 2:
+        text(d, (outer[2] + 40, (y_fi + y_fo) // 2 - 60), 'far wall', 44, INK if step == 2 else GREY, anchor='lm')
+        text(d, (cx + 40, (y_bi + y_fi) // 2 - 30), 'one solid:', 44, GREY, anchor='lm')
+        text(d, (cx + 40, (y_bi + y_fi) // 2 + 30), 'the whole cup', 44, GREY, anchor='lm')
+    if step >= 3:
+        text(d, (outer[2] + 40, (y_fi + y_fo) // 2 + 10), 'front wall too', 48, RED, anchor='lm')
+        chip_on(d, (110, 600), 'to the last face\nit meets:\nthe far wall', INK, px=48, edge=ORANGE)
+    save(im, f'card-why-5-{step}.png')
+    if step == 3:
+        save(im, 'card-why-5.png')
 
 
 def card_why_short(step):
@@ -312,6 +323,7 @@ def card_why_short(step):
         arrow_down(d, cx, y_bo - 80, y_fo + 60, RED, w=9)
         text(d, (540, 100), 'Through all', 60, RED, anchor='mm', frame=fr)
         text(d, (cx + 60, y_fo + 14), 'front wall', 44, RED, frame=fr)
+        text(d, (outer[0], y_bo - 40), 'back wall', 44, INK, anchor='lm', frame=fr)
         chip_on(d, (80, 900), 'to the last face it meets', INK, px=52, frame=fr, edge=ORANGE)
     save(im, f'card-why-s{step}.png')
 
@@ -684,8 +696,12 @@ def main():
     CHIP_FILES.clear()
     for s in range(1, 5):
         card_skewer(s)
-    for s in range(1, 6):
+    for s in range(0, 6):
         card_why(s)
+    for s in (1, 2):
+        im, dd = canvas()
+        header(dd, 'Seen from above, cut through the hole')
+        card_why_all(im, dd, s)
     for s in range(1, 4):
         card_why_short(s)
     card_end()

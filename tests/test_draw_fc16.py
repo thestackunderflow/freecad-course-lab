@@ -184,7 +184,7 @@ def test_steps_add(run):
         if i > 1:
             assert s not in texts(run, f'card-why-{i - 1}.png')
     assert 'Pocket Length 2' in texts(run, 'card-why-1.png')
-    assert 'to the last face it meets' in texts(run, 'card-why-5.png')
+    assert any('to the last face' in x for x in texts(run, 'card-why-5.png'))
     assert 'to the last face it meets' in texts(run, 'card-why-s3.png')
 
 
@@ -280,3 +280,35 @@ def test_short_head(run):
     t = texts(run, HEAD)
     assert t == ['POCKET 2 DEEP, WALL 3:', 'HOLE CLOSED']
     assert alpha_in(HEAD, (0, 0, 1080, 300))
+
+
+# --- cut 2 (WATCH-fc16-cut1, verified on the frames) -----------------------------------------------------------------
+def test_cut2_why_card_opens_without_the_sum(run):
+    """F7: card-why-0 is the wall-2 section and the Pocket arrow only; the "2 − 2 = 0" sum comes with card-why-1."""
+    t0 = texts(run, 'card-why-0.png')
+    assert 'Pocket Length 2' in t0 and 'wall 2' in t0 and '2 − 2 = 0' not in t0
+    assert set(t0) <= set(texts(run, 'card-why-1.png'))
+
+
+def test_cut2_through_all_card_builds(run):
+    """F8: card-why-5 in three steps: into the back wall (FreeCAD's guide words on screen), across the inside to the
+    far wall, then the front wall drilled."""
+    s = [set(texts(run, f'card-why-5-{i}.png')) for i in (1, 2, 3)]
+    assert s[0] <= s[1] <= s[2]
+    assert any('FreeCAD guide' in x for x in s[0]) and 'back wall' in s[0] and 'front wall too' not in s[0]
+    assert 'far wall' in s[1] and 'front wall too' not in s[1]
+    assert 'front wall too' in s[2] and 'to the last face' in s[2]
+    assert set(texts(run, 'card-why-5.png')) == s[2]
+
+
+def test_cut2_short_through_all_walls_named(run):
+    t = texts(run, 'card-why-s3.png')
+    assert 'back wall' in t and 'front wall' in t
+
+
+def test_cut2_b1_spinner_masked_after_enter(run):
+    """B1 Enter at 14.284: until the reply starts (16.0) the spinner row sits at y 1108 and the status row moves; the
+    mask starts at 1100 (cut 1 OCR: "auto mode" at 5:10.5)."""
+    band = [y for t0, t1, y in d.MASK['B1'] if t0 <= 14.3 < t1][0]
+    assert band <= 1100
+    assert [y for t0, t1, y in d.MASK['B1'] if t0 <= 16.2 < t1][0] <= 1192
