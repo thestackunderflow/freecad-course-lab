@@ -520,7 +520,7 @@ SUB = [['Lesson 16: the hanging hole, typed 2 deep,', 'closes to a 1 mm skin at 
 
 def panels():
     t = NUM['takes']
-    code_panel('ov-in-T5.png', ['same volume, same faces', 'nothing rounded'], (1880, 1320))         # F5 (T 76.8+)
+    code_panel('ov-in-T5.png', ['same volume, same faces', 'nothing rounded'], (1880, 1180))         # F5 (T 76.8+); cut 3: clear of Ti's label
     code_panel('ov-in-F7.png', [f'round {f2(FIXR)}', f"leftover flat {f2(FIX['flat'])}",
                                 f"inside {n0(FIX['inside_w'])} × {n0(FIX['inside_l'])}"], (520, 1150))  # F7 (F 127.6+)
     code_panel('ov-in-P10.png', [f"on screen: wall-3 shape, {n0(W3['outside_w'])} wide",

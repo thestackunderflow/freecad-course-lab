@@ -216,3 +216,10 @@ def test_cards_build_one_idea_per_step(monkeypatch):
     assert 'same 2' in r4 and '3 > 2' in r4
     c1 = _said(d.card_coin, 1, monkeypatch)
     assert c1.count('COIN') == 1 and any('both edges' in s for s in c1)
+
+
+def test_t5_panel_clear_of_the_label(run):
+    """fc15 cut 2 watch-through: in Ti (T 79-84.4, FIT, 0.8 scale) the lower label 'by code = ...' starts at about
+    source y 1556 and hid the panel's last line 'nothing rounded'; the panel must end above 1500."""
+    box = Image.open(os.path.join(d.OUT, 'ov-in-T5.png')).getchannel('A').getbbox()
+    assert box[3] <= 1500, box
