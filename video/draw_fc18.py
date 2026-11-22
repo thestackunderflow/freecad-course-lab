@@ -141,7 +141,7 @@ def chips():
 def panels():
     tr, fx, q5 = NUM['q3_trap'], NUM['q4_fix'], NUM['q5']
     assert tr['outside_x'] == 120.0 and fx['outside_x'] == 60.0
-    f17.code_panel('ov-in-F1.png', ['120 across · 60 across'], PANEL_LL)
+    f17.code_panel('ov-in-F1.png', ['this cup: 120 across', 'planned: 60 across'], PANEL_LL)   # c2 watch: say which is which
     v = ['120 across: ' + r(tr['volume']) + ' mm³', '60 across: ' + r(fx['volume']) + ' mm³']
     assert abs(NUM['volume_ratio_trap_to_fix'] - 2.36) < 0.01
     f17.code_panel('ov-in-F7.png', v + ['about 2.4 × the plastic'], PANEL_LL)
@@ -154,7 +154,7 @@ def panels():
     f17.code_panel('ov-in-A1.png', ['run 1 file: 60, 80, 45 across', 'width = diameter / 2'], f17.CC_PANEL)
     f17.code_panel('ov-in-B1.png', ['run 2 file: 60, 80, 45 across', 'width = diameter / 2'], f17.CC_PANEL)
     assert fx['inside'] == 56.0
-    f17.code_panel('ov-in-F8.png', ['60.00 across · inside 56'], PANEL_LL)
+    f17.code_panel('ov-in-F8.png', ['this cup: 60.00 across'], PANEL_LL)   # c2 watch: 'inside 56' was never spoken
 
 
 # --- F11 / F12: Claude's replies as excerpt strips (whole terminal first in the footage, then these) ----------------
@@ -221,7 +221,7 @@ def still_reply(run, step):
 RECAP = ['Revolve spins a half-section', 'width = radius = diameter / 2']
 TURN = ['Your turn: a vase 45 across.', 'What width goes in the sketch?', '45 in the width: how wide?']
 SUB = [['Coming up: Claude Code on a', 'local model, Gemma 4 via Ollama'],
-       ['Every fix tested in both programs,', 'by hand and with Claude · Subscribe']]
+       ['Every fix tested in SolidCraft and FreeCAD,', 'by hand and with Claude · Subscribe']]
 
 
 def short_overlays():
@@ -236,7 +236,7 @@ def short_overlays():
     # take S stacked (VIEW_Y 236, 0.5 scale): the 120 cup's rim spans y ~306-510, so its label sits on the body below
     # the rim (like the 60 label); light patches (FreeCAD grey) hide the nav cube corner of each half
     for y0, y1 in ((236, 302), (776, 846)):
-        d.rectangle((696, y0, 830, y1), fill=(245, 245, 245, 255))
+        d.rectangle((696, y0, 830, y1), fill=(255, 255, 255, 255))   # frame 1 dims overlays ~0.86: 255 lands nearest the 225 grey
     big_label(d, 540, 540, '120 across', RED, px=84)
     big_label(d, 540, 1000, '60 across', GREEN, px=84)
     save(im, 'short-tile.png')

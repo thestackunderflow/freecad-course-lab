@@ -70,7 +70,7 @@ def test_new_code_panels(drawn):
     """lab 29f31b3: run one's file panel (Claude frames, FreeCAD side) and the fix's 60.00 / inside 56 panel."""
     assert texts('ov-in-A1.png') == ['checked by code', 'run 1 file: 60, 80, 45 across', 'width = diameter / 2']
     assert texts('ov-in-B1.png') == ['checked by code', 'run 2 file: 60, 80, 45 across', 'width = diameter / 2']
-    assert texts('ov-in-F8.png') == ['checked by code', '60.00 across · inside 56']
+    assert texts('ov-in-F8.png') == ['checked by code', 'this cup: 60.00 across']
     assert d.NUM['q4_fix']['inside'] == 56.0
 
 
