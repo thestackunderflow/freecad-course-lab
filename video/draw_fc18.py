@@ -142,7 +142,10 @@ def panels():
     f17.code_panel('ov-in-K.png', ['fixed file at 80: 80 across', 'first file at 80: 160 across'], PANEL_LL)
     assert RUNS['A1']['pass'] and RUNS['B1']['pass'] and '80' in RUNS['A1']['at'] and '80' in RUNS['B1']['at']
     f17.code_panel('ov-in-C.png', ['run 1 at 80: 80 across', 'run 2 at 80: 80 across'], PANEL_LL)
+    f17.code_panel('ov-in-A1.png', ['run 1 file: 60, 80, 45 across', 'width = diameter / 2'], f17.CC_PANEL)
     f17.code_panel('ov-in-B1.png', ['run 2 file: 60, 80, 45 across', 'width = diameter / 2'], f17.CC_PANEL)
+    assert fx['inside'] == 56.0
+    f17.code_panel('ov-in-F8.png', ['60.00 across · inside 56'], PANEL_LL)
 
 
 RECAP = ['Revolve spins a half-section', 'width = radius = diameter / 2']
