@@ -123,7 +123,10 @@ def tile_labels():
     for key, col in (('60', GREEN), ('120', RED)):
         x0, x1, y0, _ = TILE_CUPS[key]
         f17.DRAWN[f'ov-tile-0.png:{key}'] = big_label(d, (x0 + x1) / 2, 320, f'{key} across', col)
-    f17.src_chip(d, (40, 1560), 'width 60: cup 120 across', RED, px=60)
+    # cut 6 (REVIEW-watch-fc18-c5 0:00): the cause chip centred under the 120 cup (it sat at x 40, under the 60 cup)
+    s, x0, x1 = 'width 60: cup 120 across', TILE_CUPS['120'][0], TILE_CUPS['120'][1]
+    w = d.textlength(s, font=b.font(b.B, 60)) + 44
+    f17.DRAWN['ov-tile-0.png:cause'] = f17.src_chip(d, (round((x0 + x1 - w) / 2), 1560), s, RED, px=60)
     save(im, 'ov-tile-0.png')
 
 

@@ -103,6 +103,15 @@ def test_tile_labels_on_the_refilmed_cups(drawn):
     assert texts('ov-tile-0.png')[:2] == ['60 across', '120 across']
 
 
+def test_c6_cause_chip_under_the_120_cup(drawn):
+    """fc18 cut 6 (REVIEW-watch-fc18-c5 0:00): the red "width 60: cup 120 across" chip sat under the 60 cup (x 40);
+    it now sits centred under the 120 cup, below its base, clear of the left cup."""
+    x0, x1, _y0, y1 = d.TILE_CUPS['120']
+    box = d.DRAWN['ov-tile-0.png:cause']
+    assert abs((box[0] + box[2]) / 2 - (x0 + x1) / 2) <= 20
+    assert box[1] > y1 and box[0] > d.TILE_CUPS['60'][1] and box[2] <= 2840
+
+
 def test_c5_coming_up_builds(drawn):
     """fc18 cut 5 (REVIEW-watch-fc18-c4: 17.5 s idle under the Coming up bar): the Coming up panel builds a third line
     when the voice says "driving SolidCraft and FreeCAD, tested against Claude" (sub-3 = sub-1 + one line, the panel
