@@ -222,6 +222,9 @@ RECAP = ['Revolve spins a half-section', 'width = radius = diameter / 2']
 TURN = ['Your turn: a vase 45 across.', 'What width goes in the sketch?', '45 in the width: how wide?']
 SUB = [['Coming up: Claude Code on a', 'local model, Gemma 4 via Ollama'],
        ['Every fix tested in SolidCraft and FreeCAD,', 'by hand and with Claude · Subscribe']]
+# fc18 cut 5 (REVIEW-watch-fc18-c4: 17.5 s idle under the Coming up bar): a third line builds on "driving SolidCraft
+# and FreeCAD, tested against Claude"; the panel grows downward, so the first two lines stay put
+SUB3 = SUB[0] + ['driving SolidCraft and FreeCAD, vs Claude']
 
 
 def short_overlays():
@@ -262,6 +265,7 @@ def main():
     f17.ov_lines('yt-2.png', TURN, 3, (20, 1230, 1300, 1690), one=True)
     for i, lines in enumerate(SUB, 1):
         f17.ov_lines(f'sub-{i}.png', lines, 2, (20, 1470, 1560, 1690), px=54, one=True)
+    f17.ov_lines('sub-3.png', SUB3, 3, (20, 1470, 1560, 1785), px=54, one=True)
     short_overlays()
     WORDS.clear()
     WORDS.extend(s for v in LOG.values() for s, _ in v)

@@ -16,7 +16,7 @@ FULL = ['card-half-1.png', 'card-half-2.png', 'card-end.png']
 SRC = ['ov-tile-0.png', 'ov-in-F1.png', 'ov-in-F7.png', 'ov-in-F7-1.png', 'ov-in-F7-2.png', 'ov-in-K.png',
        'ov-in-C.png', 'ov-in-B1.png', 'ov-in-A1.png', 'ov-in-F8.png', 'ov-chip-r120.png', 'ov-chip-r60.png', 'ov-chip-r80.png', 'ov-chip-nodia.png',
        'ov-chip-plane.png', 'ov-chip-far.png', 'ov-chip-cc-version.png', 'ov-chip-run-A1.png', 'ov-chip-run-B1.png',
-       'rc-1.png', 'yt-1.png', 'yt-2.png', 'sub-1.png', 'sub-2.png']
+       'rc-1.png', 'yt-1.png', 'yt-2.png', 'sub-1.png', 'sub-2.png', 'sub-3.png']
 STILLS = ['st-A1a.png', 'st-A1b.png', 'st-A1c.png', 'st-B1a.png', 'st-B1b.png', 'st-B1c.png']
 SHORT = ['short-head.png', 'short-q.png', 'short-series.png', 'short-tile.png']
 
@@ -101,3 +101,12 @@ def test_tile_labels_on_the_refilmed_cups(drawn):
         assert abs((box[0] + box[2]) / 2 - (x0 + x1) / 2) <= 20, key
         assert box[3] <= y0, key
     assert texts('ov-tile-0.png')[:2] == ['60 across', '120 across']
+
+
+def test_c5_coming_up_builds(drawn):
+    """fc18 cut 5 (REVIEW-watch-fc18-c4: 17.5 s idle under the Coming up bar): the Coming up panel builds a third line
+    when the voice says "driving SolidCraft and FreeCAD, tested against Claude" (sub-3 = sub-1 + one line, the panel
+    grows downward so the first two lines stay put)."""
+    assert d.SUB3[:2] == d.SUB[0] and len(d.SUB3) == 3
+    assert texts('sub-3.png') == d.SUB3 and texts('sub-1.png') == d.SUB[0]
+    assert Image.open(os.path.join(d.OUT, 'sub-3.png')).size == (2880, 1800)
